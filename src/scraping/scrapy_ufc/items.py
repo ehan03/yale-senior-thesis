@@ -93,3 +93,13 @@ class UFCStatsRoundStatsItem(OrderedItem):
     significant_strikes_ground_landed = Field()
     significant_strikes_ground_attempted = Field()
     round_time_seconds = Field()
+
+
+# Wikipedia items
+class WikipediaEventItem(OrderedItem):
+    id = Field()
+    name = Field()
+    date = Field()
+    venue_name = Field()
+    location = Field()
+    attendance = Field()
