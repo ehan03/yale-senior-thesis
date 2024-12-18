@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 # local imports
-from ..items import (
+from ..items.ufcstats_items import (
     UFCStatsBoutItem,
     UFCStatsEventItem,
     UFCStatsFighterHistoryItem,

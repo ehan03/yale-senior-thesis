@@ -1,26 +1,12 @@
 # standard library imports
-import json
-from collections import OrderedDict
 
 # third party imports
-import six
-from scrapy import Field, Item
+from scrapy import Field
 
 # local imports
+from ._ordered import OrderedItem
 
 
-class OrderedItem(Item):
-    def __init__(self, *args, **kwargs):
-        self._values = OrderedDict()
-        if args or kwargs:
-            for k, v in six.iteritems(dict(*args, **kwargs)):
-                self[k] = v
-
-    def __repr__(self):
-        return json.dumps(OrderedDict(self), ensure_ascii=False)
-
-
-# UFC Stats items
 class UFCStatsFighterItem(OrderedItem):
     id = Field()
     name = Field()
@@ -93,13 +79,3 @@ class UFCStatsRoundStatsItem(OrderedItem):
     significant_strikes_ground_landed = Field()
     significant_strikes_ground_attempted = Field()
     round_time_seconds = Field()
-
-
-# Wikipedia items
-class WikipediaEventItem(OrderedItem):
-    id = Field()
-    name = Field()
-    date = Field()
-    venue_name = Field()
-    location = Field()
-    attendance = Field()

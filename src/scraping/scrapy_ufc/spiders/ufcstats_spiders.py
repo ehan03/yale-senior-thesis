@@ -6,7 +6,7 @@ import w3lib.html
 from scrapy.spiders import Spider
 
 # local imports
-from ..items import (
+from ..items.ufcstats_items import (
     UFCStatsBoutItem,
     UFCStatsEventItem,
     UFCStatsFighterHistoryItem,

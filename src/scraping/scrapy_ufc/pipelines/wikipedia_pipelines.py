@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 # local imports
-from ..items import WikipediaEventItem
+from ..items.wikipedia_items import WikipediaEventItem
 
 
 class WikipediaItemPipeline:

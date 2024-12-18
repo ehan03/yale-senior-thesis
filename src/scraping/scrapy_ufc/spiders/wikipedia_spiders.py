@@ -6,7 +6,7 @@ import pandas as pd
 from scrapy.spiders import Spider
 
 # local imports
-from ..items import WikipediaEventItem
+from ..items.wikipedia_items import WikipediaEventItem
 
 
 class WikipediaSpider(Spider):
