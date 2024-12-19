@@ -112,8 +112,8 @@ class DistributionalRobustKelly(BaseKelly):
     def __init__(
         self,
         p0_p1: np.ndarray,
-        red_odds: np.ndarray,  # Decimal odds
-        blue_odds: np.ndarray,  # Decimal odds
+        red_odds: np.ndarray,
+        blue_odds: np.ndarray,
         current_bankroll: float,
         fraction: float,
         min_bet: float,
