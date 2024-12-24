@@ -1,0 +1,1456 @@
+id,name,promotion,date,venue,location,event_order
+5,UFC 5: The Return of the Beast,UFC,1995-04-07,Independence Arena,"Charlotte, North Carolina, USA",1
+7,UFC 7: The Brawl in Buffalo,UFC,1995-09-08,Buffalo Memorial Auditorium,"Buffalo, New York, USA",2
+8,UU 95: Ultimate Ultimate 95,UFC,1995-12-16,Mammoth Gardens,"Denver, Colorado, USA",3
+9,UFC 8: David vs. Goliath,UFC,1996-02-16,Coliseo Rubén Rodríguez,"San Juan, Puerto Rico",4
+10,UFC 9: Motor City Madness,UFC,1996-05-17,Cobo Arena,"Detroit, Michigan, USA",5
+11,UFC 10: The Tournament,UFC,1996-07-12,Fair Park Arena,"Birmingham, Alabama, USA",6
+12,UFC 11: The Proving Ground,UFC,1996-09-20,Augusta Civic Center,"Augusta, Georgia, USA",7
+14,UFC 12: Judgement Day,UFC,1997-02-07,Dothan Civic Center,"Dothan, Alabama, USA",8
+15,UFC 13: The Ultimate Force,UFC,1997-05-30,Augusta Civic Center,"Augusta, Georgia, USA",9
+16,UFC 14: Showdown,UFC,1997-07-27,Boutwell Auditorium,"Birmingham, Alabama, USA",10
+17,UFC 15: Collision Course,UFC,1997-10-17,Casino Magic Bay St. Louis,"Bay St. Louis, Mississippi, USA",11
+18,UFC Japan: Ultimate Japan 1,UFC,1997-12-21,Yokohama Arena,"Yokohama, Japan",12
+19,UFC 16: Battle in the Bayou,UFC,1998-03-13,Pontchartrain Center,"New Orleans, Louisiana, USA",13
+20,UFC 17: Redemption,UFC,1998-05-15,Mobile Civic Center,"Mobile, Alabama, USA",14
+21,UFC Brazil: Ultimate Brazil,UFC,1998-10-16,Ginásio da Portuguesa,"Sao Paulo, Brazil",15
+22,UFC 18: Road to the Heavyweight Title,UFC,1999-01-08,Pontchartrain Center,"New Orleans, Louisiana, USA",16
+23,UFC 19: Ultimate Young Guns,UFC,1999-03-05,Casino Magic Bay St. Louis,"Bay St. Louis, Mississippi, USA",17
+24,UFC 20: Battle for the Gold,UFC,1999-05-07,Boutwell Auditorium,"Birmingham, Alabama, USA",18
+25,UFC 21: Return of the Champions,UFC,1999-07-16,Five Seasons Events Center,"Cedar Rapids, Iowa, USA",19
+26,UFC 22: There Can Only Be One Champion,UFC,1999-09-24,Lake Charles Civic Center,"Lake Charles, Louisiana, USA",20
+27,UFC 23: Ultimate Japan 2,UFC,1999-11-19,Tokyo Bay NK Hall,"Chiba, Japan",21
+28,UFC 24: First Defense,UFC,2000-03-10,Lake Charles Civic Center,"Lake Charles, Louisiana, USA",22
+29,UFC 25: Ultimate Japan 3,UFC,2000-04-14,Yoyogi National Gymnasium,"Tokyo, Japan",23
+30,UFC 26: Ultimate Field of Dreams,UFC,2000-06-09,Five Seasons Events Center,"Cedar Rapids, Iowa, USA",24
+31,UFC 27: Ultimate Bad Boyz,UFC,2000-09-22,Lakefront Arena,"New Orleans, Louisiana, USA",25
+32,UFC 28: High Stakes,UFC,2000-11-17,Trump Taj Mahal Casino Resort,"Atlantic City, New Jersey, USA",26
+33,UFC 29: Defense of the Belts,UFC,2000-12-16,Differ Ariake Arena,"Tokyo, Japan",27
+34,UFC 30: Battle on the Boardwalk,UFC,2001-02-23,Trump Taj Mahal Casino Resort,"Atlantic City, New Jersey, USA",28
+35,UFC 31: Locked & Loaded,UFC,2001-05-04,Trump Taj Mahal Casino Resort,"Atlantic City, New Jersey, USA",29
+36,UFC 32: Showdown in the Meadowlands,UFC,2001-06-29,Continental Airlines Arena,"East Rutherford, New Jersey, USA",30
+37,UFC 33: Victory in Vegas,UFC,2001-09-28,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",31
+38,UFC 34: High Voltage,UFC,2001-11-02,MGM Grand Arena,"Las Vegas, Nevada, USA",32
+39,UFC 35: Throwdown,UFC,2002-01-11,Mohegan Sun Arena,"Uncasville, Connecticut, USA",33
+40,UFC 36: Worlds Collide,UFC,2002-03-22,MGM Grand Arena,"Las Vegas, Nevada, USA",34
+41,UFC 37: High Impact,UFC,2002-05-10,CenturyTel Center,"Bossier City, Louisiana, USA",35
+42,UFC 37.5: As Real As It Gets,UFC,2002-06-22,Bellagio,"Las Vegas, Nevada, USA",36
+43,UFC 38: Brawl at the Hall,UFC,2002-07-13,Royal Albert Hall,"London, England",37
+44,UFC 39: The Warriors Return,UFC,2002-09-27,Mohegan Sun Arena,"Uncasville, Connecticut, USA",38
+46,UFC 41: Onslaught,UFC,2003-02-28,Boardwalk Hall,"Atlantic City, New Jersey, USA",39
+47,UFC 42: Sudden Impact,UFC,2003-04-25,AmericanAirlines Arena,"Miami, Florida, USA",40
+48,UFC 43: Meltdown,UFC,2003-06-06,Thomas and Mack Center,"Las Vegas, Nevada, USA",41
+49,UFC 44: Undisputed,UFC,2003-09-26,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",42
+50,UFC 45: Revolution,UFC,2003-11-21,Mohegan Sun Arena,"Uncasville, Connecticut, USA",43
+51,UFC 46: Super Natural,UFC,2004-01-31,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",44
+52,UFC 47: It's On,UFC,2004-04-02,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",45
+53,UFC 48: Payback,UFC,2004-06-19,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",46
+54,UFC 49: Unfinished Business,UFC,2004-08-21,MGM Grand Arena,"Las Vegas, Nevada, USA",47
+55,UFC 50: The War of '04,UFC,2004-10-22,Boardwalk Hall,"Atlantic City, New Jersey, USA",48
+56,UFC 51: Super Saturday,UFC,2005-02-05,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",49
+57,TUF 1 Finale: The Ultimate Fighter Finale,UFC,2005-04-09,Cox Pavilion,"Las Vegas, Nevada, USA",50
+58,UFC 52: Couture vs Liddell 2,UFC,2005-04-16,MGM Grand Arena,"Las Vegas, Nevada, USA",51
+59,UFC 53: Heavy Hitters,UFC,2005-06-04,Boardwalk Hall,"Atlantic City, New Jersey, USA",52
+60,UFN 1: Ultimate Fight Night,UFC,2005-08-06,Cox Pavilion,"Las Vegas, Nevada, USA",53
+61,UFC 54: Boiling Point,UFC,2005-08-20,MGM Grand Arena,"Las Vegas, Nevada, USA",54
+62,UFN 2: Ultimate Fight Night 2,UFC,2005-10-03,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",55
+63,UFC 55: Fury,UFC,2005-10-07,Mohegan Sun Arena,"Uncasville, Connecticut, USA",56
+64,TUF 2 Finale: The Ultimate Fighter 2 Finale,UFC,2005-11-05,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",57
+65,UFC 56: Full Force,UFC,2005-11-19,MGM Grand Arena,"Las Vegas, Nevada, USA",58
+66,UFN 3: Ultimate Fight Night 3,UFC,2006-01-16,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",59
+67,UFC 57: Liddell vs Couture 3,UFC,2006-02-04,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",60
+68,UFC 58: USA vs Canada,UFC,2006-03-04,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",61
+191,Strikeforce: Shamrock vs. Gracie,SF,2006-03-10,HP Pavilion at San Jose,"San Jose, California, USA",62
+69,UFN 4: Ultimate Fight Night 4,UFC,2006-04-06,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",63
+70,UFC 59: Reality Check,UFC,2006-04-15,Arrowhead Pond of Anaheim,"Anaheim, California, USA",64
+71,UFC 60: Hughes vs Gracie,UFC,2006-05-27,Staples Center,"Los Angeles, California, USA",65
+192,Strikeforce: Revenge,SF,2006-06-09,HP Pavilion at San Jose,"San Jose, California, USA",66
+72,TUF 3 Finale: The Ultimate Fighter 3 Finale,UFC,2006-06-24,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",67
+73,UFN 5: Ultimate Fight Night 5,UFC,2006-06-28,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",68
+74,UFC 61: Bitter Rivals,UFC,2006-07-08,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",69
+75,UFN 6: UFC Fight Night 6,UFC,2006-08-17,Red Rock Resort Spa and Casino,"Las Vegas, Nevada, USA",70
+76,UFC 62: Liddell vs Sobral,UFC,2006-08-26,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",71
+77,UFC 63: Hughes vs Penn,UFC,2006-09-23,Arrowhead Pond of Anaheim,"Anaheim, California, USA",72
+78,Ortiz/Shamrock 3: The Final Chapter,UFC,2006-10-10,Seminole Hard Rock Hotel and Casino,"Hollywood, Florida, USA",73
+79,UFC 64: Unstoppable,UFC,2006-10-14,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",74
+80,TUF 4 Finale: The Ultimate Fighter 4 Finale,UFC,2006-11-11,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",75
+81,UFC 65: Bad Intentions,UFC,2006-11-18,ARCO Arena,"Sacramento, California, USA",76
+193,Strikeforce: Triple Threat,SF,2006-12-08,HP Pavilion at San Jose,"San Jose, California, USA",77
+82,UFN 7: UFC Fight Night 7,UFC,2006-12-13,MCAS Miramar,"San Diego, California, USA",78
+83,UFC 66: Liddell vs. Ortiz 2,UFC,2006-12-30,MGM Grand Arena,"Las Vegas, Nevada, USA",79
+160,WEC 25: McCullough vs. Cope,WEC,2007-01-20,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",80
+84,UFN 8: UFC Fight Night 8,UFC,2007-01-25,Seminole Hard Rock Hotel and Casino,"Hollywood, Florida, USA",81
+85,UFC 67: All or Nothing,UFC,2007-02-03,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",82
+399,Strikeforce: Young Guns,SF,2007-02-10,San Jose Civic Auditorium,"San Jose, California, USA",83
+86,UFC 68: The Uprising,UFC,2007-03-03,Nationwide Arena,"Columbus, Ohio, USA",84
+161,WEC 26: Condit vs. Alessio,WEC,2007-03-24,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",85
+87,UFN 9: UFC Fight Night 9,UFC,2007-04-05,Palms Casino Resort,"Las Vegas, Nevada, USA",86
+88,UFC 69: Shootout,UFC,2007-04-07,Toyota Center,"Houston, Texas, USA",87
+89,UFC 70: Nations Collide,UFC,2007-04-21,Manchester Evening News Arena,"Manchester, England",88
+162,WEC 27: Marshall vs. McElfresh,WEC,2007-05-12,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",89
+90,UFC 71: Liddell vs. Jackson,UFC,2007-05-26,MGM Grand Arena,"Las Vegas, Nevada, USA",90
+163,WEC 28: WrekCage,WEC,2007-06-03,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",91
+91,UFN 10: UFC Fight Night 10,UFC,2007-06-12,Seminole Hard Rock Hotel and Casino,"Hollywood, Florida, USA",92
+92,UFC 72: Victory,UFC,2007-06-16,The Odyssey,"Belfast, Northern Ireland",93
+194,Strikeforce: Shamrock vs. Baroni,SF,2007-06-22,HP Pavilion at San Jose,"San Jose, California, USA",94
+94,UFC 73: Stacked,UFC,2007-07-07,ARCO Arena,"Sacramento, California, USA",95
+164,WEC 29: Condit vs. Larson,WEC,2007-08-05,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",96
+95,UFC 74: Respect,UFC,2007-08-25,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",97
+165,WEC 30: McCullough vs. Crunkilton,WEC,2007-09-05,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",98
+96,UFC 75: Champion vs. Champion,UFC,2007-09-08,The O2 Arena,"London, England",99
+97,UFN 11: UFC Fight Night 11,UFC,2007-09-19,Palms Casino Resort,"Las Vegas, Nevada, USA",100
+98,UFC 76: Knockout,UFC,2007-09-22,Honda Center,"Anaheim, California, USA",101
+195,Strikeforce: Playboy Mansion,SF,2007-09-29,The Playboy Mansion,"Los Angeles, California, USA",102
+99,UFC 77: Hostile Territory,UFC,2007-10-20,U.S. Bank Arena,"Cincinnati, Ohio, USA",103
+196,"Strikeforce: Four Men Enter, One Man Survives",SF,2007-11-16,HP Pavilion at San Jose,"San Jose, California, USA",104
+100,UFC 78: Validation,UFC,2007-11-17,Prudential Center,"Newark, New Jersey, USA",105
+102,TUF 6 Finale: The Ultimate Fighter 6 Finale,UFC,2007-12-08,Palms Casino Resort,"Las Vegas, Nevada, USA",106
+166,WEC 31: Faber vs. Curran,WEC,2007-12-12,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",107
+101,UFC 79: Nemesis,UFC,2007-12-29,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",108
+103,UFC 80: Rapid Fire,UFC,2008-01-19,Metro Radio Arena,"Newcastle, England",109
+104,UFN 12: UFC Fight Night 12,UFC,2008-01-23,Palms Casino Resort,"Las Vegas, Nevada, USA",110
+400,Strikeforce: Young Guns 2,SF,2008-02-01,San Jose Civic Auditorium,"San Jose, California, USA",111
+105,UFC 81: Breaking Point,UFC,2008-02-02,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",112
+167,WEC 32: Condit vs. Prater,WEC,2008-02-13,Santa Ana Star Center,"Rio Rancho, New Mexico, USA",113
+197,Strikeforce: At The Dome,SF,2008-02-23,Tacoma Dome,"Tacoma, Washington, USA",114
+106,UFC 82: Pride of a Champion,UFC,2008-03-01,Nationwide Arena,"Columbus, Ohio, USA",115
+168,WEC 33: Marshall vs. Stann,WEC,2008-03-26,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",116
+198,Strikeforce: Shamrock vs. Le,SF,2008-03-29,HP Pavilion at San Jose,"San Jose, California, USA",117
+107,UFN 13: UFC Fight Night 13,UFC,2008-04-02,Broomfield Event Center,"Broomfield, Colorado, USA",118
+108,UFC 83: Serra vs. St. Pierre 2,UFC,2008-04-19,Bell Centre,"Montreal, Quebec, Canada",119
+109,UFC 84: Ill Will,UFC,2008-05-24,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",120
+169,WEC 34: Faber vs. Pulver,WEC,2008-06-01,ARCO Arena,"Sacramento, California, USA",121
+110,UFC 85: Bedlam,UFC,2008-06-07,The O2 Arena,"London, England",122
+111,TUF 7 Finale: The Ultimate Fighter 7 Finale,UFC,2008-06-21,Palms Casino Resort,"Las Vegas, Nevada, USA",123
+199,Strikeforce: Melendez vs. Thomson,SF,2008-06-27,HP Pavilion at San Jose,"San Jose, California, USA",124
+112,UFC 86: Jackson vs. Griffin,UFC,2008-07-05,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",125
+113,UFN 14: Silva vs. Irvin,UFC,2008-07-19,Palms Casino Resort,"Las Vegas, Nevada, USA",126
+170,WEC 35: Condit vs. Miura,WEC,2008-08-03,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",127
+114,UFC 87: Seek and Destroy,UFC,2008-08-09,Target Center,"Minneapolis, Minnesota, USA",128
+115,UFC 88: Breakthrough,UFC,2008-09-06,Philips Arena,"Atlanta, Georgia, USA",129
+401,Strikeforce: Young Guns 3,SF,2008-09-13,San Jose Civic Auditorium,"San Jose, California, USA",130
+116,UFN 15: Diaz vs. Neer,UFC,2008-09-17,Omaha Civic Auditorium,"Omaha, Nebraska, USA",131
+200,Strikeforce: At The Mansion II,SF,2008-09-20,The Playboy Mansion,"Los Angeles, California, USA",132
+201,Strikeforce: Payback,SF,2008-10-03,Broomfield Events Center,"Broomfield, Colorado, USA",133
+117,UFC 89: Bisping vs. Leben,UFC,2008-10-18,National Indoor Arena,"Birmingham, England",134
+118,UFC 90: Silva vs. Cote,UFC,2008-10-25,Allstate Arena,"Rosemont, Illinois, USA",135
+171,WEC 36: Faber vs. Brown,WEC,2008-11-05,Seminole Hard Rock Hotel and Casino,"Hollywood, Florida, USA",136
+119,UFC 91: Couture vs. Lesnar,UFC,2008-11-15,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",137
+202,Strikeforce: Destruction,SF,2008-11-21,HP Pavilion at San Jose,"San Jose, California, USA",138
+172,WEC 37: Torres vs. Tapia,WEC,2008-12-03,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",139
+120,UFN 16: Fight for the Troops,UFC,2008-12-10,Crown Coliseum,"Fayetteville, North Carolina, USA",140
+121,TUF 8 Finale: The Ultimate Fighter 8 Finale,UFC,2008-12-13,Palms Casino Resort,"Las Vegas, Nevada, USA",141
+122,UFC 92: The Ultimate 2008,UFC,2008-12-27,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",142
+123,UFC 93: Franklin vs. Henderson,UFC,2009-01-17,"The O2, Dublin","Dublin, Ireland",143
+173,WEC 38: Varner vs. Cerrone,WEC,2009-01-25,San Diego Sports Arena,"San Diego, California, USA",144
+124,UFC 94: St. Pierre vs. Penn 2,UFC,2009-01-31,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",145
+125,UFN 17: Lauzon vs. Stephens,UFC,2009-02-07,USF Sun Dome,"Tampa, Florida, USA",146
+126,UFC 95: Sanchez vs. Stevenson,UFC,2009-02-21,The O2 Arena,"London, England",147
+174,WEC 39: Brown vs. Garcia,WEC,2009-03-01,American Bank Center,"Corpus Christi, Texas, USA",148
+127,UFC 96: Jackson vs. Jardine,UFC,2009-03-07,Nationwide Arena,"Columbus, Ohio, USA",149
+128,UFN 18: Condit vs. Kampmann,UFC,2009-04-01,Sommet Center,"Nashville, Tennessee, USA",150
+293,Bellator 1: Bellator I,BELLATOR,2009-04-03,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",151
+175,WEC 40: Torres vs. Mizugaki,WEC,2009-04-05,UIC Pavilion,"Chicago, Illinois, USA",152
+292,Bellator 2: Bellator II,BELLATOR,2009-04-10,Mohegan Sun Arena,"Uncasville, Connecticut, USA",153
+203,Strikeforce: Shamrock vs. Diaz,SF,2009-04-11,HP Pavilion at San Jose,"San Jose, California, USA",154
+291,Bellator 3 & 4: Bellator III & IV,BELLATOR,2009-04-17,Lloyd Noble Center,"Norman, Oklahoma, USA",155
+129,UFC 97: Redemption,UFC,2009-04-18,Bell Centre,"Montreal, Quebec, Canada",156
+290,Bellator 5: Bellator V,BELLATOR,2009-05-01,Hara Arena,"Dayton, Ohio, USA",157
+289,Bellator 6: Bellator VI,BELLATOR,2009-05-08,Central Pavilion Arena,"Robstown, Texas, USA",158
+226,ShoMMA 1: Evangelista vs. Aina,SF,2009-05-15,Save Mart Center,"Fresno, California, USA",159
+288,Bellator 7: Bellator VII,BELLATOR,2009-05-15,Aragon Ballroom,"Chicago, Illinois, USA",160
+130,UFC 98: Evans vs. Machida,UFC,2009-05-23,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",161
+286,Bellator 9: Bellator IX,BELLATOR,2009-05-29,Monroe Civic Center,"Monroe, Louisiana, USA",162
+285,Bellator 10: Bellator X,BELLATOR,2009-06-05,Citizens Business Bank Arena,"Ontario, California, USA",163
+204,Strikeforce: Lawler vs. Shields,SF,2009-06-06,Scottrade Center,"St. Louis, Missouri, USA",164
+176,WEC 41: Brown vs. Faber II,WEC,2009-06-07,ARCO Arena,"Sacramento, California, USA",165
+284,Bellator 11: Bellator XI,BELLATOR,2009-06-12,Mohegan Sun Arena,"Uncasville, Connecticut, USA",166
+131,UFC 99: The Comeback,UFC,2009-06-13,Lanxess Arena,"Cologne, Germany",167
+227,ShoMMA 2: Villasenor vs. Cyborg,SF,2009-06-19,ShoWare Center,"Kent, Washington, USA",168
+283,Bellator 12: Bellator XII,BELLATOR,2009-06-19,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",169
+132,TUF 9 Finale: The Ultimate Fighter 9 Finale,UFC,2009-06-20,Palms Casino Resort,"Las Vegas, Nevada, USA",170
+133,UFC 100: Lesnar vs. Mir,UFC,2009-07-11,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",171
+134,UFC 101: Declaration,UFC,2009-08-08,Wachovia Center,"Philadelphia, Pennsylvania, USA",172
+177,WEC 42: Torres vs. Bowles,WEC,2009-08-09,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",173
+205,Strikeforce: Carano vs. Cyborg,SF,2009-08-15,HP Pavilion at San Jose,"San Jose, California, USA",174
+135,UFC 102: Couture vs. Nogueira,UFC,2009-08-29,Rose Garden,"Portland, Oregon, USA",175
+136,UFN 19: Diaz vs. Guillard,UFC,2009-09-16,Cox Convention Center,"Oklahoma City, Oklahoma, USA",176
+137,UFC 103: Franklin vs. Belfort,UFC,2009-09-19,American Airlines Center,"Dallas, Texas, USA",177
+230,ShoMMA 3: Kennedy vs. Cummings,SF,2009-09-25,SpiritBank Event Center,"Bixby, Oklahoma, USA",178
+178,WEC 43: Cerrone vs. Henderson,WEC,2009-10-10,AT&T Center,"San Antonio, Texas, USA",179
+138,UFC 104: Machida vs. Shogun,UFC,2009-10-24,Staples Center,"Los Angeles, California, USA",180
+231,ShoMMA 4: Gurgel vs. Evangelista,SF,2009-11-06,Save Mart Center,"Fresno, California, USA",181
+206,Strikeforce: Fedor vs. Rogers,SF,2009-11-07,Sears Center,"Hoffman Estates, Illinois, USA",182
+139,UFC 105: Couture vs. Vera,UFC,2009-11-14,Manchester Evening News Arena,"Manchester, England",183
+179,WEC 44: Brown vs. Aldo,WEC,2009-11-18,The Pearl at The Palms,"Las Vegas, Nevada, USA",184
+232,ShoMMA 5: Woodley vs. Bears,SF,2009-11-20,Memorial Hall,"Kansas City, Kansas, USA",185
+140,UFC 106: Ortiz vs. Griffin 2,UFC,2009-11-21,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",186
+141,TUF 10 Finale: The Ultimate Fighter 10 Finale,UFC,2009-12-05,Palms Casino Resort,"Las Vegas, Nevada, USA",187
+142,UFC 107: Penn vs. Sanchez,UFC,2009-12-12,FedExForum,"Memphis, Tennessee, USA",188
+207,Strikeforce: Evolution,SF,2009-12-19,HP Pavilion at San Jose,"San Jose, California, USA",189
+180,WEC 45: Cerrone vs. Ratcliff,WEC,2009-12-29,The Pearl at The Palms,"Las Vegas, Nevada, USA",190
+143,UFC 108: Evans vs. Silva,UFC,2010-01-02,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",191
+181,WEC 46: Varner vs. Henderson,WEC,2010-01-10,ARCO Arena,"Sacramento, California, USA",192
+144,UFN 20: Maynard vs. Diaz,UFC,2010-01-11,Patriot Center,"Fairfax, Virginia, USA",193
+208,Strikeforce: Miami,SF,2010-01-30,BankAtlantic Center,"Sunrise, Florida, USA",194
+145,UFC 109: Relentless,UFC,2010-02-06,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",195
+146,UFC 110: Nogueira vs. Velasquez,UFC,2010-02-21,Acer Arena,"Sydney, Australia",196
+233,ShoMMA 6: Kaufman vs. Hashi,SF,2010-02-26,San Jose Civic Auditorium,"San Jose, California, USA",197
+182,WEC 47: Bowles vs. Cruz,WEC,2010-03-06,Nationwide Arena,"Columbus, Ohio, USA",198
+147,UFC Live: Vera vs. Jones,UFC,2010-03-21,1stBank Center,"Broomfield, Colorado, USA",199
+234,ShoMMA 7: Johnson vs. Mahe,SF,2010-03-26,Save Mart Center,"Fresno, California, USA",200
+148,UFC 111: St. Pierre vs. Hardy,UFC,2010-03-27,Prudential Center,"Newark, New Jersey, USA",201
+149,UFN 21: Florian vs. Gomi,UFC,2010-03-31,Bojangles Coliseum,"Charlotte, North Carolina, USA",202
+282,Bellator 13: Bellator XIII,BELLATOR,2010-04-08,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",203
+150,UFC 112: Invincible,UFC,2010-04-10,Ferrari World,"Abu Dhabi, United Arab Emirates",204
+281,Bellator 14: Bellator XIV,BELLATOR,2010-04-15,Chicago Theatre,"Chicago, Illinois, USA",205
+209,Strikeforce: Nashville,SF,2010-04-17,Bridgestone Arena,"Nashville, Tennessee, USA",206
+280,Bellator 15: Bellator XV,BELLATOR,2010-04-22,Mohegan Sun Arena,"Uncasville, Connecticut, USA",207
+183,WEC 48: Aldo vs. Faber,WEC,2010-04-24,ARCO Arena,"Sacramento, California, USA",208
+278,Bellator 16: Bellator XVI,BELLATOR,2010-04-29,Kansas City Power & Light District,"Kansas City, Missouri, USA",209
+277,Bellator 17: Bellator XVII,BELLATOR,2010-05-06,Citi Performing Arts Center: Wang Theatre,"Boston, Massachusetts, USA",210
+152,UFC 113: Machida vs. Shogun 2,UFC,2010-05-08,Bell Centre,"Montreal, Quebec, Canada",211
+275,Bellator 18: Bellator XVIII,BELLATOR,2010-05-13,Monroe Civic Center,"Monroe, Louisiana, USA",212
+210,Strikeforce: Heavy Artillery,SF,2010-05-15,Scottrade Center,"St. Louis, Missouri, USA",213
+274,Bellator 19: Bellator XIX,BELLATOR,2010-05-20,Verizon Theater,"Grand Prairie, Texas, USA",214
+235,ShoMMA 8: Lindland vs. Casey,SF,2010-05-21,Rose Garden,"Portland, Oregon, USA",215
+273,Bellator 20: Bellator XX,BELLATOR,2010-05-27,Majestic Theatre,"San Antonio, Texas, USA",216
+153,UFC 114: Rampage vs. Evans,UFC,2010-05-29,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",217
+272,Bellator 21: Bellator XXI,BELLATOR,2010-06-10,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",218
+155,UFC 115: Liddell vs. Franklin,UFC,2010-06-12,General Motors Place,"Vancouver, British Columbia, Canada",219
+211,Strikeforce: Los Angeles,SF,2010-06-16,Nokia Theatre,"Los Angeles, California, USA",220
+271,Bellator 22: Bellator XXII,BELLATOR,2010-06-17,Kansas City Power & Light District,"Kansas City, Missouri, USA",221
+156,TUF 11 Finale: The Ultimate Fighter 11 Finale,UFC,2010-06-19,Palms Casino Resort,"Las Vegas, Nevada, USA",222
+184,WEC 49: Varner vs. Shalorus,WEC,2010-06-20,Rexall Place,"Edmonton, Alberta, Canada",223
+270,Bellator 23: Bellator XXIII,BELLATOR,2010-06-24,Fourth Street Live!,"Louisville, Kentucky, USA",224
+212,Strikeforce: Fedor vs. Werdum,SF,2010-06-26,HP Pavilion at San Jose,"San Jose, California, USA",225
+157,UFC 116: Lesnar vs. Carwin,UFC,2010-07-03,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",226
+236,ShoMMA 9: Rosario vs. Mahe,SF,2010-07-23,Comcast Arena at Everett,"Everett, Washington, USA",227
+158,UFC Live: Jones vs. Matyushenko,UFC,2010-08-01,San Diego Sports Arena,"San Diego, California, USA",228
+159,UFC 117: Silva vs. Sonnen,UFC,2010-08-07,Oracle Arena,"Oakland, California, USA",229
+269,Bellator 24: Bellator XXIV,BELLATOR,2010-08-12,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",230
+237,ShoMMA 10: Riggs vs. Taylor,SF,2010-08-13,Dodge Theatre,"Phoenix, Arizona, USA",231
+185,WEC 50: Cruz vs. Benavidez 2,WEC,2010-08-18,The Pearl at The Palms,"Las Vegas, Nevada, USA",232
+268,Bellator 25: Bellator XXV,BELLATOR,2010-08-19,Chicago Theatre,"Chicago, Illinois, USA",233
+213,Strikeforce: Houston,SF,2010-08-21,Toyota Center,"Houston, Texas, USA",234
+266,Bellator 26: Bellator XXVI,BELLATOR,2010-08-26,Kansas City Power & Light District,"Kansas City, Missouri, USA",235
+186,UFC 118: Edgar vs. Penn 2,UFC,2010-08-28,TD Garden,"Boston, Massachusetts, USA",236
+265,Bellator 27: Bellator XXVII,BELLATOR,2010-09-02,Majestic Theatre,"San Antonio, Texas, USA",237
+264,Bellator 28: Bellator XXVIII,BELLATOR,2010-09-09,Mahalia Jackson Theater,"New Orleans, Louisiana, USA",238
+188,UFN 22: Marquardt vs. Palhares,UFC,2010-09-15,Frank Erwin Center,"Austin, Texas, USA",239
+263,Bellator 29: Bellator XXIX,BELLATOR,2010-09-16,The Rave,"Milwaukee, Wisconsin, USA",240
+262,Bellator 30: Bellator XXX,BELLATOR,2010-09-23,Fourth Street Live!,"Louisville, Kentucky, USA",241
+189,UFC 119: Mir vs. Cro Cop,UFC,2010-09-25,Conseco Fieldhouse,"Indianapolis, Indiana, USA",242
+261,Bellator 31: Bellator XXXI,BELLATOR,2010-09-30,L'Auberge du Lac Resort,"Lake Charles, Louisiana, USA",243
+190,WEC 51: Aldo vs. Gamburyan,WEC,2010-09-30,1stBank Center,"Broomfield, Colorado, USA",244
+214,Strikeforce: Diaz vs. Noons II,SF,2010-10-09,HP Pavilion at San Jose,"San Jose, California, USA",245
+259,Bellator 32: Bellator XXXII,BELLATOR,2010-10-14,Kansas City Power & Light District,"Kansas City, Missouri, USA",246
+216,UFC 120: Bisping vs. Akiyama,UFC,2010-10-16,The O2 Arena,"London, England",247
+258,Bellator 33: Bellator XXXIII,BELLATOR,2010-10-21,Liacouras Center,"Philadelphia, Pennsylvania, USA",248
+238,ShoMMA 11: Bowling vs. Voelker,SF,2010-10-22,Save Mart Center,"Fresno, California, USA",249
+217,UFC 121: Lesnar vs. Velasquez,UFC,2010-10-23,Honda Center,"Anaheim, California, USA",250
+257,Bellator 34: Bellator XXXIV,BELLATOR,2010-10-28,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",251
+218,WEC 52: Faber vs. Mizugaki,WEC,2010-11-11,The Pearl at The Palms,"Las Vegas, Nevada, USA",252
+219,UFC 122: Marquardt vs. Okami,UFC,2010-11-13,König Pilsener Arena,"Oberhausen, Germany",253
+239,ShoMMA 12: Wilcox vs. Ribeiro,SF,2010-11-19,Jackson Convention Complex,"Jackson, Mississippi, USA",254
+220,UFC 123: Rampage vs. Machida,UFC,2010-11-20,Palace of Auburn Hills,"Auburn Hills, Michigan, USA",255
+221,TUF 12 Finale: The Ultimate Fighter 12 Finale,UFC,2010-12-04,Palms Casino Resort,"Las Vegas, Nevada, USA",256
+222,Strikeforce: Henderson vs. Babalu 2,SF,2010-12-04,Scottrade Center,"St. Louis, Missouri, USA",257
+223,UFC 124: St-Pierre vs. Koscheck 2,UFC,2010-12-11,Bell Centre,"Montreal, Quebec, Canada",258
+224,WEC 53: Henderson vs. Pettis,WEC,2010-12-16,Jobing.com Arena,"Glendale, Arizona, USA",259
+225,UFC 125: Resolution,UFC,2011-01-01,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",260
+240,ShoMMA 13: Woodley vs. Saffiedine,SF,2011-01-07,Nashville Municipal Auditorium,"Nashville, Tennessee, USA",261
+228,UFN 23: Fight for the Troops 2,UFC,2011-01-22,Fort Hood,"Killeen, Texas, USA",262
+241,UFC 126: Silva vs. Belfort,UFC,2011-02-05,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",263
+242,Strikeforce: Fedor vs. Silva,SF,2011-02-12,Izod Center,"East Rutherford, New Jersey, USA",264
+243,ShoMMA 14: Beerbohm vs. Healy,SF,2011-02-18,Cedar Park Center,"Cedar Park, Texas, USA",265
+244,UFC 127: Penn vs. Fitch,UFC,2011-02-27,Acer Arena,"Sydney, Australia",266
+245,UFC Live: Sanchez vs. Kampmann,UFC,2011-03-03,KFC Yum! Center,"Louisville, Kentucky, USA",267
+246,Strikeforce: Feijao vs. Henderson,SF,2011-03-05,Nationwide Arena,"Columbus, Ohio, USA",268
+254,Bellator 35: Bellator XXXV,BELLATOR,2011-03-05,Tachi Palace Hotel & Casino,"Lemoore, California, USA",269
+247,UFC 128: Shogun vs. Jones,UFC,2011-03-19,Prudential Center,"Newark, New Jersey, USA",270
+252,Bellator 37: Bellator XXXVII,BELLATOR,2011-03-19,Lucky Star Casino,"Concho, Oklahoma, USA",271
+248,UFN 24: Nogueira vs. Davis,UFC,2011-03-26,Key Arena,"Seattle, Washington, USA",272
+251,Bellator 38: Bellator XXXVIII,BELLATOR,2011-03-26,Harrah's Tunica Hotel and Casino,"Tunica, Mississippi, USA",273
+249,ShoMMA 15: Wilcox vs. Damm,SF,2011-04-01,Stockton Arena,"Stockton, California, USA",274
+250,Bellator 39: Bellator XXXIX,BELLATOR,2011-04-02,Mohegan Sun Arena,"Uncasville, Connecticut, USA",275
+255,Strikeforce: Diaz vs. Daley,SF,2011-04-09,Valley View Casino Center,"San Diego, California, USA",276
+256,Bellator 40: Bellator XL,BELLATOR,2011-04-09,First Council Casino,"Newkirk, Oklahoma, USA",277
+260,Bellator 41: Bellator XLI,BELLATOR,2011-04-16,Cocopah Resort and Casino,"Yuma, Arizona, USA",278
+267,Bellator 42: Bellator XLII,BELLATOR,2011-04-23,Lucky Star Casino,"Concho, Oklahoma, USA",279
+276,UFC 129: St-Pierre vs. Shields,UFC,2011-04-30,Rogers Centre,"Toronto, Ontario, Canada",280
+279,Bellator 43: Bellator XLIII,BELLATOR,2011-05-07,First Council Casino,"Newkirk, Oklahoma, USA",281
+287,Bellator 44: Bellator XLIV,BELLATOR,2011-05-14,Harrah's Resort,"Atlantic City, New Jersey, USA",282
+294,Bellator 45: Bellator XLV,BELLATOR,2011-05-21,L'Auberge du Lac Resort,"Lake Charles, Louisiana, USA",283
+295,UFC 130: Rampage vs. Hamill,UFC,2011-05-28,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",284
+296,TUF 13 Finale: The Ultimate Fighter 13 Finale,UFC,2011-06-04,Palms Casino Resort,"Las Vegas, Nevada, USA",285
+297,UFC 131: dos Santos vs. Carwin,UFC,2011-06-11,Rogers Arena,"Vancouver, British Columbia, Canada",286
+298,Strikeforce: Overeem vs. Werdum,SF,2011-06-18,American Airlines Center,"Dallas, Texas, USA",287
+299,ShoMMA 16: Fodor vs. Terry,SF,2011-06-24,ShoWare Center,"Kent, Washington, USA",288
+300,Bellator 46: Bellator XLVI,BELLATOR,2011-06-25,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",289
+301,UFC Live: Kongo vs. Barry,UFC,2011-06-26,Consol Energy Center,"Pittsburgh, Pennsylvania, USA",290
+302,UFC 132: Cruz vs. Faber,UFC,2011-07-02,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",291
+303,ShoMMA 17: Voelker vs. Bowling III,SF,2011-07-22,Palms Casino Resort,"Las Vegas, Nevada, USA",292
+304,Bellator 47: Bellator XLVII,BELLATOR,2011-07-23,Casino Rama,"Rama, Ontario, Canada",293
+305,Strikeforce: Fedor vs. Henderson,SF,2011-07-30,Sears Centre,"Hoffman Estates, Illinois, USA",294
+306,UFC 133: Evans vs. Ortiz,UFC,2011-08-06,Wells Fargo Center,"Philadelphia, Pennsylvania, USA",295
+307,ShoMMA 18: Gurgel vs. Duarte,SF,2011-08-12,Palms Casino Resort,"Las Vegas, Nevada, USA",296
+308,UFC Live: Hardy vs. Lytle,UFC,2011-08-14,Bradley Center,"Milwaukee, Wisconsin, USA",297
+309,Bellator 48: Bellator XLVIII,BELLATOR,2011-08-20,Mohegan Sun Arena,"Uncasville, Connecticut, USA",298
+310,UFC 134: Silva vs. Okami,UFC,2011-08-27,HSBC Arena,"Rio de Janeiro, Brazil",299
+312,Bellator 49: Bellator XLIX,BELLATOR,2011-09-10,Caesars Atlantic City,"Atlantic City, New Jersey, USA",300
+311,Strikeforce: Barnett vs. Kharitonov,SF,2011-09-10,U.S. Bank Arena,"Cincinnati, Ohio, USA",301
+313,UFN 25: Shields vs. Ellenberger,UFC,2011-09-17,Ernest N. Morial Convention Center,"New Orleans, Louisiana, USA",302
+314,Bellator 50: Bellator L,BELLATOR,2011-09-17,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",303
+315,ShoMMA 19: Larkin vs. Rossborough,SF,2011-09-23,Palms Casino Resort,"Las Vegas, Nevada, USA",304
+317,UFC 135: Jones vs. Rampage,UFC,2011-09-24,Pepsi Center,"Denver, Colorado, USA",305
+316,Bellator 51: Bellator LI,BELLATOR,2011-09-24,Canton Memorial Civic Center,"Canton, Ohio, USA",306
+318,UFC Live: Cruz vs. Johnson,UFC,2011-10-01,Verizon Center,"Washington, District of Columbia, USA",307
+319,Bellator 52: Bellator LII,BELLATOR,2011-10-01,L'Auberge du Lac Resort,"Lake Charles, Louisiana, USA",308
+321,UFC 136: Edgar vs. Maynard III,UFC,2011-10-08,Toyota Center,"Houston, Texas, USA",309
+320,Bellator 53: Bellator LIII,BELLATOR,2011-10-08,Buffalo Run Hotel & Casino,"Miami, Oklahoma, USA",310
+322,Bellator 54: Bellator LIV,BELLATOR,2011-10-15,Boardwalk Hall,"Atlantic City, New Jersey, USA",311
+323,Bellator 55: Bellator LV,BELLATOR,2011-10-22,Cocopah Resort and Casino,"Yuma, Arizona, USA",312
+325,UFC 137: Penn vs. Diaz,UFC,2011-10-29,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",313
+324,Bellator 56: Bellator LVI,BELLATOR,2011-10-29,Memorial Hall,"Kansas City, Kansas, USA",314
+326,UFC 138: Leben vs. Munoz,UFC,2011-11-05,LG Arena,"Birmingham, England",315
+327,UFC on Fox 1: Velasquez vs. Dos Santos,UFC,2011-11-12,Honda Center,"Anaheim, California, USA",316
+328,Bellator 57: Bellator LVII,BELLATOR,2011-11-12,Casino Rama,"Rama, Ontario, Canada",317
+329,ShoMMA 20: Britt vs. Sayers,SF,2011-11-18,Palms Casino Resort,"Las Vegas, Nevada, USA",318
+331,UFC 139: Shogun vs. Henderson,UFC,2011-11-19,HP Pavilion,"San Jose, California, USA",319
+330,Bellator 58: Bellator LVIII,BELLATOR,2011-11-19,Seminole Hard Rock Hotel and Casino,"Hollywood, Florida, USA",320
+332,Bellator 59: Bellator LIX,BELLATOR,2011-11-26,Caesars Atlantic City,"Atlantic City, New Jersey, USA",321
+333,TUF 14 Finale: The Ultimate Fighter 14 Finale,UFC,2011-12-03,Palms Casino Resort,"Las Vegas, Nevada, USA",322
+334,UFC 140: Jones vs. Machida,UFC,2011-12-10,Air Canada Centre,"Toronto, Ontario, Canada",323
+335,Strikeforce: Melendez vs. Masvidal,SF,2011-12-17,Valley View Casino Center,"San Diego, California, USA",324
+336,UFC 141: Lesnar vs Overeem,UFC,2011-12-30,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",325
+337,Strikeforce: Rockhold vs. Jardine,SF,2012-01-07,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",326
+338,UFC 142: Aldo vs. Mendes,UFC,2012-01-14,HSBC Arena,"Rio de Janeiro, Brazil",327
+339,UFC on FX 1: Guillard vs. Miller,UFC,2012-01-20,Bridgestone Arena,"Nashville, Tennessee, USA",328
+340,UFC on Fox 2: Evans vs. Davis,UFC,2012-01-28,United Center,"Chicago, Illinois, USA",329
+341,UFC 143: Diaz vs. Condit,UFC,2012-02-04,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",330
+342,UFC on Fuel 1: Sanchez vs. Ellenberger,UFC,2012-02-15,Omaha Civic Auditorium,"Omaha, Nebraska, USA",331
+573,KSW 18: Unfinished Sympathy,KSW,2012-02-25,Orlen Arena,"Plock, Poland",332
+343,UFC 144: Edgar vs. Henderson,UFC,2012-02-26,Saitama Super Arena,"Saitama, Japan",333
+345,Strikeforce: Tate vs. Rousey,SF,2012-03-03,Nationwide Arena,"Columbus, Ohio, USA",334
+344,UFC on FX 2: Alves vs. Kampmann,UFC,2012-03-03,Allphones Arena,"Sydney, Australia",335
+346,Bellator 60: Bellator LX,BELLATOR,2012-03-09,The Venue at Horseshoe Casino,"Hammond, Indiana, USA",336
+347,Bellator 61: Bellator LXI,BELLATOR,2012-03-16,Horseshoe Riverdome,"Bossier City, Louisiana, USA",337
+348,Bellator 62: Bellator LXII,BELLATOR,2012-03-23,Laredo Energy Arena,"Laredo, Texas, USA",338
+349,Bellator 63: Bellator LXIII,BELLATOR,2012-03-30,Mohegan Sun Arena,"Uncasville, Connecticut, USA",339
+350,Bellator 64: Bellator LXIV,BELLATOR,2012-04-06,Caesars Windsor,"Windsor, Ontario, Canada",340
+351,Bellator 65: Bellator LXV,BELLATOR,2012-04-13,Boardwalk Hall,"Atlantic City, New Jersey, USA",341
+352,UFC on Fuel 2: Gustafsson vs. Silva,UFC,2012-04-14,Ericsson Globe Arena,"Stockholm, Sweden",342
+353,Bellator 66: Bellator LXVI,BELLATOR,2012-04-20,I-X Center,"Cleveland, Ohio, USA",343
+354,UFC 145: Jones vs. Evans,UFC,2012-04-21,Philips Arena,"Atlanta, Georgia, USA",344
+761,Invicta FC 1: Coenen vs. Ruyssen,INVICTA,2012-04-28,Memorial Hall,"Memorial Hall, Kansas, USA",345
+355,Bellator 67: Bellator LXVII,BELLATOR,2012-05-04,Casino Rama,"Rama, Ontario, Canada",346
+356,UFC on Fox 3: Miller vs. Diaz,UFC,2012-05-05,IZOD Center,"East Rutherford, New Jersey, USA",347
+357,Bellator 68: Bellator LXVIII,BELLATOR,2012-05-11,Caesars Hotel and Casino,"Atlantic City, New Jersey, USA",348
+574,KSW 19: Pudzianowski vs. Sapp,KSW,2012-05-12,Arena Lodz,"Lodz, Poland",349
+358,UFC on Fuel 3: Korean Zombie vs. Poirier,UFC,2012-05-15,Patriot Center,"Fairfax, Virginia, USA",350
+359,Bellator 69: Bellator LXIX,BELLATOR,2012-05-18,L'Auberge du Lac Casino Resort,"Lake Charles, Louisiana, USA",351
+360,Strikeforce: Barnett vs. Cormier,SF,2012-05-19,HP Pavilion,"San Jose, California, USA",352
+361,Bellator 70: Bellator LXX,BELLATOR,2012-05-25,New Orleans Convention Center,"New Orleans, Louisiana, USA",353
+362,UFC 146: Dos Santos vs. Mir,UFC,2012-05-26,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",354
+363,TUF 15 Finale: The Ultimate Fighter 15 Finale,UFC,2012-06-01,Palms Casino Resort,"Las Vegas, Nevada, USA",355
+364,UFC on FX 3: Johnson vs. McCall,UFC,2012-06-08,BankAtlantic Center,"Sunrise, Florida, USA",356
+366,UFC on FX 4: Maynard vs. Guida,UFC,2012-06-22,Revel Casino,"Atlantic City, New Jersey, USA",357
+365,Bellator 71: Bellator LXXI,BELLATOR,2012-06-22,"Mountaineer Casino, Racetrack and Resort","Chester, West Virginia, USA",358
+367,UFC 147: Silva vs. Franklin II,UFC,2012-06-23,Estádio Jornalista Felipe Drumond,"Belo Horizonte, Minas Gerais, Brazil",359
+368,UFC 148: Silva vs. Sonnen II,UFC,2012-07-07,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",360
+369,UFC on Fuel 4: Munoz vs. Weidman,UFC,2012-07-11,HP Pavilion,"San Jose, California, USA",361
+370,Strikeforce: Rockhold vs. Kennedy,SF,2012-07-14,Rose Garden,"Portland, Oregon, USA",362
+371,Bellator 72: Bellator LXXII,BELLATOR,2012-07-17,USF Sun Dome,"Tampa, Florida, USA",363
+372,UFC 149: Faber vs. Barao,UFC,2012-07-21,Scotiabank Saddledome,"Calgary, Alberta, Canada",364
+767,Invicta FC 2: Baszler vs. McMann,INVICTA,2012-07-28,Memorial Hall,"Kansas City, Kansas, USA",365
+373,UFC on Fox 4: Shogun vs. Vera,UFC,2012-08-04,Staples Center,"Los Angeles, California, USA",366
+374,UFC 150: Henderson vs. Edgar II,UFC,2012-08-11,Pepsi Center,"Denver, Colorado, USA",367
+375,Strikeforce: Rousey vs. Kaufman,SF,2012-08-18,Valley View Casino Center,"San Diego, California, USA",368
+376,Bellator 73: Bellator LXXIII,BELLATOR,2012-08-24,Harrah's Tunica Hotel and Casino,"Tunica, Mississippi, USA",369
+575,KSW 20: Fighting Symphony,KSW,2012-09-15,Ergo Arena,"Gdansk, Poland",370
+377,UFC 152: Jones vs. Belfort,UFC,2012-09-22,Air Canada Centre,"Toronto, Ontario, Canada",371
+379,Bellator 74: Bellator LXXIV,BELLATOR,2012-09-28,Caesars Atlantic City,"Atlantic City, New Jersey, USA",372
+380,UFC on Fuel 5: Struve vs. Miocic,UFC,2012-09-29,Capital FM Arena,"Nottingham, England",373
+382,UFC on FX 5: Browne vs. Bigfoot,UFC,2012-10-05,Target Center,"Minneapolis, Minnesota, USA",374
+381,Bellator 75: Bellator LXXV,BELLATOR,2012-10-05,Horseshoe Hammond,"Hammond, Indiana, USA",375
+768,Invicta FC 3: Penne vs. Sugiyama,INVICTA,2012-10-06,Memorial Hall,"Kansas City, Kansas, USA",376
+383,Bellator 76: Bellator LXXVI,BELLATOR,2012-10-12,Caesars Windsor,"Windsor, Ontario, Canada",377
+384,UFC 153: Silva vs. Bonnar,UFC,2012-10-13,HSBC Arena,"Rio de Janeiro, Brazil",378
+385,Bellator 77: Bellator LXXVII,BELLATOR,2012-10-19,Reading Eagle Theater,"Reading, Pennsylvania, USA",379
+386,Bellator 78: Bellator LXXVIII,BELLATOR,2012-10-26,Nutter Center,"Dayton, Ohio, USA",380
+387,Bellator 79: Bellator LXXIX,BELLATOR,2012-11-02,Casino Rama,"Rama, Ontario, Canada",381
+420,WSOF 1: Arlovski vs. Cole,WSOF,2012-11-03,Planet Hollywood Resort and Casino,"Las Vegas, Nevada, USA",382
+388,Bellator 80: Bellator LXXX,BELLATOR,2012-11-09,Seminole Hard Rock Hotel & Casino,"Hollywood, Florida, USA",383
+389,UFC on Fuel 6: Franklin vs. Le,UFC,2012-11-10,CotaiArena,"Macau, China",384
+390,Bellator 81: Bellator LXXXI,BELLATOR,2012-11-16,Ryan Center,"Kingston, Rhode Island, USA",385
+391,UFC 154: St-Pierre vs. Condit,UFC,2012-11-17,Bell Centre,"Montreal, Quebec, Canada",386
+392,Bellator 82: Bellator LXXXII,BELLATOR,2012-11-30,Soaring Eagle Casino & Resort,"Mount Pleasant, Michigan, USA",387
+576,KSW 21: Final Resolution,KSW,2012-12-01,Hala Torwar,"Warsaw, Poland",388
+393,Bellator 83: Bellator LXXXIII,BELLATOR,2012-12-07,Caesars Atlantic City,"Atlantic City, New Jersey, USA",389
+394,UFC on Fox 5: Henderson vs. Diaz,UFC,2012-12-08,KeyArena,"Seattle, Washington, USA",390
+395,Bellator 84: Bellator LXXXIV,BELLATOR,2012-12-14,Horseshoe Casino,"Hammond, Indiana, USA",391
+397,TUF 16 Finale: The Ultimate Fighter 16 Finale,UFC,2012-12-15,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",392
+396,UFC on FX 6: Sotiropoulos vs. Pearson,UFC,2012-12-15,Gold Coast Convention and Exhibition Centre,"Gold Coast, Australia",393
+398,UFC 155: Dos Santos vs. Velasquez II,UFC,2012-12-29,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",394
+770,Invicta FC 4: Esparza vs. Hyatt,INVICTA,2013-01-05,Memorial Hall,"Kansas City, Kansas, USA",395
+402,Strikeforce: Marquardt vs. Saffiedine,SF,2013-01-12,Chesapeake Energy Arena,"Oklahoma City, Oklahoma, USA",396
+403,Bellator 85: Bellator LXXXV,BELLATOR,2013-01-17,Bren Events Center,"Irvine, California, USA",397
+404,UFC on FX 7: Belfort vs. Bisping,UFC,2013-01-19,Ibirapuera Arena,"São Paulo, Brazil",398
+405,Bellator 86: Bellator LXXXVI,BELLATOR,2013-01-24,WinStar World Casino,"Thackerville, Oklahoma, USA",399
+406,UFC on Fox 6: Johnson vs. Dodson,UFC,2013-01-26,United Center,"Chicago, Illinois, USA",400
+407,Bellator 87: Bellator LXXXVII,BELLATOR,2013-01-31,Soaring Eagle Casino,"Mount Pleasant, Michigan, USA",401
+408,UFC 156: Aldo vs. Edgar,UFC,2013-02-02,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",402
+409,Bellator 88: Bellator LXXXVIII,BELLATOR,2013-02-07,Arena at Gwinnett Center,"Duluth, Georgia, USA",403
+410,Bellator 89: Bellator LXXXIX,BELLATOR,2013-02-14,Bojangles' Coliseum,"Charlotte, North Carolina, USA",404
+411,UFC on Fuel 7: Barao vs. McDonald,UFC,2013-02-16,Wembley Arena,"London, England",405
+412,Bellator 90: Bellator XC,BELLATOR,2013-02-21,Maverik Center,"West Valley City, Utah, USA",406
+413,UFC 157: Rousey vs. Carmouche,UFC,2013-02-23,Honda Center,"Anaheim, California, USA",407
+414,Bellator 91: Bellator XCI,BELLATOR,2013-02-28,Santa Ana Star Center,"Rio Rancho, New Mexico, USA",408
+415,UFC on Fuel 8: Silva vs. Stann,UFC,2013-03-03,Saitama Super Arena,"Saitama, Japan",409
+416,Bellator 92: Bellator XCII,BELLATOR,2013-03-07,Pechanga Resort and Casino,"Temecula, California, USA",410
+417,CWFC 52: Cage Warriors 52,CW,2013-03-09,The Forum,"London, England",411
+418,UFC 158: St-Pierre vs. Diaz,UFC,2013-03-16,Bell Centre,"Montreal, Quebec, Canada",412
+577,KSW 22: Pride Time,KSW,2013-03-16,Hala Torwar,"Warsaw, Poland",413
+419,Bellator 93: Bellator XCIII,BELLATOR,2013-03-21,Androscoggin Bank Colisée,"Lewiston, Maine, USA",414
+421,WSOF 2: Arlovski vs. Johnson,WSOF,2013-03-23,Revel Casino,"Atlantic City, New Jersey, USA",415
+422,Bellator 94: Bellator XCIV,BELLATOR,2013-03-28,USF Sun Dome,"Tampa, Florida, USA",416
+423,Bellator 95: Bellator XCV,BELLATOR,2013-04-04,Revel Casino,"Atlantic City, New Jersey, USA",417
+783,Invicta FC 5: Penne vs. Waterson,INVICTA,2013-04-05,Ameristar Casino Kansas City,"Kansas City, Missouri, USA",418
+424,UFC on Fuel 9: Mousasi vs. Latifi,UFC,2013-04-06,Ericsson Globe Arena,"Stockholm, Sweden",419
+426,TUF 17 Finale: The Ultimate Fighter 17 Finale,UFC,2013-04-13,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",420
+425,CWFC 53: Cage Warriors 53,CW,2013-04-13,Kelvin Hall,"Glasgow, Scotland",421
+427,UFC on Fox 7: Henderson vs. Melendez,UFC,2013-04-20,HP Pavilion,"San Jose, California, USA",422
+428,UFC 159: Jones vs. Sonnen,UFC,2013-04-27,Prudential Center,"Newark, New Jersey, USA",423
+429,CWFC 54: Cage Warriors 54,CW,2013-05-04,Motorpoint Arena Cardiff,"Cardiff, Wales",424
+430,CWFN 8: Cage Warriors Fight Night 8,CW,2013-05-12,Mirbeh Sports Hall,"Al Fujairah, United Arab Emirates",425
+431,UFC on FX 8: Belfort vs. Rockhold,UFC,2013-05-18,Arena Jaraguá,"Jaraguá do Sul, Santa Catarina, Brazil",426
+432,UFC 160: Velasquez vs. Bigfoot 2,UFC,2013-05-25,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",427
+433,CWFC 55: Cage Warriors 55,CW,2013-06-01,The Helix,"Dublin, Ireland",428
+434,UFC on Fuel 10: Nogueira vs. Werdum,UFC,2013-06-08,Ginásio Paulo Sarasate,"Fortaleza, Ceará, Brazil",429
+578,KSW 23: Khalidov vs Manhoef,KSW,2013-06-08,Ergo Arena,"Gdansk, Poland",430
+435,WSOF 3: Fitch vs. Burkman 2,WSOF,2013-06-14,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",431
+436,UFC 161: Evans vs. Henderson,UFC,2013-06-15,MTS Centre,"Winnipeg, Manitoba, Canada",432
+437,Bellator 96: Bellator XCVI,BELLATOR,2013-06-19,Winstar World Casino,"Thackerville, Oklahoma, USA",433
+438,UFC 162: Silva vs. Weidman,UFC,2013-07-06,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",434
+439,CWFC 56: Cage Warriors 56,CW,2013-07-06,The Forum,"London, England",435
+784,Invicta FC 6: Coenen vs. Cyborg,INVICTA,2013-07-13,Ameristar Casino Kansas City,"Kansas City, Missouri, USA",436
+440,CWFC 57: Cage Warriors 57,CW,2013-07-21,Echo Arena Liverpool,"Liverpool, England",437
+441,UFC on Fox 8: Johnson vs. Moraga,UFC,2013-07-27,Key Arena,"Seattle, Washington, USA",438
+442,Bellator 97: Bellator XCVII,BELLATOR,2013-07-31,Santa Ana Star Center,"Rio Rancho, New Mexico, USA",439
+443,UFC 163: Aldo vs. Korean Zombie,UFC,2013-08-03,HSBC Arena,"Rio de Janeiro, Rio de Janeiro, Brazil",440
+444,WSOF 4: Spong vs. DeAnda,WSOF,2013-08-10,Citizens Business Bank Arena,"Ontario, California, USA",441
+445,UFN 26: Shogun vs. Sonnen,UFC,2013-08-17,TD Garden,"Boston, Massachusetts, USA",442
+446,CWFC 58: Cage Warriors 58,CW,2013-08-24,Olympisk Arena,"Grozny, Chechnya, Russia",443
+447,UFN 27: Condit vs. Kampmann 2,UFC,2013-08-28,Bankers Life Fieldhouse,"Indianapolis, Indiana, USA",444
+448,UFC 164: Henderson vs. Pettis,UFC,2013-08-31,BMO Harris Bradley Center,"Milwaukee, Wisconsin, USA",445
+449,UFN 28: Teixeira vs. Bader,UFC,2013-09-04,Mineirinho Arena,"Belo Horizonte, Minas Gerais, Brazil",446
+450,Bellator 98: Bellator XCVIII,BELLATOR,2013-09-07,Mohegan Sun Arena,"Uncasville, Connecticut, USA",447
+451,Bellator 99: Bellator XCIX,BELLATOR,2013-09-13,Pechanga Resort & Casino,"Temecula, California, USA",448
+452,CWFC 59: Cage Warriors 59,CW,2013-09-14,Motorpoint Arena,"Cardiff, Wales",449
+453,WSOF 5: Arlovski vs. Kyle,WSOF,2013-09-14,Revel Casino,"Atlantic City, New Jersey, USA",450
+454,Bellator 100: Bellator C,BELLATOR,2013-09-18,Grand Canyon University Arena,"Phoenix, Arizona, USA",451
+455,UFC 165: Jones vs. Gustafsson,UFC,2013-09-21,Air Canada Centre,"Toronto, Ontario, Canada",452
+456,Bellator 101: Bellator CI,BELLATOR,2013-09-27,Rose Garden,"Portland, Oregon, USA",453
+579,KSW 24: Clash of the Giants,KSW,2013-09-28,Atlas Arena,"Lodz, Poland",454
+457,Bellator 102: Bellator CII,BELLATOR,2013-10-04,Visalia Convention Center,"Visalia, California, USA",455
+458,CWFC 60: Cage Warriors 60,CW,2013-10-05,The Forum,"London, England",456
+459,UFN 29: Maia vs. Shields,UFC,2013-10-09,Ginásio José Corrêa,"Barueri, São Paulo, Brazil",457
+460,Bellator 103: Bellator CIII,BELLATOR,2013-10-11,Kansas Star Arena,"Mulvane, Kansas, USA",458
+461,Bellator 104: Bellator CIV,BELLATOR,2013-10-18,U.S. Cellular Center,"Cedar Rapids, Iowa, USA",459
+462,UFC 166: Velasquez vs. Dos Santos 3,UFC,2013-10-19,Toyota Center,"Houston, Texas, USA",460
+463,CWFN 9: Cage Warriors Fight Night 9,CW,2013-10-24,King Hussein Boxing Arena,"Amman, Jordan",461
+464,Bellator 105: Bellator CV,BELLATOR,2013-10-25,Santa Ana Star Center,"Rio Rancho, New Mexico, USA",462
+465,UFN 30: Machida vs. Munoz,UFC,2013-10-26,Manchester Arena,"Manchester, England",463
+466,WSOF 6: Burkman vs. Carl,WSOF,2013-10-26,BankUnited Center,"Coral Gables, Florida, USA",464
+467,Bellator 106: Bellator CVI,BELLATOR,2013-11-02,Long Beach Convention and Entertainment Center,"Long Beach, California, USA",465
+468,UFN 31: Fight for the Troops 3,UFC,2013-11-06,Fort Campbell,"Fort Campbell, Kentucky, USA",466
+469,Bellator 107: Bellator CVII,BELLATOR,2013-11-08,WinStar World Casino,"Thackerville, Oklahoma, USA",467
+470,UFN 32: Belfort vs. Henderson,UFC,2013-11-09,Goiânia Arena,"Goiânia, Goiás, Brazil",468
+471,Bellator 108: Bellator CVIII,BELLATOR,2013-11-15,Revel Casino,"Atlantic City, New Jersey, USA",469
+472,UFC 167: St-Pierre vs. Hendricks,UFC,2013-11-16,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",470
+473,Bellator 109: Bellator CIX,BELLATOR,2013-11-22,Sands Casino Event Center,"Bethlehem, Pennsylvania, USA",471
+474,TUF 18 Finale: The Ultimate Fighter 18 Finale,UFC,2013-11-30,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",472
+580,KSW 25: Khalidov vs. Sakurai,KSW,2013-12-07,Wroclaw Centennial Hall,"Wroclaw, Poland",473
+477,WSOF 7: Karakhanyan vs. Palmer,WSOF,2013-12-07,PNE Agrodome,"Vancouver, British Columbia, Canada",474
+475,UFN 33: Hunt vs. Bigfoot,UFC,2013-12-07,Brisbane Entertainment Centre,"Brisbane, Australia",475
+785,Invicta FC 7: Honchak vs. Smith,INVICTA,2013-12-07,Ameristar Casino Kansas City,"Kansas City, Missouri, USA",476
+476,CWFC 62: Cage Warriors 62,CW,2013-12-07,Metro Radio Arena,"Newcastle, England",477
+478,CWFC 61: Cage Warriors 61,CW,2013-12-13,King Hussein Boxing Arena,"Amman, Jordan",478
+479,UFC on Fox 9: Johnson vs. Benavidez 2,UFC,2013-12-14,Sleep Train Arena,"Sacramento, California, USA",479
+480,UFC 168: Weidman vs. Silva 2,UFC,2013-12-28,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",480
+481,CWFC 63: Cage Warriors 63,CW,2013-12-31,The Helix,"Dublin, Ireland",481
+482,UFN 34: Saffiedine vs. Lim,UFC,2014-01-04,Marina Bay Sands,"Marina Bay, Singapore",482
+483,UFN 35: Rockhold vs. Philippou,UFC,2014-01-15,Arena at Gwinnett Center,"Duluth, Georgia, USA",483
+484,WSOF 8: Gaethje vs. Patishnock,WSOF,2014-01-18,Seminole Hard Rock Hotel and Casino,"Hollywood, Florida, USA",484
+485,UFC on Fox 10: Henderson vs. Thomson,UFC,2014-01-25,United Center,"Chicago, Illinois, USA",485
+486,UFC 169: Barao vs. Faber II,UFC,2014-02-01,Prudential Center,"Newark, New Jersey, USA",486
+488,UFN 36: Machida vs. Mousasi,UFC,2014-02-15,Arena Jaraguá,"Jaraguá do Sul, Santa Catarina, Brazil",487
+487,CWFC 64: Cage Warriors 64,CW,2014-02-15,The Forum,"London, England",488
+489,UFC 170: Rousey vs. McMann,UFC,2014-02-22,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",489
+490,Bellator 110: Bellator CX,BELLATOR,2014-02-28,Mohegan Sun,"Uncasville, Connecticut, USA",490
+491,TUF China: The Ultimate Fighter China Finale,UFC,2014-03-01,CotaiArena,"Macau, China",491
+492,CWFC 65: Cage Warriors 65,CW,2014-03-01,The Helix,"Dublin, Ireland",492
+493,Bellator 111: Bellator CXI,BELLATOR,2014-03-07,WinStar World Casino,"Thackerville, Oklahoma, USA",493
+494,UFN 37: Gustafsson vs. Manuwa,UFC,2014-03-08,The O2 Arena,"London, England",494
+495,Bellator 112: Bellator CXII,BELLATOR,2014-03-13,The Horseshoe,"Hammond, Indiana, USA",495
+496,UFC 171: Hendricks vs. Lawler,UFC,2014-03-15,American Airlines Center,"Dallas, Texas, USA",496
+497,Bellator 113: Bellator CXIII,BELLATOR,2014-03-21,Kansas Star Arena,"Mulvane, Kansas, USA",497
+581,KSW 26: Materla vs Silva 3,KSW,2014-03-22,Torwar Hall,"Warsaw, Poland",498
+498,CWFC 66: Cage Warriors 66,CW,2014-03-22,Ballerup Super Arena,"Ballerup, Denmark",499
+499,UFN 38: Shogun vs. Henderson 2,UFC,2014-03-23,Ginásio Nélio Dias,"Natal, Brazil",500
+501,CWFN 10: Cage Warriors Fight Night 10,CW,2014-03-28,King Hussein Boxing Arena,"Amman, Jordan",501
+500,Bellator 114: Bellator CXIV,BELLATOR,2014-03-28,Maverik Center,"West Valley City, Utah, USA",502
+502,WSOF 9: Carl vs. Palhares,WSOF,2014-03-29,Hard Rock Hotel & Casino,"Paradise, Nevada, USA",503
+503,Bellator 115: Bellator CXV,BELLATOR,2014-04-04,Reno Events Center,"Reno, Nevada, USA",504
+504,UFN 39: Nogueira vs. Nelson,UFC,2014-04-11,du Arena,"Abu Dhabi, United Arab Emirates",505
+505,Bellator 116: Bellator CXVI,BELLATOR,2014-04-11,Pechanga Resort & Casino,"Temecula, California, USA",506
+506,CWFC 67: Cage Warriors 67,CW,2014-04-12,The LC,"Swansea, Wales",507
+507,TUF Nations Finale: Bisping vs. Kennedy,UFC,2014-04-16,Colisée Pepsi,"Quebec City, Quebec, Canada",508
+508,CWFN 11: Cage Warriors Fight Night 11,CW,2014-04-18,King Hussein Boxing Arena,"Amman, Jordan",509
+509,Bellator 117: Bellator CXVII,BELLATOR,2014-04-18,Mid-America Center,"Council Bluffs, Iowa, USA",510
+510,UFC on Fox 11: Werdum vs. Browne,UFC,2014-04-19,Amway Center,"Orlando, Florida, USA",511
+511,UFC 172: Jones vs. Teixeira,UFC,2014-04-26,Baltimore Arena,"Baltimore, Maryland, USA",512
+512,Bellator 118: Bellator CXVIII,BELLATOR,2014-05-02,Revel Atlantic City,"Atlantic City, New Jersey, USA",513
+514,Bellator 119: Bellator CXIX,BELLATOR,2014-05-09,Casino Rama,"Rama, Ontario, Canada",514
+515,UFC Fight Night 40: Brown vs. Silva,UFC,2014-05-10,U.S. Bank Arena,"Cincinnati, Ohio, USA",515
+516,Bellator 120: Rampage vs. King Mo,BELLATOR,2014-05-17,Landers Center,"Southaven, Mississippi, USA",516
+582,KSW 27: Cage Time,KSW,2014-05-17,Ergo Arena,"Gdansk, Poland",517
+517,UFC 173: Barão vs. Dillashaw,UFC,2014-05-24,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",518
+518,UFC Fight Night 41: Munoz vs. Mousasi,UFC,2014-05-31,O2 World,"Berlin, Germany",519
+519,TUF Brazil 3 Finale: Miocic vs. Maldonado,UFC,2014-05-31,Ginásio do Ibirapuera,"São Paulo, Brazil",520
+520,Bellator 121: Bellator 121,BELLATOR,2014-06-06,WinStar World Casino,"Thackerville, Oklahoma, USA",521
+521,CWFC 69: Super Saturday,CW,2014-06-07,The Forum,"London, England",522
+522,UFC Fight Night 42: Henderson vs. Khabilov,UFC,2014-06-07,Tingley Coliseum,"Albuquerque, New Mexico, USA",523
+523,UFC 174: Johnson vs. Bagautinov,UFC,2014-06-14,Rogers Arena,"Vancouver, British Columbia, Canada",524
+524,WSOF 10: Branch vs. Taylor,WSOF,2014-06-21,Hard Rock Hotel & Casino,"Las Vegas, Nevada, USA",525
+525,UFC Fight Night 43: Te Huna vs. Marquardt,UFC,2014-06-28,Vector Arena,"Auckland, New Zealand",526
+526,UFC Fight Night 44: Swanson vs. Stephens,UFC,2014-06-28,AT&T Center,"San Antonio, Texas, USA",527
+528,UFC 175: Weidman vs. Machida,UFC,2014-07-05,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",528
+527,WSOF 11: Gaethje vs. Newell,WSOF,2014-07-05,Ocean Center,"Daytona, Florida, USA",529
+529,TUF 19 Finale: The Ultimate Fighter 19 Finale,UFC,2014-07-06,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",530
+530,UFC Fight Night 45: Cerrone vs. Miller,UFC,2014-07-16,Revel Casino,"Atlantic City, New Jersey, USA",531
+531,UFC Fight Night 46: McGregor vs. Brandao,UFC,2014-07-19,The O2,"Dublin, Ireland",532
+532,Bellator 122: Bellator CXXII,BELLATOR,2014-07-25,Pechanga Resort and Casino,"Temecula, California, USA",533
+533,UFC on Fox 12: Lawler vs. Brown,UFC,2014-07-26,SAP Center,"San Jose, California, USA",534
+534,WSOF 12: Palomino vs. Gonzalez,WSOF,2014-08-15,Hard Rock Hotel & Casino,"Las Vegas, Nevada, USA",535
+536,CWFC 70: Cage Warriors 70,CW,2014-08-16,The Helix,"Dublin, Ireland",536
+535,UFC Fight Night 47: Bader vs. St. Preux,UFC,2014-08-16,Cross Insurance Center,"Bangor, Maine, USA",537
+537,CWFC 71: Cage Warriors 71,CW,2014-08-22,King Hussein Boxing Arena,"Amman, Jordan",538
+539,UFC Fight Night 49: Henderson vs. dos Anjos,UFC,2014-08-23,BOK Center,"Tulsa, Oklahoma, USA",539
+538,UFC Fight Night 48: Bisping vs. Le,UFC,2014-08-23,CotaiArena,"Macau, China",540
+540,UFC 177: Dillashaw vs. Soto,UFC,2014-08-30,Sleep Train Arena,"Sacramento, California, USA",541
+542,UFC Fight Night 50: Jacare vs. Mousasi,UFC,2014-09-05,Foxwoods Resort Casino,"Ledyard, Connecticut, USA",542
+541,Bellator 123: Curran vs. Pitbull 2,BELLATOR,2014-09-05,Mohegan Sun Arena,"Uncasville, Connecticut, USA",543
+786,Invicta FC 8: Waterson vs. Tamada,INVICTA,2014-09-06,Municipal Auditorium,"Kansas City, Missouri, USA",544
+543,Bellator 124: Newton vs. Beltran,BELLATOR,2014-09-12,Compuware Arena,"Plymouth Township, Michigan, USA",545
+545,UFC Fight Night 51: Silva vs. Arlovski,UFC,2014-09-13,Ginásio Nilson Nelson,"Brasilia, Brazil",546
+546,WSOF 13: Moraes vs. Bollinger,WSOF,2014-09-13,Sands Casino Resort Bethlehem,"Bethlehem, Pennsylvania, USA",547
+544,CWFC 72: Cage Warriors 72,CW,2014-09-13,Newport Center,"Newport, Wales",548
+547,Bellator 125: Manhoef vs. Marshall,BELLATOR,2014-09-19,Save Mart Center,"Fresno, California, USA",549
+548,UFC Fight Night 52: Hunt vs. Nelson,UFC,2014-09-20,Saitama Super Arena,"Saitama, Japan",550
+549,Bellator 126: Shlemenko vs. Halsey,BELLATOR,2014-09-26,Grand Canyon University Arena,"Phoenix, Arizona, USA",551
+550,UFC 178: Johnson vs. Cariaso,UFC,2014-09-27,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",552
+551,Bellator 127: Straus vs. Wilcox,BELLATOR,2014-10-03,Pechanga Resort & Casino,"Temecula, California, USA",553
+552,UFC Fight Night 53: Nelson vs. Story,UFC,2014-10-04,Ericsson Globe Arena,"Stockholm, Sweden",554
+553,UFC Fight Night 54: MacDonald vs. Saffiedine,UFC,2014-10-04,Scotiabank Centre,"Halifax, Nova Scotia, Canada",555
+583,KSW 28: Fighters' Den,KSW,2014-10-04,Hala Widowiskowo-Sportowa,"Szczecin, Poland",556
+554,Bellator 128: Dantas vs. Warren,BELLATOR,2014-10-10,Winstar World Casino,"Thackerville, Oklahoma, USA",557
+555,WSOF 14: Ford vs. Shields,WSOF,2014-10-11,Edmonton Expo Centre,"Edmonton, Alberta, Canada",558
+556,Bellator 129: Neer vs. Bradley,BELLATOR,2014-10-17,Mid-America Center,"Council Bluffs, Iowa, USA",559
+557,Bellator 130: Newton vs. Vassell,BELLATOR,2014-10-24,Kansas Star Arena,"Mulvane, Kansas, USA",560
+558,UFC 179: Aldo vs. Mendes 2,UFC,2014-10-25,Ginásio do Maracanãzinho,"Rio de Janeiro, Brazil",561
+559,CWFC 73: Ray vs. Warburton 3,CW,2014-11-01,Metro Radio Arena,"Newcastle, England",562
+787,Invicta FC 9: Honchak vs. Hashi,INVICTA,2014-11-01,RiverCenter,"Davenport, Iowa, USA",563
+561,UFC Fight Night 56: Shogun vs. St. Preux,UFC,2014-11-08,Ginásio Municipal Tancredo Neves,"Uberlândia, Minas Gerais, Brazil",564
+565,UFC 180: Werdum vs. Hunt,UFC,2014-11-15,Arena Ciudad de México,"Mexico City, Mexico",565
+564,Bellator 131: Tito vs. Bonnar,BELLATOR,2014-11-15,Valley View Casino Center,"San Diego, California, USA",566
+563,WSOF 15: Okami vs. Branch,WSOF,2014-11-15,USF Sun Dome,"Tampa, Florida, USA",567
+562,CWFC 74: Dalby vs. Bahari,CW,2014-11-15,Copper Box Arena,"London, England",568
+566,UFC Fight Night 57: Edgar vs. Swanson,UFC,2014-11-22,Frank Erwin Center,"Austin, Texas, USA",569
+802,Invicta FC 10: Waterson vs. Tiburcio,INVICTA,2014-12-05,Arena Theater,"Houston, Texas, USA",570
+584,KSW 29: Reload,KSW,2014-12-06,Krakow Arena,"Krakow, Poland",571
+567,UFC 181: Hendricks vs. Lawler II,UFC,2014-12-06,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",572
+568,TUF 20 Finale: A Champion Will Be Crowned,UFC,2014-12-12,Palms Casino Resort,"Las Vegas, Nevada, USA",573
+570,WSOF 16: Palhares vs. Fitch,WSOF,2014-12-13,McClellan Conference Center,"Sacramento, California, USA",574
+569,UFC on Fox 13: dos Santos vs. Miocic,UFC,2014-12-13,Talking Stick Resort Arena,"Phoenix, Arizona, USA",575
+571,UFC Fight Night 58: Machida vs. Dollaway,UFC,2014-12-20,Ginásio José Corrêa,"Barueri, Brazil",576
+572,UFC 182: Jones vs. Cormier,UFC,2015-01-03,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",577
+585,Bellator 132: Pitbull vs. Straus 2,BELLATOR,2015-01-16,Pechanga Resort & Casino,"Temecula, California, USA",578
+586,WSOF 17: Shields vs. Foster,WSOF,2015-01-17,Planet Hollywood Resort & Casino,"Las Vegas, Nevada, USA",579
+587,UFC Fight Night 59: McGregor vs. Siver,UFC,2015-01-18,TD Garden,"Boston, Massachusetts, USA",580
+588,UFC on Fox 14: Gustafsson vs. Johnson,UFC,2015-01-24,Tele2 Arena,"Stockholm, Sweden",581
+589,UFC 183: Silva vs. Diaz,UFC,2015-01-31,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",582
+590,WSOF 18: Moraes vs. Hill,WSOF,2015-02-12,Edmonton Expo Centre,"Edmonton, Alberta, Canada",583
+591,Bellator 133: Shlemenko vs. Manhoef,BELLATOR,2015-02-13,Save Mart Center,"Fresno, California, USA",584
+592,UFC Fight Night 60: Henderson vs. Thatch,UFC,2015-02-14,1stBank Center,"Broomfield, Colorado, USA",585
+593,KSW 30: Genesis,KSW,2015-02-20,Poznań Arena,"Poznań, Poland",586
+594,UFC Fight Night 61: Bigfoot vs. Mir,UFC,2015-02-22,Ginásio Gigantinho,"Porto Alegre, Brazil",587
+595,Bellator 134: The British Invasion,BELLATOR,2015-02-26,Mohegan Sun Arena,"Uncasville, Connecticut, USA",588
+803,Invicta FC 11: Cyborg vs. Tweet,INVICTA,2015-02-27,Shrine Exposition Hall,"Los Angeles, California, USA",589
+596,UFC 184: Rousey vs. Zingano,UFC,2015-02-28,Staples Center,"Los Angeles, California, USA",590
+597,UFC 185: Pettis vs. dos Anjos,UFC,2015-03-14,American Airlines Center,"Dallas, Texas, USA",591
+598,UFC Fight Night 62: Maia vs. LaFlare,UFC,2015-03-21,Ginásio do Maracanãzinho,"Rio de Janeiro, Brazil",592
+599,Bellator 135: Warren vs. Galvao 2,BELLATOR,2015-03-27,WinStar World Casino,"Thackerville, Oklahoma, USA",593
+600,WSOF 19: Gaethje vs. Palomino,WSOF,2015-03-28,Comerica Theatre,"Phoenix, Arizona, USA",594
+601,UFC Fight Night 63: Mendes vs. Lamas,UFC,2015-04-04,Patriot Center,"Fairfax, Virginia, USA",595
+603,Bellator 136: Brooks vs. Jansen,BELLATOR,2015-04-10,Bren Events Center,"Irvine, California, USA",596
+602,WSOF 20: Branch vs. McElligott,WSOF,2015-04-10,Foxwoods Resort Casino,"Ledyard, Connecticut, USA",597
+604,UFC Fight Night 64: Gonzaga vs. Cro Cop 2,UFC,2015-04-11,Tauron Arena Kraków,"Kraków, Poland",598
+605,UFC on Fox 15: Machida vs. Rockhold,UFC,2015-04-18,Prudential Center,"Newark, New Jersey, USA",599
+804,Invicta FC 12: Kankaanpää vs. Souza,INVICTA,2015-04-24,Municipal Auditorium,"Kansas City, Missouri, USA",600
+606,UFC 186: Johnson vs. Horiguchi,UFC,2015-04-25,Bell Centre,"Montreal, Quebec, Canada",601
+624,UFC Fight Night 65: Miocic vs. Hunt,UFC,2015-05-10,Adelaide Entertainment Centre,"Adelaide, Australia",602
+625,Bellator 137: Halsey vs. Grove,BELLATOR,2015-05-15,Pechanga Resort and Casino,"Temecula, California, USA",603
+626,UFC Fight Night 66: Edgar vs. Faber,UFC,2015-05-16,Mall of Asia Arena,"Pasay, Philippines",604
+628,KSW 31: Materla vs. Drwal,KSW,2015-05-23,Ergo Arena,"Gdansk, Poland",605
+627,UFC 187: Johnson vs. Cormier,UFC,2015-05-23,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",606
+629,UFC Fight Night 67: Condit vs. Alves,UFC,2015-05-30,Goiânia Arena,"Goiânia, Brazil",607
+630,WSOF 21: Palmer vs. Horodecki,WSOF,2015-06-05,Edmonton Expo Centre,"Edmonton, Alberta, Canada",608
+631,UFC Fight Night 68: Boetsch vs. Henderson,UFC,2015-06-06,Smoothie King Center,"New Orleans, Louisiana, USA",609
+632,UFC 188: Velasquez vs. Werdum,UFC,2015-06-13,Arena Ciudad de México,"Mexico City, Mexico",610
+633,Bellator 138: Unfinished Business,BELLATOR,2015-06-19,Scottrade Center,"St. Louis, Missouri, USA",611
+634,UFC Fight Night 69: Jedrzejczyk vs. Penne,UFC,2015-06-20,O2 World,"Berlin, Germany",612
+635,Bellator 139: Kongo vs. Volkov,BELLATOR,2015-06-26,Kansas Star Casino,"Mulvane, Kansas, USA",613
+636,UFC Fight Night 70: Machida vs. Romero,UFC,2015-06-27,Seminole Hard Rock Hotel and Casino,"Hollywood, Florida, USA",614
+810,Invicta FC 13: Cyborg vs. Van Duin,INVICTA,2015-07-09,Cosmopolitan of Las Vegas,"Las Vegas, Nevada, USA",615
+637,UFC 189: Mendes vs. McGregor,UFC,2015-07-11,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",616
+638,TUF 21 Finale: ATT vs. Blackzilians,UFC,2015-07-12,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",617
+639,UFC Fight Night 71: Mir vs. Duffee,UFC,2015-07-15,Valley View Casino Center,"San Diego, California, USA",618
+640,Bellator 140: Lima vs. Koreshkov,BELLATOR,2015-07-17,Mohegan Sun Arena,"Uncasville, Connecticut, USA",619
+641,UFC Fight Night 72: Bisping vs. Leites,UFC,2015-07-18,The SSE Hydro,"Glasgow, Scotland",620
+642,UFC on Fox 16: Dillashaw vs. Barao 2,UFC,2015-07-25,United Center,"Chicago, Illinois, USA",621
+643,UFC 190: Rousey vs. Correia,UFC,2015-08-01,HSBC Arena,"Rio de Janeiro, Brazil",622
+644,WSOF 22: Palhares vs. Shields,WSOF,2015-08-01,Planet Hollywood Resort & Casino,"Las Vegas, Nevada, USA",623
+645,UFC Fight Night 73: Teixeira vs. Saint Preux,UFC,2015-08-08,Bridgestone Arena,"Nashville, Tennessee, USA",624
+646,UFC Fight Night 74: Holloway vs. Oliveira,UFC,2015-08-23,SaskTel Centre,"Saskatoon, Saskatchewan, Canada",625
+647,Bellator 141: Guillard vs. Girtz,BELLATOR,2015-08-28,Pechanga Resort and Casino,"Temecula, California, USA",626
+648,UFC 191: Johnson vs. Dodson 2,UFC,2015-09-05,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",627
+813,Invicta FC 14: Evinger vs. Kianzad,INVICTA,2015-09-12,Municipal Auditorium,"Kansas City, Missouri, USA",628
+650,WSOF 23: Gaethje vs. Palomino II,WSOF,2015-09-18,Comerica Theatre,"Phoenix, Arizona, USA",629
+651,Bellator 142: Dynamite!,BELLATOR,2015-09-19,SAP Center,"San Jose, California, USA",630
+652,Bellator 143: Warren vs. Davis,BELLATOR,2015-09-25,State Farm Arena,"Hidalgo, Texas, USA",631
+653,UFC Fight Night 75: Barnett vs. Nelson,UFC,2015-09-27,Saitama Super Arena,"Saitama, Japan",632
+654,UFC 192: Cormier vs. Gustafsson,UFC,2015-10-03,Toyota Center,"Houston, Texas, USA",633
+655,WSOF 24: Fitch vs. Okami,WSOF,2015-10-17,Foxwoods Resort Casino,"Mashantucket, Massachusetts, USA",634
+656,Bellator 144: Halsey vs. Carvalho,BELLATOR,2015-10-23,Mohegan Sun Arena,"Uncasville, Connecticut, USA",635
+657,UFC Fight Night 76: Holohan vs. Smolka,UFC,2015-10-24,3Arena,"Dublin, Ireland",636
+658,KSW 32: Road to Wembley,KSW,2015-10-31,Wembley Arena,"London, England",637
+660,Bellator 145: With a Vengeance,BELLATOR,2015-11-06,Scottrade Center,"St. Louis, Missouri, USA",638
+661,UFC Fight Night 77: Belfort vs. Henderson 3,UFC,2015-11-07,Ginásio do Ibirapuera,"São Paulo, Brazil",639
+662,UFC 193: Rousey vs. Holm,UFC,2015-11-15,Etihad Stadium,"Melbourne, Australia",640
+664,WSOF 25: Lightweight Tournament,WSOF,2015-11-20,Comerica Theatre,"Phoenix, Arizona, USA",641
+663,Bellator 146: Kato vs. Manhoef,BELLATOR,2015-11-20,WinStar World Casino,"Thackerville, Oklahoma, USA",642
+665,UFC Fight Night 78: Magny vs. Gastelum,UFC,2015-11-21,Arena Monterrey,"Monterrey, Mexico",643
+668,KSW 33: Khalidov vs. Materla,KSW,2015-11-28,Tauron Arena,"Krakow, Poland",644
+667,UFC Fight Night 79: Henderson vs. Masvidal,UFC,2015-11-28,Olympic Gymnastics Arena,"Seoul, South Korea",645
+670,Bellator 147: Thomson vs. Villaseca,BELLATOR,2015-12-04,San Jose State University,"San Jose, California, USA",646
+671,UFC Fight Night 80: Namajunas vs. VanZant,UFC,2015-12-10,The Chelsea at The Cosmopolitan,"Las Vegas, Nevada, USA",647
+672,TUF 22 Finale: Team McGregor vs. Team Faber,UFC,2015-12-11,The Chelsea at The Cosmopolitan,"Las Vegas, Nevada, USA",648
+673,UFC 194: Aldo vs. McGregor,UFC,2015-12-12,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",649
+675,WSOF 26: Palmer vs. Almeida,WSOF,2015-12-18,The Chelsea at The Cosmopolitan,"Las Vegas, Nevada, USA",650
+674,UFC on Fox 17: dos Anjos vs. Cerrone 2,UFC,2015-12-19,Amway Center,"Orlando, Florida, USA",651
+676,UFC 195: Lawler vs. Condit,UFC,2016-01-02,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",652
+814,Invicta FC 15: Cyborg vs. Ibragimova,INVICTA,2016-01-16,OC Fair & Event Center,"Costa Mesa, California, USA",653
+677,UFC Fight Night 81: Dillashaw vs. Cruz,UFC,2016-01-17,TD Garden,"Boston, Massachusetts, USA",654
+678,WSOF 27: Future Champs,WSOF,2016-01-23,FedExForum,"Memphis, Tennessee, USA",655
+679,Bellator 148: Daley vs. Uhrich,BELLATOR,2016-01-29,Save Mart Center,"Fresno, California, USA",656
+680,UFC on Fox 18: Johnson vs. Bader,UFC,2016-01-30,Prudential Center,"Newark, New Jersey, USA",657
+681,UFC Fight Night 82: Hendricks vs. Thompson,UFC,2016-02-06,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",658
+682,Bellator 149: Shamrock vs. Gracie,BELLATOR,2016-02-19,Toyota Center,"Houston, Texas, USA",659
+683,WSOF 28: Moraes vs. Barajas,WSOF,2016-02-20,Next Level Sports Complex,"Garden Grove, California, USA",660
+684,UFC Fight Night 83: Cowboy vs. Cowboy,UFC,2016-02-21,Consol Energy Center,"Pittsburgh, Pennsylvania, USA",661
+685,Bellator 150: Kongo vs. Queiroz,BELLATOR,2016-02-26,Kansas Star Casino,"Mulvane, Kansas, USA",662
+686,UFC Fight Night 84: Silva vs. Bisping,UFC,2016-02-27,The O2 Arena,"London, England",663
+687,Bellator 151: Warren vs. Caldwell,BELLATOR,2016-03-04,WinStar World Casino,"Thackerville, Oklahoma, USA",664
+688,KSW 34: New Order,KSW,2016-03-05,Torwar Hall,"Warsaw, Poland",665
+689,UFC 196: McGregor vs. Diaz,UFC,2016-03-05,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",666
+815,Invicta FC 16: Hamasaki vs. Brown,INVICTA,2016-03-11,Trinidad Pavilion,"Las Vegas, Nevada, USA",667
+690,WSOF 29: Gaethje vs. Foster,WSOF,2016-03-12,Bank of Colorado Arena,"Greeley, Colorado, USA",668
+691,UFC Fight Night 85: Hunt vs. Mir,UFC,2016-03-20,Brisbane Entertainment Centre,"Brisbane, Australia",669
+692,WSOF 30: Branch vs. Starks,WSOF,2016-04-02,Hard Rock Hotel and Casino,"Las Vegas, Nevada, USA",670
+693,UFC Fight Night 86: Rothwell vs. dos Santos,UFC,2016-04-10,Arena Zagreb,"Zagreb, Croatia",671
+694,CWFC 75: Hermansson vs. Carlos,CW,2016-04-15,Camden Centre,"London, England",672
+696,UFC on Fox 19: Teixeira vs. Evans,UFC,2016-04-16,Amalie Arena,"Tampa, Florida, USA",673
+695,Bellator 152: Pitbull vs. Souza,BELLATOR,2016-04-16,Pala Alpitour,"Torino, Italy",674
+697,Bellator 153: Koreshkov vs. Henderson,BELLATOR,2016-04-22,Mohegan Sun Arena,"Uncasville, Connecticut, USA",675
+698,UFC 197: Jones vs. Saint Preux,UFC,2016-04-23,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",676
+816,Invicta FC 17: Evinger vs. Schneider,INVICTA,2016-05-07,OC Fair & Event Center,"Costa Mesa, California, USA",677
+699,UFC Fight Night 87: Overeem vs. Arlovski,UFC,2016-05-08,Ahoy Rotterdam,"Rotterdam, Netherlands",678
+701,UFC 198: Werdum vs. Miocic,UFC,2016-05-14,Arena da Baixada,"Curitiba, Brazil",679
+700,Bellator 154: Davis vs. King Mo,BELLATOR,2016-05-14,SAP Center,"San Jose, California, USA",680
+702,Bellator 155: Carvalho vs Manhoef,BELLATOR,2016-05-20,CenturyLink Arena,"Boise, Idaho, USA",681
+703,KSW 35: Khalidov vs. Karaoglu,KSW,2016-05-27,Ergo Arena,"Sopot/Gdańsk, Poland",682
+704,UFC Fight Night 88: Almeida vs. Garbrandt,UFC,2016-05-29,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",683
+705,UFC 199: Rockhold vs. Bisping 2,UFC,2016-06-04,The Forum,"Inglewood, California, USA",684
+706,CWFC 76: Arish vs. Marshman,CW,2016-06-04,Newport Centre,"Newport, Wales",685
+708,WSOF 31: Ivanov vs. Copeland,WSOF,2016-06-17,Foxwoods Resort Casino,"Mashantucket, Connecticut, USA",686
+709,Bellator 156: Galvao vs. Dantas,BELLATOR,2016-06-17,Save Mart Center,"Fresno, California, USA",687
+707,EFN 50: Emelianenko vs. Maldonado,BOX,2016-06-17,Sibur Arena,"Saint Petersburg, Russia",688
+710,UFC Fight Night 89: MacDonald vs. Thompson,UFC,2016-06-18,TD Place Arena,"Ottawa, Ontario, Canada",689
+711,Bellator 157: Dynamite 2,BELLATOR,2016-06-24,Scottrade Center,"St. Louis, Missouri, USA",690
+712,UFC Fight Night 90: dos Anjos vs. Alvarez,UFC,2016-07-07,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",691
+714,TUF 23 Finale: Team Joanna vs. Team Cláudia Finale,UFC,2016-07-08,MGM Grand Garden Arena,"Las Vegas, Nevada, USA",692
+713,CWFC 77: Marshman vs. Jacquelin,CW,2016-07-08,Camden Centre,"London, England",693
+715,UFC 200: Tate vs. Nunes,UFC,2016-07-09,T-Mobile Arena,"Las Vegas, Nevada, USA",694
+716,UFC Fight Night 91: McDonald vs. Lineker,UFC,2016-07-13,Denny Sanford Premier Center,"Sioux Falls, South Dakota, USA",695
+717,Bellator 158: Daley vs. Lima,BELLATOR,2016-07-16,O2 Arena,"London, England",696
+718,Bellator 159: Caldwell vs. Taimanglo,BELLATOR,2016-07-22,Kansas Star Arena,"Mulvane, Kansas, USA",697
+719,UFC on Fox 20: Holm vs. Shevchenko,UFC,2016-07-23,United Center,"Chicago, Illinois, USA",698
+820,Invicta FC 18: Grasso vs. Esquibel,INVICTA,2016-07-29,Scottish Rite Temple,"Kansas City, Missouri, USA",699
+720,WSOF 32: Moraes vs. Hill 2,WSOF,2016-07-30,Xfinity Arena,"Everett, Washington, USA",700
+721,UFC 201: Lawler vs. Woodley,UFC,2016-07-30,Philips Arena,"Atlanta, Georgia, USA",701
+722,UFC Fight Night 92: Rodríguez vs. Caceres,UFC,2016-08-06,Vivint Smart Home Arena,"Salt Lake City, Utah, USA",702
+723,UFC 202: Diaz vs. McGregor 2,UFC,2016-08-20,T-Mobile Arena,"Las Vegas, Nevada, USA",703
+724,Bellator 160: Henderson vs. Pitbull,BELLATOR,2016-08-26,Honda Center,"Anaheim, California, USA",704
+725,UFC on Fox 21: Maia vs. Condit,UFC,2016-08-27,Rogers Arena,"Vancouver, British Columbia, Canada",705
+726,UFC Fight Night 93: Arlovski vs. Barnett,UFC,2016-09-03,Barclaycard Arena,"Hamburg, Germany",706
+727,UFC 203: Miocic vs. Overeem,UFC,2016-09-10,Quicken Loans Arena,"Cleveland, Ohio, USA",707
+728,CWFC 78: Fishgold vs. Ponet,CW,2016-09-10,Echo Arena,"Liverpool, England",708
+729,Bellator 161: Kongo vs. Johnson,BELLATOR,2016-09-16,H-E-B Center at Cedar Park,"Cedar Park, Texas, USA",709
+730,UFC Fight Night 94: Poirier vs. Johnson,UFC,2016-09-17,State Farm Arena,"Hidalgo, Texas, USA",710
+821,Invicta FC 19: Maia vs. Modafferi,INVICTA,2016-09-23,Scottish Rite Temple,"Kansas City, Missouri, USA",711
+731,UFC Fight Night 95: Cyborg vs. Lansberg,UFC,2016-09-24,Nilson Nelson Gymnasium,"Brasília, Brazil",712
+732,KSW 36: Materla vs. Palhares,KSW,2016-10-01,CRS Hall Zielona Gora,"Zielona Gora, Poland",713
+733,UFC Fight Night 96: Lineker vs. Dodson,UFC,2016-10-01,Moda Center,"Portland, Oregon, USA",714
+736,WSOF 33: Branch vs. Magalhães,WSOF,2016-10-07,Municipal Auditorium,"Kansas City, Missouri, USA",715
+735,UFC 204: Bisping vs. Henderson 2,UFC,2016-10-08,Manchester Arena,"Manchester, England",716
+737,CWFC 79: Svensson vs. Clist,CW,2016-10-15,Newport Centre,"Newport, Wales",717
+738,Bellator 162: Shlemenko vs. Grove,BELLATOR,2016-10-21,FedEx Forum,"Memphis, Tennessee, USA",718
+739,Bellator 163: McGeary vs. Davis,BELLATOR,2016-11-04,Mohegan Sun Arena,"Uncasville, Connecticut, USA",719
+740,TUF Latin America 3 Finale: dos Anjos vs. Ferguson,UFC,2016-11-05,Mexico City Arena,"Mexico City, Mexico",720
+742,Bellator 164: Koreshkov vs. Lima,BELLATOR,2016-11-11,Menora Mivtachim Arena,"Menora Mivtachim Arena, Israel",721
+741,Cage Warriors Unplugged: Pimblett vs. Erosa,CW,2016-11-12,BT Sport Studios,"London, England",722
+743,UFC 205: Alvarez vs. McGregor,UFC,2016-11-12,Madison Square Garden,"New York, New York, USA",723
+760,Invicta FC 20: Evinger vs. Kunitskaya,INVICTA,2016-11-18,Scottish Rite Temple,"Kansas City, Missouri, USA",724
+744,UFC Fight Night 99: Mousasi vs. Hall 2,UFC,2016-11-19,The SSE Arena,"Belfast, Northern Ireland",725
+746,Bellator 165: Chandler vs. Henderson,BELLATOR,2016-11-19,SAP Center,"San Jose, California, USA",726
+745,UFC Fight Night 100: Bader vs. Nogueira 2,UFC,2016-11-19,Ginásio do Ibirapuera,"São Paulo, Brazil",727
+748,UFC Fight Night 101: Whittaker vs. Brunson,UFC,2016-11-27,Rod Laver Arena,"Melbourne, Australia",728
+749,Bellator 166: Dantas vs. Warren 2,BELLATOR,2016-12-02,WinStar World Casino,"Thackerville, Oklahoma, USA",729
+752,TUF 24 Finale: Tournament of Champions,UFC,2016-12-03,Palms Casino Resort,"Las Vegas, Nevada, USA",730
+751,Bellator 167: Taimanglo vs. Caldwell 2,BELLATOR,2016-12-03,WinStar World Casino,"Thackerville, Oklahoma, USA",731
+750,KSW 37: Circus of Pain,KSW,2016-12-03,Tauron Arena,"Krakow, Poland",732
+753,UFC Fight Night 102: Lewis vs. Abdurakhimov,UFC,2016-12-09,Times Union Center,"Albany, New York, USA",733
+755,UFC 206: Holloway vs. Pettis,UFC,2016-12-10,Air Canada Centre,"Toronto, Ontario, USA",734
+756,Bellator 169: King Mo vs Ishii,BELLATOR,2016-12-16,3Arena,"Dublin, Ireland",735
+757,UFC on Fox 22: VanZant vs. Waterson,UFC,2016-12-17,Golden 1 Center,"Sacramento, California, USA",736
+758,UFC 207: Nunes vs. Rousey,UFC,2016-12-30,T-Mobile Arena,"Las Vegas, Nevada, Canada",737
+759,WSOF 34: Gaethje vs. Firmino,WSOF,2016-12-31,The Theater at Madison Square Garden,"New York City, New York, USA",738
+762,Invicta FC 21: Anderson vs. Tweet,INVICTA,2017-01-14,Scottish Rite Temple,"Kansas City, Missouri, USA",739
+763,UFC Fight Night 103: Rodríguez vs. Penn,UFC,2017-01-15,Talking Stick Resort Arena,"Phoenix, Arizona, USA",740
+764,Bellator 170: Ortiz vs. Sonnen,BELLATOR,2017-01-21,The Forum,"Inglewood, California, Canada",741
+765,Bellator 171: Guillard vs. Njokuani,BELLATOR,2017-01-27,Kansas Star Casino,"Mulvane, Kansas, USA",742
+766,UFC on Fox 23: Shevchenko vs. Peña,UFC,2017-01-28,Pepsi Center,"Denver, Colorado, USA",743
+769,UFC Fight Night 104: Bermudez vs. Korean Zombie,UFC,2017-02-04,Toyota Center,"Houston, Texas, USA",744
+771,UFC 208: Holm vs. de Randamie,UFC,2017-02-11,Barclays Center,"Brooklyn, New York, USA",745
+773,Bellator 172: Thomson vs. Pitbull,BELLATOR,2017-02-18,SAP Center,"San Jose, California, USA",746
+772,CWFC 80: Amoussou vs. Inman,CW,2017-02-18,O2 Indigo,"London, England",747
+774,UFC Fight Night 105: Lewis vs. Browne,UFC,2017-02-19,Scotiabank Centre,"Halifax, Nova Scotia, Canada",748
+775,Bellator 173: McGeary vs. McDermott,BELLATOR,2017-02-24,SSE Arena,"Belfast, Northern Ireland",749
+776,Bellator 174: Coenen vs. Budd,BELLATOR,2017-03-03,WinStar World Casino,"Thackerville, Oklahoma, USA",750
+777,UFC 209: Woodley vs. Thompson 2,UFC,2017-03-04,T-Mobile Arena,"Las Vegas, Nevada, USA",751
+778,CWFC 81: Moore vs Clark,CW,2017-03-04,3Arena,"Dublin, Ireland",752
+779,UFC Fight Night 106: Belfort vs. Gastelum,UFC,2017-03-11,Centro de Formação Olímpica do Nordeste,"Fortaleza, Brazil",753
+780,UFC Fight Night 107: Manuwa vs. Anderson,UFC,2017-03-18,The O2 Arena,"London, England",754
+781,WSOF 35: Ivanov vs. Jordan,WSOF,2017-03-18,Turning Stone Resort & Casino,"Verona, New York, USA",755
+788,Invicta FC 22: Evinger vs. Kunitskaya II,INVICTA,2017-03-25,Scottish Rite Temple,"Kansas City, Missouri, USA",756
+789,Bellator 175: Rampage vs. King Mo 2,BELLATOR,2017-03-31,Allstate Arena,"Rosemont, Illinois, USA",757
+790,CWFC 82: Pimblett vs. Narimani,CW,2017-04-01,Echo Arena Liverpool,"Liverpool, England",758
+791,KSW 38: Live in Studio,KSW,2017-04-07,Apricor Studio,"Warsaw, Poland",759
+793,UFC 210: Cormier vs. Johnson 2,UFC,2017-04-08,KeyBank Center,"Buffalo, New York, USA",760
+792,Bellator 176: Carvalho vs. Manhoef 2,BELLATOR,2017-04-08,Pala Alpitour,"Torino, Italy",761
+794,Bellator 177: Dantas vs. Higo,BELLATOR,2017-04-14,Budapest Sports Arena,"Budapest, Hungary",762
+795,UFC on Fox 24: Johnson vs. Reis,UFC,2017-04-15,Sprint Center,"Kansas City, Missouri, USA",763
+796,Bellator 178: Straus vs. Pitbull 4,BELLATOR,2017-04-21,Mohegan Sun Arena,"Uncasville, Connecticut, USA",764
+797,UFC Fight Night 108: Swanson vs. Lobov,UFC,2017-04-22,Bridgestone Arena,"Nashville, Tennessee, USA",765
+798,CWFC 83: Mills vs. Long,CW,2017-05-06,Newport Centre,"Newport, Wales",766
+799,UFC 211: Miocic vs. dos Santos 2,UFC,2017-05-13,American Airlines Center,"Dallas, Texas, USA",767
+800,Bellator 179: MacDonald vs. Daley,BELLATOR,2017-05-19,SSE Arena,"London, England",768
+801,Invicta FC 23: Porto vs. Niedzwiedz,INVICTA,2017-05-20,Scottish Rite Temple,"Kansas City, Missouri, USA",769
+805,KSW 39: Colosseum,KSW,2017-05-27,The PGE Narodowy,"Warsaw, Poland",770
+806,UFC Fight Night 109: Gustafsson vs. Teixeira,UFC,2017-05-28,Ericsson Globe,"Stockholm, Sweden",771
+807,CWFC 84: Wood vs. Kovacevic,CW,2017-06-02,O2 Indigo,"London, England",772
+808,UFC 212: Aldo vs. Holloway,UFC,2017-06-03,Jeunesse Arena,"Rio de Janeiro, Brazil",773
+809,UFC Fight Night 110: Lewis vs. Hunt,UFC,2017-06-11,Spark Arena,"Auckland, New Zealand",774
+811,UFC Fight Night 111: Holm vs. Correia,UFC,2017-06-17,Singapore Indoor Stadium,"Kallang, Singapore",775
+818,Bellator NYC: Sonnen vs. Silva,BELLATOR,2017-06-24,Madison Square Garden,"New York, New York, USA",776
+817,CWFC 85: Radcliffe vs. Piechota,CW,2017-06-24,O2 Academy Bournemouth,"Bournemouth, England",777
+819,UFC Fight Night 112: Chiesa vs. Lee,UFC,2017-06-25,Chesapeake Energy Arena,"Oklahoma City, Oklahoma, USA",778
+823,TUF 25 Finale: Redemption Finale,UFC,2017-07-07,T-Mobile Arena,"Las Vegas, Nevada, USA",779
+824,UFC 213: Romero vs. Whittaker,UFC,2017-07-08,T-Mobile Arena,"Las Vegas, Nevada, USA",780
+825,Bellator 181: Girtz vs. Campos 3,BELLATOR,2017-07-14,WinStar World Casino,"Thackerville, Oklahoma, USA",781
+827,Invicta FC 24: Dudieva vs. Borella,INVICTA,2017-07-15,Scottish Rite Temple,"Kansas City, Missouri, USA",782
+826,UFC Fight Night 113: Nelson vs. Ponzinibbio,UFC,2017-07-16,The SSE Hydro,"Glasgow, Scotland",783
+828,UFC on Fox 25: Weidman vs. Gastelum,UFC,2017-07-22,Nassau Veterans Memorial Coliseum,"Long Island, New York, USA",784
+829,UFC 214: Cormier vs. Jones 2,UFC,2017-07-29,Honda Center,"Anaheim, California, USA",785
+830,UFC Fight Night 114: Pettis vs. Moreno,UFC,2017-08-05,Arena Ciudad de México,"Mexico City, Mexico",786
+831,Bellator 182: Koreshkov vs. Njokuani,BELLATOR,2017-08-25,Turning Stone Resort & Casino,"Verona, New York, USA",787
+833,Invicta FC 25: Kunitskaya vs. Pa'aluhi,INVICTA,2017-08-31,Tachi Palace,"Lemoore, California, USA",788
+834,UFC Fight Night 115: Volkov vs. Struve,UFC,2017-09-02,Ahoy Rotterdam,"Rotterdam, Netherlands",789
+835,UFC 215: Nunes vs. Shevchenko 2,UFC,2017-09-09,Rogers Place,"Edmonton, Alberta, Canada",790
+837,CWFC 86: Wood vs. Reed,CW,2017-09-16,indigo at the O2,"London, England",791
+836,UFC Fight Night 116: Rockhold vs. Branch,UFC,2017-09-16,PPG Paints Arena,"Pittsburgh, Pennsylvania, USA",792
+839,UFC Fight Night 117: Saint Preux vs. Okami,UFC,2017-09-23,Saitama Super Arena,"Saitama, Japan",793
+840,Bellator 183: Henderson vs. Pitbull,BELLATOR,2017-09-23,SAP Center,"San Jose, California, USA",794
+841,Bellator 184: Dantas vs. Caldwell,BELLATOR,2017-10-06,WinStar World Casino,"Thackerville, Oklahoma, USA",795
+842,UFC 216: Ferguson vs. Lee,UFC,2017-10-07,T-Mobile Arena,"Las Vegas, Nevada, USA",796
+843,CWFC 87: Long vs. Soldic,CW,2017-10-14,Newport Centre,"Newport, Wales",797
+844,Bellator 185: Mousasi vs. Shlemenko,BELLATOR,2017-10-20,Mohegan Sun Arena,"Uncasville, Connecticut, USA",798
+845,UFC Fight Night 118: Cerrone vs. Till,UFC,2017-10-21,Ergo Arena,"Gdansk, Poland",799
+846,KSW 40: Dublin,KSW,2017-10-22,3Arena,"Dublin, Ireland",800
+847,CWFC 88: Fishgold vs Jacobsen,CW,2017-10-28,Echo Arena,"Liverpool, England",801
+848,UFC Fight Night 119: Brunson vs. Machida,UFC,2017-10-28,Ginásio do Ibirapuera,"São Paulo, Brazil",802
+849,Bellator 186: Bader vs. Vassell,BELLATOR,2017-11-03,Bryce Jordan Center,"University Park, Pennsylvania, USA",803
+850,UFC 217: Bisping vs. St-Pierre,UFC,2017-11-04,Madison Square Garden,"New York City, New York, USA",804
+851,Bellator 187: McKee vs. Moore,BELLATOR,2017-11-10,3Arena,"Dublin, Ireland",805
+852,UFC Fight Night 120: Poirier vs. Pettis,UFC,2017-11-11,Ted Constant Convocation Center,"Norfolk, Virginia, USA",806
+853,Bellator 188: Lahat vs. Labiano,BELLATOR,2017-11-16,Menora Mivtachim Arena,"Tel Aviv,",807
+854,UFC Fight Night 121: Werdum vs. Tybura,UFC,2017-11-19,Qudos Bank Arena,"Sydney, Australia",808
+855,UFC Fight Night 122: Bisping vs. Gastelum,UFC,2017-11-25,Mercedes Benz Arena,"Shanghai, China",809
+856,CWFC 89: Amoussou vs. Steele,CW,2017-11-25,Lotto Arena,"Antwerp,",810
+857,Bellator 189: Budd vs. Blencowe 2,BELLATOR,2017-12-01,WinStar World Casino,"Thackerville, Oklahoma, USA",811
+858,TUF 26 Finale: A New World Champion Finale,UFC,2017-12-01,Park Theater,"Paradise, Nevada, USA",812
+859,UFC 218: Holloway vs. Aldo 2,UFC,2017-12-02,Little Caesars Arena,"Detroit, Michigan, USA",813
+860,Invicta FC 26: Maia vs. Niedwiedz,INVICTA,2017-12-08,Scottish Rite Temple,"Kansas City, Missouri, USA",814
+861,UFC Fight Night 123: Swanson vs. Ortega,UFC,2017-12-09,Save Mart Center,"Fresno, California, USA",815
+862,Bellator 190: Carvalho vs. Sakara,BELLATOR,2017-12-09,Nelson Mandela Forum,"Florence, Italy",816
+863,Bellator 191: McDonald vs. Ligier,BELLATOR,2017-12-15,Metro Radio Arena,"Newcastle, England",817
+864,UFC on Fox 26: Lawler vs. dos Anjos,UFC,2017-12-16,Bell MTS Place,"Winnipeg, Manitoba, Canada",818
+865,KSW 41: Mankowski vs. Soldic,KSW,2017-12-23,Spodek,"Katowice, Poland",819
+866,UFC 219: Cyborg vs. Holm,UFC,2017-12-30,T-Mobile Arena,"Paradise, Nevada, USA",820
+867,Invicta FC 27: Kaufman vs. Kianzad,INVICTA,2018-01-13,Scottish Rite Temple,"Kansas City, Missouri, USA",821
+868,UFC Fight Night 124: Stephens vs. Choi,UFC,2018-01-14,Scottrade Center,"St. Louis, Missouri, USA",822
+869,Bellator 192: Rampage vs. Sonnen,BELLATOR,2018-01-20,The Forum,"Inglewood, California, USA",823
+870,UFC 220: Miocic vs. Ngannou,UFC,2018-01-20,TD Garden,"Boston, Massachusetts, USA",824
+871,Bellator 193: Larkin vs. Gonzalez,BELLATOR,2018-01-26,Pechanga Resort and Casino,"Temecula, California, USA",825
+872,UFC on Fox 27: Jacaré vs. Brunson 2,UFC,2018-01-27,Spectrum Center,"Charlotte, North Carolina, USA",826
+873,UFC Fight Night 125: Machida vs. Anders,UFC,2018-02-03,Arena Guilherme Paraense,"Belém, Brazil",827
+874,UFC 221: Romero vs. Rockhold,UFC,2018-02-10,Perth Arena,"Perth, Australia",828
+875,Bellator 194: Mitrione vs. Nelson 2,BELLATOR,2018-02-16,Mohegan Sun Arena,"Uncasville, Connecticut, USA",829
+876,UFC Fight Night 126: Cowboy vs. Medeiros,UFC,2018-02-18,Frank Erwin Center,"Austin, Texas, USA",830
+878,CWFC 90: McCann vs. Tyrell,CW,2018-02-24,Echo Arena,"Liverpool, England",831
+877,UFC on Fox 28: Emmett vs. Stephens,UFC,2018-02-24,Amway Center,"Orlando, Florida, USA",832
+879,Bellator 195: Caldwell vs. Higo,BELLATOR,2018-03-02,WinStar World Casino,"Thackerville, Oklahoma, USA",833
+882,CWFC 91: Reed vs. Bouland,CW,2018-03-03,Newport Centre,"Newport, Wales",834
+881,KSW 42: Khalidov vs. Narkun,KSW,2018-03-03,Atlas Arena,"Lodz, Poland",835
+880,UFC 222: Cyborg vs. Kunitskaya,UFC,2018-03-03,T-Mobile Arena,"Las Vegas, Nevada, USA",836
+883,UFC Fight Night 127: Werdum vs. Volkov,UFC,2018-03-17,The O2 Arena,"London, England",837
+884,CWFC 92: Super Saturday,CW,2018-03-24,Indigo at the O2,"London, England",838
+885,Invicta FC 28: Mizuki vs. Jandiroba,INVICTA,2018-03-24,Union Event Center,"Salt Lake City, Utah, USA",839
+886,Bellator 196: Henderson vs. Huerta,BELLATOR,2018-04-06,Budapest Sports Arena,"Budapest, Hungary",840
+887,UFC 223: Khabib vs. Iaquinta,UFC,2018-04-07,Barclays Center,"Brooklyn, New York, USA",841
+888,Bellator 197: Chandler vs. Girtz,BELLATOR,2018-04-13,Family Arena,"St. Charles, Missouri, USA",842
+889,KSW 43: Soldic vs. Du Plessis,KSW,2018-04-14,Centennial Hall,"Wrocław, Poland",843
+890,UFC on Fox 29: Poirier vs. Gaethje,UFC,2018-04-14,Gila River Arena,"Glendale, Arizona, USA",844
+891,UFC Fight Night 128: Barboza vs. Lee,UFC,2018-04-21,Boardwalk Hall,"Atlantic City, New Jersey, USA",845
+893,Bellator 198: Fedor vs. Mir,BELLATOR,2018-04-28,Allstate Arena,"Rosemont, Illinois, USA",846
+892,CWFC 93: Dalby vs Pedersoli Jr.,CW,2018-04-28,Lisebergshallen,"Gothenburg, Sweden",847
+894,Invicta FC 29: Kaufman vs. Lehner,INVICTA,2018-05-04,Scottish Rite Temple,"Kansas City, Missouri, USA",848
+896,UFC 224: Nunes vs. Pennington,UFC,2018-05-12,Jeunesse Arena,"Rio de Janeiro, Brazil",849
+895,Bellator 199: Bader vs. King Mo,BELLATOR,2018-05-12,SAP Center,"San Jose, California, USA",850
+897,UFC Fight Night 129: Maia vs. Usman,UFC,2018-05-19,Movistar Arena,"Santiago, Chile",851
+899,Bellator 200: Carvalho vs. Mousasi,BELLATOR,2018-05-25,"The SSE Arena, Wembley","London, England",852
+898,UFC Fight Night 130: Thompson vs. Till,UFC,2018-05-27,Echo Arena,"Liverpool, England",853
+900,UFC Fight Night 131: Rivera vs. Moraes,UFC,2018-06-01,Adirondack Bank Center,"Utica, New York, USA",854
+1170,PFL 1: 2018 Season,PFL,2018-06-07,Hulu Theater,"New York, New York, USA",855
+902,UFC 225: Whittaker vs. Romero 2,UFC,2018-06-09,United Center,"Chicago, Illinois, USA",856
+901,KSW 44: The Game,KSW,2018-06-09,Ergo Arena,"Gdansk, Poland",857
+903,CWFC 94: Bouland vs. Topuria,CW,2018-06-16,Lotto Arena,"Antwerp,",858
+1171,PFL 2: 2018 Season,PFL,2018-06-21,Chicago Theatre,"Chicago, Illinois, USA",859
+904,UFC Fight Night 132: Cowboy vs. Edwards,UFC,2018-06-23,Singapore Indoor Stadium,"Kallang, Singapore",860
+905,Bellator 201: Macfarlane vs. Lara,BELLATOR,2018-06-29,Pechanga Resort and Casino,"Temecula, California, USA",861
+1172,PFL 3: 2018 Season,PFL,2018-07-05,Charles E. Smith Center,"Washington, District of Columbia, USA",862
+906,TUF 27 Finale: Undefeated Finale,UFC,2018-07-06,Pearl Theatre,"Las Vegas, Nevada, USA",863
+907,UFC 226: Miocic vs. Cormier,UFC,2018-07-07,T-Mobile Arena,"Las Vegas, Nevada, USA",864
+908,Bellator 202: Budd vs. Nogueira,BELLATOR,2018-07-13,WinStar World Casino,"Thackerville, Oklahoma, USA",865
+910,Bellator 203: Pitbull vs. Weichel 2,BELLATOR,2018-07-14,Foro Italico,"Rome, Italy",866
+909,UFC Fight Night 133: dos Santos vs. Ivanov,UFC,2018-07-14,CenturyLink Arena,"Boise, Idaho, USA",867
+1173,PFL 4: 2018 Season,PFL,2018-07-19,Nassau Coliseum,"Uniondale, New York, USA",868
+911,CWFC 95: Janzemini vs. Paterno,CW,2018-07-21,O2 Indigo,"London, England",869
+912,Invicta FC 30: Frey vs. Grusander,INVICTA,2018-07-21,Scottish Rite Temple,"Kansas City, Missouri, USA",870
+913,UFC Fight Night 134: Shogun vs. Smith,UFC,2018-07-22,Barclaycard Arena,"Hamburg, Germany",871
+914,UFC on Fox 30: Alvarez vs. Poirier 2,UFC,2018-07-28,Scotiabank Saddledome,"Calgary, Alberta, Canada",872
+1174,PFL 5: 2018 Season,PFL,2018-08-02,Nassau Coliseum,"Uniondale, New York, USA",873
+915,UFC 227: Dillashaw vs. Garbrandt 2,UFC,2018-08-04,Staples Center,"Los Angeles, California, USA",874
+1175,PFL 6: 2018 Season,PFL,2018-08-16,Ocean Casino Resort,"Atlantic City, New Jersey, USA",875
+916,Bellator 204: Caldwell vs. Lahat,BELLATOR,2018-08-17,Sanford Pentagon,"Sioux Falls, South Dakota, USA",876
+917,UFC Fight Night 135: Gaethje vs. Vick,UFC,2018-08-25,Pinnacle Bank Arena,"Lincoln, Nebraska, USA",877
+1176,PFL 7: 2018 Season,PFL,2018-08-30,Ocean Resort Casino,"Atlantic City, New Jersey, USA",878
+918,CWFC 96: Pimblett vs. Bak,CW,2018-09-01,Echo Arena,"Liverpool, England",879
+919,Invicta FC 31: Jandiroba vs. Morandin,INVICTA,2018-09-01,Scottish Rite Temple,"Kansas City, Missouri, USA",880
+920,UFC 228: Woodley vs. Till,UFC,2018-09-08,Woodley vs. Till,"Dallas, Texas, USA",881
+921,UFC Fight Night 136: Hunt vs. Oliynyk,UFC,2018-09-15,Olimpiyskiy Stadium,"Moscow, Russia",882
+923,Bellator 205: McKee vs. Macapá,BELLATOR,2018-09-21,CenturyLink Arena,"Boise, Idaho, USA",883
+924,UFC Fight Night 137: Santos vs. Anders,UFC,2018-09-22,Ginásio do Ibirapuera,"São Paulo, Brazil",884
+925,CWFC 97: Shore vs. Maia,CW,2018-09-29,Ice Arena Wales,"Cardiff, Wales",885
+926,Bellator 206: Mousasi vs. MacDonald,BELLATOR,2018-09-29,SAP Center,"San Jose, California, USA",886
+1178,PFL 8: 2018 Season,PFL,2018-10-05,New Orleans Morial Convention Center,"New Orleans, Louisiana, USA",887
+928,KSW 45: The Return to Wembley,KSW,2018-10-06,"The SSE Arena, Wembley","London, England",888
+927,UFC 229: Khabib vs. McGregor,UFC,2018-10-06,T-Mobile Arena,"Las Vegas, Nevada, USA",889
+929,Bellator 207: Mitrione vs. Bader,BELLATOR,2018-10-12,Mohegan Sun Arena,"Uncasville, Connecticut, USA",890
+930,Bellator 208: Fedor vs. Sonnen,BELLATOR,2018-10-13,Nassau Coliseum,"Uniondale, New York, USA",891
+1179,PFL 9: 2018 Season,PFL,2018-10-13,Long Beach Arena,"Long Beach, California, USA",892
+931,CWFC 98: Paterno vs. Houston,CW,2018-10-20,Genting Arena,"Birmingham, England",893
+1180,PFL 10: 2018 Season,PFL,2018-10-20,St. Elizabeths East Entertainment and Sports Arena,"Washington, District of Columbia, USA",894
+932,UFC Fight Night 138: Volkan vs. Smith,UFC,2018-10-27,Avenir Centre,"Moncton, New Brunswick, Canada",895
+933,UFC 230: Cormier vs. Lewis,UFC,2018-11-03,Madison Square Garden,"New York City, New York, USA",896
+934,UFC Fight Night 139: Korean Zombie vs. Rodríguez,UFC,2018-11-10,Pepsi Center,"Denver, Colorado, USA",897
+939,Bellator 209: Pitbull vs. Sanchez,BELLATOR,2018-11-15,Menora Mivtachim Arena,"Tel Aviv, Israel",898
+935,Invicta FC 32: Spencer vs. Sorenson,INVICTA,2018-11-16,FireLake Arena,"Shawnee, Oklahoma, USA",899
+936,CWFC 99: Webb vs. Radcliffe,CW,2018-11-17,Charter Hall,"Colchester, England",900
+937,UFC Fight Night 140: Magny vs. Ponzinibbio,UFC,2018-11-17,Estadio Mary Terán de Weiss,"Buenos Aires, Argentina",901
+938,UFC Fight Night 141: Blaydes vs. Ngannou 2,UFC,2018-11-24,Cadillac Arena,"Beijing, China",902
+941,Bellator 210: Njokuani vs. Salter,BELLATOR,2018-11-30,WinStar World Casino and Resort,"Thackerville, Oklahoma, USA",903
+940,TUF 28 Finale: Heavy Hitters,UFC,2018-11-30,Pearl Theatre at Palms Casino Resort,"Las Vegas, Nevada, USA",904
+943,Bellator 211: Sakara vs. Kauppinen,BELLATOR,2018-12-01,RDS Stadium,"Genoa, Italy",905
+942,KSW 46: Narkun vs. Khalidov,KSW,2018-12-01,Gliwice Arena,"Gliwice, Poland",906
+944,UFC Fight Night 142: dos Santos vs. Tuivasa,UFC,2018-12-02,Adelaide Entertainment Centre,"Adelaide, Australia",907
+947,UFC 231: Holloway vs. Ortega,UFC,2018-12-08,Scotiabank Arena,"Toronto, Ontario, Canada",908
+948,Bellator 212: Primus vs. Chandler 2,BELLATOR,2018-12-14,Neal S. Blaisdell Arena,"Honolulu, Hawaii, USA",909
+950,Bellator 213: Macfarlane vs. Létourneau,BELLATOR,2018-12-15,Neal S. Blaisdell Arena,"Honolulu, Hawaii, USA",910
+949,UFC on Fox 31: Lee vs. Iaquinta 2,UFC,2018-12-15,Fiserv Forum,"Milwaukee, Wisconsin, USA",911
+951,Invicta FC 33: Frey vs. Grusander II,INVICTA,2018-12-15,Scottish Rite Temple,"Kansas City, Missouri, USA",912
+952,UFC 232: Jones vs. Gustafsson 2,UFC,2018-12-29,The Forum,"Inglewood, California, USA",913
+1181,PFL 11: 2018 Season,PFL,2018-12-31,Hulu Theater at Madison Square Garden,"New York, New York, USA",914
+953,UFC Fight Night on ESPN+ 1: Cejudo vs. Dillashaw,UFC,2019-01-19,Barclays Center,"Brooklyn, New York, USA",915
+954,Bellator 214: Fedor vs. Bader,BELLATOR,2019-01-26,The Forum,"Inglewood, California, USA",916
+955,UFC on ESPN+ 2: Assunção vs. Moraes 2,UFC,2019-02-02,Centro de Formação Olímpica do Nordeste,"Fortaleza, Brazil",917
+956,Bellator Newcastle: Pitbull vs. Scope,BELLATOR,2019-02-09,Utilita Arena,"Newcastle, England",918
+957,UFC 234: Adesanya vs. Silva,UFC,2019-02-10,Rod Laver Arena,"Melbourne, Australia",919
+959,Invicta FC 34: Porto vs. Gonzalez,INVICTA,2019-02-15,Memorial Hall,"Kansas City, Missouri, USA",920
+958,Bellator 215: Mitrione vs. Kharitonov,BELLATOR,2019-02-15,Mohegan Sun Arena,"Uncasville, Connecticut, USA",921
+960,Bellator 216: MVP vs. Daley,BELLATOR,2019-02-16,Mohegan Sun Arena,"Uncasville, Connecticut, USA",922
+961,CW 101: Cage Warriors 101,CW,2019-02-16,Exhibition Centre,"Liverpool, England",923
+962,UFC on ESPN 1: Ngannou vs. Velasquez,UFC,2019-02-17,Talking Stick Resort Arena,"Phoenix, Arizona, USA",924
+964,Bellator 217: Gallagher vs. Graham,BELLATOR,2019-02-23,3Arena,"Dublin, Ireland",925
+963,UFC on ESPN+ 3: Blachowicz vs. Santos,UFC,2019-02-23,O2 Arena,"Prague, Czech Republic",926
+966,CW 102: Webb vs. Robertsen,CW,2019-03-02,Indigo at the O2,"London, England",927
+965,UFC 235: Jones vs. Smith,UFC,2019-03-02,T-Mobile Arena,"Las Vegas, Nevada, USA",928
+968,UFC on ESPN+ 4: Lewis vs. dos Santos,UFC,2019-03-09,Intrust Bank Arena,"Wichita, Kansas, USA",929
+967,CW 103: Dalby vs. Lohore,CW,2019-03-09,K.B. Hallen,"Copenhagen, Denmark",930
+969,UFC on ESPN+ 5: Till vs. Masvidal,UFC,2019-03-16,The O2 Arena,"London, England",931
+970,Bellator 218: Sanchez vs. Karakhanyan 2,BELLATOR,2019-03-22,WinStar World Casino,"Thackerville, Oklahoma, USA",932
+971,UFC on ESPN+ 6: Thompson vs. Pettis,UFC,2019-03-23,Bridgestone Arena,"Nashville, Tennessee, USA",933
+972,KSW 47: The X-Warriors,KSW,2019-03-23,Atlas Arena,"Lodz, Poland",934
+973,Bellator 219: Awad vs. Girtz,BELLATOR,2019-03-29,Pechanga Resort & Casino,"Temecula, California, USA",935
+974,UFC on ESPN 2: Barboza vs. Gaethje,UFC,2019-03-30,Wells Fargo Center,"Philadelphia, Pennsylvania, USA",936
+975,UFC 236: Holloway vs. Poirier 2,UFC,2019-04-13,State Farm Arena,"Atlanta, Georgia, USA",937
+976,UFC on ESPN+ 7: Overeem vs. Oleinik,UFC,2019-04-20,Yubileyny Sports Palace,"Saint Petersburg, Russia",938
+980,KSW 48: Szymanski vs. Parnasse,KSW,2019-04-27,Hala Globus,"Lubin, Poland",939
+979,CW 104: Shore vs. Malone,CW,2019-04-27,Viola Arena,"Cardiff, Wales",940
+978,Bellator 220: MacDonald vs. Fitch,BELLATOR,2019-04-27,SAP Center,"San Jose, California, USA",941
+977,UFC on ESPN+ 8: Jacaré vs. Hermansson,UFC,2019-04-27,BB&T Center,"Sunrise, Florida, USA",942
+982,Invicta: Phoenix Series 1,INVICTA,2019-05-03,Memorial Hall,"Kansas City, Missouri, USA",943
+983,Birmingham: Primus vs. Wilde,BELLATOR,2019-05-04,Resorts World Arena,"Birmingham, England",944
+981,UFC on ESPN+ 9: Iaquinta vs. Cowboy,UFC,2019-05-04,Canadian Tire Centre,"Ottawa, Ontario, Canada",945
+1185,PFL 1: 2019 Season,PFL,2019-05-09,Nassau Coliseum,"Uniondale, New York, USA",946
+985,UFC 237: Namajunas vs. Andrade,UFC,2019-05-11,Jeunesse Arena,"Rio de Janeiro, Brazil",947
+984,Bellator 221: Chandler vs. Pitbull,BELLATOR,2019-05-11,Allstate Arena,"Rosemont, Illinois, USA",948
+986,KSW 49: Materla vs. Askham 2,KSW,2019-05-18,Ergo Arena,"Gdansk, Poland",949
+987,UFC on ESPN+ 10: dos Anjos vs. Lee,UFC,2019-05-18,Blue Cross Arena,"Rochester, New York, USA",950
+1186,PFL 2: 2019 Season,PFL,2019-05-23,Nassau Coliseum,"Uniondale, New York, USA",951
+989,CW 105: Barnett vs. Carter,CW,2019-05-31,Colchester Charter Hall,"Colchester, England",952
+988,UFC on ESPN+ 11: Gustafsson vs. Smith,UFC,2019-06-01,Ericsson Globe,"Stockholm, Sweden",953
+1187,PFL 3: 2019 Season,PFL,2019-06-06,Nassau Coliseum,"Uniondale, New York, USA",954
+990,Invicta FC 35: Bennett vs. Rodriguez II,INVICTA,2019-06-07,Memorial Hall,"Kansas City, Kansas, USA",955
+991,UFC 238: Cejudo vs. Moraes,UFC,2019-06-08,United Center,"Chicago, Illinois, USA",956
+992,Bellator 222: MacDonald vs. Gracie,BELLATOR,2019-06-14,Madison Square Garden,"New York City, New York, USA",957
+994,UFC on ESPN+ 12: Moicano vs. The Korean Zombie,UFC,2019-06-22,Bon Secours Wellness Arena,"Greenville, South Carolina, USA",958
+993,Bellator 223: Bellator London,BELLATOR,2019-06-22,SSE Arena,"London, England",959
+995,CW 106: Night of Champions,CW,2019-06-29,Hammersmith Apollo,"London, England",960
+996,UFC on ESPN 3: Ngannou vs. dos Santos,UFC,2019-06-29,Target Center,"Minneapolis, Minnesota, USA",961
+997,UFC 239: Jones vs. Santos,UFC,2019-07-06,T-Mobile Arena,"Las Vegas, Nevada, USA",962
+1188,PFL 4: 2019 Season,PFL,2019-07-11,Ocean Resort Casino,"Atlantic City, New Jersey, USA",963
+998,Bellator 224: Budd vs. Rubin,BELLATOR,2019-07-12,WinStar World Casino,"Thackerville, Oklahoma, USA",964
+999,UFC on ESPN+ 13: de Randamie vs. Ladd,UFC,2019-07-13,Golden 1 Center,"Sacramento, California, USA",965
+1000,UFC on ESPN 4: dos Anjos vs. Edwards,UFC,2019-07-20,AT&T Center,"San Antonio, Texas, USA",966
+1190,PFL 5: 2019 Season,PFL,2019-07-25,Ocean Resort Casino,"Atlantic City, New Jersey, USA",967
+1001,UFC 240: Holloway vs. Edgar,UFC,2019-07-27,Rogers Place,"Edmonton, Alberta, Canada",968
+1002,UFC on ESPN 5: Covington vs. Lawler,UFC,2019-08-03,Prudential Center,"Newark, New Jersey, USA",969
+1191,PFL 6: 2019 Season,PFL,2019-08-08,Ocean Resort Casino,"Atlantic City, New Jersey, USA",970
+1004,Invicta FC 36: Sorenson vs. Young,INVICTA,2019-08-09,Memorial Hall,"Kansas City, Kansas, USA",971
+1003,UFC on ESPN+ 14: Shevchenko vs. Carmouche 2,UFC,2019-08-10,Antel Arena,"Montevideo,",972
+1005,UFC 241: Cormier vs. Miocic 2,UFC,2019-08-17,Honda Center,"Anaheim, California, USA",973
+1007,UFC on ESPN+ 15: Andrade vs. Zhang,UFC,2019-08-31,Shenzhen Universiade Sports Centre,"Shenzhen, China",974
+1008,Cage Warriors: Unplugged 2,CW,2019-09-06,BT Sport Studios,"London, England",975
+1009,Invicta: Phoenix Series 2,INVICTA,2019-09-06,Memorial Hall,"Kansas City, Missouri, USA",976
+1010,UFC 242: Khabib vs. Poirier,UFC,2019-09-07,"The Arena, Yas Island","Abu Dhabi, United Arab Emirates",977
+1011,Bellator 226: Bader vs. Kongo,BELLATOR,2019-09-07,SAP Center,"San Jose, California, USA",978
+1013,KSW 50: London,KSW,2019-09-14,Wembley Arena,"London, England",979
+1012,UFC on ESPN+ 16: Cerrone vs. Gaethje,UFC,2019-09-14,Rogers Arena,"Vancouver, British Columbia, Canada",980
+1014,UFC on ESPN+ 17: Rodríguez vs. Stephens,UFC,2019-09-21,Mexico City Arena,"Mexico City, Mexico",981
+1018,Bellator 228: Machida vs. Mousasi,BELLATOR,2019-09-28,The Forum,"Inglewood, California, USA",982
+1015,UFC on ESPN+ 18: Hermansson vs. Cannonier,UFC,2019-09-28,Royal Arena,"Copenhagen, Denmark",983
+1016,Bellator 227: Bellator Dublin,BELLATOR,2019-09-28,3Arena,"Dublin, Ireland",984
+1017,CW 107: Aspinall vs. Ben Hamouda,CW,2019-09-28,Exhibition Centre Liverpool,"Liverpool, England",985
+1019,Bellator 229: Koreshkov vs. Larkin,BELLATOR,2019-10-04,Pechanga Resort and Casino,"Temecula, California, USA",986
+1020,Invicta FC 37: Gonzalez vs. Sanchez,INVICTA,2019-10-04,Memorial Hall,"Kansas City, Kansas, USA",987
+1021,UFC 243: Whittaker vs. Adesanya,UFC,2019-10-06,Marvel Stadium,"Melbourne, Australia",988
+1192,PFL 7: 2019 Season,PFL,2019-10-11,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",989
+1024,CW 108: Jones vs. Mantykivi,CW,2019-10-12,Viola Arena,"Cardiff, Wales",990
+1023,UFC on ESPN+ 19: Joanna vs. Waterson,UFC,2019-10-12,Amalie Arena,"Tampa, Florida, USA",991
+1022,Bellator 230: Bellator Milan,BELLATOR,2019-10-12,PalaLido,"Milan, Italy",992
+1193,PFL 8: 2019 Season,PFL,2019-10-17,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",993
+1025,UFC on ESPN 6: Reyes vs. Weidman,UFC,2019-10-18,TD Garden,"Boston, Massachusetts, USA",994
+1026,Bellator 231: Mir vs. Nelson 2,BELLATOR,2019-10-25,Mohegan Sun Arena,"Uncasville, Connecticut, USA",995
+1027,UFC on ESPN+ 20: Maia vs. Askren,UFC,2019-10-26,Singapore Indoor Stadium,"Kallang, Singapore",996
+1028,Bellator 232: MacDonald vs. Lima 2,BELLATOR,2019-10-26,Mohegan Sun Arena,"Uncasville, Connecticut, USA",997
+1029,CW 109: Herbert vs Carrizosa,CW,2019-10-26,Resorts World Arena,"Birmingham, England",998
+1194,PFL 9: 2019 Season,PFL,2019-10-31,Mandalay Bay Events Center,"Las Vegas, Nevada, USA",999
+1030,Invicta FC 38: Murata vs. Ducote,INVICTA,2019-11-01,Memorial Hall,"Kansas City, Kansas, USA",1000
+1031,UFC 244: Masvidal vs. Diaz,UFC,2019-11-02,Madison Square Garden,"New York City, New York, USA",1001
+1032,Bellator 233: Salter vs. van Steenis,BELLATOR,2019-11-08,WinStar World Casino,"Thackerville, Oklahoma, USA",1002
+1035,KSW 51: Zagreb,KSW,2019-11-09,Arena Zagreb,"Zagreb, Croatia",1003
+1034,CW 110: McKee vs. Foss,CW,2019-11-09,Neptune Stadium,"Cork, Ireland",1004
+1033,UFC on ESPN+ 21: Magomedsharipov vs. Kattar,UFC,2019-11-09,CSKA Arena,"Moscow, Russia",1005
+1037,Bellator 234: Kharitonov vs. Vassell,BELLATOR,2019-11-14,Menora Mivtachim Arena,"Tel Aviv,",1006
+1036,UFC on ESPN+ 22: Blachowicz vs. Jacare,UFC,2019-11-16,GinÃ¡sio do Ibirapuera,"Sao Paulo, Brazil",1007
+1039,CW 111: Cage Warriors 111,CW,2019-11-22,indigo at The O2,"London, England",1008
+1038,Bellator London 2: MVP vs. Melillo,BELLATOR,2019-11-23,The SSE Arena,"London, England",1009
+1041,KSW 52: The Race: Askham vs. Khalidov,KSW,2019-12-07,Gliwice Arena,"Gliwice, Poland",1010
+1040,UFC on ESPN 7: Overeem vs. Rozenstruik,UFC,2019-12-07,Capital One Arena,"Washington, District of Columbia, USA",1011
+1042,UFC 245: Usman vs. Covington,UFC,2019-12-14,T-Mobile Arena,"Las Vegas, Nevada, USA",1012
+1044,Bellator 235: Miesch vs. Perez,BELLATOR,2019-12-20,Neal S. Blaisdell Arena,"Honolulu, Hawaii, USA",1013
+1045,Bellator 236: Macfarlane vs. Jackson,BELLATOR,2019-12-21,Neal S. Blaisdell Arena,"Honolulu, Hawaii, USA",1014
+1043,UFC on ESPN+ 23: Edgar vs. The Korean Zombie,UFC,2019-12-21,Sajik Arena,"Busan, South Korea",1015
+1046,Bellator 237: Fedor vs. Rampage,BELLATOR,2019-12-29,Saitama Super Arena,"Saitama, Japan",1016
+1195,PFL 10: 2019 Season,PFL,2019-12-31,Hulu Theater at Madison Square Garden,"New York, New York, USA",1017
+1047,UFC 246: McGregor vs. Cowboy,UFC,2020-01-18,T-Mobile Arena,"Las Vegas, Nevada, USA",1018
+1048,Bellator 238: Budd vs. Cyborg,BELLATOR,2020-01-25,The Forum,"Inglewood, California, USA",1019
+1049,UFC on ESPN+ 24: Blaydes vs. dos Santos,UFC,2020-01-25,PNC Arena,"Raleigh, North Carolina, USA",1020
+1050,Invicta FC 39: Frey vs. Cummins II,INVICTA,2020-02-07,Memorial Hall,"Kansas City, Kansas, USA",1021
+1051,UFC 247: Jones vs. Reyes,UFC,2020-02-08,Toyota Center,"Houston, Texas, USA",1022
+1052,UFC on ESPN+ 25: Anderson vs. Blachowicz 2,UFC,2020-02-15,Santa Ana Star Center,"Rio Rancho, New Mexico, USA",1023
+1053,Bellator 239: Ruth vs. Amosov,BELLATOR,2020-02-21,WinStar World Casino,"Thackerville, Oklahoma, USA",1024
+1055,UFC on ESPN+ 26: Felder vs. Hooker,UFC,2020-02-22,Spark Arena,"Auckland, New Zealand",1025
+1054,Bellator 240: Bellator Dublin,BELLATOR,2020-02-22,3Arena,"Dublin, Ireland",1026
+1056,UFC on ESPN+ 27: Benavidez vs. Figueiredo,UFC,2020-02-29,Chartway Arena,"Norfolk, Virginia, USA",1027
+1057,Invicta: Phoenix Series 3,INVICTA,2020-03-06,Memorial Hall,"Kansas City, Kansas, USA",1028
+1058,CW 112: Cartwright vs. Bilic,CW,2020-03-07,Manchester BEC Arena,"Manchester, England",1029
+1059,UFC 248: Adesanya vs. Romero,UFC,2020-03-07,T-Mobile Arena,"Las Vegas, Nevada, USA",1030
+1060,UFC on ESPN+ 28: Lee vs. Oliveira,UFC,2020-03-14,Ginasio Nilson Nelson,"Brasilia, Distrito Federal, Brazil",1031
+1061,CW 113: Stewart vs. Fabinski,CW,2020-03-21,BEC Arena,"Manchester, England",1032
+1062,UFC 249: Ferguson vs. Gaethje,UFC,2020-05-09,VyStar Veterans Memorial Arena,"Jacksonville, Florida, USA",1033
+1063,UFC on ESPN+ 29: Smith vs. Teixeira,UFC,2020-05-13,VyStar Veterans Memorial Arena,"Jacksonville, Florida, USA",1034
+1064,UFC on ESPN 8: Overeem vs. Harris,UFC,2020-05-16,VyStar Veterans Memorial Arena,"Jacksonville, Florida, USA",1035
+1065,UFC on ESPN 9: Woodley vs. Burns,UFC,2020-05-30,UFC Apex,"Las Vegas, Nevada, USA",1036
+1066,UFC 250: Nunes vs. Spencer,UFC,2020-06-06,UFC Apex,"Las Vegas, Nevada, USA",1037
+1067,UFC on ESPN: Eye vs. Calvillo,UFC,2020-06-13,UFC Apex,"Las Vegas, Nevada, USA",1038
+1068,UFC Vegas 3: Blaydes vs. Volkov,UFC,2020-06-20,UFC Apex,"Las Vegas, Nevada, USA",1039
+1069,UFC on ESPN 12: Poirier vs. Hooker,UFC,2020-06-27,UFC Apex,"Las Vegas, Nevada, USA",1040
+1070,Invicta FC 40: Ducote vs. Lima,INVICTA,2020-07-02,Police Athletic League of KCKS,"Kansas City, Kansas, USA",1041
+1071,KSW 53: Reborn,KSW,2020-07-11,Undisclosed Location,"Warsaw, Poland",1042
+1072,UFC 251: Usman vs. Masvidal,UFC,2020-07-12,Flash Forum,"Abu Dhabi, United Arab Emirates",1043
+1073,UFC on ESPN 13: Kattar vs. Ige,UFC,2020-07-16,Flash Forum,"Abu Dhabi, United Arab Emirates",1044
+1074,UFC on ESPN+ 30: Figueiredo vs. Benavidez 2,UFC,2020-07-19,Flash Forum,"Abu Dhabi, United Arab Emirates",1045
+1075,Bellator 242: Bandejas vs. Pettis,BELLATOR,2020-07-24,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1046
+1076,UFC on ESPN 14: Whittaker vs. Till,UFC,2020-07-26,Flash Forum,"Abu Dhabi, United Arab Emirates",1047
+1077,Invicta FC 41: Morandin vs. Ruiz,INVICTA,2020-07-30,PAL of KCKS Gym,"Kansas City, Kansas, USA",1048
+1078,UFC on ESPN+ 31: Brunson vs. Shahbazyan,UFC,2020-08-01,UFC Apex,"Las Vegas, Nevada, USA",1049
+1079,Bellator 243: Chandler vs. Henderson 2,BELLATOR,2020-08-07,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1050
+1080,UFC on ESPN+ 32: Lewis vs. Oleinik,UFC,2020-08-08,UFC Apex,"Las Vegas, Nevada, USA",1051
+1081,UFC 252: Miocic vs. Cormier 3,UFC,2020-08-15,UFC Apex,"Las Vegas, Nevada, USA",1052
+1082,Bellator 244: Bader vs. Nemkov,BELLATOR,2020-08-21,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1053
+1083,UFC on ESPN 15: Munhoz vs. Edgar,UFC,2020-08-22,UFC Apex,"Las Vegas, Nevada, USA",1054
+1085,UFC on ESPN+ 33: Smith vs. Rakic,UFC,2020-08-29,UFC Apex,"Las Vegas, Nevada, USA",1055
+1084,KSW 54: Gamrot vs. Ziolkowski,KSW,2020-08-29,Global Expo,"Warsaw, Poland",1056
+1086,UFC on ESPN+ 34: Overeem vs. Sakai,UFC,2020-09-05,UFC Apex,"Las Vegas, Nevada, USA",1057
+1087,Bellator 245: Davis vs. Machida II,BELLATOR,2020-09-11,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1058
+1088,UFC on ESPN+ 35: Waterson vs. Hill,UFC,2020-09-12,UFC Apex,"Las Vegas, Nevada, USA",1059
+1089,Bellator 246: Archuleta vs. Mix,BELLATOR,2020-09-12,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1060
+1090,Invicta FC 42: Cummins vs. Zappitella,INVICTA,2020-09-17,PAL of KCKS Gym,"Kansas City, Kansas, USA",1061
+1091,UFC on ESPN+ 36: Covington vs. Woodley,UFC,2020-09-19,UFC Apex,"Las Vegas, Nevada, USA",1062
+1092,CW 114: Faiddine vs. Shanks,CW,2020-09-24,BEC Arena,"Manchester, England",1063
+1094,CW 116: Jones vs. Proctor,CW,2020-09-26,BEC Arena,"Manchester, England",1064
+1095,Bellator Milan: Edwards vs. van Steenis,BELLATOR,2020-09-26,Allianz Cloud,"Milan, Italy",1065
+1096,UFC 253: Adesanya vs. Costa,UFC,2020-09-27,Flash Forum,"Abu Dhabi, United Arab Emirates",1066
+1097,Bellator 247: Jackson vs. Kielholtz,BELLATOR,2020-10-01,Allianz Cloud,"Milan, Italy",1067
+1099,UFC on ESPN 16: Holm vs. Aldana,UFC,2020-10-03,Flash Forum,"Abu Dhabi, United Arab Emirates",1068
+1098,Bellator Milan 3: Gallagher vs. Ellenor,BELLATOR,2020-10-03,Allianz Cloud,"Milan, Italy",1069
+1100,Bellator 248: Bellator Paris,BELLATOR,2020-10-10,AccorHotels Arena,"Paris, France",1070
+1101,KSW 55: Askham vs. Khalidov 2,KSW,2020-10-10,Wytwornia Club,"Lodz, Poland",1071
+1102,UFC on ESPN+ 37: Moraes vs. Sandhagen,UFC,2020-10-11,Flash Forum,"Abu Dhabi, United Arab Emirates",1072
+1103,Bellator 249: Cyborg vs. Blencowe,BELLATOR,2020-10-15,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1073
+1104,UFC on ESPN+ 38: Ortega vs. The Korean Zombie,UFC,2020-10-17,Flash Forum,"Abu Dhabi, United Arab Emirates",1074
+1105,UFC 254: Khabib vs. Gaethje,UFC,2020-10-24,Flash Forum,"Abu Dhabi, United Arab Emirates",1075
+1106,Bellator 250: Mousasi vs. Lima,BELLATOR,2020-10-29,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1076
+1107,UFC on ESPN+ 39: Hall vs. Silva,UFC,2020-10-31,UFC Apex,"Las Vegas, Nevada, USA",1077
+1108,Bellator 251: Manhoef vs. Anderson,BELLATOR,2020-11-05,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1078
+1109,UFC on ESPN+ 40: Santos vs. Teixeira,UFC,2020-11-07,UFC Apex,"Las Vegas, Nevada, USA",1079
+1110,Bellator 252: Pitbull vs. Carvalho,BELLATOR,2020-11-12,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1080
+1111,KSW 56: Materla vs. Soldic,KSW,2020-11-14,Wytwornia Club,"Lodz, Poland",1081
+1112,UFC on ESPN+ 41: Felder vs. dos Anjos,UFC,2020-11-14,,"Las Vegas, Nevada, USA",1082
+1113,Bellator 253: Caldwell vs. McKee,BELLATOR,2020-11-19,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1083
+1114,Invicta FC 43: King vs. Harrison,INVICTA,2020-11-21,PAL of KCKS Gym,"Kansas City, Kansas, USA",1084
+1115,UFC 255: Figueiredo vs. Perez,UFC,2020-11-21,UFC Apex,"Las Vegas, Nevada, USA",1085
+1116,UFC on ESPN 18: Smith vs. Clark,UFC,2020-11-28,UFC Apex,"Las Vegas, Nevada, USA",1086
+1117,UFC on ESPN 19: Hermansson vs. Vettori,UFC,2020-12-05,UFC Apex,"Las Vegas, Nevada, USA",1087
+1118,CW 117: Shanks vs. Hadley,CW,2020-12-10,York Hall,"London, England",1088
+1119,Bellator 254: Macfarlane vs. Velasquez,BELLATOR,2020-12-10,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1089
+1120,CW 118: The Trilogy Strikes Back 2,CW,2020-12-11,York Hall,"London, England",1090
+1121,CW 119: The Trilogy Strikes Back 3,CW,2020-12-12,York Hall,"London, England",1091
+1122,UFC 256: Figueiredo vs. Moreno,UFC,2020-12-12,UFC Apex,"Las Vegas, Nevada, USA",1092
+1124,UFC on ESPN+ 41: Thompson vs. Neal,UFC,2020-12-19,UFC Apex,"Las Vegas, Nevada, USA",1093
+1123,KSW 57: De Fries vs. Kita,KSW,2020-12-19,Wytwornia Club,"Lodz, Poland",1094
+1125,UFC on ABC 1: Holloway vs. Kattar,UFC,2021-01-16,Etihad Arena,"Abu Dhabi, United Arab Emirates",1095
+1126,UFC on ESPN 20: Chiesa vs. Magny,UFC,2021-01-20,Etihad Arena,"Abu Dhabi, United Arab Emirates",1096
+1127,UFC 257: Poirier vs. McGregor 2,UFC,2021-01-23,Etihad Arena,"Abu Dhabi, United Arab Emirates",1097
+1128,KSW 58: Parnasse vs. Torres,KSW,2021-01-30,Studio Klubu Wytwornia,"Lodz, Poland",1098
+1129,UFC on ESPN+ 42: Overeem vs. Volkov,UFC,2021-02-06,UFC Apex,"Las Vegas, Nevada, USA",1099
+1130,UFC 258: Usman vs. Burns,UFC,2021-02-13,UFC Apex,"Las Vegas, Nevada, USA",1100
+1131,UFC on ESPN+ 43: Blaydes vs. Lewis,UFC,2021-02-20,UFC Apex,"Las Vegas, Nevada, USA",1101
+1132,UFC on ESPN+ 44: Rozenstruik vs. Gane,UFC,2021-02-27,UFC Apex,"Las Vegas, Nevada, USA",1102
+1133,UFC 259: Blachowicz vs. Adesanya,UFC,2021-03-06,UFC Apex,"Las Vegas, Nevada, USA",1103
+1134,UFC on ESPN+ 45: Edwards vs. Muhammad,UFC,2021-03-13,UFC Apex,"Las Vegas, Nevada, USA",1104
+1135,CW 120: Kauppinen vs. Richardson,CW,2021-03-18,York Hall,"London, England",1105
+1136,CW 121: Sardari vs. Desmae,CW,2021-03-19,York Hall,"London, England",1106
+1138,KSW 59: Fight Code,KSW,2021-03-20,WytwÃ³rnia Club,"Lodz, Poland",1107
+1137,CW 122: Charriere vs. Vucenic,CW,2021-03-20,York Hall,"London, England",1108
+1139,UFC on ESPN 21: Brunson vs. Holland,UFC,2021-03-20,UFC Apex,"Las Vegas, Nevada, USA",1109
+1140,UFC 260: Miocic vs. Ngannou 2,UFC,2021-03-27,UFC Apex,"Las Vegas, Nevada, USA",1110
+1141,Bellator 255: Pitbull vs. Sanchez 2,BELLATOR,2021-04-02,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1111
+1142,Bellator 256: Bader vs. Machida 2,BELLATOR,2021-04-09,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1112
+1143,UFC on ABC 2: Vettori vs. Holland,UFC,2021-04-10,UFC Apex,"Las Vegas, Nevada, USA",1113
+1144,Bellator 257: Nemkov vs. Davis 2,BELLATOR,2021-04-16,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1114
+1145,UFC on ESPN 22: Whittaker vs. Gastelum,UFC,2021-04-17,UFC Apex,"Las Vegas, Nevada, USA",1115
+1196,PFL 1: 2021 Season,PFL,2021-04-23,Ocean Casino Resort,"Atlantic City, New Jersey, USA",1116
+1147,UFC 261: Usman vs. Masvidal 2,UFC,2021-04-24,VyStar Veterans Memorial Arena,"Jacksonville, Florida, USA",1117
+1146,KSW 60: De Fries vs. Narkun 2,KSW,2021-04-24,Wytwornia Club,"Lodz, Poland",1118
+1197,PFL 2: 2021 Season,PFL,2021-04-29,Ocean Casino Resort,"Atlantic City, New Jersey, USA",1119
+1148,UFC on ESPN 23: Reyes vs. Prochazka,UFC,2021-05-01,UFC Apex,"Las Vegas, Nevada, USA",1120
+1198,PFL 3: 2021 Season,PFL,2021-05-06,2021-05-06,"Atlantic City, New Jersey, USA",1121
+1149,Bellator 258: Archuleta vs. Pettis,BELLATOR,2021-05-07,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1122
+1150,UFC on ESPN 24: Rodriguez vs. Waterson,UFC,2021-05-08,UFC Apex,"Las Vegas, Nevada, USA",1123
+1152,UFC 262: Oliveira vs. Chandler,UFC,2021-05-15,Toyota Center,"Houston, Texas, USA",1124
+1154,Invicta FC: Rodriguez vs. Torquato,INVICTA,2021-05-21,PAL KC,"Kansas City, Kansas, USA",1125
+1153,Bellator 259: Cyborg vs. Smith 2,BELLATOR,2021-05-21,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1126
+1155,UFC on ESPN+ 46: Font vs. Garbrandt,UFC,2021-05-22,UFC Apex,"Las Vegas, Nevada, USA",1127
+1159,KSW 61: To Fight or Not To Fight,KSW,2021-06-05,Ergo Arena,"Gdansk, Poland",1128
+1156,UFC on ESPN+ 47: Rozenstruik vs. Sakai,UFC,2021-06-05,UFC Apex,"Las Vegas, Nevada, USA",1129
+1199,PFL 4: 2021 Season,PFL,2021-06-10,Ocean Casino Resort,"Atlantic City, New Jersey, USA",1130
+1236,Invicta FC: Phoenix Tournament: Atomweight,INVICTA,2021-06-11,Memorial Hall,"Kansas City, Kansas, USA",1131
+1157,Bellator 260: Lima vs. Amosov,BELLATOR,2021-06-11,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1132
+1158,UFC 263: Adesanya vs. Vettori 2,UFC,2021-06-12,Gila River Arena,"Glendale, Arizona, USA",1133
+1200,PFL 5: 2021 Season,PFL,2021-06-17,Ocean Casino Resort,"Atlantic City, New Jersey, USA",1134
+1160,UFC on ESPN 25: Jung vs. Ige,UFC,2021-06-19,UFC Apex,"Las Vegas, Nevada, USA",1135
+1161,CW 123: Cage Warriors 123,CW,2021-06-24,York Hall,"London, England",1136
+1162,Bellator 261: Johnson vs. Moldavsky,BELLATOR,2021-06-25,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1137
+1164,CW 124: Cage Warriors 124,CW,2021-06-25,York Hall,"London, England",1138
+1201,PFL 6: 2021 Season,PFL,2021-06-25,Ocean Casino Resort,"Atlantic City, New Jersey, USA",1139
+1163,UFC on ESPN+ 48: Gane vs. Volkov,UFC,2021-06-26,UFC Apex,"Las Vegas, Nevada, USA",1140
+1165,CW 125: Cage Warriors 125,CW,2021-06-26,York Hall,"London, England",1141
+1166,UFC 264: Poirier vs. McGregor 3,UFC,2021-07-10,T-Mobile Arena,"Las Vegas, Nevada, USA",1142
+1168,Bellator 262: Velasquez vs. Kielholtz,BELLATOR,2021-07-16,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1143
+1169,UFC on ESPN 26: Makhachev vs. Moises,UFC,2021-07-16,UFC Apex,"Las Vegas, Nevada, USA",1144
+1204,KSW 62: Kolecki vs. Szostak,KSW,2021-07-17,ATM Studio,"Warsaw, Poland",1145
+1177,UFC on ESPN 27: Sandhagen vs. Dillashaw,UFC,2021-07-24,UFC Apex,"Las Vegas, Nevada, USA",1146
+1182,Bellator 263: Pitbull vs. McKee,BELLATOR,2021-07-31,The Forum,"Inglewood, California, USA",1147
+1183,UFC on ESPN 28: Hall vs. Strickland,UFC,2021-07-31,UFC Apex,"Las Vegas, Nevada, USA",1148
+1184,CW 126: Stewart vs. Poppie,CW,2021-08-01,Humphreys by the Bay,"San Diego, California, USA",1149
+1189,UFC 265: Lewis vs. Gane,UFC,2021-08-07,Toyota Center,"Houston, Texas, USA",1150
+1202,Bellator 264: Mousasi vs. Salter,BELLATOR,2021-08-13,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1151
+1203,PFL 7: 2021 Season,PFL,2021-08-13,Seminole Hard Rock Hotel & Casino Hollywood,"Hollywood, Florida, USA",1152
+1205,PFL 8: 2021 Season,PFL,2021-08-19,Seminole Hard Rock Hotel & Casino Hollywood,"Hollywood, Florida, USA",1153
+1206,Bellator 265: Kongo vs. Kharitonov,BELLATOR,2021-08-20,Sanford Pentagon,"Sioux Falls, South Dakota, USA",1154
+1207,UFC on ESPN 29: Cannonier vs. Gastelum,UFC,2021-08-21,UFC Apex,"Las Vegas, Nevada, USA",1155
+1209,Invicta FC 44: A New Era,INVICTA,2021-08-27,Memorial Hall,"Kansas City, Kansas, USA",1156
+1208,PFL 9: 2021 Season,PFL,2021-08-27,Seminole Hard Rock Hotel & Casino Hollywood,"Hollywood, Florida, USA",1157
+1210,UFC on ESPN 30: Barboza vs. Chikadze,UFC,2021-08-28,UFC Apex,"Las Vegas, Nevada, USA",1158
+1212,KSW 63: Soldic vs. Kincl,KSW,2021-09-04,ATM Studio,"Warsaw, Poland",1159
+1211,UFC on ESPN+ 49: Brunson vs. Till,UFC,2021-09-04,UFC Apex,"Las Vegas, Nevada, USA",1160
+1213,UFC on ESPN+ 50: Smith vs. Spann,UFC,2021-09-18,UFC Apex,"Las Vegas, Nevada, USA",1161
+1214,Bellator 266: Davis vs. Romero,BELLATOR,2021-09-18,SAP Center,"San Jose, California, USA",1162
+1215,UFC 266: Volkanovski vs. Ortega,UFC,2021-09-25,T-Mobile Arena,"Las Vegas, Nevada, USA",1163
+1216,CW 127: Wooding vs. Fletcher,CW,2021-09-30,York Hall,"London, England",1164
+1217,Bellator 267: Lima vs. MVP 2,BELLATOR,2021-10-01,Wembley Arena,"London, England",1165
+1218,CW 128: Hughes vs. Charriere,CW,2021-10-01,York Hall,"London, England",1166
+1220,UFC on ESPN+ 51: Santos vs. Walker,UFC,2021-10-02,UFC Apex,"Las Vegas, Nevada, USA",1167
+1219,CW 129: Creasey vs. Shanks,CW,2021-10-02,York Hall,"London, England",1168
+1221,UFC on ESPN+ 52: Dern vs. Rodriguez,UFC,2021-10-09,UFC Apex,"Las Vegas, Nevada, USA",1169
+1223,Bellator 268: Nemkov vs. Anglickas,BELLATOR,2021-10-16,Footprint Center,"Phoenix, Arizona, USA",1170
+1222,UFC on ESPN+ 53: Ladd vs. Dumont,UFC,2021-10-16,UFC Apex,"Las Vegas, Nevada, USA",1171
+1225,CW 130: Carlyle vs. Ambrose,CW,2021-10-17,Humphreys by the Bay,"San Diego, California, USA",1172
+1247,KSW 64: Przybysz vs. Santos,KSW,2021-10-23,Atlas Arena,"Lodz, Poland",1173
+1224,Bellator 269: Fedor vs. Johnson,BELLATOR,2021-10-23,VTB Arena,"Moscow, Russia",1174
+1226,UFC on ESPN+ 54: Costa vs. Vettori,UFC,2021-10-23,UFC Apex,"Las Vegas, Nevada, USA",1175
+1227,PFL 10: 2021 Season,PFL,2021-10-27,Seminole Hard Rock Hotel & Casino Hollywood,"Hollywood, Florida, USA",1176
+1228,UFC 267: Blachowicz vs. Teixeira,UFC,2021-10-30,Etihad Arena,"Abu Dhabi, United Arab Emirates",1177
+1229,Bellator 270: Queally vs. Pitbull 2,BELLATOR,2021-11-05,3Arena,"Dublin, Ireland",1178
+1230,UFC 268: Usman vs. Covington 2,UFC,2021-11-06,Madison Square Garden,"New York, New York, USA",1179
+1231,Bellator 271: Cyborg vs. Kavanagh,BELLATOR,2021-11-12,Seminole Hard Rock Hotel & Casino Hollywood,"Hollywood, Florida, USA",1180
+1232,UFC on ESPN+ 55: Holloway vs. Rodriguez,UFC,2021-11-13,UFC Apex,"Las Vegas, Nevada, USA",1181
+1233,UFC on ESPN+ 56: Vieira vs. Tate,UFC,2021-11-20,UFC Apex,"Las Vegas, Nevada, USA",1182
+1234,Bellator 272: Pettis vs. Horiguchi,BELLATOR,2021-12-03,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1183
+1235,UFC on ESPN 31: Font vs. Aldo,UFC,2021-12-04,UFC Apex,"Las Vegas, Nevada, USA",1184
+1237,CW 131: Cage Warriors 131,CW,2021-12-10,York Hall,"London, England",1185
+1239,UFC 269: Oliveira vs. Poirier,UFC,2021-12-11,T-Mobile Arena,"Las Vegas, Nevada, USA",1186
+1238,CW 132: Cage Warriors 132,CW,2021-12-11,York Hall,"London, England",1187
+1240,UFC on ESPN+ 57: Lewis vs. Daukaus,UFC,2021-12-18,UFC Apex,"Las Vegas, Nevada, USA",1188
+1248,KSW 65: Khalidov vs. Soldic,KSW,2021-12-18,Arena Gliwice,"Gliwice, Poland",1189
+1242,Invicta FC 45: Zappitella vs. Delboni II,INVICTA,2022-01-12,PAL of KCKS Gym,"Kansas City, Kansas, USA",1190
+1243,KSW 66: Ziolkowski vs. Mankowski,KSW,2022-01-15,Netto Arena,"Szczecin, Poland",1191
+1244,UFC on ESPN 32: Kattar vs. Chikadze,UFC,2022-01-15,UFC Apex,"Las Vegas, Nevada, USA",1192
+1245,UFC 270: Ngannou vs. Gane,UFC,2022-01-22,Honda Center,"Anaheim, California, USA",1193
+1246,Bellator 273: Bader vs. Moldavsky,BELLATOR,2022-01-29,Footprint Center,"Phoenix, Arizona, USA",1194
+1249,UFC on ESPN+ 58: Hermansson vs. Strickland,UFC,2022-02-05,UFC Apex,"Las Vegas, Nevada, USA",1195
+1250,UFC 271: Adesanya vs. Whittaker 2,UFC,2022-02-12,Toyota Center,"Houston, Texas, USA",1196
+1251,UFC on ESPN+ 59: Walker vs. Hill,UFC,2022-02-19,UFC Apex,"Las Vegas, Nevada, USA",1197
+1252,Bellator 274: Gracie vs. Storley,BELLATOR,2022-02-19,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1198
+1253,Bellator 275: Mousasi vs. Vanderford,BELLATOR,2022-02-25,3Arena,"Dublin, Ireland",1199
+1254,UFC on ESPN+ 60: Makhachev vs. Green,UFC,2022-02-26,UFC Apex,"Las Vegas, Nevada, USA",1200
+1255,KSW 67: De Fries vs. Stosic,KSW,2022-02-26,Global Expo,"Warsaw, Poland",1201
+1257,CW 133: Cage Warriors 133,CW,2022-03-04,Del Mar Arena,"San Diego, California, USA",1202
+1256,UFC 272: Covington vs. Masvidal,UFC,2022-03-05,T-Mobile Arena,"Las Vegas, Nevada, USA",1203
+1258,Invicta FC 46: Rodriguez vs. Torquato II,INVICTA,2022-03-09,Memorial Hall,"Kansas City, Kansas, USA",1204
+1259,UFC on ESPN+ 61: Santos vs. Ankalaev,UFC,2022-03-12,UFC Apex,"Las Vegas, Nevada, USA",1205
+1260,Bellator 276: Borics vs. Burnell,BELLATOR,2022-03-12,Family Arena,"St. Louis, Missouri, USA",1206
+1261,CW 134: Cage Warriors 134,CW,2022-03-18,O2 Arena,"London, England",1207
+1262,UFC on ESPN+ 62: Volkov vs. Aspinall,UFC,2022-03-19,The O2 Arena,"London, England",1208
+1263,KSW 68: Parnasse vs. Rutkowski,KSW,2022-03-19,Radom Sports Center,"Radom, Poland",1209
+1264,UFC on ESPN+ 63: Blaydes vs. Daukaus,UFC,2022-03-26,Nationwide Arena,"Columbus, Ohio, USA",1210
+1265,CW 135: Cage Warriors 135,CW,2022-04-01,BEC Arena,"Manchester, England",1211
+1267,UFC 273: Volkanovski vs. The Korean Zombie,UFC,2022-04-09,VyStar Veterans Memorial Arena,"Jacks, Florida, USA",1212
+1268,Bellator 277: McKee vs. Pitbull 2,BELLATOR,2022-04-15,SAP Center,"San Jose, California, USA",1213
+1269,UFC on ESPN 34: Luque vs. Muhammad 2,UFC,2022-04-16,UFC Apex,"Las Vegas, Nevada, USA",1214
+1270,PFL 1: 2022 Season,PFL,2022-04-21,Esports Stadium Arlington,"Arlington, Texas, USA",1215
+1271,Bellator 278: Velasquez vs. Carmouche,BELLATOR,2022-04-22,Neal S. Blaisdell Arena,"Honolulu, Hawaii, USA",1216
+1272,KSW 69: Przybysz vs. Martins,KSW,2022-04-23,ATM Studio,"Warsaw, Poland",1217
+1273,UFC on ESPN+ 63: Lemos vs. Andrade,UFC,2022-04-23,UFC Apex,"Las, Nevada, USA",1218
+1274,Bellator 279: Cyborg vs. Blencowe 2,BELLATOR,2022-04-23,Neal S. Blaisdell Arena,"Hono, Hawaii, USA",1219
+1275,PFL 2: 2022 Season,PFL,2022-04-28,Esports Stadium Arlington,"Arlington, Texas, USA",1220
+1276,UFC on ESPN 35: Font vs. Vera,UFC,2022-04-30,UFC Apex,"Las Vegas, Nevada, USA",1221
+1278,Bellator 280: Bader vs. Kongo 2,BELLATOR,2022-05-06,AccorHotels Arena,"Paris, France",1222
+1279,PFL 3: 2022 Season,PFL,2022-05-06,Esports Stadium Arlington,"Arlington, Texas, USA",1223
+1280,UFC 274: Oliveira vs. Gaethje,UFC,2022-05-07,Footprint Center,"Phoenix, Arizona, USA",1224
+1282,Bellator 281: MVP vs. Storley,BELLATOR,2022-05-13,SSE Arena,"London, England",1225
+1283,UFC on ESPN 36: Blachowicz vs. Rakic,UFC,2022-05-14,UFC,"Las Vegas, Nevada, USA",1226
+1284,UFC on ESPN+ 64: Holm vs. Vieira,UFC,2022-05-21,UFC,"Las Vegas, Nevada, USA",1227
+1285,CW 137: Cage Warriors 137,CW,2022-05-27,Charter Hall,"Colchester, England",1228
+1287,KSW 70: Pudzianowski vs. Materla,KSW,2022-05-28,Atlas Arena,"Lod, Poland",1229
+1286,CW 138: Cage Warriors 138,CW,2022-05-28,Charter,"Colchester, England",1230
+1288,UFC on ESPN+ 65: Volkov vs. Rozenstruik,UFC,2022-06-04,UFC Apex,"Las Vegas, Nevada, USA",1231
+1290,CW 139: Cage Warriors 139,CW,2022-06-10,Humphreys by the Bay,"San Diego, California, USA",1232
+1289,UFC 275: Teixeira vs. Prochazka,UFC,2022-06-12,Singapore Indoor Stadium,"Kallang, Singapore",1233
+1291,PFL 4: 2022 Season,PFL,2022-06-17,Overtime Elite Arena,"Atlanta, Georgia, USA",1234
+1293,KSW 71: Ziolkowski vs. Rajewski,KSW,2022-06-18,Arena Torun,"Torun, Poland",1235
+1292,UFC on ESPN 37: Kattar vs. Emmett,UFC,2022-06-18,Moody Center,"Austin, Texas, USA",1236
+1294,Bellator 282: Mousasi vs. Eblen,BELLATOR,2022-06-24,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1237
+1295,PFL 5: 2022 Season,PFL,2022-06-24,Overtime Elite Arena,"Atlanta, Georgia, USA",1238
+1297,UFC on ESPN 38: Tsarukyan vs. Gamrot,UFC,2022-06-25,UFC Apex,"Las Vegas, Nevada, USA",1239
+1296,CW 140: Cage Warriors 140,CW,2022-06-25,SSE Arena,"Belfast, Northern Ireland",1240
+1298,PFL 6: 2022 Season,PFL,2022-07-01,Overtime Elite Arena,"Atlanta, Georgia, USA",1241
+1299,UFC 276: Adesanya vs. Cannonier,UFC,2022-07-02,T-Mobile Arena,"Las Vegas, Nevada, USA",1242
+1300,UFC on ESPN 39: dos Anjos vs. Fiziev,UFC,2022-07-09,UFC Apex,"Las Vegas, Nevada, USA",1243
+1301,UFC on ABC 3: Ortega vs. Rodriguez,UFC,2022-07-16,UBS Arena,"Elmont, New York, USA",1244
+1302,Invicta FC 48: Tennant vs. Rubin,INVICTA,2022-07-20,ReelWorks Denver,"Denver, Colorado, USA",1245
+1304,Bellator 283: Lima vs. Jackson,BELLATOR,2022-07-22,Emerald Queen Casino and Hotel,"Tacoma, Washington, USA",1246
+1303,CW 141: Cage Warriors 141,CW,2022-07-22,The O2 Arena,"London, England",1247
+1306,KSW 72: Romanowski vs. Grzebyk,KSW,2022-07-23,Amfiteatr Kadzielnia,"Kielce, Poland",1248
+1305,UFC on ESPN+ 66: Blaydes vs. Aspinall,UFC,2022-07-23,The O2 Arena,"London, England",1249
+1307,UFC 277: Pena vs. Nunes 2,UFC,2022-07-30,American Airlines Center,"Dallas, Texas, USA",1250
+1308,PFL 7: 2022 Season,PFL,2022-08-05,Hulu Theater,"New York City, New York, USA",1251
+1310,Bellator 284: Gracie vs. Yamauchi,BELLATOR,2022-08-12,Sanford Pentagon,"Sioux Falls, South Dakota, USA",1252
+1313,UFC on ESPN 41: Vera vs. Cruz,UFC,2022-08-13,Pechanga Arena,"San Diego, California, USA",1253
+1312,CW 142: Cage Warriors 142,CW,2022-08-13,Ebbw Vale Sports Centre,"Ebbw Vale, Wales",1254
+1311,PFL 8: 2022 Season,PFL,2022-08-13,Cardiff Motorpoint Arena,"Cardiff, Wales",1255
+1315,KSW 73: Wrzosek vs. Sarara,KSW,2022-08-20,Arena COS Torwar,"Warsaw, Poland",1256
+1316,UFC 278: Usman vs. Edwards 2,UFC,2022-08-20,Vivint Arena,"Salt Lake City, Utah, USA",1257
+1314,PFL 9: 2022 Season,PFL,2022-08-20,Copper Box Arena,"London, England",1258
+1318,UFC on ESPN+ 67: Gane vs. Tuivasa,UFC,2022-09-03,Accor Arena,"Paris, France",1259
+1319,UFC 279: Diaz vs. Ferguson,UFC,2022-09-10,T-Mobile Arena,"Las Vegas, Nevada, USA",1260
+1323,KSW 74: De Fries vs. Prasel,KSW,2022-09-10,Arena Ostrow,"Ostrow Wielkopolski, Poland",1261
+1320,UFC on ESPN+ 68: Sandhagen vs. Song,UFC,2022-09-17,UFC Apex,"Las Vegas, Nevada, USA",1262
+1321,Bellator 285: Henderson vs. Queally,BELLATOR,2022-09-23,3Arena,"Dublin, Ireland",1263
+1322,CW 143: Cage Warriors 143,CW,2022-09-23,Humphreys by the Bay,"San Diego, California, USA",1264
+1325,Bellator 286: Pitbull vs. Borics,BELLATOR,2022-10-01,Long Beach Arena,"Long Beach, California, USA",1265
+1324,UFC on ESPN+ 69: Dern vs. Yan,UFC,2022-10-01,UFC Apex,"Las Vegas, Nevada, USA",1266
+1326,CW 144: Cage Warriors 144,CW,2022-10-07,Fiera di Roma,"Rome, Italy",1267
+1327,KSW 75: Stasiak vs. Ruchala,KSW,2022-10-14,Park Strzelecki Amfiteatr,"Nowy Sacz, Poland",1268
+1328,UFC on ESPN+ 70: Grasso vs. Araujo,UFC,2022-10-15,UFC Apex,"Las Vegas, Nevada, USA",1269
+1329,UFC 280: Oliveira vs. Makhachev,UFC,2022-10-22,Etihad Arena,"Abu Dhabi, United Arab Emirates",1270
+1331,Bellator 287: Piccolotti vs. Barnaoui,BELLATOR,2022-10-29,Allianz Cloud Arena,"Milan, Italy",1271
+1330,UFC on ESPN+ 71: Kattar vs. Allen,UFC,2022-10-29,UFC Apex,"Las Vegas, Nevada, USA",1272
+1332,CW 145: Cage Warriors 145,CW,2022-11-04,Indigo at The O2,"London, England",1273
+1333,UFC on ESPN+ 72: Rodriguez vs. Lemos,UFC,2022-11-05,UFC Apex,"Las Vegas, Nevada, USA",1274
+1335,KSW 76: Parnasse vs. Rajewski,KSW,2022-11-12,Grodziska Hala Sportowa,"Grodzisk Mazowiecki, Poland",1275
+1334,CW 146: Cage Warriors 146,CW,2022-11-12,BEC Arena,"Manchester, England",1276
+1336,UFC 281: Adesanya vs. Pereira,UFC,2022-11-12,Madison Square Garden,"New York City, New York, USA",1277
+1337,Bellator 288: Nemkov vs. Anderson 2,BELLATOR,2022-11-18,Wintrust Arena,"Chicago, Illinois, USA",1278
+1338,UFC on ESPN+ 73: Lewis vs. Spivak,UFC,2022-11-19,UFC Apex,"Las Vegas, Nevada, USA",1279
+1339,CW 147: Unplugged,CW,2022-11-20,BT Sport Studios,"London, England",1280
+1340,PFL 10: 2022 Season,PFL,2022-11-25,Hulu Theater,"New York City, New York, USA",1281
+1341,UFC on ESPN 42: Thompson vs. Holland,UFC,2022-12-03,Amway Center,"Orlando, Florida, USA",1282
+1342,Bellator 289: Stots vs. Sabatello,BELLATOR,2022-12-09,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1283
+1343,UFC 282: Blachowicz vs. Ankalaev,UFC,2022-12-10,T-Mobile Arena,"Las Vegas, Nevada, USA",1284
+1344,KSW 77: Khalidov vs. Pudzianowski,KSW,2022-12-17,Gliwice Arena,"Gliwice, Poland",1285
+1345,UFC on ESPN+ 74: Cannonier vs. Strickland,UFC,2022-12-17,UFC Apex,"Las Vegas, Nevada, USA",1286
+1347,CW 148: Cage Warriors 148,CW,2022-12-31,Indigo at the O2,"London, England",1287
+1346,Bellator: Bellator MMA vs. Rizin,BELLATOR,2022-12-31,Saitama Super Arena,"Saitama, Japan",1288
+1348,UFC on ESPN+ 75: Strickland vs. Imavov,UFC,2023-01-14,UFC Apex,"Las Vegas, Nevada, USA",1289
+1350,UFC 283: Teixeira vs. Hill,UFC,2023-01-21,Jeunesse Arena,"Rio de Janeiro, Brazil",1290
+1349,KSW 78: Materla vs. Grove 2,KSW,2023-01-21,Netto Arena,"Szczecin, Poland",1291
+1352,UFC on ESPN+ 76: Lewis vs. Spivak,UFC,2023-02-04,UFC Apex,"Las Vegas, Nevada, USA",1292
+1351,Bellator 290: Bader vs. Fedor 2,BELLATOR,2023-02-04,Kia Forum,"Inglewood, California, USA",1293
+1353,UFC 284: Makhachev vs. Volkanovski,UFC,2023-02-12,Perth Arena,"Perth, Australia",1294
+1354,UFC on ESPN+ 77: Andrade vs. Blanchfield,UFC,2023-02-18,UFC Apex,"Las Vegas, Nevada, USA",1295
+1356,UFC on ESPN+ 78: Muniz vs. Allen,UFC,2023-02-25,UFC Apex,"Las Vegas, Nevada, USA",1296
+1355,Bellator 291: Amosov vs. Storley 2,BELLATOR,2023-02-25,3Arena,"Dublin, Ireland",1297
+1358,CW 149: Cage Warriors 149,CW,2023-03-03,Sycuan Casino Resort,"San Diego, California, USA",1298
+1357,UFC 285: Jones vs. Gane,UFC,2023-03-04,T-Mobile Arena,"Las Vegas, Nevada, USA",1299
+1359,Bellator 292: Nurmagomedov vs. Henderson,BELLATOR,2023-03-10,SAP Center,"San Jose, California, USA",1300
+1360,UFC on ESPN+ 79: Yan vs. Dvalishvili,UFC,2023-03-11,The Theater at Virgin Hotels,"Las Vegas, Nevada, USA",1301
+1361,CW 150: Cage Warriors 150,CW,2023-03-17,Indigo at the O2,"London, England",1302
+1362,UFC 286: Edwards vs. Usman 3,UFC,2023-03-18,The O2 Arena,"London, England",1303
+1363,CW 151: Cage Warriors 151,CW,2023-03-24,BT Sports Studio,"London, England",1304
+1364,UFC on ESPN 43: Vera vs. Sandhagen,UFC,2023-03-25,AT&T Center,"San Antonio, Texas, USA",1305
+1365,Bellator 293: Golm vs. James,BELLATOR,2023-03-31,Pechanga Resort and Casino,"Temecula, California, USA",1306
+1366,PFL 1: 2023 Season,PFL,2023-04-01,The Theater at Virgin Hotels,"Las Vegas, Nevada, USA",1307
+1367,PFL 2: 2023 Season,PFL,2023-04-07,The Theater at Virgin Hotels,"Las Vegas, Nevada, USA",1308
+1368,UFC 287: Pereira vs. Adesanya 2,UFC,2023-04-08,Kaseya Center,"Miami, Florida, USA",1309
+1369,PFL 3: 2023 Season,PFL,2023-04-14,The Theater at Virgin Hotels,"Las Vegas, Nevada, USA",1310
+1370,UFC on ESPN 44: Holloway vs. Allen,UFC,2023-04-15,T-Mobile Center,"Kansas City, Missouri, USA",1311
+1371,CW 152: Cage Warriors 152,CW,2023-04-15,Bowlers Exhibition Centre,"Manchester, England",1312
+1372,Bellator 294: Carmouche vs. Bennett 2,BELLATOR,2023-04-21,Neal S. Blaisdell Arena,"Honolulu, Hawaii, USA",1313
+1374,Bellator 295: Stots vs. Mix,BELLATOR,2023-04-22,Neal S. Blaisdell Center,"Honolulu, Hawaii, USA",1314
+1373,UFC on ESPN+ 80: Pavlovich vs. Blaydes,UFC,2023-04-22,UFC Apex,"Las Vegas, Nevada, USA",1315
+1375,KSW 81: Bartosinski vs. Szczepaniak,KSW,2023-04-22,Arena Lodowa,"Tomaszow Mazowiecki, Poland",1316
+1376,UFC on ESPN+ 81: Song vs. Simon,UFC,2023-04-29,UFC Apex,"Las Vegas, Nevada, USA",1317
+1377,CW 153: Cage Warriors 153,CW,2023-04-29,The 3Arena,"Dublin, Ireland",1318
+1379,UFC 288: Sterling vs. Cejudo,UFC,2023-05-06,Prudential Center,"Newark, New Jersey, USA",1319
+1378,CW 154: Cage Warriors 154,CW,2023-05-06,Fiera di Roma,"Rome, Italy",1320
+1380,Bellator 296: Mousasi vs. Edwards,BELLATOR,2023-05-12,Accor Arena,"Paris, France",1321
+1381,UFC on ABC 4: Rozenstruik vs. Almeida,UFC,2023-05-13,Spectrum Center,"Charlotte, North Carolina, USA",1322
+1382,UFC on ESPN+ 81: Dern vs. Hill,UFC,2023-05-20,UFC Apex,"Las Vegas, Nevada, USA",1323
+1384,UFC on ESPN 46: Kara-France vs. Albazi,UFC,2023-06-03,UFC Apex,"Las Vegas, Nevada, USA",1324
+1383,KSW 83: Colosseum 2,KSW,2023-06-03,Stadion Narodowy,"Warsaw, Poland",1325
+1385,PFL 4: 2023 Season,PFL,2023-06-08,Overtime Elite Arena,"Atlanta, Georgia, USA",1326
+1386,UFC 289: Nunes vs. Aldana,UFC,2023-06-10,Rogers Arena,"Vancouver, British Columbia, Canada",1327
+1387,Bellator 297: Nemkov vs. Romero,BELLATOR,2023-06-16,Wintrust Arena,"Chicago, Illinois, USA",1328
+1388,PFL 5: 2023 Season,PFL,2023-06-16,Overtime Elite Arena,"Atlanta, Georgia, USA",1329
+1389,UFC on ESPN 47: Vettori vs. Cannonier,UFC,2023-06-17,UFC Apex,"Las Vegas, Nevada, USA",1330
+1390,PFL 6: 2023,PFL,2023-06-23,Overtime Elite Arena,"Atlanta, Georgia, USA",1331
+1391,UFC on ABC 5: Emmett vs. Topuria,UFC,2023-06-24,VyStar Veterans Memorial Arena,"Jacksonville, Florida, USA",1332
+1392,UFC on ESPN 48: Strickland vs. Magomedov,UFC,2023-07-01,UFC Apex,"Las Vegas, Nevada, USA",1333
+1393,CW 156: Cage Warriors 156,CW,2023-07-01,Vale Sports Arena,"Cardiff, Wales",1334
+1394,UFC 290: Volkanovski vs. Rodriguez,UFC,2023-07-08,T-Mobile Arena,"Las Vegas, Nevada, USA",1335
+1395,UFC on ESPN 49: Holm vs. Bueno Silva,UFC,2023-07-15,UFC Apex,"Las Vegas, Nevada, USA",1336
+1396,CW 157: Cage Warriors 157,CW,2023-07-21,Indigo at the O2,"London, England",1337
+1397,UFC on ESPN+ 82: Aspinall vs. Tybura,UFC,2023-07-22,The O2 Arena,"London, England",1338
+1399,UFC 291: Poirier vs. Gaethje 2,UFC,2023-07-29,Delta Center,"Salt Lake City, Utah, USA",1339
+1398,CW 158: Cage Warriors 158,CW,2023-07-29,Fiera Roma,"Rome, Italy",1340
+1400,Bellator: Bellator MMA x Rizin 2,BELLATOR,2023-07-30,Saitama Super Arena,"Saitama, Japan",1341
+1401,UFC on ESPN 50: Sandhagen vs. Font,UFC,2023-08-05,Bridgestone Arena,"Nashville, Tennessee, USA",1342
+1402,Bellator 298: Storley vs. Ward,BELLATOR,2023-08-11,Sanford Pentagon,"Sioux Falls, South Dakota, USA",1343
+1403,UFC on ESPN 51: Luque vs. dos Anjos,UFC,2023-08-12,UFC Apex,"Las Vegas, Nevada, USA",1344
+1404,PFL 8: 2023 Season,PFL,2023-08-18,The Theater at Madison Square Garden,"New York City, New York, USA",1345
+1406,UFC 292: Sterling vs. O'Malley,UFC,2023-08-19,TD Garden,"Boston, Massachusetts, USA",1346
+1405,KSW 85: Parnasse vs. Ruchala,KSW,2023-08-19,Strzelecki Park,"Nowy Sacz, Poland",1347
+1407,PFL 9: 2023 Season,PFL,2023-08-24,The Theater at Madison Square Garden,"New York City, New York, USA",1348
+1408,UFC on ESPN+ 83: Holloway vs. The Korean Zombie,UFC,2023-08-26,Singapore Indoor Stadium,"Kallang, Singapore",1349
+1409,UFC on ESPN+ 84: Gane vs. Spivak,UFC,2023-09-02,Accor Arena,"Paris, France",1350
+1410,CW 159: Cage Warriors 159,CW,2023-09-08,Sycuan Casino Resort,"San Diego, California, USA",1351
+1411,UFC 293: Adesanya vs. Strickland,UFC,2023-09-10,Sydney SuperDome,"Sydney, Australia",1352
+1413,KSW 86: Wiklacz vs. Przybysz 4,KSW,2023-09-16,Hala Orbita,"Wroclaw, Poland",1353
+1412,Noche UFC: Grasso vs. Shevchenko 2,UFC,2023-09-16,T-Mobile Arena,"Las Vegas, Nevada, USA",1354
+1415,UFC on ESPN+ 86: Fiziev vs. Gamrot,UFC,2023-09-23,UFC Apex,"Las Vegas, Nevada, USA",1355
+1414,Bellator 299: Eblen vs. Edwards,BELLATOR,2023-09-23,3Arena,"Dublin, Ireland",1356
+1416,CW 160: Cage Warriors 160,CW,2023-09-29,BEC Arena,"Manchester, England",1357
+1418,Bellator 300: Nurmagomedov vs. Primus,BELLATOR,2023-10-07,Pechanga Arena,"San Diego, California, USA",1358
+1417,UFC on ESPN+ 87: Dawson vs. Green,UFC,2023-10-07,UFC Apex,"Las Vegas, Nevada, USA",1359
+1420,UFC on ESPN+ 88: Yusuff vs. Barboza,UFC,2023-10-14,UFC Apex,"Las Vegas, Nevada, USA",1360
+1419,CW 161: Cage Warriors 161,CW,2023-10-14,RDS Arena,"Dublin, Ireland",1361
+1421,UFC 294: Makhachev vs. Volkanovski 2,UFC,2023-10-21,Etihad Arena,"Abu Dhabi, United Arab Emirates",1362
+1422,CW 162: Cage Warriors 162,CW,2023-10-28,Fiera di Roma,"Rome, Italy",1363
+1424,UFC on ESPN+ 89: Almeida vs. Lewis,UFC,2023-11-04,Ginasio do Ibirapuera,"Sao Paulo, Brazil",1364
+1426,UFC 295: Prochazka vs. Pereira,UFC,2023-11-11,Madison Square Garden,"New York, New York, USA",1365
+1425,CW 163: Cage Warriors 163,CW,2023-11-11,Indigo at the O2,"London, England",1366
+1427,Bellator 301: Amosov vs. Jackson,BELLATOR,2023-11-17,Wintrust Arena,"Chicago, Illinois, USA",1367
+1428,UFC on ESPN+ 90: Allen vs. Craig,UFC,2023-11-18,UFC Apex,"Las Vegas, Nevada, USA",1368
+1429,PFL 10: 2023 Season,PFL,2023-11-24,The Anthem,"Washington, District of Columbia, USA",1369
+1430,CW 164: Cage Warriors 164,CW,2023-11-25,Vertu Motors Arena,"Newcastle, England",1370
+1431,UFC on ESPN 52: Dariush vs. Tsarukyan,UFC,2023-12-02,Moody Center,"Austin, Texas, USA",1371
+1432,UFC on ESPN+ 91: Song vs. Gutierrez,UFC,2023-12-09,UFC Apex,"Las Vegas, Nevada, USA",1372
+1434,CW 165: Cage Warriors 165,CW,2023-12-15,Sycuan Casino Resort,"San Diego, California, USA",1373
+1433,UFC 296: Edwards vs. Covington,UFC,2023-12-16,T-Mobile Arena,"Las Vegas, Nevada, USA",1374
+1435,UFC on ESPN+ 92: Ankalaev vs. Walker 2,UFC,2024-01-13,UFC Apex,"Las Vegas, Nevada, USA",1375
+1437,KSW 90: Wrzosek-vs-Vitasovic,KSW,2024-01-20,Arena COS Torwar,"Warsaw, Poland",1376
+1436,UFC 297: Strickland vs. du Plessis,UFC,2024-01-20,Scotiabank Arena,"Toronto, Ontario, Canada",1377
+1481,CW 174: CW 174 X PrizeFighter,CW,2024-01-20,Indigo at the O2,"London, England",1378
+1438,UFC on ESPN+ 93: Dolidze vs. Imavov,UFC,2024-02-03,UFC Apex,"Las Vegas, Nevada, USA",1379
+1439,UFC on ESPN+ 94: Hermansson vs. Pyfer,UFC,2024-02-10,UFC Apex,"Las Vegas, Nevada, USA",1380
+1440,UFC 298: Volkanovski vs. Topuria,UFC,2024-02-17,Honda Center,"Anaheim, California, USA",1381
+1441,KSW 91: Mircea vs. Brichta,KSW,2024-02-17,Home Credit Arena,"Liberec, Czech Republic",1382
+1445,CW 166: Cage Warriors 166,CW,2024-02-23,Sycuan Casino Resort,"San Diego, California, USA",1383
+1443,UFC on ESPN+ 95: Moreno vs. Royval 2,UFC,2024-02-24,Arena CDMX,"Mexico City, Mexico",1384
+1442,PFL vs. Bellator: Champs,PFL,2024-02-24,Kingdom Arena,"Riyadh, Saudi Arabia",1385
+1444,UFC on ESPN+ 96: Rozenstruik vs. Gaziev,UFC,2024-03-02,UFC Apex,"Las Vegas, Nevada, USA",1386
+1446,UFC 299: O'Malley vs. Vera 2,UFC,2024-03-09,Kaseya Center,"Miami, Florida, USA",1387
+1447,CW 167: Unplugged,CW,2024-03-15,BEC Arena,"Manchester, England",1388
+1449,KSW 92: Wiklacz vs. Jojua,KSW,2024-03-16,Arena Gorzow,"Gorzow Wielkopolski, Poland",1389
+1450,UFC on ESPN+ 97: Tuivasa vs. Tybura,UFC,2024-03-16,UFC Apex,"Las Vegas, Nevada, USA",1390
+1448,CW 168: Manchester,CW,2024-03-16,BEC Arena,"Manchester, England",1391
+1451,Bellator 302: Anderson vs. Moore,BELLATOR,2024-03-22,SSE Arena,"Belfast, Northern Ireland",1392
+1452,UFC on ESPN 53: Ribas vs. Namajunas,UFC,2024-03-23,UFC Apex,"Las Vegas, Nevada, USA",1393
+1453,CW 169: Cage Warriors 169,CW,2024-03-30,Indigo at the O2,"London, England",1394
+1454,UFC on ESPN 54: Blanchfield vs. Fiorot,UFC,2024-03-30,Boardwalk Hall,"Atlantic City, New Jersey, USA",1395
+1455,PFL 1: 2024 Season,PFL,2024-04-04,Boeing Center at Tech Port,"San Antonio, Texas, USA",1396
+1458,KSW 93: Paris,KSW,2024-04-06,Porte de La Chapelle Arena,"Paris, France",1397
+1456,CW 170: Dublin,CW,2024-04-06,RDS Arena,"Dublin, Ireland",1398
+1457,UFC on ESPN+ 98: Allen vs. Curtis 2,UFC,2024-04-06,UFC Apex,"Las Vegas, Nevada, USA",1399
+1459,PFL 2: 2024 Season,PFL,2024-04-12,The Theater at Virgin Hotels,"Las Vegas, Nevada, USA",1400
+1460,UFC 300: Pereira vs. Hill,UFC,2024-04-13,T-Mobile Arena,"Las Vegas, Nevada, USA",1401
+1461,PFL 3: 2024 Season,PFL,2024-04-19,Wintrust Arena,"Chicago, Illinois, USA",1402
+1462,CW 171: Glasgow,CW,2024-04-20,Braehead Arena,"Glasgow, Scotland",1403
+1463,UFC Vegas 91: Nicolau vs. Perez,UFC,2024-04-27,UFC Apex,"Las Vegas, Nevada, USA",1404
+1464,UFC 301: Pantoja vs. Erceg,UFC,2024-05-04,Farmasi Arena,"Rio de Janeiro, Rio de Janeiro, Brazil",1405
+1465,UFC on ESPN 56: Lewis vs. Nascimento,UFC,2024-05-11,Enterprise Center,"St. Louis, Missouri, USA",1406
+1466,Bellator Champions Series 2: Mix vs. Magomedov 2,BELLATOR,2024-05-17,Accor Arena,"Paris, France",1407
+1467,UFC on ESPN+ 99: Barboza vs. Murphy,UFC,2024-05-18,UFC Apex,"Las Vegas, Nevada, USA",1408
+1469,CW 172: Newcastle,CW,2024-05-25,Vertu Motors Arena,"Newcastle, England",1409
+1470,UFC 302: Makhachev vs. Poirier,UFC,2024-06-01,Prudential Center,"Newark, New Jersey, USA",1410
+1471,UFC on ESPN 57: Cannonier vs. Imavov,UFC,2024-06-08,KFC Yum! Center,"Louisville, Kentucky, USA",1411
+1473,PFL 4: 2024 Season,PFL,2024-06-13,Mohegan Sun Arena,"Uncasville, Connecticut, USA",1412
+1472,UFC on ESPN 58: Perez vs. Taira,UFC,2024-06-15,UFC Apex,"Las Vegas, Nevada, USA",1413
+1474,PFL 5: 2024 Season,PFL,2024-06-21,Jon M. Huntsman Center,"Salt Lake City, Utah, USA",1414
+1475,UFC on ABC 6: Whittaker vs. Aliskerov,UFC,2024-06-22,Kingdom Arena,"Riyadh, Saudi Arabia",1415
+1476,Bellator Champions Series 3: Jackson vs. Kuramagomedov,BELLATOR,2024-06-22,3Arena,"Dublin, Ireland",1416
+1477,PFL 6: 2024 Season,PFL,2024-06-28,Sanford Pentagon,"Sioux Falls, South Dakota, USA",1417
+1478,UFC 303: Pereira vs. Prochazka 2,UFC,2024-06-29,T-Mobile Arena,"Las Vegas, Nevada, USA",1418
+1479,UFC on ESPN 59: Namajunas vs. Cortez,UFC,2024-07-13,Ball Arena,"Denver, Colorado, USA",1419
+1482,CW 174: PrizeFighter,CW,2024-07-20,Indigo at the O2,"London, England",1420
+1480,UFC on ESPN 60: Lemos vs. Jandiroba,UFC,2024-07-20,UFC Apex,"Las Vegas, Nevada, USA",1421
+1483,CW 175: Manchester,CW,2024-07-25,BEC Arena,"Manchester, England",1422
+1484,UFC 304: Edwards vs. Muhammad 2,UFC,2024-07-27,Co-op Live,"Manchester, England",1423
+1486,PFL 7: 2024 Season,PFL,2024-08-02,Nashville Municipal Auditorium,"Nashville, Tennessee, USA",1424
+1485,UFC on ABC 7: Sandhagen vs. Nurmagomedov,UFC,2024-08-03,Etihad Arena,"Abu Dhabi, United Arab Emirates",1425
+1487,UFC on ESPN 61: Tybura vs. Spivac 2,UFC,2024-08-10,UFC Apex,"Las Vegas, Nevada, USA",1426
+1488,PFL 8: 2024 Season,PFL,2024-08-16,Seminole Hard Rock Hotel & Casino Hollywood,"Hollywood, Florida, USA",1427
+1489,UFC 305: du Plessis vs. Adesanya,UFC,2024-08-17,RAC Arena,"Perth, Australia",1428
+1490,PFL 9: 2024 Season,PFL,2024-08-23,The Anthem,"Washington, District of Columbia, USA",1429
+1491,UFC on ESPN 62: Cannonier vs. Borralho,UFC,2024-08-24,UFC Apex,"Las Vegas, Nevada, USA",1430
+1494,Bellator Champions Series 4: Nurmagomedov vs. Shabliy,BELLATOR,2024-09-07,Pechanga Arena,"San Diego, California, USA",1431
+1492,CW 176: Glasgow,CW,2024-09-07,Braehead Arena,"Glasgow, Scotland",1432
+1493,UFC on ESPN+ 100: Burns vs. Brady,UFC,2024-09-07,UFC Apex,"Las Vegas, Nevada, USA",1433
+1495,UFC 306: O'Malley vs. Dvalishvili,UFC,2024-09-14,Sphere,"Las Vegas, Nevada, USA",1434
+1496,Bellator Champions Series 5: McCourt vs. Collins,BELLATOR,2024-09-14,OVO Arena Wembley,"London, England",1435
+1497,CW 177: Unplugged,CW,2024-09-20,BEC Arena,"Manchester, England",1436
+1498,CW 178: Manchester,CW,2024-09-21,BEC Arena,"Manchester, England",1437
+1499,UFC on ESPN+ 101: Moicano vs. Saint Denis,UFC,2024-09-28,Accor Arena,"Paris, France",1438
+1500,UFC 307: Pereira vs. Rountree Jr.,UFC,2024-10-05,Delta Center,"Salt Lake City, Utah, USA",1439
+1501,UFC on ESPN+ 102: Royval vs. Taira,UFC,2024-10-12,UFC Apex,"Las Vegas, Nevada, USA",1440
+1502,KSW 99: Vojcak vs. Martinek,KSW,2024-10-19,Gliwice Arena,"Gliwice, Poland",1441
+1504,UFC on ESPN+ 103: Hernandez vs. Pereira,UFC,2024-10-19,UFC Apex,"Las Vegas, Nevada, USA",1442
+1503,PFL Super Fights: Battle of the Giants,UFC,2024-10-19,The Mayadeen,"Riyadh, Saudi Arabia",1443
+1505,UFC 308: Topuria vs. Holloway,UFC,2024-10-26,Etihad Arena,"Abu Dhabi, United Arab Emirates",1444
+1507,UFC on ESPN+ 104: Moreno vs. Albazi,UFC,2024-11-02,Rogers Place,"Edmonton, Alberta, Canada",1445
+1506,CW 179: Cage Warriors 179,CW,2024-11-02,FIJLKAM,"Rome, Italy",1446
+1508,UFC on ESPN+ 105: Magny vs. Prates,UFC,2024-11-09,UFC Apex,"Las Vegas, Nevada, USA",1447
+1509,CW 180: Cage Warriors 180,CW,2024-11-15,Indigo at the O2,"London, England",1448
+1511,KSW 100: Khalidov vs. Bartosinski,KSW,2024-11-16,Gliwice Arena,"Gliwice, Poland",1449
+1512,UFC 309: Jones vs. Miocic,UFC,2024-11-16,Madison Square Garden,"New York City, New York, USA",1450
+1513,UFC on ESPN+ 106: Yan vs. Figueiredo,UFC,2024-11-23,Galaxy Arena,"Macau, China",1451
+1514,CW 181: Cage Warriors 181,CW,2024-11-23,Vertu Motors Arena,"Newcastle, England",1452
+1515,PFL 10: 2024 Season,PFL,2024-11-29,King Saud University Stadium,"Riyadh, Saudi Arabia",1453
+1516,UFC 310: Pantoja vs. Asakura,UFC,2024-12-07,T-Mobile Arena,"Las Vegas, Nevada, USA",1454
+1517,UFC on ESPN 65: Covington vs. Buckley,UFC,2024-12-14,Amalie Arena,"Tampa, Florida, USA",1455
