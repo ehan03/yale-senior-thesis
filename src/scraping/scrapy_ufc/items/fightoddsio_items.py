@@ -38,17 +38,9 @@ class FightOddsIOBoutItem(OrderedItem):
     pk = Field()
     slug = Field()
     event_id = Field()
-    event_pk = Field()
-    event_slug = Field()
     fighter_1_id = Field()
-    fighter_1_pk = Field()
-    fighter_1_slug = Field()
     fighter_2_id = Field()
-    fighter_2_pk = Field()
-    fighter_2_slug = Field()
     winner_id = Field()
-    winner_pk = Field()
-    winner_slug = Field()
     bout_type = Field()
     weight_class = Field()
     weight_lbs = Field()
@@ -72,10 +64,7 @@ class FightOddsIOSportsbookItem(OrderedItem):
 class FightOddsIOMoneylineOddsSummaryItem(OrderedItem):
     id = Field()
     bout_id = Field()
-    bout_pk = Field()
-    bout_slug = Field()
     sportsbook_id = Field()
-    sportsbook_slug = Field()
     outcome_1_id = Field()
     fighter_1_odds_open = Field()
     fighter_1_odds_worst = Field()
@@ -89,17 +78,10 @@ class FightOddsIOMoneylineOddsSummaryItem(OrderedItem):
 
 
 class FightOddsIOExpectedOutcomeSummaryItem(OrderedItem):
+    bout_id = Field()
     offer_type_id = Field()
     is_not = Field()
     average_odds = Field()
     fighter_pk = Field()
     description = Field()
     not_description = Field()
-
-
-class FightOddsIOMoneylineOddsTimeSeriesItem(OrderedItem):
-    pass
-
-
-class FightOddsIOPropositionOddsTimeSeriesItem(OrderedItem):
-    pass

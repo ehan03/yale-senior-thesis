@@ -10,12 +10,16 @@ from ..gql_queries import (
     EVENT_FIGHTS_QUERY,
     EVENT_QUERY,
     EVENTS_RECENT_QUERY,
+    FIGHT_ODDS_QUERY,
     FIGHTER_QUERY,
 )
 from ..items.fightoddsio_items import (
     FightOddsIOBoutItem,
     FightOddsIOEventItem,
+    FightOddsIOExpectedOutcomeSummaryItem,
     FightOddsIOFighterItem,
+    FightOddsIOMoneylineOddsSummaryItem,
+    FightOddsIOSportsbookItem,
 )
 
 
@@ -41,9 +45,10 @@ class FightOddsIOSpider(Spider):
         "LOG_LEVEL": "INFO",
         "LOG_FORMATTER": "scrapy_ufc.logformatter.PoliteLogFormatter",
         "ITEM_PIPELINES": {
-            # TODO: add pipeline
+            "scrapy_ufc.pipelines.fightoddsio_pipelines.FightOddsIOItemPipeline": 100,
         },
         "CLOSESPIDER_ERRORCOUNT": 1,
+        "DOWNLOAD_DELAY": 0.25,
     }
 
     def __init__(self, *args, **kwargs):
@@ -116,6 +121,9 @@ class FightOddsIOSpider(Spider):
             "alexander-hernandez-vs-beneil-dariush-22185",
             "cm-punk-vs-mike-jackson-22023",
         }
+
+        # Avoid making excessive requests to same fighter
+        self.fighters_seen = set()
 
     def start_requests(self):
         payload = json.dumps(
@@ -240,36 +248,30 @@ class FightOddsIOSpider(Spider):
 
     def parse_event_bouts(self, response):
         json_resp = json.loads(response.body)
-        bouts = json_resp["data"]["event"]["fights"]
+        bout_edges = json_resp["data"]["event"]["fights"]["edges"]
         event_id = json_resp["data"]["event"]["id"]
-        event_pk = json_resp["data"]["event"]["pk"]
-        event_slug = json_resp["data"]["event"]["slug"]
 
         fighter_slugs = []
-        for bout in bouts:
+        for bout_edge in bout_edges:
             if (
-                bout["node"]["slug"] in self.duplicates
-                or bout["node"]["slug"] in self.dont_exist
+                bout_edge["node"]["slug"] in self.duplicates
+                or bout_edge["node"]["slug"] in self.dont_exist
             ):
                 continue
 
             bout_item = FightOddsIOBoutItem()
 
-            bout_node = bout["node"]
+            bout_node = bout_edge["node"]
             bout_item["id"] = bout_node["id"] if bout_node["id"] else None
             bout_item["pk"] = bout_node["pk"] if bout_node["pk"] else None
-            bout_item["slug"] = bout_node["slug"] if bout_node["slug"] else None
+
+            fight_slug = bout_node["slug"]
+            bout_item["slug"] = fight_slug if fight_slug else None
             bout_item["event_id"] = event_id if event_id else None
-            bout_item["event_pk"] = event_pk if event_pk else None
-            bout_item["event_slug"] = event_slug if event_slug else None
             bout_item["fighter_1_id"] = (
                 bout_node["fighter1"]["id"] if bout_node["fighter1"]["id"] else None
             )
-            bout_item["fighter_1_pk"] = (
-                bout_node["fighter1"]["pk"] if bout_node["fighter1"]["pk"] else None
-            )
             f1_slug = bout_node["fighter1"]["slug"]
-            bout_item["fighter_1_slug"] = f1_slug if f1_slug else None
 
             if f1_slug is not None and f1_slug not in fighter_slugs:
                 fighter_slugs.append(f1_slug)
@@ -277,11 +279,7 @@ class FightOddsIOSpider(Spider):
             bout_item["fighter_2_id"] = (
                 bout_node["fighter2"]["id"] if bout_node["fighter2"]["id"] else None
             )
-            bout_item["fighter_2_pk"] = (
-                bout_node["fighter2"]["pk"] if bout_node["fighter2"]["pk"] else None
-            )
             f2_slug = bout_node["fighter2"]["slug"]
-            bout_item["fighter_2_slug"] = f2_slug if f2_slug else None
 
             if f2_slug is not None and f2_slug not in fighter_slugs:
                 fighter_slugs.append(f2_slug)
@@ -290,16 +288,6 @@ class FightOddsIOSpider(Spider):
                 bout_item["winner_id"] = (
                     bout_node["fighterWinner"]["id"]
                     if bout_node["fighterWinner"]["id"]
-                    else None
-                )
-                bout_item["winner_pk"] = (
-                    bout_node["fighterWinner"]["pk"]
-                    if bout_node["fighterWinner"]["pk"]
-                    else None
-                )
-                bout_item["winner_slug"] = (
-                    bout_node["fighterWinner"]["slug"]
-                    if bout_node["fighterWinner"]["slug"]
                     else None
                 )
 
@@ -344,8 +332,6 @@ class FightOddsIOSpider(Spider):
             # Handle edge cases
             if bout_item["slug"] in self.edge_case_bout_slugs:
                 bout_item["event_id"] = "RXZlbnROb2RlOjE0ODI="
-                bout_item["event_pk"] = 1482
-                bout_item["event_slug"] = "ufc-fight-night-41-munoz-vs-mousasi"
 
             if bout_item["slug"] in self.falsely_cancelled:
                 bout_item["is_cancelled"] = 0
@@ -356,9 +342,29 @@ class FightOddsIOSpider(Spider):
             yield bout_item
 
             # Odds stuff
+            payload_fight_odds = json.dumps(
+                {
+                    "query": FIGHT_ODDS_QUERY,
+                    "variables": {"fightSlug": fight_slug},
+                }
+            )
+
+            yield Request(
+                url=self.gql_url,
+                method="POST",
+                headers=self.headers,
+                body=payload_fight_odds,
+                callback=self.parse_bout_summary_odds,
+                dont_filter=True,
+                cb_kwargs={"fight_slug": fight_slug},
+            )
 
         # Get fighter metadata
         for fighter_slug in fighter_slugs:
+            if fighter_slug in self.fighters_seen:
+                continue
+
+            self.fighters_seen.add(fighter_slug)
             payload_fighter = json.dumps(
                 {"query": FIGHTER_QUERY, "variables": {"fighterSlug": fighter_slug}}
             )
@@ -371,6 +377,138 @@ class FightOddsIOSpider(Spider):
                 callback=self.parse_fighter,
                 dont_filter=True,
             )
+
+    def parse_bout_summary_odds(self, response, fight_slug):
+        json_resp = json.loads(response.body)
+
+        sportsbooks_edges = json_resp["data"]["sportsbooks"]["edges"]
+        for edge in sportsbooks_edges:
+            node = edge["node"]
+
+            sportsbook_item = FightOddsIOSportsbookItem()
+
+            sportsbook_item["id"] = node["id"] if node["id"] else None
+            sportsbook_item["slug"] = node["slug"] if node["slug"] else None
+            sportsbook_item["short_name"] = (
+                node["shortName"] if node["shortName"] else None
+            )
+            sportsbook_item["full_name"] = (
+                node["fullName"] if node["fullName"] else None
+            )
+            sportsbook_item["website_url"] = (
+                node["websiteUrl"] if node["websiteUrl"] else None
+            )
+
+            yield sportsbook_item
+        try:
+            bout_id = json_resp["data"]["fight"]["id"]
+        except:
+            raise ValueError(f"Fight slug {fight_slug} has no ID")
+
+        fightoffer_table = json_resp["data"]["fightOfferTable"]
+        if fightoffer_table:
+            straight_offers_edges = fightoffer_table["straightOffers"]["edges"]
+            for edge in straight_offers_edges:
+                node = edge["node"]
+
+                moneyline_odds_summary_item = FightOddsIOMoneylineOddsSummaryItem()
+                moneyline_odds_summary_item["id"] = node["id"] if node["id"] else None
+                moneyline_odds_summary_item["bout_id"] = bout_id if bout_id else None
+                moneyline_odds_summary_item["sportsbook_id"] = (
+                    node["sportsbook"]["id"] if node["sportsbook"]["id"] else None
+                )
+                if node["outcome1"]:
+                    moneyline_odds_summary_item["outcome_1_id"] = (
+                        node["outcome1"]["id"] if node["outcome1"]["id"] else None
+                    )
+                    moneyline_odds_summary_item["fighter_1_odds_open"] = (
+                        node["outcome1"]["oddsOpen"]
+                        if node["outcome1"]["oddsOpen"]
+                        else None
+                    )
+                    moneyline_odds_summary_item["fighter_1_odds_worst"] = (
+                        node["outcome1"]["oddsWorst"]
+                        if node["outcome1"]["oddsWorst"]
+                        else None
+                    )
+                    moneyline_odds_summary_item["fighter_1_odds_current"] = (
+                        node["outcome1"]["odds"] if node["outcome1"]["odds"] else None
+                    )
+                    moneyline_odds_summary_item["fighter_1_odds_best"] = (
+                        node["outcome1"]["oddsBest"]
+                        if node["outcome1"]["oddsBest"]
+                        else None
+                    )
+                else:
+                    moneyline_odds_summary_item["outcome_1_id"] = None
+                    moneyline_odds_summary_item["fighter_1_odds_open"] = None
+                    moneyline_odds_summary_item["fighter_1_odds_worst"] = None
+                    moneyline_odds_summary_item["fighter_1_odds_current"] = None
+                    moneyline_odds_summary_item["fighter_1_odds_best"] = None
+
+                if node["outcome2"]:
+                    moneyline_odds_summary_item["outcome_2_id"] = (
+                        node["outcome2"]["id"] if node["outcome2"]["id"] else None
+                    )
+                    moneyline_odds_summary_item["fighter_2_odds_open"] = (
+                        node["outcome2"]["oddsOpen"]
+                        if node["outcome2"]["oddsOpen"]
+                        else None
+                    )
+                    moneyline_odds_summary_item["fighter_2_odds_worst"] = (
+                        node["outcome2"]["oddsWorst"]
+                        if node["outcome2"]["oddsWorst"]
+                        else None
+                    )
+                    moneyline_odds_summary_item["fighter_2_odds_current"] = (
+                        node["outcome2"]["odds"] if node["outcome2"]["odds"] else None
+                    )
+                    moneyline_odds_summary_item["fighter_2_odds_best"] = (
+                        node["outcome2"]["oddsBest"]
+                        if node["outcome2"]["oddsBest"]
+                        else None
+                    )
+                else:
+                    moneyline_odds_summary_item["outcome_2_id"] = None
+                    moneyline_odds_summary_item["fighter_2_odds_open"] = None
+                    moneyline_odds_summary_item["fighter_2_odds_worst"] = None
+                    moneyline_odds_summary_item["fighter_2_odds_current"] = None
+                    moneyline_odds_summary_item["fighter_2_odds_best"] = None
+
+                yield moneyline_odds_summary_item
+
+        outcomes = json_resp["data"]["outcomes"]
+        if outcomes:
+            outcomes_edges = outcomes["edges"]
+            for edge in outcomes_edges:
+                node = edge["node"]
+
+                expected_outcome_summary_item = FightOddsIOExpectedOutcomeSummaryItem()
+                expected_outcome_summary_item["bout_id"] = bout_id if bout_id else None
+                expected_outcome_summary_item["offer_type_id"] = (
+                    node["offerTypeId"] if node["offerTypeId"] else None
+                )
+                if node["isNot"] is not None:
+                    expected_outcome_summary_item["is_not"] = (
+                        1 if node["isNot"] is True else 0
+                    )
+                else:
+                    expected_outcome_summary_item["is_not"] = None
+
+                expected_outcome_summary_item["average_odds"] = (
+                    node["avgOdds"] if node["avgOdds"] else None
+                )
+                expected_outcome_summary_item["fighter_pk"] = (
+                    node["fighterPk"] if node["fighterPk"] else None
+                )
+                expected_outcome_summary_item["description"] = (
+                    node["description"] if node["description"] else None
+                )
+                expected_outcome_summary_item["not_description"] = (
+                    node["notDescription"] if node["notDescription"] else None
+                )
+
+                yield expected_outcome_summary_item
 
     def parse_fighter(self, response):
         json_resp = json.loads(response.body)
