@@ -4,13 +4,14 @@ Author: Eugene Han
 
 Advisors: Brian Macdonald and Robert Wooster
 
-This repository contains the code and data used for my senior thesis at Yale University which was submitted to the faculty of the Department of Statistics and Data Science in partial fulfillment of the requirements for the degree of Bachelor of Science.
+This repository contains the code and data used for my senior thesis at Yale University which is to be submitted to the faculty of the Department of Statistics and Data Science in partial fulfillment of the requirements for the degree of Bachelor of Science.
 
 
 ## Abstract
 
 TODO: Draft abstract
 
+## TODO: Add more sections to README as needed
 
 ## Disclaimer
 
