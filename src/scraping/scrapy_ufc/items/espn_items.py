@@ -13,7 +13,9 @@ class ESPNFighterItem(OrderedItem):
     nickname = Field()
     date_of_birth = Field()
     height_inches = Field()
+    reach_inches = Field()
     stance = Field()
+    nationality = Field()
 
 
 class ESPNFighterHistoryItem(OrderedItem):
@@ -72,12 +74,20 @@ class ESPNFighterBoutStatisticsItem(OrderedItem):
     submissions_attempted = Field()
 
 
+class ESPNVenueItem(OrderedItem):
+    id = Field()
+    name = Field()
+    city = Field()
+    state = Field()
+    country = Field()
+    is_indoor = Field()
+
+
 class ESPNEventItem(OrderedItem):
     id = Field()
     name = Field()
     date = Field()
-    location = Field()
-    is_ufc_event = Field()
+    venue_id = Field()
     event_order = Field()
 
 
@@ -88,6 +98,4 @@ class ESPNBoutItem(OrderedItem):
     red_fighter_id = Field()
     blue_fighter_id = Field()
     winner_id = Field()
-    weight_class = Field()
     card_segment = Field()
-    outcome_method = Field()

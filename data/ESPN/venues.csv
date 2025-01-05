@@ -1,0 +1,224 @@
+id,name,city,state,country,is_indoor
+20,Times Union Center,Albany,NY,USA,1
+112,Blue Cross Arena,Rochester,NY,,1
+241,Bojangles Coliseum,Charlotte,NC,,1
+326,Mobile Civic Center,Mobile,AL,,1
+352,Omaha Civic Auditorium,Omaha,NE,,1
+516,American Airlines Center,Dallas,TX,,1
+687,VyStar Veterans Memorial Arena,Jacksonville,FL,USA,1
+697,Pechanga Arena,San Diego,CA,,1
+722,Jim Whelan Boardwalk Hall,Atlantic City,NJ,USA,1
+780,Frost Bank Center,San Antonio,TX,,1
+892,Ball Arena,Denver,CO,,1
+914,Save Mart Center,Fresno,CA,,1
+977,Allstate Arena,Rosemont,IL,USA,1
+985,Smoothie King Center,New Orleans,LA,USA,1
+999,PNC Arena,Raleigh,NC,,1
+1051,Cox Pavilion,Las Vegas,NV,,1
+1245,The Arena at Gwinnett Center,Duluth,GA,USA,1
+1363,Colisee Pepsi,Quebec City,PQ,,1
+1392,FedExForum,Memphis,TN,,1
+1394,Toyota Center (Houston),Houston,TX,,1
+1396,Amalie Arena,Tampa,FL,USA,1
+1397,Canada Life Centre,Winnipeg,MB,,1
+1403,MGM Grand,Las Vegas,NV,,1
+1638,US Bank Arena,Cincinnati,OH,,1
+1653,SAP Center at San Jose,San Jose,CA,USA,1
+1822,Rogers Centre,Toronto,ON,,1
+1823,Capital One Arena,Washington,DC,USA,1
+1824,TD Garden,Boston,MA,USA,1
+1825,Nassau Veterans Memorial Coliseum,Uniondale,NY,USA,1
+1826,Prudential Center,Newark,NJ,USA,1
+1827,State Farm Arena,Atlanta,GA,,1
+1828,Nationwide Arena,Columbus,OH,,1
+1829,Gila River Arena,Glendale,AZ,,1
+1830,Madison Square Garden,New York,NY,USA,1
+1831,Bell Centre,Montreal,PQ,Canada,1
+1832,Canadian Tire Centre,Ottawa,ON,,1
+1833,Rogers Arena,Vancouver,BC,,1
+1834,Bridgestone Arena,Nashville,TN,,1
+1837,PPG Paints Arena,Pittsburgh,PA,,1
+1838,Scotiabank Arena,Toronto,ON,,1
+1839,Enterprise Center,St. Louis,MO,,1
+1840,BB&T Center,Sunrise,FL,,1
+1841,crypto.com Arena,Los Angeles,CA,,1
+1842,Honda Center,Anaheim,CA,,1
+1843,Scotiabank Saddledome,Calgary,AB,,1
+1845,Wells Fargo Center,Philadelphia,PA,,1
+1847,United Center,Chicago,IL,,1
+1848,KeyBank Center,Buffalo,NY,USA,1
+1893,Spectrum Center,Charlotte,NC,,1
+1894,SaskTel Centre,Saskatoon,SK,Canada,1
+1911,BOK Center,Tulsa,OK,,1
+1940,Chartway Arena,Norfolk,VA,,1
+1949,Footprint Center,Phoenix,AZ,,1
+2029,Target Center,Minneapolis,MN,,1
+2030,KFC Yum! Center,Louisville,KY,USA,1
+2041,Yuengling Center,Tampa,FL,USA,1
+2099,BMO Harris Bradley Center,Milwaukee,WI,,1
+2160,Mohegan Sun Arena,Uncasville,CT,USA,1
+2167,EagleBank Arena,Fairfax,VA,,1
+2183,Bankers Life Fieldhouse,Indianapolis,IN,,1
+2184,KeyArena,Seattle,WA,USA,1
+2195,Frank Erwin Center,Austin,TX,USA,1
+2214,Ericsson Globe,Stockholm,,,1
+2215,O2 World (Berlin),Berlin,,,1
+2229,Idaho Central Arena,Boise,ID,,1
+2233,Mandalay Bay,Las Vegas,NV,,1
+2243,Yoyogi National Gymnasium,Tokyo,,,1
+2247,Sleep Train Arena,Sacramento,CA,,1
+2251,Yokohama Arena,Yokohama,,,1
+2464,1stBank Center,Broomfield,CO,,1
+2465,Oracle Arena,Oakland,CA,,1
+2467,Fair Park Arena,Birmingham,AL,,1
+2469,Boutwell Auditorium,Birmingham,AL,,1
+2470,Dothan Civic Center,Dothan,AL,USA,1
+2505,The Forum (USA),Los Angeles,CA,,1
+2513,Marine Corps Air Station Miramar,San Diego,CA,,1
+2546,Fillmore Auditorium,Denver,CO,,1
+2549,McNichols Sports Arena,Denver,CO,,1
+2554,Foxwoods Casino,Mashantucket,CT,USA,1
+2559,Paycom Center,Oklahoma City,OK,,1
+2561,T-Mobile Center,Kansas City,MO,,1
+2562,Izod Center,East Rutherford,NJ,USA,1
+2577,Saitama Super Arena,Saitama,,,1
+2578,Tokyo Bay NK Hall,Chiba,,,1
+2580,Differ Ariake,Tokyo,,,1
+2590,O2 Arena (ENG),London,,,1
+2597,Seminole Hard Rock Hotel and Casino,Hollywood,FL,USA,1
+2627,Pontchartrain Center,New Orleans,LA,USA,1
+2634,Cobo Center,Detroit,MI,,1
+2643,Etess Arena,Atlantic City,NJ,USA,1
+2646,Santa Ana Star Center,Rio Rancho,NM,,1
+2648,Cosmopolitan Resort,Las Vegas,NV,,1
+2649,The Joint at Hard Rock Hotel & Casino (Las Vegas),Las Vegas,NV,,1
+2650,Pearl at the Palms,Las Vegas,NV,,1
+2667,Rose Garden,Portland,OR,,1
+2696,Metro Radio Arena,Newcastle upon Tyne,,England,1
+2697,Barclaycard Arena,Birmingham,,,1
+2698,OVO Arena Wembley,London,,,1
+2715,Augusta Civic Center,Augusta,GA,,1
+2730,Five Seasons Events Center,Cedar Rapids,IA,USA,1
+2740,U.S. Cellular Center (IA),Cedar Rapids,IA,USA,1
+2776,CenturyTel Center,Bossier City,LA,USA,1
+2806,Casino Magic,Bay Saint Louis,MS,USA,1
+2813,Crown Coliseum,Fayetteville,NC,,1
+2814,Grady Cole Center,Charlotte,NC,,1
+2841,Halifax Forum,Halifax,NS,,1
+2843,Bellagio Hotel & Casino,Las Vegas,NV,,1
+2851,Red Rock Hotel & Casino,Las Vegas,NV,,1
+2856,Buffalo Memorial Auditorium,Buffalo,NY,USA,1
+2877,Cox Convention Center,Oklahoma City,OK,,1
+2934,Fort Hood,Killeen,TX,,1
+3005,Gold Coast Convention and Exhibition Centre,Gold Coast,QLD,,1
+3048,Casper Events Center,Casper,WY,,1
+3052,Allphones Arena,Sydney,NSW,Australia,1
+3072,LG Arena,Birmingham,,,1
+3079,Royal Albert Hall,London,,,1
+3093,Delta Center,Salt Lake City,UT,USA,1
+3098,Ferrari World Concert Arena,Abu Dhabi,,United Arab Emirates,1
+3114,Singapore Indoor Stadium,Kallang,,Singapore,1
+3155,Farmasi Arena,Rio De Janeiro,,,1
+3159,Jose Correa Arena,Barueri,,Brazil,1
+3171,Nelio Dias Sports Gymnasium,Natal,,,1
+3172,Ginasio Nilson Nelson,Brasilia,,,1
+3180,Paulo Sarasate Gymnasium,Fortaleza,,,1
+3210,Brisbane Entertainment Centre,Brisbane,QLD,,1
+3262,Konig Pilsener Arena,Oberhausen,,Germany,1
+3264,Lanxess Arena,Cologne,,,1
+3313,Ruben Rodriguez Coliseum,San Juan,,,1
+3323,Ergo Arena,Gdansk,,,1
+3329,Odyssey Arena,Belfast,,,1
+3340,Ahoy Sports Palace,Rotterdam,,,1
+3370,Motorpoint Arena,Cardiff,,,1
+3372,Ernest N. Morial Convention Center,New Orleans,LA,USA,1
+3373,INTRUST Bank Arena,Wichita,KS,,1
+3385,Portuguesa Gymnasium,Sao Paulo,,,1
+3390,Sudduth Coliseum,Lake Charles,LA,USA,1
+3417,Rocket Mortgage FieldHouse,Cleveland,OH,USA,1
+3419,The Palace of Auburn Hills,Auburn Hills,MI,USA,1
+3423,Moda Center,Portland,OR,,1
+3427,Payne Arena,Hidalgo,TX,USA,1
+3432,Kia Center,Orlando,FL,,1
+3438,Kaseya Center,Miami,FL,USA,1
+3447,Expo Square Pavilion,Tulsa,OK,,1
+3503,Ocean Casino Resort,Atlantic City,NJ,USA,1
+3525,Estadio Jornalista Felipe Drumond,Belo Horizonte,,,0
+3559,Barclays Center,Brooklyn,NY,,1
+3591,Ibirapuera Gymnasium,Sao Paulo,,,1
+4008,Mexico City Arena,Mexico City,,,1
+4010,Cadillac Arena,Beijing,,,1
+4011,Mercedes-Benz Arena,Shanghai,,,1
+4018,CotaiArena,Macau,,China,1
+4058,Yubileyny Sports Palace,Saint Petersburg,,,1
+4114,Ginasio Do Ibirapuera,Sao Paulo,,,1
+4306,Arena Jaragua,Jaragua do Sul,,Brazil,1
+4310,Mall of Asia Arena,Manila,,,1
+4443,Echo Arena,Liverpool,,,1
+4480,Manchester Arena,Manchester,,,1
+4483,Baltimore Arena,Baltimore,MD,,1
+4487,Goiania Arena,Goiania,,,1
+4501,Fort Campbell,Fort Campbell,KY,USA,1
+4569,Pinnacle Bank Arena,Lincoln,NE,USA,1
+4584,Marina Bay Sands Expo and Convention Centre,Marina Bay,,Singapore,1
+4605,Cross Insurance Center,Bangor,ME,,1
+4689,The Venetian Macau Resort Hotel,Cotai,,Macau,1
+4714,Flash Forum,Abu Dhabi,,United Arab Emirates,1
+4736,Tingley Coliseum,Albuquerque,NM,,1
+4741,Spark Arena,Auckland,,,1
+4745,Maracanazinho Gymnasium,Rio De Janeiro,,,1
+4754,3Arena,Dublin,,,1
+4799,Ginasio Municipal Tancredo Neves,Uberlandia,,,1
+4802,Krakow Arena,Krakow,,,1
+4808,Bon Secours Wellness Arena,Greenville,SC,,1
+4834,Tele2 Arena,Stockholm,,,1
+4872,Gigantinho Gymnasium,Porto Alegre,,,1
+4888,OVO Hydro,Glasgow,,Scotland,1
+4934,Adelaide Entertainment Centre,Adelaide,SA,,1
+4937,Denny Sanford Premier Center,Sioux Falls,SD,,1
+4939,Etihad Stadium,Melbourne,VIC,,1
+5003,Olympic Park Gymnastics Arena,Seoul,,,1
+5060,T-Mobile Arena,Las Vegas,NV,,1
+5065,Monterrey Arena,Monterrey,,,1
+5067,Arena Zagreb,Zagreb,,,1
+5073,Shenzhen Dayun Arena,Shenzhen,,,1
+5093,SSE Arena (NIR),Belfast,,,1
+5219,Arena da Baixada,Curitiba,,,0
+5252,Barclaycard Arena,Hamburg,,,1
+5282,Rogers Place,Edmonton,AB,Canada,1
+5310,Golden 1 Center,Sacramento,CA,,1
+5318,Rod Laver Arena,Melbourne,VIC,,1
+5341,Scotiabank Centre,Halifax,NS,,1
+5357,CFO Arena,Fortaleza,,,1
+5379,Olympic Sports Complex (Moscow),Moscow,,,1
+5404,Little Caesars Arena,Detroit,MI,,1
+5415,Qudos Bank Arena,Sydney,NSW,Australia,1
+5416,Park Theater,Las Vegas,NV,,1
+5462,Perth Arena,Perth,WA,,1
+5465,Mangueirinho Gymnasium,Belem,,,1
+5541,Adirondack Bank Center,Utica,NY,USA,1
+5549,Movistar Arena,Santiago,,Chile,1
+5633,Avenir Centre,Moncton,NB,Canada,1
+5777,Fiserv Forum,Milwaukee,WI,,1
+5779,Arena Ciudad de Mexico,Mexico City,,,1
+6023,Parque Roca,Buenos Aires,,,1
+6029,O2 Arena (Prague),Prague,,,1
+6169,CSKA Arena,Moscow,,,1
+6176,UFC APEX,Las Vegas,NV,,1
+6203,Antel Arena,Montevideo,,,1
+6216,Royal Arena,Copenhagen,,,1
+6224,The Arena,Abu Dhabi,,United Arab Emirates,0
+6251,Sajik Arena,Busan,,,1
+6255,Marvel Stadium,Melbourne,VIC,,0
+6271,Bercy Arena,Paris,,,1
+6524,RAC Arena (AUS),Perth,WA,,1
+7126,Etihad Arena,Abu Dhabi,,United Arab Emirates,1
+7226,UBS Arena,Elmont,NY,USA,1
+7317,Moody Center,Austin,TX,USA,1
+7438,The Theater at Virgin Hotels,Las Vegas,NV,,1
+7573,Sphere,Las Vegas,NV,,1
+7581,Boardwalk Hall,Atlantic City,NJ,USA,1
+7669,Kingdom Arena,Riyadh,,Saudi Arabia,1
+9050,Co-op Live,Manchester,,,1
+10660,Accor Arena,Paris,,,1
+10671,Galaxy Arena,Cotai,,Macau,1
