@@ -12,15 +12,23 @@ class ESPNFighterItem(OrderedItem):
     name = Field()
     nickname = Field()
     date_of_birth = Field()
-    height_inches = Field()
-    reach_inches = Field()
+    height = Field()
+    reach = Field()
     stance = Field()
+    team_id = Field()
     nationality = Field()
+    fighting_style = Field()
+
+
+class ESPNTeamItem(OrderedItem):
+    id = Field()
+    name = Field()
 
 
 class ESPNFighterHistoryItem(OrderedItem):
     fighter_id = Field()
     order = Field()
+    bout_id = Field()
     event_id = Field()
     event_name = Field()
     date = Field()
@@ -28,17 +36,15 @@ class ESPNFighterHistoryItem(OrderedItem):
     outcome = Field()
     outcome_method = Field()
     end_round = Field()
-    end_round_time_seconds = Field()
+    end_round_time = Field()
+    is_title_bout = Field()
 
 
 class ESPNFighterBoutStatisticsItem(OrderedItem):
     fighter_id = Field()
     order = Field()
+    bout_id = Field()
     event_id = Field()
-    event_name = Field()
-    date = Field()
-    opponent_id = Field()
-    outcome = Field()
     knockdowns_scored = Field()
     total_strikes_landed = Field()
     total_strikes_attempted = Field()

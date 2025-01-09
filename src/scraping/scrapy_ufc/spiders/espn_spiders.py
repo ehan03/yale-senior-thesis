@@ -1,5 +1,6 @@
 # standard library imports
 import json
+import os
 
 # third party imports
 import pandas as pd
@@ -7,7 +8,15 @@ from scrapy import Request
 from scrapy.spiders import Spider
 
 # local imports
-from ..items.espn_items import ESPNBoutItem, ESPNEventItem, ESPNVenueItem
+from ..items.espn_items import (
+    ESPNBoutItem,
+    ESPNEventItem,
+    ESPNFighterBoutStatisticsItem,
+    ESPNFighterHistoryItem,
+    ESPNFighterItem,
+    ESPNTeamItem,
+    ESPNVenueItem,
+)
 
 
 class ESPNEventSpider(Spider):
@@ -185,7 +194,9 @@ class ESPNFighterSpider(Spider):
         "COOKIES_ENABLED": False,
         "DOWNLOADER_MIDDLEWARES": {
             "scrapy.downloadermiddlewares.useragent.UserAgentMiddleware": None,
-            "scrapy_user_agents.middlewares.RandomUserAgentMiddleware": 400,
+            "scrapy.downloadermiddlewares.retry.RetryMiddleware": None,
+            "scrapy_fake_useragent.middleware.RandomUserAgentMiddleware": 400,
+            "scrapy_fake_useragent.middleware.RetryUserAgentMiddleware": 401,
         },
         "REQUEST_FINGERPRINTER_IMPLEMENTATION": "2.7",
         "TWISTED_REACTOR": "twisted.internet.asyncioreactor.AsyncioSelectorReactor",
@@ -193,18 +204,421 @@ class ESPNFighterSpider(Spider):
         "DEPTH_PRIORITY": 1,
         "SCHEDULER_DISK_QUEUE": "scrapy.squeues.PickleFifoDiskQueue",
         "SCHEDULER_MEMORY_QUEUE": "scrapy.squeues.FifoMemoryQueue",
-        "RETRY_TIMES": 0,
+        "RETRY_TIMES": 10,
         "LOG_LEVEL": "INFO",
         "ITEM_PIPELINES": {
-            # TODO: add pipeline
+            "scrapy_ufc.pipelines.espn_pipelines.ESPNFighterPipeline": 100,
         },
         "CLOSESPIDER_ERRORCOUNT": 1,
+        "DOWNLOAD_DELAY": 3,
+        "FAKEUSERAGENT_PROVIDERS": [
+            "scrapy_fake_useragent.providers.FakeUserAgentProvider",
+            "scrapy_fake_useragent.providers.FakerProvider",
+        ],
     }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # self.bouts_path
+        self.bouts_path = os.path.join(
+            os.path.dirname(__file__),
+            "..",
+            "..",
+            "..",
+            "..",
+            "data",
+            "ESPN",
+            "bouts.csv",
+        )
 
     def start_requests(self):
-        pass
+        bouts_df = pd.read_csv(self.bouts_path)
+        red_fighter_ids = bouts_df["red_fighter_id"].unique().tolist()
+        blue_fighter_ids = bouts_df["blue_fighter_id"].unique().tolist()
+
+        fighter_ids = set(red_fighter_ids + blue_fighter_ids)
+        print(f"Number of fighters: {len(fighter_ids)}")
+        for fighter_id in fighter_ids:
+            base_url = f"https://site.web.api.espn.com/apis/common/v3/sports/mma/athletes/{fighter_id}"
+            stats_url = f"https://site.web.api.espn.com/apis/common/v3/sports/mma/athletes/{fighter_id}/stats"
+
+            yield Request(
+                base_url,
+                callback=self.parse_fighter_bio_and_history,
+                cb_kwargs={"fighter_id": fighter_id, "depth": 0},
+            )
+
+            yield Request(
+                stats_url,
+                callback=self.parse_fighter_stats,
+                cb_kwargs={"fighter_id": fighter_id},
+            )
+
+    def parse_fighter_bio_and_history(self, response, fighter_id, depth):
+        json_resp = json.loads(response.body)
+
+        if "athlete" in json_resp:
+            fighter_item = ESPNFighterItem()
+
+            fighter_item["id"] = fighter_id
+            fighter_item["name"] = (
+                json_resp["athlete"]["displayName"]
+                if "displayName" in json_resp["athlete"]
+                else None
+            )
+            fighter_item["nickname"] = (
+                json_resp["athlete"]["nickname"]
+                if "nickname" in json_resp["athlete"]
+                else None
+            )
+            fighter_item["date_of_birth"] = (
+                json_resp["athlete"]["displayDOB"]
+                if "displayDOB" in json_resp["athlete"]
+                else None
+            )
+            fighter_item["height"] = (
+                json_resp["athlete"]["displayHeight"]
+                if "displayHeight" in json_resp["athlete"]
+                else None
+            )
+            fighter_item["reach"] = (
+                json_resp["athlete"]["displayReach"]
+                if "displayReach" in json_resp["athlete"]
+                else None
+            )
+
+            stance = None
+            if "stance" in json_resp["athlete"]:
+                stance = (
+                    json_resp["athlete"]["stance"]["text"]
+                    if "text" in json_resp["athlete"]["stance"]
+                    else None
+                )
+            fighter_item["stance"] = stance
+
+            team_id = None
+            team_name = None
+            if "association" in json_resp["athlete"]:
+                team_id = int(json_resp["athlete"]["association"]["id"])
+                team_name = (
+                    json_resp["athlete"]["association"]["name"]
+                    if "name" in json_resp["athlete"]["association"]
+                    else None
+                )
+            fighter_item["team_id"] = team_id if team_id != 0 else None
+
+            fighter_item["nationality"] = (
+                json_resp["athlete"]["citizenship"]
+                if "citizenship" in json_resp["athlete"]
+                else None
+            )
+            fighter_item["fighting_style"] = (
+                json_resp["athlete"]["displayFightingStyle"]
+                if "displayFightingStyle" in json_resp["athlete"]
+                else None
+            )
+
+            yield fighter_item
+
+            # Team information
+            if team_id is not None and team_id != 0:
+                team_item = ESPNTeamItem()
+
+                team_item["id"] = team_id
+                team_item["name"] = team_name
+
+                yield team_item
+
+        opponent_ids = []
+        if "eventsMap" in json_resp:
+            events_map = json_resp["eventsMap"]
+            for i, event_dict in enumerate(reversed(events_map.values())):
+                fighter_history_item = ESPNFighterHistoryItem()
+
+                fighter_history_item["fighter_id"] = fighter_id
+                fighter_history_item["order"] = i + 1
+                fighter_history_item["bout_id"] = (
+                    int(event_dict["uid"].split(":")[-1])
+                    if "uid" in event_dict
+                    else None
+                )
+                fighter_history_item["event_id"] = (
+                    int(event_dict["id"]) if "id" in event_dict else None
+                )
+                fighter_history_item["event_name"] = (
+                    event_dict["name"] if "name" in event_dict else None
+                )
+                fighter_history_item["date"] = (
+                    event_dict["gameDate"] if "gameDate" in event_dict else None
+                )
+
+                opponent_id = None
+                if "opponent" in event_dict:
+                    opponent_id = (
+                        int(event_dict["opponent"]["id"])
+                        if "id" in event_dict["opponent"]
+                        else None
+                    )
+                fighter_history_item["opponent_id"] = opponent_id
+                fighter_history_item["outcome"] = (
+                    event_dict["gameResult"] if "gameResult" in event_dict else None
+                )
+
+                outcome_method = None
+                end_round = None
+                end_round_time = None
+                if "status" in event_dict:
+                    end_round = (
+                        event_dict["status"]["period"]
+                        if "period" in event_dict["status"]
+                        else None
+                    )
+                    end_round_time = (
+                        event_dict["status"]["displayClock"]
+                        if "displayClock" in event_dict["status"]
+                        else None
+                    )
+
+                    if "result" in event_dict["status"]:
+                        outcome_method = (
+                            event_dict["status"]["result"]["displayName"]
+                            if "displayName" in event_dict["status"]["result"]
+                            else None
+                        )
+                fighter_history_item["outcome_method"] = outcome_method
+                fighter_history_item["end_round"] = end_round
+                fighter_history_item["end_round_time"] = end_round_time
+
+                if "titleFight" in event_dict:
+                    fighter_history_item["is_title_bout"] = (
+                        1 if event_dict["titleFight"] else 0
+                    )
+                else:
+                    fighter_history_item["is_title_bout"] = None
+
+                yield fighter_history_item
+
+                if opponent_id is not None:
+                    opponent_ids.append(opponent_id)
+
+        opponent_ids = set(opponent_ids)
+        if depth < 1:
+            for opponent_id in opponent_ids:
+                base_url = f"https://site.web.api.espn.com/apis/common/v3/sports/mma/athletes/{opponent_id}"
+                stats_url = f"https://site.web.api.espn.com/apis/common/v3/sports/mma/athletes/{opponent_id}/stats"
+
+                yield Request(
+                    base_url,
+                    callback=self.parse_fighter_bio_and_history,
+                    cb_kwargs={"fighter_id": opponent_id, "depth": depth + 1},
+                )
+
+                yield Request(
+                    stats_url,
+                    callback=self.parse_fighter_stats,
+                    cb_kwargs={"fighter_id": opponent_id},
+                )
+
+    def parse_fighter_stats(self, response, fighter_id):
+        json_resp = json.loads(response.body)
+
+        if "categories" in json_resp:
+            categories = json_resp["categories"]
+            assert len(categories) == 3
+
+            striking = [
+                cat for cat in categories if cat["displayName"].lower() == "striking"
+            ][0]
+            clinch = [
+                cat for cat in categories if cat["displayName"].lower() == "clinch"
+            ][0]
+            ground = [
+                cat for cat in categories if cat["displayName"].lower() == "ground"
+            ][0]
+
+            striking_stats = striking["statistics"]
+            clinch_stats = clinch["statistics"]
+            ground_stats = ground["statistics"]
+            assert len(striking_stats) == len(clinch_stats) == len(ground_stats)
+
+            for i, (event_striking, event_clinch, event_ground) in enumerate(
+                reversed(
+                    list(
+                        zip(
+                            striking_stats,
+                            clinch_stats,
+                            ground_stats,
+                        )
+                    )
+                )
+            ):
+                fighter_stats_item = ESPNFighterBoutStatisticsItem()
+
+                fighter_stats_item["fighter_id"] = fighter_id
+                fighter_stats_item["order"] = i + 1
+                fighter_stats_item["bout_id"] = (
+                    int(event_striking["uid"].split(":")[-1])
+                    if "uid" in event_striking
+                    else None
+                )
+                fighter_stats_item["event_id"] = (
+                    int(event_striking["eventId"])
+                    if "eventId" in event_striking
+                    else None
+                )
+
+                assert len(event_striking["stats"]) == 12
+                assert len(event_clinch["stats"]) == 12
+                assert len(event_ground["stats"]) == 12
+
+                fighter_stats_item["knockdowns_scored"] = (
+                    int(event_striking["stats"][8])
+                    if event_striking["stats"][8] != "-"
+                    else None
+                )
+                fighter_stats_item["total_strikes_landed"] = (
+                    int(event_striking["stats"][3])
+                    if event_striking["stats"][3] != "-"
+                    else None
+                )
+                fighter_stats_item["total_strikes_attempted"] = (
+                    int(event_striking["stats"][4])
+                    if event_striking["stats"][4] != "-"
+                    else None
+                )
+                fighter_stats_item["takedowns_landed"] = (
+                    int(event_clinch["stats"][8])
+                    if event_clinch["stats"][8] != "-"
+                    else None
+                )
+                fighter_stats_item["takedowns_slams_landed"] = (
+                    int(event_clinch["stats"][10])
+                    if event_clinch["stats"][10] != "-"
+                    else None
+                )
+                fighter_stats_item["takedowns_attempted"] = (
+                    int(event_clinch["stats"][9])
+                    if event_clinch["stats"][9] != "-"
+                    else None
+                )
+                fighter_stats_item["reversals_scored"] = (
+                    int(event_clinch["stats"][6])
+                    if event_clinch["stats"][6] != "-"
+                    else None
+                )
+                (
+                    fighter_stats_item["significant_strikes_distance_head_landed"],
+                    fighter_stats_item["significant_strikes_distance_head_attempted"],
+                ) = (
+                    [int(x) for x in event_striking["stats"][1].split("/")]
+                    if event_striking["stats"][1] != "-"
+                    else [None, None]
+                )
+                (
+                    fighter_stats_item["significant_strikes_distance_body_landed"],
+                    fighter_stats_item["significant_strikes_distance_body_attempted"],
+                ) = (
+                    [int(x) for x in event_striking["stats"][0].split("/")]
+                    if event_striking["stats"][0] != "-"
+                    else [None, None]
+                )
+                (
+                    fighter_stats_item["significant_strikes_distance_leg_landed"],
+                    fighter_stats_item["significant_strikes_distance_leg_attempted"],
+                ) = (
+                    [int(x) for x in event_striking["stats"][2].split("/")]
+                    if event_striking["stats"][2] != "-"
+                    else [None, None]
+                )
+                fighter_stats_item["significant_strikes_clinch_head_landed"] = (
+                    int(event_clinch["stats"][2])
+                    if event_clinch["stats"][2] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_clinch_head_attempted"] = (
+                    int(event_clinch["stats"][3])
+                    if event_clinch["stats"][3] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_clinch_body_landed"] = (
+                    int(event_clinch["stats"][0])
+                    if event_clinch["stats"][0] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_clinch_body_attempted"] = (
+                    int(event_clinch["stats"][1])
+                    if event_clinch["stats"][1] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_clinch_leg_landed"] = (
+                    int(event_clinch["stats"][4])
+                    if event_clinch["stats"][4] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_clinch_leg_attempted"] = (
+                    int(event_clinch["stats"][5])
+                    if event_clinch["stats"][5] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_ground_head_landed"] = (
+                    int(event_ground["stats"][2])
+                    if event_ground["stats"][2] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_ground_head_attempted"] = (
+                    int(event_ground["stats"][3])
+                    if event_ground["stats"][3] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_ground_body_landed"] = (
+                    int(event_ground["stats"][0])
+                    if event_ground["stats"][0] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_ground_body_attempted"] = (
+                    int(event_ground["stats"][1])
+                    if event_ground["stats"][1] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_ground_leg_landed"] = (
+                    int(event_ground["stats"][4])
+                    if event_ground["stats"][4] != "-"
+                    else None
+                )
+                fighter_stats_item["significant_strikes_ground_leg_attempted"] = (
+                    int(event_ground["stats"][5])
+                    if event_ground["stats"][5] != "-"
+                    else None
+                )
+                fighter_stats_item["advances"] = (
+                    int(event_ground["stats"][6])
+                    if event_ground["stats"][6] != "-"
+                    else None
+                )
+                fighter_stats_item["advances_to_back"] = (
+                    int(event_ground["stats"][7])
+                    if event_ground["stats"][7] != "-"
+                    else None
+                )
+                fighter_stats_item["advances_to_half_guard"] = (
+                    int(event_ground["stats"][8])
+                    if event_ground["stats"][8] != "-"
+                    else None
+                )
+                fighter_stats_item["advances_to_mount"] = (
+                    int(event_ground["stats"][9])
+                    if event_ground["stats"][9] != "-"
+                    else None
+                )
+                fighter_stats_item["advances_to_side"] = (
+                    int(event_ground["stats"][10])
+                    if event_ground["stats"][10] != "-"
+                    else None
+                )
+                fighter_stats_item["submissions_attempted"] = (
+                    int(event_ground["stats"][11])
+                    if event_ground["stats"][11] != "-"
+                    else None
+                )
+
+                yield fighter_stats_item
