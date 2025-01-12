@@ -237,7 +237,6 @@ class ESPNFighterSpider(Spider):
         blue_fighter_ids = bouts_df["blue_fighter_id"].unique().tolist()
 
         fighter_ids = set(red_fighter_ids + blue_fighter_ids)
-        print(f"Number of fighters: {len(fighter_ids)}")
         for fighter_id in fighter_ids:
             base_url = f"https://site.web.api.espn.com/apis/common/v3/sports/mma/athletes/{fighter_id}"
             stats_url = f"https://site.web.api.espn.com/apis/common/v3/sports/mma/athletes/{fighter_id}/stats"
