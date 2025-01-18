@@ -25,7 +25,7 @@ class BetMMAItemPipeline:
         self.bouts = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Bet MMA"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "Bet MMA"
         )
 
     def process_item(self, item, spider):

@@ -13,7 +13,14 @@ class WikipediaItemPipeline:
         self.events = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Wikipedia"
+            os.path.dirname(__file__),
+            "..",
+            "..",
+            "..",
+            "..",
+            "data",
+            "raw",
+            "Wikipedia",
         )
 
     def process_item(self, item, spider):

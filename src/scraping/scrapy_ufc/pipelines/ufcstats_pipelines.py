@@ -23,7 +23,14 @@ class UFCStatsItemPipeline:
         self.round_stats = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "UFC Stats"
+            os.path.dirname(__file__),
+            "..",
+            "..",
+            "..",
+            "..",
+            "data",
+            "raw",
+            "UFC Stats",
         )
 
     def process_item(self, item, spider):

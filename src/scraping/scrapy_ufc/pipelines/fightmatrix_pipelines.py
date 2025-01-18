@@ -22,7 +22,14 @@ class FightMatrixMainItemPipeline:
         self.bouts = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Fight Matrix"
+            os.path.dirname(__file__),
+            "..",
+            "..",
+            "..",
+            "..",
+            "data",
+            "raw",
+            "Fight Matrix",
         )
 
     def process_item(self, item, spider):
@@ -150,7 +157,14 @@ class FightMatrixRankingsPipeline:
         self.rankings = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Fight Matrix"
+            os.path.dirname(__file__),
+            "..",
+            "..",
+            "..",
+            "..",
+            "data",
+            "raw",
+            "Fight Matrix",
         )
 
     def process_item(self, item, spider):

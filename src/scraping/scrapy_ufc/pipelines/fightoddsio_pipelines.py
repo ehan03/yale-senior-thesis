@@ -25,7 +25,14 @@ class FightOddsIOItemPipeline:
         self.sportsbooks = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "FightOdds.io"
+            os.path.dirname(__file__),
+            "..",
+            "..",
+            "..",
+            "..",
+            "data",
+            "raw",
+            "FightOdds.io",
         )
 
     def process_item(self, item, spider):

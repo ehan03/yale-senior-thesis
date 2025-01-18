@@ -27,7 +27,14 @@ class MMADecisionsItemPipeline:
         self.deductions = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "MMA Decisions"
+            os.path.dirname(__file__),
+            "..",
+            "..",
+            "..",
+            "..",
+            "data",
+            "raw",
+            "MMA Decisions",
         )
 
     def process_item(self, item, spider):

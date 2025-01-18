@@ -23,7 +23,7 @@ class ESPNEventPipeline:
         self.bouts = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "ESPN"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "ESPN"
         )
 
     def process_item(self, item, spider):
@@ -88,7 +88,7 @@ class ESPNFighterPipeline:
         self.teams = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "ESPN"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "ESPN"
         )
 
     def process_item(self, item, spider):

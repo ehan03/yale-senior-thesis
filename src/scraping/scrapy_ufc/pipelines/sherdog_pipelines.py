@@ -21,7 +21,7 @@ class SherdogItemPipeline:
         self.bouts = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Sherdog"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "Sherdog"
         )
 
     def process_item(self, item, spider):

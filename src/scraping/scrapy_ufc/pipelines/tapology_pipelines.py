@@ -25,7 +25,7 @@ class TapologyEventItemPipeline:
         self.bouts = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Tapology"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "Tapology"
         )
         self.misc_path = os.path.join(
             os.path.dirname(__file__), "..", "..", "miscellaneous"
@@ -97,7 +97,7 @@ class TapologyFighterItemPipeline:
         self.fighter_histories = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Tapology"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "Tapology"
         )
 
     def process_item(self, item, spider):
@@ -188,7 +188,7 @@ class TapologyBoutItemPipeline:
         self.gym_urls = set()
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Tapology"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "Tapology"
         )
         self.misc_path = os.path.join(
             os.path.dirname(__file__), "..", "..", "miscellaneous"
@@ -319,7 +319,7 @@ class TapologyGymItemPipeline:
         self.gyms = []
 
         self.dir_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "..", "..", "data", "Tapology"
+            os.path.dirname(__file__), "..", "..", "..", "..", "data", "raw", "Tapology"
         )
 
     def process_item(self, item, spider):
