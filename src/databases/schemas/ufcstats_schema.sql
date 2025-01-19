@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS ufcstats_fighters (
     id TEXT PRIMARY KEY,
     name TEXT,
+    nickname TEXT,
     height_inches INTEGER,
     reach_inches INTEGER,
     stance TEXT,
