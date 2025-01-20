@@ -17,11 +17,10 @@ CREATE TABLE IF NOT EXISTS sherdog_fighter_histories (
     outcome_method TEXT,
     outcome_method_broad TEXT,
     end_round INTEGER,
-    end_round_time TEXT,
     end_round_time_seconds INTEGER,
     total_time_seconds INTEGER
 );
-CREATE TABLE if NOT EXISTS sherdog_events (
+CREATE TABLE IF NOT EXISTS sherdog_events (
     id INTEGER PRIMARY KEY,
     name TEXT,
     date DATE,
@@ -29,4 +28,20 @@ CREATE TABLE if NOT EXISTS sherdog_events (
     country TEXT,
     is_ufc_event INTEGER,
     event_order INTEGER
+);
+CREATE TABLE IF NOT EXISTS sherdog_bouts (
+    event_id INTEGER,
+    bout_order INTEGER,
+    fighter_1_id INTEGER,
+    fighter_2_id INTEGER,
+    fighter_1_outcome TEXT,
+    fighter_2_outcome TEXT,
+    is_title_bout INTEGER,
+    weight_class TEXT,
+    weight_class_lbs INTEGER,
+    outcome_method TEXT,
+    outcome_method_broad TEXT,
+    end_round INTEGER,
+    end_round_time_seconds INTEGER,
+    total_time_seconds INTEGER
 );
