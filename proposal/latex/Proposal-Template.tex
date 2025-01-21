@@ -204,7 +204,7 @@ In addition to cleaning the data, the following two data-related tasks need to b
 
 The core idea is to estimate the win probabilities of each fighter in a given fight based only on information that would be available at inference time and to bet on outcomes where those predicted probabilities deviate sufficiently from those implied by the betting odds.
 
-We will accomplish this by framing the problem as a binary classification task and experimenting with logistic regression and tree-based models, as well as the inclusion of calibration layers using Platt scaling, isotonic regression, and Venn-Abers predictors. In particular, Venn-Abers predictors will output a tuple of probabilities that serve as a sort of confidence interval with validity guarantees that reflect the uncertainty in a prediction.
+We will accomplish this by framing the problem as a binary classification task and experimenting with logistic regression and tree-based models, as well as the inclusion and exclusion of probability calibration through Venn-Abers predictors. In particular, Venn-Abers predictors will output a 2-tuple of probabilities that serve as a sort of confidence interval with validity guarantees that reflect the uncertainty in a prediction.
 
 The bet sizes will be computed using an extension of the fractional Kelly criterion to simultaneous outcomes, experimenting with different fractions such as 0.5, 0.25, and 0.1. For pipelines using Venn-Abers calibration, we will also use a robust version of the Kelly criterion that considers the uncertainty in the probability estimates to optimize for the worst-case scenario.
 
