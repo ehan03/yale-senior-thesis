@@ -2786,14 +2786,14 @@ f18efb662a0e5b9a,cbf94e4c4af4ff6d,6,2d5fbe2103f97053,dba230fe33011201,W,L,Feathe
 97addff4a2e5efa6,cbf94e4c4af4ff6d,11,79ded75550efc139,35faad160d346839,W,L,Lightweight,Lightweight Bout,0,Submission,Other - Lock From Back Control Technical Submission - Hammerlock,1,77,3 Rnd (5-5-5),77
 786af1a8321306a1,cbf94e4c4af4ff6d,12,2eae41f61776c60f,c8a49ff2acb6f3c5,W,L,Heavyweight,Heavyweight Bout,0,Decision - Unanimous,,3,300,3 Rnd (5-5-5),900
 0949caefc6735f9b,a6d8bfe9e0c8153b,1,15b1b21cd743d652,a0c139b34f11421a,W,L,Lightweight,Lightweight Bout,0,Decision - Unanimous,Glenn Trowbridge 27 - 30. Cecil Peoples 27 - 30. Roy Silbert 27 - 30.,3,300,3 Rnd (5-5-5),900
-24e14c4824144c64,a6d8bfe9e0c8153b,2,d81ac739417d7f53,f5990c11974d8e9c,W,L,Welterweight,Welterweight Bout,0,KO/TKO,Punch to Head In Clinch,2,22,3 Rnd (5-5-5),322
+24e14c4824144c64,a6d8bfe9e0c8153b,2,f5990c11974d8e9c,d81ac739417d7f53,L,W,Welterweight,Welterweight Bout,0,KO/TKO,Punch to Head In Clinch,2,22,3 Rnd (5-5-5),322
 0e05f54d8b66f317,a6d8bfe9e0c8153b,3,179f1948dc234f1f,aae99701b21554e4,W,L,Middleweight,Middleweight Bout,0,KO/TKO,Punches to Head From Back Control Submission to Strikes,1,150,3 Rnd (5-5-5),150
 47245dd345d9ef7e,a6d8bfe9e0c8153b,4,282fa667ff9c51ed,4c8d6fde2dde07c4,W,L,Lightweight,Lightweight Bout,1,Submission,Inverted Triangle From Bottom,1,185,3 Rnd (5-5-5),185
 78b928a602a81971,a6d8bfe9e0c8153b,5,8b69839f3555a67b,6f81b6de2557739a,W,L,Welterweight,Welterweight Bout,0,Submission,Guillotine Choke From Front Headlock,1,243,3 Rnd (5-5-5),243
 41e9da89f349b2bc,a6d8bfe9e0c8153b,6,63def5a5662a6917,d29b5c4f22c6357d,W,L,Heavyweight,Heavyweight Bout,0,KO/TKO,Punch to Head At Distance,1,127,3 Rnd (5-5-5),127
 9d2c9d2249d4fe50,a6d8bfe9e0c8153b,7,d1941565abf50b16,84ac950d4c1722dd,W,L,Lightweight,Lightweight Bout,0,Submission,Armbar From Mount,1,151,3 Rnd (5-5-5),151
-d7f9a09021a9a13c,a6d8bfe9e0c8153b,8,501b07aec9b8fc2d,3bad7ef643840f67,W,L,Lightweight,Lightweight Bout,0,Decision - Unanimous,Cecil Peoples 27 - 30. Sal D'amato 27 - 30. Tony Weeks 26 - 30.,3,300,3 Rnd (5-5-5),900
-c99370e3e54bd5fd,a6d8bfe9e0c8153b,9,23725c826c481e7f,a149d6bc670cdb60,W,L,Welterweight,Welterweight Bout,1,KO/TKO,Punch to Head At Distance,1,144,3 Rnd (5-5-5),144
+d7f9a09021a9a13c,a6d8bfe9e0c8153b,8,3bad7ef643840f67,501b07aec9b8fc2d,L,W,Lightweight,Lightweight Bout,0,Decision - Unanimous,Cecil Peoples 27 - 30. Sal D'amato 27 - 30. Tony Weeks 26 - 30.,3,300,3 Rnd (5-5-5),900
+c99370e3e54bd5fd,a6d8bfe9e0c8153b,9,a149d6bc670cdb60,23725c826c481e7f,L,W,Welterweight,Welterweight Bout,1,KO/TKO,Punch to Head At Distance,1,144,3 Rnd (5-5-5),144
 57dca2ebe96ed622,a6d8bfe9e0c8153b,10,ee779c43a8926d52,2924886ee9c4c527,W,L,Light Heavyweight,Light Heavyweight Bout,0,Decision - Unanimous,Adalaide Byrd 28 - 29. Tony Weeks 28 - 29. Roy Silbert 28 - 29.,3,300,3 Rnd (5-5-5),900
 33d9c35170eb10f2,9583662df31d943f,1,901cddcbfa079097,e57f0b06ea39e360,W,L,Bantamweight,Bantamweight Bout,0,Decision - Unanimous,Steve English 27 - 30. Nelson Hamilton 26 - 30. Richard Bertrand 27 - 30.,3,300,3 Rnd (5-5-5),900
 11688b235fed019a,9583662df31d943f,2,fc9a9559a05f2704,3c0437fbeda06962,W,L,Bantamweight,Bantamweight Bout,0,Decision - Unanimous,John McCarthy 27 - 30. Nelson Hamilton 27 - 30. Richard Bertrand 27 - 30.,3,300,3 Rnd (5-5-5),900
@@ -2807,14 +2807,14 @@ f32c819edc6849bc,9583662df31d943f,8,ece280745f8727b8,335ad945324c3a2e,W,L,Lightw
 0c9857fcc7459521,9583662df31d943f,10,2676b28836a5a836,a54fc2d6fc224dc3,W,L,Lightweight,WEC Lightweight Title Bout,0,Submission,Guillotine Choke Standing,3,161,5 Rnd (5-5-5-5-5),761
 f338da998c4fdf53,58bc81376286b3d3,1,f8fe2053d73d7bcf,947eccadb72f4f6f,W,L,Middleweight,Middleweight Bout,0,Decision - Split,Sal D'amato 28 - 29. Clark Walters 29 - 28. Doug Crosby 28 - 29.,3,300,3 Rnd (5-5-5),900
 db620510bbb3f0af,58bc81376286b3d3,2,c4b81cdecd5d6abe,010986ee359fb863,W,L,Middleweight,Middleweight Bout,1,KO/TKO,Punches to Head From Half Guard,3,204,3 Rnd (5-5-5),804
-c4fa93a4f37a6ca7,58bc81376286b3d3,3,6a2f7c151031653d,a6959da32f0e6b5d,W,L,Lightweight,Lightweight Bout,0,Decision - Unanimous,Doug Crosby 27 - 30. Cardo Urso 27 - 30. Clark Walters 27 - 30.,3,300,3 Rnd (5-5-5),900
-19f615a7a5cfd304,58bc81376286b3d3,4,cbd5d3cdd862e90e,eaea0fc7b76525a8,W,L,Welterweight,Welterweight Bout,0,Submission,Armbar From Side Control,1,267,3 Rnd (5-5-5),267
+c4fa93a4f37a6ca7,58bc81376286b3d3,3,a6959da32f0e6b5d,6a2f7c151031653d,L,W,Lightweight,Lightweight Bout,0,Decision - Unanimous,Doug Crosby 27 - 30. Cardo Urso 27 - 30. Clark Walters 27 - 30.,3,300,3 Rnd (5-5-5),900
+19f615a7a5cfd304,58bc81376286b3d3,4,eaea0fc7b76525a8,cbd5d3cdd862e90e,L,W,Welterweight,Welterweight Bout,0,Submission,Armbar From Side Control,1,267,3 Rnd (5-5-5),267
 bad1f36202e2c7d7,58bc81376286b3d3,5,8a59d346dc976a10,6fb1ba67bef41b37,D,D,Lightweight,Lightweight Bout,0,Decision - Majority,Point Deducted: Kicks to Groin by Tavares Eric Colon 28 - 28. Sal D'amato 28 - 28. Cardo Urso 29 - 27.,3,300,3 Rnd (5-5-5),900
 f4641db74fcb8ab7,58bc81376286b3d3,6,5b5307450405abf0,3ae10ac4df3df05c,W,L,Welterweight,Welterweight Bout,0,Decision - Split,Jeff Blatnick 27 - 30. Eric Colon 29 - 28. Cardo Urso 27 - 30.,3,300,3 Rnd (5-5-5),900
 d5e0fd3eec76f7e1,58bc81376286b3d3,7,d43a048a880efdff,53bb0d40905b87c0,W,L,Middleweight,Middleweight Bout,0,Decision - Unanimous,Jeff Blatnick 27 - 30. Doug Crosby 27 - 30. Sal D'amato 27 - 30.,3,300,3 Rnd (5-5-5),900
 a570acbbcbbd151d,58bc81376286b3d3,8,2650e2f846a30f64,7e69a4b0961aa555,W,L,Welterweight,Welterweight Bout,0,Decision - Unanimous,Eric Colon 27 - 30. Doug Crosby 27 - 30. Cardo Urso 27 - 30.,3,300,3 Rnd (5-5-5),900
-be72958d9715757d,58bc81376286b3d3,9,d5f820c11a121050,4d44f37107f01b9b,W,L,Middleweight,Middleweight Bout,0,Decision - Split,Jeff Blatnick 29 - 28. Doug Crosby 28 - 29. Sal D'amato 28 - 29.,3,300,3 Rnd (5-5-5),900
-504b540805598fa5,58bc81376286b3d3,10,e5c9de15bb58b1c6,83fd97284f4bb4a4,W,L,Lightweight,Lightweight Bout,1,Submission,Armbar From Back Control,3,119,3 Rnd (5-5-5),719
+be72958d9715757d,58bc81376286b3d3,9,4d44f37107f01b9b,d5f820c11a121050,L,W,Middleweight,Middleweight Bout,0,Decision - Split,Jeff Blatnick 29 - 28. Doug Crosby 28 - 29. Sal D'amato 28 - 29.,3,300,3 Rnd (5-5-5),900
+504b540805598fa5,58bc81376286b3d3,10,83fd97284f4bb4a4,e5c9de15bb58b1c6,L,W,Lightweight,Lightweight Bout,1,Submission,Armbar From Back Control,3,119,3 Rnd (5-5-5),719
 5355fd4a2598f679,58bc81376286b3d3,11,7d96bc577e5178b2,8355922d564b152c,W,L,Lightweight,Lightweight Bout,0,Decision - Split,Sal D'amato 29 - 28. Doug Crosby 27 - 30. Cardo Urso 28 - 29.,3,300,3 Rnd (5-5-5),900
 787715a9030ddb2b,f2c8ebbeafd45f2b,1,ace83095105dd205,71f048adbfed5b49,W,L,Welterweight,Welterweight Bout,0,Submission,Rear Naked Choke,2,168,3 Rnd (5-5-5),468
 39376c02e064944e,f2c8ebbeafd45f2b,2,cf615eb4b7862c76,a72b20136239ba39,W,L,Welterweight,Welterweight Bout,0,KO/TKO,to,2,162,3 Rnd (5-5-5),462
@@ -2828,26 +2828,26 @@ a49006f9199a015b,f2c8ebbeafd45f2b,9,bd92e38aef641673,342422bb6ced1e8d,W,L,Heavyw
 b2c8167a19e908b8,f2c8ebbeafd45f2b,10,634bb0de2eb043b4,0b77a05bcbd2de74,W,L,Women's Featherweight,Strikeforce Women's 145 lbs. Title Bout,0,KO/TKO,Punches to Head On Ground,3,220,5 Rnd (5-5-5-5-5),820
 58aaf171cb77ea6a,f2c8ebbeafd45f2b,11,f57a8a52ca401ed9,abcf7e55a0a9ed89,W,L,Welterweight,Strikeforce Welterweight Title Bout,0,KO/TKO,Punch to Head At Distance,1,278,5 Rnd (5-5-5-5-5),278
 5b959d6c68d6daa0,f2c8ebbeafd45f2b,12,87f0b37f153cf497,be124bdd60fab7d5,W,L,Welterweight,Welterweight Bout,0,Decision - Majority,27 - 30. 27 - 30. 29 - 29.,3,300,3 Rnd (5-5-5),900
-1a21263dc5d866b6,15edcf67ccf5be84,1,46baf0f57edfa4df,e4a9dbade7c7e1a7,W,L,Heavyweight,Heavyweight Bout,0,KO/TKO,Punches to Head On Ground,2,91,3 Rnd (5-5-5),391
-20628fd4e19a97e4,15edcf67ccf5be84,2,df05aa15b2d66f57,219a254e15d60135,W,L,Heavyweight,Heavyweight Bout,0,Decision - Majority,Doug Crosby 28 - 28. Glenn Trowbridge 28 - 29. Nelson Hamilton 28 - 29.,3,300,3 Rnd (5-5-5),900
-adddc6e46da5ca19,15edcf67ccf5be84,3,902ab9197b83d0db,579fcdfcabd23a7b,W,L,Light Heavyweight,Light Heavyweight Bout,0,Decision - Unanimous,Lester Griffin 27 - 30. Glenn Trowbridge 26 - 30. Patricia Morse-Jarman 26 - 30.,3,300,3 Rnd (5-5-5),900
-840863604b38a33f,15edcf67ccf5be84,4,dc0f07928009a127,64360e618823a8e4,W,L,Lightweight,Lightweight Bout,0,Decision - Unanimous,Adalaide Byrd 28 - 29. Tony Weeks 28 - 29. Nelson Hamilton 28 - 29.,3,300,3 Rnd (5-5-5),900
+1a21263dc5d866b6,15edcf67ccf5be84,1,e4a9dbade7c7e1a7,46baf0f57edfa4df,L,W,Heavyweight,Heavyweight Bout,0,KO/TKO,Punches to Head On Ground,2,91,3 Rnd (5-5-5),391
+20628fd4e19a97e4,15edcf67ccf5be84,2,219a254e15d60135,df05aa15b2d66f57,L,W,Heavyweight,Heavyweight Bout,0,Decision - Majority,Doug Crosby 28 - 28. Glenn Trowbridge 28 - 29. Nelson Hamilton 28 - 29.,3,300,3 Rnd (5-5-5),900
+adddc6e46da5ca19,15edcf67ccf5be84,3,579fcdfcabd23a7b,902ab9197b83d0db,L,W,Light Heavyweight,Light Heavyweight Bout,0,Decision - Unanimous,Lester Griffin 27 - 30. Glenn Trowbridge 26 - 30. Patricia Morse-Jarman 26 - 30.,3,300,3 Rnd (5-5-5),900
+840863604b38a33f,15edcf67ccf5be84,4,64360e618823a8e4,dc0f07928009a127,L,W,Lightweight,Lightweight Bout,0,Decision - Unanimous,Adalaide Byrd 28 - 29. Tony Weeks 28 - 29. Nelson Hamilton 28 - 29.,3,300,3 Rnd (5-5-5),900
 fb9b03644f559604,15edcf67ccf5be84,5,ccd1299e0345e0ce,cce79e827569f26e,W,L,Lightweight,Lightweight Bout,0,Decision - Unanimous,Patricia Morse-Jarman 28 - 29. Tony Weeks 28 - 29. Doug Crosby 28 - 29.,3,300,3 Rnd (5-5-5),900
 1fc065e1d3243594,15edcf67ccf5be84,6,86f582852a5b240a,231926533134ec1f,W,L,Lightweight,Lightweight Bout,0,Decision - Unanimous,Adalaide Byrd 28 - 29. Glenn Trowbridge 28 - 29. Lester Griffin 28 - 29.,3,300,3 Rnd (5-5-5),900
 2bf24d9c33bb4d49,15edcf67ccf5be84,7,86dfed7cc24a9fa7,d2d37e8eeb3abc8d,W,L,Welterweight,Welterweight Bout,1,KO/TKO,Punch to Head At Distance,1,143,3 Rnd (5-5-5),143
 83a7cc0b0de904b9,15edcf67ccf5be84,8,427b5953ac8e3a27,d0c29452d3272603,W,L,Middleweight,Middleweight Bout,0,Decision - Unanimous,Adalaide Byrd 27 - 30. Lester Griffin 28 - 29. Doug Crosby 28 - 29.,3,300,3 Rnd (5-5-5),900
-5e52b0bf9719f0ae,15edcf67ccf5be84,9,30a09e43f15f1d75,9fe85152f351e737,W,L,Welterweight,Welterweight Bout,1,Submission,D'Arce Choke From Half Guard Technical Submission,2,114,3 Rnd (5-5-5),414
-b091e021e61f1950,15edcf67ccf5be84,10,48d1f690b763934c,a8e6a69796280f17,W,L,Middleweight,Middleweight Bout,0,Decision - Unanimous,Tony Weeks 27 - 30. Lester Griffin 27 - 30. Doug Crosby 27 - 30.,3,300,3 Rnd (5-5-5),900
+5e52b0bf9719f0ae,15edcf67ccf5be84,9,9fe85152f351e737,30a09e43f15f1d75,L,W,Welterweight,Welterweight Bout,1,Submission,D'Arce Choke From Half Guard Technical Submission,2,114,3 Rnd (5-5-5),414
+b091e021e61f1950,15edcf67ccf5be84,10,a8e6a69796280f17,48d1f690b763934c,L,W,Middleweight,Middleweight Bout,0,Decision - Unanimous,Tony Weeks 27 - 30. Lester Griffin 27 - 30. Doug Crosby 27 - 30.,3,300,3 Rnd (5-5-5),900
 f92e8d6c96306013,15edcf67ccf5be84,11,0aa92558424ced9e,21b8a0f5c231096f,W,L,Light Heavyweight,Light Heavyweight Bout,0,Submission,Rear Naked Choke Technical Submission,2,69,3 Rnd (5-5-5),369
 46a7cb6937144ba2,49efbdc6c9f650c4,1,f5431394fb284bb9,53278852bcd91e11,W,L,Light Heavyweight,Light Heavyweight Bout,0,KO/TKO,Punches to Head From Half Guard,3,206,3 Rnd (5-5-5),806
 e892b4a03304f2a4,49efbdc6c9f650c4,2,5d7bdab5e03e3216,132f860d02953f4c,W,L,Middleweight,Middleweight Bout,0,Decision - Unanimous,Barry Foley 28 - 29. Chris Lee 28 - 29. Kon Papaioannou 28 - 29.,3,300,3 Rnd (5-5-5),900
 3b0258eb19d66f8f,49efbdc6c9f650c4,3,91acd6910b802a9e,3dc3022232b79c7a,W,L,Welterweight,Welterweight Bout,1,Submission,Kneebar From Inoki-Ali Position,1,101,3 Rnd (5-5-5),101
-0ea087a71863184d,49efbdc6c9f650c4,4,59583ff832fe9d68,c6a33ff198aaaeeb,W,L,Light Heavyweight,Light Heavyweight Bout,0,TKO - Doctor's Stoppage,Facial Cut,3,64,3 Rnd (5-5-5),664
+0ea087a71863184d,49efbdc6c9f650c4,4,c6a33ff198aaaeeb,59583ff832fe9d68,L,W,Light Heavyweight,Light Heavyweight Bout,0,TKO - Doctor's Stoppage,Facial Cut,3,64,3 Rnd (5-5-5),664
 e716f8079c60bc66,49efbdc6c9f650c4,5,c32fb8c0f6471a4d,4b4753d19489297f,W,L,Heavyweight,Heavyweight Bout,0,TKO - Doctor's Stoppage,Facial Cut,2,300,3 Rnd (5-5-5),600
-aefca2869c87eb11,49efbdc6c9f650c4,6,c0ab242c40decc55,b9d0fd83bb8a147a,W,L,Light Heavyweight,Light Heavyweight Bout,0,KO/TKO,Punch to Head At Distance,3,130,3 Rnd (5-5-5),730
-b4d624bdc27dff83,49efbdc6c9f650c4,7,896c322f56b8be5a,79899ecf62020f6d,W,L,Lightweight,Lightweight Bout,0,Decision - Unanimous,Evan Bzadough 27 - 30. Chris Lee 27 - 30. Tony Weeks 27 - 30.,3,300,3 Rnd (5-5-5),900
+aefca2869c87eb11,49efbdc6c9f650c4,6,b9d0fd83bb8a147a,c0ab242c40decc55,L,W,Light Heavyweight,Light Heavyweight Bout,0,KO/TKO,Punch to Head At Distance,3,130,3 Rnd (5-5-5),730
+b4d624bdc27dff83,49efbdc6c9f650c4,7,79899ecf62020f6d,896c322f56b8be5a,L,W,Lightweight,Lightweight Bout,0,Decision - Unanimous,Evan Bzadough 27 - 30. Chris Lee 27 - 30. Tony Weeks 27 - 30.,3,300,3 Rnd (5-5-5),900
 241a722f3b042c59,49efbdc6c9f650c4,8,a1f6999fe57236e0,2b93ebd9f5417ad2,W,L,Middleweight,Middleweight Bout,0,Decision - Unanimous,Sal D'amato 28 - 29. Barry Foley 28 - 29. Tony Weeks 28 - 29.,3,300,3 Rnd (5-5-5),900
-ca93e3f69fa3d725,49efbdc6c9f650c4,9,0ff11cc094e887bc,ee9d73f4fee9cbdd,W,L,Heavyweight,Heavyweight Bout,1,KO/TKO,Punch to Head At Distance,1,140,3 Rnd (5-5-5),140
+ca93e3f69fa3d725,49efbdc6c9f650c4,9,ee9d73f4fee9cbdd,0ff11cc094e887bc,L,W,Heavyweight,Heavyweight Bout,1,KO/TKO,Punch to Head At Distance,1,140,3 Rnd (5-5-5),140
 bc0190e0e7f80d82,d0d7160824278840,1,09a82bd51ff61376,38e5d9dcb0fddc42,W,L,Middleweight,Middleweight Bout,0,Submission,Armbar,1,267,3 Rnd (5-5-5),267
 00afc619bea2f937,d0d7160824278840,2,813550bc53b15fb0,feeae92f951f49a9,W,L,Middleweight,Middleweight Bout,0,Decision - Unanimous,Steve Morrow 27 - 30. Marcos Rosales 27 - 30. Susan Thomas-Gitlin 27 - 30.,3,300,3 Rnd (5-5-5),900
 fc853cc1c88c00cc,d0d7160824278840,3,0749d968e932df53,5befa793316d3469,W,L,Welterweight,Welterweight Bout,0,Decision - Unanimous,Steve Morrow 27 - 30. Marcos Rosales 27 - 30. Susan Thomas-Gitlin 27 - 30.,3,300,3 Rnd (5-5-5),900
