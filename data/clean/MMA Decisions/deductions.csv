@@ -1,0 +1,199 @@
+bout_id,fighter_id,round_number,points_deducted,reason
+751,219,4,1,Illegal Knee to a Downed Opponent
+755,454,2,1,Grabbing the Cage
+863,309,2,1,Illegal Upkick to a Downed Opponent
+625,268,1,1,Illegal Downward Elbow
+401,393,2,1,Illegal Downward Elbow
+1593,486,3,1,Stomp
+342,113,2,1,Grabbing the Cage
+1017,322,2,1,Illegal Knee to a Downed Opponent
+1017,322,3,1,Elbowing to the Back of the Head
+1018,406,3,1,Grabbing the Cage
+2811,1724,2,1,Grabbing Opponent's Gloves
+2811,1724,3,1,Illegal Knee to a Downed Opponent
+2805,232,2,1,Grabbing the Cage
+1267,685,2,1,Illegal Upkick to a Downed Opponent
+1927,1012,3,2,Illegal Kick to a Downed Opponent
+1928,1013,2,1,Grabbing Opponent's Shorts
+1707,874,3,1,Grabbing the Cage
+1350,722,2,1,Illegal Upkick to a Downed Opponent
+1400,349,3,1,Low Blow (Kick)
+1721,644,3,1,Low Blow (Kick)
+1938,1026,5,1,Illegal Upkick to a Downed Opponent
+1489,685,3,1,Low Blow (Kick)
+1501,655,3,1,Low Blow (Kick)
+1523,356,2,1,Eye Poke
+1732,910,2,1,Low Blow (Kick)
+1969,269,3,1,Grabbing Opponent's Shorts
+2059,315,3,1,Punching to the Back of the Head
+2515,1026,1,1,Illegal Upkick to a Downed Opponent
+2770,1290,3,1,Low Blow (Kick)
+3133,1932,1,1,Low Blow (Kick)
+3156,1951,2,1,Spitting Out Mouthpiece
+3179,1800,3,1,Illegal Upkick to a Downed Opponent
+3289,1396,2,2,Low Blow (Kick)
+3383,2041,2,1,Low Blow (Knee)
+7654,4134,1,1,Grabbing the fence
+3482,1091,1,1,Illegal Knee to a Downed Opponent
+3518,2096,1,1,Illegal Upkick to a Downed Opponent
+3687,1418,3,1,Low Blow
+3707,2143,1,1,Low Blow (Punch)
+3861,1986,1,1,Illegal Knee to a Downed Opponent
+7760,1384,2,1,Illegal Upkick
+3946,1313,3,1,Illegal Knee to a Downed Opponent
+3992,2173,2,1,Grabbing the Cage
+4062,2165,1,1,Illegal Knee to a Downed Opponent
+4062,2165,3,2,Low blow
+4132,2412,2,1,Grabbing the Cage
+4226,2474,3,1,Punching to the Back of the Head
+4260,1749,1,1,Grabbing the Cage
+4298,2504,2,1,Low blow (kick)
+4385,430,1,1,Grabbing the Cage
+4473,2600,2,1,Grabbing the Fence
+4591,602,3,1,Eye Poke
+4639,2690,3,1,Low Blow
+4647,1420,3,1,Illegal Knee to a Downed Opponent
+4689,1442,3,1,Low Blow
+5849,3308,3,1,Grabbing the Ropes
+4752,2740,3,1,Illegal Kick to a Downed Opponent
+4805,2778,3,1,Illegal Kick to a Downed Opponent
+4816,2583,2,1,Illegal Knee to a Downed Opponent
+4870,1845,3,1,Low Blow (Kick)
+4992,2776,1,1,Illegal Upkick
+4992,2776,2,1,Grabbing the Cage
+4994,2248,2,1,Grabbing the Shorts
+5034,2198,1,1,Low Blow (Knee)
+5078,2935,1,1,Grabbing the Cage
+5086,1646,2,1,Kneeing a Downed Opponent
+5147,2506,1,1,Headbutt
+5218,1101,3,1,Kneeing a Downed Opponent
+5537,2207,2,1,Low blow (kick)
+5605,267,3,1,Headbutt
+5701,3239,3,2,Headbutt
+5686,3243,2,1,Low Blow (knee)
+5905,2420,2,1,Illegal Kick to a Downed Opponent
+5916,2828,2,1,Low blow
+6041,552,5,1,Timidity
+6227,3366,1,1,Kneeing a Downed Opponent
+6325,3073,1,1,Kneeing a Downed Opponent
+6399,2156,2,1,Low Blow
+6496,1887,2,1,Illegal Knee to a Downed Opponent
+6504,3600,2,1,Kneeing a downed opponent
+6636,3652,3,1,Spitting out mouthpiece
+6760,3471,3,1,Eye Poke
+6793,2108,2,1,Low Blow
+6797,3729,3,1,Spitting Out Mouthguard
+6839,3233,3,1,Grabbing Opponent's Glove
+6878,3774,3,1,Illegal Knee to a Downed Opponent
+6903,785,2,1,Illegal Knee to a Downed Opponent
+7007,2408,1,1,Low Blow
+7184,2993,1,1,Grabbing the Fence
+7185,2125,2,1,Illegal Knee to a Downed Opponent
+7267,3941,1,1,Illegal Knee to a Downed Opponent
+7304,3238,2,1,Late strikes
+7530,1889,5,1,Low Blow
+7559,3266,1,1,Low Blow
+7675,3162,2,1,Illegal Kick to a Downed Opponent
+7776,3273,3,1,Grabbing the fence
+7783,2628,3,1,Illegal Knee to a Downed Opponent
+7839,1554,5,1,Grabbing opponent's gloves
+7957,4065,3,1,Low Blow
+7964,3603,2,1,Low Blow
+7993,4001,2,1,Low Blow
+8196,4368,3,1,Illegal Downward Elbow
+8426,4358,3,1,Low Blow
+8460,3882,1,1,Illegal knee
+8577,2872,2,1,Illegal strike to the back of the head
+8640,4584,2,1,Grabbing the fence
+8674,3672,1,1,Biting
+8722,4609,3,1,Illegal knee to a downed opponent
+8819,4651,2,1,Eye Poke
+9226,4703,2,1,Grabbing the fence
+9226,4703,3,2,Illegal knee to a downed opponent
+12128,5929,3,1,Low blow
+9317,4879,3,1,Holding the fence
+9322,4882,3,1,Headbutt
+9386,4915,3,1,Illegal elbow
+9505,4963,2,1,Head Butt
+12209,2794,2,1,Eye poke
+9840,2934,2,1,Strikes to the back of the head
+9850,4452,3,1,Elbow to the back of the head
+9859,623,4,2,Kneeing a downed opponent
+9883,4083,1,1,Grabbing the fence
+9945,4909,1,1,Eye poke
+9957,5189,1,1,Grabbing the fence
+9970,5192,2,1,Illegal knee to a downed opponent
+10127,4702,1,1,Illegal elbow
+10175,5295,3,1,Low blow
+10215,5308,5,1,Illegal Slam
+10252,5041,3,2,Illegal kick to a downed opponent
+10303,4852,2,1,Low blow
+10303,4852,3,1,Low blow
+10325,4132,1,1,Illegal knee to a downed opponent
+10358,5351,3,1,Strikes to the back of the head
+10568,3968,2,1,Grabbing the fence
+12344,3712,2,1,Low blow
+10684,3446,4,1,Kneeing a downed opponent
+10688,5507,2,1,Illegal kick to a downed opponent
+10756,4555,1,1,Kneeing a downed opponent
+10788,5193,1,1,Grabbing the fence
+11119,5644,3,2,Illegal knee to a downed opponent
+11180,5658,3,1,Low blow
+11245,4496,2,1,Illegal knee to a downed opponent
+11313,4095,1,1,Eye poke
+11610,4348,3,1,Low blow
+11715,4907,1,1,Grabbing the fence
+11817,4424,2,1,Punches to the back of the head
+11848,3823,2,1,Illegal knee to a downed opponent
+11907,5806,2,1,Low blow
+12400,3165,1,1,Illegal strike to the back of the head
+12042,3982,3,1,Illegal elbow to the back of the head
+12227,5032,2,1,Low blow
+12498,5324,3,2,Eye poke
+12525,5352,3,1,Grabbing the fence
+12588,5158,4,1,Striking after the bell
+12590,3871,3,1,Low blow
+12858,5734,2,1,Illegal knee to a downed opponent
+12858,4684,2,1,Illegal upkick
+12859,5215,1,1,Grabbing the fence
+12651,2120,3,1,Eye poke
+12656,4228,2,1,Eye poke
+12671,3480,3,1,Low blow
+12823,6116,3,1,TBD
+12948,5186,3,1,Eye poke
+13052,6061,3,1,Eye poke
+13063,6186,3,1,Illegal knee to a downed opponent
+13101,1239,1,1,Kneeing a downed opponent
+13167,3007,1,1,Grabbing the fence
+13204,6231,3,2,Illegal knee to a downed opponent
+13217,5190,2,1,Grabbing the fence
+13263,4598,2,1,Illegal kick to a downed opponent
+13264,2444,1,1,Illegal knee to a downed opponent
+13279,6257,2,1,Headbutt
+13416,4597,3,1,Low blow
+13434,6303,3,1,Grabbing opponent's glove
+13446,5848,1,1,Kneeing a downed opponent
+13499,897,2,1,Low blow
+13546,5349,2,1,Kneeing a downed opponent
+13622,5764,2,1,Grabbing the fence
+13753,3252,3,1,Headbutt
+13768,3631,3,1,Grabbing the fence
+13798,6413,1,1,Biting
+13850,4803,3,1,Low blow
+13863,3210,3,1,Grabbing the fence
+13918,6449,1,1,Kneeing a downed opponent
+14008,4354,2,1,Kicking after the round ended
+14008,4354,3,1,Illegal knee to a downed opponent
+14037,6480,2,1,Headbutt
+14039,5658,3,1,Low blow
+14046,5689,1,1,Kneeing a downed opponent
+14275,6134,3,1,Low blow
+14298,5639,4,2,Illegal kick to a downed opponent
+14496,5726,4,1,Kicking a downed opponent
+14571,6155,2,1,Low blow
+14713,6576,3,1,Grabbing the fence
+14927,6731,3,1,Grabbing the fence
+14996,6408,3,1,Low blow
+15053,5396,2,1,Eye poke
+15109,6636,3,1,Grabbing the fence
+15140,5602,2,2,Illegal knee to a downed opponent
