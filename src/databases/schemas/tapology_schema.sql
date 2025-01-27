@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS tapology_fighters (
     id TEXT PRIMARY KEY,
     ufcstats_id TEXT,
     sherdog_id INTEGER,
-    bestfightodds_id TEXT,
+    bestfightodds_id INTEGER,
     ufc_id TEXT,
     wikipedia_url TEXT,
     name TEXT,
@@ -46,9 +46,8 @@ CREATE TABLE IF NOT EXISTS tapology_events (
     id TEXT PRIMARY KEY,
     ufcstats_id TEXT,
     sherdog_id INTEGER,
-    bestfightodds_id TEXT,
+    bestfightodds_id INTEGER,
     ufc_id TEXT,
-    wikipedia_url TEXT,
     name TEXT,
     event_order INTEGER
 );
