@@ -823,7 +823,7 @@ id,ufcstats_id,sherdog_id,bestfightodds_id,ufc_id,wikipedia_url,name,nickname,da
 33906-david-zawada,3bb2dc8e87b10a46,72910,5347,,https://en.wikipedia.org/wiki/David_Zawada,David Zawada,Sagat,1990-08-01,72,75.0,Germany,"Düsseldorf, Germany"
 3391-jeremy-larsen,c3bd649a9194e50c,19863,3232,,,Jeremy Larsen,,1984-05-18,70,70.0,United States,United States
 33946-abu-azaitar,46d0a888d87d91ac,55936,3986,,,Abu Azaitar,Captain Morocco,1986-03-10,69,76.0,Germany,Germany
-339509-robelis-despaigne,140567899d98978a,406903,8374,robelis-despaigne,https://en.wikipedia.org/wiki/Robelis_Despaigne,Robelis Despaigne,The Big Boy,1988-09-09,79,84.0,Cuba,Cuba
+339509-robelis-despaigne,140567899d98978a,406903,16067,robelis-despaigne,https://en.wikipedia.org/wiki/Robelis_Despaigne,Robelis Despaigne,The Big Boy,1988-09-09,79,84.0,Cuba,Cuba
 34063-adrian-yanez,0232cabbc30a2372,86354,4952,adrian-yanez,https://en.wikipedia.org/wiki/Adrian_Yanez,Adrian Yanez,,1993-11-29,67,70.0,United States,"La Porte, Texas"
 34235-lucas-melo,7413b80dbb0f8f9f,100031,3816,,https://en.wikipedia.org/wiki/Lucas_Martins,Lucas Martins,Mineiro,1988-11-11,72,72.0,Brazil,"Montes Claros, Minas Gerais, Brazil"
 34265-kayla-harrison,1af1170ed937cba7,237039,8276,kayla-harrison?language_content_entity=en,https://en.wikipedia.org/wiki/Kayla_Harrison,Kayla Harrison,,1990-07-02,68,66.0,United States,"Middletown, Ohio, United States"
@@ -1001,7 +1001,7 @@ id,ufcstats_id,sherdog_id,bestfightodds_id,ufc_id,wikipedia_url,name,nickname,da
 46234-justin-jaynes,304a21d0595e1a08,53713,4976,justin-jaynes,https://en.wikipedia.org/wiki/Justin_Jaynes,Justin Jaynes,Guitar Hero,1989-08-10,67,67.5,United States,"Richmond, Michigan, United States"
 46253-alexander-hernandez,262a7d06203657e6,97669,7977,alexander-hernandez,https://en.wikipedia.org/wiki/Alexander_Hernandez,Alexander Hernandez,The Great Ape,1992-10-01,69,72.0,United States,United States
 46288-jason-novelli,459e4dc69ec669b2,18136,5779,,,Jason Novelli,Pepsi,1979-06-08,72,75.5,United States,"Anchorage, Alaska"
-4635-kim-dong-hyun,98a6b2361045898f,21673,612,dong-hyun-ma,https://en.wikipedia.org/wiki/Dong_Hyun_Ma,Dong Hyun Ma,Maestro,1988-09-09,71,70.5,South Korea,South Korea
+4635-kim-dong-hyun,98a6b2361045898f,21673,6915,dong-hyun-ma,https://en.wikipedia.org/wiki/Dong_Hyun_Ma,Dong Hyun Ma,Maestro,1988-09-09,71,70.5,South Korea,South Korea
 46499-dontale-mayes,1a9480fc288e55d7,237177,6830,dontale-mayes,https://en.wikipedia.org/wiki/Don'Tale_Mayes,Don'Tale Mayes,Lord Kong,1992-01-16,78,81.0,United States,United States
 46586-ricky-turcios,cd3d7e37ff2d679c,80671,4236,ricky-turcios,,Ricky Turcios,,1993-06-05,69,71.0,United States,"Houston, Texas"
 46664-william-macario-patolino,ed74afc8b5b47a61,69624,4187,,https://en.wikipedia.org/wiki/William_Macario,William Macário,Patolino,1991-07-01,71,75.0,Brazil,"Rio de Janeiro, Rio de Janeiro, Brazil"
@@ -1131,7 +1131,7 @@ id,ufcstats_id,sherdog_id,bestfightodds_id,ufc_id,wikipedia_url,name,nickname,da
 59676-bryce-mitchell,d9c6f19f958643e9,151837,6135,bryce-mitchell,https://en.wikipedia.org/wiki/Bryce_Mitchell,Bryce Mitchell,Thug Nasty,1994-10-04,70,70.0,United States,"Cabot, Arkansas"
 59694-cheyanne-vlismas,4959f10a62f3fec3,152049,10252,cheyanne-buys,https://en.wikipedia.org/wiki/Cheyanne_Vlismas,Cheyanne Vlismas,The Warrior Princess,1995-06-25,63,63.0,United States,"Saint Petersburg, Florida, United States"
 59711-royston-wee,b9c03e7a4557e542,88793,4565,,https://en.wikipedia.org/wiki/Royston_Wee,Royston Wee,,1986-11-15,67,67.0,Singapore,Singapore
-59819-bruno-silva-blindado,12ebd7d157e91701,66304,7121,bruno-silva-blindado,https://en.wikipedia.org/wiki/Bruno_Silva_(fighter),Bruno Silva,Blindado,1989-07-13,72,74.0,Brazil,"Cajazeiras, Paraiba, Brazil"
+59819-bruno-silva-blindado,12ebd7d157e91701,66304,11513,bruno-silva-blindado,https://en.wikipedia.org/wiki/Bruno_Silva_(fighter),Bruno Silva,Blindado,1989-07-13,72,74.0,Brazil,"Cajazeiras, Paraiba, Brazil"
 60086-herbert-burns,4f140403000158b5,152211,4735,herbert-burns,https://en.wikipedia.org/wiki/Herbert_Burns,Herbert Burns,The Blaze,1988-02-02,69,73.5,Brazil,Brazil
 6018-gerald-meerschaert-the-machine,6ac9bc2953c47345,21501,3628,gerald-meerschaert,https://en.wikipedia.org/wiki/Gerald_Meerschaert,Gerald Meerschaert,GM3,1987-12-18,73,77.5,United States,"Racine, Wisconsin, United States"
 60287-jamal-pogues,f41b9f5efc7162d6,152993,8230,jamal-pogues,,Jamal Pogues,The Stormtrooper,1995-12-01,75,77.0,United States,"Los Angeles, California, USA"
