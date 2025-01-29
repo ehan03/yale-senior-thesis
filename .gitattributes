@@ -1,2 +1,5 @@
 # Ignore Jupyter notebook line count
 *.ipynb linguist-documentation
+
+# Detect SQL files
+*.sql linguist-detectable=true

@@ -1,0 +1,717 @@
+id,pk,slug,name,date,location,venue,event_order
+RXZlbnROb2RlOjExOQ==,119,ufc-1-the-beginning,UFC 1: The Beginning,1993-11-12,"Denver, Colorado, United States",McNichols Arena,1
+RXZlbnROb2RlOjEyMA==,120,ufc-2-no-way-out,UFC 2: No Way Out,1994-03-11,"Denver, Colorado, United States",Fillmore Auditorium,2
+RXZlbnROb2RlOjEyMQ==,121,ufc-3-the-american-dream,UFC 3: The American Dream,1994-09-09,"Charlotte, North Carolina, United States",Grady Cole Center,3
+RXZlbnROb2RlOjEyMg==,122,ufc-4-revenge-of-the-warriors,UFC 4: Revenge of the Warriors,1994-12-16,"Tulsa, Oklahoma, United States",Expo Square Pavilion,4
+RXZlbnROb2RlOjEyMw==,123,ufc-5-return-of-the-beast,UFC 5: Return of the Beast,1995-04-07,"Charlotte, North Carolina, United States",Bojangles\' Coliseum,5
+RXZlbnROb2RlOjEyNA==,124,ufc-6-clash-of-the-titans,UFC 6: Clash of the Titans,1995-07-14,"Casper, Wyoming, United States",Casper Events Center,6
+RXZlbnROb2RlOjEyNQ==,125,ufc-7-the-brawl-in-buffalo,UFC 7: The Brawl in Buffalo,1995-09-08,"Buffalo, New York, United States",Buffalo Memorial Auditorium,7
+RXZlbnROb2RlOjEyNg==,126,ufc-75-ultimate-ultimate-1995,UFC 7.5: Ultimate Ultimate 1995,1995-12-16,"Denver, Colorado, United States",Mammoth Gardens,8
+RXZlbnROb2RlOjEyNw==,127,ufc-8-david-vs-goliath,UFC 8: David vs Goliath,1996-02-16,"San Juan, Puerto Rico, Puerto Rico",Ruben Rodriguez Coliseum,9
+RXZlbnROb2RlOjEyOA==,128,ufc-9-motor-city-madness,UFC 9: Motor City Madness,1996-05-17,"Detroit, Michigan, United States",Cobo Arena,10
+RXZlbnROb2RlOjEyOQ==,129,ufc-10-the-tournament,UFC 10: The Tournament,1996-07-12,"Birmingham, Alabama, United States",Alabama State Fair Arena,11
+RXZlbnROb2RlOjEzMA==,130,ufc-11-the-proving-ground,UFC 11: The Proving Ground,1996-09-20,"Augusta, Georgia, United States",Augusta Civic Center,12
+RXZlbnROb2RlOjEzMQ==,131,ufc-115-ultimate-ultimate-1996,UFC 11.5: Ultimate Ultimate 1996,1996-12-07,"Birmingham, Alabama, United States",Alabama State Fair Arena,13
+RXZlbnROb2RlOjEzMg==,132,ufc-12-judgement-day,UFC 12: Judgement Day,1997-02-07,"Dothan, Alabama, United States",Dothan Civic Center Arena,14
+RXZlbnROb2RlOjEzMw==,133,ufc-13-ultimate-force,UFC 13: Ultimate Force,1997-05-30,"Augusta, Georgia, United States",Augusta Civic Center,15
+RXZlbnROb2RlOjEzNQ==,135,ufc-14-showdown,UFC 14: Showdown,1997-07-27,"Birmingham, Alabama, United States",Boutwell Municipal Auditorium,16
+RXZlbnROb2RlOjEzNw==,137,ufc-15-collision-course,UFC 15: Collision Course,1997-10-17,"Bay St. Louis, Mississippi, United States",Hollywood Casino,17
+RXZlbnROb2RlOjEzOA==,138,ufc-155-ultimate-japan,UFC 15.5: Ultimate Japan,1997-12-21,"Yokohama, Japan, Japan",Yokohama Arena,18
+RXZlbnROb2RlOjEzOQ==,139,ufc-16-battle-in-the-bayou,UFC 16: Battle in the Bayou,1998-03-13,"Kenner, Louisiana, United States",Pontchartrain Center,19
+RXZlbnROb2RlOjE0MQ==,141,ufc-17-redemption,UFC 17: Redemption,1998-05-15,"Mobile, Alabama, United States",Mobile Civic Center,20
+RXZlbnROb2RlOjE0NA==,144,ufc-175-ultimate-brazil,UFC 17.5: Ultimate Brazil,1998-10-16,"Sao Paulo, Brazil, Brazil",Portuguesa Gymnasium,21
+RXZlbnROb2RlOjE0NQ==,145,ufc-18-the-road-to-the-heavyweight-title,UFC 18: The Road to the Heavyweight Title,1999-01-08,"Kenner, Louisiana, United States",Pontchartrain Center,22
+RXZlbnROb2RlOjE0Ng==,146,ufc-19-ultimate-young-guns,UFC 19: Ultimate Young Guns,1999-03-05,"Bay St. Louis, Mississippi, United States",Hollywood Casino,23
+RXZlbnROb2RlOjE0OA==,148,ufc-20-battle-for-the-gold,UFC 20: Battle for the Gold,1999-05-07,"Birmingham, Alabama, United States",Boutwell Municipal Auditorium,24
+RXZlbnROb2RlOjE1MA==,150,ufc-21-return-of-the-champions,UFC 21: Return of the Champions,1999-07-16,"Cedar Rapids, Iowa, United States",U.S. Cellular Center,25
+RXZlbnROb2RlOjE1Mg==,152,ufc-22-only-one-can-be-champion,UFC 22: Only One Can be Champion,1999-09-24,"Lake Charles, Louisiana, United States",Lake Charles Civic Center,26
+RXZlbnROb2RlOjE1Mw==,153,ufc-23-ultimate-japan-2,UFC 23: Ultimate Japan 2,1999-11-19,"Urayasu, Chiba, Japan",Tokyo Bay N.K. Hall,27
+RXZlbnROb2RlOjE1Ng==,156,ufc-24-first-defense,UFC 24: First Defense,2000-03-10,"Lake Charles, Louisiana, United States",Lake Charles Civic Center,28
+RXZlbnROb2RlOjE1Nw==,157,ufc-25-ultimate-japan-3,UFC 25: Ultimate Japan 3,2000-04-14,"Tokyo, Japan, Japan",Yoyogi National Gymnasium,29
+RXZlbnROb2RlOjE2MA==,160,ufc-26-ultimate-field-of-dreams,UFC 26: Ultimate Field of Dreams,2000-06-09,"Cedar Rapids, Iowa, United States",U.S. Cellular Center,30
+RXZlbnROb2RlOjE2Mg==,162,ufc-27-ultimate-bad-boyz,UFC 27: Ultimate Bad Boyz,2000-09-22,"New Orleans, Louisiana, United States",Lakefront Arena,31
+RXZlbnROb2RlOjE2NA==,164,ufc-28-high-stakes,UFC 28: High Stakes,2000-11-17,"Atlantic City, New Jersey, United States",Trump Taj Mahal,32
+RXZlbnROb2RlOjE2NQ==,165,ufc-29-defense-of-the-belts,UFC 29: Defense of the Belts,2000-12-16,"Tokyo, Japan, Japan",Differ Ariake,33
+RXZlbnROb2RlOjE2Nw==,167,ufc-30-battle-on-the-boardwalk,UFC 30: Battle on the Boardwalk,2001-02-23,"Atlantic City, New Jersey, United States",Trump Taj Mahal,34
+RXZlbnROb2RlOjE3MA==,170,ufc-31-locked-and-loaded,UFC 31: Locked and Loaded,2001-05-04,"Atlantic City, New Jersey, United States",Trump Taj Mahal,35
+RXZlbnROb2RlOjE3Mg==,172,ufc-32-showdown-in-the-meadowlands,UFC 32: Showdown in the Meadowlands,2001-06-29,"East Ruthorford, New Jersey, United States",Continental Airlines Arena,36
+RXZlbnROb2RlOjE3Ng==,176,ufc-33-victory-in-vegas,UFC 33: Victory in Vegas,2001-09-28,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,37
+RXZlbnROb2RlOjE3OA==,178,ufc-34-high-voltage,UFC 34: High Voltage,2001-11-02,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,38
+RXZlbnROb2RlOjE4Mg==,182,ufc-35-throwdown,UFC 35: Throwdown,2002-01-11,"Uncasville, Conneticut, United States",Mohegan Sun Arena,39
+RXZlbnROb2RlOjE4Nw==,187,ufc-36-worlds-collide,UFC 36: Worlds Collide,2002-03-22,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,40
+RXZlbnROb2RlOjE4OQ==,189,ufc-37-high-impact,UFC 37: High Impact,2002-05-10,"Bossier City, Louisiana, United States",CenturyTel Center,41
+RXZlbnROb2RlOjE5Mg==,192,ufc-375-as-real-as-it-gets,UFC 37.5: As Real As It Gets,2002-06-22,"Nevada, United States, United States",Bellagio Hotel and CasinoLas Vegas,42
+RXZlbnROb2RlOjE5NA==,194,ufc-38-brawl-at-the-hall,UFC 38: Brawl at the Hall,2002-07-13,"London, England, England",Royal Albert Hall,43
+RXZlbnROb2RlOjIwMA==,200,ufc-39-the-warriors-return,UFC 39: The Warriors Return,2002-09-27,"Uncasville, Conneticut, United States",Mohegan Sun Arena,44
+RXZlbnROb2RlOjIwNA==,204,ufc-40-vendetta,UFC 40: Vendetta,2002-11-22,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,45
+RXZlbnROb2RlOjIxMQ==,211,ufc-41-onslaught,UFC 41: Onslaught,2003-02-28,"Atlantic City, New Jersey, United States",Boardwalk Hall,46
+RXZlbnROb2RlOjIxNQ==,215,ufc-42-sudden-impact,UFC 42: Sudden Impact,2003-04-25,"Miami, Florida, United States",American Airlines Arena,47
+RXZlbnROb2RlOjIxNw==,217,ufc-43-meltdown,UFC 43: Meltdown,2003-06-06,"Las Vegas, Nevada, United States",Thomas and Mack Center,48
+RXZlbnROb2RlOjIyMg==,222,ufc-44-undisputed,UFC 44: Undisputed,2003-09-26,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,49
+RXZlbnROb2RlOjIyNw==,227,ufc-45-revolution,UFC 45: Revolution,2003-11-21,"Uncasville, Conneticut, United States",Mohegan Sun Arena,50
+RXZlbnROb2RlOjIzMA==,230,ufc-46-supernatural,UFC 46: Supernatural,2004-01-31,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,51
+RXZlbnROb2RlOjIzNA==,234,ufc-47-its-on,UFC 47: It's On!,2004-04-02,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,52
+RXZlbnROb2RlOjIzOQ==,239,ufc-48-payback,UFC 48: Payback,2004-06-19,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,53
+RXZlbnROb2RlOjI0NA==,244,ufc-49-unfinished-business,UFC 49: Unfinished Business,2004-08-21,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,54
+RXZlbnROb2RlOjI0OA==,248,ufc-50-the-war-of-04,UFC 50: The War of '04,2004-10-22,"Atlantic City, New Jersey, United States",Boardwalk Hall,55
+RXZlbnROb2RlOjI1Mw==,253,ufc-51-super-saturday,UFC 51: Super Saturday,2005-02-05,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,56
+RXZlbnROb2RlOjI1OA==,258,the-ultimate-fighter-1-finale,The Ultimate Fighter 1 Finale,2005-04-09,"Las Vegas, Nevada, United States",Cox Pavilion,57
+RXZlbnROb2RlOjI1OQ==,259,ufc-52-couture-vs-liddell-2,UFC 52: Couture vs. Liddell 2,2005-04-16,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,58
+RXZlbnROb2RlOjI2NQ==,265,ufc-53-heavy-hitters,UFC 53: Heavy Hitters,2005-06-04,"Atlantic City, New Jersey, United States",Boardwalk Hall,59
+RXZlbnROb2RlOjI3MA==,270,ufc-fight-night-1,UFC Fight Night 1,2005-08-06,"Las Vegas, Nevada, United States",Cox Pavillion,60
+RXZlbnROb2RlOjI3Mg==,272,ufc-54-boiling-point,UFC 54: Boiling Point,2005-08-20,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,61
+RXZlbnROb2RlOjI3OA==,278,ufc-fight-night-2,UFC Fight Night 2,2005-10-03,"Las Vegas, Nevada, United States",Hard Rock Hotel and Casino,62
+RXZlbnROb2RlOjI3OQ==,279,ufc-55-fury,UFC 55: Fury,2005-10-07,"Uncasville, Connecticut, United States",Mohegan Sun Arena,63
+RXZlbnROb2RlOjI4Mg==,282,the-ultimate-fighter-2-finale,The Ultimate Fighter 2 Finale,2005-11-05,"Las Vegas, Nevada, United States",Hard Rock Hotel and Casino,64
+RXZlbnROb2RlOjI4Mw==,283,ufc-56-full-force,UFC 56: Full Force,2005-11-19,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,65
+RXZlbnROb2RlOjI4OA==,288,ufc-fight-night-3,UFC Fight Night 3,2006-01-16,"Las Vegas, Nevada, United States",Hard Rock Hotel and Casino,66
+RXZlbnROb2RlOjI4OQ==,289,ufc-57-liddell-vs-couture-3,UFC 57: Liddell vs. Couture 3,2006-02-04,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,67
+RXZlbnROb2RlOjI5Mg==,292,ufc-58-usa-vs-canada,UFC 58: USA vs Canada,2006-03-04,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,68
+RXZlbnROb2RlOjMwMA==,300,ufc-fight-night-4,UFC Fight Night 4,2006-04-06,"Las Vegas, Nevada, United States",Hard Rock Hotel and Casino,69
+RXZlbnROb2RlOjMwMg==,302,ufc-59-reality-check,UFC 59: Reality Check,2006-04-15,"Anaheim, California, United States",Honda Center,70
+RXZlbnROb2RlOjMwOQ==,309,ufc-60-hughes-vs-gracie,UFC 60: Hughes vs Gracie,2006-05-27,"Los Angeles, California, United States",Staples Center,71
+RXZlbnROb2RlOjMxNQ==,315,the-ultimate-fighter-3-finale,The Ultimate Fighter 3 Finale,2006-06-24,"Las Vegas, Nevada, United States",Hard Rock Hotel and Casino,72
+RXZlbnROb2RlOjMxNg==,316,ufc-fight-night-5-leben-vs-silva,UFC Fight Night 5: Leben vs. Silva,2006-06-28,"Las Vegas, Nevada, United States",Hard Rock Hotel and Casino,73
+RXZlbnROb2RlOjMxOA==,318,ufc-61-bitter-rivals,UFC 61: Bitter Rivals,2006-07-08,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,74
+RXZlbnROb2RlOjMyMg==,322,ufc-fight-night-6-sanchez-vs-parisyan,UFC Fight Night 6: Sanchez vs Parisyan,2006-08-17,"Resort and Spa, Las Vegas, United States",Red Rock Casino,75
+RXZlbnROb2RlOjMyNA==,324,ufc-62-liddell-vs-sobral,UFC 62: Liddell vs Sobral,2006-08-26,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,76
+RXZlbnROb2RlOjMzMA==,330,ufc-63-hughes-vs-penn,UFC 63: Hughes vs Penn,2006-09-23,"Anaheim, California, United States",Honda Center,77
+RXZlbnROb2RlOjMzMg==,332,ufc-the-final-chapter-ortiz-vs-shamrock-3,UFC The Final Chapter: Ortiz vs Shamrock 3,2006-10-10,"Hollywood, Florida, United States",Seminole Hard Rock Hotel and Casino,78
+RXZlbnROb2RlOjMzNA==,334,ufc-64-unstoppable,UFC 64: Unstoppable,2006-10-14,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,79
+RXZlbnROb2RlOjMzOQ==,339,the-ultimate-fighter-4-finale,The Ultimate Fighter 4 Finale,2006-11-11,"Las Vegas, Nevada, United States",Hard Rock Hotel and Casino,80
+RXZlbnROb2RlOjM0MA==,340,ufc-65-bad-intentions,UFC 65: Bad Intentions,2006-11-18,"Sacramento, California, United States",ARCO Arena,81
+RXZlbnROb2RlOjM0NA==,344,ufc-fight-night-7-sanchez-vs-riggs,UFC Fight Night 7: Sanchez vs Riggs,2006-12-13,"San Diego, California, United States",Marine Corps Air Station Miramar,82
+RXZlbnROb2RlOjM0Ng==,346,ufc-66-liddell-vs-ortiz-2,UFC 66: Liddell vs. Ortiz 2,2006-12-30,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,83
+RXZlbnROb2RlOjM1MA==,350,ufc-fight-night-8-evans-vs-salmon,UFC Fight Night 8: Evans vs Salmon,2007-01-25,"Hollywood, Florida, United States",Seminole Hard Rock Hotel and Casino,84
+RXZlbnROb2RlOjM1NA==,354,ufc-67-all-or-nothing,UFC 67: All or Nothing,2007-02-03,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,85
+RXZlbnROb2RlOjM1OA==,358,ufc-68-uprising,UFC 68: Uprising,2007-03-03,"Columbus, Ohio, United States",Nationwide Arena,86
+RXZlbnROb2RlOjM2Mw==,363,ufc-fight-night-9-stevenson-vs-guillard,UFC Fight Night 9: Stevenson vs Guillard,2007-04-05,"Las Vegas, Nevada, United States",Palms Casino Resort,87
+RXZlbnROb2RlOjM2NQ==,365,ufc-69-shootout,UFC 69: Shootout,2007-04-07,"Houston, Texas, United States",Toyota Center,88
+RXZlbnROb2RlOjM2OQ==,369,ufc-70-nations-collide,UFC 70: Nations Collide,2007-04-21,"Manchester, Lancashire, England",Manchester Evening News Arena,89
+RXZlbnROb2RlOjM3Mw==,373,ufc-71-liddell-vs-jackson,UFC 71: Liddell vs Jackson,2007-05-26,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,90
+RXZlbnROb2RlOjM3Ng==,376,ufc-fight-night-10-stout-vs-fisher,UFC Fight Night 10: Stout vs Fisher,2007-06-12,"Hollywood, Florida, United States",Seminole Hard Rock Hotel and Casino,91
+RXZlbnROb2RlOjM3OA==,378,ufc-72-victory,UFC 72: Victory,2007-06-16,"Belfast, Northern Ireland, Ireland",The Odyssey,92
+RXZlbnROb2RlOjM4MQ==,381,the-ultimate-fighter-5-finale,The Ultimate Fighter 5 Finale,2007-06-23,"Las Vegas, Nevada, United States",Palms Casino Resort,93
+RXZlbnROb2RlOjM4Mg==,382,ufc-73-stacked,UFC 73: Stacked,2007-07-07,"Sacramento, California, United States",ARCO Arena,94
+RXZlbnROb2RlOjM4OA==,388,ufc-74-respect,UFC 74: Respect,2007-08-25,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,95
+RXZlbnROb2RlOjM5MA==,390,ufc-75-champion-vs-champion,UFC 75: Champion vs Champion,2007-09-08,"London, England, England",O2 Arena,96
+RXZlbnROb2RlOjM5MQ==,391,ufc-fight-night-11-thomas-vs-florian,UFC Fight Night 11: Thomas vs Florian,2007-09-19,"Las Vegas, Nevada, United States",Palms Casino Resort,97
+RXZlbnROb2RlOjM5NA==,394,ufc-76-knockout,UFC 76: Knockout,2007-09-22,"Anaheim, California, United States",Honda Center,98
+RXZlbnROb2RlOjM5Nw==,397,ufc-77-hostile-territory,UFC 77: Hostile Territory,2007-10-20,"Cincinnati, Ohio, United States",U.S. Bank Arena,99
+RXZlbnROb2RlOjQwMQ==,401,ufc-78-validation,UFC 78: Validation,2007-11-17,"Newark, New Jersey, United States",Prudential Center,100
+RXZlbnROb2RlOjQwNQ==,405,the-ultimate-fighter-6-finale,The Ultimate Fighter 6 Finale,2007-12-08,"Las Vegas, Nevada, United States",Palms Casino Resort,101
+RXZlbnROb2RlOjQwOA==,408,ufc-79-nemesis,UFC 79: Nemesis,2007-12-29,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,102
+RXZlbnROb2RlOjQwOQ==,409,ufc-80-rapid-fire,UFC 80: Rapid Fire,2008-01-19,"Newcastle upon Tyne, Tyne and Wear, England",Metro Radio Arena,103
+RXZlbnROb2RlOjQxMA==,410,ufc-fight-night-12-swick-vs-burkman,UFC Fight Night 12: Swick vs. Burkman,2008-01-23,"Las Vegas, Nevada, United States",Palms Casino Resort,104
+RXZlbnROb2RlOjQxMg==,412,ufc-81-breaking-point,UFC 81: Breaking Point,2008-02-02,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,105
+RXZlbnROb2RlOjQxNw==,417,ufc-82-pride-of-a-champion,UFC 82: Pride of a Champion,2008-03-01,"Columbus, Ohio, United States",Nationwide Arena,106
+RXZlbnROb2RlOjQyNA==,424,ufc-fight-night-13-florian-vs-lauzon,UFC Fight Night 13: Florian vs. Lauzon,2008-04-02,"Broomfield, Colorado, United States",Broomfield Event Center,107
+RXZlbnROb2RlOjQyNw==,427,ufc-83-serra-vs-st-pierre-2,UFC 83: Serra vs. St. Pierre 2,2008-04-19,"Montreal, Quebec, Canada",Bell Centre,108
+RXZlbnROb2RlOjQzMg==,432,ufc-84-ill-will,UFC 84: Ill Will,2008-05-24,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,109
+RXZlbnROb2RlOjQzNA==,434,ufc-85-bedlam,UFC 85: Bedlam,2008-06-07,"London, England, England",O2 Arena,110
+RXZlbnROb2RlOjQzNw==,437,the-ultimate-fighter-7-finale,The Ultimate Fighter 7 Finale,2008-06-21,"Las Vegas, Nevada, United States",Palms Casino Resort,111
+RXZlbnROb2RlOjQ0MA==,440,ufc-86-jackson-vs-griffin,UFC 86: Jackson vs. Griffin,2008-07-05,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,112
+RXZlbnROb2RlOjQ0Mw==,443,ufc-fight-night-14-silva-vs-irvin,UFC Fight Night 14: Silva vs. Irvin,2008-07-19,"Las Vegas, Nevada, United States",Palms Casino Resort,113
+RXZlbnROb2RlOjQ0Nw==,447,ufc-87-seek-and-destroy,UFC 87: Seek and Destroy,2008-08-09,"Minneapolis, Minnesota, United States",Target Center,114
+RXZlbnROb2RlOjQ0OQ==,449,ufc-88-breakthrough,UFC 88: Breakthrough,2008-09-06,"Atlanta, Georgia, United States",Philips Arena,115
+RXZlbnROb2RlOjQ1Mg==,452,ufc-fight-night-15-diaz-vs-neer,UFC Fight Night 15: Diaz vs. Neer,2008-09-17,"Omaha, Nebraska, United States",Omaha Civic Auditorium,116
+RXZlbnROb2RlOjQ1OA==,458,ufc-89-bisping-vs-leben,UFC 89: Bisping vs Leben,2008-10-18,"Birmingham, West Midlands, England",National Indoor Arena,117
+RXZlbnROb2RlOjQ1OQ==,459,ufc-90-silva-vs-cote,UFC 90: Silva vs Cote,2008-10-25,"Rosemont, Illinois, United States",Allstate Arena,118
+RXZlbnROb2RlOjQ2MQ==,461,ufc-91-couture-vs-lesnar,UFC 91: Couture vs Lesnar,2008-11-15,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,119
+RXZlbnROb2RlOjQ2Ng==,466,ufc-fight-night-16-fight-for-the-troops,UFC Fight Night 16: Fight for the Troops,2008-12-10,"Fayetteville, North Carolina, United States",Crown Coliseum,120
+RXZlbnROb2RlOjQ2Nw==,467,the-ultimate-fighter-8-finale,The Ultimate Fighter 8 Finale,2008-12-13,"Las Vegas, Nevada, United States",Palms Casino Resort,121
+RXZlbnROb2RlOjQ2OQ==,469,ufc-92-the-ultimate-2008,UFC 92: The Ultimate 2008,2008-12-27,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,122
+RXZlbnROb2RlOjQ3MA==,470,ufc-93-franklin-vs-henderson,UFC 93: Franklin vs. Henderson,2009-01-17,"Dublin, Ireland, Ireland",O2 Arena,123
+RXZlbnROb2RlOjQ3NA==,474,ufc-94-st-pierre-vs-penn-2,UFC 94: St-Pierre vs. Penn 2,2009-01-31,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,124
+RXZlbnROb2RlOjQ3NQ==,475,ufc-fight-night-17-lauzon-vs-stephens,UFC Fight Night 17: Lauzon vs. Stephens,2009-02-07,"Tampa, Florida, United States",USF Sun Dome,125
+RXZlbnROb2RlOjQ3OA==,478,ufc-95-sanchez-vs-stevenson,UFC 95: Sanchez vs. Stevenson,2009-02-21,"London, England, England",O2 Arena,126
+RXZlbnROb2RlOjQ4MA==,480,ufc-96-jackson-vs-jardine,UFC 96: Jackson vs. Jardine,2009-03-07,"Columbus, Ohio, United States",Nationwide Arena,127
+RXZlbnROb2RlOjQ4Mw==,483,ufc-fight-night-18-condit-vs-kampmann,UFC Fight Night 18: Condit vs. Kampmann,2009-04-01,"Nashville, Tennessee, United States",Sommet Center,128
+RXZlbnROb2RlOjQ4Nw==,487,ufc-97-redemption,UFC 97: Redemption,2009-04-18,"Montreal, Quebec, Canada",Bell Centre,129
+RXZlbnROb2RlOjQ5Mg==,492,ufc-98-evans-vs-machida,UFC 98: Evans vs. Machida,2009-05-23,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,130
+RXZlbnROb2RlOjQ5Ng==,496,ufc-99-the-comeback,UFC 99: The Comeback,2009-06-13,"Cologne, Germany, Germany",Lanxess Arena,131
+RXZlbnROb2RlOjQ5OA==,498,the-ultimate-fighter-9-finale,The Ultimate Fighter 9 Finale,2009-06-20,"Las Vegas, Nevada, United States",Palms Casino Resort,132
+RXZlbnROb2RlOjUwMA==,500,ufc-100,UFC 100,2009-07-11,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,133
+RXZlbnROb2RlOjUwMg==,502,ufc-101-declaration,UFC 101: Declaration,2009-08-08,"Philadelphia, Pennsylvania, United States",Wachovia Center,134
+RXZlbnROb2RlOjUwNQ==,505,ufc-102-couture-vs-nogueira,UFC 102: Couture vs. Nogueira,2009-08-29,"Portland, Oregon, United States",Rose Garden Arena,135
+RXZlbnROb2RlOjUwNw==,507,ufc-fight-night-19-diaz-vs-guillard,UFC Fight Night 19: Diaz vs. Guillard,2009-09-16,"Oklahoma City, Oklahoma, United States",Cox Convention Center,136
+RXZlbnROb2RlOjUwOA==,508,ufc-103-franklin-vs-belfort,UFC 103: Franklin vs. Belfort,2009-09-19,"Dallas, Texas, United States",American Airlines Center,137
+RXZlbnROb2RlOjUxNA==,514,ufc-104-machida-vs-shogun,UFC 104: Machida vs Shogun,2009-10-24,"Los Angeles, California, United States",Staples Center,138
+RXZlbnROb2RlOjUxOQ==,519,ufc-105-couture-vs-vera,UFC 105: Couture vs Vera,2009-11-14,"Manchester, Lancashire, England",Manchester Evening News Arena,139
+RXZlbnROb2RlOjUyMg==,522,ufc-106-ortiz-vs-griffin-2,UFC 106: Ortiz vs Griffin 2,2009-11-21,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,140
+RXZlbnROb2RlOjUyNA==,524,the-ultimate-fighter-10-finale,The Ultimate Fighter 10 Finale,2009-12-05,"Las Vegas, Nevada, United States",Palms Casino Resort,141
+RXZlbnROb2RlOjUyNQ==,525,ufc-107-penn-vs-sanchez,UFC 107: Penn vs. Sanchez,2009-12-12,"Memphis, Tennessee, United States",FedEx Forum,142
+RXZlbnROb2RlOjUyOQ==,529,ufc-108-evans-vs-silva,UFC 108: Evans vs Silva,2010-01-02,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,143
+RXZlbnROb2RlOjUzMQ==,531,ufc-fight-night-20-maynard-vs-diaz,UFC Fight Night 20: Maynard vs Diaz,2010-01-11,"Fairfax, Virginia, United States",Patriot Center,144
+RXZlbnROb2RlOjUzMw==,533,ufc-109-relentless,UFC 109: Relentless,2010-02-06,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,145
+RXZlbnROb2RlOjUzNQ==,535,ufc-110-nogueira-vs-velasquez,UFC 110: Nogueira vs. Velasquez,2010-02-20,"Sydney, New South Wales, Australia",Acer Arena,146
+RXZlbnROb2RlOjU0MQ==,541,ufc-on-versus-1-vera-vs-jones,UFC on Versus 1: Vera vs Jones,2010-03-21,"Broomfield, Colorado, United States",1stBank Center,147
+RXZlbnROb2RlOjU0NA==,544,ufc-111-st-pierre-vs-hardy,UFC 111: St-Pierre vs Hardy,2010-03-27,"Newark, New Jersey, United States",Prudential Center,148
+RXZlbnROb2RlOjU0Ng==,546,ufc-fight-night-21-florian-vs-gomi,UFC Fight Night 21: Florian vs Gomi,2010-03-31,"Charlotte, North Carolina, United States",Bojangles Coliseum,149
+RXZlbnROb2RlOjU0Nw==,547,ufc-112-invincible,UFC 112: Invincible,2010-04-10,"Abu Dhabi, United Arab Emirates, United Arab Emirates",Ferrari World Concert Arena,150
+RXZlbnROb2RlOjU1MQ==,551,ufc-113-machida-vs-shogun-2,UFC 113: Machida vs Shogun 2,2010-05-08,"Montreal, Quebec, Canada",Bell Centre,151
+RXZlbnROb2RlOjU1OA==,558,ufc-114-jackson-vs-evans,UFC 114: Jackson vs Evans,2010-05-29,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,152
+RXZlbnROb2RlOjU1OQ==,559,ufc-115-liddell-vs-franklin,UFC 115: Liddell vs Franklin,2010-06-12,"Vancouver, British Columbia, Canada",GM Place,153
+RXZlbnROb2RlOjU2Mg==,562,the-ultimate-fighter-11-finale,The Ultimate Fighter 11 Finale,2010-06-19,"Las Vegas, Nevada, United States",Palms Casino Resort,154
+RXZlbnROb2RlOjU2NQ==,565,ufc-116-lesnar-vs-carwin,UFC 116: Lesnar vs Carwin,2010-07-03,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,155
+RXZlbnROb2RlOjU3MQ==,571,ufc-on-versus-2-jones-vs-matyushenko,UFC on Versus 2: Jones vs. Matyushenko,2010-08-01,"San Diego, California, United States",San Diego Sports Arena,156
+RXZlbnROb2RlOjU3Mg==,572,ufc-117-silva-vs-sonnen,UFC 117: Silva vs Sonnen,2010-08-07,"Oakland, California, United States",Oracle Arena,157
+RXZlbnROb2RlOjU3Nw==,577,ufc-118-edgar-vs-penn-2,UFC 118: Edgar vs. Penn 2,2010-08-28,"Boston, Massachusetts, United States",TD Garden,158
+RXZlbnROb2RlOjU3OQ==,579,ufc-fight-night-22-marquardt-vs-palhares,UFC Fight Night 22: Marquardt vs. Palhares,2010-09-15,"Austin, Texas, United States",Frank Erwin Center,159
+RXZlbnROb2RlOjU4Mg==,582,ufc-119-mir-vs-cro-cop,UFC 119: Mir vs Cro Cop,2010-09-25,"Indianapolis, Indiana, United States",Conseco Fieldhouse,160
+RXZlbnROb2RlOjU4Nw==,587,ufc-120-bisping-vs-akiyama,UFC 120: Bisping vs. Akiyama,2010-10-16,"London, England, England",O2 Arena,161
+RXZlbnROb2RlOjU4OQ==,589,ufc-121-lesnar-vs-velasquez,UFC 121: Lesnar vs. Velasquez,2010-10-23,"Anaheim, California, United States",Honda Center,162
+RXZlbnROb2RlOjU5NA==,594,ufc-122-marquardt-vs-okami,UFC 122: Marquardt vs. Okami,2010-11-13,"Oberhausen, Germany, Germany",Konig Pilsener Arena,163
+RXZlbnROb2RlOjU5Ng==,596,ufc-123-rampage-vs-machida,UFC 123: Rampage vs. Machida,2010-11-20,"Auburn Hills, Michigan, United States",The Palace of Auburn Hills,164
+RXZlbnROb2RlOjU5OQ==,599,the-ultimate-fighter-12-finale,The Ultimate Fighter 12 Finale,2010-12-04,"Las Vegas, Nevada, United States",Palms Casino Resort,165
+RXZlbnROb2RlOjYwMQ==,601,ufc-124-st-pierre-vs-koscheck-2,UFC 124: St. Pierre vs. Koscheck 2,2010-12-11,"Montreal, Quebec, Canada",Bell Centre,166
+RXZlbnROb2RlOjYwMw==,603,ufc-125-resolution,UFC 125: Resolution,2011-01-01,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,167
+RXZlbnROb2RlOjYwNQ==,605,ufc-fight-night-23-fight-for-the-troops-2,UFC Fight Night 23: Fight for the Troops 2,2011-01-22,"Killeen, Texas, United States",Fort Hood,168
+RXZlbnROb2RlOjYwOQ==,609,ufc-126-silva-vs-belfort,UFC 126: Silva vs. Belfort,2011-02-05,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,169
+RXZlbnROb2RlOjYxNw==,617,ufc-127-penn-vs-fitch,UFC 127: Penn vs Fitch,2011-02-26,"Sydney, New South Wales, Australia",Acer Arena,170
+RXZlbnROb2RlOjYxOA==,618,ufc-on-versus-3-sanchez-vs-kampmann,UFC on Versus 3: Sanchez vs Kampmann,2011-03-03,"Louisville, Kentucky, United States",KFC Yum! Center,171
+RXZlbnROb2RlOjYyMQ==,621,ufc-128-shogun-vs-jones,UFC 128: Shogun vs Jones,2011-03-19,"Newark, New Jersey, United States",Prudential Center,172
+RXZlbnROb2RlOjYyMw==,623,ufc-fight-night-24-nogueira-vs-davis,UFC Fight Night 24: Nogueira vs. Davis,2011-03-26,"Seattle, Washington, United States",Key Arena,173
+RXZlbnROb2RlOjYyOQ==,629,ufc-129-st-pierre-vs-shields,UFC 129: St. Pierre vs. Shields,2011-04-30,"Toronto, Ontario, Canada",Rogers Centre,174
+RXZlbnROb2RlOjYzNg==,636,ufc-130-rampage-vs-hamill,UFC 130: Rampage vs Hamill,2011-05-28,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,175
+RXZlbnROb2RlOjYzOA==,638,the-ultimate-fighter-13-finale,The Ultimate Fighter 13 Finale,2011-06-04,"Las Vegas, Nevada, United States",Palms Casino Resort,176
+RXZlbnROb2RlOjY0MA==,640,ufc-131-carwin-vs-dos-santos,UFC 131: Carwin vs. Dos Santos,2011-06-11,"Vancouver, British Columbia, Colombia",Rogers Arena,177
+RXZlbnROb2RlOjY0NA==,644,ufc-on-versus-4-barry-vs-kongo,UFC on Versus 4: Barry vs. Kongo,2011-06-26,"Pittsburgh, Pennsylvania, United States",Consol Energy Center,178
+RXZlbnROb2RlOjY0NQ==,645,ufc-132-cruz-vs-faber-ii,UFC 132: Cruz vs Faber II,2011-07-02,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,179
+RXZlbnROb2RlOjY1NQ==,655,ufc-133-evans-vs-ortiz-2,UFC 133: Evans vs. Ortiz 2,2011-08-06,"Philadelphia, Pennsylvania, United States",Wells Fargo Center,180
+RXZlbnROb2RlOjY1OA==,658,ufc-on-versus-5-hardy-vs-lytle,UFC on Versus 5: Hardy vs. Lytle,2011-08-14,"Milwaukee, Wisconsin, United States",Bradley Center,181
+RXZlbnROb2RlOjY1OQ==,659,ufc-134-silva-vs-okami,UFC 134: Silva vs. Okami,2011-08-27,"Rio de Janeiro, Brazil, Brazil",HSBC Arena,182
+RXZlbnROb2RlOjY2NA==,664,ufc-fight-night-25-battle-on-the-bayou,UFC Fight Night 25: Battle on the Bayou,2011-09-17,"New Orleans, Louisiana, United States",Ernest N. Morial Convention Center,183
+RXZlbnROb2RlOjY2OA==,668,ufc-135-jones-vs-rampage,UFC 135: Jones vs. Rampage,2011-09-24,"Denver, Colorado, United States",Pepsi Center,184
+RXZlbnROb2RlOjY3MA==,670,ufc-on-versus-6-cruz-vs-johnson,UFC on Versus 6: Cruz vs. Johnson,2011-10-01,"Washington, D.C., United States",Verizon Center,185
+RXZlbnROb2RlOjY3Mg==,672,ufc-136-edgar-vs-maynard-3,UFC 136: Edgar vs Maynard 3,2011-10-08,"Houston, Texas, United States",Toyota Center,186
+RXZlbnROb2RlOjY3Ng==,676,ufc-137-penn-vs-diaz,UFC 137: Penn vs. Diaz,2011-10-29,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,187
+RXZlbnROb2RlOjY3Nw==,677,ufc-138-leben-vs-munoz,UFC 138: Leben vs. Munoz,2011-11-05,"Birmingham, West Midlands, England",LG Arena,188
+RXZlbnROb2RlOjY3OA==,678,ufc-on-fox-1-velasquez-vs-dos-santos,UFC on FOX 1: Velasquez vs. Dos Santos,2011-11-12,"Anaheim, California, United States",Honda Center,189
+RXZlbnROb2RlOjY4MA==,680,ufc-139-shogun-vs-henderson,UFC 139: Shogun vs. Henderson,2011-11-19,"San Jose, California, United States",HP Pavillion,190
+RXZlbnROb2RlOjY4Mg==,682,the-ultimate-fighter-14-finale,The Ultimate Fighter 14 Finale,2011-12-03,"Las Vegas, Nevada, United States",The Pearl at the Palms,191
+RXZlbnROb2RlOjY4NA==,684,ufc-140-jones-vs-machida,UFC 140: Jones vs. Machida,2011-12-10,"Toronto, Ontario, Canada",Air Canada Centre,192
+RXZlbnROb2RlOjY4OQ==,689,ufc-141-lesnar-vs-overeem,UFC 141: Lesnar vs. Overeem,2011-12-30,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,193
+RXZlbnROb2RlOjY5Mg==,692,ufc-142-aldo-vs-mendes,UFC 142: Aldo vs. Mendes,2012-01-14,"Rio de Janeiro, Brazil, Brazil",HSBC Arena,194
+RXZlbnROb2RlOjY5Mw==,693,ufc-on-fx-1-guillard-vs-miller,UFC on FX 1: Guillard vs. Miller,2012-01-20,"Nashville, Tennessee, United States",Bridgestone Arena,195
+RXZlbnROb2RlOjY5Ng==,696,ufc-on-fox-2-evans-vs-davis,UFC on FOX 2: Evans vs. Davis,2012-01-28,"Chicago, Illinois, United States",United Center,196
+RXZlbnROb2RlOjY5Nw==,697,ufc-143-diaz-vs-condit,UFC 143: Diaz vs. Condit,2012-02-04,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,197
+RXZlbnROb2RlOjcwMA==,700,ufc-on-fuel-tv-1-ellenberger-vs-sanchez,UFC on FUEL TV 1: Ellenberger vs. Sanchez,2012-02-15,"Omaha, Nebraska, United States",Omaha Civic Auditorium,198
+RXZlbnROb2RlOjcwNg==,706,ufc-144-edgar-vs-henderson,UFC 144: Edgar vs. Henderson,2012-02-25,"Saitama, Japan, Japan",Saitama Super Arena,199
+RXZlbnROb2RlOjcwOQ==,709,ufc-on-fx-2-alves-vs-kampmann,UFC on FX 2: Alves vs. Kampmann,2012-03-02,"Sydney, New South Wales, Australia",Allphones Arena,200
+RXZlbnROb2RlOjcxOA==,718,ufc-on-fuel-tv-2-silva-vs-gustafsson,UFC on FUEL TV 2: Silva vs. Gustafsson,2012-04-14,"Stockholm, Sweden, Sweden",Ericsson Globe Arena,201
+RXZlbnROb2RlOjcxOQ==,719,ufc-145-jones-vs-evans,UFC 145: Jones vs. Evans,2012-04-21,"Atlanta, Georgia, United States",Phillips Arena,202
+RXZlbnROb2RlOjcyMg==,722,ufc-on-fox-3-diaz-vs-miller,UFC on FOX 3: Diaz vs. Miller,2012-05-05,"East Rutherford, New Jersey, United States",Izod Center,203
+RXZlbnROb2RlOjcyNA==,724,ufc-on-fuel-tv-3-korean-zombie-vs-poirier,UFC on FUEL TV 3: Korean Zombie vs. Poirier,2012-05-15,"Fairfax, Virginia, United States",Patriot Center,204
+RXZlbnROb2RlOjcyOA==,728,ufc-146-dos-santos-vs-mir,UFC 146: Dos Santos vs. Mir,2012-05-26,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,205
+RXZlbnROb2RlOjcyOQ==,729,the-ultimate-fighter-15-finale,The Ultimate Fighter 15 Finale,2012-06-01,"Las Vegas, Nevada, United States",Palms Casino Resort,206
+RXZlbnROb2RlOjczMQ==,731,ufc-on-fx-3-johnson-vs-mccall,UFC on FX 3: Johnson vs. McCall,2012-06-08,"Fort Lauderdale, Florida, United States",BankAtlantic Center,207
+RXZlbnROb2RlOjczNA==,734,ufc-on-fx-4-guida-vs-maynard,UFC on FX 4: Guida vs. Maynard,2012-06-22,"Atlantic City, New Jersey, United States",Revel Atlantic City,208
+RXZlbnROb2RlOjczNQ==,735,ufc-147-silva-vs-franklin-2,UFC 147: Silva vs. Franklin 2,2012-06-23,"Belo Horizonte, Minas Gerais, Brazil",Jornalista Felipe Drumond Stadium,209
+RXZlbnROb2RlOjczOA==,738,ufc-148-silva-vs-sonnen-2,UFC 148: Silva vs. Sonnen 2,2012-07-07,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,210
+RXZlbnROb2RlOjczOQ==,739,ufc-on-fuel-tv-4-munoz-vs-weidman,UFC on FUEL TV 4: Munoz vs. Weidman,2012-07-11,"San Jose, California, United States",HP Pavillion,211
+RXZlbnROb2RlOjc0Mw==,743,ufc-149-faber-vs-barao,UFC 149: Faber vs. Barao,2012-07-21,"Calgary, Alberta, Canada",Scotiabank Saddledome,212
+RXZlbnROb2RlOjc0Ng==,746,ufc-on-fox-4-shogun-vs-vera,UFC on FOX 4: Shogun vs. Vera,2012-08-04,"Los Angeles, California, United States",Staples Center,213
+RXZlbnROb2RlOjc0OA==,748,ufc-150-henderson-vs-edgar-2,UFC 150: Henderson vs. Edgar 2,2012-08-11,"Denver, Colorado, United States",Pepsi Center,214
+RXZlbnROb2RlOjc1Nw==,757,ufc-152-jones-vs-belfort,UFC 152: Jones vs. Belfort,2012-09-22,"Toronto, Ontario, Canada",Air Canada Centre,215
+RXZlbnROb2RlOjc1OQ==,759,ufc-on-fuel-tv-5-struve-vs-miocic,UFC on FUEL TV 5: Struve vs. Miocic,2012-09-29,"Nottingham, England, England",Capital FM Arena,216
+RXZlbnROb2RlOjc2MQ==,761,ufc-on-fx-5-browne-vs-silva,UFC on FX 5: Browne vs. Silva,2012-10-05,"Minneapolis, Minnesota, United States",Target Center,217
+RXZlbnROb2RlOjc2NQ==,765,ufc-153-silva-vs-bonnar,UFC 153: Silva vs. Bonnar,2012-10-13,"Rio de Janeiro, Brazil, Brazil",HSBC Arena,218
+RXZlbnROb2RlOjc3MQ==,771,ufc-on-fuel-tv-6-franklin-vs-le,UFC on FUEL TV 6: Franklin vs. Le,2012-11-10,"Cotai, Macau, China",Cotai Arena,219
+RXZlbnROb2RlOjc3Mw==,773,ufc-154-st-pierre-vs-condit,UFC 154: St. Pierre vs. Condit,2012-11-17,"Montreal, Quebec, Canada",Bell Centre,220
+RXZlbnROb2RlOjc3OA==,778,ufc-on-fox-5-henderson-vs-diaz,UFC on FOX 5: Henderson vs. Diaz,2012-12-08,"Seattle, Washington, United States",Key Arena,221
+RXZlbnROb2RlOjc4MA==,780,ufc-on-fx-6-sotiropoulos-vs-pearson,UFC on FX 6: Sotiropoulos vs. Pearson,2012-12-14,"Broadbeach, Queensland, Australia",Gold Coast Convention Centre,222
+RXZlbnROb2RlOjc4MQ==,781,the-ultimate-fighter-16-finale,The Ultimate Fighter 16 Finale,2012-12-15,"Las Vegas, Nevada, U.S.",Hard Rock Hotel and Casino,223
+RXZlbnROb2RlOjc4Mg==,782,ufc-155-dos-santos-vs-velasquez-2,UFC 155: Dos Santos vs. Velasquez 2,2012-12-29,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,224
+RXZlbnROb2RlOjc4OQ==,789,ufc-on-fx-7-belfort-vs-bisping,UFC on FX 7: Belfort vs. Bisping,2013-01-19,"Sao Paulo, Brazil, Brazil",Geraldo Jose de Almeida State Gymnasium,225
+RXZlbnROb2RlOjc5MA==,790,ufc-on-fox-6-johnson-vs-dodson,UFC on FOX 6: Johnson vs. Dodson,2013-01-26,"Chicago, Illinois, United States",United Center,226
+RXZlbnROb2RlOjc5Mg==,792,ufc-156-aldo-vs-edgar,UFC 156: Aldo vs. Edgar,2013-02-02,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,227
+RXZlbnROb2RlOjc5NA==,794,ufc-on-fuel-tv-7-barao-vs-mcdonald,UFC on FUEL TV 7: Barao vs. McDonald,2013-02-16,"London, England, England",Wembley Arena,228
+RXZlbnROb2RlOjc5Ng==,796,ufc-157-rousey-vs-carmouche,UFC 157: Rousey vs. Carmouche,2013-02-23,"Anaheim, California, United States",Honda Center,229
+RXZlbnROb2RlOjgwMA==,800,ufc-on-fuel-tv-8-silva-vs-stann,UFC on FUEL TV 8: Silva vs. Stann,2013-03-02,"Saitama, Japan, Japan",Saitama Super Arena,230
+RXZlbnROb2RlOjgwMw==,803,ufc-158-st-pierre-vs-diaz,UFC 158: St. Pierre vs. Diaz,2013-03-16,"Montreal, Quebec, Canada",Bell Centre,231
+RXZlbnROb2RlOjgwOA==,808,ufc-on-fuel-tv-9-mousasi-vs-latifi,UFC on FUEL TV 9: Mousasi vs. Latifi,2013-04-06,"Stockholm, Sweden, Sweden",Ericsson Globe Arena,232
+RXZlbnROb2RlOjgxMQ==,811,the-ultimate-fighter-17-finale,The Ultimate Fighter 17 Finale,2013-04-13,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,233
+RXZlbnROb2RlOjgxMw==,813,ufc-on-fox-7-henderson-vs-melendez,UFC on FOX 7: Henderson vs. Melendez,2013-04-20,"San Jose, California, United States",HP Pavilion,234
+RXZlbnROb2RlOjgxNA==,814,ufc-159-jones-vs-sonnen,UFC 159: Jones vs. Sonnen,2013-04-27,"Newark, New Jersey, United States",Prudential Center,235
+RXZlbnROb2RlOjgxOA==,818,ufc-on-fx-8-belfort-vs-rockhold,UFC on FX 8: Belfort vs. Rockhold,2013-05-18,"Jaragua do Sul, Santa Catarina, Brazil",Arena Jaragua,236
+RXZlbnROb2RlOjgyMA==,820,ufc-160-velasquez-vs-silva-2,UFC 160: Velasquez vs. Silva 2,2013-05-25,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,237
+RXZlbnROb2RlOjgyNQ==,825,ufc-on-fuel-tv-10-nogueira-vs-werdum-2,UFC on FUEL TV 10: Nogueira vs. Werdum 2,2013-06-08,"Fortaleza, Ceara, Brazil",Paulo Sarasate Gymnasium,238
+RXZlbnROb2RlOjgyOA==,828,ufc-161-evans-vs-henderson,UFC 161: Evans vs. Henderson,2013-06-15,"Winnipeg, Manitoba, Canada",MTS Centre,239
+RXZlbnROb2RlOjgzMg==,832,ufc-162-silva-vs-weidman,UFC 162: Silva vs. Weidman,2013-07-06,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,240
+RXZlbnROb2RlOjgzNw==,837,ufc-on-fox-8-johnson-vs-moraga,UFC on FOX 8: Johnson vs. Moraga,2013-07-27,"Seattle, Washington, United States",KeyArena,241
+RXZlbnROb2RlOjgzOA==,838,ufc-163-aldo-vs-korean-zombie,UFC 163: Aldo vs. Korean Zombie,2013-08-03,"Rio de Janeiro, Brazil, Brazil",HSBC Arena,242
+RXZlbnROb2RlOjg0MQ==,841,ufc-fight-night-26-shogun-vs-sonnen,UFC Fight Night 26: Shogun vs. Sonnen,2013-08-17,"Boston, Massachusetts, United States",TD Garden,243
+RXZlbnROb2RlOjg0NA==,844,ufc-fight-night-27-condit-vs-kampmann-2,UFC Fight Night 27: Condit vs. Kampmann 2,2013-08-28,"Indianapolis, Indiana, United States",Bankers Life Fieldhouse,244
+RXZlbnROb2RlOjg0Nw==,847,ufc-164-henderson-vs-pettis-2,UFC 164: Henderson vs. Pettis 2,2013-08-31,"Milwaukee, Wisconsin, United States",BMO Harris Bradley Center,245
+RXZlbnROb2RlOjg0OA==,848,ufc-fight-night-28-teixeira-vs-bader,UFC Fight Night 28: Teixeira vs. Bader,2013-09-04,"Belo Horizonte, Minas Gerais, Brazil",Jornalista Felipe Drumond Stadium,246
+RXZlbnROb2RlOjg1NQ==,855,ufc-165-jones-vs-gustafsson,UFC 165: Jones vs. Gustafsson,2013-09-21,"Toronto, Ontario, Canada",Air Canada Centre,247
+RXZlbnROb2RlOjkyOQ==,929,ufc-fight-night-29-maia-vs-shields,UFC Fight Night 29: Maia vs. Shields,2013-10-09,"Barueri, Sao Paulo, Brazil",Jose Correa Gymnasium,248
+RXZlbnROb2RlOjg2Mg==,862,ufc-166-velasquez-vs-dos-santos-3,UFC 166: Velasquez vs. Dos Santos 3,2013-10-19,"Houston, Texas, United States",Toyota Center,249
+RXZlbnROb2RlOjg2Ng==,866,ufc-fight-night-30-machida-vs-munoz,UFC Fight Night 30: Machida vs. Munoz,2013-10-26,"Manchester, Greater Manchester, England",Phones 4U Arena,250
+RXZlbnROb2RlOjg2Nw==,867,ufc-fight-night-31-fight-for-the-troops-3,UFC Fight Night 31: Fight for the Troops 3,2013-11-06,"Hopkinsville, Kentucky, United States",Fort Campbell,251
+RXZlbnROb2RlOjg2OA==,868,ufc-fight-night-32-belfort-vs-henderson-2,UFC Fight Night 32: Belfort vs. Henderson 2,2013-11-09,"Goiania, Goias, Brazil",Goiania Arena,252
+RXZlbnROb2RlOjg3MQ==,871,ufc-167-st-pierre-vs-hendricks,UFC 167: St. Pierre vs. Hendricks,2013-11-16,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,253
+RXZlbnROb2RlOjg3Mg==,872,the-ultimate-fighter-18-finale,The Ultimate Fighter 18 Finale,2013-11-30,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,254
+RXZlbnROb2RlOjg3NA==,874,ufc-fight-night-33-hunt-vs-bigfoot,UFC Fight Night 33: Hunt vs. Bigfoot,2013-12-06,"Brisbane, Queensland, Australia",Brisbane Entertainment Centre,255
+RXZlbnROb2RlOjg3Ng==,876,ufc-on-fox-9-johnson-vs-benavidez-2,UFC on FOX 9: Johnson vs. Benavidez 2,2013-12-14,"Sacramento, California, United States",Sleep Train Arena,256
+RXZlbnROb2RlOjg3OA==,878,ufc-168-weidman-vs-silva-2,UFC 168: Weidman vs. Silva 2,2013-12-28,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,257
+RXZlbnROb2RlOjg4MA==,880,ufc-fight-night-34-saffiedine-vs-lim,UFC Fight Night 34: Saffiedine vs. Lim,2014-01-04,"Marina Bay, Singapore",Marina Bay Sands,258
+RXZlbnROb2RlOjk1NQ==,955,ufc-fight-night-35-rockhold-vs-philippou,UFC Fight Night 35: Rockhold vs. Philippou,2014-01-15,"Duluth, Georgia, United States",The Arena at Gwinnett Center,259
+RXZlbnROb2RlOjkzOA==,938,ufc-on-fox-10-henderson-vs-thomson,UFC on FOX 10: Henderson vs. Thomson,2014-01-25,"Chicago, Illinois, United States",United Center,260
+RXZlbnROb2RlOjkzMw==,933,ufc-169-barao-vs-faber-2,UFC 169: Barao vs. Faber 2,2014-02-01,"Newark, New Jersey, United States",Prudential Center,261
+RXZlbnROb2RlOjg4MQ==,881,ufc-fight-night-36-machida-vs-mousasi,UFC Fight Night 36: Machida vs. Mousasi,2014-02-15,"Jaragua do Sul, Santa Catarina, Brazil",Arena Jaragua,262
+RXZlbnROb2RlOjkzOQ==,939,ufc-170-rousey-vs-mcmann,UFC 170: Rousey vs. McMann,2014-02-22,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,263
+RXZlbnROb2RlOjEwMDk=,1009,ufc-fight-night-kim-vs-hathaway,UFC Fight Night: Kim vs. Hathaway,2014-03-01,"Macau, China, China",Cotai Arena,264
+RXZlbnROb2RlOjk0MA==,940,ufc-fight-night-37-gustafsson-vs-manuwa,UFC Fight Night 37: Gustafsson vs. Manuwa,2014-03-08,"London, Greater London, England",O2 Arena,265
+RXZlbnROb2RlOjk1Nw==,957,ufc-171-hendricks-vs-lawler,UFC 171: Hendricks vs. Lawler,2014-03-15,"Dallas, Texas, United States",American Airlines Arena,266
+RXZlbnROb2RlOjEwMTg=,1018,ufc-fight-night-38-shogun-vs-henderson-2,UFC Fight Night 38: Shogun vs. Henderson 2,2014-03-23,"Natal, Rio Grande do Norte, Brazil",Nelio Dias Gymnasium,267
+RXZlbnROb2RlOjEwMzA=,1030,ufc-fight-night-39-nogueira-vs-nelson,UFC Fight Night 39: Nogueira vs. Nelson,2014-04-11,"Abu Dhabi, United Arab Emirates, United Arab Emirates",DU Arena,268
+RXZlbnROb2RlOjEwMzI=,1032,ufc-fight-night-bisping-vs-kennedy,UFC Fight Night: Bisping vs. Kennedy,2014-04-16,"Quebec City, Quebec, Canada",Pepsi Coliseum,269
+RXZlbnROb2RlOjEwMzU=,1035,ufc-on-fox-11-werdum-vs-browne,UFC on FOX 11: Werdum vs. Browne,2014-04-19,"Orlando, Florida, United States",Amway Center,270
+RXZlbnROb2RlOjEwMzc=,1037,ufc-172-jones-vs-teixeira,UFC 172: Jones vs. Teixeira,2014-04-26,"Baltimore, Maryland, United States",Baltimore Arena,271
+RXZlbnROb2RlOjEwNDQ=,1044,ufc-fight-night-40-brown-vs-silva,UFC Fight Night 40: Brown vs. Silva,2014-05-10,"Cincinnati, Ohio, United States",U.S. Bank Arena,272
+RXZlbnROb2RlOjEwNDg=,1048,ufc-173-barao-vs-dillashaw,UFC 173: Barao vs. Dillashaw,2014-05-24,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,273
+RXZlbnROb2RlOjE0ODI=,1482,ufc-fight-night-41-munoz-vs-mousasi,UFC Fight Night 41: Munoz vs. Mousasi,2014-05-31,"Berlin, Germany", O2 World Arena,274
+RXZlbnROb2RlOjEwNTA=,1050,ufc-fight-night-41-miocic-vs-maldonado,UFC Fight Night 41: Miocic vs. Maldonado,2014-05-31,"Sao Paulo, Sao Paulo, Brazil",Geraldo Jose de Almeida (Ibirapuera) Gymnasium,275
+RXZlbnROb2RlOjEwNTc=,1057,ufc-fight-night-42-henderson-vs-khabilov,UFC Fight Night 42: Henderson vs. Khabilov,2014-06-07,"Albuquerque, New Mexico, United States",Tingley Coliseum,276
+RXZlbnROb2RlOjEwNTk=,1059,ufc-174-johnson-vs-bagautinov,UFC 174: Johnson vs. Bagautinov,2014-06-14,"Vancouver, British Columbia, Canada",Rogers Arena,277
+RXZlbnROb2RlOjEwNjI=,1062,ufc-fight-night-43-te-huna-vs-marquardt,UFC Fight Night 43: Te Huna vs. Marquardt,2014-06-28,"Auckland, New Zealand, New Zealand",Vector Arena,278
+RXZlbnROb2RlOjE0Nzc=,1477,ufc-fight-night-44-swanson-vs-stephens,UFC Fight Night 44: Swanson vs. Stephens,2014-06-28,"San Antonio, Texas",AT&T Center,279
+RXZlbnROb2RlOjEwNjQ=,1064,ufc-175-weidman-vs-machida,UFC 175: Weidman vs. Machida,2014-07-05,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,280
+RXZlbnROb2RlOjEwNjU=,1065,the-ultimate-fighter-19-finale,The Ultimate Fighter 19 Finale,2014-07-06,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,281
+RXZlbnROb2RlOjEwNjg=,1068,ufc-fight-night-45-cerrone-vs-miller,UFC Fight Night 45: Cerrone vs. Miller,2014-07-16,"Atlantic City, New Jersey, United States",Revel Casino Hotel,282
+RXZlbnROb2RlOjEwNjk=,1069,ufc-fight-night-46-mcgregor-vs-brandao,UFC Fight Night 46: McGregor vs. Brandao,2014-07-19,"Dublin, Leinster, Ireland",The O2,283
+RXZlbnROb2RlOjEwNzM=,1073,ufc-on-fox-12-lawler-vs-brown,UFC on FOX 12: Lawler vs. Brown,2014-07-26,"San Jose, California, United States",SAP Center,284
+RXZlbnROb2RlOjEwNzg=,1078,ufc-fight-night-47-bader-vs-st-preux,UFC Fight Night 47: Bader vs. St. Preux,2014-08-16,"Bangor, Maine, United States",Cross Insurance Center,285
+RXZlbnROb2RlOjE0NzY=,1476,ufc-fight-night-49-henderson-vs-dos-anjos,UFC Fight Night 49: Henderson vs. dos Anjos,2014-08-23,"Tulsa, Oklahoma",BOK Center,286
+RXZlbnROb2RlOjEwODM=,1083,ufc-fight-night-48-bisping-vs-le,UFC Fight Night 48: Bisping vs. Le,2014-08-23,"Macau, China, China",Cotai Arena,287
+RXZlbnROb2RlOjEwODY=,1086,ufc-177-dillashaw-vs-soto,UFC 177: Dillashaw vs. Soto,2014-08-30,"Sacramento, California, United States",Sleep Train Arena,288
+RXZlbnROb2RlOjEwODg=,1088,ufc-fight-night-50-jacare-vs-mousasi-2,UFC Fight Night 50: Jacare vs. Mousasi 2,2014-09-05,"Mashantucket, Connecticut, United States",Foxwoods Resort Casino,289
+RXZlbnROb2RlOjEwOTY=,1096,ufc-fight-night-51-bigfoot-vs-arlovski-2,UFC Fight Night 51: Bigfoot vs. Arlovski 2,2014-09-13,"Brasilia, Federal District, Brazil",Nilson Nelson Gymnasium,290
+RXZlbnROb2RlOjEwOTg=,1098,ufc-fight-night-52-hunt-vs-nelson,UFC Fight Night 52: Hunt vs. Nelson,2014-09-20,"Saitama, Japan, Japan",Saitama Super Arena,291
+RXZlbnROb2RlOjExMDM=,1103,ufc-178-johnson-vs-cariaso,UFC 178: Johnson vs. Cariaso,2014-09-27,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,292
+RXZlbnROb2RlOjE0NzU=,1475,ufc-fight-night-54-macdonald-vs-saffiedine,UFC Fight Night 54: MacDonald vs. Saffiedine,2014-10-04,"Halifax, Nova Scotia, Canada",Scotiabank Centre,293
+RXZlbnROb2RlOjExMDY=,1106,ufc-fight-night-53-nelson-vs-story,UFC Fight Night 53: Nelson vs. Story,2014-10-04,"Stockholm, Sweden, Sweden",Ericsson Globe Arena,294
+RXZlbnROb2RlOjExMTQ=,1114,ufc-179-aldo-vs-mendes-2,UFC 179: Aldo vs. Mendes 2,2014-10-25,"Rio de Janeiro, Rio de Janeiro, Brazil",Maracanazinho Gymnasium,295
+RXZlbnROb2RlOjExMjE=,1121,ufc-fight-night-55-rockhold-vs-bisping,UFC Fight Night 55: Rockhold vs. Bisping,2014-11-07,"Sydney, New South Wales, Australia",Allphones Arena,296
+RXZlbnROb2RlOjExMjM=,1123,ufc-fight-night-56-shogun-vs-st-preux,UFC Fight Night 56: Shogun vs. St. Preux,2014-11-08,"Uberlandia, Minas Gerais, Brazil",Tancredo Neves Municipal Gymnasium,297
+RXZlbnROb2RlOjExMjc=,1127,ufc-180-werdum-vs-hunt,UFC 180: Werdum vs. Hunt,2014-11-15,"Mexico City, Federal District, Mexico",Mexico City Arena,298
+RXZlbnROb2RlOjExMjk=,1129,ufc-fight-night-57-edgar-vs-swanson,UFC Fight Night 57: Edgar vs. Swanson,2014-11-22,"Austin, Texas, United States",Frank Erwin Center,299
+RXZlbnROb2RlOjExMzY=,1136,ufc-181-hendricks-vs-lawler-2,UFC 181: Hendricks vs. Lawler 2,2014-12-06,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,300
+RXZlbnROb2RlOjExMzc=,1137,the-ultimate-fighter-20-finale,The Ultimate Fighter 20 Finale,2014-12-12,"Las Vegas, Nevada, United States",Palms Casino Resort,301
+RXZlbnROb2RlOjExNDA=,1140,ufc-on-fox-13-dos-santos-vs-miocic,UFC on FOX 13: Dos Santos vs. Miocic,2014-12-13,"Phoenix, Arizona, United States",US Airways Center,302
+RXZlbnROb2RlOjExNDM=,1143,ufc-fight-night-58-machida-vs-dollaway,UFC Fight Night 58: Machida vs. Dollaway,2014-12-20,"Barueri, Sao Paulo, Brazil",Jose Correa Arena,303
+RXZlbnROb2RlOjExNDQ=,1144,ufc-182-jones-vs-cormier,UFC 182: Jones vs. Cormier,2015-01-03,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,304
+RXZlbnROb2RlOjExNDg=,1148,ufc-fight-night-59-mcgregor-vs-siver,UFC Fight Night 59: McGregor vs. Siver,2015-01-18,"Boston, Massachusetts, United States",TD Garden,305
+RXZlbnROb2RlOjExNTE=,1151,ufc-on-fox-14-gustafsson-vs-johnson,UFC on FOX 14: Gustafsson vs. Johnson,2015-01-24,"Stockholm, Sweden, Sweden",Tele2 Arena,306
+RXZlbnROb2RlOjExNTI=,1152,ufc-183-silva-vs-diaz,UFC 183: Silva vs. Diaz,2015-01-31,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,307
+RXZlbnROb2RlOjk2Mw==,963,ufc-fight-night-60-henderson-vs-thatch,UFC Fight Night 60: Henderson vs. Thatch,2015-02-14,"Broomfield, Colorado, United States",1stBank Center,308
+RXZlbnROb2RlOjk2NA==,964,ufc-fight-night-61-bigfoot-vs-mir,UFC Fight Night 61: Bigfoot vs. Mir,2015-02-22,"Porto Alegre, Rio Grande do Sul, Brazil",Gigantinho Gymnasium,309
+RXZlbnROb2RlOjk2NQ==,965,ufc-184-rousey-vs-zingano,UFC 184: Rousey vs. Zingano,2015-02-28,"Los Angeles, California, United States",Staples Center,310
+RXZlbnROb2RlOjk2Nw==,967,ufc-185-pettis-vs-dos-anjos,UFC 185: Pettis vs. Dos Anjos,2015-03-14,"Dallas, Texas, United States",American Airlines Center,311
+RXZlbnROb2RlOjk2OA==,968,ufc-fight-night-62-maia-vs-laflare,UFC Fight Night 62: Maia vs. LaFlare,2015-03-21,"Rio de Janeiro, Brazil, Brazil",Maracanazinho Gymnasium,312
+RXZlbnROb2RlOjk2OQ==,969,ufc-fight-night-63-mendes-vs-lamas,UFC Fight Night 63: Mendes vs. Lamas,2015-04-04,"Fairfax, Virginia, United States",Patriot Center,313
+RXZlbnROb2RlOjk3MA==,970,ufc-fight-night-64-gonzaga-vs-cro-cop-2,UFC Fight Night 64: Gonzaga vs. Cro Cop 2,2015-04-11,"Krakow, Lesser Poland, Poland",Krakow Arena,314
+RXZlbnROb2RlOjk3MQ==,971,ufc-on-fox-15-machida-vs-rockhold,UFC on FOX 15: Machida vs. Rockhold,2015-04-18,"Newark, New Jersey, United States",Prudential Center,315
+RXZlbnROb2RlOjk3Mg==,972,ufc-186-johnson-vs-horiguchi,UFC 186: Johnson vs. Horiguchi,2015-04-25,"Montreal, Quebec, Canada",Bell Centre,316
+RXZlbnROb2RlOjEyMDA=,1200,ufc-fight-night-65-miocic-vs-hunt,UFC Fight Night 65: Miocic vs. Hunt,2015-05-09,"Adelaide, South Australia, Australia",Adelaide Entertainment Centre,317
+RXZlbnROb2RlOjk3NA==,974,ufc-fight-night-66-edgar-vs-faber,UFC Fight Night 66: Edgar vs. Faber,2015-05-16,"Pasay, Metro Manila, Philippines",Mall of Asia Arena,318
+RXZlbnROb2RlOjk3NQ==,975,ufc-187-johnson-vs-cormier,UFC 187: Johnson vs. Cormier,2015-05-23,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,319
+RXZlbnROb2RlOjk3Ng==,976,ufc-fight-night-67-condit-vs-alves,UFC Fight Night 67: Condit vs. Alves,2015-05-30,"Goiania, Goias, Brazil",Goiania Arena,320
+RXZlbnROb2RlOjk3Nw==,977,ufc-fight-night-68-boetsch-vs-henderson,UFC Fight Night 68: Boetsch vs. Henderson,2015-06-06,"New Orleans, Louisiana, United States",Smoothie King Center,321
+RXZlbnROb2RlOjk3OA==,978,ufc-188-velasquez-vs-werdum,UFC 188: Velasquez vs. Werdum,2015-06-13,"Mexico City, Federal District, Mexico",Mexico City Arena,322
+RXZlbnROb2RlOjk3OQ==,979,ufc-fight-night-69-jedrzejczyk-vs-penne,UFC Fight Night 69: Jędrzejczyk vs. Penne,2015-06-20,"Berlin, Germany",O2 World,323
+RXZlbnROb2RlOjk4MA==,980,ufc-fight-night-70-machida-vs-romero,UFC Fight Night 70: Machida vs. Romero,2015-06-27,"Hollywood, Florida, United States",Seminole Hard Rock Hotel and Casino,324
+RXZlbnROb2RlOjk4MQ==,981,ufc-189-mendes-vs-mcgregor,UFC 189: Mendes vs. McGregor,2015-07-11,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,325
+RXZlbnROb2RlOjk4Mg==,982,the-ultimate-fighter-21-finale,The Ultimate Fighter 21 Finale,2015-07-12,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,326
+RXZlbnROb2RlOjk4Mw==,983,ufc-fight-night-71-mir-vs-duffee,UFC Fight Night 71: Mir vs. Duffee,2015-07-15,"San Diego, California, United States",Valley View Casino Center,327
+RXZlbnROb2RlOjk4NA==,984,ufc-fight-night-72-bisping-vs-leites,UFC Fight Night 72: Bisping vs. Leites,2015-07-18,"Glasgow, Scotland, Scotland",Hydro SSE Arena,328
+RXZlbnROb2RlOjk4NQ==,985,ufc-on-fox-16-dillashaw-vs-barao-2,UFC on FOX 16: Dillashaw vs. Barao 2,2015-07-25,"Chicago, Illinois, United States",United Center,329
+RXZlbnROb2RlOjk4Ng==,986,ufc-190-rousey-vs-correia,UFC 190: Rousey vs. Correia,2015-08-01,"Rio de Janeiro, Rio de Janeiro, Brazil",HSBC Arena,330
+RXZlbnROb2RlOjk4Nw==,987,ufc-fight-night-73-teixeira-vs-st-preux,UFC Fight Night 73: Teixeira vs. St. Preux,2015-08-08,"Nashville, Tennessee, United States",Bridgestone Arena,331
+RXZlbnROb2RlOjk4OA==,988,ufc-fight-night-74-holloway-vs-oliveira,UFC Fight Night 74: Holloway vs. Oliveira,2015-08-23,"Saskatoon, Saskatchewan, Canada",SaskTel Centre,332
+RXZlbnROb2RlOjk5MA==,990,ufc-191-johnson-vs-dodson-2,UFC 191: Johnson vs. Dodson 2,2015-09-05,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,333
+RXZlbnROb2RlOjk5Mg==,992,ufc-fight-night-75-barnett-vs-nelson,UFC Fight Night 75: Barnett vs. Nelson,2015-09-26,"Saitama, Japan, Japan",Saitama Super Arena,334
+RXZlbnROb2RlOjk5Mw==,993,ufc-192-cormier-vs-gustafsson,UFC 192: Cormier vs. Gustafsson,2015-10-03,"Houston, Texas, United States",Toyota Center,335
+RXZlbnROb2RlOjEyMTQ=,1214,ufc-fight-night-76-holohan-vs-smolka,UFC Fight Night 76: Holohan vs. Smolka,2015-10-24,"Dublin, Leinster, Ireland",3Arena,336
+RXZlbnROb2RlOjk5NA==,994,ufc-fight-night-77-belfort-vs-henderson-3,UFC Fight Night 77: Belfort vs. Henderson 3,2015-11-07,"Sao Paulo, Sao Paulo, Brazil",Geraldo Jose de Almeida (Ibirapuera) State Gymnasi,337
+RXZlbnROb2RlOjk5NQ==,995,ufc-193-rousey-vs-holm,UFC 193: Rousey vs. Holm,2015-11-14,"Melbourne, Victoria, Australia",Etihad Stadium,338
+RXZlbnROb2RlOjk5Ng==,996,ufc-fight-night-78-magny-vs-gastelum,UFC Fight Night 78: Magny vs. Gastelum,2015-11-21,"Monterrey, Nuevo Leon, Mexico",Monterrey Arena,339
+RXZlbnROb2RlOjk5Nw==,997,ufc-fight-night-79-henderson-vs-masvidal,UFC Fight Night 79: Henderson vs. Masvidal,2015-11-28,"Seoul, South Korea",Olympic Gymnastics Arena,340
+RXZlbnROb2RlOjEyNzg=,1278,ufc-fight-night-80-namajunas-vs-vanzant,UFC Fight Night 80: Namajunas vs. VanZant,2015-12-10,"Las Vegas, Nevada, United States",The Chelsea at the Cosmopolitan,341
+RXZlbnROb2RlOjEyMzY=,1236,the-ultimate-fighter-22-finale,The Ultimate Fighter 22 Finale,2015-12-11,"Nevada, United States, United States",Las Vegas,342
+RXZlbnROb2RlOjk5OQ==,999,ufc-194-aldo-vs-mcgregor,UFC 194: Aldo vs. McGregor,2015-12-12,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,343
+RXZlbnROb2RlOjEwMDA=,1000,ufc-on-fox-17-dos-anjos-vs-cowboy-2,UFC on FOX 17: Dos Anjos vs. Cowboy 2,2015-12-19,"Orlando, Florida, United States",Amway Center,344
+RXZlbnROb2RlOjEyMzk=,1239,ufc-195-lawler-vs-condit,UFC 195: Lawler vs. Condit,2016-01-02,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,345
+RXZlbnROb2RlOjEyODA=,1280,ufc-fight-night-81-dillashaw-vs-cruz,UFC Fight Night 81: Dillashaw vs. Cruz,2016-01-17,"Boston, Massachusetts, United States",TD Garden,346
+RXZlbnROb2RlOjEyODI=,1282,ufc-on-fox-18-johnson-vs-bader,UFC on FOX 18: Johnson vs. Bader,2016-01-30,"Newark, New Jersey, United States",Prudential Center,347
+RXZlbnROb2RlOjEyODM=,1283,ufc-fight-night-82-hendricks-vs-thompson,UFC Fight Night 82: Hendricks vs. Thompson,2016-02-06,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,348
+RXZlbnROb2RlOjEyODQ=,1284,ufc-fight-night-83-cowboy-vs-cowboy,UFC Fight Night 83: Cowboy vs. Cowboy,2016-02-21,"Pittsburgh, Pennsylvania, United States",Consol Energy Center,349
+RXZlbnROb2RlOjEyODY=,1286,ufc-fight-night-84-silva-vs-bisping,UFC Fight Night 84: Silva vs. Bisping,2016-02-27,"London, Greater London, England",O2 Arena,350
+RXZlbnROb2RlOjEyODc=,1287,ufc-196-mcgregor-vs-diaz,UFC 196: McGregor vs. Diaz,2016-03-05,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,351
+RXZlbnROb2RlOjEzNDc=,1347,ufc-fight-night-85-hunt-vs-mir,UFC Fight Night 85: Hunt vs. Mir,2016-03-20,"Brisbane, Queensland, Australia",Brisbane Entertainment Centre,352
+RXZlbnROb2RlOjEzODI=,1382,ufc-fight-night-86-rothwell-vs-dos-santos,UFC Fight Night 86: Rothwell vs. Dos Santos,2016-04-10,"Zagreb, Croatia, Croatia",Zagreb Arena,353
+RXZlbnROb2RlOjE0MDA=,1400,ufc-on-fox-19-teixeira-vs-evans,UFC on FOX 19: Teixeira vs. Evans,2016-04-16,"Tampa, Florida, United States",Amalie Arena,354
+RXZlbnROb2RlOjEyOTI=,1292,ufc-197-jones-vs-saint-preux,UFC 197: Jones vs. Saint Preux,2016-04-23,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,355
+RXZlbnROb2RlOjEzODM=,1383,ufc-fight-night-87-overeem-vs-arlovski,UFC Fight Night 87: Overeem vs. Arlovski,2016-05-08,"Rotterdam, South Holland, Netherlands",Ahoy Rotterdam,356
+RXZlbnROb2RlOjEzOTE=,1391,ufc-198-werdum-vs-miocic,UFC 198: Werdum vs. Miocic,2016-05-14,"Curitiba, Parana, Brazil",Arena da Baixada,357
+RXZlbnROb2RlOjE0MTk=,1419,ufc-fight-night-88-almeida-vs-garbrandt,UFC Fight Night 88: Almeida vs. Garbrandt,2016-05-29,"Las Vegas, Nevada, United States",Mandalay Bay Events Center,358
+RXZlbnROb2RlOjE0MjA=,1420,ufc-199-rockhold-vs-bisping-2,UFC 199: Rockhold vs. Bisping 2,2016-06-04,"Inglewood, California, United States",The Forum,359
+RXZlbnROb2RlOjE0MjE=,1421,ufc-fight-night-89-macdonald-vs-thompson,UFC Fight Night 89: MacDonald vs. Thompson,2016-06-18,"Ottawa, Ontario, Canada",TD Place Arena,360
+RXZlbnROb2RlOjE0MjI=,1422,ufc-fight-night-90-dos-anjos-vs-alvarez,UFC Fight Night 90: Dos Anjos vs. Alvarez,2016-07-07,"Las Vegas, Nevada, United States",MGM Grand Garden Arena,361
+RXZlbnROb2RlOjEzOTM=,1393,the-ultimate-fighter-23-finale,The Ultimate Fighter 23 Finale,2016-07-08,"Nevada, United States, United States",Las Vegas,362
+RXZlbnROb2RlOjEzNzg=,1378,ufc-200-tate-vs-nunes,UFC 200: Tate vs. Nunes,2016-07-09,"Las Vegas, Nevada, United States",T-Mobile Arena,363
+RXZlbnROb2RlOjE0NDA=,1440,ufc-fight-night-91-mcdonald-vs-lineker,UFC Fight Night 91: McDonald vs. Lineker,2016-07-13,"Sioux Falls, South Dakota, United States",Denny Sanford Premier Center,364
+RXZlbnROb2RlOjE0MzE=,1431,ufc-on-fox-20-holm-vs-shevchenko,UFC on FOX 20: Holm vs. Shevchenko,2016-07-23,"Chicago, Illinois, United States",United Center,365
+RXZlbnROb2RlOjE0NDQ=,1444,ufc-201-lawler-vs-woodley,UFC 201: Lawler vs. Woodley,2016-07-30,"Atlanta, Georgia, United States",Philips Arena,366
+RXZlbnROb2RlOjE0NTg=,1458,ufc-fight-night-92-caceres-vs-rodriguez,UFC Fight Night 92: Caceres vs. Rodriguez,2016-08-06,"Salt Lake City, Utah, United States",Vivint Smart Home Arena,367
+RXZlbnROb2RlOjE0NDc=,1447,ufc-202-diaz-vs-mcgregor-2,UFC 202: Diaz vs. McGregor 2,2016-08-20,"Las Vegas, Nevada, United States",T-Mobile Arena,368
+RXZlbnROb2RlOjE0NjA=,1460,ufc-on-fox-21-maia-vs-condit,UFC on FOX 21: Maia vs. Condit,2016-08-27,"Vancouver, British Columbia, Canada",Rogers Arena,369
+RXZlbnROb2RlOjE0NDU=,1445,ufc-fight-night-93-arlovski-vs-barnett,UFC Fight Night 93: Arlovski vs. Barnett,2016-09-03,"Hamburg, Germany",Barclaycard Arena,370
+RXZlbnROb2RlOjE0NTc=,1457,ufc-203-miocic-vs-overeem,UFC 203: Miocic vs. Overeem,2016-09-10,"Cleveland, Ohio, United States",Quicken Loans Arena,371
+RXZlbnROb2RlOjE0Nzg=,1478,ufc-fight-night-94-poirier-vs-johnson,UFC Fight Night 94: Poirier vs. Johnson,2016-09-17,"Hidalgo, Texas, United States",State Farm Arena,372
+RXZlbnROb2RlOjE0Nzk=,1479,ufc-fight-night-95-cyborg-vs-lansberg,UFC Fight Night 95: Cyborg vs. Lansberg,2016-09-24,"Brasilia, Federal District, Brazil",Nilson Nelson Gymnasium,373
+RXZlbnROb2RlOjE0ODU=,1485,ufc-fight-night-96-lineker-vs-dodson,UFC Fight Night 96: Lineker vs. Dodson,2016-10-01,"Portland, Oregon, United States",Moda Center,374
+RXZlbnROb2RlOjE0NzQ=,1474,ufc-204-bisping-vs-henderson-2,UFC 204: Bisping vs. Henderson 2,2016-10-08,"Greater Manchester, England",Manchester,375
+RXZlbnROb2RlOjE0MzQ=,1434,ufc-fight-night-98-dos-anjos-vs-ferguson,UFC Fight Night 98: Dos Anjos vs. Ferguson,2016-11-05,"Federal District, Mexico, Mexico",Mexico City Arena,376
+RXZlbnROb2RlOjE0NDM=,1443,ufc-205-alvarez-vs-mcgregor,UFC 205: Alvarez vs. McGregor,2016-11-12,"New York, New York, United States",Madison Square Garden,377
+RXZlbnROb2RlOjE0OTU=,1495,ufc-fight-night-99-mousasi-vs-hall-2,UFC Fight Night 99: Mousasi vs. Hall 2,2016-11-19,"Belfast, Northern Ireland, Northern Ireland",SSE Arena,378
+RXZlbnROb2RlOjE1MDk=,1509,ufc-fight-night-100-bader-vs-nogueira-2,UFC Fight Night 100: Bader vs. Nogueira 2,2016-11-19,"Sao Paulo, Sao Paulo, Brazil",Ibirapuera Gymnasium,379
+RXZlbnROb2RlOjE1MDg=,1508,ufc-fight-night-101-whittaker-vs-brunson,UFC Fight Night 101: Whittaker vs. Brunson,2016-11-26,"Melbourne, Victoria, Australia",Rod Laver Arena,380
+RXZlbnROb2RlOjE0OTc=,1497,the-ultimate-fighter-24-finale,The Ultimate Fighter 24 Finale,2016-12-03,"Las Vegas, Nevada, United States",Palms Casino Resort,381
+RXZlbnROb2RlOjE0OTg=,1498,ufc-fight-night-102-lewis-vs-abdurakhimov,UFC Fight Night 102: Lewis vs. Abdurakhimov,2016-12-09,"New York, United States, United States",Times Union Center Albany,382
+RXZlbnROb2RlOjE0OTk=,1499,ufc-206-holloway-vs-pettis,UFC 206: Holloway vs. Pettis,2016-12-10,"Toronto, Ontario, Canada",Air Canada Centre,383
+RXZlbnROb2RlOjE1MDA=,1500,ufc-on-fox-22-vanzant-vs-waterson,UFC on FOX 22: VanZant vs. Waterson,2016-12-17,"Sacramento, California, United States",Golden 1 Center,384
+RXZlbnROb2RlOjE1MDE=,1501,ufc-207-nunes-vs-rousey,UFC 207: Nunes vs. Rousey,2016-12-30,"Las Vegas, Nevada, United States",T-Mobile Arena,385
+RXZlbnROb2RlOjE1Mjg=,1528,ufc-fight-night-103-rodriguez-vs-penn,UFC Fight Night 103: Rodriguez vs. Penn,2017-01-15,"Phoenix, Arizona, United States",Talking Stick Arena,386
+RXZlbnROb2RlOjE1MzA=,1530,ufc-on-fox-23-shevchenko-vs-pena,UFC on FOX 23: Shevchenko vs. Peña,2017-01-28,"Denver, Colorado, United States",Pepsi Center,387
+RXZlbnROb2RlOjE1MzE=,1531,ufc-fight-night-104-bermudez-vs-korean-zombie,UFC Fight Night 104: Bermudez vs. Korean Zombie,2017-02-04,"Houston, Texas, United States",Toyota Center,388
+RXZlbnROb2RlOjE1MzI=,1532,ufc-208-holm-vs-de-randamie,UFC 208: Holm vs. de Randamie,2017-02-11,"Brooklyn, New York, United States",Barclays Center,389
+RXZlbnROb2RlOjE1MzM=,1533,ufc-fight-night-105-lewis-vs-browne,UFC Fight Night 105: Lewis vs. Browne,2017-02-19,"Halifax, Nova Scotia, Canada",Scotiabank Centre,390
+RXZlbnROb2RlOjE1MzU=,1535,ufc-209-woodley-vs-thompson-2,UFC 209: Woodley vs. Thompson 2,2017-03-04,"Las Vegas, Nevada, United States",T-Mobile Arena,391
+RXZlbnROb2RlOjE1MzY=,1536,ufc-fight-night-106-belfort-vs-gastelum,UFC Fight Night 106: Belfort vs. Gastelum,2017-03-11,"Brazil, Brazil",Fortaleza,392
+RXZlbnROb2RlOjE1Mzc=,1537,ufc-fight-night-107-manuwa-vs-anderson,UFC Fight Night 107: Manuwa vs. Anderson,2017-03-18,"London, England, United Kingdom",O2 Arena,393
+RXZlbnROb2RlOjE1OTk=,1599,ufc-210-cormier-vs-johnson-2,UFC 210: Cormier vs. Johnson 2,2017-04-08,"Buffalo, New York, United States",KeyBank Center,394
+RXZlbnROb2RlOjE2MDM=,1603,ufc-on-fox-24-johnson-vs-reis,UFC on FOX 24: Johnson vs. Reis,2017-04-15,"Kansas City, Missouri, United States",Sprint Center,395
+RXZlbnROb2RlOjE2MTg=,1618,ufc-fight-night-108-swanson-vs-lobov,UFC Fight Night 108: Swanson vs. Lobov,2017-04-22,"Nashville, Tennessee, United States",Bridgestone Arena,396
+RXZlbnROb2RlOjE2MDQ=,1604,ufc-211-miocic-vs-dos-santos-2,UFC 211: Miocic vs. Dos Santos 2,2017-05-13,"Dallas, Texas, United States",American Airlines Arena,397
+RXZlbnROb2RlOjE2MjI=,1622,ufc-fight-night-109-gustafsson-vs-teixeira,UFC Fight Night 109: Gustafsson vs. Teixeira,2017-05-28,"Stockholm, Sweden, Sweden",Ericsson Globe Arena,398
+RXZlbnROb2RlOjE2MDg=,1608,ufc-212-aldo-vs-holloway,UFC 212: Aldo vs. Holloway,2017-06-03,"Rio de Janeiro, Brazil, Brazil",HSBC Arena,399
+RXZlbnROb2RlOjE2MzA=,1630,ufc-fight-night-110-lewis-vs-hunt,UFC Fight Night 110: Lewis vs. Hunt,2017-06-10,"Auckland, New Zealand, New Zealand",Vector Arena,400
+RXZlbnROb2RlOjE2MjM=,1623,ufc-fight-night-111-holm-vs-correia,UFC Fight Night 111: Holm vs. Correia,2017-06-17,"Kallang, Singapore, Singapore",Singapore Indoor Stadium,401
+RXZlbnROb2RlOjE2NDU=,1645,ufc-fight-night-112-chiesa-vs-lee,UFC Fight Night 112: Chiesa vs. Lee,2017-06-25,"Oklahoma City, Oklahoma, United States",Chesapeake Energy Arena,402
+RXZlbnROb2RlOjE2MTA=,1610,the-ultimate-fighter-25-finale,The Ultimate Fighter 25 Finale,2017-07-07,"Las Vegas, Nevada, United States",T-Mobile Arena,403
+RXZlbnROb2RlOjE2MTE=,1611,ufc-213-romero-vs-whittaker,UFC 213: Romero vs. Whittaker,2017-07-08,"Las Vegas, Nevada, United States",T-Mobile Arena,404
+RXZlbnROb2RlOjE2MzE=,1631,ufc-fight-night-113-nelson-vs-ponzinibbio,UFC Fight Night 113: Nelson vs. Ponzinibbio,2017-07-16,"Glasgow, Scotland",SSE Hydro Arena,405
+RXZlbnROb2RlOjE2NDk=,1649,ufc-on-fox-25-weidman-vs-gastelum,UFC on FOX 25: Weidman vs. Gastelum,2017-07-22,"Long Island, New York, United States",Nassau Coliseum,406
+RXZlbnROb2RlOjE2MjQ=,1624,ufc-214-cormier-vs-jones-2,UFC 214: Cormier vs. Jones 2,2017-07-29,"Anaheim, California, United States",Honda Center,407
+RXZlbnROb2RlOjE2NzE=,1671,ufc-fight-night-114-pettis-vs-moreno,UFC Fight Night 114: Pettis vs. Moreno,2017-08-05,"Mexico City, Mexico",Mexico City Arena,408
+RXZlbnROb2RlOjE2Mzg=,1638,ufc-fight-night-115-volkov-vs-struve,UFC Fight Night 115: Volkov vs. Struve,2017-09-02,"Rotterdam, South Holland, Netherlands",Ahoy Rotterdam,409
+RXZlbnROb2RlOjE2MTM=,1613,ufc-215-nunes-vs-shevchenko-2,UFC 215: Nunes vs. Shevchenko 2,2017-09-09,"Edmonton, Alberta, Canada",Rogers Place,410
+RXZlbnROb2RlOjE5MDc=,1907,ufc-fight-night-116-rockhold-vs-branch,UFC Fight Night 116: Rockhold vs. Branch,2017-09-16,"Pittsburgh, Pennsylvania, United States",PPG Paints Arena,411
+RXZlbnROb2RlOjE2NzM=,1673,ufc-fight-night-117-st-preux-vs-okami,UFC Fight Night 117: St. Preux vs. Okami,2017-09-22,"Saitama, Saitama, Japan",Saitama Super Arena,412
+RXZlbnROb2RlOjE5MDg=,1908,ufc-216-ferguson-vs-lee,UFC 216: Ferguson vs. Lee,2017-10-07,"Las Vegas, Nevada, United States",T-Mobile Arena,413
+RXZlbnROb2RlOjE2Mzk=,1639,ufc-fight-night-118-cowboy-vs-till,UFC Fight Night 118: Cowboy vs. Till,2017-10-21,"Gdansk, Poland",Ergo Arena,414
+RXZlbnROb2RlOjE5MDk=,1909,ufc-fight-night-119-machida-vs-brunson,UFC Fight Night 119: Machida vs. Brunson,2017-10-28,"Sao Paulo, Sao Paulo, Brazil",Geraldo Jose de Almeida (Ibirapuera) Gymnasium,415
+RXZlbnROb2RlOjE5MTA=,1910,ufc-217-bisping-vs-st-pierre,UFC 217: Bisping vs. St. Pierre,2017-11-04,"New York, New York, United States",Madison Square Garden,416
+RXZlbnROb2RlOjE5MTE=,1911,ufc-fight-night-120-poirier-vs-pettis,UFC Fight Night 120: Poirier vs. Pettis,2017-11-11,"Norfolk, Virginia, United States",Ted Constant Convocation Center,417
+RXZlbnROb2RlOjE5MTI=,1912,ufc-fight-night-121-werdum-vs-tybura,UFC Fight Night 121: Werdum vs. Tybura,2017-11-18,"Sydney, New South Wales, Australia",Qudos Bank Arena,418
+RXZlbnROb2RlOjE5MTM=,1913,ufc-fight-night-122-bisping-vs-gastelum,UFC Fight Night 122: Bisping vs. Gastelum,2017-11-25,"Shanghai, China",Mercedez-Benz Arena,419
+RXZlbnROb2RlOjE5MTQ=,1914,the-ultimate-fighter-26-finale,The Ultimate Fighter 26 Finale,2017-12-01,"Nevada, United States",Las Vegas,420
+RXZlbnROb2RlOjE5MTU=,1915,ufc-218-holloway-vs-aldo-2,UFC 218: Holloway vs. Aldo 2,2017-12-02,"Detroit, Michigan, United States",Little Caesars Arena,421
+RXZlbnROb2RlOjE5MzA=,1930,ufc-fight-night-123-swanson-vs-ortega,UFC Fight Night 123: Swanson vs. Ortega,2017-12-09,"Fresno, California, United States",Save Mart Center,422
+RXZlbnROb2RlOjE5MzE=,1931,ufc-on-fox-26-lawler-vs-dos-anjos,UFC on FOX 26: Lawler vs. Dos Anjos,2017-12-16,"Winnipeg, Manitoba, Canada",MTS Centre,423
+RXZlbnROb2RlOjE2MTQ=,1614,ufc-219-cyborg-vs-holm,UFC 219: Cyborg vs. Holm,2017-12-30,"Las Vegas, Nevada, United States",T-Mobile Arena,424
+RXZlbnROb2RlOjE5OTE=,1991,ufc-fight-night-124-stephens-vs-choi,UFC Fight Night 124: Stephens vs. Choi,2018-01-14,"St. Louis, Missouri, United States",Scottrade Center,425
+RXZlbnROb2RlOjE5OTI=,1992,ufc-220-miocic-vs-ngannou,UFC 220: Miocic vs. N'Gannou,2018-01-20,"Boston, Massachusetts, United States",TD Garden,426
+RXZlbnROb2RlOjE5OTY=,1996,ufc-on-fox-27-jacare-vs-brunson-2,UFC on FOX 27: Jacare vs. Brunson 2,2018-01-27,"Charlotte, North Carolina, United States",Spectrum Center,427
+RXZlbnROb2RlOjE5OTM=,1993,ufc-fight-night-125-machida-vs-anders,UFC Fight Night 125: Machida vs. Anders,2018-02-03,"Belem, Para, Brazil",Guilherme Paraense (Mangueirinho) Arena,428
+RXZlbnROb2RlOjE5OTQ=,1994,ufc-221-romero-vs-rockhold,UFC 221: Romero vs. Rockhold,2018-02-10,"Perth, Western Australia, Australia",Perth Arena,429
+RXZlbnROb2RlOjE5OTc=,1997,ufc-fight-night-126-cowboy-vs-medeiros,UFC Fight Night 126: Cowboy vs. Medeiros,2018-02-18,"Austin, Texas, United States",Frank Erwin Center,430
+RXZlbnROb2RlOjE5OTg=,1998,ufc-on-fox-28-emmett-vs-stephens,UFC on FOX 28: Emmett vs. Stephens,2018-02-24,"Orlando, Florida, United States",Amway Center,431
+RXZlbnROb2RlOjE5OTU=,1995,ufc-222-cyborg-vs-kunitskaya,UFC 222: Cyborg vs. Kunitskaya,2018-03-03,"Las Vegas, Nevada, United States",T-Mobile Arena,432
+RXZlbnROb2RlOjE5OTk=,1999,ufc-fight-night-127-werdum-vs-volkov,UFC Fight Night 127: Werdum vs. Volkov,2018-03-17,"London, Greater London, England",O2 Arena,433
+RXZlbnROb2RlOjIwNDg=,2048,ufc-223-khabib-vs-iaquinta,UFC 223: Khabib vs. Iaquinta,2018-04-07,"Brooklyn, New York, United States",Barclays Center,434
+RXZlbnROb2RlOjIwNTU=,2055,ufc-on-fox-29-poirier-vs-gaethje,UFC on FOX 29: Poirier vs. Gaethje,2018-04-14,"Glendale, Arizona, United States",Gila River Arena,435
+RXZlbnROb2RlOjIwNzY=,2076,ufc-fight-night-128-barboza-vs-lee,UFC Fight Night 128: Barboza vs. Lee,2018-04-21,"Atlantic City, New Jersey, United States",Jim Whelan Boardwalk Hall,436
+RXZlbnROb2RlOjIwNzg=,2078,ufc-224-nunes-vs-pennington,UFC 224: Nunes vs. Pennington,2018-05-12,"Rio de Janeiro, Brazil",Jeunesse Arena,437
+RXZlbnROb2RlOjIwOTE=,2091,ufc-fight-night-129-maia-vs-usman,UFC Fight Night 129: Maia vs. Usman,2018-05-19,"Santiago, Chile, Chile",Movistar Arena,438
+RXZlbnROb2RlOjIxMjM=,2123,ufc-fight-night-130-thompson-vs-till,UFC Fight Night 130: Thompson vs. Till,2018-05-27,"Liverpool, Merseyside, England",Echo Arena,439
+RXZlbnROb2RlOjIwODA=,2080,ufc-fight-night-131-rivera-vs-moraes,UFC Fight Night 131: Rivera vs. Moraes,2018-06-01,"Utica, New York, United States",Adirondack Bank Center,440
+RXZlbnROb2RlOjIwODE=,2081,ufc-225-whittaker-vs-romero-2,UFC 225: Whittaker vs. Romero 2,2018-06-09,"Chicago, Illinois, United States",United Center,441
+RXZlbnROb2RlOjIxMDA=,2100,ufc-fight-night-132-cowboy-vs-edwards,UFC Fight Night 132: Cowboy vs. Edwards,2018-06-23,"Kallang, Singapore",Singapore Indoor Stadium,442
+RXZlbnROb2RlOjIwMzk=,2039,the-ultimate-fighter-27-finale,The Ultimate Fighter 27 Finale,2018-07-06,"Las Vegas, Nevada, United States",T-Mobile Arena,443
+RXZlbnROb2RlOjIwNDA=,2040,ufc-226-miocic-vs-cormier,UFC 226: Miocic vs. Cormier,2018-07-07,"Las Vegas, Nevada, United States",T-Mobile Arena,444
+RXZlbnROb2RlOjIxMzU=,2135,ufc-fight-night-133-dos-santos-vs-ivanov,UFC Fight Night 133: Dos Santos vs. Ivanov,2018-07-14,"Idaho, United States",Boise,445
+RXZlbnROb2RlOjIxMjQ=,2124,ufc-fight-night-134-shogun-vs-smith,UFC Fight Night 134: Shogun vs. Smith,2018-07-22,Germany,Hamburg,446
+RXZlbnROb2RlOjIxMzc=,2137,ufc-on-fox-30-alvarez-vs-poirier-2,UFC on FOX 30: Alvarez vs. Poirier 2,2018-07-28,"Calgary, Alberta, Canada",Scotiabank Saddledome,447
+RXZlbnROb2RlOjIxMzg=,2138,ufc-227-dillashaw-vs-garbrandt-2,UFC 227: Dillashaw vs. Garbrandt 2,2018-08-04,"Los Angeles, California, United States",Staples Center,448
+RXZlbnROb2RlOjIxMzk=,2139,ufc-fight-night-135-gaethje-vs-vick,UFC Fight Night 135: Gaethje vs. Vick,2018-08-25,"Lincoln, Nebraska, United States",Pinnacle Bank Arena,449
+RXZlbnROb2RlOjIyMTE=,2211,ufc-228-woodley-vs-till,UFC 228: Woodley vs. Till,2018-09-08,"Dallas, Texas, United States",American Airlines Center,450
+RXZlbnROb2RlOjIxOTY=,2196,ufc-fight-night-136-hunt-vs-oleinik,UFC Fight Night 136: Hunt vs. Oleinik,2018-09-15,"Moscow, Russia",Olimpiysky Arena,451
+RXZlbnROb2RlOjIyMjI=,2222,ufc-fight-night-137-santos-vs-anders,UFC Fight Night 137: Santos vs. Anders,2018-09-22,"Sao Paulo, Sao Paulo, Brazil",Geraldo Jose de Almeida (Ibirapuera) Gymnasium,452
+RXZlbnROb2RlOjIwNDE=,2041,ufc-229-khabib-vs-mcgregor,UFC 229: Khabib vs. McGregor,2018-10-06,"Las Vegas, Nevada, United States",T-Mobile Arena,453
+RXZlbnROb2RlOjIyMTM=,2213,ufc-fight-night-138-volkan-vs-smith,UFC Fight Night 138: Volkan vs. Smith,2018-10-27,"Moncton, New Brunswick, Canada",Moncton Events Centre,454
+RXZlbnROb2RlOjIyMTQ=,2214,ufc-230-cormier-vs-lewis,UFC 230: Cormier vs. Lewis,2018-11-03,"New York City, New York, United States",Madison Square Garden,455
+RXZlbnROb2RlOjIyMTU=,2215,ufc-fight-night-139-korean-zombie-vs-rodriguez,UFC Fight Night 139: Korean Zombie vs. Rodriguez,2018-11-10,"Denver, Colorado, United States",Pepsi Center,456
+RXZlbnROb2RlOjIyMjU=,2225,ufc-fight-night-140-magny-vs-ponzinibbio,UFC Fight Night 140: Magny vs. Ponzinibbio,2018-11-17,"Buenos Aires, Argentina",Luna Park,457
+RXZlbnROb2RlOjIyMjY=,2226,ufc-fight-night-141-blaydes-vs-ngannou-2,UFC Fight Night 141: Blaydes vs. N'Gannou 2,2018-11-24,"Beijing, China",Cadillac Arena,458
+RXZlbnROb2RlOjIyMjc=,2227,the-ultimate-fighter-28-finale,The Ultimate Fighter 28 Finale,2018-11-30,"Las Vegas, Nevada, United States",The Pearl at the Palms,459
+RXZlbnROb2RlOjIyMjg=,2228,ufc-fight-night-142-dos-santos-vs-tuivasa,UFC Fight Night 142: Dos Santos vs. Tuivasa,2018-12-01,"Adelaide, South Australia",Adelaide Entertainment Center,460
+RXZlbnROb2RlOjIyMjk=,2229,ufc-231-holloway-vs-ortega,UFC 231: Holloway vs. Ortega,2018-12-08,"Toronto, Ontario, Canada",Scotiabank Arena,461
+RXZlbnROb2RlOjIyMzA=,2230,ufc-on-fox-31-lee-vs-iaquinta-2,UFC on FOX 31: Lee vs. Iaquinta 2,2018-12-15,"Milwaukee, Wisconsin, United States",Wisconsin Entertainment and Sports Center,462
+RXZlbnROb2RlOjIwNDc=,2047,ufc-232-jones-vs-gustafsson-2,UFC 232: Jones vs. Gustafsson 2,2018-12-29,"Inglewood, California, United States",The Forum,463
+RXZlbnROb2RlOjIzMDQ=,2304,ufc-on-espn-1-cejudo-vs-dillashaw,UFC on ESPN+ 1: Cejudo vs. Dillashaw,2019-01-19,"Brooklyn, New York, United States",Barclays Center,464
+RXZlbnROb2RlOjIzMDY=,2306,ufc-on-espn-2-assuncao-vs-moraes-2,UFC on ESPN+ 2: Assunção vs. Moraes 2,2019-02-02,"Fortaleza, Ceara, Brazil",Centro de Formacao Olimpica do Nordeste,465
+RXZlbnROb2RlOjIzMDc=,2307,ufc-234-adesanya-vs-silva,UFC 234: Adesanya vs. Silva,2019-02-09,"Melbourne, Victoria, Australia",Rod Laver Arena,466
+RXZlbnROb2RlOjIzMDg=,2308,ufc-on-espn-1-ngannou-vs-velasquez,UFC on ESPN 1: N'Gannou vs. Velasquez,2019-02-17,"Phoenix, Arizona, United States",Talking Stick Resort Arena,467
+RXZlbnROb2RlOjIzMDk=,2309,ufc-on-espn-3-bachowicz-vs-santos,UFC on ESPN+ 3: Błachowicz vs. Santos,2019-02-23,"Prague, Czech Republic",O2 Arena,468
+RXZlbnROb2RlOjIzMTA=,2310,ufc-235-jones-vs-smith,UFC 235: Jones vs. Smith,2019-03-02,"Las Vegas, Nevada, United States",T-Mobile Arena,469
+RXZlbnROb2RlOjIzMTE=,2311,ufc-on-espn-4-lewis-vs-dos-santos,UFC on ESPN+ 4: Lewis vs. Dos Santos,2019-03-09,"Wichita, Kansas, United States",INTRUST Bank Arena,470
+RXZlbnROb2RlOjIzMTI=,2312,ufc-on-espn-5-till-vs-masvidal,UFC on ESPN+ 5: Till vs. Masvidal,2019-03-16,"London, England, United Kingdom",02 Arena,471
+RXZlbnROb2RlOjIzMTM=,2313,ufc-on-espn-6-thompson-vs-pettis,UFC on ESPN+ 6: Thompson vs. Pettis,2019-03-23,"Nashville, Tennessee, United States",Bridgestone Arena,472
+RXZlbnROb2RlOjIzMTQ=,2314,ufc-on-espn-2-barboza-vs-gaethje,UFC on ESPN 2: Barboza vs. Gaethje,2019-03-30,"Philadelphia, Pennsylvania, United States",Wells Fargo Center,473
+RXZlbnROb2RlOjIzNTk=,2359,ufc-236-holloway-vs-poirier-2,UFC 236: Holloway vs. Poirier 2,2019-04-13,"Atlanta, Georgia, United States",State Farm Arena,474
+RXZlbnROb2RlOjIzNDQ=,2344,ufc-on-espn-7-overeem-vs-oleinik,UFC on ESPN+ 7: Overeem vs. Oleinik,2019-04-20,"St. Petersburg, Russia",Yubileyny Sports Palace,475
+RXZlbnROb2RlOjIzNDc=,2347,ufc-on-espn-8-jacare-vs-hermansson,UFC on ESPN+ 8: Jacare vs. Hermansson,2019-04-27,"Sunrise, Florida, United States",BB&T Center,476
+RXZlbnROb2RlOjIzNDg=,2348,ufc-on-espn-9-iaquinta-vs-cowboy,UFC on ESPN+ 9: Iaquinta vs. Cowboy,2019-05-04,"Ottawa, Ontario, Canada",Canadian Tire Centre,477
+RXZlbnROb2RlOjIzNTA=,2350,ufc-237-namajunas-vs-andrade,UFC 237: Namajunas vs. Andrade,2019-05-11,"Rio de Janeiro, Brazil",Jeunesse Arena,478
+RXZlbnROb2RlOjIzNTE=,2351,ufc-on-espn-10-dos-anjos-vs-lee,UFC on ESPN+ 10: Dos Anjos vs. Lee,2019-05-18,"Rochester, New York, United States",Blue Cross Arena,479
+RXZlbnROb2RlOjIzMzk=,2339,ufc-on-espn-11-gustafsson-vs-smith,UFC on ESPN+ 11: Gustafsson vs. Smith,2019-06-01,"Stockholm, Sweden, Sweden",Ericsson Globe,480
+RXZlbnROb2RlOjIzNDA=,2340,ufc-238-cejudo-vs-moraes,UFC 238: Cejudo vs. Moraes,2019-06-08,"Chicago, United States, United States",United Center,481
+RXZlbnROb2RlOjIzNDE=,2341,ufc-on-espn-12-moicano-vs-korean-zombie,UFC on ESPN+ 12: Moicano vs. Korean Zombie,2019-06-22,"Greenville, South Carolina, United States",Bon Secours Wellness Arena,482
+RXZlbnROb2RlOjIzNDI=,2342,ufc-on-espn-3-ngannou-vs-dos-santos,UFC on ESPN 3: N'Gannou vs. Dos Santos,2019-06-29,"Minneapolis, Minnesota, United States",Target Center,483
+RXZlbnROb2RlOjIzODA=,2380,ufc-239-jones-vs-santos,UFC 239: Jones vs. Santos,2019-07-06,"Las Vegas, Nevada, United States",T-Mobile Arena,484
+RXZlbnROb2RlOjI0NjQ=,2464,ufc-on-espn-13-de-randamie-vs-ladd,UFC on ESPN+ 13: De Randamie vs. Ladd,2019-07-13,"Sacramento, California, United States",Golden1 Center,485
+RXZlbnROb2RlOjI0NjU=,2465,ufc-on-espn-4-dos-anjos-vs-edwards,UFC on ESPN 4: Dos Anjos vs. Edwards,2019-07-20,"San Antonio, Texas, United States",AT&T Center,486
+RXZlbnROb2RlOjI0MDQ=,2404,ufc-240-holloway-vs-edgar,UFC 240: Holloway vs. Edgar,2019-07-27,"Edmonton, Alberta, Canada",Rogers Place,487
+RXZlbnROb2RlOjI0Njg=,2468,ufc-on-espn-5-covington-vs-lawler,UFC on ESPN 5: Covington vs. Lawler,2019-08-03,"Newark, New Jersey, United States",Prudential Center,488
+RXZlbnROb2RlOjI0NzA=,2470,ufc-on-espn-14-shevchenko-vs-carmouche-2,UFC on ESPN+ 14: Shevchenko vs. Carmouche 2,2019-08-10,"Montevideo, Uruguay",Antel Arena,489
+RXZlbnROb2RlOjI0MDY=,2406,ufc-241-cormier-vs-miocic-2,UFC 241: Cormier vs. Miocic 2,2019-08-17,"Anaheim, California, United States",Honda Center,490
+RXZlbnROb2RlOjI0NDc=,2447,ufc-on-espn-15-andrade-vs-zhang,UFC on ESPN+ 15: Andrade vs. Zhang,2019-08-31,"Shenzhen, China",Universiade Sports Centre,491
+RXZlbnROb2RlOjI0NDg=,2448,ufc-242-khabib-vs-poirier,UFC 242: Khabib vs. Poirier,2019-09-07,"Abu Dhabi, Dubai, United Arab Emirates",du Arena,492
+RXZlbnROb2RlOjI0NTA=,2450,ufc-on-espn-16-cowboy-vs-gaethje,UFC on ESPN+ 16: Cowboy vs. Gaethje,2019-09-14,"Vancouver, British Columbia, Canada",Rogers Arena,493
+RXZlbnROb2RlOjI0NTE=,2451,ufc-on-espn-17-rodriguez-vs-stephens,UFC on ESPN+ 17: Rodriguez vs. Stephens,2019-09-21,"Mexico City, Mexico",Arena Ciudad de Mexico,494
+RXZlbnROb2RlOjI0NTM=,2453,ufc-on-espn-18-hermansson-vs-cannonier,UFC on ESPN+ 18: Hermansson vs. Cannonier,2019-09-28,"Copenhagen, Denmark",Royal Arena,495
+RXZlbnROb2RlOjI0NTQ=,2454,ufc-243-whittaker-vs-adesanya,UFC 243: Whittaker vs. Adesanya,2019-10-05,"Melbourne, Victoria, Australia",Marvel Stadium,496
+RXZlbnROb2RlOjI0NTY=,2456,ufc-on-espn-19-joanna-vs-waterson,UFC on ESPN+ 19: Joanna vs. Waterson,2019-10-12,"Tampa, Florida, United States",Amalie Arena,497
+RXZlbnROb2RlOjI0NTk=,2459,ufc-on-espn-6-reyes-vs-weidman,UFC on ESPN 6: Reyes vs. Weidman,2019-10-18,"Boston, Massachusetts, United States",TD Garden,498
+RXZlbnROb2RlOjI0NjE=,2461,ufc-on-espn-20-maia-vs-askren,UFC on ESPN+ 20: Maia vs. Askren,2019-10-26,"Kallang, Singapore",Singapore Indoor Stadium,499
+RXZlbnROb2RlOjI0MzQ=,2434,ufc-244-masvidal-vs-diaz,UFC 244: Masvidal vs. Diaz,2019-11-02,"New York City, New York, United States",Madison Square Garden,500
+RXZlbnROb2RlOjI1MDg=,2508,ufc-on-espn-21-magomedsharipov-vs-kattar,UFC on ESPN+ 21: Magomedsharipov vs. Kattar,2019-11-09,"Moscow, Russia",CSKA Arena,501
+RXZlbnROb2RlOjI0MzY=,2436,ufc-on-espn-22-blachowicz-vs-jacare,UFC on ESPN+ 22: Blachowicz vs. Jacare,2019-11-16,"Sao Paulo, Brazil",Ibirapuera Gymnasium,502
+RXZlbnROb2RlOjI0Mzk=,2439,ufc-on-espn-7-overeem-vs-rozenstruik,UFC on ESPN 7: Overeem vs. Rozenstruik,2019-12-07,Washington D.C.,Capital One Arena,503
+RXZlbnROb2RlOjI0NDE=,2441,ufc-245-usman-vs-covington,UFC 245: Usman vs. Covington,2019-12-14,"Las Vegas, Nevada, United States",T-Mobile Arena,504
+RXZlbnROb2RlOjI0NDM=,2443,ufc-on-espn-23-edgar-vs-korean-zombie,UFC on ESPN+ 23: Edgar vs. Korean Zombie,2019-12-21,"Busan, South Korea",Sajik Arena,505
+RXZlbnROb2RlOjI5Njc=,2967,ufc-246-mcgregor-vs-cerrone,UFC 246: McGregor vs. Cerrone,2020-01-18,"Las Vegas, Nevada, United States",T-Mobile Arena,506
+RXZlbnROb2RlOjI5NzQ=,2974,ufc-on-espn-24-blaydes-vs-dos-santos,UFC on ESPN+ 24: Blaydes vs. Dos Santos,2020-01-25,"Raleigh, North Carolina, United States",PNC Arena,507
+RXZlbnROb2RlOjI5NzY=,2976,ufc-247-jones-vs-reyes,UFC 247: Jones vs. Reyes,2020-02-08,"Houston, Texas, United States",Toyota Center,508
+RXZlbnROb2RlOjI5ODU=,2985,ufc-on-espn-25-anderson-vs-bachowicz-2,UFC on ESPN+ 25: Anderson vs. Błachowicz 2,2020-02-15,"Rio Rancho, New Mexico, United States",Santa Ana Star Center,509
+RXZlbnROb2RlOjI5ODA=,2980,ufc-on-espn-26-felder-vs-hooker,UFC on ESPN+ 26: Felder vs. Hooker,2020-02-22,"Auckland, New Zealand",Spark Arena,510
+RXZlbnROb2RlOjMwMTg=,3018,ufc-on-espn-27-benavidez-vs-figueiredo,UFC on ESPN+ 27: Benavidez vs. Figueiredo,2020-02-29,"Norfolk, Virginia, United States",Chartway Arena,511
+RXZlbnROb2RlOjI5ODQ=,2984,ufc-248-adesanya-vs-romero,UFC 248: Adesanya vs. Romero,2020-03-07,"Las Vegas, Nevada, United States",T-Mobile Arena,512
+RXZlbnROb2RlOjI5Nzk=,2979,ufc-on-espn-28-lee-vs-oliveira,UFC on ESPN+ 28: Lee vs. Oliveira,2020-03-14,"Brasilia, Federal District, Brazil",Ginásio Nilson Nelson,513
+RXZlbnROb2RlOjMwMzc=,3037,ufc-249-ferguson-vs-gaethje,UFC 249: Ferguson vs. Gaethje,2020-05-09,"Jacksonville, Florida, United States",VyStar Veterans Memorial Arena,514
+RXZlbnROb2RlOjMxMTc=,3117,ufc-fight-night-171-smith-vs-teixeira,UFC Fight Night 171: Smith vs. Teixeira,2020-05-13,"Jacksonville, Florida, United States",VyStar Veterans Memorial Arena,515
+RXZlbnROb2RlOjMwNjI=,3062,ufc-fight-night-overeem-vs-harris,UFC Fight Night: Overeem vs. Harris,2020-05-16,"Jacksonville, Florida, United States",VyStar Veterans Memorial Arena,516
+RXZlbnROb2RlOjMxMTg=,3118,ufc-fight-night-woodley-vs-burns,UFC Fight Night: Woodley vs. Burns,2020-05-30,"Las Vegas, Nevada, United States",UFC APEX,517
+RXZlbnROb2RlOjMwNjA=,3060,ufc-250-nunes-vs-spencer,UFC 250: Nunes vs. Spencer,2020-06-06,"Las Vegas, Nevada, United States",UFC APEX,518
+RXZlbnROb2RlOjMwNjQ=,3064,ufc-fight-night-eye-vs-calvillo,UFC Fight Night: Eye vs. Calvillo,2020-06-13,"Las Vegas, Nevada, United States",UFC APEX,519
+RXZlbnROb2RlOjMwNjY=,3066,ufc-fight-night-blaydes-vs-volkov,UFC Fight Night: Blaydes vs. Volkov,2020-06-20,"Las Vegas, Nevada, United States",UFC APEX,520
+RXZlbnROb2RlOjMwNjU=,3065,ufc-fight-night-poirier-vs-hooker,UFC Fight Night: Poirier vs. Hooker,2020-06-27,"Las Vegas, Nevada, United States",UFC APEX,521
+RXZlbnROb2RlOjMwNjk=,3069,ufc-251-usman-vs-masvidal,UFC 251: Usman vs. Masvidal,2020-07-11,"Abu Dhabi, United Arab Emirates",UFC Fight Island,522
+RXZlbnROb2RlOjMxMjk=,3129,ufc-fight-night-kattar-vs-ige,UFC Fight Night: Kattar vs. Ige,2020-07-15,"Abu Dhabi, United Arab Emirates",UFC Fight Island,523
+RXZlbnROb2RlOjMxMjI=,3122,ufc-fight-night-172-figueiredo-vs-benavidez-2,UFC Fight Night 172: Figueiredo vs. Benavidez 2,2020-07-18,"Abu Dhabi, United Arab Emirates",UFC Fight Island,524
+RXZlbnROb2RlOjMxMjM=,3123,ufc-fight-night-whittaker-vs-till,UFC Fight Night: Whittaker vs. Till,2020-07-25,"Abu Dhabi, United Arab Emirates",UFC Fight Island,525
+RXZlbnROb2RlOjMxMjU=,3125,ufc-fight-night-173-brunson-vs-shahbazyan,UFC Fight Night 173: Brunson vs. Shahbazyan,2020-08-01,"Las Vegas, Nevada, United States",UFC APEX,526
+RXZlbnROb2RlOjMxMzk=,3139,ufc-fight-night-174-lewis-vs-oleynik,UFC Fight Night 174: Lewis vs. Oleynik,2020-08-08,"Las Vegas, Nevada, United States",UFC APEX,527
+RXZlbnROb2RlOjMwNTc=,3057,ufc-252-miocic-vs-cormier-3,UFC 252: Miocic vs. Cormier 3,2020-08-15,"Las Vegas, Nevada, United States",UFC APEX,528
+RXZlbnROb2RlOjMxMzY=,3136,ufc-fight-night-munhoz-vs-edgar,UFC Fight Night: Munhoz vs. Edgar,2020-08-22,"Las Vegas, Nevada, United States",UFC APEX,529
+RXZlbnROb2RlOjMxMzU=,3135,ufc-fight-night-175-smith-vs-rakic,UFC Fight Night 175: Smith vs. Rakic,2020-08-29,"Las Vegas, Nevada, United States",UFC APEX,530
+RXZlbnROb2RlOjMxNjU=,3165,ufc-fight-night-176-overeem-vs-sakai,UFC Fight Night 176: Overeem vs. Sakai,2020-09-05,"Las Vegas, Nevada, United States",UFC APEX,531
+RXZlbnROb2RlOjMxNTY=,3156,ufc-fight-night-177-waterson-vs-hill,UFC Fight Night 177: Waterson vs. Hill,2020-09-12,"Las Vegas, Nevada, United States",UFC APEX,532
+RXZlbnROb2RlOjMxNTg=,3158,ufc-fight-night-178-covington-vs-woodley,UFC Fight Night 178: Covington vs. Woodley,2020-09-19,"Las Vegas, Nevada, United States",UFC APEX,533
+RXZlbnROb2RlOjMxMzA=,3130,ufc-253-adesanya-vs-costa,UFC 253: Adesanya vs. Costa,2020-09-26,"Abu Dhabi, Dubai, United Arab Emirates",UFC Fight Island,534
+RXZlbnROb2RlOjMxNzI=,3172,ufc-fight-night-holm-vs-aldana,UFC Fight Night: Holm vs. Aldana,2020-10-03,"Abu Dhabi, Dubai, United Arab Emirates",UFC Fight Island,535
+RXZlbnROb2RlOjMxOTQ=,3194,ufc-fight-night-179-moraes-vs-sandhagen,UFC Fight Night 179: Moraes vs. Sandhagen,2020-10-10,"Abu Dhabi, Dubai, United Arab Emirates",UFC Fight Island,536
+RXZlbnROb2RlOjMxODg=,3188,ufc-fight-night-180-ortega-vs-korean-zombie,UFC Fight Night 180: Ortega vs. Korean Zombie,2020-10-17,"Abu Dhabi, Dubai, United Arab Emirates",UFC Fight Island,537
+RXZlbnROb2RlOjMxNjI=,3162,ufc-254-nurmagomedov-vs-gaethje,UFC 254: Nurmagomedov vs. Gaethje,2020-10-24,"Abu Dhabi, Dubai, United Arab Emirates",UFC Fight Island,538
+RXZlbnROb2RlOjMyMDM=,3203,ufc-fight-night-181-hall-vs-silva,UFC Fight Night 181: Hall vs. Silva,2020-10-31,"Las Vegas, Nevada, United States",UFC APEX,539
+RXZlbnROb2RlOjMyMDI=,3202,ufc-fight-night-santos-vs-teixeira,UFC Fight Night: Santos vs. Teixeira,2020-11-07,"Las Vegas, Nevada, United States",UFC APEX,540
+RXZlbnROb2RlOjMyMDQ=,3204,ufc-fight-night-182-felder-vs-dos-anjos,UFC Fight Night 182: Felder vs. dos Anjos,2020-11-14,"Las Vegas, Nevada, United States",UFC APEX,541
+RXZlbnROb2RlOjMxOTY=,3196,ufc-255-figueiredo-vs-perez,UFC 255: Figueiredo vs. Perez,2020-11-21,"Las Vegas, Nevada, United States",UFC APEX,542
+RXZlbnROb2RlOjMyMDU=,3205,ufc-fight-night-smith-vs-clark,UFC Fight Night: Smith vs. Clark,2020-11-28,"Las Vegas, Nevada, United States",UFC APEX,543
+RXZlbnROb2RlOjMyMTM=,3213,ufc-fight-night-hermansson-vs-vettori,UFC Fight Night: Hermansson vs. Vettori,2020-12-05,"Las Vegas, Nevada, United States",UFC APEX,544
+RXZlbnROb2RlOjMyMTQ=,3214,ufc-256-figueiredo-vs-moreno,UFC 256: Figueiredo vs. Moreno,2020-12-12,"Las Vegas, Nevada, United States",UFC APEX,545
+RXZlbnROb2RlOjMyNDE=,3241,ufc-fight-night-183-thompson-vs-neal,UFC Fight Night 183: Thompson vs. Neal,2020-12-19,"Las Vegas, Nevada, United States",UFC APEX,546
+RXZlbnROb2RlOjMyNTE=,3251,ufc-on-abc-1-holloway-vs-kattar,UFC on ABC 1: Holloway vs. Kattar,2021-01-16,"Abu Dhabi, Dubai, United Arab Emirates",UFC Fight Island,547
+RXZlbnROb2RlOjMyOTM=,3293,ufc-fight-night-chiesa-vs-magny,UFC Fight Night: Chiesa vs. Magny,2021-01-20,"Abu Dhabi, Dubai, United Arab Emirates",UFC Fight Island,548
+RXZlbnROb2RlOjMyNjI=,3262,ufc-257-poirier-vs-mcgregor-2,UFC 257: Poirier vs. McGregor 2,2021-01-23,"Abu Dhabi, Dubai, United Arab Emirates",Etihad Arena,549
+RXZlbnROb2RlOjMyNjE=,3261,ufc-fight-night-184-overeem-vs-volkov,UFC Fight Night 184: Overeem vs. Volkov,2021-02-06,"Las Vegas, Nevada, United States",UFC APEX,550
+RXZlbnROb2RlOjMyNTg=,3258,ufc-258-usman-vs-burns,UFC 258: Usman vs. Burns,2021-02-13,"Las Vegas, Nevada, United States",UFC APEX,551
+RXZlbnROb2RlOjMyODg=,3288,ufc-fight-night-185-blaydes-vs-lewis,UFC Fight Night 185: Blaydes vs. Lewis,2021-02-20,"Las Vegas, Nevada, United States",UFC APEX,552
+RXZlbnROb2RlOjMyNzQ=,3274,ufc-fight-night-186-rozenstruik-vs-gane,UFC Fight Night 186: Rozenstruik vs. Gane,2021-02-27,"Las Vegas, Nevada, United States",UFC APEX,553
+RXZlbnROb2RlOjMyODU=,3285,ufc-259-blachowicz-vs-adesanya,UFC 259: Blachowicz vs. Adesanya,2021-03-06,"Las Vegas, Nevada, United States",UFC APEX,554
+RXZlbnROb2RlOjMyOTc=,3297,ufc-fight-night-187-edwards-vs-muhammad,UFC Fight Night 187: Edwards vs. Muhammad,2021-03-13,"Las Vegas, Nevada, United States",UFC APEX,555
+RXZlbnROb2RlOjMyOTI=,3292,ufc-fight-night-brunson-vs-holland,UFC Fight Night: Brunson vs. Holland,2021-03-20,"Las Vegas, Nevada, United States",UFC APEX,556
+RXZlbnROb2RlOjMzMTM=,3313,ufc-260-miocic-vs-ngannou-2,UFC 260: Miocic vs. Ngannou 2,2021-03-27,"Las Vegas, Nevada, United States",UFC APEX,557
+RXZlbnROb2RlOjMzMDM=,3303,ufc-on-abc-2-vettori-vs-holland,UFC on ABC 2: Vettori vs. Holland,2021-04-10,"Las Vegas, Nevada, United States",UFC APEX,558
+RXZlbnROb2RlOjMzMTc=,3317,ufc-fight-night-whittaker-vs-gastelum,UFC Fight Night: Whittaker vs. Gastelum,2021-04-17,"Las Vegas, Nevada, United States",UFC APEX,559
+RXZlbnROb2RlOjMzMjY=,3326,ufc-261-usman-vs-masvidal-2,UFC 261: Usman vs. Masvidal 2,2021-04-24,"Jacksonville, Florida, United States",VyStar Veterans Memorial Arena,560
+RXZlbnROb2RlOjM1MzQ=,3534,ufc-fight-night-reyes-vs-prochazka,UFC Fight Night: Reyes vs. Procházka,2021-05-01,"Las Vegas, Nevada, United States",UFC APEX,561
+RXZlbnROb2RlOjM1Mzk=,3539,ufc-fight-night-rodriguez-vs-waterson,UFC Fight Night: Rodriguez vs. Waterson,2021-05-08,"Las Vegas, Nevada, United States",UFC APEX,562
+RXZlbnROb2RlOjM1NDY=,3546,ufc-262-oliveira-vs-chandler,UFC 262: Oliveira vs. Chandler,2021-05-15,"Houston, Texas, United States",Toyota Center,563
+RXZlbnROb2RlOjM1NDc=,3547,ufc-fight-night-188-font-vs-garbrandt,UFC Fight Night 188: Font vs. Garbrandt,2021-05-22,"Las Vegas, Nevada, United States",UFC APEX,564
+RXZlbnROb2RlOjM1NjU=,3565,ufc-fight-night-189-rozenstruik-vs-sakai,UFC Fight Night 189: Rozenstruik vs. Sakai,2021-06-05,"Las Vegas, Nevada, United States",UFC APEX,565
+RXZlbnROb2RlOjM1NjE=,3561,ufc-263-adesanya-vs-vettori-2,UFC 263: Adesanya vs. Vettori 2,2021-06-12,"Glendale, Arizona, United States",Gila River Arena,566
+RXZlbnROb2RlOjM1NjM=,3563,ufc-fight-night-korean-zombie-vs-ige,UFC Fight Night: Korean Zombie vs. Ige,2021-06-19,"Las Vegas, Nevada, United States",UFC APEX,567
+RXZlbnROb2RlOjM1Njg=,3568,ufc-fight-night-190-gane-vs-volkov,UFC Fight Night 190: Gane vs. Volkov,2021-06-26,"Las Vegas, Nevada, United States",UFC APEX,568
+RXZlbnROb2RlOjM1ODU=,3585,ufc-264-poirier-vs-mcgregor-3,UFC 264: Poirier vs. McGregor 3,2021-07-10,"Las Vegas, Nevada, United States",T-Mobile Arena,569
+RXZlbnROb2RlOjM1ODY=,3586,ufc-fight-night-makhachev-vs-moises,UFC Fight Night: Makhachev vs. Moisés,2021-07-17,"Las Vegas, Nevada, United States",UFC APEX,570
+RXZlbnROb2RlOjM1OTk=,3599,ufc-fight-night-sandhagen-vs-dillashaw,UFC Fight Night: Sandhagen vs. Dillashaw,2021-07-24,"Las Vegas, Nevada, United States",UFC APEX,571
+RXZlbnROb2RlOjM2MDk=,3609,ufc-fight-night-hall-vs-strickland,UFC Fight Night: Hall vs. Strickland,2021-07-31,"Las Vegas, Nevada, United States",UFC APEX,572
+RXZlbnROb2RlOjM2MDc=,3607,ufc-265-lewis-vs-gane,UFC 265: Lewis vs. Gane,2021-08-07,"Houston, Texas, United States",Toyota Center,573
+RXZlbnROb2RlOjM2MzQ=,3634,ufc-fight-night-cannonier-vs-gastelum,UFC Fight Night: Cannonier vs. Gastelum,2021-08-21,"Las Vegas, Nevada, United States",UFC APEX,574
+RXZlbnROb2RlOjM2MzM=,3633,ufc-fight-night-barboza-vs-chikadze,UFC Fight Night: Barboza vs. Chikadze,2021-08-28,"Las Vegas, Nevada, United States",UFC APEX,575
+RXZlbnROb2RlOjM2MDQ=,3604,ufc-fight-night-191-brunson-vs-till,UFC Fight Night 191: Brunson vs. Till,2021-09-04,"Las Vegas, Nevada, United States",UFC APEX,576
+RXZlbnROb2RlOjM2NDA=,3640,ufc-fight-night-192-smith-vs-spann,UFC Fight Night 192: Smith vs. Spann,2021-09-18,"Las Vegas, Nevada, United States",UFC APEX,577
+RXZlbnROb2RlOjM2Mzc=,3637,ufc-266-volkanovski-vs-ortega,UFC 266: Volkanovski vs. Ortega,2021-09-25,"Las Vegas, Nevada, United States",T-Mobile Arena,578
+RXZlbnROb2RlOjM2NjM=,3663,ufc-fight-night-193-santos-vs-walker,UFC Fight Night 193: Santos vs. Walker,2021-10-02,"Las Vegas, Nevada, United States",UFC APEX,579
+RXZlbnROb2RlOjM2Nzg=,3678,ufc-fight-night-194-dern-vs-rodriguez,UFC Fight Night 194: Dern vs. Rodriguez,2021-10-09,"Las Vegas, Nevada, United States",UFC APEX,580
+RXZlbnROb2RlOjM2ODg=,3688,ufc-fight-night-195-ladd-vs-dumont,UFC Fight Night 195: Ladd vs. Dumont,2021-10-16,"Las Vegas, Nevada, United States",UFC APEX,581
+RXZlbnROb2RlOjM3MTM=,3713,ufc-fight-night-196-costa-vs-vettori,UFC Fight Night 196: Costa vs. Vettori,2021-10-23,"Las Vegas, Nevada, United States",UFC APEX,582
+RXZlbnROb2RlOjM2ODE=,3681,ufc-267-blachowicz-vs-teixeira,UFC 267: Blachowicz vs. Teixeira,2021-10-30,"Abu Dhabi, Dubai, United Arab Emirates",Etihad Arena,583
+RXZlbnROb2RlOjM3MTc=,3717,ufc-268-usman-vs-covington-2,UFC 268: Usman vs. Covington 2,2021-11-06,"New York City, New York, United States",Madison Square Garden,584
+RXZlbnROb2RlOjM3Mjg=,3728,ufc-fight-night-197-holloway-vs-rodriguez,UFC Fight Night 197: Holloway vs. Rodriguez,2021-11-13,"Las Vegas, Nevada, United States",UFC APEX,585
+RXZlbnROb2RlOjM3Mjc=,3727,ufc-fight-night-198-vieira-vs-tate,UFC Fight Night 198: Vieira vs. Tate,2021-11-20,"Las Vegas, Nevada, United States",UFC APEX,586
+RXZlbnROb2RlOjM3NDc=,3747,ufc-fight-night-font-vs-aldo,UFC Fight Night: Font vs. Aldo,2021-12-04,"Las Vegas, Nevada, United States",UFC APEX,587
+RXZlbnROb2RlOjM3MjY=,3726,ufc-269-oliveira-vs-poirier,UFC 269: Oliveira vs. Poirier,2021-12-11,"Las Vegas, Nevada, United States",T-Mobile Arena,588
+RXZlbnROb2RlOjM3Mzg=,3738,ufc-fight-night-199-lewis-vs-daukaus,UFC Fight Night 199: Lewis vs. Daukaus,2021-12-18,"Las Vegas, Nevada, United States",UFC APEX,589
+RXZlbnROb2RlOjM3NjI=,3762,ufc-fight-night-kattar-vs-chikadze,UFC Fight Night: Kattar vs. Chikadze,2022-01-15,"Las Vegas, Nevada, United States",UFC APEX,590
+RXZlbnROb2RlOjM3NjM=,3763,ufc-270-ngannou-vs-gane,UFC 270: Ngannou vs. Gane,2022-01-22,"Anaheim, California, United States",Honda Center,591
+RXZlbnROb2RlOjM3NzM=,3773,ufc-fight-night-200-hermansson-vs-strickland,UFC Fight Night 200: Hermansson vs. Strickland,2022-02-05,"Las Vegas, Nevada, United States",UFC APEX,592
+RXZlbnROb2RlOjM3ODE=,3781,ufc-271-adesanya-vs-whittaker-2,UFC 271: Adesanya vs. Whittaker 2,2022-02-12,"Houston, Texas, United States",Toyota Center,593
+RXZlbnROb2RlOjM3OTE=,3791,ufc-fight-night-201-walker-vs-hill,UFC Fight Night 201: Walker vs. Hill,2022-02-19,"Las Vegas, Nevada, United States",UFC APEX,594
+RXZlbnROb2RlOjM3OTI=,3792,ufc-fight-night-202-makhachev-vs-green,UFC Fight Night 202: Makhachev vs. Green,2022-02-26,"Las Vegas, Nevada, United States",UFC APEX,595
+RXZlbnROb2RlOjM4MTU=,3815,ufc-272-covington-vs-masvidal,UFC 272: Covington vs. Masvidal,2022-03-05,"Las Vegas, Nevada, United States",T-Mobile Arena,596
+RXZlbnROb2RlOjM4MDk=,3809,ufc-fight-night-203-santos-vs-ankalaev,UFC Fight Night 203: Santos vs. Ankalaev,2022-03-12,"Las Vegas, Nevada, United States",UFC APEX,597
+RXZlbnROb2RlOjM3OTk=,3799,ufc-fight-night-204-volkov-vs-aspinall,UFC Fight Night 204: Volkov vs. Aspinall,2022-03-19,"London, England",02 Arena,598
+RXZlbnROb2RlOjM4MDY=,3806,ufc-fight-night-blaydes-vs-daukaus,UFC Fight Night: Blaydes vs. Daukaus,2022-03-26,"Columbus, Ohio, United States",Nationwide Arena,599
+RXZlbnROb2RlOjM4MzY=,3836,ufc-273-volkanovski-vs-korean-zombie,UFC 273: Volkanovski vs. Korean Zombie,2022-04-09,"Jacksonville, Florida, United States",VyStar Veterans Memorial Arena,600
+RXZlbnROb2RlOjM4NTI=,3852,ufc-fight-night-luque-vs-muhammad-2,UFC Fight Night: Luque vs. Muhammad 2,2022-04-16,"Las Vegas, Nevada, United States",UFC APEX,601
+RXZlbnROb2RlOjM4Njk=,3869,ufc-fight-night-205-lemos-vs-andrade,UFC Fight Night 205: Lemos vs. Andrade,2022-04-23,"Las Vegas, Nevada, United States",UFC APEX,602
+RXZlbnROb2RlOjM4Nzc=,3877,ufc-fight-night-font-vs-vera,UFC Fight Night: Font vs. Vera,2022-04-30,"Las Vegas, Nevada, United States",UFC APEX,603
+RXZlbnROb2RlOjM4MzM=,3833,ufc-274-oliveira-vs-gaethje,UFC 274: Oliveira vs. Gaethje,2022-05-07,"Phoenix, Arizona",Footprint Center,604
+RXZlbnROb2RlOjM4NTY=,3856,ufc-fight-night-bachowicz-vs-rakic,UFC Fight Night: Błachowicz vs. Rakić,2022-05-14,"Las Vegas, Nevada, United States",UFC APEX,605
+RXZlbnROb2RlOjM4OTA=,3890,ufc-fight-night-206-holm-vs-vieira,UFC Fight Night 206: Holm vs. Vieira,2022-05-21,"Las Vegas, Nevada, United States",UFC APEX,606
+RXZlbnROb2RlOjM4OTk=,3899,ufc-fight-night-207-volkov-vs-rozenstruik,UFC Fight Night 207: Volkov vs. Rozenstruik,2022-06-04,"Las Vegas, Nevada, United States",UFC APEX,607
+RXZlbnROb2RlOjM5MTI=,3912,ufc-275-teixeira-vs-prochazka,UFC 275: Teixeira vs. Procházka,2022-06-11,Singapore,Singapore Indoor Stadium,608
+RXZlbnROb2RlOjM5NzI=,3972,ufc-fight-night-kattar-vs-emmett,UFC Fight Night: Kattar vs. Emmett,2022-06-18,"Austin, Texas, United States",Moody Center,609
+RXZlbnROb2RlOjM5NjU=,3965,ufc-fight-night-tsarukyan-vs-gamrot,UFC Fight Night: Tsarukyan vs. Gamrot,2022-06-25,"Las Vegas, Nevada, United States",UFC APEX,610
+RXZlbnROb2RlOjM4ODY=,3886,ufc-276-adesanya-vs-cannonier,UFC 276: Adesanya vs. Cannonier,2022-07-02,"Las Vegas, Nevada, United States",T-Mobile Arena,611
+RXZlbnROb2RlOjM5ODA=,3980,ufc-fight-night-dos-anjos-vs-fiziev,UFC Fight Night: Dos Anjos vs. Fiziev,2022-07-09,"Las Vegas, Nevada, United States",UFC APEX,612
+RXZlbnROb2RlOjM5ODg=,3988,ufc-on-abc-3-ortega-vs-rodriguez,UFC on ABC 3: Ortega vs. Rodriguez,2022-07-16,"Long Island, New York, United States",UBS Arena,613
+RXZlbnROb2RlOjQwMDc=,4007,ufc-fight-night-blaydes-vs-aspinall,UFC Fight Night: Blaydes vs. Aspinall,2022-07-23,"London, England, United Kingdom",02 Arena,614
+RXZlbnROb2RlOjM5NjQ=,3964,ufc-277-pena-vs-nunes-2,UFC 277: Peña vs. Nunes 2,2022-07-30,"Dallas, Texas, United States",American Airlines Center,615
+RXZlbnROb2RlOjQwNDA=,4040,ufc-fight-night-santos-vs-hill,UFC Fight Night: Santos vs. Hill,2022-08-06,"Las Vegas, Nevada, United States",UFC APEX,616
+RXZlbnROb2RlOjQwNDg=,4048,ufc-fight-night-vera-vs-cruz,UFC Fight Night: Vera vs. Cruz,2022-08-13,"San Diego, California, United States",Pechanga Arena,617
+RXZlbnROb2RlOjQwNDc=,4047,ufc-278-usman-vs-edwards-2,UFC 278: Usman vs. Edwards 2,2022-08-20,"Salt Lake City, Utah, United States",Vivint Arena,618
+RXZlbnROb2RlOjQwMzI=,4032,ufc-fight-night-gane-vs-tuivasa,UFC Fight Night: Gane vs. Tuivasa,2022-09-03,"Paris, France",Accor Arena,619
+RXZlbnROb2RlOjQwNTE=,4051,ufc-279-diaz-vs-ferguson,UFC 279: Diaz vs. Ferguson,2022-09-10,"Las Vegas, Nevada",T-Mobile Arena,620
+RXZlbnROb2RlOjQyNzk=,4279,ufc-fight-night-sandhagen-vs-song,UFC Fight Night: Sandhagen vs. Song,2022-09-17,"Las Vegas, Nevada, United States",UFC APEX,621
+RXZlbnROb2RlOjQyNTc=,4257,ufc-fight-night-dern-vs-yan,UFC Fight Night: Dern vs. Yan,2022-10-01,"Las Vegas, Nevada, United States",UFC Apex,622
+RXZlbnROb2RlOjQzMTg=,4318,ufc-fight-night-grasso-vs-araujo,UFC Fight Night: Grasso vs. Araujo,2022-10-15,"Las Vegas, Nevada, United States",UFC Apex,623
+RXZlbnROb2RlOjM5MzQ=,3934,ufc-280-oliveira-vs-makhachev,UFC 280: Oliveira vs. Makhachev,2022-10-22,"Abu Dhabi, Dubai, United Arab Emirates",Etihad Arena,624
+RXZlbnROb2RlOjQzMzA=,4330,ufc-fight-night-kattar-vs-allen,UFC Fight Night: Kattar vs. Allen,2022-10-29,"Las Vegas, Nevada, United States",UFC APEX,625
+RXZlbnROb2RlOjQzMzE=,4331,ufc-fight-night-rodriguez-vs-lemos,UFC Fight Night: Rodriguez vs. Lemos,2022-11-05,"Las Vegas, Nevada, United States",UFC Apex,626
+RXZlbnROb2RlOjQzMzI=,4332,ufc-281-adesanya-vs-pereira,UFC 281: Adesanya vs. Pereira,2022-11-12,"New York City, New York, United States",Madison Square Garden,627
+RXZlbnROb2RlOjQzMzM=,4333,ufc-fight-night-lewis-vs-spivak,UFC Fight Night: Lewis vs. Spivak,2022-11-19,"Las Vegas, Nevada, United States",UFC Apex,628
+RXZlbnROb2RlOjQzMzQ=,4334,ufc-fight-night-thompson-vs-holland,UFC Fight Night: Thompson vs. Holland,2022-12-03,"Orlando, Florida, United States",Amway Center,629
+RXZlbnROb2RlOjQzMzU=,4335,ufc-282-bachowicz-vs-ankalaev,UFC 282: Błachowicz vs. Ankalaev,2022-12-10,"Las Vegas, Nevada",T-Mobile Arena,630
+RXZlbnROb2RlOjQzMzY=,4336,ufc-fight-night-cannonier-vs-strickland,UFC Fight Night: Cannonier vs. Strickland,2022-12-17,"Las Vegas, Nevada, United States",UFC Apex,631
+RXZlbnROb2RlOjQ0MjY=,4426,ufc-fight-night-strickland-vs-imavov,UFC Fight Night: Strickland vs. Imavov,2023-01-14,"Las Vegas, Nevada, United States",UFC Apex,632
+RXZlbnROb2RlOjQzODI=,4382,ufc-283-teixeira-vs-hill,UFC 283: Teixeira vs. Hill,2023-01-21,"Rio de Janeiro, Rio de Janeiro, Brazil",Jeunesse Arena,633
+RXZlbnROb2RlOjQ0NDE=,4441,ufc-fight-night-lewis-vs-spivac,UFC Fight Night: Lewis vs. Spivac,2023-02-04,"Las Vegas, Nevada, United States",UFC Apex,634
+RXZlbnROb2RlOjQ0Mzg=,4438,ufc-284-makhachev-vs-volkanovski,UFC 284: Makhachev vs. Volkanovski,2023-02-11,"Perth, Western Australia",RAC Arena,635
+RXZlbnROb2RlOjQ0NjA=,4460,ufc-fight-night-andrade-vs-blanchfield,UFC Fight Night: Andrade vs. Blanchfield,2023-02-18,"Las Vegas, Nevada, United States",UFC Apex,636
+RXZlbnROb2RlOjQ0Njk=,4469,ufc-fight-night-krylov-vs-spann,UFC Fight Night: Krylov vs. Spann,2023-02-25,"Las Vegas, Nevada, United States",UFC Apex,637
+RXZlbnROb2RlOjQ0NTA=,4450,ufc-285-jones-vs-gane,UFC 285: Jones vs. Gane,2023-03-04,"Las Vegas, Nevada, United States",T-Mobile Arena,638
+RXZlbnROb2RlOjQ0ODY=,4486,ufc-fight-night-yan-vs-dvalishvili,UFC Fight Night: Yan vs. Dvalishvili,2023-03-11,"Las Vegas, Nevada, United States",The Theater at Virgin Hotels,639
+RXZlbnROb2RlOjQ0ODM=,4483,ufc-286-edwards-vs-usman-3,UFC 286: Edwards vs. Usman 3,2023-03-18,"London, England",O2 Arena,640
+RXZlbnROb2RlOjQ1MDE=,4501,ufc-fight-night-vera-vs-sandhagen,UFC Fight Night: Vera vs. Sandhagen,2023-03-25,"San Antonio, Texas, United States",AT&T Center,641
+RXZlbnROb2RlOjQ1NTY=,4556,ufc-287-pereira-vs-adesanya-2,UFC 287: Pereira vs Adesanya 2,2023-04-08,"Miami, Florida, United States",Miami-Dade Arena,642
+RXZlbnROb2RlOjQ1ODA=,4580,ufc-fight-night-holloway-vs-allen,UFC Fight Night: Holloway vs. Allen,2023-04-15,"Kansas City, Missouri",T-Mobile Center,643
+RXZlbnROb2RlOjQ1Nzk=,4579,ufc-fight-night-pavlovich-vs-blaydes,UFC Fight Night: Pavlovich vs. Blaydes,2023-04-22,"Las Vegas, Nevada, United States",UFC Apex,644
+RXZlbnROb2RlOjQ1OTI=,4592,ufc-fight-night-song-vs-simon,UFC Fight Night: Song vs. Simón,2023-04-29,"Las Vegas, Nevada, United States",UFC Apex,645
+RXZlbnROb2RlOjQ1OTQ=,4594,ufc-288-sterling-vs-cejudo,UFC 288: Sterling vs. Cejudo,2023-05-06,"Newark, New Jersey, United States",Prudential Center,646
+RXZlbnROb2RlOjQ2MTU=,4615,ufc-on-abc-4-rozenstruik-vs-almeida,UFC on ABC 4: Rozenstruik vs. Almeida,2023-05-13,"Charlotte, North Carolina, United States",Spectrum Center,647
+RXZlbnROb2RlOjQ2Mjc=,4627,ufc-fight-night-dern-vs-hill,UFC Fight Night: Dern vs. Hill,2023-05-20,"Las Vegas, Nevada, United States",UFC Apex,648
+RXZlbnROb2RlOjQ2NDM=,4643,ufc-fight-night-kara-france-vs-albazi,UFC Fight Night: Kara-France vs. Albazi,2023-06-03,"Las Vegas, Nevada, United States",UFC Apex,649
+RXZlbnROb2RlOjQ2NTQ=,4654,ufc-289-nunes-vs-aldana,UFC 289: Nunes vs. Aldana,2023-06-10,"Vancouver, British Columbia, Canada",Rogers Arena,650
+RXZlbnROb2RlOjQ2NjY=,4666,ufc-fight-night-vettori-vs-cannonier,UFC Fight Night: Vettori vs. Cannonier,2023-06-17,"Las Vegas, Nevada, United States",UFC Apex,651
+RXZlbnROb2RlOjQ2Njg=,4668,ufc-on-abc-5-emmett-vs-topuria,UFC on ABC 5: Emmett vs. Topuria,2023-06-24,"Jacksonville, Florida, United States",VyStar Veterans Memorial Arena,652
+RXZlbnROb2RlOjQ2OTY=,4696,ufc-fight-night-strickland-vs-magomedov,UFC Fight Night: Strickland vs. Magomedov,2023-07-01,"Las Vegas, Nevada, United States",UFC Apex,653
+RXZlbnROb2RlOjQ2MzQ=,4634,ufc-290-volkanovski-vs-rodriguez,UFC 290: Volkanovski vs. Rodriguez,2023-07-08,"Las Vegas, Nevada, United States",T-Mobile Arena,654
+RXZlbnROb2RlOjQ3MDI=,4702,ufc-fight-night-holm-vs-bueno-silva,UFC Fight Night: Holm vs. Bueno Silva,2023-07-15,"Las Vegas, Nevada, United States",UFC Apex,655
+RXZlbnROb2RlOjQ2NzE=,4671,ufc-fight-night-224-aspinall-vs-tybura,UFC Fight Night 224: Aspinall vs. Tybura,2023-07-22,"London, England",O2 Arena,656
+RXZlbnROb2RlOjQ3NDQ=,4744,ufc-291-poirier-vs-gaethje-2,UFC 291: Poirier vs. Gaethje 2,2023-07-29,"Salt Lake City, Utah, United States",Vivint Arena,657
+RXZlbnROb2RlOjQ3NTE=,4751,ufc-fight-night-sandhagen-vs-font,UFC Fight Night: Sandhagen vs. Font,2023-08-05,"Nashville, Tennessee, United States",Bridgestone Arena,658
+RXZlbnROb2RlOjQ3Mzg=,4738,ufc-fight-night-luque-vs-dos-anjos,UFC Fight Night: Luque vs. Dos Anjos,2023-08-12,"Las Vegas, Nevada, United States",UFC Apex,659
+RXZlbnROb2RlOjQ3Mjc=,4727,ufc-292-sterling-vs-omalley,UFC 292: Sterling vs. O'Malley,2023-08-19,"Boston, Massachusetts, United States",TD Garden,660
+RXZlbnROb2RlOjQ3NTU=,4755,ufc-fight-night-holloway-vs-korean-zombie,UFC Fight Night: Holloway vs. Korean Zombie,2023-08-26,Singapore,Singapore Indoor Stadium,661
+RXZlbnROb2RlOjQ4MDI=,4802,ufc-fight-night-gane-vs-spivac,UFC Fight Night: Gane vs. Spivac,2023-09-02,"Paris, France",Accor Arena,662
+RXZlbnROb2RlOjQ3NDk=,4749,ufc-293-adesanya-vs-strickland,UFC 293: Adesanya vs. Strickland,2023-09-09,"Sydney, New South Wales, Australia",Qudos Bank Arena,663
+RXZlbnROb2RlOjQ3NzQ=,4774,ufc-fight-night-grasso-vs-shevchenko-2,UFC Fight Night: Grasso vs. Shevchenko 2,2023-09-16,"Las Vegas, Nevada, United States",T-Mobile Arena,664
+RXZlbnROb2RlOjQ3NzU=,4775,ufc-fight-night-fiziev-vs-gamrot,UFC Fight Night: Fiziev vs. Gamrot,2023-09-23,"Las Vegas, Nevada, United States",UFC Apex,665
+RXZlbnROb2RlOjQ3NzY=,4776,ufc-fight-night-dawson-vs-green,UFC Fight Night: Dawson vs. Green,2023-10-07,"Las Vegas, Nevada, United States",UFC Apex,666
+RXZlbnROb2RlOjUxMDc=,5107,ufc-fight-night-230-yusuff-vs-barboza,UFC Fight Night 230: Yusuff vs. Barboza,2023-10-14,"Las Vegas, Nevada, United States",UFC Apex,667
+RXZlbnROb2RlOjQ2NTU=,4655,ufc-294-makhachev-vs-volkanovski-2,UFC 294: Makhachev vs. Volkanovski 2,2023-10-21,"Abu Dhabi, United Arab Emirates",Etihad Arena,668
+RXZlbnROb2RlOjQ3Nzc=,4777,ufc-fight-night-almeida-vs-lewis,UFC Fight Night: Almeida vs. Lewis,2023-11-04,"Sao Paulo, Brazil",Ibirapuera Gymnasium,669
+RXZlbnROb2RlOjUwOTg=,5098,ufc-295-prochazka-vs-pereira,UFC 295: Procházka vs. Pereira,2023-11-11,"New York City, New York, United States",Madison Square Garden,670
+RXZlbnROb2RlOjQ3Nzg=,4778,ufc-fight-night-allen-vs-craig,UFC Fight Night: Allen vs. Craig,2023-11-18,"Las Vegas, Nevada, United States",UFC Apex,671
+RXZlbnROb2RlOjUyNTE=,5251,ufc-fight-night-dariush-vs-tsarukyan,UFC Fight Night: Dariush vs. Tsarukyan,2023-12-02,"Austin, Texas, United States",Moody Center,672
+RXZlbnROb2RlOjUyODE=,5281,ufc-fight-night-song-vs-gutierrez,UFC Fight Night: Song vs. Gutierrez,2023-12-09,"Last Vegas, Nevada, United States",UFC Apex,673
+RXZlbnROb2RlOjQ3Nzk=,4779,ufc-296-edwards-vs-covington,UFC 296: Edwards vs. Covington,2023-12-16,"Las Vegas, Nevada, United States",T-Mobile Arena,674
+RXZlbnROb2RlOjUyOTM=,5293,ufc-fight-night-ankalaev-vs-walker,UFC Fight Night: Ankalaev vs. Walker,2024-01-13,"Las Vegas, Nevada, United States",UFC Apex,675
+RXZlbnROb2RlOjUzMDY=,5306,ufc-297-strickland-vs-du-plessis,UFC 297: Strickland vs. Du Plessis,2024-01-20,"Toronto, Ontario, Canada",Scotiabank Arena,676
+RXZlbnROb2RlOjUzNDc=,5347,ufc-fight-night-dolidze-vs-imavov,UFC Fight Night: Dolidze vs. Imavov,2024-02-03,"Las Vegas, Nevada, United States",UFC Apex,677
+RXZlbnROb2RlOjUzNTg=,5358,ufc-fight-night-hermansson-vs-pyfer,UFC Fight Night: Hermansson vs. Pyfer,2024-02-10,"Las Vegas, Nevada, United States",UFC Apex,678
+RXZlbnROb2RlOjUzNTU=,5355,ufc-298-volkanovski-vs-topuria,UFC 298: Volkanovski vs. Topuria,2024-02-17,"Anaheim, California, United States",Honda Center,679
+RXZlbnROb2RlOjUzNjI=,5362,ufc-fight-night-moreno-vs-royval-2,UFC Fight Night: Moreno vs. Royval 2,2024-02-24,"Mexico City, Mexico",Arena CDMX,680
+RXZlbnROb2RlOjUzMTg=,5318,ufc-fight-night-rozenstruik-vs-gaziev,UFC Fight Night: Rozenstruik vs. Gaziev,2024-03-02,"Las Vegas, Nevada, United States",UFC Apex,681
+RXZlbnROb2RlOjUzNTY=,5356,ufc-299-omalley-vs-vera-2,UFC 299: O'Malley vs. Vera 2,2024-03-09,"Miami, Florida, United States",Kaseya Center,682
+RXZlbnROb2RlOjU0MDI=,5402,ufc-fight-night-tuivasa-vs-tybura,UFC Fight Night: Tuivasa vs. Tybura,2024-03-16,"Las Vegas, Nevada, United States",UFC Apex,683
+RXZlbnROb2RlOjUzOTQ=,5394,ufc-on-espn-53-ribas-vs-namajunas,UFC on ESPN 53: Ribas vs. Namajunas,2024-03-23,"Las Vegas, Nevada, United States",UFC Apex,684
+RXZlbnROb2RlOjUzODI=,5382,ufc-on-espn-54-blanchfield-vs-fiorot,UFC on ESPN 54: Blanchfield vs. Fiorot,2024-03-30,"Atlantic City, New Jersey, United States",Boardwalk Hall,685
+RXZlbnROb2RlOjU0MjQ=,5424,ufc-fight-night-240-allen-vs-curtis-2,UFC Fight Night 240: Allen vs. Curtis 2,2024-04-06,"Las Vegas, Nevada, United States",UFC Apex,686
+RXZlbnROb2RlOjU0MTY=,5416,ufc-300-pereira-vs-hill,UFC 300: Pereira vs. Hill,2024-04-13,"Las Vegas, Nevada, United States",T-Mobile Arena,687
+RXZlbnROb2RlOjU0Nzc=,5477,ufc-fight-night-nicolau-vs-perez,UFC Fight Night: Nicolau vs. Perez,2024-04-27,"Las Vegas, Nevada, United States",UFC Apex,688
+RXZlbnROb2RlOjU0NzU=,5475,ufc-301-pantoja-vs-erceg,UFC 301: Pantoja vs. Erceg,2024-05-04,"Rio de Janeiro, Brazil",Jeunesse Arena,689
+RXZlbnROb2RlOjU1MTU=,5515,ufc-fight-night-lewis-vs-nascimento,UFC Fight Night: Lewis vs. Nascimento,2024-05-11,"St. Louis, Missouri, United States",Enterprise Center,690
+RXZlbnROb2RlOjU1MTQ=,5514,ufc-fight-night-barboza-vs-murphy,UFC Fight Night: Barboza vs. Murphy,2024-05-18,"Las Vegas, Nevada, United States",UFC Apex,691
+RXZlbnROb2RlOjU1MTM=,5513,ufc-302-makhachev-vs-poirier,UFC 302: Makhachev vs. Poirier,2024-06-01,"Newark, New Jersey, United States",Prudential Center,692
+RXZlbnROb2RlOjU1NzU=,5575,ufc-fight-night-cannonier-vs-imavov,UFC Fight Night: Cannonier vs. Imavov,2024-06-08,"Las Vegas, Nevada, United States",UFC Apex,693
+RXZlbnROb2RlOjU1ODA=,5580,ufc-fight-night-perez-vs-taira,UFC Fight Night: Perez vs. Taira,2024-06-15,"Las Vegas, Nevada, United States",UFC Apex,694
+RXZlbnROb2RlOjU0ODY=,5486,ufc-fight-night-whittaker-vs-aliskerov,UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,"Riyadh, Saudi Arabia",Kingdom Arena,695
+RXZlbnROb2RlOjU0MzQ=,5434,ufc-303-pereira-vs-prochazka-2,UFC 303: Pereira vs. Procházka 2,2024-06-29,"Las Vegas, Nevada, United States",T-Mobile Arena,696
+RXZlbnROb2RlOjU1ODk=,5589,ufc-fight-night-namajunas-vs-cortez,UFC Fight Night: Namajunas vs. Cortez,2024-07-13,"Las Vegas, Nevada, United States",UFC Apex,697
+RXZlbnROb2RlOjU3NjI=,5762,ufc-fight-night-lemos-vs-jandiroba,UFC Fight Night: Lemos vs. Jandiroba,2024-07-20,"Las Vegas, Nevada, United States",UFC Apex,698
+RXZlbnROb2RlOjU3NjY=,5766,ufc-304-edwards-vs-muhammad-2,UFC 304: Edwards vs. Muhammad 2,2024-07-27,"Manchester, England",Co-op Live,699
+RXZlbnROb2RlOjU1NTA=,5550,ufc-fight-night-sandhagen-vs-nurmagomedov,UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,"Abu Dhabi, United Arab Emirates",Etihad Arena,700
+RXZlbnROb2RlOjU3NjE=,5761,ufc-fight-night-tybura-vs-spivac-2,UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,"Las Vegas, Nevada, United States",UFC Apex,701
+RXZlbnROb2RlOjU1OTA=,5590,ufc-305-du-plessis-vs-adesanya,UFC 305: Du Plessis vs. Adesanya,2024-08-17,"Perth, Western Australia, Australia",RAC Arena,702
+RXZlbnROb2RlOjU4NDk=,5849,ufc-fight-night-cannonier-vs-borralho,UFC Fight Night: Cannonier vs. Borralho,2024-08-24,"Las Vegas, Nevada, United States",UFC Apex,703
+RXZlbnROb2RlOjU4MzU=,5835,ufc-fight-night-burns-vs-brady,UFC Fight Night: Burns vs. Brady,2024-09-07,"Las Vegas, Nevada, United States",UFC Apex,704
+RXZlbnROb2RlOjU0MTQ=,5414,ufc-306-omalley-vs-dvalishvili,UFC 306: O'Malley vs. Dvalishvili,2024-09-14,"Las Vegas, Nevada, United States",The Sphere,705
+RXZlbnROb2RlOjU1ODE=,5581,ufc-fight-night-moicano-vs-saint-denis,UFC Fight Night: Moicano vs. Saint-Denis,2024-09-28,"Paris, France",Accor Arena,706
+RXZlbnROb2RlOjU4MzQ=,5834,ufc-307-pereira-vs-rountree,UFC 307: Pereira vs. Rountree,2024-10-05,"Salt Lake City, Utah, United States",Delta Center,707
+RXZlbnROb2RlOjU4OTg=,5898,ufc-fight-night-royval-vs-taira,UFC Fight Night: Royval vs. Taira,2024-10-12,"Las Vegas, Nevada, United States",UFC Apex,708
+RXZlbnROb2RlOjU5MTc=,5917,ufc-fight-night-pereira-vs-hernandez,UFC Fight Night: Pereira vs. Hernandez,2024-10-19,"Las Vegas, Nevada, United States",UFC Apex,709
+RXZlbnROb2RlOjU2MTE=,5611,ufc-308-topuria-vs-holloway,UFC 308: Topuria vs. Holloway,2024-10-26,"Yas Island, Abu Dhabi, United Arab Emirates",Etihad Arena,710
+RXZlbnROb2RlOjU5MTk=,5919,ufc-fight-night-moreno-vs-albazi,UFC Fight Night: Moreno vs. Albazi,2024-11-03,"Las Vegas, Nevada, United States",UFC Apex,711
+RXZlbnROb2RlOjU5MjI=,5922,ufc-fight-night-magny-vs-prates,UFC Fight Night: Magny vs. Prates,2024-11-09,"Las Vegas, Nevada, United States",UFC Apex,712
+RXZlbnROb2RlOjU5Mjk=,5929,ufc-309-jones-vs-miocic,UFC 309: Jones vs. Miocic,2024-11-16,"New York, New York, United States",Madison Square Garden,713
+RXZlbnROb2RlOjU5Mzg=,5938,ufc-fight-night-yan-vs-figueiredo,UFC Fight Night: Yan vs. Figueiredo,2024-11-23,"Macau, China",Galaxy Arena,714
+RXZlbnROb2RlOjU5MzQ=,5934,ufc-310-pantoja-vs-asakura,UFC 310: Pantoja vs. Asakura,2024-12-07,"Las Vegas, Nevada, United States",T-Mobile Arena,715
+RXZlbnROb2RlOjU5Mzk=,5939,ufc-fight-night-covington-vs-buckley,UFC Fight Night: Covington vs. Buckley,2024-12-14,"Tampa, Florida, United States",Amalie Arena,716
