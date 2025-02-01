@@ -1,4 +1,4 @@
-id,event_id,bout_order,red_fighter_id,blue_fighter_id,winner_id,card_segment
+id,event_id,bout_order,fighter_1_id,fighter_2_id,winner_id,card_segment
 158192,400255729,1,2335738,2504081,2335738,Main Card
 158194,400255729,2,2335728,2504082,2504082,Main Card
 158196,400255729,3,2335697,2335638,2335697,Main Card
