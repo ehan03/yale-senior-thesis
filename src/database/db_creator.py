@@ -4,10 +4,10 @@ import os
 
 # third party imports
 import pandas as pd
+from sqlalchemy import create_engine
 
 # local imports
-from data_models import Base
-from sqlalchemy import create_engine
+from .data_models import Base
 
 
 class DatabaseCreator:
