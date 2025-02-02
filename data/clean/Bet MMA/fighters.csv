@@ -25,7 +25,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 24,1ed32eaaba9ffe10,83505,Jumabieke Tuerxun,66.0,67.0,Orthodox,China
 25,81801f57bd0a7c41,21618,Marcus Brimage,64.0,71.0,Southpaw,United States
 26,cf65d56b0755ed3b,65878,Alan Jouban,72.0,73.5,Southpaw,United States
-27,6f7c616b98e18c29,258,Claudio Silva,71.0,71.0,Southpaw,Brazil
+27,6f7c616b98e18c29,25830,Claudio Silva,71.0,71.0,Southpaw,Brazil
 28,f1fac969a1d70b08,62665,Leon Edwards,72.0,74.0,Southpaw,England
 29,75a6a390fd5dca46,73710,Juliana Lima,65.0,65.5,Orthodox,Brazil
 30,d343df8ba11f4c4e,69632,Nina Nunes,65.0,64.0,Orthodox,United States
@@ -94,7 +94,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 93,05b43e0ead3df345,62703,Kailin Curran,64.0,65.0,Orthodox,United States
 94,4d5197f331c47290,99019,Paige VanZant,64.0,65.0,Orthodox,United States
 95,e93b04e308913c2e,56689,Doo Ho Choi,69.0,67.0,Orthodox,South Korea
-96,e93b04e308913c2e,44638,Juan Manuel Puig,69.0,72.0,Orthodox,Mexico
+96,85d0fafb8b75d634,44638,Juan Manuel Puig,69.0,72.0,Orthodox,Mexico
 97,f2925e6db404bf1d,2245,Robbie Lawler,71.0,74.0,Southpaw,United States
 98,0941df56f6ac954b,24539,Johny Hendricks,69.0,69.0,Southpaw,United States
 99,cbb682f5fcc44bfc,26627,Anthony Pettis,70.0,73.0,Switches (Mostly Southpaw),United States
@@ -216,10 +216,10 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 216,c742287ed86a09bc,21247,Jessica Penne,65.0,67.0,Orthodox,United States
 217,4a57ebb14315b251,75417,Randa Markos,64.0,63.5,Orthodox,Canada
 218,81b8b3fb019dc69d,46759,Antonio Dos Santos Jr.,70.0,72.0,Orthodox,Brazil
-219,08af939f41b5a57b,56583,Renato Moicano,71.0,72.0,Orthodox,Brazil
+219,b6452706b373eea1,61700,Renato Moicano,71.0,72.0,Orthodox,Brazil
 220,f4c49976c75c5ab2,29688,Conor McGregor,69.0,74.0,Southpaw,Ireland
 221,5f87a5c00b3d17ed,9817,Dennis Siver,67.0,70.0,Orthodox,Germany
-222,3a8176e15b9887c1,9265,Eddie Alvarez,69.0,69.0,Orthodox,United States
+222,33a331684283900f,9265,Eddie Alvarez,69.0,69.0,Orthodox,United States
 223,2676b28836a5a836,20548,Benson Henderson,69.0,70.0,Southpaw,United States
 224,65578a75fa7900e3,14210,Urijah Hall,72.0,79.5,Switches (Mostly Orthodox),United States
 225,05560764359161e4,32432,Costas Philippou,71.0,73.0,Orthodox,United States
@@ -258,7 +258,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 258,6e0273f9478be71e,31978,Kenny Robertson,70.0,74.0,Orthodox,United States
 259,e70de1859b7ee78e,89761,Sultan Aliev,72.0,71.0,Orthodox,Russia
 260,87a1dc546b1c5caf,69406,Makwan Amirkhani,70.0,72.0,Southpaw,Finland
-261,b6c4451cb13c9303,69406,Andy Ogle,68.0,69.0,Orthodox,England
+261,b6c4451cb13c9303,42659,Andy Ogle,68.0,69.0,Orthodox,England
 262,1091d4d957141094,110937,Nikita Krylov,75.0,77.5,Orthodox,Ukraine
 263,1d4bbaabd8b60173,27115,Stanislav Nedkov,71.0,71.0,Orthodox,Bulgaria
 264,67a992d4cff22466,98419,Ericka Almeida,67.0,68.5,Orthodox,Brazil
@@ -310,7 +310,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 310,fe5a9547479396ab,36581,Jim Alers,69.0,73.0,Orthodox,United States
 311,4bd6b4800070b069,47227,Chas Skelly,71.0,73.0,Orthodox,United States
 312,c96d9178c9ed9e62,49213,Tim Elliott,67.0,66.5,Southpaw,United States
-313,57ab4d7c0bc09a30,55159,Zach Makovsky,64.0,64.0,Southpaw,United States
+313,57ab4d7c0bc09a30,20522,Zach Makovsky,64.0,64.0,Southpaw,United States
 314,33e00249ef08d3a4,57214,Jake Lindsey,71.0,72.5,Orthodox,United States
 315,c06a9b48d4132c8e,36889,James Moontasri,70.0,71.0,Switches (Mostly Orthodox),United States
 316,5904b0b38dc6718d,48481,Cody Pfister,70.0,73.0,Switches (Mostly Orthodox),United States
@@ -327,8 +327,8 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 327,6a1901c62ab3870f,100715,Jessica Andrade,62.0,62.0,Orthodox,Brazil
 328,700a674c042b7a96,38903,Cody Gibson,70.0,71.0,Orthodox,United States
 329,3a314d9fa7c6825d,87981,Douglas Silva de Andrade,67.0,68.0,Orthodox,Brazil
-330,a53d30163304aa6e,85711,Santiago Ponzinibbio,72.0,73.0,Orthodox,Argentina
-331,0d7b51c9d2649a6e,146193,Sean Strickland,73.0,76.0,Orthodox,United States
+330,6d1bffff14897645,64593,Santiago Ponzinibbio,72.0,73.0,Orthodox,Argentina
+331,0d8011111be000b2,30452,Sean Strickland,73.0,76.0,Orthodox,United States
 332,1971869b7e054261,17915,Mike de la Torre,71.0,71.0,Orthodox,United States
 333,8ce87f7e3a9baed2,78479,Tiago Trator,69.0,71.0,Orthodox,Brazil
 334,1d36f1ac66cf689d,24948,Josh Shockley,73.0,74.5,Orthodox,United States
@@ -352,7 +352,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 353,31123249b0bbf52e,14310,Matt Brown,72.0,76.0,Orthodox,United States
 354,3f7c14c7eca7195d,10249,Roy Nelson,72.0,72.0,Orthodox,United States
 355,501b07aec9b8fc2d,9901,Sam Stout,69.0,70.0,Orthodox,Canada
-356,b6452706b373eea1,61700,Beneil Dariush,70.0,72.0,Southpaw,United States
+356,08af939f41b5a57b,56583,Beneil Dariush,70.0,72.0,Southpaw,United States
 357,20999e27ddd94bda,48566,Ryan Benoit,65.0,68.5,Switches (Mostly Southpaw),United States
 358,b2e3aca4cd363477,16467,Chris Cariaso,63.0,64.5,Southpaw,United States
 359,654ae722109a0d31,17052,Joseph Duffy,70.0,73.0,Orthodox,Ireland
@@ -380,7 +380,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 381,b5b684eac99ae0a3,38393,Chad Mendes,66.0,66.0,Orthodox,United States
 382,47b9e0e7703a4868,7688,Jorge Masvidal,71.0,73.0,Orthodox,United States
 383,029eaff01e6bb8f0,50529,Dustin Poirier,69.0,73.0,Southpaw,United States
-384,99bd51917728c25d,103525,Carlos Diego Ferreira,69.0,74.0,Switches (Mostly Orthodox),Brazil
+384,f53d4f21d1b5f2dc,26358,Carlos Diego Ferreira,69.0,74.0,Switches (Mostly Orthodox),Brazil
 385,c58f51dedb310998,46224,Michael Chiesa,73.0,76.0,Southpaw,United States
 386,c76ec2bc3a57666a,22556,Mitch Clarke,70.0,73.0,,United States
 387,92b62174c175ce19,43866,Clint Hester,74.0,77.0,Orthodox,United States
@@ -395,7 +395,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 396,cc900af167fbedfd,72706,Timothy Johnson,75.0,78.0,Southpaw,United States
 397,2f5cbecbbe18bac4,26808,Shamil Abdurakhimov,75.0,76.0,Orthodox,Russia
 398,c32fb8c0f6471a4d,2326,Mirko Filipovic,74.0,73.0,Southpaw,Croatia
-399,9014c02eff8b3d62,84291,Jan Blachowicz,74.0,78.0,Switches (Mostly Orthodox),Poland
+399,99df7d0a2a08a8a8,25821,Jan Blachowicz,74.0,78.0,Switches (Mostly Orthodox),Poland
 400,1e1dbd1cc5a7469e,37528,Jimi Manuwa,73.0,80.0,Orthodox,England
 401,470fedbc8563ac47,54303,Daniel Omielanczuk,72.0,74.0,Southpaw,Poland
 402,4e06913c91da5200,53380,Krzysztof Jotko,73.0,77.0,Southpaw,Poland
@@ -410,7 +410,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 411,0d1c163b206e8c5f,84854,Rocky Lee,69.0,69.0,Orthodox,Taiwan
 412,9310418684bc896f,65543,Pawel Pawlak,72.0,73.0,Orthodox,Poland
 413,ec2d13a87d3d9541,23648,Sheldon Westcott,73.0,71.0,Southpaw,Canada
-414,e76d9f656ceb82ab,122349,Izabela Badurek,64.0,65.0,Orthodox,Poland
+414,4fcf6e0c4e0e6664,122349,Izabela Badurek,64.0,65.0,Orthodox,Poland
 415,e76d9f656ceb82ab,144949,Alexandra Albu,63.0,62.0,Orthodox,Russia
 416,7a703c565ccaa18f,8394,Ronaldo Souza,73.0,72.0,Orthodox,Brazil
 417,f77c68bb4be8516d,60762,Yoel Romero,70.0,73.5,Switches (Mostly Southpaw),United States
@@ -471,7 +471,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 472,9bcf8603ceb25680,16374,Dong Hyun Kim,73.0,76.0,Southpaw,South Korea
 473,f5990c11974d8e9c,4577,Mike Pyle,73.0,74.0,Orthodox,United States
 474,6905d45bd71b50a9,44602,Leo Kuntz,70.0,74.0,Orthodox,United States
-475,eae48ff31db420c2,213913,Islam Makhachev,70.0,70.5,Southpaw,Russia
+475,275aca31f61ba28c,76836,Islam Makhachev,70.0,70.5,Southpaw,Russia
 476,9fa568ad2bf2cb0b,71120,Justin Scoggins,67.0,66.0,Switches (Mostly Southpaw),United States
 477,f65dcb22dada2223,66883,Josh Sampo,64.0,64.0,Orthodox,United States
 478,f40ec51dd4de47c3,81634,Jonavin Webb,70.0,71.0,Switches (Equal Both),United States
@@ -564,7 +564,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 566,,74221,Andrey Koreshkov,72.0,74.0,Orthodox,Russia
 567,,124263,Chris Honeycutt,70.0,73.0,Orthodox,United States
 568,,19726,Paul Bradley,69.0,72.0,Orthodox,United States
-569,06734ca9d88dec3a,309711,Michael Page,75.0,77.0,Switches (Mostly Orthodox),England
+569,a67d071163962af8,91937,Michael Page,75.0,77.0,Switches (Mostly Orthodox),England
 570,,23364,Rudy Bears,71.0,71.0,Southpaw,United States
 571,4d44f37107f01b9b,21940,Tom Lawlor,72.0,74.0,Southpaw,United States
 572,3be081c29bf734d9,425,Takanori Gomi,67.0,70.0,Switches (Mostly Southpaw),Japan
@@ -837,7 +837,6 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 845,b13da0b1a3aed3e7,6748,Nick Ring,72.0,74.0,Southpaw,Canada
 846,92b36014314b028b,91565,Peggy Morgan,73.0,70.0,Orthodox,United States
 847,4498b382c65a7faa,8785,Roxanne Modafferi,66.0,67.5,Orthodox,United States
-848,6506c1d34da9c013,3500,Georges St. Pierre,70.0,76.0,Orthodox,Canada
 849,48d1f690b763934c,4112,Chael Sonnen,73.0,74.0,Southpaw,United States
 850,bbfca6d5c27d9cd8,22490,Edwin Figueroa,67.0,69.0,Orthodox,United States
 851,3d5b1ce6097dbb49,160663,Augusto Mendes,66.0,66.0,Orthodox,Brazil
@@ -940,7 +939,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 953,fcce75a25c14a804,76620,Bojan Velickovic,72.0,76.0,Southpaw,Serbia
 954,77d7295d1b22c694,89875,Alessio Di Chirico,72.0,74.0,Orthodox,Italy
 955,38ed5a2299230227,85664,Filip Pejic,71.0,71.0,Orthodox,Croatia
-956,809bd1a871491508,232591,Damir Hadzovic,71.0,70.0,Orthodox,Bosnia and Herzegovina
+956,38c626ca912c7bac,56139,Damir Hadzovic,71.0,70.0,Orthodox,Bosnia and Herzegovina
 957,9be6020024133293,94411,Cyril Asker,72.0,74.0,Orthodox,France
 958,175852708cb55776,179481,Cristina Stanciu,65.0,64.0,Orthodox,Romania
 959,,84701,Klayton Mai,69.0,68.0,Orthodox,United States
@@ -992,7 +991,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1006,b1b0729d27936f2f,108315,Belal Muhammad,71.0,72.0,Orthodox,United States
 1007,fccf811c1e8b01c7,105321,Andrew Sanchez,73.0,73.0,Orthodox,United States
 1008,749f572d1d3161fb,77674,Khalil Rountree,73.0,74.0,Southpaw,United States
-1009,1ebe20ebbfa15e29,186663,Tatiana Suarez,65.0,67.0,Southpaw,United States
+1009,b08012bbe542592a,161107,Tatiana Suarez,65.0,67.0,Southpaw,United States
 1010,d4a31850a7457f1b,138223,Amanda Cooper,63.0,64.0,Switches (Mostly Orthodox),United States
 1011,9ab9912e0f8fa6d6,87323,Cory Hendricks,72.0,77.0,Orthodox,United States
 1012,30ea504870f8597b,18495,Josh Stansbury,74.0,74.0,Orthodox,United States
@@ -1018,7 +1017,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1032,6eaec40f724852f4,55449,Jessin Ayari,72.0,73.5,Switches (Mostly Orthodox),Germany
 1033,2d447cc91bdaa545,31777,Joachim Christensen,75.0,76.0,Orthodox,Denmark
 1034,b0d6a1d8ac3d563d,53904,Max Griffin,71.0,76.0,Orthodox,United States
-1036,4665cbf36b08193b,73700,Chris Avila,70.0,72.0,Orthodox,United States
+1036,4665cbf36b08193b,155641,Chris Avila,70.0,72.0,Orthodox,United States
 1037,0a1942069c9ad6b6,61146,Jack Hermansson,73.0,77.5,Switches (Mostly Orthodox),Sweden
 1038,71f048adbfed5b49,47068,Sabah Homasi,72.0,72.0,Orthodox,United States
 1039,f2b6fdb20675b11c,176179,Mike Perry,70.0,71.0,Orthodox,United States
@@ -1065,7 +1064,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1084,,4184,Sergei Kharitonov,76.0,76.0,Orthodox,Russia
 1085,c13042265355a290,156471,Kwan Ho Kwak,65.0,70.0,Orthodox,South Korea
 1086,ec52462a1b41f714,92891,Brett Johns,67.0,71.0,Orthodox,Wales
-1087,eae431e70064e046,217983,Abdul Razak Alhassan,70.0,73.0,Orthodox,United States
+1087,eae431e70064e046,151701,Abdul Razak Alhassan,70.0,73.0,Orthodox,United States
 1088,,149717,Adam Piccolotti,71.0,70.0,Orthodox,United States
 1089,49e96ff8ab781589,146831,Tyson Pedro,75.0,79.0,Orthodox,Australia
 1090,1999ffb5cebc314f,101093,Brian Camozzi,74.0,78.0,Orthodox,United States
@@ -1165,7 +1164,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1186,,13002,Chinzo Machida,69.0,72.5,Switches (Mostly Orthodox),Brazil
 1187,,191127,Aaron Pico,68.0,70.5,Orthodox,United States
 1188,,82722,Zach Freeman,72.0,,Orthodox,United States
-1189,093e1f5bb73850be,86783,Brendan Allen,74.0,75.0,Orthodox,United States
+1189,2f181c0467965b98,201703,Brendan Allen,74.0,75.0,Orthodox,United States
 1190,cad24459b28592ca,93407,Eryk Anders,73.0,75.0,Southpaw,United States
 1191,,29836,Herman Terrado,69.0,69.0,Orthodox,United States
 1192,ba5e253af86db1a8,106755,Terrion Ware,68.0,71.0,Orthodox,United States
@@ -1180,7 +1179,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1201,49d78120e0a4f607,12293,Greg Rebello,72.0,73.0,Southpaw,United States
 1202,78d48d3874dacafd,68352,Azunna Anyanwu,73.0,77.0,Orthodox,United States
 1203,98e946879ba20c0f,131463,Boston Salmon,69.0,69.0,Southpaw,United States
-1204,cd3d7e37ff2d679c,226661,Ricky Turcios,68.0,71.0,Orthodox,United States
+1204,cd3d7e37ff2d679c,80671,Ricky Turcios,68.0,71.0,Orthodox,United States
 1205,76ee3d666c648f6b,51234,Charles Byrd,70.0,73.0,Orthodox,United States
 1206,8d4d25fd9218860b,160015,Manny Vazquez,70.0,72.0,Orthodox,United States
 1207,830f60497fab345a,72595,Jamie Pickett,74.0,80.0,Southpaw,United States
@@ -1205,7 +1204,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1227,3929efe0c0a83d07,133919,Alfred Khashakyan,68.0,70.0,Orthodox,United States
 1228,4b450aa602611baa,40669,Angel DeAnda,69.0,70.0,Orthodox,United States
 1229,b50a426a33da0012,135099,Sean O'Malley,71.0,72.0,Switches (Equal Both),United States
-1230,cfc3e7bb44685289,187343,Thiago Moises,69.0,70.0,Orthodox,Brazil
+1230,d945aae53e3e54e6,130351,Thiago Moises,69.0,70.0,Orthodox,Brazil
 1231,,171353,Robert Watley,69.0,74.5,Switches (Mostly Orthodox),United States
 1232,,172491,Hugo Prada,72.0,73.5,Switches (Equal Both),Colombia
 1233,,175505,Mike Stevens,72.0,70.5,Orthodox,United States
@@ -1257,7 +1256,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1281,95cf6be9071e68b0,93103,Randall Wallace,71.0,73.0,Orthodox,United States
 1282,,171259,Cameron Olson,73.0,75.0,Orthodox,United States
 1283,11337d069261bf3a,243879,Karl Reed,75.0,78.0,Orthodox,United States
-1284,f53d4f21d1b5f2dc,26358,Grant Dawson,70.0,72.0,Switches (Equal Both),United States
+1284,99bd51917728c25d,103525,Grant Dawson,70.0,72.0,Switches (Equal Both),United States
 1285,bfa8f263815cfa2e,54296,Adrian Diaz,70.0,71.0,Orthodox,United States
 1286,6b64db453edf4c50,115211,Jamie Colleen,63.0,65.0,Orthodox,United States
 1287,ca743f96dd2063d5,193979,Tiffany Masters,63.0,65.0,Orthodox,United States
@@ -1337,10 +1336,10 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1367,38c7f72747f4f712,219015,Gillian Robertson,65.0,63.0,Orthodox,Canada
 1368,b3d21b2610dcfaeb,61380,Emily Whitmire,65.0,63.0,Orthodox,United States
 1369,2ac4628c08ec5125,131219,Markus Perez,73.0,73.0,Orthodox,Brazil
-1370,2b6fc1c02736833d,240893,Merab Dvalishvili,66.0,68.0,Orthodox,Georgia
+1370,c03520b5c88ed6b4,157355,Merab Dvalishvili,66.0,68.0,Orthodox,Georgia
 1371,,78004,Luka Jelcic,72.0,76.0,Orthodox,Croatia
 1372,,53267,Kaline Medeiros,63.0,58.0,Orthodox,Brazil
-1373,beecb672a279223e,171625,Mackenzie Dern,63.0,64.0,Orthodox,United States
+1373,7447e9f28508106a,137171,Mackenzie Dern,63.0,64.0,Orthodox,United States
 1374,,126635,Janaisa Morandin,60.0,,Orthodox,Brazil
 1375,,84557,Kinberly Novaes,63.0,,Orthodox,Brazil
 1376,,85014,Amy Montenegro,62.0,,Orthodox,United States
@@ -1356,7 +1355,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1387,6370c1c1e12723d5,141251,Marcin Prachnio,75.0,74.0,Switches (Equal Both),Poland
 1389,2fee10d5cf86bfca,91345,Maia Stevenson,64.0,62.0,Orthodox,United States
 1390,9673a497a9da119a,153951,Polyana Viana,65.0,67.0,Orthodox,Brazil
-1391,881bf86d4cba8578,217405,Israel Adesanya,76.0,80.0,Switches (Equal Both),New Zealand
+1391,1338e2c7480bdf9e,56374,Israel Adesanya,76.0,80.0,Switches (Equal Both),New Zealand
 1392,b997be68943010fc,72107,Geoff Neal,71.0,76.5,Southpaw,United States
 1394,f1928a52590c5532,127439,Curtis Millender,75.0,78.0,Orthodox,United States
 1397,65f09bacd3957381,112869,Cory Sandhagen,71.0,71.0,Switches (Equal Both),United States
@@ -1400,7 +1399,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1441,,178343,Katharina Lehner,,,,Germany
 1442,b1d19449397541dc,149255,Askar Askarov,66.0,67.0,Switches (Equal Both),Russia
 1443,,161795,Rasul Albaskhanov,65.0,65.0,Switches (Equal Both),Russia
-1444,6e15f63b6c2e2c15,83851,Manel Kape,65.0,68.0,Switches (Mostly Southpaw),Portugal
+1444,5d1b7e3dd9e11074,101189,Manel Kape,65.0,68.0,Switches (Mostly Southpaw),Portugal
 1445,d33da8a3d82bdb62,226035,Kai Asakura,68.0,68.0,Orthodox,Japan
 1446,,140477,Alex Lohore,73.0,,,France
 1447,,53418,Ion Pascu,,,,Romania
@@ -1432,14 +1431,14 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1473,,79907,Kassius Holdorf,73.0,76.0,,United States
 1474,d661ce4da776fc20,186873,Petr Yan,67.0,67.0,Switches (Mostly Orthodox),Russia
 1475,c487223b0289bda9,82725,Hector Aldana,71.0,72.5,Orthodox,Mexico
-1476,d549cefc7c54ab78,133677,Kevin Holland,75.0,81.0,Orthodox,United States
+1476,3a46b268013afede,108999,Kevin Holland,75.0,81.0,Orthodox,United States
 1477,,65536,Will Santiago Jr,67.0,,,United States
 1478,cc1a8b4b38b92c6d,206717,Montel Jackson,70.0,75.5,Southpaw,United States
 1479,,72881,Rico DiSciullo,,,,United States
 1480,be9bdec19b7e9ffe,249439,Austen Lane,78.0,80.0,,United States
 1481,85073dbd1be65ed9,271461,Greg Hardy,77.0,80.5,Orthodox,United States
 1482,,44100,Sean Lally,,,,United States
-1483,9d83f6da776ff7d6,232601,Chris Curtis,70.0,75.0,Southpaw,United States
+1483,5442f1bc4b47eaf3,48039,Chris Curtis,70.0,75.0,Southpaw,United States
 1484,,241897,Dashawn Boatwright,,,,United States
 1485,54f64b5e283b0ce7,202445,Ilia Topuria,67.0,69.0,Orthodox,Georgia
 1486,4c88a1db5a46c6a4,168551,Jai Herbert,73.0,77.0,Orthodox,England
@@ -1451,7 +1450,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1493,f75c5ca0d91b9115,136361,Richie Smullen,69.0,,,Ireland
 1494,,83135,Yazan Hajeh,,,,United States
 1495,5b8ba8f5512893b1,93675,Matt Sayles,67.0,68.5,,United States
-1496,2f181c0467965b98,201703,Anthony Hernandez,72.0,75.0,Orthodox,United States
+1496,093e1f5bb73850be,86783,Anthony Hernandez,72.0,75.0,Orthodox,United States
 1497,c878270af633eb11,79138,Jordan Wright,74.0,77.0,Orthodox,United States
 1498,9560ff14eb3129f7,213745,Giga Chikadze,72.0,74.0,Switches (Mostly Orthodox),Georgia
 1499,37cc294027f55e4d,41861,Austin Springer,68.0,,,United States
@@ -1492,8 +1491,8 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1535,683ea28a198936fe,61607,Jay Cucciniello,,,,England
 1536,,57363,Jonatan Westin,,,,Sweden
 1537,,163941,Sadibou Sy,75.0,80.0,,Sweden
-1538,0fd5f4b838e890cc,139517,Said Nurmagomedov,68.0,70.0,Orthodox,Russia
-1539,6e743a33d56bdaa4,296553,Raoni Barcelos,67.0,67.0,Orthodox,Brazil
+1538,0fd5f4b838e890cc,103961,Said Nurmagomedov,68.0,70.0,Orthodox,Russia
+1539,b9f28e7045fdfce7,94587,Raoni Barcelos,67.0,67.0,Orthodox,Brazil
 1540,ac5a7400da3a9a41,71080,Elias Garcia,65.0,,,United States
 1541,,166015,Alton Cunningham,,,,United States
 1542,899923ff6ab13917,211153,Bevon Lewis,75.0,79.0,Switches (Mostly Orthodox),United States
@@ -1529,7 +1528,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1573,fb3e61720be4690c,202169,Mike Davis,72.0,72.5,Orthodox,United States
 1574,971246648e162f0d,249301,Chase Hooper,73.0,74.0,Switches (Mostly Orthodox),United States
 1575,,230231,Canaan Kawaihae,72.0,71.0,,United States
-1576,b08012bbe542592a,161107,Weili Zhang,64.0,63.0,Orthodox,China
+1576,1ebe20ebbfa15e29,186663,Weili Zhang,64.0,63.0,Orthodox,China
 1577,,142041,James Nakashima,,,,
 1579,,53706,Yuki Kawana,,,,
 1580,,84704,Garrett Gross,,,,United States
@@ -1583,11 +1582,11 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1630,348dff4e03bd18c6,151125,Stefan Sekulic,73.0,,,Serbia
 1631,45f7cb591c3ab00b,126971,Sean Brady,70.0,70.0,Orthodox,United States
 1632,b12fb759e02378de,167419,Gilbert Urbina,75.0,74.0,,United States
-1633,a9e260472d321361,311001,Mayra Bueno Silva,66.0,66.5,,Brazil
+1633,cc8c623cca88f54f,223917,Mayra Bueno Silva,66.0,66.5,,Brazil
 1634,cd2c4d30c6e13b47,193977,Marina Alcalde Rodriguez,67.0,65.0,Orthodox,Brazil
 1635,5f6f049d54728e88,204397,Andre Ewell,68.0,75.0,,United States
 1636,2f1a257d6777096d,225223,Luigi Vendramini,68.0,73.0,Orthodox,Italy
-1637,ef5dcb10d2bd4b0f,229253,Johnny Walker,78.0,82.0,,Brazil
+1637,c21f26bbde777573,170203,Johnny Walker,78.0,82.0,,Brazil
 1638,853eb0dd5c0e2149,73692,Kai Kara-France,65.0,69.0,Orthodox,New Zealand
 1640,,10089,Roger Huerta,69.0,69.0,,United States
 1641,,125179,Tim Hiley,,,,United States
@@ -1603,7 +1602,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1652,,44714,Marcin Wojcik,73.0,73.2,,Poland
 1654,,86518,Caio Alencar,76.0,80.0,Orthodox,Brazil
 1655,,241899,Damian Janikowski,71.0,70.9,,Poland
-1656,0d8011111be000b2,30452,Dricus Du Plessis,73.0,76.0,Switches (Mostly Orthodox),South Africa
+1656,0d7b51c9d2649a6e,146193,Dricus Du Plessis,73.0,76.0,Switches (Mostly Orthodox),South Africa
 1657,,180781,Roberto Soldic,71.0,72.0,,Croatia
 1658,,121011,Mandel Nallo,,,,Canada
 1659,,187147,Corey Browning,,,,United States
@@ -1628,7 +1627,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1678,2244d9a2b64b8c3b,117571,Hannah Cifers,61.0,62.0,Orthodox,United States
 1679,,192,Chuck Liddell,,,,United States
 1681,6551c64fbcd1a467,147487,Ariane Lipski,66.0,67.0,Orthodox,Brazil
-1682,5d1b7e3dd9e11074,101189,Brandon Royval,69.0,68.0,,United States
+1682,6e15f63b6c2e2c15,83851,Brandon Royval,69.0,68.0,,United States
 1683,,175041,Braden Smith,,,,
 1684,,89087,Eduard Vartanyan,,,,Russia
 1685,,74425,Ustarmagomed Gadzhidaudov,70.0,,,Russia
@@ -1636,7 +1635,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1687,,38454,Musa Khamanaev,,,,Russia
 1688,a12a8314adc1c1c9,141271,Laureano Staropoli,73.0,71.5,,Argentina
 1689,bbc9ab95fa766493,95053,Anderson dos Santos,65.0,70.0,Orthodox,Brazil
-1691,2cd428e9606856fd,102803,Sergey Pavlovich,75.0,84.0,Orthodox,Russia
+1691,f14cf73e51b29254,184051,Sergey Pavlovich,75.0,84.0,Orthodox,Russia
 1692,,20856,Kirill Sidelnikov,,,,Russia
 1693,,267233,Adam Keresh,,,,Israel
 1694,,237133,Olga Rubin,68.0,70.0,Southpaw,Israel
@@ -1691,13 +1690,13 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1745,acb36c908d415c4a,207291,Vinicius Moreira,76.0,,,Brazil
 1746,,50321,Moriel Charneski,,,,United States
 1749,,44738,Yusuke Yachi,,,,Japan
-1750,5444c5a201d3ee5a,280417,Jiri Prochazka,76.0,80.0,,Czech Republic
+1750,009341ed974bad72,97529,Jiri Prochazka,76.0,80.0,,Czech Republic
 1751,242d36d241b43c12,116971,Kron Gracie,69.0,70.0,,Brazil
 1752,f7467152fd9f18a2,143185,Taila Santos,66.0,68.0,Orthodox,Brazil
 1753,1641ef250e9de19b,222541,Sarah Frota,66.0,69.0,Southpaw,Brazil
 1754,07a2bdaa0afdd831,132211,Rogerio Bontorin,65.0,67.0,Switches (Mostly Orthodox),Brazil
 1755,bc711b6dd95c1af6,128107,Mario Bautista,69.0,69.0,,United States
-1756,f14cf73e51b29254,184051,Jairzinho Rozenstruik,76.0,78.0,Orthodox,Suriname
+1756,2cd428e9606856fd,102803,Jairzinho Rozenstruik,76.0,78.0,Orthodox,Suriname
 1757,82b4e942781b1046,167575,Raulian Paiva,68.0,69.5,Orthodox,Brazil
 1758,72e5e5a6edfa8223,182785,Marcos Mariano,73.0,,,Brazil
 1759,,267829,Jake Hager,,,,United States
@@ -1731,8 +1730,8 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1788,,119259,Fernando Rodrigues,,,,Brazil
 1789,,199207,Maciej Kazieczko,,,,Poland
 1790,,70075,Bartlomiej Kopera,69.0,71.3,,Poland
-1791,5442f1bc4b47eaf3,48039,Roman Kopylov,72.0,75.0,,Russia
-1792,275aca31f61ba28c,76836,Arman Tsarukyan,69.0,72.0,Orthodox,Russia
+1791,9d83f6da776ff7d6,232601,Roman Kopylov,72.0,75.0,,Russia
+1792,eae48ff31db420c2,213913,Arman Tsarukyan,69.0,72.0,Orthodox,Russia
 1793,,191187,Valentin Moldavsky,73.0,75.0,,Russia
 1794,,156307,Ahmet Kayretli,,,,Turkey
 1795,,80089,Mike Jasper,,,,United States
@@ -1758,7 +1757,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1816,,123117,Hubert Szymajda,,,,Poland
 1817,,189035,Cezary Kesik,,,,Poland
 1818,,155351,Jakub Kamieniarz,,,,Poland
-1819,41e83a89929d1327,114657,Sergey Spivak,75.0,78.0,Orthodox,Moldova
+1819,e2f6b2769aaedd6c,179095,Sergey Spivak,75.0,78.0,Orthodox,Moldova
 1820,873626e5547b5235,80613,Kyle Prepolec,70.0,70.0,Southpaw,Canada
 1821,56709e66f1c6008f,153345,Cole Smith,71.0,67.0,Switches (Mostly Orthodox),Canada
 1822,,80696,Tim Wilde,71.0,73.5,,England
@@ -1797,7 +1796,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1856,,257837,Maria Paula Buzaglo,,,,
 1857,,302519,Alitzel Mariscal,,,,
 1858,ce632027bf2a871b,167487,Dalcha Lungiambula,68.0,76.0,,South Africa
-1859,7447e9f28508106a,137171,Amanda Ribas,63.0,66.0,Orthodox,Brazil
+1859,beecb672a279223e,171625,Amanda Ribas,63.0,66.0,Orthodox,Brazil
 1860,1fc64507a0cb38cf,175303,Rostem Akman,72.0,72.0,Switches (Mostly Orthodox),Sweden
 1862,12ebd7d157e91701,66304,Bruno Silva,72.0,74.0,,Brazil
 1863,,115545,Marlon Gonzales,,,,Peru
@@ -1829,7 +1828,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1890,,66302,Artur Estrazulas,,,,Brazil
 1891,,231297,Max Humphrey,,,,
 1892,,161007,Patrick Mix,71.0,71.5,,United States
-1894,681399317dbf4701,272505,Punahele Soriano,72.0,72.5,Southpaw,United States
+1894,64facb6cc564262d,230239,Punahele Soriano,72.0,72.5,Southpaw,United States
 1896,26e3f3928b1891d9,204879,Hannah Goldy,64.0,61.0,Orthodox,United States
 1897,1eff7bc0f815b270,176091,Yorgan De Castro,72.0,74.0,,Cape Verde
 1898,,292547,Alton Meeks,,,,United States
@@ -1896,12 +1895,12 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 1959,,163663,Lance Lawrence,,,,United States
 1960,,164061,Kevin Syler,,,,Bolivia
 1961,,127631,Aaron Jeffery,74.0,73.0,,Canada
-1962,38c626ca912c7bac,56139,Terrance McKinney,70.0,74.0,,United States
+1962,809bd1a871491508,232591,Terrance McKinney,70.0,74.0,,United States
 1963,4682bc59d5f55145,235563,Sean Woodson,74.0,78.0,Switches (Equal Both),United States
 1964,,241397,Ramazan Kuramagomedov,73.0,73.0,,Russia
 1965,,234019,Christian Lohsen,,,,
 1966,,93099,J.J. Okanovich,,,,United States
-1967,009341ed974bad72,97529,Jamahal Hill,76.0,79.0,Orthodox,United States
+1967,5444c5a201d3ee5a,280417,Jamahal Hill,76.0,79.0,Orthodox,United States
 1968,,99051,Alexander Poppeck,,,,Germany
 1969,aa171d55d4b5208f,68076,Billy Quarantillo,70.0,70.0,Switches (Mostly Orthodox),United States
 1970,c7d7fda69ec410d3,162187,Kamuela Kirk,70.0,75.0,,United States
@@ -1942,11 +1941,11 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2006,,153417,Lucrezia Ria,,,,
 2007,4f140403000158b5,152211,Herbert Burns,69.0,73.0,Orthodox,Brazil
 2008,34e516ab361afb1c,92115,Darrick Minner,67.0,69.5,,United States
-2009,b07aed698fba8624,202763,Andre Muniz,73.0,78.0,Southpaw,Brazil
+2009,886264a0c9f4ea5e,81800,Andre Muniz,73.0,78.0,Southpaw,Brazil
 2010,,232443,Taylor Johnson,,,,United States
 2011,,106151,Dwight Joseph,,,,Liberia
 2012,01fed6f61ebea01f,99689,Jay Perrin,69.0,69.0,,United States
-2013,c03520b5c88ed6b4,157355,Umar Nurmagomedov,68.0,69.0,,Russia
+2013,2b6fc1c02736833d,240893,Umar Nurmagomedov,68.0,69.0,,Russia
 2014,,20757,Sidemar Honorio,,,,Brazil
 2015,,180227,Herdem Alacabek,74.0,,Orthodox,Sweden
 2016,5da33b8fbfa5ee95,282383,William Knight,70.0,73.0,Orthodox,United States
@@ -1972,7 +1971,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2037,93b62c5f2ba18e51,107201,Gustavo Lopez,65.0,67.0,Orthodox,United States
 2038,,140535,Rudy Schaffroth,,,,
 2039,,204623,Tyrell Fortune,74.0,76.0,,United States
-2040,06e4245d16fc5315,297989,Karol Rosa,65.0,67.5,Orthodox,Brazil
+2040,351c4ec637380ad5,115135,Karol Rosa,65.0,67.5,Orthodox,Brazil
 2041,e99821959a840bb8,164341,Lara Fritzen Procopio,64.0,67.5,Orthodox,Brazil
 2043,285ae0b4a68221f4,159071,Jun Yong Park,72.0,73.0,,South Korea
 2044,1897b7b913736a7c,150691,Heili Alateng,65.0,66.5,Orthodox,China
@@ -2047,7 +2046,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2117,,141949,Ilara Joanne,63.0,64.0,,Brazil
 2119,,213799,Cris Lencioni,,,,United States
 2120,,58551,Isaiah Chapman,,,,United States
-2121,d8c811df0386d5e8,386855,Muin Gafurov,68.0,68.0,,Tajikistan
+2121,a54660deb6a8489c,182325,Muin Gafurov,68.0,68.0,,Tajikistan
 2122,,81965,Luis Muro,70.0,72.0,,United States
 2123,,190259,Marcus Surin,,,,United States
 2124,,48431,Rey Trujillo,,,,United States
@@ -2213,7 +2212,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2298,55fa6ce3e522c8bb,176945,Zhalgas Zhumagulov,64.0,66.5,Southpaw,Kazakhstan
 2300,59a27d2e6d0802ac,264605,Max Rohskopf,73.0,71.0,,United States
 2301,49ee5024966efc0d,104851,Mounir Lazzez,73.0,76.0,Orthodox,Tunisia
-2302,b62d5280966b2460,208467,Tagir Ulanbekov,67.0,70.0,Southpaw,Russia
+2302,f00ac08ab056af5d,149259,Tagir Ulanbekov,67.0,70.0,Southpaw,Russia
 2303,327d5f279895110d,240323,Roman Dolidze,74.0,76.0,Switches (Mostly Orthodox),Georgia
 2304,d61316139d68dbe3,241395,Roman Bogatov,69.0,,,Russia
 2305,304a21d0595e1a08,53713,Justin Jaynes,68.0,68.0,Orthodox,United States
@@ -2253,7 +2252,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2343,f6bcbd91b114ff58,195507,Johnny Munoz,69.0,71.0,,United States
 2344,,86350,Ty Flores,75.0,73.0,,United States
 2345,e4277e87a789d687,73825,Dustin Jacoby,75.0,76.0,Orthodox,United States
-2347,64facb6cc564262d,230239,Uros Medic,73.0,71.0,Southpaw,Serbia
+2347,681399317dbf4701,272505,Uros Medic,73.0,71.0,Southpaw,Serbia
 2348,,205501,Mikey Gonzalez,,,,United States
 2349,f2900678e98f6d6a,266121,Luis Rodriguez,66.0,65.0,,Mexico
 2350,c9587d81e1d33925,139017,Jerome Rivera,70.0,72.0,Southpaw,United States
@@ -2329,7 +2328,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2421,a52bc1e62cf0b7c6,164681,Melsik Bagdasaryan,68.0,70.0,,United States
 2422,c4d039123e62f6a9,286225,Dennis Buzukja,69.0,70.5,,United States
 2423,,164585,Nate Smith,66.0,69.0,,United States
-2424,84f727cf0166d6f2,135973,Jose Johnson,72.0,72.5,,United States
+2424,84f727cf0166d6f2,238733,Jose Johnson,72.0,72.5,,United States
 2425,e7e01e266a9d4342,102885,Ronnie Lawrence,68.0,68.5,Switches (Mostly Orthodox),United States
 2426,f14f644d41ade29f,281913,Cody Brundage,72.0,72.0,Orthodox,United States
 2427,7832f2f62f04178f,122559,Tucker Lutz,,,,United States
@@ -2366,13 +2365,13 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2458,a7e3f02fe2b2fe30,297121,Danyelle Wolf,71.0,70.0,,United States
 2459,,69442,Dinis Paiva,,,,United States
 2460,,241537,Taneisha Tennant,67.0,72.0,,United States
-2461,8d11d9c13e2ccdf7,189203,Muhammadjon Naimov,69.0,70.0,,Tajikistan
+2461,8d11d9c13e2ccdf7,228381,Muhammadjon Naimov,69.0,70.0,,Tajikistan
 2462,047a91d3d9c79b05,280415,Collin Anglin,69.0,71.0,Orthodox,United States
 2463,d66a46de8d705353,80157,Jeremiah Wells,69.0,74.0,Orthodox,United States
 2464,,133129,Jessica Delboni,61.0,62.0,,Brazil
 2465,687c15b2eddfaa63,172145,Danilo Marques,78.0,77.0,Orthodox,Brazil
 2466,5b86d491d63890c5,183159,Ludovit Klein,67.0,72.0,Southpaw,Slovakia
-2467,1338e2c7480bdf9e,56374,Nassourdine Imavov,75.0,75.0,,France
+2467,881bf86d4cba8578,217405,Nassourdine Imavov,75.0,75.0,,France
 2468,,177121,Pietro Penini,,,,Italy
 2469,6b56e94a59b7b134,247601,Oban Elliott,71.0,72.0,,Wales
 2470,b4c57a8c2b773e82,151393,Michal Figlak,,,,England
@@ -2400,7 +2399,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2492,,41877,Emmanuel Dawa,,,,France
 2494,e1d40e8782d80bc2,217407,William Gomis,72.0,74.0,,France
 2495,,341517,Ilias Bulaid,,,,Morocco
-2497,9fe7af8b3fbe00a0,173219,Andreas Gustafsson,,,,Sweden
+2497,9fe7af8b3fbe00a0,280041,Andreas Gustafsson,,,,Sweden
 2498,7772b283d288dbe2,127817,Guram Kutateladze,71.0,72.0,,Georgia
 2499,,199865,Steve Mowry,80.0,78.0,,United States
 2500,,175833,Joseph Creer,,,,United States
@@ -2432,7 +2431,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2527,,285655,Reena Norville,,,,
 2528,f0fad0e9f3b65752,237195,Jamey Simmons,,,,United States
 2529,12e0fdc606f7e274,77414,Luis Saldana,71.0,73.0,,United States
-2530,99df7d0a2a08a8a8,25821,Carlos Ulberg,,,,New Zealand
+2530,9014c02eff8b3d62,84291,Carlos Ulberg,,,,New Zealand
 2531,,87843,Bruno Oliveira,,,,Brazil
 2532,,158229,Edson Gomez,,,,United States
 2533,,225033,Pauline Macias,,,,United States
@@ -2565,7 +2564,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2663,876f478f796495f7,290925,Josh Quinlan,72.0,72.0,,United States
 2664,,123563,Joe Boerschig,,,,United States
 2665,,229673,Richard Luis,,,,United States
-2666,6747ccd6d1acd266,313721,Thomas Petersen,73.0,72.0,,United States
+2666,764d39074a352e33,287525,Thomas Petersen,73.0,72.0,,United States
 2667,,235619,Claire Guthrie,65.0,70.0,,United States
 2668,2526be54e6a0e62a,206399,Denys Bondar,,,,Ukraine
 2669,,225377,Lucas Clay,,,,United States
@@ -2622,7 +2621,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2720,,207403,Charles Henrique,65.0,,,Brazil
 2721,,381679,Mauricio Sosa,,,,
 2722,,317285,Shane Keefe,73.0,,,United States
-2723,6d1bffff14897645,64593,Carlston Harris,72.0,76.0,,Guyana
+2723,a53d30163304aa6e,85711,Carlston Harris,72.0,76.0,,Guyana
 2724,7d420039bbfe7c1a,222519,Qileng Aori,67.0,69.0,Orthodox,China
 2725,,53383,Michal Wlodarek,,,,Poland
 2726,ec0dcceace7d25a3,241321,Na Liang,65.0,67.3,,China
@@ -2745,7 +2744,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2847,,282805,Johnny Soto,69.0,70.0,,United States
 2848,,59957,Johnny Campbell,66.0,66.0,,United States
 2849,,98887,Blaine Shutt,,,,United States
-2850,3a46b268013afede,108999,Reinier de Ridder,76.0,79.0,,Netherlands
+2850,d549cefc7c54ab78,133677,Reinier de Ridder,76.0,79.0,,Netherlands
 2851,,300321,Courtney Martin,,,,Australia
 2852,,115403,Colbey Northcutt,,,,United States
 2853,,377619,Kirill Grishenko,,,,Belarus
@@ -2802,7 +2801,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2906,,266143,Maria Favela,,,,Mexico
 2907,,282713,Josee Storts,,,,United States
 2908,,302145,Ariana Melendez,,,,United States
-2909,6c9b66b43663f2f7,333829,Fatima Kline,66.0,67.5,,United States
+2909,745fa7b605f8e2da,300151,Fatima Kline,66.0,67.5,,United States
 2910,,345047,Chrissy Yandolli,,,,United States
 2911,,385901,Elise Pone,,,,United States
 2912,,204125,Sean Felton,,,,United States
@@ -2813,7 +2812,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2917,,72353,Alexander Shabliy,69.0,70.5,,Russia
 2918,,221767,Rodney Kealohi,,,,United States
 2919,,95827,Nick Clem,,,,United States
-2920,f00ac08ab056af5d,149259,Clayton Carpenter,65.0,,,United States
+2920,b62d5280966b2460,208467,Clayton Carpenter,65.0,,,United States
 2921,,136965,Tiani Valle,,,,United States
 2922,,100049,Richard Foster,78.0,,,United States
 2923,,242835,Steven Merrill,,,,United States
@@ -2891,7 +2890,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 2998,,382541,Mark Gray,,,,United States
 2999,,59738,Evan Cutts,,,,United States
 3000,f998f5c102250d6e,295377,Yohan Lainesse,73.0,76.0,,Canada
-3001,9fe7af8b3fbe00a0,280041,Preston Parsons,71.0,72.0,,United States
+3001,9fe7af8b3fbe00a0,173219,Preston Parsons,71.0,72.0,,United States
 3002,,74922,Travis Davis,72.0,74.0,,United States
 3003,,359593,Theodore Macuka,72.0,67.0,,United States
 3005,,300267,Gabriella Gulfin,65.0,62.5,,United States
@@ -3032,13 +3031,13 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3153,,110931,Ruslan Abiltarov,,,,Ukraine
 3154,,276151,August Kayambala,,,,Congo
 3155,,201869,Cole Henning,,,,South Africa
-3156,e2f6b2769aaedd6c,179095,Jailton Junior,76.0,79.0,,Brazil
+3156,41e83a89929d1327,114657,Jailton Junior,76.0,79.0,,Brazil
 3157,,156463,Nasrudin Nasrudinov,72.0,,,Russia
 3158,6b7c7460855dbbb9,86841,Albert Duraev,72.0,75.0,,Russia
 3159,,78480,Caio Bittencourt,72.0,,,Brazil
 3160,1497e735d9f2560a,95799,Ange Loosa,69.0,74.0,,Switzerland
 3161,6b453bc35a823c3f,208155,Jack Della Maddalena,71.0,73.0,,Australia
-3162,cc8c623cca88f54f,223917,Jasmine Jasudavicius,67.0,,,Canada
+3162,a9e260472d321361,311001,Jasmine Jasudavicius,67.0,,,Canada
 3163,abb68e3c7ca128f2,266047,Julia Polastri,62.0,62.5,,Brazil
 3164,,131543,Nkazimulo Zulu,,,,South Africa
 3165,,234111,Luthando Biko,,,,South Africa
@@ -3130,7 +3129,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3259,,265361,Wawrzyniec Bartnik,72.0,74.4,,Poland
 3260,,269167,Axel Sola,71.0,,,France
 3261,,124729,Lukasz Sudolski,,,,Poland
-3262,260bd4cef10b033f,263543,Ihor Potieria,75.0,75.0,,Ukraine
+3262,260bd4cef10b033f,188721,Ihor Potieria,75.0,75.0,,Ukraine
 3264,fd406a32a6fb3a29,74346,Chris Duncan (2),70.0,71.5,,Scotland
 3265,4126a78111c0855a,188043,Caio Borralho,70.0,75.0,Southpaw,Brazil
 3266,710f0f8c5d5c9d41,191243,Lucas Almeida,71.0,71.0,,Brazil
@@ -3191,7 +3190,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3323,,251525,Alik Saydoyan,,,Southpaw,Armenia
 3324,b4880ef2f838d4e1,69518,Silvana Gomez Juarez,63.0,63.0,Orthodox,Argentina
 3325,,120303,Reyes Cortez,67.0,,,United States
-3326,5ec591b78349ba7e,362871,Christian Rodriguez,67.0,71.0,,United States
+3326,5ec591b78349ba7e,303043,Christian Rodriguez,67.0,71.0,,United States
 3328,8eb046f83e82bf26,164475,Martin Buday,75.0,77.0,,Slovakia
 3329,,278793,Mitch Raposo,66.0,64.0,,United States
 3330,,257311,Maria Silva,63.0,64.0,,Brazil
@@ -3248,7 +3247,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3385,,242711,Qihua Yan,63.0,62.5,,China
 3386,9d62c2d8ee151f08,153807,Karine Silva,65.0,67.0,Orthodox,Brazil
 3387,,163547,Ryan Rizco,,,,United States
-3388,ca28cdf526d6b6e9,274869,Yanal Ashmoz,69.0,68.0,,Israel
+3388,c739c2995a275314,252115,Yanal Ashmoz,69.0,68.0,,Israel
 3389,,299725,Isa Dalipaj,69.0,,,United States
 3390,,70752,Jonas Bilharinho,,,,Brazil
 3391,,68610,Achilles Estremadura,,,,Canada
@@ -3288,7 +3287,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3431,,314209,Alandria Brown,62.0,65.0,,United States
 3432,,91363,Ricky Furar,,,,United States
 3433,fc08099550072fe4,190909,Waldo Cortes-Acosta,76.0,78.0,,United States
-3434,d945aae53e3e54e6,130351,Trey Ogden,71.0,71.5,,United States
+3434,cfc3e7bb44685289,187343,Trey Ogden,71.0,71.5,,United States
 3435,,68443,Kenn Glenn,,,,United States
 3436,,223397,Arut Pogosjan,,,,United States
 3439,,85503,Mukhomad Vakhaev,73.0,,,Russia
@@ -3484,7 +3483,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3646,,129555,Ashley Nichols,,,,Canada
 3650,,217007,Nathan Kelly,68.0,68.0,,Ireland
 3651,,208393,Evers Anderson,,,,United States
-3652,597499ac7a5aac62,,Abdul-Kareem Al-Selwady,68.0,69.0,,Jordan
+3652,597499ac7a5aac62,115453,Abdul-Kareem Al-Selwady,68.0,69.0,,Jordan
 3653,,54059,Nick Compton,,,,United States
 3654,,236613,Jose Sanchez,69.0,69.0,,Spain
 3655,,218781,Aboubakar Tounkara,71.0,,,France
@@ -3522,7 +3521,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3688,cffb87059e645bd1,382138,Denise Gomes,62.0,63.0,,Brazil
 3689,,309719,Nadia Vera,61.0,,,Mexico
 3690,,75350,Paulina Granados,,,,United States
-3691,886264a0c9f4ea5e,81800,Ikram Aliskerov,72.0,76.0,,Russia
+3691,b07aed698fba8624,202763,Ikram Aliskerov,72.0,76.0,,Russia
 3692,,21054,Freddy Sandoval,,,,United States
 3693,,92487,Ashley Deen,65.0,66.0,,United States
 3694,,71886,Jordan Howard,,,,United States
@@ -3790,7 +3789,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 3972,,234243,Ibrahim Cholo,,,,Germany
 3973,,397243,Jaime Cordero,,,,
 3974,,196807,Erhan Kartal,71.0,,,Austria
-3975,351c4ec637380ad5,115135,Ailin Perez,65.0,66.0,,Argentina
+3975,06e4245d16fc5315,297989,Ailin Perez,65.0,66.0,,Argentina
 3976,,333763,Ben Tynan,,,,Canada
 3977,,382344,Bahatebole Batebolati,69.0,71.5,,China
 3979,31dbfbe4e7a6727c,319103,Trey Waters,,,,United States
@@ -3818,7 +3817,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 4006,,219625,Topnoi Kiwram,,,,Thailand
 4007,a72a2a769fa5a2be,365299,Anshul Jubli,72.0,69.0,,India
 4008,,386853,Sho Usami,71.0,70.0,,Japan
-4009,a54660deb6a8489c,182325,Rinya Nakamura,67.0,68.0,,Japan
+4009,d8c811df0386d5e8,386855,Rinya Nakamura,67.0,68.0,,Japan
 4010,,132799,Gugun Gusman,,,,Indonesia
 4011,,378677,Josefine Knutsson,63.0,60.0,,Sweden
 4012,,241183,Ye Dam Seo,62.0,63.0,,South Korea
@@ -3856,7 +3855,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 4048,,292245,James Power,,,,England
 4049,,188523,Festus Ahorlu,,,,Ghana
 4050,,338905,Kirill Kornilov,77.0,,,Russia
-4051,764d39074a352e33,287525,Shamil Gaziev,75.0,78.0,,Bahrain
+4051,6747ccd6d1acd266,313721,Shamil Gaziev,75.0,78.0,,Bahrain
 4052,,116329,Glenn Irvine,,,,Northern Ireland
 4053,,224871,Martin Causse,,,,France
 4054,,314339,Akhmed Salamov,,,,Russia
@@ -3887,7 +3886,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 4080,,130973,Daniel Reis,,,,Brazil
 4081,5078e1dacf9d25f4,327683,Luana Santos,66.0,68.0,,Brazil
 4082,,199525,Paris Stanford,,,,United States
-4083,84f727cf0166d6f2,238733,Felipe Bunes,67.0,71.0,,Brazil
+4083,53c10176e3bc7416,135973,Felipe Bunes,67.0,71.0,,Brazil
 4084,,154675,Matt Barro,,,,United States
 4085,40cb680ae1cd331f,299051,Yazmin Jauregui,63.0,64.0,Orthodox,Mexico
 4087,,122849,Daniel Matos,,,,Costa Rica
@@ -3896,7 +3895,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 4090,abcf2cc6efc42031,264861,Iasmin Lucindo,63.0,66.0,,Brazil
 4091,,219923,Hasan Mezhiev,,,,Latvia
 4092,,170423,Mailton Azevedo,,,,Brazil
-4093,,272659,Bruno Lopes,74.0,75.5,,Brazil
+4093,,144007,Bruno Lopes,74.0,75.5,,Brazil
 4094,,263121,Davi Costa,64.0,,,Brazil
 4095,,199575,Eduardo Henrique,,,,Brazil
 4096,,111663,Amanda Torres,,,,Brazil
@@ -4028,8 +4027,8 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 4232,849c5d9979df5357,146417,Mateusz Rebecki,67.0,66.0,,Poland
 4233,,300743,Jose Henrique,,,,Brazil
 4234,,382723,Yusaku Kinoshita,72.0,71.5,,Japan
-4235,23dec7c47cb418f8,100903,Sedriques Dumas,74.0,79.0,,United States
-4236,745fa7b605f8e2da,300151,Viktoriya Dudakova,65.0,67.0,,Russia
+4235,4e6738062d469256,288537,Sedriques Dumas,74.0,79.0,,United States
+4236,6c9b66b43663f2f7,333829,Viktoriya Dudakova,65.0,67.0,,Russia
 4237,,134879,Alex Morgan,,,,Canada
 4238,,162651,Alikhan Vakhaev,78.0,,,Russia
 4239,,166275,Amirkhan Adaev,70.0,,,Russia
@@ -4168,7 +4167,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 4379,,317187,Roybert Echeverria,65.0,,,Venezuela
 4380,65adf3856c4d9256,131375,Jafel Filho,67.0,,,Brazil
 4381,,121219,Josh Wick,69.0,69.5,,United States
-4382,c739c2995a275314,252115,Nurullo Aliev,70.0,70.0,,Tajikistan
+4382,ca28cdf526d6b6e9,274869,Nurullo Aliev,70.0,70.0,,Tajikistan
 4383,,215739,Abdulla Al Bousheiri,,,,Kuwait
 4384,,386894,Nart Abida,,,,Jordan
 4385,,177665,Ole Jorgen Mandt,,,,Norway
@@ -4418,7 +4417,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 4648,,211515,Eduardo Mora,,,,Colombia
 4649,,116875,Hamza Kooheji,,,,Bahrain
 4650,,182301,Izzeddine  Al Derbani,,,,Jordan
-4651,,144007,Magomed Gadzhiyasulov,75.0,,,Bahrain
+4651,,272659,Magomed Gadzhiyasulov,75.0,,,Bahrain
 4652,,188609,Mohamed  Said Maalem,,,,Algeria
 4653,,314061,Pavel Dailidko,76.0,,,Lithuania
 4654,,214023,Ahmad Labban,70.0,,,Lebanon
@@ -4853,7 +4852,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 5122,,403113,Laryssa Leila,,,,Brazil
 5123,,214263,Lucas Barros,,,,Brazil
 5124,,172333,Cassio Barao,,,,Brazil
-5125,260bd4cef10b033f,188721,Marco  Tulio Silva,72.0,74.5,,Brazil
+5125,260bd4cef10b033f,263543,Marco Tulio Silva,72.0,74.5,,Brazil
 5126,,158505,Well Oliveira,,,,Brazil
 5127,,153497,Clever Souza,,,,Brazil
 5128,,400985,Michael Oliveira,,,,Brazil
@@ -4949,7 +4948,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 5225,,280031,Alexander Loof,69.0,,,Sweden
 5226,,236589,Enrique Hecher Sosa,,,,Spain
 5227,,225779,Fredrik Skov Strauss,,,,Denmark
-5228,cd3d7e37ff2d679c,80671,Bernardo Sopai,,,,Sweden
+5228,b6c37948cb226e8c,226661,Bernardo Sopai,,,,Sweden
 5229,,182511,Julien Lopez,68.0,,,France
 5230,,220695,Amir Malekpour,68.0,,,Sweden
 5231,,280249,Mack Promanee,65.0,,,Denmark
@@ -5060,14 +5059,14 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 5349,,390246,Coline Biron,,,,Philippines
 5350,,404597,Maria Eugenia Zbrun,,,,Argentina
 5351,,192869,Hikaru Yoshino,65.0,,,Japan
-5352,0fd5f4b838e890cc,103961,Vinicius  de Oliveira,69.0,,,Brazil
+5352,18d01f7f8338ae72,139517,Vinicius  de Oliveira,69.0,,,Brazil
 5353,,293669,Eimar Hernandez,,,,United States
 5354,,167891,Gilbert Nakatani,65.0,69.0,,United States
 5355,,302395,Kody Vogels,,,,United States
 5356,,131479,Chris Pena,,,,United States
 5357,,208943,Eugene Correa,,,,United States
 5358,,194623,Owen Craugh,,,,United States
-5359,b9f28e7045fdfce7,94587,Payton Talbott,70.0,70.5,,United States
+5359,6e743a33d56bdaa4,296553,Payton Talbott,70.0,70.5,,United States
 5360,,280325,Cristhian Rivas,,,,Ecuador
 5361,,362321,Eddie Bernal,,,,United States
 5362,,128455,Billy Brand,,,,United States
@@ -5588,7 +5587,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 5921,,315451,Michael Pagani,69.0,,,Italy
 5922,,156285,Idriss M'roivili,,,,France
 5923,,269923,Giacomo Michelis,72.0,,,Italy
-5924,eae431e70064e046,151701,César Almeida,72.0,,Orthodox,Brazil
+5924,64d47ef881a437a4,217983,César Almeida,72.0,,Orthodox,Brazil
 5925,6c3b2525436cf5d4,244655,Tom Nolan,75.0,76.0,,Australia
 5926,,156707,Bogdan Grad,69.0,70.0,,Austria
 5927,,232371,Victor Dias,,,,Brazil
@@ -5635,11 +5634,11 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 5969,,338967,Ruan Miqueias,66.0,,,Brazil
 5970,,14787,Yunus Evloev,,,,Russia
 5971,,128283,Lincoln  Puig,,,,Brazil
-5972,c21f26bbde777573,170203,Bogdan Guskov,,,,Uzbekistan
+5972,ef5dcb10d2bd4b0f,229253,Bogdan Guskov,,,,Uzbekistan
 5973,,168091,Manolo Zecchini,,,,Italy
 5974,eb70e786bbdf1d16,180745,Yanis Ghemmouri,69.0,69.0,,France
 5976,,295271,Eli Aronov,,,,Israel
-5977,4e6738062d469256,288537,Zachary Reese,76.0,77.0,,United States
+5977,23dec7c47cb418f8,100903,Zachary Reese,76.0,77.0,,United States
 5978,,303011,Robbie Ring,,,,United States
 5979,e530df53922f413e,287861,Luis Pajuelo,,,,Peru
 5981,,279819,Mckenna Mitchell,66.0,,,United States
@@ -5647,7 +5646,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 5983,,364447,Uran Satybaldiev,,,,Kyrgyzstan
 5984,,114575,Gabriel Thimoteo,72.0,,,Brazil
 5985,,247717,Cristian Giovannie,,,,United States
-5987,a67d071163962af8,91937,Sharabutdin Magomedov,74.0,73.0,,Russia
+5987,06734ca9d88dec3a,309711,Sharabutdin Magomedov,74.0,73.0,,Russia
 5988,,412023,Ed Davis,,,,United States
 5989,,6921,Matt Chapman,,,,United States
 5991,,376380,Livio Ribeiro,,,,Brazil
@@ -5835,7 +5834,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 6197,140567899d98978a,406903,Robelis Despaigne,79.0,87.0,,Cuba
 6198,,424829,Stevie Payne,,,,United States
 6199,,395038,Mario  Piazzon,,,,Brazil
-6200,,202195,Ernesta Kareckaite,,,,Lithuania
+6200,,319093,Ernesta Kareckaite,,,,Lithuania
 6201,f1ab6f37492c630a,381889,Carli Judice,,,,United States
 6202,,40341,Victor  Hugo Madrigal,,,,Mexico
 6203,,203589,Luisa  Fernanda Cifuentes,,,,Colombia
@@ -6924,7 +6923,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 7397,,304817,Sergiusz Zajac,,,,Poland
 7398,,215905,Michal Guzik,,,,Poland
 7400,,262581,Luis Rodríguez,65.0,,,Dominican Republic
-7401,8d11d9c13e2ccdf7,228381,Kaan Ofli,,,,Australia
+7401,7facc9c45d792985,189203,Kaan Ofli,,,,Australia
 7402,,224705,Kent   Mafileo,,,,United States
 7403,,251447,Zygimantas Ramaska,,,,Lithuania
 7404,,66490,Bruno  Azevedo,,,,Brazil
@@ -6967,7 +6966,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 7443,,164321,Djorden Santos,,,,Brazil
 7444,,325407,Gauge Young,,,,United States
 7445,,278389,Yuneisy Duben,,,,Venezuela
-7446,5ec591b78349ba7e,303043,Austin Bashi,,,,United States
+7446,5ec591b78349ba7e,362871,Austin Bashi,,,,United States
 7448,,210287,Frederik  Dupras,,,,Canada
 7449,,99097,Robert  Seres,,,,France
 7450,,243149,Cedric  Lochard,,,,Haiti
@@ -7026,7 +7025,7 @@ id,ufcstats_id,sherdog_id,name,height_inches,reach_inches,stance,nationality
 7522,,333455,Otar  Tanzilov,71.0,,,Georgia
 7523,,416801,Josias  Musasa,68.0,70.1,,Congo
 7524,,244989,Corinne Laframboise,65.0,64.0,,Canada
-7525,,319093,Nicolle  Caliari,69.0,62.0,,Brazil
+7525,,202195,Nicolle  Caliari,69.0,62.0,,Brazil
 7526,,141633,Evgeny  Egemberdiev,,,,Kazakhstan
 7527,,228349,Joseph  Luciano,72.0,,,Australia
 7530,,248275,Filipe Esteves,,,,Brazil

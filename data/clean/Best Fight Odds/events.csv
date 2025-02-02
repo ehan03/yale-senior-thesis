@@ -1,0 +1,423 @@
+id,name
+1,UFC 73: Stacked
+2,UFC 72: Victory
+3,The Ultimate Fighter: Team Pulver vs. Team Penn Finale
+6,UFC 75: Champion vs. Champion
+7,UFC 74: Respect
+8,The Ultimate Fighter: Team Hughes vs. Team Serra Finale
+10,UFC 77: Hostile Territory
+12,UFC 76: Knockout
+13,UFC Fight Night: Thomas vs. Florian
+14,UFC 78: Validation
+22,UFC 79: Nemesis
+27,UFC 80: Rapid Fire
+28,UFC 81: Breaking Point
+30,UFC 82: Pride of a Champion
+36,UFC Fight Night: Swick vs. Burkman
+40,UFC 83: Serra vs. St-Pierre 2
+44,UFC Fight Night: Florian vs. Lauzon
+46,UFC 85: Bedlam
+47,UFC 84: Ill Will
+53,UFC 86: Jackson vs. Griffin
+57,UFC 87: Seek and Destroy
+70,The Ultimate Fighter: Team Rampage vs. Team Forrest Finale
+80,UFC 88: Breakthrough
+83,UFC Fight Night: Silva vs. Irvin
+84,UFC Fight Night: Diaz vs. Neer
+86,UFC 89: Bisping vs. Leben
+92,UFC 90: Silva vs. Côté
+95,UFC 92: The Ultimate 2008
+98,UFC 91: Couture vs. Lesnar
+105,UFC 93: Franklin vs. Henderson
+107,UFC 94: St-Pierre vs. Penn 2
+111,UFC: Fight for the Troops
+120,The Ultimate Fighter: Team Nogueira vs. Team Mir Finale
+121,UFC 95: Sanchez vs. Stevenson
+123,UFC Fight Night: Lauzon vs. Stephens
+125,UFC 96: Jackson vs. Jardine
+126,UFC 97: Redemption
+129,UFC Fight Night: Condit vs. Kampmann
+132,UFC 98: Evans vs. Machida
+136,UFC 99: The Comeback
+137,UFC 100
+145,UFC 101: Declaration
+147,The Ultimate Fighter: United States vs. United Kingdom Finale
+148,UFC Fight Night: Diaz vs. Guillard
+156,UFC 102: Couture vs. Nogueira
+168,UFC 103: Franklin vs. Belfort
+185,UFC 104: Machida vs. Shogun
+189,UFC 107: Penn vs. Sanchez
+201,UFC 105: Couture vs. Vera
+209,UFC 106: Ortiz vs. Griffin 2
+210,The Ultimate Fighter: Heavyweights Finale
+219,UFC 108: Evans vs. Silva
+224,UFC Fight Night: Maynard vs. Diaz
+225,UFC 110: Nogueira vs. Velasquez
+226,UFC 109: Relentless
+236,UFC 111: St-Pierre vs. Hardy
+242,UFC Live: Vera vs. Jones
+245,UFC 112: Invincible
+246,UFC Fight Night: Florian vs. Gomi
+247,UFC 113: Machida vs. Shogun 2
+255,UFC 115: Liddell vs. Franklin
+256,UFC 114: Rampage vs. Evans
+262,The Ultimate Fighter: Team Liddell vs. Team Ortiz Finale
+265,UFC 116: Lesnar vs. Carwin
+276,UFC 117: Silva vs. Sonnen
+278,UFC 118: Edgar vs. Penn 2
+281,UFC Live: Jones vs. Matyushenko
+294,UFC 120: Bisping vs. Akiyama
+295,UFC Fight Night: Marquardt vs. Palhares
+296,UFC 119: Mir vs. Cro Cop
+308,UFC 121: Lesnar vs. Velasquez
+313,UFC 124: St-Pierre vs. Koscheck 2
+317,UFC 123: Rampage vs. Machida
+323,UFC 122: Marquardt vs. Okami
+330,The Ultimate Fighter: Team GSP vs. Team Koscheck Finale
+332,UFC 125: Resolution
+338,UFC 126: Silva vs. Belfort
+342,UFC: Fight for the Troops 2
+344,UFC 127: Penn vs. Fitch
+346,UFC 128: Shogun vs. Jones
+351,UFC Live: Sanchez vs. Kampmann
+352,UFC 129: St-Pierre vs. Shields
+354,UFC Fight Night: Nogueira vs. Davis
+357,UFC 130: Rampage vs. Hamill
+358,UFC 131: dos Santos vs. Carwin
+362,The Ultimate Fighter: Team Lesnar vs. Team dos Santos Finale
+379,UFC Live: Kongo vs. Barry
+381,UFC 132: Cruz vs. Faber
+389,UFC 134: Silva vs. Okami
+390,UFC 133: Evans vs. Ortiz
+399,UFC Live: Hardy vs. Lytle
+406,UFC Fight Night: Shields vs. Ellenberger
+410,UFC 137: Penn vs. Diaz
+417,UFC 135: Jones vs. Rampage
+423,UFC 136: Edgar vs. Maynard III
+424,UFC 139: Shogun vs. Henderson
+429,UFC Live: Cruz vs. Johnson
+430,UFC 138: Leben vs. Muñoz
+442,UFC on Fox: Velasquez vs. dos Santos
+451,UFC 140: Jones vs. Machida
+452,UFC 141: Lesnar vs. Overeem
+469,The Ultimate Fighter: Team Bisping vs. Team Miller Finale
+474,UFC 142: Aldo vs. Mendes
+477,UFC 144: Edgar vs. Henderson
+478,UFC 143: Diaz vs. Condit
+479,UFC on FX: Guillard vs. Miller
+482,UFC on Fox: Evans vs. Davis
+485,UFC on Fuel TV: Sanchez vs. Ellenberger
+487,UFC on FX: Alves vs. Kampmann
+490,UFC 145: Jones vs. Evans
+493,UFC on Fuel TV: Gustafsson vs. Silva
+496,UFC on Fox: Diaz vs. Miller
+499,UFC on Fuel TV: The Korean Zombie vs. Poirier
+502,UFC 146: dos Santos vs. Mir
+506,UFC 148: Silva vs. Sonnen II
+517,UFC 147: Silva vs. Franklin II
+521,UFC on FX: Maynard vs. Guida
+522,UFC on FX: Johnson vs. McCall
+524,The Ultimate Fighter: Live Finale
+527,UFC 149: Faber vs. Barão
+545,UFC on Fuel TV: Muñoz vs. Weidman
+546,UFC on Fox: Shogun vs. Vera
+547,UFC 150: Henderson vs. Edgar II
+561,UFC 152: Jones vs. Belfort
+565,UFC 154: St-Pierre vs. Condit
+569,UFC on Fuel TV: Struve vs. Miocic
+571,UFC 153: Silva vs. Bonnar
+579,UFC on FX: Browne vs. Bigfoot
+582,UFC on Fuel TV: Franklin vs. Le
+584,UFC on Fox: Henderson vs. Diaz
+585,UFC 155: dos Santos vs. Velasquez 2
+594,UFC on FX: Sotiropoulos vs. Pearson
+602,The Ultimate Fighter: Team Carwin vs. Team Nelson Finale
+611,UFC 156: Aldo vs. Edgar
+612,UFC on FX: Belfort vs. Bisping
+613,UFC on Fox: Johnson vs. Dodson
+618,UFC 157: Rousey vs. Carmouche
+625,UFC on Fuel TV: Silva vs. Stann
+627,UFC 158: St-Pierre vs. Diaz
+632,UFC on Fuel TV: Barão vs. McDonald
+633,UFC 159: Jones vs. Sonnen
+634,UFC on Fox: Henderson vs. Melendez
+636,UFC on Fuel TV: Mousasi vs. Latifi
+647,UFC 160: Velasquez vs. Bigfoot 2
+648,UFC on FX: Belfort vs. Rockhold
+656,The Ultimate Fighter: Team Jones vs. Team Sonnen Finale
+660,UFC 161: Evans vs. Henderson
+661,UFC 162: Silva vs. Weidman
+668,UFC on Fuel TV: Nogueira vs. Werdum
+674,UFC on Fox: Johnson vs. Moraga
+683,UFC 163: Aldo vs. Korean Zombie
+685,UFC Fight Night: Shogun vs. Sonnen
+691,UFC 164: Henderson vs. Pettis
+692,UFC Fight Night: Condit vs. Kampmann 2
+697,UFC 165: Jones vs. Gustafsson
+698,UFC 166: Velasquez vs. dos Santos III
+699,UFC 167: St-Pierre vs. Hendricks
+705,UFC Fight Night: Teixeira vs. Bader
+706,UFC 168: Weidman vs. Silva 2
+712,UFC Fight Night: Machida vs. Muñoz
+713,UFC Fight Night: Maia vs. Shields
+720,The Ultimate Fighter: Team Rousey vs. Team Tate Finale
+725,UFC Fight Night: Belfort vs. Henderson
+726,UFC: Fight for the Troops 3
+728,UFC Fight Night: Hunt vs. Bigfoot
+729,UFC on Fox: Johnson vs. Benavidez 2
+737,UFC 169: Barão vs. Faber II
+751,UFC Fight Night: Gustafsson vs. Manuwa
+756,UFC 170: Rousey vs. McMann
+758,UFC Fight Night: Machida vs. Mousasi
+761,UFC Fight Night: Saffiedine vs. Lim
+762,UFC Fight Night: Rockhold vs. Philippou
+771,UFC 171: Hendricks vs. Lawler
+772,UFC 172: Jones vs. Teixeira
+777,UFC on Fox: Henderson vs. Thomson
+778,The Ultimate Fighter China Finale: Kim vs. Hathaway
+779,UFC on Fox: Werdum vs. Browne
+784,UFC Fight Night: Shogun vs. Henderson 2
+786,UFC 173: Barão vs. Dillashaw
+790,UFC Fight Night: Nogueira vs. Nelson
+794,UFC Fight Night: Brown vs. Silva
+799,UFC Fight Night: Muñoz vs. Mousasi
+800,UFC Fight Night: Swanson vs. Stephens
+805,UFC 175: Weidman vs. Machida
+806,The Ultimate Fighter Nations Finale: Bisping vs. Kennedy
+807,UFC 174: Johnson vs. Bagautinov
+812,The Ultimate Fighter Brazil 3 Finale: Miocic vs. Maldonado
+822,UFC Fight Night: Henderson vs. Khabilov
+823,UFC Fight Night: Te Huna vs. Marquardt
+824,UFC 180: Werdum vs. Hunt
+826,UFC Fight Night: Cowboy vs. Miller
+827,UFC Fight Night: McGregor vs. Brandao
+829,UFC on Fox: Lawler vs. Brown
+832,The Ultimate Fighter: Team Edgar vs. Team Penn Finale
+835,UFC Fight Night: Bisping vs. Le
+836,UFC 178: Johnson vs. Cariaso
+845,UFC Fight Night: Bader vs. Saint Preux
+846,UFC Fight Night: Henderson vs. dos Anjos
+847,UFC Fight Night: Hunt vs. Nelson
+849,UFC 177: Dillashaw vs. Soto
+850,UFC Fight Night: Bigfoot vs. Arlovski
+851,UFC Fight Night: Jacaré vs. Mousasi
+853,UFC 181: Hendricks vs. Lawler II
+855,UFC 179: Aldo vs. Mendes 2
+856,UFC 183: Silva vs. Diaz
+860,UFC Fight Night: Nelson vs. Story
+861,UFC Fight Night: MacDonald vs. Saffiedine
+864,UFC 182: Jones vs. Cormier
+879,UFC on Fox: dos Santos vs. Miocic
+880,UFC Fight Night: Machida vs. Dollaway
+892,UFC Fight Night: Edgar vs. Swanson
+893,UFC Fight Night: Shogun vs. Saint Preux
+894,UFC Fight Night: Rockhold vs. Bisping
+895,UFC Fight Night: McGregor vs. Siver
+896,UFC 184: Rousey vs. Zingano
+906,UFC on Fox: Gustafsson vs. Johnson
+912,The Ultimate Fighter: A Champion Will Be Crowned Finale
+915,UFC Fight Night: Henderson vs. Thatch
+923,UFC Fight Night: Bigfoot vs. Mir
+925,UFC 185: Pettis vs. dos Anjos
+927,UFC on Fox: Machida vs. Rockhold
+929,UFC 186: Johnson vs. Horiguchi
+930,UFC 188: Velasquez vs. Werdum
+932,UFC Fight Night: Mendes vs. Lamas
+934,UFC Fight Night: Maia vs. LaFlare
+936,UFC Fight Night: Gonzaga vs. Cro Cop 2
+942,UFC 189: Mendes vs. McGregor
+945,UFC 187: Johnson vs. Cormier
+946,UFC Fight Night: Edgar vs. Faber
+947,UFC Fight Night: Boetsch vs. Henderson
+950,UFC Fight Night: Miocic vs. Hunt
+957,UFC Fight Night: Condit vs. Alves
+960,UFC 190: Rousey vs. Correia
+964,UFC Fight Night: Jędrzejczyk vs. Penne
+965,UFC Fight Night: Mir vs. Duffee
+967,UFC on Fox: Dillashaw vs. Barão 2
+971,The Ultimate Fighter: American Top Team vs. Blackzilians Finale
+973,UFC Fight Night: Machida vs. Romero
+975,UFC Fight Night: Bisping vs. Leites
+976,UFC Fight Night: Holohan vs. Smolka
+979,UFC Fight Night: Teixeira vs. Saint Preux
+984,UFC Fight Night: Holloway vs. Oliveira
+990,UFC 192: Cormier vs. Gustafsson
+992,UFC 191: Johnson vs. Dodson 2
+997,UFC Fight Night: Belfort vs. Henderson 3
+999,The Ultimate Fighter Latin America 2 Finale: Magny vs. Gastelum
+1002,UFC 193: Rousey vs. Holm
+1003,UFC Fight Night: Barnett vs. Nelson
+1005,UFC 194: Aldo vs. McGregor
+1008,UFC on Fox: dos Anjos vs. Cowboy 2
+1011,The Ultimate Fighter: Team McGregor vs. Team Faber Finale
+1012,UFC 195: Lawler vs. Condit
+1013,UFC Fight Night: Henderson vs. Masvidal
+1022,UFC Fight Night: Dillashaw vs. Cruz
+1023,UFC Fight Night: Namajunas vs. VanZant
+1038,UFC on Fox: Johnson vs. Bader
+1052,UFC Fight Night: Silva vs. Bisping
+1056,UFC Fight Night: Hendricks vs. Thompson
+1057,UFC Fight Night: Cowboy vs. Cowboy
+1060,UFC 196: McGregor vs. Diaz
+1062,UFC Fight Night: Hunt vs. Mir
+1067,The Ultimate Fighter: Team Joanna vs. Team Cláudia Finale
+1070,UFC 198: Werdum vs. Miocic
+1073,UFC on Fox: Teixeira vs. Evans
+1077,UFC Fight Night: Rothwell vs. dos Santos
+1080,UFC 197: Jones vs. Saint Preux
+1081,UFC 199: Rockhold vs. Bisping 2
+1088,UFC Fight Night: Overeem vs. Arlovski
+1098,UFC Fight Night: MacDonald vs. Thompson
+1102,UFC 200: Tate vs. Nunes
+1104,UFC Fight Night: Almeida vs. Garbrandt
+1114,UFC on Fox: Holm vs. Shevchenko
+1118,UFC Fight Night: dos Anjos vs. Alvarez
+1120,UFC Fight Night: McDonald vs. Lineker
+1129,UFC 201: Lawler vs. Woodley
+1135,The Ultimate Fighter: Tournament of Champions Finale
+1138,UFC 203: Miocic vs. Overeem
+1139,UFC Fight Night: Arlovski vs. Barnett
+1143,UFC 202: Diaz vs. McGregor 2
+1146,UFC Fight Night: Rodríguez vs. Caceres
+1150,UFC on Fox: Maia vs. Condit
+1160,UFC Fight Night: Poirier vs. Johnson
+1164,The Ultimate Fighter Latin America 3 Finale: dos Anjos vs. Ferguson
+1165,UFC Fight Night: Lineker vs. Dodson
+1167,UFC Fight Night: Cyborg vs. Länsberg
+1168,UFC 204: Bisping vs. Henderson 2
+1184,UFC Fight Night: Mousasi vs. Hall 2
+1185,UFC Fight Night: Bader vs. Nogueira 2
+1188,UFC 205: Alvarez vs. McGregor
+1191,UFC Fight Night: Whittaker vs. Brunson
+1203,UFC Fight Night: Lewis vs. Abdurakhimov
+1204,UFC 206: Holloway vs. Pettis
+1207,UFC on Fox: VanZant vs. Waterson
+1210,UFC 207: Nunes vs. Rousey
+1219,UFC Fight Night: Rodríguez vs. Penn
+1225,UFC on Fox: Shevchenko vs. Peña
+1226,UFC Fight Night: Bermudez vs. The Korean Zombie
+1228,UFC Fight Night: Lewis vs. Browne
+1229,UFC 208: Holm vs. de Randamie
+1231,UFC Fight Night: Belfort vs. Gastelum
+1234,UFC 209: Woodley vs. Thompson 2
+1246,UFC Fight Night: Manuwa vs. Anderson
+1248,UFC 210: Cormier vs. Johnson 2
+1252,UFC 211: Miocic vs. dos Santos 2
+1257,UFC 212: Aldo vs. Holloway
+1258,UFC Fight Night: Swanson vs. Lobov
+1259,UFC on Fox: Johnson vs. Reis
+1265,UFC Fight Night: Gustafsson vs. Teixeira
+1275,UFC Fight Night: Lewis vs. Hunt
+1276,UFC Fight Night: Chiesa vs. Lee
+1277,UFC Fight Night: Holm vs. Correia
+1282,UFC 213: Romero vs. Whittaker
+1289,The Ultimate Fighter: Redemption Finale
+1292,UFC on Fox: Weidman vs. Gastelum
+1293,UFC Fight Night: Nelson vs. Ponzinibbio
+1303,UFC 214: Cormier vs. Jones 2
+1307,UFC Fight Night: Pettis vs. Moreno
+1308,UFC 215: Nunes vs. Shevchenko 2
+1310,UFC Fight Night: Volkov vs. Struve
+1332,UFC Fight Night: Saint Preux vs. Okami
+1341,UFC 216: Ferguson vs. Lee
+1343,UFC Fight Night: Rockhold vs. Branch
+1348,UFC 217: Bisping vs. St-Pierre
+1352,UFC Fight Night: Brunson vs. Machida
+1353,UFC Fight Night: Poirier vs. Pettis
+1354,UFC Fight Night: Werdum vs. Tybura
+1356,UFC Fight Night: Cowboy vs. Till
+1363,UFC Fight Night: Bisping vs. Gastelum
+1364,The Ultimate Fighter: A New World Champion Finale
+1365,UFC on Fox: Lawler vs. dos Anjos
+1368,UFC 218: Holloway vs. Aldo 2
+1386,UFC Fight Night: Swanson vs. Ortega
+1387,UFC 219: Cyborg vs. Holm
+1406,UFC 220: Miocic vs. Ngannou
+1408,UFC Fight Night: Stephens vs. Choi
+1411,UFC 221: Romero vs. Rockhold
+1412,UFC Fight Night: Cowboy vs. Medeiros
+1413,UFC on Fox: Jacaré vs. Brunson 2
+1418,UFC Fight Night: Machida vs. Anders
+1422,UFC 222: Cyborg vs. Kunitskaya
+1423,UFC Fight Night: Werdum vs. Volkov
+1425,UFC on Fox: Emmett vs. Stephens
+1444,UFC 223: Khabib vs. Iaquinta
+1446,UFC on Fox: Poirier vs. Gaethje
+1447,UFC 226: Miocic vs. Cormier
+1453,UFC 224: Nunes vs. Pennington
+1455,UFC Fight Night: Barboza vs. Lee
+1459,UFC 225: Whittaker vs. Romero 2
+1467,UFC Fight Night: Rivera vs. Moraes
+1468,UFC Fight Night: Maia vs. Usman
+1475,UFC Fight Night: Cowboy vs. Edwards
+1478,UFC Fight Night: Thompson vs. Till
+1492,UFC 227: Dillashaw vs. Garbrandt 2
+1502,UFC on Fox: Alvarez vs. Poirier 2
+1503,The Ultimate Fighter: Undefeated Finale
+1504,UFC Fight Night: dos Santos vs. Ivanov
+1507,UFC Fight Night: Shogun vs. Smith
+1528,UFC Fight Night: Gaethje vs. Vick
+1530,UFC 228: Woodley vs. Till
+1539,UFC Fight Night: Hunt vs. Oleinik
+1544,UFC Fight Night: Santos vs. Anders
+1559,UFC Fight Night: The Korean Zombie vs. Rodríguez
+1562,UFC 230: Cormier vs. Lewis
+1564,UFC Fight Night: Volkan vs. Smith
+1566,UFC 229: Khabib vs. McGregor
+1574,UFC Fight Night: dos Santos vs. Tuivasa
+1578,UFC Fight Night: Magny vs. Ponzinibbio
+1579,UFC Fight Night: Blaydes vs. Ngannou 2
+1583,UFC 232: Jones vs. Gustafsson 2
+1584,UFC 231: Holloway vs. Ortega
+1586,The Ultimate Fighter: Heavy Hitters Finale
+1587,UFC on Fox: Lee vs. Iaquinta 2
+1620,UFC 234: Adesanya vs. Silva
+1623,UFC Fight Night: Cejudo vs. Dillashaw
+1625,UFC 235: Jones vs. Smith
+1626,UFC Fight Night: Till vs. Masvidal
+1628,UFC Fight Night: Assunção vs. Moraes 2
+1637,UFC on ESPN: Ngannou vs. Velasquez
+1638,UFC Fight Night: Błachowicz vs. Santos
+1639,UFC Fight Night: Lewis vs. dos Santos
+1647,UFC 237: Namajunas vs. Andrade
+1648,UFC on ESPN: Barboza vs. Gaethje
+1654,UFC Fight Night: Thompson vs. Pettis
+1657,UFC Fight Night: Jacaré vs. Hermansson
+1666,UFC 236: Holloway vs. Poirier 2
+1672,UFC Fight Night: Iaquinta vs. Cowboy
+1673,UFC Fight Night: Overeem vs. Oleinik
+1674,UFC Fight Night: dos Anjos vs. Lee
+1676,UFC Fight Night: Gustafsson vs. Smith
+1677,UFC 238: Cejudo vs. Moraes
+1680,UFC Fight Night: Moicano vs. The Korean Zombie
+1686,UFC 239: Jones vs. Santos
+1687,UFC on ESPN: Ngannou vs. dos Santos
+1709,UFC 241: Cormier vs. Miocic 2
+1713,UFC 240: Holloway vs. Edgar
+1714,UFC Fight Night: de Randamie vs. Ladd
+1715,UFC 242: Khabib vs. Poirier
+1717,UFC on ESPN: dos Anjos vs. Edwards
+1724,UFC Fight Night: Shevchenko vs. Carmouche 2
+1733,UFC Fight Night: Andrade vs. Zhang
+1734,UFC on ESPN: Covington vs. Lawler
+1735,UFC Fight Night: Cowboy vs. Gaethje
+1747,UFC Fight Night: Hermansson vs. Cannonier
+1751,UFC Fight Night: Joanna vs. Waterson
+1752,UFC 243: Whittaker vs. Adesanya
+1753,UFC Fight Night: Rodríguez vs. Stephens
+1755,UFC Fight Night: Błachowicz vs. Jacaré
+1764,UFC on ESPN: Reyes vs. Weidman
+1771,UFC 244: Masvidal vs. Diaz
+1785,UFC on ESPN: Overeem vs. Rozenstruik
+1787,UFC 245: Usman vs. Covington
+1793,UFC Fight Night: Maia vs. Askren
+1795,UFC Fight Night: Magomedsharipov vs. Kattar
+1803,UFC Fight Night: Edgar vs. The Korean Zombie
+1837,UFC 247: Jones vs. Reyes
+1839,UFC 246: McGregor vs. Cowboy
+1841,UFC Fight Night: Blaydes vs. dos Santos
+1846,UFC Fight Night: Felder vs. Hooker
+1847,UFC Fight Night: Lee vs. Oliveira
+1848,UFC Fight Night: Anderson vs. Błachowicz 2
+1849,UFC 248: Adesanya vs. Romero
+1862,UFC Fight Night: Benavidez vs. Figueiredo
