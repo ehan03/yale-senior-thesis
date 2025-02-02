@@ -14,6 +14,18 @@ class DatabaseCreator:
             os.path.dirname(__file__), "..", "..", "data", "ufc.db"
         )
         self.engine = create_engine(f"sqlite:///{self.db_path}")
+        self.source_name_map = {
+            "Best Fight Odds": "bestfightodds",
+            "Bet MMA": "betmma",
+            "ESPN": "espn",
+            "Fight Matrix": "fightmatrix",
+            "FightOdds.io": "fightoddsio",
+            "MMA Decisions": "mmadecisions",
+            "Sherdog": "sherdog",
+            "Tapology": "tapology",
+            "UFC Stats": "ufcstats",
+            "Wikipedia": "wikipedia",
+        }
 
     def create_db(self) -> None:
         Base.metadata.create_all(self.engine)
