@@ -51,8 +51,8 @@ class SherdogBouts(Base):
 
     event_id = Column(Integer, ForeignKey("sherdog_events.id"), nullable=False)
     bout_order = Column(Integer, nullable=False)
-    fighter_1_id = Column(Integer, ForeignKey("sherdog_fighters.id"), nullable=True)
-    fighter_2_id = Column(Integer, ForeignKey("sherdog_fighters.id"), nullable=True)
+    fighter_1_id = Column(Integer, nullable=True)
+    fighter_2_id = Column(Integer, nullable=True)
     fighter_1_outcome = Column(String, nullable=True)
     fighter_2_outcome = Column(String, nullable=True)
     is_title_bout = Column(Integer, nullable=False)

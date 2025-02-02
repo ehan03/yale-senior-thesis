@@ -7,14 +7,22 @@ from data_models import Base
 # third party imports
 from sqlalchemy import create_engine
 
-# class DatabaseCreator:
-#     def __init__(self) -> None:
-#         self.db_path = os.path.join(
-#             os.path.dirname(__file__), "..", "..", "data", "ufc.db"
-#         )
+
+class DatabaseCreator:
+    def __init__(self) -> None:
+        self.db_path = os.path.join(
+            os.path.dirname(__file__), "..", "..", "data", "ufc.db"
+        )
+        self.engine = create_engine(f"sqlite:///{self.db_path}")
+
+    def create_db(self) -> None:
+        Base.metadata.create_all(self.engine)
+
+    def populate_db(self) -> None:
+        pass
 
 
 if __name__ == "__main__":
-    db_path = os.path.join(os.path.dirname(__file__), "..", "..", "data", "ufc.db")
-    engine = create_engine(f"sqlite:///{db_path}")
-    Base.metadata.create_all(engine)
+    db_creator = DatabaseCreator()
+    db_creator.create_db()
+    db_creator.populate_db()
