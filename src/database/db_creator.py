@@ -10,9 +10,8 @@ from sqlalchemy import create_engine
 
 class DatabaseCreator:
     def __init__(self) -> None:
-        self.db_path = os.path.join(
-            os.path.dirname(__file__), "..", "..", "data", "ufc.db"
-        )
+        self.data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data")
+        self.db_path = os.path.join(os.path.dirname(__file__), self.data_dir, "ufc.db")
         self.engine = create_engine(f"sqlite:///{self.db_path}")
         self.source_name_map = {
             "Best Fight Odds": "bestfightodds",

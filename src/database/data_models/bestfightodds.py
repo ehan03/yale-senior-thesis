@@ -1,10 +1,10 @@
 # standard library imports
 
-# local imports
-from base import Base
-
 # third party imports
 from sqlalchemy import Column, ForeignKey, Integer, String
+
+# local imports
+from .base import Base
 
 
 class BestFightOddsFighters(Base):

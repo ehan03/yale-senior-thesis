@@ -1,10 +1,10 @@
 # standard library imports
 
-# local imports
-from base import Base
-
 # third party imports
 from sqlalchemy import Column, Date, ForeignKey, Integer, String
+
+# local imports
+from .base import Base
 
 
 class SherdogFighters(Base):
@@ -33,6 +33,8 @@ class SherdogFighterHistories(Base):
     end_round = Column(Integer, nullable=True)
     end_round_time_seconds = Column(Integer, nullable=True)
     total_time_seconds = Column(Integer, nullable=True)
+
+    __mapper_args__ = {"primary_key": [fighter_id, order]}
 
 
 class SherdogEvents(Base):
