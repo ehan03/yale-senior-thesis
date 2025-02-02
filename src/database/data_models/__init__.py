@@ -1,4 +1,4 @@
-from ._association_tables import BoutAssociation, EventAssociation, FighterAssociation
+from .association_tables import BoutAssociation, EventAssociation, FighterAssociation
 from .base import Base
 from .bestfightodds import (
     BestFightOddsBoutPropositionOdds,
