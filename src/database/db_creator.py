@@ -1,13 +1,16 @@
 # standard library imports
 import glob
 import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 # third party imports
 import pandas as pd
 from sqlalchemy import create_engine
 
 # local imports
-from .data_models import Base
+from src.database.data_models import Base
 
 
 class DatabaseCreator:
