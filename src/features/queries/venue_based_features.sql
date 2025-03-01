@@ -18,6 +18,10 @@ cte2 AS (
             WHEN t6.outcome = 'W' THEN 1
             ELSE 0
         END AS win,
+        CASE
+            WHEN t6.outcome = 'L' THEN 1
+            ELSE 0
+        END AS loss,
         t4.venue_id,
         t5.latitude,
         t5.longitude,
@@ -45,15 +49,34 @@ cte3 AS (
         t1.'order',
         bout_id,
         opponent_id,
+        SUM(win) OVER (
+            PARTITION BY fighter_id,
+            venue_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS wins_at_venue,
+        SUM(loss) OVER (
+            PARTITION BY fighter_id,
+            venue_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS losses_at_venue,
         AVG(win) OVER (
             PARTITION BY fighter_id,
             venue_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS win_rate_at_venue,
+        AVG(loss) OVER (
+            PARTITION BY fighter_id,
+            venue_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS loss_rate_at_venue,
         AVG(win) OVER (
             PARTITION BY fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS win_rate_temp,
+        AVG(loss) OVER (
+            PARTITION BY fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS loss_rate_temp,
         CASE
             WHEN latitude IS NULL
             OR prev_latitude IS NULL
@@ -107,9 +130,21 @@ cte4 AS (
         bout_id,
         opponent_id,
         CASE
+            WHEN wins_at_venue IS NULL THEN 0
+            ELSE wins_at_venue
+        END AS wins_at_venue,
+        CASE
+            WHEN losses_at_venue IS NULL THEN 0
+            ELSE losses_at_venue
+        END AS losses_at_venue,
+        CASE
             WHEN win_rate_at_venue IS NULL THEN win_rate_temp
             ELSE win_rate_at_venue
         END AS win_rate_at_venue,
+        CASE
+            WHEN loss_rate_at_venue IS NULL THEN loss_rate_temp
+            ELSE loss_rate_at_venue
+        END AS loss_rate_at_venue,
         distance_km_change,
         AVG(distance_km_change) OVER (
             PARTITION BY fighter_id
@@ -149,6 +184,22 @@ cte4 AS (
 ),
 cte5 AS (
     SELECT t1.*,
+        AVG(t2.wins_at_venue) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_opp_wins_at_venue,
+        AVG(t1.wins_at_venue - t2.wins_at_venue) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_opp_wins_at_venue_diff,
+        AVG(t2.losses_at_venue) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_opp_losses_at_venue,
+        AVG(t1.losses_at_venue - t2.losses_at_venue) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_opp_losses_at_venue_diff,
         AVG(t2.win_rate_at_venue) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -157,6 +208,14 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_rate_at_venue_diff,
+        AVG(t2.loss_rate_at_venue) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_opp_loss_rate_at_venue,
+        AVG(t1.loss_rate_at_venue - t2.loss_rate_at_venue) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_opp_loss_rate_at_venue_diff,
         AVG(t2.distance_km_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -299,8 +358,14 @@ cte5 AS (
         AND t1.opponent_id = t2.fighter_id
 )
 SELECT id,
+    t2.wins_at_venue - t3.wins_at_venue AS wins_at_venue_diff,
+    1.0 * t2.wins_at_venue / t3.wins_at_venue AS wins_at_venue_ratio,
+    t2.losses_at_venue - t3.losses_at_venue AS losses_at_venue_diff,
+    1.0 * t2.losses_at_venue / t3.losses_at_venue AS losses_at_venue_ratio,
     t2.win_rate_at_venue - t3.win_rate_at_venue AS win_rate_at_venue_diff,
     1.0 * t2.win_rate_at_venue / t3.win_rate_at_venue AS win_rate_at_venue_ratio,
+    t2.loss_rate_at_venue - t3.loss_rate_at_venue AS loss_rate_at_venue_diff,
+    1.0 * t2.loss_rate_at_venue / t3.loss_rate_at_venue AS loss_rate_at_venue_ratio,
     t2.distance_km_change - t3.distance_km_change AS distance_km_change_diff,
     1.0 * t2.distance_km_change / t3.distance_km_change AS distance_km_change_ratio,
     t2.avg_distance_km_change - t3.avg_distance_km_change AS avg_distance_km_change_diff,
@@ -329,10 +394,22 @@ SELECT id,
     1.0 * t2.event_occupancy_pct_change / t3.event_occupancy_pct_change AS event_occupancy_pct_change_ratio,
     t2.avg_event_occupancy_pct_change - t3.avg_event_occupancy_pct_change AS avg_event_occupancy_pct_change_diff,
     1.0 * t2.avg_event_occupancy_pct_change / t3.avg_event_occupancy_pct_change AS avg_event_occupancy_pct_change_ratio,
+    t2.avg_opp_wins_at_venue - t3.wins_at_venue AS avg_opp_wins_at_venue_diff,
+    1.0 * t2.avg_opp_wins_at_venue / t3.wins_at_venue AS avg_opp_wins_at_venue_ratio,
+    t2.avg_opp_wins_at_venue_diff - t3.wins_at_venue_diff AS avg_opp_wins_at_venue_diff_diff,
+    1.0 * t2.avg_opp_wins_at_venue_diff / t3.wins_at_venue_diff AS avg_opp_wins_at_venue_diff_ratio,
+    t2.avg_opp_losses_at_venue - t3.losses_at_venue AS avg_opp_losses_at_venue_diff,
+    1.0 * t2.avg_opp_losses_at_venue / t3.losses_at_venue AS avg_opp_losses_at_venue_ratio,
+    t2.avg_opp_losses_at_venue_diff - t3.losses_at_venue_diff AS avg_opp_losses_at_venue_diff_diff,
+    1.0 * t2.avg_opp_losses_at_venue_diff / t3.losses_at_venue_diff AS avg_opp_losses_at_venue_diff_ratio,
     t2.avg_opp_win_rate_at_venue - t3.win_rate_at_venue AS avg_opp_win_rate_at_venue_diff,
     1.0 * t2.avg_opp_win_rate_at_venue / t3.win_rate_at_venue AS avg_opp_win_rate_at_venue_ratio,
     t2.avg_opp_win_rate_at_venue_diff - t3.avg_opp_win_rate_at_venue_diff AS avg_opp_win_rate_at_venue_diff_diff,
     1.0 * t2.avg_opp_win_rate_at_venue_diff / t3.avg_opp_win_rate_at_venue_diff AS avg_opp_win_rate_at_venue_diff_ratio,
+    t2.avg_opp_loss_rate_at_venue - t3.loss_rate_at_venue AS avg_opp_loss_rate_at_venue_diff,
+    1.0 * t2.avg_opp_loss_rate_at_venue / t3.loss_rate_at_venue AS avg_opp_loss_rate_at_venue_ratio,
+    t2.avg_opp_loss_rate_at_venue_diff - t3.avg_opp_loss_rate_at_venue_diff AS avg_opp_loss_rate_at_venue_diff_diff,
+    1.0 * t2.avg_opp_loss_rate_at_venue_diff / t3.avg_opp_loss_rate_at_venue_diff AS avg_opp_loss_rate_at_venue_diff_ratio,
     t2.avg_opp_distance_km_change - t3.avg_opp_distance_km_change AS avg_opp_distance_km_change_diff,
     1.0 * t2.avg_opp_distance_km_change / t3.avg_opp_distance_km_change AS avg_opp_distance_km_change_ratio,
     t2.avg_opp_distance_km_change_diff - t3.avg_opp_distance_km_change_diff AS avg_opp_distance_km_change_diff_diff,
