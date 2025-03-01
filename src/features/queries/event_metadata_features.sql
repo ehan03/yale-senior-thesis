@@ -230,7 +230,7 @@ SELECT t1.id,
     END AS red_win
 FROM ufcstats_bouts AS t1
     LEFT JOIN cte5 AS t2 ON t1.event_id = t2.event_id
-WHERE event_id IN (
+WHERE t1.event_id IN (
         SELECT id
         FROM ufcstats_events
         WHERE is_ufc_event = 1
