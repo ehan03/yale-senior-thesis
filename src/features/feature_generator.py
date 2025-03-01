@@ -1,11 +1,12 @@
 # standard library imports
+import math
 import os
+import sqlite3
 from functools import reduce
 from typing import List, Tuple
 
 # third party imports
 import pandas as pd
-from sqlalchemy import create_engine
 
 # local imports
 
@@ -14,18 +15,25 @@ class FeatureGenerator:
     def __init__(self, split_date: str = "2021-01-01"):
         self.data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data")
         self.db_path = os.path.join(self.data_dir, "ufc.db")
-        self.engine = create_engine(f"sqlite:///{self.db_path}")
         self.split_date = split_date
 
     def run_queries(self) -> List[pd.DataFrame]:
         queries_dir = os.path.join(os.path.dirname(__file__), "queries")
         df_list = []
-        for filename in os.listdir(queries_dir):
-            if filename.endswith(".sql"):
-                with open(os.path.join(queries_dir, filename), "r") as file:
-                    query = file.read()
-                    df = pd.read_sql(query, self.engine)
-                    df_list.append(df)
+        with sqlite3.connect(self.db_path) as conn:
+            # add math functions
+            conn.create_function("ACOS", 1, math.acos)
+            conn.create_function("COS", 1, math.cos)
+            conn.create_function("SIN", 1, math.sin)
+            conn.create_function("RADIANS", 1, math.radians)
+            conn.create_function("DEGREES", 1, math.degrees)
+
+            for filename in os.listdir(queries_dir):
+                if filename.endswith(".sql"):
+                    with open(os.path.join(queries_dir, filename), "r") as file:
+                        query = file.read()
+                        df = pd.read_sql(query, conn)
+                        df_list.append(df)
 
         return df_list
 
@@ -39,38 +47,39 @@ class FeatureGenerator:
     def create_train_test_split(
         self, merged_df: pd.DataFrame
     ) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        train_indices = pd.read_sql(
-            """
-            SELECT id
-            FROM ufcstats_bouts
-            WHERE event_id IN (
-                    SELECT id
-                    FROM ufcstats_events
-                    WHERE is_ufc_event = 1
-                        AND date >= '2008-04-19'
-                        AND date < :split_date
-                )
-                AND red_outcome IN ('W', 'L')
-                AND outcome_method != 'DQ';
-            """,
-            self.engine,
-            params={"split_date": self.split_date},
-        )["id"].values
+        with sqlite3.connect(self.db_path) as conn:
+            train_indices = pd.read_sql(
+                """
+                SELECT id
+                FROM ufcstats_bouts
+                WHERE event_id IN (
+                        SELECT id
+                        FROM ufcstats_events
+                        WHERE is_ufc_event = 1
+                            AND date >= '2008-04-19'
+                            AND date < :split_date
+                    )
+                    AND red_outcome IN ('W', 'L')
+                    AND outcome_method != 'DQ';
+                """,
+                conn,
+                params={"split_date": self.split_date},
+            )["id"].values
 
-        test_indices = pd.read_sql(
-            """
-            SELECT id
-            FROM ufcstats_bouts
-            WHERE event_id IN (
-                    SELECT id
-                    FROM ufcstats_events
-                    WHERE is_ufc_event = 1
-                        AND date >= :split_date
-            );
-            """,
-            self.engine,
-            params={"split_date": self.split_date},
-        )["id"].values
+            test_indices = pd.read_sql(
+                """
+                SELECT id
+                FROM ufcstats_bouts
+                WHERE event_id IN (
+                        SELECT id
+                        FROM ufcstats_events
+                        WHERE is_ufc_event = 1
+                            AND date >= :split_date
+                );
+                """,
+                conn,
+                params={"split_date": self.split_date},
+            )["id"].values
 
         train_df = merged_df.loc[merged_df["id"].isin(train_indices)]
         test_df = merged_df.loc[merged_df["id"].isin(test_indices)]
