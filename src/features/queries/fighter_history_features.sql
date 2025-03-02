@@ -199,6 +199,12 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_days_since_last_fight_diff,
+        AVG(
+            1.0 * t1.days_since_last_fight / t2.days_since_last_fight
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_days_since_last_fight_ratio,
         AVG(t2.avg_days_since_last_fight) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -209,6 +215,12 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_days_since_last_fight_diff,
+        AVG(
+            1.0 * t1.avg_days_since_last_fight / t2.avg_days_since_last_fight
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_days_since_last_fight_ratio,
         AVG(t2.days_since_pro_debut) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -219,6 +231,12 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_days_since_pro_debut_diff,
+        AVG(
+            1.0 * t1.days_since_pro_debut / t2.days_since_pro_debut
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_days_since_pro_debut_ratio,
         AVG(t2.avg_days_since_pro_debut) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -229,6 +247,12 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_days_since_pro_debut_diff,
+        AVG(
+            1.0 * t1.avg_days_since_pro_debut / t2.avg_days_since_pro_debut
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_days_since_pro_debut_ratio,
         AVG(t2.days_since_ufc_debut) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -239,6 +263,12 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_days_since_ufc_debut_diff,
+        AVG(
+            1.0 * t1.days_since_ufc_debut / t2.days_since_ufc_debut
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_days_since_ufc_debut_ratio,
         AVG(t2.avg_days_since_ufc_debut) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -249,6 +279,12 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_days_since_ufc_debut_diff,
+        AVG(
+            1.0 * t1.avg_days_since_ufc_debut / t2.avg_days_since_ufc_debut
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_days_since_ufc_debut_ratio,
         AVG(t2.total_fights) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -257,6 +293,10 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_total_fights_diff,
+        AVG(1.0 * t1.total_fights / t2.total_fights) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_total_fights_ratio,
         AVG(t2.wins) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -265,6 +305,10 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_diff,
+        AVG(1.0 * t1.wins / t2.wins) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_ratio,
         AVG(t2.win_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -273,6 +317,10 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_win_pct_diff,
+        AVG(1.0 * t1.win_pct / t2.win_pct) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_win_pct_ratio,
         AVG(t2.losses) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -281,6 +329,10 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_diff,
+        AVG(1.0 * t1.losses / t2.losses) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_ratio,
         AVG(t2.loss_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -289,6 +341,10 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_loss_pct_diff,
+        AVG(1.0 * t1.loss_pct / t2.loss_pct) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_loss_pct_ratio,
         AVG(t2.win_streak) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -297,6 +353,10 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_win_streak_diff,
+        AVG(1.0 * t1.win_streak / t2.win_streak) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_win_streak_ratio,
         AVG(t2.loss_streak) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -305,6 +365,10 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_loss_streak_diff,
+        AVG(1.0 * t1.loss_streak / t2.loss_streak) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_loss_streak_ratio,
         AVG(t2.longest_win_streak) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -313,6 +377,12 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_longest_win_streak_diff,
+        AVG(
+            1.0 * t1.longest_win_streak / t2.longest_win_streak
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_longest_win_streak_ratio,
         AVG(t2.longest_loss_streak) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -320,7 +390,13 @@ cte7 AS (
         AVG(t1.longest_loss_streak - t2.longest_loss_streak) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_longest_loss_streak_diff
+        ) AS avg_longest_loss_streak_diff,
+        AVG(
+            1.0 * t1.longest_loss_streak / t2.longest_loss_streak
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_longest_loss_streak_ratio
     FROM cte6 t1
         LEFT JOIN cte6 t2 ON t1.fighter_id = t2.opponent_id
         AND t1.opponent_id = t2.fighter_id
@@ -349,34 +425,49 @@ cte8 AS (
         t1.longest_loss_streak,
         t1.avg_opp_days_since_last_fight,
         t1.avg_days_since_last_fight_diff,
+        t1.avg_days_since_last_fight_ratio,
         t1.avg_opp_avg_days_since_last_fight,
         t1.avg_avg_days_since_last_fight_diff,
+        t1.avg_avg_days_since_last_fight_ratio,
         t1.avg_opp_days_since_pro_debut,
         t1.avg_days_since_pro_debut_diff,
+        t1.avg_days_since_pro_debut_ratio,
         t1.avg_opp_avg_days_since_pro_debut,
         t1.avg_avg_days_since_pro_debut_diff,
+        t1.avg_avg_days_since_pro_debut_ratio,
         t1.avg_opp_days_since_ufc_debut,
         t1.avg_days_since_ufc_debut_diff,
+        t1.avg_days_since_ufc_debut_ratio,
         t1.avg_opp_avg_days_since_ufc_debut,
         t1.avg_avg_days_since_ufc_debut_diff,
+        t1.avg_avg_days_since_ufc_debut_ratio,
         t1.avg_opp_total_fights,
         t1.avg_total_fights_diff,
+        t1.avg_total_fights_ratio,
         t1.avg_opp_wins,
         t1.avg_wins_diff,
+        t1.avg_wins_ratio,
         t1.avg_opp_win_pct,
         t1.avg_win_pct_diff,
+        t1.avg_win_pct_ratio,
         t1.avg_opp_losses,
         t1.avg_losses_diff,
+        t1.avg_losses_ratio,
         t1.avg_opp_loss_pct,
         t1.avg_loss_pct_diff,
+        t1.avg_loss_pct_ratio,
         t1.avg_opp_win_streak,
         t1.avg_win_streak_diff,
+        t1.avg_win_streak_ratio,
         t1.avg_opp_loss_streak,
         t1.avg_loss_streak_diff,
+        t1.avg_loss_streak_ratio,
         t1.avg_opp_longest_win_streak,
         t1.avg_longest_win_streak_diff,
+        t1.avg_longest_win_streak_ratio,
         t1.avg_opp_longest_loss_streak,
-        t1.avg_longest_loss_streak_diff
+        t1.avg_longest_loss_streak_diff,
+        t1.avg_longest_loss_streak_ratio
     FROM cte7 t1
         INNER JOIN fighter_mapping AS t2 ON t1.fighter_id = t2.fightmatrix_id
         INNER JOIN fighter_mapping AS t3 ON t1.opponent_id = t3.fightmatrix_id
@@ -406,34 +497,49 @@ fightmatrix_feats AS (
         t1.longest_loss_streak,
         t1.avg_opp_days_since_last_fight,
         t1.avg_days_since_last_fight_diff,
+        t1.avg_days_since_last_fight_ratio,
         t1.avg_opp_avg_days_since_last_fight,
         t1.avg_avg_days_since_last_fight_diff,
+        t1.avg_avg_days_since_last_fight_ratio,
         t1.avg_opp_days_since_pro_debut,
         t1.avg_days_since_pro_debut_diff,
+        t1.avg_days_since_pro_debut_ratio,
         t1.avg_opp_avg_days_since_pro_debut,
         t1.avg_avg_days_since_pro_debut_diff,
+        t1.avg_avg_days_since_pro_debut_ratio,
         t1.avg_opp_days_since_ufc_debut,
         t1.avg_days_since_ufc_debut_diff,
+        t1.avg_days_since_ufc_debut_ratio,
         t1.avg_opp_avg_days_since_ufc_debut,
         t1.avg_avg_days_since_ufc_debut_diff,
+        t1.avg_avg_days_since_ufc_debut_ratio,
         t1.avg_opp_total_fights,
         t1.avg_total_fights_diff,
+        t1.avg_total_fights_ratio,
         t1.avg_opp_wins,
         t1.avg_wins_diff,
+        t1.avg_wins_ratio,
         t1.avg_opp_win_pct,
         t1.avg_win_pct_diff,
+        t1.avg_win_pct_ratio,
         t1.avg_opp_losses,
         t1.avg_losses_diff,
+        t1.avg_losses_ratio,
         t1.avg_opp_loss_pct,
         t1.avg_loss_pct_diff,
+        t1.avg_loss_pct_ratio,
         t1.avg_opp_win_streak,
         t1.avg_win_streak_diff,
+        t1.avg_win_streak_ratio,
         t1.avg_opp_loss_streak,
         t1.avg_loss_streak_diff,
+        t1.avg_loss_streak_ratio,
         t1.avg_opp_longest_win_streak,
         t1.avg_longest_win_streak_diff,
+        t1.avg_longest_win_streak_ratio,
         t1.avg_opp_longest_loss_streak,
-        t1.avg_longest_loss_streak_diff
+        t1.avg_longest_loss_streak_diff,
+        t1.avg_longest_loss_streak_ratio
     FROM cte8 t1
 ),
 cte9 AS (
@@ -804,6 +910,10 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_ko_tko_diff,
+        AVG(1.0 * t1.wins_by_ko_tko / t2.wins_by_ko_tko) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_ko_tko_ratio,
         AVG(t2.wins_by_ko_tko_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -812,6 +922,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_ko_tko_pct_diff,
+        AVG(
+            1.0 * t1.wins_by_ko_tko_pct / t2.wins_by_ko_tko_pct
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_ko_tko_pct_ratio,
         AVG(t2.wins_by_ko_tko_pct_overall) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -822,6 +938,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_ko_tko_pct_overall_diff,
+        AVG(
+            1.0 * t1.wins_by_ko_tko_pct_overall / t2.wins_by_ko_tko_pct_overall
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_ko_tko_pct_overall_ratio,
         AVG(t2.ko_tko_landed_per_minute) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -832,6 +954,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_ko_tko_landed_per_minute_diff,
+        AVG(
+            1.0 * t1.ko_tko_landed_per_minute / t2.ko_tko_landed_per_minute
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_ko_tko_landed_per_minute_ratio,
         AVG(t2.wins_by_submission) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -840,6 +968,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_submission_diff,
+        AVG(
+            1.0 * t1.wins_by_submission / t2.wins_by_submission
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_submission_ratio,
         AVG(t2.wins_by_submission_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -850,6 +984,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_submission_pct_diff,
+        AVG(
+            1.0 * t1.wins_by_submission_pct / t2.wins_by_submission_pct
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_submission_pct_ratio,
         AVG(t2.wins_by_submission_pct_overall) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -860,6 +1000,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_submission_pct_overall_diff,
+        AVG(
+            1.0 * t1.wins_by_submission_pct_overall / t2.wins_by_submission_pct_overall
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_submission_pct_overall_ratio,
         AVG(t2.submissions_landed_per_minute) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -870,6 +1016,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_submissions_landed_per_minute_diff,
+        AVG(
+            1.0 * t1.submissions_landed_per_minute / t2.submissions_landed_per_minute
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_submissions_landed_per_minute_ratio,
         AVG(t2.wins_by_decision) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -878,6 +1030,10 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_decision_diff,
+        AVG(1.0 * t1.wins_by_decision / t2.wins_by_decision) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_decision_ratio,
         AVG(t2.wins_by_decision_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -888,6 +1044,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_decision_pct_diff,
+        AVG(
+            1.0 * t1.wins_by_decision_pct / t2.wins_by_decision_pct
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_decision_pct_ratio,
         AVG(t2.wins_by_decision_pct_overall) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -898,6 +1060,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_wins_by_decision_pct_overall_diff,
+        AVG(
+            1.0 * t1.wins_by_decision_pct_overall / t2.wins_by_decision_pct_overall
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_wins_by_decision_pct_overall_ratio,
         AVG(t2.losses_by_ko_tko) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -906,6 +1074,10 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_ko_tko_diff,
+        AVG(1.0 * t1.losses_by_ko_tko / t2.losses_by_ko_tko) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_ko_tko_ratio,
         AVG(t2.losses_by_ko_tko_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -916,6 +1088,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_ko_tko_pct_diff,
+        AVG(
+            1.0 * t1.losses_by_ko_tko_pct / t2.losses_by_ko_tko_pct
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_ko_tko_pct_ratio,
         AVG(t2.losses_by_ko_tko_pct_overall) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -926,6 +1104,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_ko_tko_pct_overall_diff,
+        AVG(
+            1.0 * t1.losses_by_ko_tko_pct_overall / t2.losses_by_ko_tko_pct_overall
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_ko_tko_pct_overall_ratio,
         AVG(t2.ko_tko_absorbed_per_minute) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -936,6 +1120,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_ko_tko_absorbed_per_minute_diff,
+        AVG(
+            1.0 * t1.ko_tko_absorbed_per_minute / t2.ko_tko_absorbed_per_minute
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_ko_tko_absorbed_per_minute_ratio,
         AVG(t2.losses_by_submission) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -946,6 +1136,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_submission_diff,
+        AVG(
+            1.0 * t1.losses_by_submission / t2.losses_by_submission
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_submission_ratio,
         AVG(t2.losses_by_submission_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -956,6 +1152,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_submission_pct_diff,
+        AVG(
+            1.0 * t1.losses_by_submission_pct / t2.losses_by_submission_pct
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_submission_pct_ratio,
         AVG(t2.losses_by_submission_pct_overall) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -966,6 +1168,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_submission_pct_overall_diff,
+        AVG(
+            1.0 * t1.losses_by_submission_pct_overall / t2.losses_by_submission_pct_overall
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_submission_pct_overall_ratio,
         AVG(t2.submissions_absorbed_per_minute) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -976,6 +1184,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_submissions_absorbed_per_minute_diff,
+        AVG(
+            1.0 * t1.submissions_absorbed_per_minute / t2.submissions_absorbed_per_minute
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_submissions_absorbed_per_minute_ratio,
         AVG(t2.losses_by_decision) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -984,6 +1198,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_decision_diff,
+        AVG(
+            1.0 * t1.losses_by_decision / t2.losses_by_decision
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_decision_ratio,
         AVG(t2.losses_by_decision_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -994,6 +1214,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_decision_pct_diff,
+        AVG(
+            1.0 * t1.losses_by_decision_pct / t2.losses_by_decision_pct
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_decision_pct_ratio,
         AVG(t2.losses_by_decision_pct_overall) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1004,6 +1230,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_losses_by_decision_pct_overall_diff,
+        AVG(
+            1.0 * t1.losses_by_decision_pct_overall / t2.losses_by_decision_pct_overall
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_losses_by_decision_pct_overall_ratio,
         AVG(t2.avg_end_round) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1012,6 +1244,10 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_end_round_diff,
+        AVG(1.0 * t1.avg_end_round / t2.avg_end_round) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_end_round_ratio,
         AVG(t2.avg_end_round_win) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1020,6 +1256,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_end_round_win_diff,
+        AVG(
+            1.0 * t1.avg_end_round_win / t2.avg_end_round_win
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_end_round_win_ratio,
         AVG(t2.avg_end_round_loss) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1028,6 +1270,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_end_round_loss_diff,
+        AVG(
+            1.0 * t1.avg_end_round_loss / t2.avg_end_round_loss
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_end_round_loss_ratio,
         AVG(t2.total_time_fought_seconds) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1038,6 +1286,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_total_time_fought_seconds_diff,
+        AVG(
+            1.0 * t1.total_time_fought_seconds / t2.total_time_fought_seconds
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_total_time_fought_seconds_ratio,
         AVG(t2.avg_time_fought_seconds) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1048,6 +1302,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_time_fought_seconds_diff,
+        AVG(
+            1.0 * t1.avg_time_fought_seconds / t2.avg_time_fought_seconds
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_time_fought_seconds_ratio,
         AVG(t2.avg_time_to_win_seconds) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1058,6 +1318,12 @@ cte13 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_time_to_win_seconds_diff,
+        AVG(
+            1.0 * t1.avg_time_to_win_seconds / t2.avg_time_to_win_seconds
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_time_to_win_seconds_ratio,
         AVG(t2.avg_time_to_lose_seconds) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -1067,7 +1333,13 @@ cte13 AS (
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_time_to_lose_seconds_diff
+        ) AS avg_avg_time_to_lose_seconds_diff,
+        AVG(
+            1.0 * t1.avg_time_to_lose_seconds / t2.avg_time_to_lose_seconds
+        ) OVER (
+            PARTITION BY t1.fighter_id
+            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
+        ) AS avg_avg_time_to_lose_seconds_ratio
     FROM cte12 t1
         LEFT JOIN cte12 t2 ON t1.fighter_id = t2.opponent_id
         AND t1.opponent_id = t2.fighter_id
@@ -1110,62 +1382,91 @@ cte14 AS (
         t1.avg_time_to_lose_seconds,
         t1.avg_opp_wins_by_ko_tko,
         t1.avg_wins_by_ko_tko_diff,
+        t1.avg_wins_by_ko_tko_ratio,
         t1.avg_opp_wins_by_ko_tko_pct,
         t1.avg_wins_by_ko_tko_pct_diff,
+        t1.avg_wins_by_ko_tko_pct_ratio,
         t1.avg_opp_wins_by_ko_tko_pct_overall,
         t1.avg_wins_by_ko_tko_pct_overall_diff,
+        t1.avg_wins_by_ko_tko_pct_overall_ratio,
         t1.avg_opp_ko_tko_landed_per_minute,
         t1.avg_ko_tko_landed_per_minute_diff,
+        t1.avg_ko_tko_landed_per_minute_ratio,
         t1.avg_opp_wins_by_submission,
         t1.avg_wins_by_submission_diff,
+        t1.avg_wins_by_submission_ratio,
         t1.avg_opp_wins_by_submission_pct,
         t1.avg_wins_by_submission_pct_diff,
+        t1.avg_wins_by_submission_pct_ratio,
         t1.avg_opp_wins_by_submission_pct_overall,
         t1.avg_wins_by_submission_pct_overall_diff,
+        t1.avg_wins_by_submission_pct_overall_ratio,
         t1.avg_opp_submissions_landed_per_minute,
         t1.avg_submissions_landed_per_minute_diff,
+        t1.avg_submissions_landed_per_minute_ratio,
         t1.avg_opp_wins_by_decision,
         t1.avg_wins_by_decision_diff,
+        t1.avg_wins_by_decision_ratio,
         t1.avg_opp_wins_by_decision_pct,
         t1.avg_wins_by_decision_pct_diff,
+        t1.avg_wins_by_decision_pct_ratio,
         t1.avg_opp_wins_by_decision_pct_overall,
         t1.avg_wins_by_decision_pct_overall_diff,
+        t1.avg_wins_by_decision_pct_overall_ratio,
         t1.avg_opp_losses_by_ko_tko,
         t1.avg_losses_by_ko_tko_diff,
+        t1.avg_losses_by_ko_tko_ratio,
         t1.avg_opp_losses_by_ko_tko_pct,
         t1.avg_losses_by_ko_tko_pct_diff,
+        t1.avg_losses_by_ko_tko_pct_ratio,
         t1.avg_opp_losses_by_ko_tko_pct_overall,
         t1.avg_losses_by_ko_tko_pct_overall_diff,
+        t1.avg_losses_by_ko_tko_pct_overall_ratio,
         t1.avg_opp_ko_tko_absorbed_per_minute,
         t1.avg_ko_tko_absorbed_per_minute_diff,
+        t1.avg_ko_tko_absorbed_per_minute_ratio,
         t1.avg_opp_losses_by_submission,
         t1.avg_losses_by_submission_diff,
+        t1.avg_losses_by_submission_ratio,
         t1.avg_opp_losses_by_submission_pct,
         t1.avg_losses_by_submission_pct_diff,
+        t1.avg_losses_by_submission_pct_ratio,
         t1.avg_opp_losses_by_submission_pct_overall,
         t1.avg_losses_by_submission_pct_overall_diff,
+        t1.avg_losses_by_submission_pct_overall_ratio,
         t1.avg_opp_submissions_absorbed_per_minute,
         t1.avg_submissions_absorbed_per_minute_diff,
+        t1.avg_submissions_absorbed_per_minute_ratio,
         t1.avg_opp_losses_by_decision,
         t1.avg_losses_by_decision_diff,
+        t1.avg_losses_by_decision_ratio,
         t1.avg_opp_losses_by_decision_pct,
         t1.avg_losses_by_decision_pct_diff,
+        t1.avg_losses_by_decision_pct_ratio,
         t1.avg_opp_losses_by_decision_pct_overall,
         t1.avg_losses_by_decision_pct_overall_diff,
+        t1.avg_losses_by_decision_pct_overall_ratio,
         t1.avg_opp_avg_end_round,
         t1.avg_avg_end_round_diff,
+        t1.avg_avg_end_round_ratio,
         t1.avg_opp_avg_end_round_win,
         t1.avg_avg_end_round_win_diff,
+        t1.avg_avg_end_round_win_ratio,
         t1.avg_opp_avg_end_round_loss,
         t1.avg_avg_end_round_loss_diff,
+        t1.avg_avg_end_round_loss_ratio,
         t1.avg_opp_total_time_fought_seconds,
         t1.avg_total_time_fought_seconds_diff,
+        t1.avg_total_time_fought_seconds_ratio,
         t1.avg_opp_avg_time_fought_seconds,
         t1.avg_avg_time_fought_seconds_diff,
+        t1.avg_avg_time_fought_seconds_ratio,
         t1.avg_opp_avg_time_to_win_seconds,
         t1.avg_avg_time_to_win_seconds_diff,
+        t1.avg_avg_time_to_win_seconds_ratio,
         t1.avg_opp_avg_time_to_lose_seconds,
-        t1.avg_avg_time_to_lose_seconds_diff
+        t1.avg_avg_time_to_lose_seconds_diff,
+        t1.avg_avg_time_to_lose_seconds_ratio
     FROM cte13 t1
         INNER JOIN fighter_mapping AS t2 ON t1.fighter_id = t2.sherdog_id
         INNER JOIN fighter_mapping AS t3 ON t1.opponent_id = t3.sherdog_id
@@ -1209,62 +1510,91 @@ sherdog_feats AS (
         avg_time_to_lose_seconds,
         avg_opp_wins_by_ko_tko,
         avg_wins_by_ko_tko_diff,
+        avg_wins_by_ko_tko_ratio,
         avg_opp_wins_by_ko_tko_pct,
         avg_wins_by_ko_tko_pct_diff,
+        avg_wins_by_ko_tko_pct_ratio,
         avg_opp_wins_by_ko_tko_pct_overall,
         avg_wins_by_ko_tko_pct_overall_diff,
+        avg_wins_by_ko_tko_pct_overall_ratio,
         avg_opp_ko_tko_landed_per_minute,
         avg_ko_tko_landed_per_minute_diff,
+        avg_ko_tko_landed_per_minute_ratio,
         avg_opp_wins_by_submission,
         avg_wins_by_submission_diff,
+        avg_wins_by_submission_ratio,
         avg_opp_wins_by_submission_pct,
         avg_wins_by_submission_pct_diff,
+        avg_wins_by_submission_pct_ratio,
         avg_opp_wins_by_submission_pct_overall,
         avg_wins_by_submission_pct_overall_diff,
+        avg_wins_by_submission_pct_overall_ratio,
         avg_opp_submissions_landed_per_minute,
         avg_submissions_landed_per_minute_diff,
+        avg_submissions_landed_per_minute_ratio,
         avg_opp_wins_by_decision,
         avg_wins_by_decision_diff,
+        avg_wins_by_decision_ratio,
         avg_opp_wins_by_decision_pct,
         avg_wins_by_decision_pct_diff,
+        avg_wins_by_decision_pct_ratio,
         avg_opp_wins_by_decision_pct_overall,
         avg_wins_by_decision_pct_overall_diff,
+        avg_wins_by_decision_pct_overall_ratio,
         avg_opp_losses_by_ko_tko,
         avg_losses_by_ko_tko_diff,
+        avg_losses_by_ko_tko_ratio,
         avg_opp_losses_by_ko_tko_pct,
         avg_losses_by_ko_tko_pct_diff,
+        avg_losses_by_ko_tko_pct_ratio,
         avg_opp_losses_by_ko_tko_pct_overall,
         avg_losses_by_ko_tko_pct_overall_diff,
+        avg_losses_by_ko_tko_pct_overall_ratio,
         avg_opp_ko_tko_absorbed_per_minute,
         avg_ko_tko_absorbed_per_minute_diff,
+        avg_ko_tko_absorbed_per_minute_ratio,
         avg_opp_losses_by_submission,
         avg_losses_by_submission_diff,
+        avg_losses_by_submission_ratio,
         avg_opp_losses_by_submission_pct,
         avg_losses_by_submission_pct_diff,
+        avg_losses_by_submission_pct_ratio,
         avg_opp_losses_by_submission_pct_overall,
         avg_losses_by_submission_pct_overall_diff,
+        avg_losses_by_submission_pct_overall_ratio,
         avg_opp_submissions_absorbed_per_minute,
         avg_submissions_absorbed_per_minute_diff,
+        avg_submissions_absorbed_per_minute_ratio,
         avg_opp_losses_by_decision,
         avg_losses_by_decision_diff,
+        avg_losses_by_decision_ratio,
         avg_opp_losses_by_decision_pct,
         avg_losses_by_decision_pct_diff,
+        avg_losses_by_decision_pct_ratio,
         avg_opp_losses_by_decision_pct_overall,
         avg_losses_by_decision_pct_overall_diff,
+        avg_losses_by_decision_pct_overall_ratio,
         avg_opp_avg_end_round,
         avg_avg_end_round_diff,
+        avg_avg_end_round_ratio,
         avg_opp_avg_end_round_win,
         avg_avg_end_round_win_diff,
+        avg_avg_end_round_win_ratio,
         avg_opp_avg_end_round_loss,
         avg_avg_end_round_loss_diff,
+        avg_avg_end_round_loss_ratio,
         avg_opp_total_time_fought_seconds,
         avg_total_time_fought_seconds_diff,
+        avg_total_time_fought_seconds_ratio,
         avg_opp_avg_time_fought_seconds,
         avg_avg_time_fought_seconds_diff,
+        avg_avg_time_fought_seconds_ratio,
         avg_opp_avg_time_to_win_seconds,
         avg_avg_time_to_win_seconds_diff,
+        avg_avg_time_to_win_seconds_ratio,
         avg_opp_avg_time_to_lose_seconds,
-        avg_avg_time_to_lose_seconds_diff
+        avg_avg_time_to_lose_seconds_diff,
+        avg_avg_time_to_lose_seconds_ratio
     FROM cte14 t1
 ),
 cte15 AS (
@@ -1304,34 +1634,49 @@ cte17 AS (
         t2.longest_loss_streak,
         t2.avg_opp_days_since_last_fight,
         t2.avg_days_since_last_fight_diff,
+        t2.avg_days_since_last_fight_ratio,
         t2.avg_opp_avg_days_since_last_fight,
         t2.avg_avg_days_since_last_fight_diff,
+        t2.avg_avg_days_since_last_fight_ratio,
         t2.avg_opp_days_since_pro_debut,
         t2.avg_days_since_pro_debut_diff,
+        t2.avg_days_since_pro_debut_ratio,
         t2.avg_opp_avg_days_since_pro_debut,
         t2.avg_avg_days_since_pro_debut_diff,
+        t2.avg_avg_days_since_pro_debut_ratio,
         t2.avg_opp_days_since_ufc_debut,
         t2.avg_days_since_ufc_debut_diff,
+        t2.avg_days_since_ufc_debut_ratio,
         t2.avg_opp_avg_days_since_ufc_debut,
         t2.avg_avg_days_since_ufc_debut_diff,
+        t2.avg_avg_days_since_ufc_debut_ratio,
         t2.avg_opp_total_fights,
         t2.avg_total_fights_diff,
+        t2.avg_total_fights_ratio,
         t2.avg_opp_wins,
         t2.avg_wins_diff,
+        t2.avg_wins_ratio,
         t2.avg_opp_win_pct,
         t2.avg_win_pct_diff,
+        t2.avg_win_pct_ratio,
         t2.avg_opp_losses,
         t2.avg_losses_diff,
+        t2.avg_losses_ratio,
         t2.avg_opp_loss_pct,
         t2.avg_loss_pct_diff,
+        t2.avg_loss_pct_ratio,
         t2.avg_opp_win_streak,
         t2.avg_win_streak_diff,
+        t2.avg_win_streak_ratio,
         t2.avg_opp_loss_streak,
         t2.avg_loss_streak_diff,
+        t2.avg_loss_streak_ratio,
         t2.avg_opp_longest_win_streak,
         t2.avg_longest_win_streak_diff,
+        t2.avg_longest_win_streak_ratio,
         t2.avg_opp_longest_loss_streak,
         t2.avg_longest_loss_streak_diff,
+        t2.avg_longest_loss_streak_ratio,
         t3.wins_by_ko_tko,
         t3.wins_by_ko_tko_pct,
         t3.wins_by_ko_tko_pct_overall,
@@ -1363,62 +1708,91 @@ cte17 AS (
         t3.avg_time_to_lose_seconds,
         t3.avg_opp_wins_by_ko_tko,
         t3.avg_wins_by_ko_tko_diff,
+        t3.avg_wins_by_ko_tko_ratio,
         t3.avg_opp_wins_by_ko_tko_pct,
         t3.avg_wins_by_ko_tko_pct_diff,
+        t3.avg_wins_by_ko_tko_pct_ratio,
         t3.avg_opp_wins_by_ko_tko_pct_overall,
         t3.avg_wins_by_ko_tko_pct_overall_diff,
+        t3.avg_wins_by_ko_tko_pct_overall_ratio,
         t3.avg_opp_ko_tko_landed_per_minute,
         t3.avg_ko_tko_landed_per_minute_diff,
+        t3.avg_ko_tko_landed_per_minute_ratio,
         t3.avg_opp_wins_by_submission,
         t3.avg_wins_by_submission_diff,
+        t3.avg_wins_by_submission_ratio,
         t3.avg_opp_wins_by_submission_pct,
         t3.avg_wins_by_submission_pct_diff,
+        t3.avg_wins_by_submission_pct_ratio,
         t3.avg_opp_wins_by_submission_pct_overall,
         t3.avg_wins_by_submission_pct_overall_diff,
+        t3.avg_wins_by_submission_pct_overall_ratio,
         t3.avg_opp_submissions_landed_per_minute,
         t3.avg_submissions_landed_per_minute_diff,
+        t3.avg_submissions_landed_per_minute_ratio,
         t3.avg_opp_wins_by_decision,
         t3.avg_wins_by_decision_diff,
+        t3.avg_wins_by_decision_ratio,
         t3.avg_opp_wins_by_decision_pct,
         t3.avg_wins_by_decision_pct_diff,
+        t3.avg_wins_by_decision_pct_ratio,
         t3.avg_opp_wins_by_decision_pct_overall,
         t3.avg_wins_by_decision_pct_overall_diff,
+        t3.avg_wins_by_decision_pct_overall_ratio,
         t3.avg_opp_losses_by_ko_tko,
         t3.avg_losses_by_ko_tko_diff,
+        t3.avg_losses_by_ko_tko_ratio,
         t3.avg_opp_losses_by_ko_tko_pct,
         t3.avg_losses_by_ko_tko_pct_diff,
+        t3.avg_losses_by_ko_tko_pct_ratio,
         t3.avg_opp_losses_by_ko_tko_pct_overall,
         t3.avg_losses_by_ko_tko_pct_overall_diff,
+        t3.avg_losses_by_ko_tko_pct_overall_ratio,
         t3.avg_opp_ko_tko_absorbed_per_minute,
         t3.avg_ko_tko_absorbed_per_minute_diff,
+        t3.avg_ko_tko_absorbed_per_minute_ratio,
         t3.avg_opp_losses_by_submission,
         t3.avg_losses_by_submission_diff,
+        t3.avg_losses_by_submission_ratio,
         t3.avg_opp_losses_by_submission_pct,
         t3.avg_losses_by_submission_pct_diff,
+        t3.avg_losses_by_submission_pct_ratio,
         t3.avg_opp_losses_by_submission_pct_overall,
         t3.avg_losses_by_submission_pct_overall_diff,
+        t3.avg_losses_by_submission_pct_overall_ratio,
         t3.avg_opp_submissions_absorbed_per_minute,
         t3.avg_submissions_absorbed_per_minute_diff,
+        t3.avg_submissions_absorbed_per_minute_ratio,
         t3.avg_opp_losses_by_decision,
         t3.avg_losses_by_decision_diff,
+        t3.avg_losses_by_decision_ratio,
         t3.avg_opp_losses_by_decision_pct,
         t3.avg_losses_by_decision_pct_diff,
+        t3.avg_losses_by_decision_pct_ratio,
         t3.avg_opp_losses_by_decision_pct_overall,
         t3.avg_losses_by_decision_pct_overall_diff,
+        t3.avg_losses_by_decision_pct_overall_ratio,
         t3.avg_opp_avg_end_round,
         t3.avg_avg_end_round_diff,
+        t3.avg_avg_end_round_ratio,
         t3.avg_opp_avg_end_round_win,
         t3.avg_avg_end_round_win_diff,
+        t3.avg_avg_end_round_win_ratio,
         t3.avg_opp_avg_end_round_loss,
         t3.avg_avg_end_round_loss_diff,
+        t3.avg_avg_end_round_loss_ratio,
         t3.avg_opp_total_time_fought_seconds,
         t3.avg_total_time_fought_seconds_diff,
+        t3.avg_total_time_fought_seconds_ratio,
         t3.avg_opp_avg_time_fought_seconds,
         t3.avg_avg_time_fought_seconds_diff,
+        t3.avg_avg_time_fought_seconds_ratio,
         t3.avg_opp_avg_time_to_win_seconds,
         t3.avg_avg_time_to_win_seconds_diff,
+        t3.avg_avg_time_to_win_seconds_ratio,
         t3.avg_opp_avg_time_to_lose_seconds,
-        t3.avg_avg_time_to_lose_seconds_diff
+        t3.avg_avg_time_to_lose_seconds_diff,
+        t3.avg_avg_time_to_lose_seconds_ratio
     FROM cte16 t1
         INNER JOIN fightmatrix_feats AS t2 ON t1.fighter_id = t2.fighter_id
         AND t1.opponent_id = t2.opponent_id
@@ -1462,62 +1836,92 @@ SELECT id,
     1.0 * t2.avg_opp_days_since_last_fight / t3.avg_opp_days_since_last_fight AS avg_opp_days_since_last_fight_ratio,
     t2.avg_days_since_last_fight_diff - t3.avg_days_since_last_fight_diff AS avg_days_since_last_fight_diff_diff,
     1.0 * t2.avg_days_since_last_fight_diff / t3.avg_days_since_last_fight_diff AS avg_days_since_last_fight_diff_ratio,
+    t2.avg_days_since_last_fight_ratio - t3.avg_days_since_last_fight_ratio AS avg_days_since_last_fight_ratio_diff,
+    1.0 * t2.avg_days_since_last_fight_ratio / t3.avg_days_since_last_fight_ratio AS avg_days_since_last_fight_ratio_ratio,
     t2.avg_opp_avg_days_since_last_fight - t3.avg_opp_avg_days_since_last_fight AS avg_opp_avg_days_since_last_fight_diff,
     1.0 * t2.avg_opp_avg_days_since_last_fight / t3.avg_opp_avg_days_since_last_fight AS avg_opp_avg_days_since_last_fight_ratio,
     t2.avg_avg_days_since_last_fight_diff - t3.avg_avg_days_since_last_fight_diff AS avg_avg_days_since_last_fight_diff_diff,
     1.0 * t2.avg_avg_days_since_last_fight_diff / t3.avg_avg_days_since_last_fight_diff AS avg_avg_days_since_last_fight_diff_ratio,
+    t2.avg_avg_days_since_last_fight_ratio - t3.avg_avg_days_since_last_fight_ratio AS avg_avg_days_since_last_fight_ratio_diff,
+    1.0 * t2.avg_avg_days_since_last_fight_ratio / t3.avg_avg_days_since_last_fight_ratio AS avg_avg_days_since_last_fight_ratio_ratio,
     t2.avg_opp_days_since_pro_debut - t3.avg_opp_days_since_pro_debut AS avg_opp_days_since_pro_debut_diff,
     1.0 * t2.avg_opp_days_since_pro_debut / t3.avg_opp_days_since_pro_debut AS avg_opp_days_since_pro_debut_ratio,
     t2.avg_days_since_pro_debut_diff - t3.avg_days_since_pro_debut_diff AS avg_days_since_pro_debut_diff_diff,
     1.0 * t2.avg_days_since_pro_debut_diff / t3.avg_days_since_pro_debut_diff AS avg_days_since_pro_debut_diff_ratio,
+    t2.avg_days_since_pro_debut_ratio - t3.avg_days_since_pro_debut_ratio AS avg_days_since_pro_debut_ratio_diff,
+    1.0 * t2.avg_days_since_pro_debut_ratio / t3.avg_days_since_pro_debut_ratio AS avg_days_since_pro_debut_ratio_ratio,
     t2.avg_opp_avg_days_since_pro_debut - t3.avg_opp_avg_days_since_pro_debut AS avg_opp_avg_days_since_pro_debut_diff,
     1.0 * t2.avg_opp_avg_days_since_pro_debut / t3.avg_opp_avg_days_since_pro_debut AS avg_opp_avg_days_since_pro_debut_ratio,
     t2.avg_avg_days_since_pro_debut_diff - t3.avg_avg_days_since_pro_debut_diff AS avg_avg_days_since_pro_debut_diff_diff,
     1.0 * t2.avg_avg_days_since_pro_debut_diff / t3.avg_avg_days_since_pro_debut_diff AS avg_avg_days_since_pro_debut_diff_ratio,
+    t2.avg_avg_days_since_pro_debut_ratio - t3.avg_avg_days_since_pro_debut_ratio AS avg_avg_days_since_pro_debut_ratio_diff,
+    1.0 * t2.avg_avg_days_since_pro_debut_ratio / t3.avg_avg_days_since_pro_debut_ratio AS avg_avg_days_since_pro_debut_ratio_ratio,
     t2.avg_opp_days_since_ufc_debut - t3.avg_opp_days_since_ufc_debut AS avg_opp_days_since_ufc_debut_diff,
     1.0 * t2.avg_opp_days_since_ufc_debut / t3.avg_opp_days_since_ufc_debut AS avg_opp_days_since_ufc_debut_ratio,
     t2.avg_days_since_ufc_debut_diff - t3.avg_days_since_ufc_debut_diff AS avg_days_since_ufc_debut_diff_diff,
     1.0 * t2.avg_days_since_ufc_debut_diff / t3.avg_days_since_ufc_debut_diff AS avg_days_since_ufc_debut_diff_ratio,
+    t2.avg_days_since_ufc_debut_ratio - t3.avg_days_since_ufc_debut_ratio AS avg_days_since_ufc_debut_ratio_diff,
+    1.0 * t2.avg_days_since_ufc_debut_ratio / t3.avg_days_since_ufc_debut_ratio AS avg_days_since_ufc_debut_ratio_ratio,
     t2.avg_opp_avg_days_since_ufc_debut - t3.avg_opp_avg_days_since_ufc_debut AS avg_opp_avg_days_since_ufc_debut_diff,
     1.0 * t2.avg_opp_avg_days_since_ufc_debut / t3.avg_opp_avg_days_since_ufc_debut AS avg_opp_avg_days_since_ufc_debut_ratio,
     t2.avg_avg_days_since_ufc_debut_diff - t3.avg_avg_days_since_ufc_debut_diff AS avg_avg_days_since_ufc_debut_diff_diff,
     1.0 * t2.avg_avg_days_since_ufc_debut_diff / t3.avg_avg_days_since_ufc_debut_diff AS avg_avg_days_since_ufc_debut_diff_ratio,
+    t2.avg_avg_days_since_ufc_debut_ratio - t3.avg_avg_days_since_ufc_debut_ratio AS avg_avg_days_since_ufc_debut_ratio_diff,
+    1.0 * t2.avg_avg_days_since_ufc_debut_ratio / t3.avg_avg_days_since_ufc_debut_ratio AS avg_avg_days_since_ufc_debut_ratio_ratio,
     t2.avg_opp_total_fights - t3.avg_opp_total_fights AS avg_opp_total_fights_diff,
     1.0 * t2.avg_opp_total_fights / t3.avg_opp_total_fights AS avg_opp_total_fights_ratio,
     t2.avg_total_fights_diff - t3.avg_total_fights_diff AS avg_total_fights_diff_diff,
     1.0 * t2.avg_total_fights_diff / t3.avg_total_fights_diff AS avg_total_fights_diff_ratio,
+    t2.avg_total_fights_ratio - t3.avg_total_fights_ratio AS avg_total_fights_ratio_diff,
+    1.0 * t2.avg_total_fights_ratio / t3.avg_total_fights_ratio AS avg_total_fights_ratio_ratio,
     t2.avg_opp_wins - t3.avg_opp_wins AS avg_opp_wins_diff,
     1.0 * t2.avg_opp_wins / t3.avg_opp_wins AS avg_opp_wins_ratio,
     t2.avg_wins_diff - t3.avg_wins_diff AS avg_wins_diff_diff,
     1.0 * t2.avg_wins_diff / t3.avg_wins_diff AS avg_wins_diff_ratio,
+    t2.avg_wins_ratio - t3.avg_wins_ratio AS avg_wins_ratio_diff,
+    1.0 * t2.avg_wins_ratio / t3.avg_wins_ratio AS avg_wins_ratio_ratio,
     t2.avg_opp_win_pct - t3.avg_opp_win_pct AS avg_opp_win_pct_diff,
     1.0 * t2.avg_opp_win_pct / t3.avg_opp_win_pct AS avg_opp_win_pct_ratio,
     t2.avg_win_pct_diff - t3.avg_win_pct_diff AS avg_win_pct_diff_diff,
     1.0 * t2.avg_win_pct_diff / t3.avg_win_pct_diff AS avg_win_pct_diff_ratio,
+    t2.avg_win_pct_ratio - t3.avg_win_pct_ratio AS avg_win_pct_ratio_diff,
+    1.0 * t2.avg_win_pct_ratio / t3.avg_win_pct_ratio AS avg_win_pct_ratio_ratio,
     t2.avg_opp_losses - t3.avg_opp_losses AS avg_opp_losses_diff,
     1.0 * t2.avg_opp_losses / t3.avg_opp_losses AS avg_opp_losses_ratio,
     t2.avg_losses_diff - t3.avg_losses_diff AS avg_losses_diff_diff,
     1.0 * t2.avg_losses_diff / t3.avg_losses_diff AS avg_losses_diff_ratio,
+    t2.avg_losses_ratio - t3.avg_losses_ratio AS avg_losses_ratio_diff,
+    1.0 * t2.avg_losses_ratio / t3.avg_losses_ratio AS avg_losses_ratio_ratio,
     t2.avg_opp_loss_pct - t3.avg_opp_loss_pct AS avg_opp_loss_pct_diff,
     1.0 * t2.avg_opp_loss_pct / t3.avg_opp_loss_pct AS avg_opp_loss_pct_ratio,
     t2.avg_loss_pct_diff - t3.avg_loss_pct_diff AS avg_loss_pct_diff_diff,
     1.0 * t2.avg_loss_pct_diff / t3.avg_loss_pct_diff AS avg_loss_pct_diff_ratio,
+    t2.avg_loss_pct_ratio - t3.avg_loss_pct_ratio AS avg_loss_pct_ratio_diff,
+    1.0 * t2.avg_loss_pct_ratio / t3.avg_loss_pct_ratio AS avg_loss_pct_ratio_ratio,
     t2.avg_opp_win_streak - t3.avg_opp_win_streak AS avg_opp_win_streak_diff,
     1.0 * t2.avg_opp_win_streak / t3.avg_opp_win_streak AS avg_opp_win_streak_ratio,
     t2.avg_win_streak_diff - t3.avg_win_streak_diff AS avg_win_streak_diff_diff,
     1.0 * t2.avg_win_streak_diff / t3.avg_win_streak_diff AS avg_win_streak_diff_ratio,
+    t2.avg_win_streak_ratio - t3.avg_win_streak_ratio AS avg_win_streak_ratio_diff,
+    1.0 * t2.avg_win_streak_ratio / t3.avg_win_streak_ratio AS avg_win_streak_ratio_ratio,
     t2.avg_opp_loss_streak - t3.avg_opp_loss_streak AS avg_opp_loss_streak_diff,
     1.0 * t2.avg_opp_loss_streak / t3.avg_opp_loss_streak AS avg_opp_loss_streak_ratio,
     t2.avg_loss_streak_diff - t3.avg_loss_streak_diff AS avg_loss_streak_diff_diff,
     1.0 * t2.avg_loss_streak_diff / t3.avg_loss_streak_diff AS avg_loss_streak_diff_ratio,
+    t2.avg_loss_streak_ratio - t3.avg_loss_streak_ratio AS avg_loss_streak_ratio_diff,
+    1.0 * t2.avg_loss_streak_ratio / t3.avg_loss_streak_ratio AS avg_loss_streak_ratio_ratio,
     t2.avg_opp_longest_win_streak - t3.avg_opp_longest_win_streak AS avg_opp_longest_win_streak_diff,
     1.0 * t2.avg_opp_longest_win_streak / t3.avg_opp_longest_win_streak AS avg_opp_longest_win_streak_ratio,
     t2.avg_longest_win_streak_diff - t3.avg_longest_win_streak_diff AS avg_longest_win_streak_diff_diff,
     1.0 * t2.avg_longest_win_streak_diff / t3.avg_longest_win_streak_diff AS avg_longest_win_streak_diff_ratio,
+    t2.avg_longest_win_streak_ratio - t3.avg_longest_win_streak_ratio AS avg_longest_win_streak_ratio_diff,
+    1.0 * t2.avg_longest_win_streak_ratio / t3.avg_longest_win_streak_ratio AS avg_longest_win_streak_ratio_ratio,
     t2.avg_opp_longest_loss_streak - t3.avg_opp_longest_loss_streak AS avg_opp_longest_loss_streak_diff,
     1.0 * t2.avg_opp_longest_loss_streak / t3.avg_opp_longest_loss_streak AS avg_opp_longest_loss_streak_ratio,
     t2.avg_longest_loss_streak_diff - t3.avg_longest_loss_streak_diff AS avg_longest_loss_streak_diff_diff,
     1.0 * t2.avg_longest_loss_streak_diff / t3.avg_longest_loss_streak_diff AS avg_longest_loss_streak_diff_ratio,
+    t2.avg_longest_loss_streak_ratio - t3.avg_longest_loss_streak_ratio AS avg_longest_loss_streak_ratio_diff,
+    1.0 * t2.avg_longest_loss_streak_ratio / t3.avg_longest_loss_streak_ratio AS avg_longest_loss_streak_ratio_ratio,
     t2.wins_by_ko_tko - t3.wins_by_ko_tko AS wins_by_ko_tko_diff,
     1.0 * t2.wins_by_ko_tko / t3.wins_by_ko_tko AS wins_by_ko_tko_ratio,
     t2.wins_by_ko_tko_pct - t3.wins_by_ko_tko_pct AS wins_by_ko_tko_pct_diff,
@@ -1580,118 +1984,176 @@ SELECT id,
     1.0 * t2.avg_opp_wins_by_ko_tko / t3.avg_opp_wins_by_ko_tko AS avg_opp_wins_by_ko_tko_ratio,
     t2.avg_wins_by_ko_tko_diff - t3.avg_wins_by_ko_tko_diff AS avg_wins_by_ko_tko_diff_diff,
     1.0 * t2.avg_wins_by_ko_tko_diff / t3.avg_wins_by_ko_tko_diff AS avg_wins_by_ko_tko_diff_ratio,
+    t2.avg_wins_by_ko_tko_ratio - t3.avg_wins_by_ko_tko_ratio AS avg_wins_by_ko_tko_ratio_diff,
+    1.0 * t2.avg_wins_by_ko_tko_ratio / t3.avg_wins_by_ko_tko_ratio AS avg_wins_by_ko_tko_ratio_ratio,
     t2.avg_opp_wins_by_ko_tko_pct - t3.avg_opp_wins_by_ko_tko_pct AS avg_opp_wins_by_ko_tko_pct_diff,
     1.0 * t2.avg_opp_wins_by_ko_tko_pct / t3.avg_opp_wins_by_ko_tko_pct AS avg_opp_wins_by_ko_tko_pct_ratio,
     t2.avg_wins_by_ko_tko_pct_diff - t3.avg_wins_by_ko_tko_pct_diff AS avg_wins_by_ko_tko_pct_diff_diff,
     1.0 * t2.avg_wins_by_ko_tko_pct_diff / t3.avg_wins_by_ko_tko_pct_diff AS avg_wins_by_ko_tko_pct_diff_ratio,
+    t2.avg_wins_by_ko_tko_pct_ratio - t3.avg_wins_by_ko_tko_pct_ratio AS avg_wins_by_ko_tko_pct_ratio_diff,
+    1.0 * t2.avg_wins_by_ko_tko_pct_ratio / t3.avg_wins_by_ko_tko_pct_ratio AS avg_wins_by_ko_tko_pct_ratio_ratio,
     t2.avg_opp_wins_by_ko_tko_pct_overall - t3.avg_opp_wins_by_ko_tko_pct_overall AS avg_opp_wins_by_ko_tko_pct_overall_diff,
     1.0 * t2.avg_opp_wins_by_ko_tko_pct_overall / t3.avg_opp_wins_by_ko_tko_pct_overall AS avg_opp_wins_by_ko_tko_pct_overall_ratio,
     t2.avg_wins_by_ko_tko_pct_overall_diff - t3.avg_wins_by_ko_tko_pct_overall_diff AS avg_wins_by_ko_tko_pct_overall_diff_diff,
     1.0 * t2.avg_wins_by_ko_tko_pct_overall_diff / t3.avg_wins_by_ko_tko_pct_overall_diff AS avg_wins_by_ko_tko_pct_overall_diff_ratio,
+    t2.avg_wins_by_ko_tko_pct_overall_ratio - t3.avg_wins_by_ko_tko_pct_overall_ratio AS avg_wins_by_ko_tko_pct_overall_ratio_diff,
+    1.0 * t2.avg_wins_by_ko_tko_pct_overall_ratio / t3.avg_wins_by_ko_tko_pct_overall_ratio AS avg_wins_by_ko_tko_pct_overall_ratio_ratio,
     t2.avg_opp_ko_tko_landed_per_minute - t3.avg_opp_ko_tko_landed_per_minute AS avg_opp_ko_tko_landed_per_minute_diff,
     1.0 * t2.avg_opp_ko_tko_landed_per_minute / t3.avg_opp_ko_tko_landed_per_minute AS avg_opp_ko_tko_landed_per_minute_ratio,
     t2.avg_ko_tko_landed_per_minute_diff - t3.avg_ko_tko_landed_per_minute_diff AS avg_ko_tko_landed_per_minute_diff_diff,
     1.0 * t2.avg_ko_tko_landed_per_minute_diff / t3.avg_ko_tko_landed_per_minute_diff AS avg_ko_tko_landed_per_minute_diff_ratio,
+    t2.avg_ko_tko_landed_per_minute_ratio - t3.avg_ko_tko_landed_per_minute_ratio AS avg_ko_tko_landed_per_minute_ratio_diff,
+    1.0 * t2.avg_ko_tko_landed_per_minute_ratio / t3.avg_ko_tko_landed_per_minute_ratio AS avg_ko_tko_landed_per_minute_ratio_ratio,
     t2.avg_opp_wins_by_submission - t3.avg_opp_wins_by_submission AS avg_opp_wins_by_submission_diff,
     1.0 * t2.avg_opp_wins_by_submission / t3.avg_opp_wins_by_submission AS avg_opp_wins_by_submission_ratio,
     t2.avg_wins_by_submission_diff - t3.avg_wins_by_submission_diff AS avg_wins_by_submission_diff_diff,
     1.0 * t2.avg_wins_by_submission_diff / t3.avg_wins_by_submission_diff AS avg_wins_by_submission_diff_ratio,
+    t2.avg_wins_by_submission_ratio - t3.avg_wins_by_submission_ratio AS avg_wins_by_submission_ratio_diff,
+    1.0 * t2.avg_wins_by_submission_ratio / t3.avg_wins_by_submission_ratio AS avg_wins_by_submission_ratio_ratio,
     t2.avg_opp_wins_by_submission_pct - t3.avg_opp_wins_by_submission_pct AS avg_opp_wins_by_submission_pct_diff,
     1.0 * t2.avg_opp_wins_by_submission_pct / t3.avg_opp_wins_by_submission_pct AS avg_opp_wins_by_submission_pct_ratio,
     t2.avg_wins_by_submission_pct_diff - t3.avg_wins_by_submission_pct_diff AS avg_wins_by_submission_pct_diff_diff,
     1.0 * t2.avg_wins_by_submission_pct_diff / t3.avg_wins_by_submission_pct_diff AS avg_wins_by_submission_pct_diff_ratio,
+    t2.avg_wins_by_submission_pct_ratio - t3.avg_wins_by_submission_pct_ratio AS avg_wins_by_submission_pct_ratio_diff,
+    1.0 * t2.avg_wins_by_submission_pct_ratio / t3.avg_wins_by_submission_pct_ratio AS avg_wins_by_submission_pct_ratio_ratio,
     t2.avg_opp_wins_by_submission_pct_overall - t3.avg_opp_wins_by_submission_pct_overall AS avg_opp_wins_by_submission_pct_overall_diff,
     1.0 * t2.avg_opp_wins_by_submission_pct_overall / t3.avg_opp_wins_by_submission_pct_overall AS avg_opp_wins_by_submission_pct_overall_ratio,
     t2.avg_wins_by_submission_pct_overall_diff - t3.avg_wins_by_submission_pct_overall_diff AS avg_wins_by_submission_pct_overall_diff_diff,
     1.0 * t2.avg_wins_by_submission_pct_overall_diff / t3.avg_wins_by_submission_pct_overall_diff AS avg_wins_by_submission_pct_overall_diff_ratio,
+    t2.avg_wins_by_submission_pct_overall_ratio - t3.avg_wins_by_submission_pct_overall_ratio AS avg_wins_by_submission_pct_overall_ratio_diff,
+    1.0 * t2.avg_wins_by_submission_pct_overall_ratio / t3.avg_wins_by_submission_pct_overall_ratio AS avg_wins_by_submission_pct_overall_ratio_ratio,
     t2.avg_opp_submissions_landed_per_minute - t3.avg_opp_submissions_landed_per_minute AS avg_opp_submissions_landed_per_minute_diff,
     1.0 * t2.avg_opp_submissions_landed_per_minute / t3.avg_opp_submissions_landed_per_minute AS avg_opp_submissions_landed_per_minute_ratio,
     t2.avg_submissions_landed_per_minute_diff - t3.avg_submissions_landed_per_minute_diff AS avg_submissions_landed_per_minute_diff_diff,
     1.0 * t2.avg_submissions_landed_per_minute_diff / t3.avg_submissions_landed_per_minute_diff AS avg_submissions_landed_per_minute_diff_ratio,
+    t2.avg_submissions_landed_per_minute_ratio - t3.avg_submissions_landed_per_minute_ratio AS avg_submissions_landed_per_minute_ratio_diff,
+    1.0 * t2.avg_submissions_landed_per_minute_ratio / t3.avg_submissions_landed_per_minute_ratio AS avg_submissions_landed_per_minute_ratio_ratio,
     t2.avg_opp_wins_by_decision - t3.avg_opp_wins_by_decision AS avg_opp_wins_by_decision_diff,
     1.0 * t2.avg_opp_wins_by_decision / t3.avg_opp_wins_by_decision AS avg_opp_wins_by_decision_ratio,
     t2.avg_wins_by_decision_diff - t3.avg_wins_by_decision_diff AS avg_wins_by_decision_diff_diff,
     1.0 * t2.avg_wins_by_decision_diff / t3.avg_wins_by_decision_diff AS avg_wins_by_decision_diff_ratio,
+    t2.avg_wins_by_decision_ratio - t3.avg_wins_by_decision_ratio AS avg_wins_by_decision_ratio_diff,
+    1.0 * t2.avg_wins_by_decision_ratio / t3.avg_wins_by_decision_ratio AS avg_wins_by_decision_ratio_ratio,
     t2.avg_opp_wins_by_decision_pct - t3.avg_opp_wins_by_decision_pct AS avg_opp_wins_by_decision_pct_diff,
     1.0 * t2.avg_opp_wins_by_decision_pct / t3.avg_opp_wins_by_decision_pct AS avg_opp_wins_by_decision_pct_ratio,
     t2.avg_wins_by_decision_pct_diff - t3.avg_wins_by_decision_pct_diff AS avg_wins_by_decision_pct_diff_diff,
     1.0 * t2.avg_wins_by_decision_pct_diff / t3.avg_wins_by_decision_pct_diff AS avg_wins_by_decision_pct_diff_ratio,
+    t2.avg_wins_by_decision_pct_ratio - t3.avg_wins_by_decision_pct_ratio AS avg_wins_by_decision_pct_ratio_diff,
+    1.0 * t2.avg_wins_by_decision_pct_ratio / t3.avg_wins_by_decision_pct_ratio AS avg_wins_by_decision_pct_ratio_ratio,
     t2.avg_opp_wins_by_decision_pct_overall - t3.avg_opp_wins_by_decision_pct_overall AS avg_opp_wins_by_decision_pct_overall_diff,
     1.0 * t2.avg_opp_wins_by_decision_pct_overall / t3.avg_opp_wins_by_decision_pct_overall AS avg_opp_wins_by_decision_pct_overall_ratio,
     t2.avg_wins_by_decision_pct_overall_diff - t3.avg_wins_by_decision_pct_overall_diff AS avg_wins_by_decision_pct_overall_diff_diff,
     1.0 * t2.avg_wins_by_decision_pct_overall_diff / t3.avg_wins_by_decision_pct_overall_diff AS avg_wins_by_decision_pct_overall_diff_ratio,
+    t2.avg_wins_by_decision_pct_overall_ratio - t3.avg_wins_by_decision_pct_overall_ratio AS avg_wins_by_decision_pct_overall_ratio_diff,
+    1.0 * t2.avg_wins_by_decision_pct_overall_ratio / t3.avg_wins_by_decision_pct_overall_ratio AS avg_wins_by_decision_pct_overall_ratio_ratio,
     t2.avg_opp_losses_by_ko_tko - t3.avg_opp_losses_by_ko_tko AS avg_opp_losses_by_ko_tko_diff,
     1.0 * t2.avg_opp_losses_by_ko_tko / t3.avg_opp_losses_by_ko_tko AS avg_opp_losses_by_ko_tko_ratio,
     t2.avg_losses_by_ko_tko_diff - t3.avg_losses_by_ko_tko_diff AS avg_losses_by_ko_tko_diff_diff,
     1.0 * t2.avg_losses_by_ko_tko_diff / t3.avg_losses_by_ko_tko_diff AS avg_losses_by_ko_tko_diff_ratio,
+    t2.avg_losses_by_ko_tko_ratio - t3.avg_losses_by_ko_tko_ratio AS avg_losses_by_ko_tko_ratio_diff,
+    1.0 * t2.avg_losses_by_ko_tko_ratio / t3.avg_losses_by_ko_tko_ratio AS avg_losses_by_ko_tko_ratio_ratio,
     t2.avg_opp_losses_by_ko_tko_pct - t3.avg_opp_losses_by_ko_tko_pct AS avg_opp_losses_by_ko_tko_pct_diff,
     1.0 * t2.avg_opp_losses_by_ko_tko_pct / t3.avg_opp_losses_by_ko_tko_pct AS avg_opp_losses_by_ko_tko_pct_ratio,
     t2.avg_losses_by_ko_tko_pct_diff - t3.avg_losses_by_ko_tko_pct_diff AS avg_losses_by_ko_tko_pct_diff_diff,
     1.0 * t2.avg_losses_by_ko_tko_pct_diff / t3.avg_losses_by_ko_tko_pct_diff AS avg_losses_by_ko_tko_pct_diff_ratio,
+    t2.avg_losses_by_ko_tko_pct_ratio - t3.avg_losses_by_ko_tko_pct_ratio AS avg_losses_by_ko_tko_pct_ratio_diff,
+    1.0 * t2.avg_losses_by_ko_tko_pct_ratio / t3.avg_losses_by_ko_tko_pct_ratio AS avg_losses_by_ko_tko_pct_ratio_ratio,
     t2.avg_opp_losses_by_ko_tko_pct_overall - t3.avg_opp_losses_by_ko_tko_pct_overall AS avg_opp_losses_by_ko_tko_pct_overall_diff,
     1.0 * t2.avg_opp_losses_by_ko_tko_pct_overall / t3.avg_opp_losses_by_ko_tko_pct_overall AS avg_opp_losses_by_ko_tko_pct_overall_ratio,
     t2.avg_losses_by_ko_tko_pct_overall_diff - t3.avg_losses_by_ko_tko_pct_overall_diff AS avg_losses_by_ko_tko_pct_overall_diff_diff,
     1.0 * t2.avg_losses_by_ko_tko_pct_overall_diff / t3.avg_losses_by_ko_tko_pct_overall_diff AS avg_losses_by_ko_tko_pct_overall_diff_ratio,
+    t2.avg_losses_by_ko_tko_pct_overall_ratio - t3.avg_losses_by_ko_tko_pct_overall_ratio AS avg_losses_by_ko_tko_pct_overall_ratio_diff,
+    1.0 * t2.avg_losses_by_ko_tko_pct_overall_ratio / t3.avg_losses_by_ko_tko_pct_overall_ratio AS avg_losses_by_ko_tko_pct_overall_ratio_ratio,
     t2.avg_opp_ko_tko_absorbed_per_minute - t3.avg_opp_ko_tko_absorbed_per_minute AS avg_opp_ko_tko_absorbed_per_minute_diff,
     1.0 * t2.avg_opp_ko_tko_absorbed_per_minute / t3.avg_opp_ko_tko_absorbed_per_minute AS avg_opp_ko_tko_absorbed_per_minute_ratio,
     t2.avg_ko_tko_absorbed_per_minute_diff - t3.avg_ko_tko_absorbed_per_minute_diff AS avg_ko_tko_absorbed_per_minute_diff_diff,
     1.0 * t2.avg_ko_tko_absorbed_per_minute_diff / t3.avg_ko_tko_absorbed_per_minute_diff AS avg_ko_tko_absorbed_per_minute_diff_ratio,
+    t2.avg_ko_tko_absorbed_per_minute_ratio - t3.avg_ko_tko_absorbed_per_minute_ratio AS avg_ko_tko_absorbed_per_minute_ratio_diff,
+    1.0 * t2.avg_ko_tko_absorbed_per_minute_ratio / t3.avg_ko_tko_absorbed_per_minute_ratio AS avg_ko_tko_absorbed_per_minute_ratio_ratio,
     t2.avg_opp_losses_by_submission - t3.avg_opp_losses_by_submission AS avg_opp_losses_by_submission_diff,
     1.0 * t2.avg_opp_losses_by_submission / t3.avg_opp_losses_by_submission AS avg_opp_losses_by_submission_ratio,
     t2.avg_losses_by_submission_diff - t3.avg_losses_by_submission_diff AS avg_losses_by_submission_diff_diff,
     1.0 * t2.avg_losses_by_submission_diff / t3.avg_losses_by_submission_diff AS avg_losses_by_submission_diff_ratio,
+    t2.avg_losses_by_submission_ratio - t3.avg_losses_by_submission_ratio AS avg_losses_by_submission_ratio_diff,
+    1.0 * t2.avg_losses_by_submission_ratio / t3.avg_losses_by_submission_ratio AS avg_losses_by_submission_ratio_ratio,
     t2.avg_opp_losses_by_submission_pct - t3.avg_opp_losses_by_submission_pct AS avg_opp_losses_by_submission_pct_diff,
     1.0 * t2.avg_opp_losses_by_submission_pct / t3.avg_opp_losses_by_submission_pct AS avg_opp_losses_by_submission_pct_ratio,
     t2.avg_losses_by_submission_pct_diff - t3.avg_losses_by_submission_pct_diff AS avg_losses_by_submission_pct_diff_diff,
     1.0 * t2.avg_losses_by_submission_pct_diff / t3.avg_losses_by_submission_pct_diff AS avg_losses_by_submission_pct_diff_ratio,
+    t2.avg_losses_by_submission_pct_ratio - t3.avg_losses_by_submission_pct_ratio AS avg_losses_by_submission_pct_ratio_diff,
+    1.0 * t2.avg_losses_by_submission_pct_ratio / t3.avg_losses_by_submission_pct_ratio AS avg_losses_by_submission_pct_ratio_ratio,
     t2.avg_opp_losses_by_submission_pct_overall - t3.avg_opp_losses_by_submission_pct_overall AS avg_opp_losses_by_submission_pct_overall_diff,
     1.0 * t2.avg_opp_losses_by_submission_pct_overall / t3.avg_opp_losses_by_submission_pct_overall AS avg_opp_losses_by_submission_pct_overall_ratio,
     t2.avg_losses_by_submission_pct_overall_diff - t3.avg_losses_by_submission_pct_overall_diff AS avg_losses_by_submission_pct_overall_diff_diff,
     1.0 * t2.avg_losses_by_submission_pct_overall_diff / t3.avg_losses_by_submission_pct_overall_diff AS avg_losses_by_submission_pct_overall_diff_ratio,
+    t2.avg_losses_by_submission_pct_overall_ratio - t3.avg_losses_by_submission_pct_overall_ratio AS avg_losses_by_submission_pct_overall_ratio_diff,
+    1.0 * t2.avg_losses_by_submission_pct_overall_ratio / t3.avg_losses_by_submission_pct_overall_ratio AS avg_losses_by_submission_pct_overall_ratio_ratio,
     t2.avg_opp_submissions_absorbed_per_minute - t3.avg_opp_submissions_absorbed_per_minute AS avg_opp_submissions_absorbed_per_minute_diff,
     1.0 * t2.avg_opp_submissions_absorbed_per_minute / t3.avg_opp_submissions_absorbed_per_minute AS avg_opp_submissions_absorbed_per_minute_ratio,
     t2.avg_submissions_absorbed_per_minute_diff - t3.avg_submissions_absorbed_per_minute_diff AS avg_submissions_absorbed_per_minute_diff_diff,
     1.0 * t2.avg_submissions_absorbed_per_minute_diff / t3.avg_submissions_absorbed_per_minute_diff AS avg_submissions_absorbed_per_minute_diff_ratio,
+    t2.avg_submissions_absorbed_per_minute_ratio - t3.avg_submissions_absorbed_per_minute_ratio AS avg_submissions_absorbed_per_minute_ratio_diff,
+    1.0 * t2.avg_submissions_absorbed_per_minute_ratio / t3.avg_submissions_absorbed_per_minute_ratio AS avg_submissions_absorbed_per_minute_ratio_ratio,
     t2.avg_opp_losses_by_decision - t3.avg_opp_losses_by_decision AS avg_opp_losses_by_decision_diff,
     1.0 * t2.avg_opp_losses_by_decision / t3.avg_opp_losses_by_decision AS avg_opp_losses_by_decision_ratio,
     t2.avg_losses_by_decision_diff - t3.avg_losses_by_decision_diff AS avg_losses_by_decision_diff_diff,
     1.0 * t2.avg_losses_by_decision_diff / t3.avg_losses_by_decision_diff AS avg_losses_by_decision_diff_ratio,
+    t2.avg_losses_by_decision_ratio - t3.avg_losses_by_decision_ratio AS avg_losses_by_decision_ratio_diff,
+    1.0 * t2.avg_losses_by_decision_ratio / t3.avg_losses_by_decision_ratio AS avg_losses_by_decision_ratio_ratio,
     t2.avg_opp_losses_by_decision_pct - t3.avg_opp_losses_by_decision_pct AS avg_opp_losses_by_decision_pct_diff,
     1.0 * t2.avg_opp_losses_by_decision_pct / t3.avg_opp_losses_by_decision_pct AS avg_opp_losses_by_decision_pct_ratio,
     t2.avg_losses_by_decision_pct_diff - t3.avg_losses_by_decision_pct_diff AS avg_losses_by_decision_pct_diff_diff,
     1.0 * t2.avg_losses_by_decision_pct_diff / t3.avg_losses_by_decision_pct_diff AS avg_losses_by_decision_pct_diff_ratio,
+    t2.avg_losses_by_decision_pct_ratio - t3.avg_losses_by_decision_pct_ratio AS avg_losses_by_decision_pct_ratio_diff,
+    1.0 * t2.avg_losses_by_decision_pct_ratio / t3.avg_losses_by_decision_pct_ratio AS avg_losses_by_decision_pct_ratio_ratio,
     t2.avg_opp_losses_by_decision_pct_overall - t3.avg_opp_losses_by_decision_pct_overall AS avg_opp_losses_by_decision_pct_overall_diff,
     1.0 * t2.avg_opp_losses_by_decision_pct_overall / t3.avg_opp_losses_by_decision_pct_overall AS avg_opp_losses_by_decision_pct_overall_ratio,
     t2.avg_losses_by_decision_pct_overall_diff - t3.avg_losses_by_decision_pct_overall_diff AS avg_losses_by_decision_pct_overall_diff_diff,
     1.0 * t2.avg_losses_by_decision_pct_overall_diff / t3.avg_losses_by_decision_pct_overall_diff AS avg_losses_by_decision_pct_overall_diff_ratio,
+    t2.avg_losses_by_decision_pct_overall_ratio - t3.avg_losses_by_decision_pct_overall_ratio AS avg_losses_by_decision_pct_overall_ratio_diff,
+    1.0 * t2.avg_losses_by_decision_pct_overall_ratio / t3.avg_losses_by_decision_pct_overall_ratio AS avg_losses_by_decision_pct_overall_ratio_ratio,
     t2.avg_opp_avg_end_round - t3.avg_opp_avg_end_round AS avg_opp_avg_end_round_diff,
     1.0 * t2.avg_opp_avg_end_round / t3.avg_opp_avg_end_round AS avg_opp_avg_end_round_ratio,
     t2.avg_avg_end_round_diff - t3.avg_avg_end_round_diff AS avg_avg_end_round_diff_diff,
     1.0 * t2.avg_avg_end_round_diff / t3.avg_avg_end_round_diff AS avg_avg_end_round_diff_ratio,
+    t2.avg_avg_end_round_ratio - t3.avg_avg_end_round_ratio AS avg_avg_end_round_ratio_diff,
+    1.0 * t2.avg_avg_end_round_ratio / t3.avg_avg_end_round_ratio AS avg_avg_end_round_ratio_ratio,
     t2.avg_opp_avg_end_round_win - t3.avg_opp_avg_end_round_win AS avg_opp_avg_end_round_win_diff,
     1.0 * t2.avg_opp_avg_end_round_win / t3.avg_opp_avg_end_round_win AS avg_opp_avg_end_round_win_ratio,
     t2.avg_avg_end_round_win_diff - t3.avg_avg_end_round_win_diff AS avg_avg_end_round_win_diff_diff,
     1.0 * t2.avg_avg_end_round_win_diff / t3.avg_avg_end_round_win_diff AS avg_avg_end_round_win_diff_ratio,
+    t2.avg_avg_end_round_win_ratio - t3.avg_avg_end_round_win_ratio AS avg_avg_end_round_win_ratio_diff,
+    1.0 * t2.avg_avg_end_round_win_ratio / t3.avg_avg_end_round_win_ratio AS avg_avg_end_round_win_ratio_ratio,
     t2.avg_opp_avg_end_round_loss - t3.avg_opp_avg_end_round_loss AS avg_opp_avg_end_round_loss_diff,
     1.0 * t2.avg_opp_avg_end_round_loss / t3.avg_opp_avg_end_round_loss AS avg_opp_avg_end_round_loss_ratio,
     t2.avg_avg_end_round_loss_diff - t3.avg_avg_end_round_loss_diff AS avg_avg_end_round_loss_diff_diff,
     1.0 * t2.avg_avg_end_round_loss_diff / t3.avg_avg_end_round_loss_diff AS avg_avg_end_round_loss_diff_ratio,
+    t2.avg_avg_end_round_loss_ratio - t3.avg_avg_end_round_loss_ratio AS avg_avg_end_round_loss_ratio_diff,
+    1.0 * t2.avg_avg_end_round_loss_ratio / t3.avg_avg_end_round_loss_ratio AS avg_avg_end_round_loss_ratio_ratio,
     t2.avg_opp_total_time_fought_seconds - t3.avg_opp_total_time_fought_seconds AS avg_opp_total_time_fought_seconds_diff,
     1.0 * t2.avg_opp_total_time_fought_seconds / t3.avg_opp_total_time_fought_seconds AS avg_opp_total_time_fought_seconds_ratio,
     t2.avg_total_time_fought_seconds_diff - t3.avg_total_time_fought_seconds_diff AS avg_total_time_fought_seconds_diff_diff,
     1.0 * t2.avg_total_time_fought_seconds_diff / t3.avg_total_time_fought_seconds_diff AS avg_total_time_fought_seconds_diff_ratio,
+    t2.avg_total_time_fought_seconds_ratio - t3.avg_total_time_fought_seconds_ratio AS avg_total_time_fought_seconds_ratio_diff,
+    1.0 * t2.avg_total_time_fought_seconds_ratio / t3.avg_total_time_fought_seconds_ratio AS avg_total_time_fought_seconds_ratio_ratio,
     t2.avg_opp_avg_time_fought_seconds - t3.avg_opp_avg_time_fought_seconds AS avg_opp_avg_time_fought_seconds_diff,
     1.0 * t2.avg_opp_avg_time_fought_seconds / t3.avg_opp_avg_time_fought_seconds AS avg_opp_avg_time_fought_seconds_ratio,
     t2.avg_avg_time_fought_seconds_diff - t3.avg_avg_time_fought_seconds_diff AS avg_avg_time_fought_seconds_diff_diff,
     1.0 * t2.avg_avg_time_fought_seconds_diff / t3.avg_avg_time_fought_seconds_diff AS avg_avg_time_fought_seconds_diff_ratio,
+    t2.avg_avg_time_fought_seconds_ratio - t3.avg_avg_time_fought_seconds_ratio AS avg_avg_time_fought_seconds_ratio_diff,
+    1.0 * t2.avg_avg_time_fought_seconds_ratio / t3.avg_avg_time_fought_seconds_ratio AS avg_avg_time_fought_seconds_ratio_ratio,
     t2.avg_opp_avg_time_to_win_seconds - t3.avg_opp_avg_time_to_win_seconds AS avg_opp_avg_time_to_win_seconds_diff,
     1.0 * t2.avg_opp_avg_time_to_win_seconds / t3.avg_opp_avg_time_to_win_seconds AS avg_opp_avg_time_to_win_seconds_ratio,
     t2.avg_avg_time_to_win_seconds_diff - t3.avg_avg_time_to_win_seconds_diff AS avg_avg_time_to_win_seconds_diff_diff,
     1.0 * t2.avg_avg_time_to_win_seconds_diff / t3.avg_avg_time_to_win_seconds_diff AS avg_avg_time_to_win_seconds_diff_ratio,
+    t2.avg_avg_time_to_win_seconds_ratio - t3.avg_avg_time_to_win_seconds_ratio AS avg_avg_time_to_win_seconds_ratio_diff,
+    1.0 * t2.avg_avg_time_to_win_seconds_ratio / t3.avg_avg_time_to_win_seconds_ratio AS avg_avg_time_to_win_seconds_ratio_ratio,
     t2.avg_opp_avg_time_to_lose_seconds - t3.avg_opp_avg_time_to_lose_seconds AS avg_opp_avg_time_to_lose_seconds_diff,
     1.0 * t2.avg_opp_avg_time_to_lose_seconds / t3.avg_opp_avg_time_to_lose_seconds AS avg_opp_avg_time_to_lose_seconds_ratio,
     t2.avg_avg_time_to_lose_seconds_diff - t3.avg_avg_time_to_lose_seconds_diff AS avg_avg_time_to_lose_seconds_diff_diff,
     1.0 * t2.avg_avg_time_to_lose_seconds_diff / t3.avg_avg_time_to_lose_seconds_diff AS avg_avg_time_to_lose_seconds_diff_ratio,
+    t2.avg_avg_time_to_lose_seconds_ratio - t3.avg_avg_time_to_lose_seconds_ratio AS avg_avg_time_to_lose_seconds_ratio_diff,
+    1.0 * t2.avg_avg_time_to_lose_seconds_ratio / t3.avg_avg_time_to_lose_seconds_ratio AS avg_avg_time_to_lose_seconds_ratio_ratio,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0
