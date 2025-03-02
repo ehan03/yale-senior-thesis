@@ -140,126 +140,60 @@ cte3 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_elo_k170_diff,
-        AVG(1.0 * t1.elo_k170 / t2.elo_k170) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_elo_k170_ratio,
         AVG(t1.avg_elo_k170 - t2.avg_elo_k170) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_elo_k170_diff,
-        AVG(1.0 * t1.avg_elo_k170 / t2.avg_elo_k170) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_elo_k170_ratio,
         AVG(t1.elo_k170_change - t2.elo_k170_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_elo_k170_change_diff,
-        AVG(1.0 * t1.elo_k170_change / t2.elo_k170_change) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_elo_k170_change_ratio,
         AVG(t1.avg_elo_k170_change - t2.avg_elo_k170_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_elo_k170_change_diff,
-        AVG(
-            1.0 * t1.avg_elo_k170_change / t2.avg_elo_k170_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_elo_k170_change_ratio,
         AVG(t1.elo_modified - t2.elo_modified) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_elo_modified_diff,
-        AVG(1.0 * t1.elo_modified / t2.elo_modified) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_elo_modified_ratio,
         AVG(t1.avg_elo_modified - t2.avg_elo_modified) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_elo_modified_diff,
-        AVG(1.0 * t1.avg_elo_modified / t2.avg_elo_modified) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_elo_modified_ratio,
         AVG(t1.elo_modified_change - t2.elo_modified_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_elo_modified_change_diff,
-        AVG(
-            1.0 * t1.elo_modified_change / t2.elo_modified_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_elo_modified_change_ratio,
         AVG(
             t1.avg_elo_modified_change - t2.avg_elo_modified_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_elo_modified_change_diff,
-        AVG(
-            1.0 * t1.avg_elo_modified_change / t2.avg_elo_modified_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_elo_modified_change_ratio,
         AVG(t1.glicko_1 - t2.glicko_1) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_glicko_1_diff,
-        AVG(1.0 * t1.glicko_1 / t2.glicko_1) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_glicko_1_ratio,
         AVG(t1.avg_glicko_1 - t2.avg_glicko_1) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_glicko_1_diff,
-        AVG(1.0 * t1.avg_glicko_1 / t2.avg_glicko_1) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_glicko_1_ratio,
         AVG(t1.glicko_1_change - t2.glicko_1_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_glicko_1_change_diff,
-        AVG(1.0 * t1.glicko_1_change / t2.glicko_1_change) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_glicko_1_change_ratio,
         AVG(t1.avg_glicko_1_change - t2.avg_glicko_1_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_glicko_1_change_diff,
-        AVG(
-            1.0 * t1.avg_glicko_1_change / t2.avg_glicko_1_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_glicko_1_change_ratio,
         AVG(t1.avg_opp_elo_k170 - t2.avg_opp_elo_k170) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_elo_k170_diff,
-        AVG(1.0 * t1.avg_opp_elo_k170 / t2.avg_opp_elo_k170) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_elo_k170_ratio,
         AVG(t1.opp_elo_k170_delta - t2.opp_elo_k170_delta) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_elo_k170_delta_diff,
-        AVG(
-            1.0 * t1.opp_elo_k170_delta / t2.opp_elo_k170_delta
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_elo_k170_delta_ratio,
         AVG(
             t1.avg_opp_elo_k170_delta - t2.avg_opp_elo_k170_delta
         ) OVER (
@@ -267,23 +201,11 @@ cte3 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_elo_k170_delta_diff,
         AVG(
-            1.0 * t1.avg_opp_elo_k170_delta / t2.avg_opp_elo_k170_delta
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_elo_k170_delta_ratio,
-        AVG(
             t1.avg_opp_elo_modified - t2.avg_opp_elo_modified
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_elo_modified_diff,
-        AVG(
-            1.0 * t1.avg_opp_elo_modified / t2.avg_opp_elo_modified
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_elo_modified_ratio,
         AVG(
             t1.opp_elo_modified_delta - t2.opp_elo_modified_delta
         ) OVER (
@@ -291,53 +213,25 @@ cte3 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_elo_modified_delta_diff,
         AVG(
-            1.0 * t1.opp_elo_modified_delta / t2.opp_elo_modified_delta
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_elo_modified_delta_ratio,
-        AVG(
             t1.avg_opp_elo_modified_delta - t2.avg_opp_elo_modified_delta
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_elo_modified_delta_diff,
-        AVG(
-            1.0 * t1.avg_opp_elo_modified_delta / t2.avg_opp_elo_modified_delta
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_elo_modified_delta_ratio,
         AVG(t1.avg_opp_glicko_1 - t2.avg_opp_glicko_1) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_glicko_1_diff,
-        AVG(1.0 * t1.avg_opp_glicko_1 / t2.avg_opp_glicko_1) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_glicko_1_ratio,
         AVG(t1.opp_glicko_1_delta - t2.opp_glicko_1_delta) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_glicko_1_delta_diff,
         AVG(
-            1.0 * t1.opp_glicko_1_delta / t2.opp_glicko_1_delta
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_glicko_1_delta_ratio,
-        AVG(
             t1.avg_opp_glicko_1_delta - t2.avg_opp_glicko_1_delta
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_glicko_1_delta_diff,
-        AVG(
-            1.0 * t1.avg_opp_glicko_1_delta / t2.avg_opp_glicko_1_delta
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_glicko_1_delta_ratio
+        ) AS avg_avg_opp_glicko_1_delta_diff
     FROM cte2 AS t1
         LEFT JOIN cte2 AS t2 ON t1.opponent_id = t2.fighter_id
         AND t1.event_id = t2.event_id
@@ -371,47 +265,26 @@ cte4 AS (
         t1.opp_glicko_1_delta,
         t1.avg_opp_glicko_1_delta,
         t1.avg_elo_k170_diff,
-        t1.avg_elo_k170_ratio,
         t1.avg_avg_elo_k170_diff,
-        t1.avg_avg_elo_k170_ratio,
         t1.avg_elo_k170_change_diff,
-        t1.avg_elo_k170_change_ratio,
         t1.avg_avg_elo_k170_change_diff,
-        t1.avg_avg_elo_k170_change_ratio,
         t1.avg_elo_modified_diff,
-        t1.avg_elo_modified_ratio,
         t1.avg_avg_elo_modified_diff,
-        t1.avg_avg_elo_modified_ratio,
         t1.avg_elo_modified_change_diff,
-        t1.avg_elo_modified_change_ratio,
         t1.avg_avg_elo_modified_change_diff,
-        t1.avg_avg_elo_modified_change_ratio,
         t1.avg_glicko_1_diff,
-        t1.avg_glicko_1_ratio,
         t1.avg_avg_glicko_1_diff,
-        t1.avg_avg_glicko_1_ratio,
         t1.avg_glicko_1_change_diff,
-        t1.avg_glicko_1_change_ratio,
         t1.avg_avg_glicko_1_change_diff,
-        t1.avg_avg_glicko_1_change_ratio,
         t1.avg_avg_opp_elo_k170_diff,
-        t1.avg_avg_opp_elo_k170_ratio,
         t1.avg_opp_elo_k170_delta_diff,
-        t1.avg_opp_elo_k170_delta_ratio,
         t1.avg_avg_opp_elo_k170_delta_diff,
-        t1.avg_avg_opp_elo_k170_delta_ratio,
         t1.avg_avg_opp_elo_modified_diff,
-        t1.avg_avg_opp_elo_modified_ratio,
         t1.avg_opp_elo_modified_delta_diff,
-        t1.avg_opp_elo_modified_delta_ratio,
         t1.avg_avg_opp_elo_modified_delta_diff,
-        t1.avg_avg_opp_elo_modified_delta_ratio,
         t1.avg_avg_opp_glicko_1_diff,
-        t1.avg_avg_opp_glicko_1_ratio,
         t1.avg_opp_glicko_1_delta_diff,
-        t1.avg_opp_glicko_1_delta_ratio,
-        t1.avg_avg_opp_glicko_1_delta_diff,
-        t1.avg_avg_opp_glicko_1_delta_ratio
+        t1.avg_avg_opp_glicko_1_delta_diff
     FROM cte3 AS t1
         INNER JOIN fighter_mapping AS t2 ON t1.fighter_id = t2.fightmatrix_id
         INNER JOIN fighter_mapping AS t3 ON t1.opponent_id = t3.fightmatrix_id
@@ -446,47 +319,26 @@ cte5 AS (
         t1.opp_glicko_1_delta,
         t1.avg_opp_glicko_1_delta,
         t1.avg_elo_k170_diff,
-        t1.avg_elo_k170_ratio,
         t1.avg_avg_elo_k170_diff,
-        t1.avg_avg_elo_k170_ratio,
         t1.avg_elo_k170_change_diff,
-        t1.avg_elo_k170_change_ratio,
         t1.avg_avg_elo_k170_change_diff,
-        t1.avg_avg_elo_k170_change_ratio,
         t1.avg_elo_modified_diff,
-        t1.avg_elo_modified_ratio,
         t1.avg_avg_elo_modified_diff,
-        t1.avg_avg_elo_modified_ratio,
         t1.avg_elo_modified_change_diff,
-        t1.avg_elo_modified_change_ratio,
         t1.avg_avg_elo_modified_change_diff,
-        t1.avg_avg_elo_modified_change_ratio,
         t1.avg_glicko_1_diff,
-        t1.avg_glicko_1_ratio,
         t1.avg_avg_glicko_1_diff,
-        t1.avg_avg_glicko_1_ratio,
         t1.avg_glicko_1_change_diff,
-        t1.avg_glicko_1_change_ratio,
         t1.avg_avg_glicko_1_change_diff,
-        t1.avg_avg_glicko_1_change_ratio,
         t1.avg_avg_opp_elo_k170_diff,
-        t1.avg_avg_opp_elo_k170_ratio,
         t1.avg_opp_elo_k170_delta_diff,
-        t1.avg_opp_elo_k170_delta_ratio,
         t1.avg_avg_opp_elo_k170_delta_diff,
-        t1.avg_avg_opp_elo_k170_delta_ratio,
         t1.avg_avg_opp_elo_modified_diff,
-        t1.avg_avg_opp_elo_modified_ratio,
         t1.avg_opp_elo_modified_delta_diff,
-        t1.avg_opp_elo_modified_delta_ratio,
         t1.avg_avg_opp_elo_modified_delta_diff,
-        t1.avg_avg_opp_elo_modified_delta_ratio,
         t1.avg_avg_opp_glicko_1_diff,
-        t1.avg_avg_opp_glicko_1_ratio,
         t1.avg_opp_glicko_1_delta_diff,
-        t1.avg_opp_glicko_1_delta_ratio,
-        t1.avg_avg_opp_glicko_1_delta_diff,
-        t1.avg_avg_opp_glicko_1_delta_ratio
+        t1.avg_avg_opp_glicko_1_delta_diff
     FROM cte4 AS t1
 ),
 cte6 AS (
@@ -531,47 +383,26 @@ cte8 AS (
         t2.opp_glicko_1_delta,
         t2.avg_opp_glicko_1_delta,
         t2.avg_elo_k170_diff,
-        t2.avg_elo_k170_ratio,
         t2.avg_avg_elo_k170_diff,
-        t2.avg_avg_elo_k170_ratio,
         t2.avg_elo_k170_change_diff,
-        t2.avg_elo_k170_change_ratio,
         t2.avg_avg_elo_k170_change_diff,
-        t2.avg_avg_elo_k170_change_ratio,
         t2.avg_elo_modified_diff,
-        t2.avg_elo_modified_ratio,
         t2.avg_avg_elo_modified_diff,
-        t2.avg_avg_elo_modified_ratio,
         t2.avg_elo_modified_change_diff,
-        t2.avg_elo_modified_change_ratio,
         t2.avg_avg_elo_modified_change_diff,
-        t2.avg_avg_elo_modified_change_ratio,
         t2.avg_glicko_1_diff,
-        t2.avg_glicko_1_ratio,
         t2.avg_avg_glicko_1_diff,
-        t2.avg_avg_glicko_1_ratio,
         t2.avg_glicko_1_change_diff,
-        t2.avg_glicko_1_change_ratio,
         t2.avg_avg_glicko_1_change_diff,
-        t2.avg_avg_glicko_1_change_ratio,
         t2.avg_avg_opp_elo_k170_diff,
-        t2.avg_avg_opp_elo_k170_ratio,
         t2.avg_opp_elo_k170_delta_diff,
-        t2.avg_opp_elo_k170_delta_ratio,
         t2.avg_avg_opp_elo_k170_delta_diff,
-        t2.avg_avg_opp_elo_k170_delta_ratio,
         t2.avg_avg_opp_elo_modified_diff,
-        t2.avg_avg_opp_elo_modified_ratio,
         t2.avg_opp_elo_modified_delta_diff,
-        t2.avg_opp_elo_modified_delta_ratio,
         t2.avg_avg_opp_elo_modified_delta_diff,
-        t2.avg_avg_opp_elo_modified_delta_ratio,
         t2.avg_avg_opp_glicko_1_diff,
-        t2.avg_avg_opp_glicko_1_ratio,
         t2.avg_opp_glicko_1_delta_diff,
-        t2.avg_opp_glicko_1_delta_ratio,
-        t2.avg_avg_opp_glicko_1_delta_diff,
-        t2.avg_avg_opp_glicko_1_delta_ratio
+        t2.avg_avg_opp_glicko_1_delta_diff
     FROM cte7 AS t1
         INNER JOIN cte5 AS t2 ON t1.fighter_id = t2.fighter_id
         AND t1.ufc_order = t2.ufc_order
@@ -622,88 +453,46 @@ SELECT id,
     1.0 * t2.avg_opp_glicko_1_delta / t3.avg_opp_glicko_1_delta AS avg_opp_glicko_1_delta_ratio,
     t2.avg_elo_k170_diff - t3.avg_elo_k170_diff AS avg_elo_k170_diff_diff,
     1.0 * t2.avg_elo_k170_diff / t3.avg_elo_k170_diff AS avg_elo_k170_diff_ratio,
-    t2.avg_elo_k170_ratio - t3.avg_elo_k170_ratio AS avg_elo_k170_ratio_diff,
-    1.0 * t2.avg_elo_k170_ratio / t3.avg_elo_k170_ratio AS avg_elo_k170_ratio_ratio,
     t2.avg_avg_elo_k170_diff - t3.avg_avg_elo_k170_diff AS avg_avg_elo_k170_diff_diff,
     1.0 * t2.avg_avg_elo_k170_diff / t3.avg_avg_elo_k170_diff AS avg_avg_elo_k170_diff_ratio,
-    t2.avg_avg_elo_k170_ratio - t3.avg_avg_elo_k170_ratio AS avg_avg_elo_k170_ratio_diff,
-    1.0 * t2.avg_avg_elo_k170_ratio / t3.avg_avg_elo_k170_ratio AS avg_avg_elo_k170_ratio_ratio,
     t2.avg_elo_k170_change_diff - t3.avg_elo_k170_change_diff AS avg_elo_k170_change_diff_diff,
     1.0 * t2.avg_elo_k170_change_diff / t3.avg_elo_k170_change_diff AS avg_elo_k170_change_diff_ratio,
-    t2.avg_elo_k170_change_ratio - t3.avg_elo_k170_change_ratio AS avg_elo_k170_change_ratio_diff,
-    1.0 * t2.avg_elo_k170_change_ratio / t3.avg_elo_k170_change_ratio AS avg_elo_k170_change_ratio_ratio,
     t2.avg_avg_elo_k170_change_diff - t3.avg_avg_elo_k170_change_diff AS avg_avg_elo_k170_change_diff_diff,
     1.0 * t2.avg_avg_elo_k170_change_diff / t3.avg_avg_elo_k170_change_diff AS avg_avg_elo_k170_change_diff_ratio,
-    t2.avg_avg_elo_k170_change_ratio - t3.avg_avg_elo_k170_change_ratio AS avg_avg_elo_k170_change_ratio_diff,
-    1.0 * t2.avg_avg_elo_k170_change_ratio / t3.avg_avg_elo_k170_change_ratio AS avg_avg_elo_k170_change_ratio_ratio,
     t2.avg_elo_modified_diff - t3.avg_elo_modified_diff AS avg_elo_modified_diff_diff,
     1.0 * t2.avg_elo_modified_diff / t3.avg_elo_modified_diff AS avg_elo_modified_diff_ratio,
-    t2.avg_elo_modified_ratio - t3.avg_elo_modified_ratio AS avg_elo_modified_ratio_diff,
-    1.0 * t2.avg_elo_modified_ratio / t3.avg_elo_modified_ratio AS avg_elo_modified_ratio_ratio,
     t2.avg_avg_elo_modified_diff - t3.avg_avg_elo_modified_diff AS avg_avg_elo_modified_diff_diff,
     1.0 * t2.avg_avg_elo_modified_diff / t3.avg_avg_elo_modified_diff AS avg_avg_elo_modified_diff_ratio,
-    t2.avg_avg_elo_modified_ratio - t3.avg_avg_elo_modified_ratio AS avg_avg_elo_modified_ratio_diff,
-    1.0 * t2.avg_avg_elo_modified_ratio / t3.avg_avg_elo_modified_ratio AS avg_avg_elo_modified_ratio_ratio,
     t2.avg_elo_modified_change_diff - t3.avg_elo_modified_change_diff AS avg_elo_modified_change_diff_diff,
     1.0 * t2.avg_elo_modified_change_diff / t3.avg_elo_modified_change_diff AS avg_elo_modified_change_diff_ratio,
-    t2.avg_elo_modified_change_ratio - t3.avg_elo_modified_change_ratio AS avg_elo_modified_change_ratio_diff,
-    1.0 * t2.avg_elo_modified_change_ratio / t3.avg_elo_modified_change_ratio AS avg_elo_modified_change_ratio_ratio,
     t2.avg_avg_elo_modified_change_diff - t3.avg_avg_elo_modified_change_diff AS avg_avg_elo_modified_change_diff_diff,
     1.0 * t2.avg_avg_elo_modified_change_diff / t3.avg_avg_elo_modified_change_diff AS avg_avg_elo_modified_change_diff_ratio,
-    t2.avg_avg_elo_modified_change_ratio - t3.avg_avg_elo_modified_change_ratio AS avg_avg_elo_modified_change_ratio_diff,
-    1.0 * t2.avg_avg_elo_modified_change_ratio / t3.avg_avg_elo_modified_change_ratio AS avg_avg_elo_modified_change_ratio_ratio,
     t2.avg_glicko_1_diff - t3.avg_glicko_1_diff AS avg_glicko_1_diff_diff,
     1.0 * t2.avg_glicko_1_diff / t3.avg_glicko_1_diff AS avg_glicko_1_diff_ratio,
-    t2.avg_glicko_1_ratio - t3.avg_glicko_1_ratio AS avg_glicko_1_ratio_diff,
-    1.0 * t2.avg_glicko_1_ratio / t3.avg_glicko_1_ratio AS avg_glicko_1_ratio_ratio,
     t2.avg_avg_glicko_1_diff - t3.avg_avg_glicko_1_diff AS avg_avg_glicko_1_diff_diff,
     1.0 * t2.avg_avg_glicko_1_diff / t3.avg_avg_glicko_1_diff AS avg_avg_glicko_1_diff_ratio,
-    t2.avg_avg_glicko_1_ratio - t3.avg_avg_glicko_1_ratio AS avg_avg_glicko_1_ratio_diff,
-    1.0 * t2.avg_avg_glicko_1_ratio / t3.avg_avg_glicko_1_ratio AS avg_avg_glicko_1_ratio_ratio,
     t2.avg_glicko_1_change_diff - t3.avg_glicko_1_change_diff AS avg_glicko_1_change_diff_diff,
     1.0 * t2.avg_glicko_1_change_diff / t3.avg_glicko_1_change_diff AS avg_glicko_1_change_diff_ratio,
-    t2.avg_glicko_1_change_ratio - t3.avg_glicko_1_change_ratio AS avg_glicko_1_change_ratio_diff,
-    1.0 * t2.avg_glicko_1_change_ratio / t3.avg_glicko_1_change_ratio AS avg_glicko_1_change_ratio_ratio,
     t2.avg_avg_glicko_1_change_diff - t3.avg_avg_glicko_1_change_diff AS avg_avg_glicko_1_change_diff_diff,
     1.0 * t2.avg_avg_glicko_1_change_diff / t3.avg_avg_glicko_1_change_diff AS avg_avg_glicko_1_change_diff_ratio,
-    t2.avg_avg_glicko_1_change_ratio - t3.avg_avg_glicko_1_change_ratio AS avg_avg_glicko_1_change_ratio_diff,
-    1.0 * t2.avg_avg_glicko_1_change_ratio / t3.avg_avg_glicko_1_change_ratio AS avg_avg_glicko_1_change_ratio_ratio,
     t2.avg_avg_opp_elo_k170_diff - t3.avg_avg_opp_elo_k170_diff AS avg_avg_opp_elo_k170_diff_diff,
     1.0 * t2.avg_avg_opp_elo_k170_diff / t3.avg_avg_opp_elo_k170_diff AS avg_avg_opp_elo_k170_diff_ratio,
-    t2.avg_avg_opp_elo_k170_ratio - t3.avg_avg_opp_elo_k170_ratio AS avg_avg_opp_elo_k170_ratio_diff,
-    1.0 * t2.avg_avg_opp_elo_k170_ratio / t3.avg_avg_opp_elo_k170_ratio AS avg_avg_opp_elo_k170_ratio_ratio,
     t2.avg_opp_elo_k170_delta_diff - t3.avg_opp_elo_k170_delta_diff AS avg_opp_elo_k170_delta_diff_diff,
     1.0 * t2.avg_opp_elo_k170_delta_diff / t3.avg_opp_elo_k170_delta_diff AS avg_opp_elo_k170_delta_diff_ratio,
-    t2.avg_opp_elo_k170_delta_ratio - t3.avg_opp_elo_k170_delta_ratio AS avg_opp_elo_k170_delta_ratio_diff,
-    1.0 * t2.avg_opp_elo_k170_delta_ratio / t3.avg_opp_elo_k170_delta_ratio AS avg_opp_elo_k170_delta_ratio_ratio,
     t2.avg_avg_opp_elo_k170_delta_diff - t3.avg_avg_opp_elo_k170_delta_diff AS avg_avg_opp_elo_k170_delta_diff_diff,
     1.0 * t2.avg_avg_opp_elo_k170_delta_diff / t3.avg_avg_opp_elo_k170_delta_diff AS avg_avg_opp_elo_k170_delta_diff_ratio,
-    t2.avg_avg_opp_elo_k170_delta_ratio - t3.avg_avg_opp_elo_k170_delta_ratio AS avg_avg_opp_elo_k170_delta_ratio_diff,
-    1.0 * t2.avg_avg_opp_elo_k170_delta_ratio / t3.avg_avg_opp_elo_k170_delta_ratio AS avg_avg_opp_elo_k170_delta_ratio_ratio,
     t2.avg_avg_opp_elo_modified_diff - t3.avg_avg_opp_elo_modified_diff AS avg_avg_opp_elo_modified_diff_diff,
     1.0 * t2.avg_avg_opp_elo_modified_diff / t3.avg_avg_opp_elo_modified_diff AS avg_avg_opp_elo_modified_diff_ratio,
-    t2.avg_avg_opp_elo_modified_ratio - t3.avg_avg_opp_elo_modified_ratio AS avg_avg_opp_elo_modified_ratio_diff,
-    1.0 * t2.avg_avg_opp_elo_modified_ratio / t3.avg_avg_opp_elo_modified_ratio AS avg_avg_opp_elo_modified_ratio_ratio,
     t2.avg_opp_elo_modified_delta_diff - t3.avg_opp_elo_modified_delta_diff AS avg_opp_elo_modified_delta_diff_diff,
     1.0 * t2.avg_opp_elo_modified_delta_diff / t3.avg_opp_elo_modified_delta_diff AS avg_opp_elo_modified_delta_diff_ratio,
-    t2.avg_opp_elo_modified_delta_ratio - t3.avg_opp_elo_modified_delta_ratio AS avg_opp_elo_modified_delta_ratio_diff,
-    1.0 * t2.avg_opp_elo_modified_delta_ratio / t3.avg_opp_elo_modified_delta_ratio AS avg_opp_elo_modified_delta_ratio_ratio,
     t2.avg_avg_opp_elo_modified_delta_diff - t3.avg_avg_opp_elo_modified_delta_diff AS avg_avg_opp_elo_modified_delta_diff_diff,
     1.0 * t2.avg_avg_opp_elo_modified_delta_diff / t3.avg_avg_opp_elo_modified_delta_diff AS avg_avg_opp_elo_modified_delta_diff_ratio,
-    t2.avg_avg_opp_elo_modified_delta_ratio - t3.avg_avg_opp_elo_modified_delta_ratio AS avg_avg_opp_elo_modified_delta_ratio_diff,
-    1.0 * t2.avg_avg_opp_elo_modified_delta_ratio / t3.avg_avg_opp_elo_modified_delta_ratio AS avg_avg_opp_elo_modified_delta_ratio_ratio,
     t2.avg_avg_opp_glicko_1_diff - t3.avg_avg_opp_glicko_1_diff AS avg_avg_opp_glicko_1_diff_diff,
     1.0 * t2.avg_avg_opp_glicko_1_diff / t3.avg_avg_opp_glicko_1_diff AS avg_avg_opp_glicko_1_diff_ratio,
-    t2.avg_avg_opp_glicko_1_ratio - t3.avg_avg_opp_glicko_1_ratio AS avg_avg_opp_glicko_1_ratio_diff,
-    1.0 * t2.avg_avg_opp_glicko_1_ratio / t3.avg_avg_opp_glicko_1_ratio AS avg_avg_opp_glicko_1_ratio_ratio,
     t2.avg_opp_glicko_1_delta_diff - t3.avg_opp_glicko_1_delta_diff AS avg_opp_glicko_1_delta_diff_diff,
     1.0 * t2.avg_opp_glicko_1_delta_diff / t3.avg_opp_glicko_1_delta_diff AS avg_opp_glicko_1_delta_diff_ratio,
-    t2.avg_opp_glicko_1_delta_ratio - t3.avg_opp_glicko_1_delta_ratio AS avg_opp_glicko_1_delta_ratio_diff,
-    1.0 * t2.avg_opp_glicko_1_delta_ratio / t3.avg_opp_glicko_1_delta_ratio AS avg_opp_glicko_1_delta_ratio_ratio,
     t2.avg_avg_opp_glicko_1_delta_diff - t3.avg_avg_opp_glicko_1_delta_diff AS avg_avg_opp_glicko_1_delta_diff_diff,
     1.0 * t2.avg_avg_opp_glicko_1_delta_diff / t3.avg_avg_opp_glicko_1_delta_diff AS avg_avg_opp_glicko_1_delta_diff_ratio,
-    t2.avg_avg_opp_glicko_1_delta_ratio - t3.avg_avg_opp_glicko_1_delta_ratio AS avg_avg_opp_glicko_1_delta_ratio_diff,
-    1.0 * t2.avg_avg_opp_glicko_1_delta_ratio / t3.avg_avg_opp_glicko_1_delta_ratio AS avg_avg_opp_glicko_1_delta_ratio_ratio,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0

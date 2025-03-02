@@ -430,10 +430,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_by_country_diff,
-        AVG(1.0 * t1.wins_by_country / t2.wins_by_country) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_by_country_ratio,
         AVG(t2.losses_by_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -442,12 +438,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_by_country_diff,
-        AVG(
-            1.0 * t1.losses_by_country / t2.losses_by_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_by_country_ratio,
         AVG(t2.win_pct_by_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -456,12 +446,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_pct_by_country_diff,
-        AVG(
-            1.0 * t1.win_pct_by_country / t2.win_pct_by_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_pct_by_country_ratio,
         AVG(t2.lose_pct_by_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -470,12 +454,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_lose_pct_by_country_diff,
-        AVG(
-            1.0 * t1.lose_pct_by_country / t2.lose_pct_by_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_by_country_ratio,
         AVG(t2.wins_against_opp_nationality) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -486,12 +464,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_against_opp_nationality_diff,
-        AVG(
-            1.0 * t1.wins_against_opp_nationality / t2.wins_against_opp_nationality
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_against_opp_nationality_ratio,
         AVG(t2.losses_against_opp_nationality) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -502,12 +474,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_against_opp_nationality_diff,
-        AVG(
-            1.0 * t1.losses_against_opp_nationality / t2.losses_against_opp_nationality
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_against_opp_nationality_ratio,
         AVG(t2.win_pct_against_opp_nationality) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -518,12 +484,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_pct_against_opp_nationality_diff,
-        AVG(
-            1.0 * t1.win_pct_against_opp_nationality / t2.win_pct_against_opp_nationality
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_pct_against_opp_nationality_ratio,
         AVG(t2.lose_pct_against_opp_nationality) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -534,12 +494,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_lose_pct_against_opp_nationality_diff,
-        AVG(
-            1.0 * t1.lose_pct_against_opp_nationality / t2.lose_pct_against_opp_nationality
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_against_opp_nationality_ratio,
         AVG(t2.wins_by_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -550,12 +504,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_by_is_home_country_diff,
-        AVG(
-            1.0 * t1.wins_by_is_home_country / t2.wins_by_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_by_is_home_country_ratio,
         AVG(t2.losses_by_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -566,12 +514,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_by_is_home_country_diff,
-        AVG(
-            1.0 * t1.losses_by_is_home_country / t2.losses_by_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_by_is_home_country_ratio,
         AVG(t2.win_pct_by_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -582,12 +524,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_pct_by_is_home_country_diff,
-        AVG(
-            1.0 * t1.win_pct_by_is_home_country / t2.win_pct_by_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_pct_by_is_home_country_ratio,
         AVG(t2.lose_pct_by_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -598,12 +534,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_lose_pct_by_is_home_country_diff,
-        AVG(
-            1.0 * t1.lose_pct_by_is_home_country / t2.lose_pct_by_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_by_is_home_country_ratio,
         AVG(t2.wins_by_opp_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -614,12 +544,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_by_opp_is_home_country_diff,
-        AVG(
-            1.0 * t1.wins_by_opp_is_home_country / t2.wins_by_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_by_opp_is_home_country_ratio,
         AVG(t2.losses_by_opp_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -630,12 +554,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_by_opp_is_home_country_diff,
-        AVG(
-            1.0 * t1.losses_by_opp_is_home_country / t2.losses_by_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_by_opp_is_home_country_ratio,
         AVG(t2.win_pct_by_opp_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -646,12 +564,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_pct_by_opp_is_home_country_diff,
-        AVG(
-            1.0 * t1.win_pct_by_opp_is_home_country / t2.win_pct_by_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_pct_by_opp_is_home_country_ratio,
         AVG(t2.lose_pct_by_opp_is_home_country) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -662,12 +574,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_lose_pct_by_opp_is_home_country_diff,
-        AVG(
-            1.0 * t1.lose_pct_by_opp_is_home_country / t2.lose_pct_by_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_by_opp_is_home_country_ratio,
         AVG(
             t2.wins_by_is_home_country_and_opp_is_home_country
         ) OVER (
@@ -681,12 +587,6 @@ cte7 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff,
         AVG(
-            1.0 * t1.wins_by_is_home_country_and_opp_is_home_country / t2.wins_by_is_home_country_and_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio,
-        AVG(
             t2.losses_by_is_home_country_and_opp_is_home_country
         ) OVER (
             PARTITION BY t1.fighter_id
@@ -698,12 +598,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff,
-        AVG(
-            1.0 * t1.losses_by_is_home_country_and_opp_is_home_country / t2.losses_by_is_home_country_and_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio,
         AVG(
             t2.win_pct_by_is_home_country_and_opp_is_home_country
         ) OVER (
@@ -717,12 +611,6 @@ cte7 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff,
         AVG(
-            1.0 * t1.win_pct_by_is_home_country_and_opp_is_home_country / t2.win_pct_by_is_home_country_and_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio,
-        AVG(
             t2.lose_pct_by_is_home_country_and_opp_is_home_country
         ) OVER (
             PARTITION BY t1.fighter_id
@@ -734,12 +622,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff,
-        AVG(
-            1.0 * t1.lose_pct_by_is_home_country_and_opp_is_home_country / t2.lose_pct_by_is_home_country_and_opp_is_home_country
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio,
         AVG(t2.wins_by_is_title_bout) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -750,12 +632,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_by_is_title_bout_diff,
-        AVG(
-            1.0 * t1.wins_by_is_title_bout / t2.wins_by_is_title_bout
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_by_is_title_bout_ratio,
         AVG(t2.losses_by_is_title_bout) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -766,12 +642,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_by_is_title_bout_diff,
-        AVG(
-            1.0 * t1.losses_by_is_title_bout / t2.losses_by_is_title_bout
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_by_is_title_bout_ratio,
         AVG(t2.win_pct_by_is_title_bout) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -782,12 +652,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_pct_by_is_title_bout_diff,
-        AVG(
-            1.0 * t1.win_pct_by_is_title_bout / t2.win_pct_by_is_title_bout
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_pct_by_is_title_bout_ratio,
         AVG(t2.lose_pct_by_is_title_bout) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -798,12 +662,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_lose_pct_by_is_title_bout_diff,
-        AVG(
-            1.0 * t1.lose_pct_by_is_title_bout / t2.lose_pct_by_is_title_bout
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_by_is_title_bout_ratio,
         AVG(t2.wins_by_weight_class) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -814,12 +672,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_by_weight_class_diff,
-        AVG(
-            1.0 * t1.wins_by_weight_class / t2.wins_by_weight_class
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_by_weight_class_ratio,
         AVG(t2.losses_by_weight_class) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -830,12 +682,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_by_weight_class_diff,
-        AVG(
-            1.0 * t1.losses_by_weight_class / t2.losses_by_weight_class
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_by_weight_class_ratio,
         AVG(t2.win_pct_by_weight_class) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -846,12 +692,6 @@ cte7 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_pct_by_weight_class_diff,
-        AVG(
-            1.0 * t1.win_pct_by_weight_class / t2.win_pct_by_weight_class
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_pct_by_weight_class_ratio,
         AVG(t2.lose_pct_by_weight_class) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -861,13 +701,7 @@ cte7 AS (
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_by_weight_class_diff,
-        AVG(
-            1.0 * t1.lose_pct_by_weight_class / t2.lose_pct_by_weight_class
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_lose_pct_by_weight_class_ratio
+        ) AS avg_opp_lose_pct_by_weight_class_diff
     FROM cte6 t1
         LEFT JOIN cte6 t2 ON t1.fighter_id = t2.opponent_id
         AND t1.event_id = t2.event_id
@@ -909,88 +743,60 @@ cte8 AS (
         t1.lose_pct_by_weight_class,
         t1.avg_opp_wins_by_country,
         t1.avg_opp_wins_by_country_diff,
-        t1.avg_opp_wins_by_country_ratio,
         t1.avg_opp_losses_by_country,
         t1.avg_opp_losses_by_country_diff,
-        t1.avg_opp_losses_by_country_ratio,
         t1.avg_opp_win_pct_by_country,
         t1.avg_opp_win_pct_by_country_diff,
-        t1.avg_opp_win_pct_by_country_ratio,
         t1.avg_opp_lose_pct_by_country,
         t1.avg_opp_lose_pct_by_country_diff,
-        t1.avg_opp_lose_pct_by_country_ratio,
         t1.avg_opp_wins_against_opp_nationality,
         t1.avg_opp_wins_against_opp_nationality_diff,
-        t1.avg_opp_wins_against_opp_nationality_ratio,
         t1.avg_opp_losses_against_opp_nationality,
         t1.avg_opp_losses_against_opp_nationality_diff,
-        t1.avg_opp_losses_against_opp_nationality_ratio,
         t1.avg_opp_win_pct_against_opp_nationality,
         t1.avg_opp_win_pct_against_opp_nationality_diff,
-        t1.avg_opp_win_pct_against_opp_nationality_ratio,
         t1.avg_opp_lose_pct_against_opp_nationality,
         t1.avg_opp_lose_pct_against_opp_nationality_diff,
-        t1.avg_opp_lose_pct_against_opp_nationality_ratio,
         t1.avg_opp_wins_by_is_home_country,
         t1.avg_opp_wins_by_is_home_country_diff,
-        t1.avg_opp_wins_by_is_home_country_ratio,
         t1.avg_opp_losses_by_is_home_country,
         t1.avg_opp_losses_by_is_home_country_diff,
-        t1.avg_opp_losses_by_is_home_country_ratio,
         t1.avg_opp_win_pct_by_is_home_country,
         t1.avg_opp_win_pct_by_is_home_country_diff,
-        t1.avg_opp_win_pct_by_is_home_country_ratio,
         t1.avg_opp_lose_pct_by_is_home_country,
         t1.avg_opp_lose_pct_by_is_home_country_diff,
-        t1.avg_opp_lose_pct_by_is_home_country_ratio,
         t1.avg_opp_wins_by_opp_is_home_country,
         t1.avg_opp_wins_by_opp_is_home_country_diff,
-        t1.avg_opp_wins_by_opp_is_home_country_ratio,
         t1.avg_opp_losses_by_opp_is_home_country,
         t1.avg_opp_losses_by_opp_is_home_country_diff,
-        t1.avg_opp_losses_by_opp_is_home_country_ratio,
         t1.avg_opp_win_pct_by_opp_is_home_country,
         t1.avg_opp_win_pct_by_opp_is_home_country_diff,
-        t1.avg_opp_win_pct_by_opp_is_home_country_ratio,
         t1.avg_opp_lose_pct_by_opp_is_home_country,
         t1.avg_opp_lose_pct_by_opp_is_home_country_diff,
-        t1.avg_opp_lose_pct_by_opp_is_home_country_ratio,
         t1.avg_opp_wins_by_is_home_country_and_opp_is_home_country,
         t1.avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff,
-        t1.avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio,
         t1.avg_opp_losses_by_is_home_country_and_opp_is_home_country,
         t1.avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff,
-        t1.avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio,
         t1.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country,
         t1.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff,
-        t1.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio,
         t1.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country,
         t1.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff,
-        t1.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio,
         t1.avg_opp_wins_by_is_title_bout,
         t1.avg_opp_wins_by_is_title_bout_diff,
-        t1.avg_opp_wins_by_is_title_bout_ratio,
         t1.avg_opp_losses_by_is_title_bout,
         t1.avg_opp_losses_by_is_title_bout_diff,
-        t1.avg_opp_losses_by_is_title_bout_ratio,
         t1.avg_opp_win_pct_by_is_title_bout,
         t1.avg_opp_win_pct_by_is_title_bout_diff,
-        t1.avg_opp_win_pct_by_is_title_bout_ratio,
         t1.avg_opp_lose_pct_by_is_title_bout,
         t1.avg_opp_lose_pct_by_is_title_bout_diff,
-        t1.avg_opp_lose_pct_by_is_title_bout_ratio,
         t1.avg_opp_wins_by_weight_class,
         t1.avg_opp_wins_by_weight_class_diff,
-        t1.avg_opp_wins_by_weight_class_ratio,
         t1.avg_opp_losses_by_weight_class,
         t1.avg_opp_losses_by_weight_class_diff,
-        t1.avg_opp_losses_by_weight_class_ratio,
         t1.avg_opp_win_pct_by_weight_class,
         t1.avg_opp_win_pct_by_weight_class_diff,
-        t1.avg_opp_win_pct_by_weight_class_ratio,
         t1.avg_opp_lose_pct_by_weight_class,
-        t1.avg_opp_lose_pct_by_weight_class_diff,
-        t1.avg_opp_lose_pct_by_weight_class_ratio
+        t1.avg_opp_lose_pct_by_weight_class_diff
     FROM cte7 t1
         INNER JOIN fighter_mapping AS t2 ON t1.fighter_id = t2.sherdog_id
         INNER JOIN fighter_mapping AS t3 ON t1.opponent_id = t3.sherdog_id
@@ -1034,88 +840,60 @@ cte9 AS (
         lose_pct_by_weight_class,
         avg_opp_wins_by_country,
         avg_opp_wins_by_country_diff,
-        avg_opp_wins_by_country_ratio,
         avg_opp_losses_by_country,
         avg_opp_losses_by_country_diff,
-        avg_opp_losses_by_country_ratio,
         avg_opp_win_pct_by_country,
         avg_opp_win_pct_by_country_diff,
-        avg_opp_win_pct_by_country_ratio,
         avg_opp_lose_pct_by_country,
         avg_opp_lose_pct_by_country_diff,
-        avg_opp_lose_pct_by_country_ratio,
         avg_opp_wins_against_opp_nationality,
         avg_opp_wins_against_opp_nationality_diff,
-        avg_opp_wins_against_opp_nationality_ratio,
         avg_opp_losses_against_opp_nationality,
         avg_opp_losses_against_opp_nationality_diff,
-        avg_opp_losses_against_opp_nationality_ratio,
         avg_opp_win_pct_against_opp_nationality,
         avg_opp_win_pct_against_opp_nationality_diff,
-        avg_opp_win_pct_against_opp_nationality_ratio,
         avg_opp_lose_pct_against_opp_nationality,
         avg_opp_lose_pct_against_opp_nationality_diff,
-        avg_opp_lose_pct_against_opp_nationality_ratio,
         avg_opp_wins_by_is_home_country,
         avg_opp_wins_by_is_home_country_diff,
-        avg_opp_wins_by_is_home_country_ratio,
         avg_opp_losses_by_is_home_country,
         avg_opp_losses_by_is_home_country_diff,
-        avg_opp_losses_by_is_home_country_ratio,
         avg_opp_win_pct_by_is_home_country,
         avg_opp_win_pct_by_is_home_country_diff,
-        avg_opp_win_pct_by_is_home_country_ratio,
         avg_opp_lose_pct_by_is_home_country,
         avg_opp_lose_pct_by_is_home_country_diff,
-        avg_opp_lose_pct_by_is_home_country_ratio,
         avg_opp_wins_by_opp_is_home_country,
         avg_opp_wins_by_opp_is_home_country_diff,
-        avg_opp_wins_by_opp_is_home_country_ratio,
         avg_opp_losses_by_opp_is_home_country,
         avg_opp_losses_by_opp_is_home_country_diff,
-        avg_opp_losses_by_opp_is_home_country_ratio,
         avg_opp_win_pct_by_opp_is_home_country,
         avg_opp_win_pct_by_opp_is_home_country_diff,
-        avg_opp_win_pct_by_opp_is_home_country_ratio,
         avg_opp_lose_pct_by_opp_is_home_country,
         avg_opp_lose_pct_by_opp_is_home_country_diff,
-        avg_opp_lose_pct_by_opp_is_home_country_ratio,
         avg_opp_wins_by_is_home_country_and_opp_is_home_country,
         avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff,
-        avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio,
         avg_opp_losses_by_is_home_country_and_opp_is_home_country,
         avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff,
-        avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio,
         avg_opp_win_pct_by_is_home_country_and_opp_is_home_country,
         avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff,
-        avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio,
         avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country,
         avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff,
-        avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio,
         avg_opp_wins_by_is_title_bout,
         avg_opp_wins_by_is_title_bout_diff,
-        avg_opp_wins_by_is_title_bout_ratio,
         avg_opp_losses_by_is_title_bout,
         avg_opp_losses_by_is_title_bout_diff,
-        avg_opp_losses_by_is_title_bout_ratio,
         avg_opp_win_pct_by_is_title_bout,
         avg_opp_win_pct_by_is_title_bout_diff,
-        avg_opp_win_pct_by_is_title_bout_ratio,
         avg_opp_lose_pct_by_is_title_bout,
         avg_opp_lose_pct_by_is_title_bout_diff,
-        avg_opp_lose_pct_by_is_title_bout_ratio,
         avg_opp_wins_by_weight_class,
         avg_opp_wins_by_weight_class_diff,
-        avg_opp_wins_by_weight_class_ratio,
         avg_opp_losses_by_weight_class,
         avg_opp_losses_by_weight_class_diff,
-        avg_opp_losses_by_weight_class_ratio,
         avg_opp_win_pct_by_weight_class,
         avg_opp_win_pct_by_weight_class_diff,
-        avg_opp_win_pct_by_weight_class_ratio,
         avg_opp_lose_pct_by_weight_class,
-        avg_opp_lose_pct_by_weight_class_diff,
-        avg_opp_lose_pct_by_weight_class_ratio
+        avg_opp_lose_pct_by_weight_class_diff
     FROM cte8 t1
 ),
 cte10 AS (
@@ -1168,88 +946,60 @@ cte12 AS (
         t2.lose_pct_by_weight_class,
         t2.avg_opp_wins_by_country,
         t2.avg_opp_wins_by_country_diff,
-        t2.avg_opp_wins_by_country_ratio,
         t2.avg_opp_losses_by_country,
         t2.avg_opp_losses_by_country_diff,
-        t2.avg_opp_losses_by_country_ratio,
         t2.avg_opp_win_pct_by_country,
         t2.avg_opp_win_pct_by_country_diff,
-        t2.avg_opp_win_pct_by_country_ratio,
         t2.avg_opp_lose_pct_by_country,
         t2.avg_opp_lose_pct_by_country_diff,
-        t2.avg_opp_lose_pct_by_country_ratio,
         t2.avg_opp_wins_against_opp_nationality,
         t2.avg_opp_wins_against_opp_nationality_diff,
-        t2.avg_opp_wins_against_opp_nationality_ratio,
         t2.avg_opp_losses_against_opp_nationality,
         t2.avg_opp_losses_against_opp_nationality_diff,
-        t2.avg_opp_losses_against_opp_nationality_ratio,
         t2.avg_opp_win_pct_against_opp_nationality,
         t2.avg_opp_win_pct_against_opp_nationality_diff,
-        t2.avg_opp_win_pct_against_opp_nationality_ratio,
         t2.avg_opp_lose_pct_against_opp_nationality,
         t2.avg_opp_lose_pct_against_opp_nationality_diff,
-        t2.avg_opp_lose_pct_against_opp_nationality_ratio,
         t2.avg_opp_wins_by_is_home_country,
         t2.avg_opp_wins_by_is_home_country_diff,
-        t2.avg_opp_wins_by_is_home_country_ratio,
         t2.avg_opp_losses_by_is_home_country,
         t2.avg_opp_losses_by_is_home_country_diff,
-        t2.avg_opp_losses_by_is_home_country_ratio,
         t2.avg_opp_win_pct_by_is_home_country,
         t2.avg_opp_win_pct_by_is_home_country_diff,
-        t2.avg_opp_win_pct_by_is_home_country_ratio,
         t2.avg_opp_lose_pct_by_is_home_country,
         t2.avg_opp_lose_pct_by_is_home_country_diff,
-        t2.avg_opp_lose_pct_by_is_home_country_ratio,
         t2.avg_opp_wins_by_opp_is_home_country,
         t2.avg_opp_wins_by_opp_is_home_country_diff,
-        t2.avg_opp_wins_by_opp_is_home_country_ratio,
         t2.avg_opp_losses_by_opp_is_home_country,
         t2.avg_opp_losses_by_opp_is_home_country_diff,
-        t2.avg_opp_losses_by_opp_is_home_country_ratio,
         t2.avg_opp_win_pct_by_opp_is_home_country,
         t2.avg_opp_win_pct_by_opp_is_home_country_diff,
-        t2.avg_opp_win_pct_by_opp_is_home_country_ratio,
         t2.avg_opp_lose_pct_by_opp_is_home_country,
         t2.avg_opp_lose_pct_by_opp_is_home_country_diff,
-        t2.avg_opp_lose_pct_by_opp_is_home_country_ratio,
         t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country,
         t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff,
-        t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio,
         t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country,
         t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff,
-        t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio,
         t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country,
         t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff,
-        t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio,
         t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country,
         t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff,
-        t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio,
         t2.avg_opp_wins_by_is_title_bout,
         t2.avg_opp_wins_by_is_title_bout_diff,
-        t2.avg_opp_wins_by_is_title_bout_ratio,
         t2.avg_opp_losses_by_is_title_bout,
         t2.avg_opp_losses_by_is_title_bout_diff,
-        t2.avg_opp_losses_by_is_title_bout_ratio,
         t2.avg_opp_win_pct_by_is_title_bout,
         t2.avg_opp_win_pct_by_is_title_bout_diff,
-        t2.avg_opp_win_pct_by_is_title_bout_ratio,
         t2.avg_opp_lose_pct_by_is_title_bout,
         t2.avg_opp_lose_pct_by_is_title_bout_diff,
-        t2.avg_opp_lose_pct_by_is_title_bout_ratio,
         t2.avg_opp_wins_by_weight_class,
         t2.avg_opp_wins_by_weight_class_diff,
-        t2.avg_opp_wins_by_weight_class_ratio,
         t2.avg_opp_losses_by_weight_class,
         t2.avg_opp_losses_by_weight_class_diff,
-        t2.avg_opp_losses_by_weight_class_ratio,
         t2.avg_opp_win_pct_by_weight_class,
         t2.avg_opp_win_pct_by_weight_class_diff,
-        t2.avg_opp_win_pct_by_weight_class_ratio,
         t2.avg_opp_lose_pct_by_weight_class,
-        t2.avg_opp_lose_pct_by_weight_class_diff,
-        t2.avg_opp_lose_pct_by_weight_class_ratio
+        t2.avg_opp_lose_pct_by_weight_class_diff
     FROM cte11 t1
         INNER JOIN cte9 t2 ON t1.fighter_id = t2.fighter_id
         AND t1.opponent_id = t2.opponent_id
@@ -1316,170 +1066,114 @@ SELECT id,
     1.0 * t2.avg_opp_wins_by_country / t3.avg_opp_wins_by_country AS avg_opp_wins_by_country_ratio,
     t2.avg_opp_wins_by_country_diff - t3.avg_opp_wins_by_country_diff AS avg_opp_wins_by_country_diff_diff,
     1.0 * t2.avg_opp_wins_by_country_diff / t3.avg_opp_wins_by_country_diff AS avg_opp_wins_by_country_diff_ratio,
-    t2.avg_opp_wins_by_country_ratio - t3.avg_opp_wins_by_country_ratio AS avg_opp_wins_by_country_ratio_diff,
-    1.0 * t2.avg_opp_wins_by_country_ratio / t3.avg_opp_wins_by_country_ratio AS avg_opp_wins_by_country_ratio_ratio,
     t2.avg_opp_losses_by_country - t3.avg_opp_losses_by_country AS avg_opp_losses_by_country_diff,
     1.0 * t2.avg_opp_losses_by_country / t3.avg_opp_losses_by_country AS avg_opp_losses_by_country_ratio,
     t2.avg_opp_losses_by_country_diff - t3.avg_opp_losses_by_country_diff AS avg_opp_losses_by_country_diff_diff,
     1.0 * t2.avg_opp_losses_by_country_diff / t3.avg_opp_losses_by_country_diff AS avg_opp_losses_by_country_diff_ratio,
-    t2.avg_opp_losses_by_country_ratio - t3.avg_opp_losses_by_country_ratio AS avg_opp_losses_by_country_ratio_diff,
-    1.0 * t2.avg_opp_losses_by_country_ratio / t3.avg_opp_losses_by_country_ratio AS avg_opp_losses_by_country_ratio_ratio,
     t2.avg_opp_win_pct_by_country - t3.avg_opp_win_pct_by_country AS avg_opp_win_pct_by_country_diff,
     1.0 * t2.avg_opp_win_pct_by_country / t3.avg_opp_win_pct_by_country AS avg_opp_win_pct_by_country_ratio,
     t2.avg_opp_win_pct_by_country_diff - t3.avg_opp_win_pct_by_country_diff AS avg_opp_win_pct_by_country_diff_diff,
     1.0 * t2.avg_opp_win_pct_by_country_diff / t3.avg_opp_win_pct_by_country_diff AS avg_opp_win_pct_by_country_diff_ratio,
-    t2.avg_opp_win_pct_by_country_ratio - t3.avg_opp_win_pct_by_country_ratio AS avg_opp_win_pct_by_country_ratio_diff,
-    1.0 * t2.avg_opp_win_pct_by_country_ratio / t3.avg_opp_win_pct_by_country_ratio AS avg_opp_win_pct_by_country_ratio_ratio,
     t2.avg_opp_lose_pct_by_country - t3.avg_opp_lose_pct_by_country AS avg_opp_lose_pct_by_country_diff,
     1.0 * t2.avg_opp_lose_pct_by_country / t3.avg_opp_lose_pct_by_country AS avg_opp_lose_pct_by_country_ratio,
     t2.avg_opp_lose_pct_by_country_diff - t3.avg_opp_lose_pct_by_country_diff AS avg_opp_lose_pct_by_country_diff_diff,
     1.0 * t2.avg_opp_lose_pct_by_country_diff / t3.avg_opp_lose_pct_by_country_diff AS avg_opp_lose_pct_by_country_diff_ratio,
-    t2.avg_opp_lose_pct_by_country_ratio - t3.avg_opp_lose_pct_by_country_ratio AS avg_opp_lose_pct_by_country_ratio_diff,
-    1.0 * t2.avg_opp_lose_pct_by_country_ratio / t3.avg_opp_lose_pct_by_country_ratio AS avg_opp_lose_pct_by_country_ratio_ratio,
     t2.avg_opp_wins_against_opp_nationality - t3.avg_opp_wins_against_opp_nationality AS avg_opp_wins_against_opp_nationality_diff,
     1.0 * t2.avg_opp_wins_against_opp_nationality / t3.avg_opp_wins_against_opp_nationality AS avg_opp_wins_against_opp_nationality_ratio,
     t2.avg_opp_wins_against_opp_nationality_diff - t3.avg_opp_wins_against_opp_nationality_diff AS avg_opp_wins_against_opp_nationality_diff_diff,
     1.0 * t2.avg_opp_wins_against_opp_nationality_diff / t3.avg_opp_wins_against_opp_nationality_diff AS avg_opp_wins_against_opp_nationality_diff_ratio,
-    t2.avg_opp_wins_against_opp_nationality_ratio - t3.avg_opp_wins_against_opp_nationality_ratio AS avg_opp_wins_against_opp_nationality_ratio_diff,
-    1.0 * t2.avg_opp_wins_against_opp_nationality_ratio / t3.avg_opp_wins_against_opp_nationality_ratio AS avg_opp_wins_against_opp_nationality_ratio_ratio,
     t2.avg_opp_losses_against_opp_nationality - t3.avg_opp_losses_against_opp_nationality AS avg_opp_losses_against_opp_nationality_diff,
     1.0 * t2.avg_opp_losses_against_opp_nationality / t3.avg_opp_losses_against_opp_nationality AS avg_opp_losses_against_opp_nationality_ratio,
     t2.avg_opp_losses_against_opp_nationality_diff - t3.avg_opp_losses_against_opp_nationality_diff AS avg_opp_losses_against_opp_nationality_diff_diff,
     1.0 * t2.avg_opp_losses_against_opp_nationality_diff / t3.avg_opp_losses_against_opp_nationality_diff AS avg_opp_losses_against_opp_nationality_diff_ratio,
-    t2.avg_opp_losses_against_opp_nationality_ratio - t3.avg_opp_losses_against_opp_nationality_ratio AS avg_opp_losses_against_opp_nationality_ratio_diff,
-    1.0 * t2.avg_opp_losses_against_opp_nationality_ratio / t3.avg_opp_losses_against_opp_nationality_ratio AS avg_opp_losses_against_opp_nationality_ratio_ratio,
     t2.avg_opp_win_pct_against_opp_nationality - t3.avg_opp_win_pct_against_opp_nationality AS avg_opp_win_pct_against_opp_nationality_diff,
     1.0 * t2.avg_opp_win_pct_against_opp_nationality / t3.avg_opp_win_pct_against_opp_nationality AS avg_opp_win_pct_against_opp_nationality_ratio,
     t2.avg_opp_win_pct_against_opp_nationality_diff - t3.avg_opp_win_pct_against_opp_nationality_diff AS avg_opp_win_pct_against_opp_nationality_diff_diff,
     1.0 * t2.avg_opp_win_pct_against_opp_nationality_diff / t3.avg_opp_win_pct_against_opp_nationality_diff AS avg_opp_win_pct_against_opp_nationality_diff_ratio,
-    t2.avg_opp_win_pct_against_opp_nationality_ratio - t3.avg_opp_win_pct_against_opp_nationality_ratio AS avg_opp_win_pct_against_opp_nationality_ratio_diff,
-    1.0 * t2.avg_opp_win_pct_against_opp_nationality_ratio / t3.avg_opp_win_pct_against_opp_nationality_ratio AS avg_opp_win_pct_against_opp_nationality_ratio_ratio,
     t2.avg_opp_lose_pct_against_opp_nationality - t3.avg_opp_lose_pct_against_opp_nationality AS avg_opp_lose_pct_against_opp_nationality_diff,
     1.0 * t2.avg_opp_lose_pct_against_opp_nationality / t3.avg_opp_lose_pct_against_opp_nationality AS avg_opp_lose_pct_against_opp_nationality_ratio,
     t2.avg_opp_lose_pct_against_opp_nationality_diff - t3.avg_opp_lose_pct_against_opp_nationality_diff AS avg_opp_lose_pct_against_opp_nationality_diff_diff,
     1.0 * t2.avg_opp_lose_pct_against_opp_nationality_diff / t3.avg_opp_lose_pct_against_opp_nationality_diff AS avg_opp_lose_pct_against_opp_nationality_diff_ratio,
-    t2.avg_opp_lose_pct_against_opp_nationality_ratio - t3.avg_opp_lose_pct_against_opp_nationality_ratio AS avg_opp_lose_pct_against_opp_nationality_ratio_diff,
-    1.0 * t2.avg_opp_lose_pct_against_opp_nationality_ratio / t3.avg_opp_lose_pct_against_opp_nationality_ratio AS avg_opp_lose_pct_against_opp_nationality_ratio_ratio,
     t2.avg_opp_wins_by_is_home_country - t3.avg_opp_wins_by_is_home_country AS avg_opp_wins_by_is_home_country_diff,
     1.0 * t2.avg_opp_wins_by_is_home_country / t3.avg_opp_wins_by_is_home_country AS avg_opp_wins_by_is_home_country_ratio,
     t2.avg_opp_wins_by_is_home_country_diff - t3.avg_opp_wins_by_is_home_country_diff AS avg_opp_wins_by_is_home_country_diff_diff,
     1.0 * t2.avg_opp_wins_by_is_home_country_diff / t3.avg_opp_wins_by_is_home_country_diff AS avg_opp_wins_by_is_home_country_diff_ratio,
-    t2.avg_opp_wins_by_is_home_country_ratio - t3.avg_opp_wins_by_is_home_country_ratio AS avg_opp_wins_by_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_wins_by_is_home_country_ratio / t3.avg_opp_wins_by_is_home_country_ratio AS avg_opp_wins_by_is_home_country_ratio_ratio,
     t2.avg_opp_losses_by_is_home_country - t3.avg_opp_losses_by_is_home_country AS avg_opp_losses_by_is_home_country_diff,
     1.0 * t2.avg_opp_losses_by_is_home_country / t3.avg_opp_losses_by_is_home_country AS avg_opp_losses_by_is_home_country_ratio,
     t2.avg_opp_losses_by_is_home_country_diff - t3.avg_opp_losses_by_is_home_country_diff AS avg_opp_losses_by_is_home_country_diff_diff,
     1.0 * t2.avg_opp_losses_by_is_home_country_diff / t3.avg_opp_losses_by_is_home_country_diff AS avg_opp_losses_by_is_home_country_diff_ratio,
-    t2.avg_opp_losses_by_is_home_country_ratio - t3.avg_opp_losses_by_is_home_country_ratio AS avg_opp_losses_by_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_losses_by_is_home_country_ratio / t3.avg_opp_losses_by_is_home_country_ratio AS avg_opp_losses_by_is_home_country_ratio_ratio,
     t2.avg_opp_win_pct_by_is_home_country - t3.avg_opp_win_pct_by_is_home_country AS avg_opp_win_pct_by_is_home_country_diff,
     1.0 * t2.avg_opp_win_pct_by_is_home_country / t3.avg_opp_win_pct_by_is_home_country AS avg_opp_win_pct_by_is_home_country_ratio,
     t2.avg_opp_win_pct_by_is_home_country_diff - t3.avg_opp_win_pct_by_is_home_country_diff AS avg_opp_win_pct_by_is_home_country_diff_diff,
     1.0 * t2.avg_opp_win_pct_by_is_home_country_diff / t3.avg_opp_win_pct_by_is_home_country_diff AS avg_opp_win_pct_by_is_home_country_diff_ratio,
-    t2.avg_opp_win_pct_by_is_home_country_ratio - t3.avg_opp_win_pct_by_is_home_country_ratio AS avg_opp_win_pct_by_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_win_pct_by_is_home_country_ratio / t3.avg_opp_win_pct_by_is_home_country_ratio AS avg_opp_win_pct_by_is_home_country_ratio_ratio,
     t2.avg_opp_lose_pct_by_is_home_country - t3.avg_opp_lose_pct_by_is_home_country AS avg_opp_lose_pct_by_is_home_country_diff,
     1.0 * t2.avg_opp_lose_pct_by_is_home_country / t3.avg_opp_lose_pct_by_is_home_country AS avg_opp_lose_pct_by_is_home_country_ratio,
     t2.avg_opp_lose_pct_by_is_home_country_diff - t3.avg_opp_lose_pct_by_is_home_country_diff AS avg_opp_lose_pct_by_is_home_country_diff_diff,
     1.0 * t2.avg_opp_lose_pct_by_is_home_country_diff / t3.avg_opp_lose_pct_by_is_home_country_diff AS avg_opp_lose_pct_by_is_home_country_diff_ratio,
-    t2.avg_opp_lose_pct_by_is_home_country_ratio - t3.avg_opp_lose_pct_by_is_home_country_ratio AS avg_opp_lose_pct_by_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_lose_pct_by_is_home_country_ratio / t3.avg_opp_lose_pct_by_is_home_country_ratio AS avg_opp_lose_pct_by_is_home_country_ratio_ratio,
     t2.avg_opp_wins_by_opp_is_home_country - t3.avg_opp_wins_by_opp_is_home_country AS avg_opp_wins_by_opp_is_home_country_diff,
     1.0 * t2.avg_opp_wins_by_opp_is_home_country / t3.avg_opp_wins_by_opp_is_home_country AS avg_opp_wins_by_opp_is_home_country_ratio,
     t2.avg_opp_wins_by_opp_is_home_country_diff - t3.avg_opp_wins_by_opp_is_home_country_diff AS avg_opp_wins_by_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_wins_by_opp_is_home_country_diff / t3.avg_opp_wins_by_opp_is_home_country_diff AS avg_opp_wins_by_opp_is_home_country_diff_ratio,
-    t2.avg_opp_wins_by_opp_is_home_country_ratio - t3.avg_opp_wins_by_opp_is_home_country_ratio AS avg_opp_wins_by_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_wins_by_opp_is_home_country_ratio / t3.avg_opp_wins_by_opp_is_home_country_ratio AS avg_opp_wins_by_opp_is_home_country_ratio_ratio,
     t2.avg_opp_losses_by_opp_is_home_country - t3.avg_opp_losses_by_opp_is_home_country AS avg_opp_losses_by_opp_is_home_country_diff,
     1.0 * t2.avg_opp_losses_by_opp_is_home_country / t3.avg_opp_losses_by_opp_is_home_country AS avg_opp_losses_by_opp_is_home_country_ratio,
     t2.avg_opp_losses_by_opp_is_home_country_diff - t3.avg_opp_losses_by_opp_is_home_country_diff AS avg_opp_losses_by_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_losses_by_opp_is_home_country_diff / t3.avg_opp_losses_by_opp_is_home_country_diff AS avg_opp_losses_by_opp_is_home_country_diff_ratio,
-    t2.avg_opp_losses_by_opp_is_home_country_ratio - t3.avg_opp_losses_by_opp_is_home_country_ratio AS avg_opp_losses_by_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_losses_by_opp_is_home_country_ratio / t3.avg_opp_losses_by_opp_is_home_country_ratio AS avg_opp_losses_by_opp_is_home_country_ratio_ratio,
     t2.avg_opp_win_pct_by_opp_is_home_country - t3.avg_opp_win_pct_by_opp_is_home_country AS avg_opp_win_pct_by_opp_is_home_country_diff,
     1.0 * t2.avg_opp_win_pct_by_opp_is_home_country / t3.avg_opp_win_pct_by_opp_is_home_country AS avg_opp_win_pct_by_opp_is_home_country_ratio,
     t2.avg_opp_win_pct_by_opp_is_home_country_diff - t3.avg_opp_win_pct_by_opp_is_home_country_diff AS avg_opp_win_pct_by_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_win_pct_by_opp_is_home_country_diff / t3.avg_opp_win_pct_by_opp_is_home_country_diff AS avg_opp_win_pct_by_opp_is_home_country_diff_ratio,
-    t2.avg_opp_win_pct_by_opp_is_home_country_ratio - t3.avg_opp_win_pct_by_opp_is_home_country_ratio AS avg_opp_win_pct_by_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_win_pct_by_opp_is_home_country_ratio / t3.avg_opp_win_pct_by_opp_is_home_country_ratio AS avg_opp_win_pct_by_opp_is_home_country_ratio_ratio,
     t2.avg_opp_lose_pct_by_opp_is_home_country - t3.avg_opp_lose_pct_by_opp_is_home_country AS avg_opp_lose_pct_by_opp_is_home_country_diff,
     1.0 * t2.avg_opp_lose_pct_by_opp_is_home_country / t3.avg_opp_lose_pct_by_opp_is_home_country AS avg_opp_lose_pct_by_opp_is_home_country_ratio,
     t2.avg_opp_lose_pct_by_opp_is_home_country_diff - t3.avg_opp_lose_pct_by_opp_is_home_country_diff AS avg_opp_lose_pct_by_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_lose_pct_by_opp_is_home_country_diff / t3.avg_opp_lose_pct_by_opp_is_home_country_diff AS avg_opp_lose_pct_by_opp_is_home_country_diff_ratio,
-    t2.avg_opp_lose_pct_by_opp_is_home_country_ratio - t3.avg_opp_lose_pct_by_opp_is_home_country_ratio AS avg_opp_lose_pct_by_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_lose_pct_by_opp_is_home_country_ratio / t3.avg_opp_lose_pct_by_opp_is_home_country_ratio AS avg_opp_lose_pct_by_opp_is_home_country_ratio_ratio,
     t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country - t3.avg_opp_wins_by_is_home_country_and_opp_is_home_country AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff,
     1.0 * t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country / t3.avg_opp_wins_by_is_home_country_and_opp_is_home_country AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio,
     t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff - t3.avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff / t3.avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_diff_ratio,
-    t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio - t3.avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio / t3.avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_wins_by_is_home_country_and_opp_is_home_country_ratio_ratio,
     t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country - t3.avg_opp_losses_by_is_home_country_and_opp_is_home_country AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff,
     1.0 * t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country / t3.avg_opp_losses_by_is_home_country_and_opp_is_home_country AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio,
     t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff - t3.avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff / t3.avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_diff_ratio,
-    t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio - t3.avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio / t3.avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_losses_by_is_home_country_and_opp_is_home_country_ratio_ratio,
     t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country - t3.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff,
     1.0 * t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country / t3.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio,
     t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff - t3.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff / t3.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_diff_ratio,
-    t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio - t3.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio / t3.avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_win_pct_by_is_home_country_and_opp_is_home_country_ratio_ratio,
     t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country - t3.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff,
     1.0 * t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country / t3.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio,
     t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff - t3.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff_diff,
     1.0 * t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff / t3.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_diff_ratio,
-    t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio - t3.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio_diff,
-    1.0 * t2.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio / t3.avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio AS avg_opp_lose_pct_by_is_home_country_and_opp_is_home_country_ratio_ratio,
     t2.avg_opp_wins_by_is_title_bout - t3.avg_opp_wins_by_is_title_bout AS avg_opp_wins_by_is_title_bout_diff,
     1.0 * t2.avg_opp_wins_by_is_title_bout / t3.avg_opp_wins_by_is_title_bout AS avg_opp_wins_by_is_title_bout_ratio,
     t2.avg_opp_wins_by_is_title_bout_diff - t3.avg_opp_wins_by_is_title_bout_diff AS avg_opp_wins_by_is_title_bout_diff_diff,
     1.0 * t2.avg_opp_wins_by_is_title_bout_diff / t3.avg_opp_wins_by_is_title_bout_diff AS avg_opp_wins_by_is_title_bout_diff_ratio,
-    t2.avg_opp_wins_by_is_title_bout_ratio - t3.avg_opp_wins_by_is_title_bout_ratio AS avg_opp_wins_by_is_title_bout_ratio_diff,
-    1.0 * t2.avg_opp_wins_by_is_title_bout_ratio / t3.avg_opp_wins_by_is_title_bout_ratio AS avg_opp_wins_by_is_title_bout_ratio_ratio,
     t2.avg_opp_losses_by_is_title_bout - t3.avg_opp_losses_by_is_title_bout AS avg_opp_losses_by_is_title_bout_diff,
     1.0 * t2.avg_opp_losses_by_is_title_bout / t3.avg_opp_losses_by_is_title_bout AS avg_opp_losses_by_is_title_bout_ratio,
     t2.avg_opp_losses_by_is_title_bout_diff - t3.avg_opp_losses_by_is_title_bout_diff AS avg_opp_losses_by_is_title_bout_diff_diff,
     1.0 * t2.avg_opp_losses_by_is_title_bout_diff / t3.avg_opp_losses_by_is_title_bout_diff AS avg_opp_losses_by_is_title_bout_diff_ratio,
-    t2.avg_opp_losses_by_is_title_bout_ratio - t3.avg_opp_losses_by_is_title_bout_ratio AS avg_opp_losses_by_is_title_bout_ratio_diff,
-    1.0 * t2.avg_opp_losses_by_is_title_bout_ratio / t3.avg_opp_losses_by_is_title_bout_ratio AS avg_opp_losses_by_is_title_bout_ratio_ratio,
     t2.avg_opp_win_pct_by_is_title_bout - t3.avg_opp_win_pct_by_is_title_bout AS avg_opp_win_pct_by_is_title_bout_diff,
     1.0 * t2.avg_opp_win_pct_by_is_title_bout / t3.avg_opp_win_pct_by_is_title_bout AS avg_opp_win_pct_by_is_title_bout_ratio,
     t2.avg_opp_win_pct_by_is_title_bout_diff - t3.avg_opp_win_pct_by_is_title_bout_diff AS avg_opp_win_pct_by_is_title_bout_diff_diff,
     1.0 * t2.avg_opp_win_pct_by_is_title_bout_diff / t3.avg_opp_win_pct_by_is_title_bout_diff AS avg_opp_win_pct_by_is_title_bout_diff_ratio,
-    t2.avg_opp_win_pct_by_is_title_bout_ratio - t3.avg_opp_win_pct_by_is_title_bout_ratio AS avg_opp_win_pct_by_is_title_bout_ratio_diff,
-    1.0 * t2.avg_opp_win_pct_by_is_title_bout_ratio / t3.avg_opp_win_pct_by_is_title_bout_ratio AS avg_opp_win_pct_by_is_title_bout_ratio_ratio,
     t2.avg_opp_lose_pct_by_is_title_bout - t3.avg_opp_lose_pct_by_is_title_bout AS avg_opp_lose_pct_by_is_title_bout_diff,
     1.0 * t2.avg_opp_lose_pct_by_is_title_bout / t3.avg_opp_lose_pct_by_is_title_bout AS avg_opp_lose_pct_by_is_title_bout_ratio,
     t2.avg_opp_lose_pct_by_is_title_bout_diff - t3.avg_opp_lose_pct_by_is_title_bout_diff AS avg_opp_lose_pct_by_is_title_bout_diff_diff,
     1.0 * t2.avg_opp_lose_pct_by_is_title_bout_diff / t3.avg_opp_lose_pct_by_is_title_bout_diff AS avg_opp_lose_pct_by_is_title_bout_diff_ratio,
-    t2.avg_opp_lose_pct_by_is_title_bout_ratio - t3.avg_opp_lose_pct_by_is_title_bout_ratio AS avg_opp_lose_pct_by_is_title_bout_ratio_diff,
-    1.0 * t2.avg_opp_lose_pct_by_is_title_bout_ratio / t3.avg_opp_lose_pct_by_is_title_bout_ratio AS avg_opp_lose_pct_by_is_title_bout_ratio_ratio,
     t2.avg_opp_wins_by_weight_class - t3.avg_opp_wins_by_weight_class AS avg_opp_wins_by_weight_class_diff,
     1.0 * t2.avg_opp_wins_by_weight_class / t3.avg_opp_wins_by_weight_class AS avg_opp_wins_by_weight_class_ratio,
     t2.avg_opp_wins_by_weight_class_diff - t3.avg_opp_wins_by_weight_class_diff AS avg_opp_wins_by_weight_class_diff_diff,
     1.0 * t2.avg_opp_wins_by_weight_class_diff / t3.avg_opp_wins_by_weight_class_diff AS avg_opp_wins_by_weight_class_diff_ratio,
-    t2.avg_opp_wins_by_weight_class_ratio - t3.avg_opp_wins_by_weight_class_ratio AS avg_opp_wins_by_weight_class_ratio_diff,
-    1.0 * t2.avg_opp_wins_by_weight_class_ratio / t3.avg_opp_wins_by_weight_class_ratio AS avg_opp_wins_by_weight_class_ratio_ratio,
     t2.avg_opp_losses_by_weight_class - t3.avg_opp_losses_by_weight_class AS avg_opp_losses_by_weight_class_diff,
     1.0 * t2.avg_opp_losses_by_weight_class / t3.avg_opp_losses_by_weight_class AS avg_opp_losses_by_weight_class_ratio,
     t2.avg_opp_losses_by_weight_class_diff - t3.avg_opp_losses_by_weight_class_diff AS avg_opp_losses_by_weight_class_diff_diff,
     1.0 * t2.avg_opp_losses_by_weight_class_diff / t3.avg_opp_losses_by_weight_class_diff AS avg_opp_losses_by_weight_class_diff_ratio,
-    t2.avg_opp_losses_by_weight_class_ratio - t3.avg_opp_losses_by_weight_class_ratio AS avg_opp_losses_by_weight_class_ratio_diff,
-    1.0 * t2.avg_opp_losses_by_weight_class_ratio / t3.avg_opp_losses_by_weight_class_ratio AS avg_opp_losses_by_weight_class_ratio_ratio,
     t2.avg_opp_win_pct_by_weight_class - t3.avg_opp_win_pct_by_weight_class AS avg_opp_win_pct_by_weight_class_diff,
     1.0 * t2.avg_opp_win_pct_by_weight_class / t3.avg_opp_win_pct_by_weight_class AS avg_opp_win_pct_by_weight_class_ratio,
     t2.avg_opp_win_pct_by_weight_class_diff - t3.avg_opp_win_pct_by_weight_class_diff AS avg_opp_win_pct_by_weight_class_diff_diff,
     1.0 * t2.avg_opp_win_pct_by_weight_class_diff / t3.avg_opp_win_pct_by_weight_class_diff AS avg_opp_win_pct_by_weight_class_diff_ratio,
-    t2.avg_opp_win_pct_by_weight_class_ratio - t3.avg_opp_win_pct_by_weight_class_ratio AS avg_opp_win_pct_by_weight_class_ratio_diff,
-    1.0 * t2.avg_opp_win_pct_by_weight_class_ratio / t3.avg_opp_win_pct_by_weight_class_ratio AS avg_opp_win_pct_by_weight_class_ratio_ratio,
     t2.avg_opp_lose_pct_by_weight_class - t3.avg_opp_lose_pct_by_weight_class AS avg_opp_lose_pct_by_weight_class_diff,
     1.0 * t2.avg_opp_lose_pct_by_weight_class / t3.avg_opp_lose_pct_by_weight_class AS avg_opp_lose_pct_by_weight_class_ratio,
     t2.avg_opp_lose_pct_by_weight_class_diff - t3.avg_opp_lose_pct_by_weight_class_diff AS avg_opp_lose_pct_by_weight_class_diff_diff,
     1.0 * t2.avg_opp_lose_pct_by_weight_class_diff / t3.avg_opp_lose_pct_by_weight_class_diff AS avg_opp_lose_pct_by_weight_class_diff_ratio,
-    t2.avg_opp_lose_pct_by_weight_class_ratio - t3.avg_opp_lose_pct_by_weight_class_ratio AS avg_opp_lose_pct_by_weight_class_ratio_diff,
-    1.0 * t2.avg_opp_lose_pct_by_weight_class_ratio / t3.avg_opp_lose_pct_by_weight_class_ratio AS avg_opp_lose_pct_by_weight_class_ratio_ratio,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0

@@ -60,10 +60,6 @@ cte2 AS (
             PARTITION BY fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_height_diff,
-        AVG(1.0 * height_inches / opp_height_inches) OVER (
-            PARTITION BY fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_height_ratio,
         AVG(opp_age_days) OVER (
             PARTITION BY fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -72,10 +68,6 @@ cte2 AS (
             PARTITION BY fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_age_diff,
-        AVG(1.0 * age_days / opp_age_days) OVER (
-            PARTITION BY fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_age_ratio,
         ROW_NUMBER() OVER (
             PARTITION BY fighter_id,
             date,
@@ -94,70 +86,30 @@ cte3 AS (
         t1.avg_age_days,
         t1.avg_opp_height_inches,
         t1.avg_height_diff,
-        t1.avg_height_ratio,
         t1.avg_opp_age_days,
         t1.avg_age_diff,
-        t1.avg_age_ratio,
         AVG(t1.avg_age_days - t2.avg_age_days) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_age_days_diff,
-        AVG(1.0 * t1.avg_age_days / t2.avg_age_days) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_age_days_ratio,
         AVG(
             t1.avg_opp_height_inches - t2.avg_opp_height_inches
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_height_inches_diff,
-        AVG(
-            1.0 * t1.avg_opp_height_inches / t2.avg_opp_height_inches
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_height_inches_ratio,
         AVG(t1.avg_height_diff - t2.avg_height_diff) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_height_diff_diff,
-        AVG(1.0 * t1.avg_height_diff / t2.avg_height_diff) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_height_diff_ratio,
-        AVG(t1.avg_height_ratio - t2.avg_height_ratio) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_height_ratio_diff,
-        AVG(1.0 * t1.avg_height_ratio / t2.avg_height_ratio) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_height_ratio_ratio,
         AVG(t1.avg_opp_age_days - t2.avg_opp_age_days) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_age_days_diff,
-        AVG(1.0 * t1.avg_opp_age_days / t2.avg_opp_age_days) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_age_days_ratio,
         AVG(t1.avg_age_diff - t2.avg_age_diff) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_age_diff_diff,
-        AVG(1.0 * t1.avg_age_diff / t2.avg_age_diff) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_age_diff_ratio,
-        AVG(t1.avg_age_ratio - t2.avg_age_ratio) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_age_ratio_diff,
-        AVG(1.0 * t1.avg_age_ratio / t2.avg_age_ratio) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_age_ratio_ratio
+        ) AS avg_avg_age_diff_diff
     FROM cte2 AS t1
         LEFT JOIN cte2 AS t2 ON t1.fighter_id = t2.opponent_id
         AND t1.opponent_id = t2.fighter_id
@@ -174,24 +126,13 @@ cte4 AS (
         t1.avg_age_days,
         t1.avg_opp_height_inches,
         t1.avg_height_diff,
-        t1.avg_height_ratio,
         t1.avg_opp_age_days,
         t1.avg_age_diff,
-        t1.avg_age_ratio,
         t1.avg_avg_age_days_diff,
-        t1.avg_avg_age_days_ratio,
         t1.avg_avg_opp_height_inches_diff,
-        t1.avg_avg_opp_height_inches_ratio,
         t1.avg_avg_height_diff_diff,
-        t1.avg_avg_height_diff_ratio,
-        t1.avg_avg_height_ratio_diff,
-        t1.avg_avg_height_ratio_ratio,
         t1.avg_avg_opp_age_days_diff,
-        t1.avg_avg_opp_age_days_ratio,
-        t1.avg_avg_age_diff_diff,
-        t1.avg_avg_age_diff_ratio,
-        t1.avg_avg_age_ratio_diff,
-        t1.avg_avg_age_ratio_ratio
+        t1.avg_avg_age_diff_diff
     FROM cte3 AS t1
         INNER JOIN fighter_mapping AS t2 ON t1.fighter_id = t2.sherdog_id
         INNER JOIN fighter_mapping AS t3 ON t1.opponent_id = t3.sherdog_id
@@ -209,24 +150,13 @@ height_dob_feats AS (
         avg_age_days,
         avg_opp_height_inches,
         avg_height_diff,
-        avg_height_ratio,
         avg_opp_age_days,
         avg_age_diff,
-        avg_age_ratio,
         avg_avg_age_days_diff,
-        avg_avg_age_days_ratio,
         avg_avg_opp_height_inches_diff,
-        avg_avg_opp_height_inches_ratio,
         avg_avg_height_diff_diff,
-        avg_avg_height_diff_ratio,
-        avg_avg_height_ratio_diff,
-        avg_avg_height_ratio_ratio,
         avg_avg_opp_age_days_diff,
-        avg_avg_opp_age_days_ratio,
-        avg_avg_age_diff_diff,
-        avg_avg_age_diff_ratio,
-        avg_avg_age_ratio_diff,
-        avg_avg_age_ratio_ratio
+        avg_avg_age_diff_diff
     FROM cte4 AS t1
 ),
 reach_imputed AS (
@@ -272,10 +202,6 @@ cte6 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_reach_diff,
-        AVG(1.0 * reach_inches / opp_reach_inches) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_reach_ratio,
         AVG(opp_leg_reach_inches) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -283,11 +209,7 @@ cte6 AS (
         AVG(leg_reach_inches - opp_leg_reach_inches) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_leg_reach_diff,
-        AVG(1.0 * leg_reach_inches / opp_leg_reach_inches) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_leg_reach_ratio
+        ) AS avg_leg_reach_diff
     FROM cte5 AS t1
 ),
 cte7 AS (
@@ -299,70 +221,28 @@ cte7 AS (
         t1.leg_reach_inches,
         t1.avg_opp_reach_inches,
         t1.avg_reach_diff,
-        t1.avg_reach_ratio,
         t1.avg_opp_leg_reach_inches,
         t1.avg_leg_reach_diff,
-        t1.avg_leg_reach_ratio,
         AVG(
             t1.avg_opp_reach_inches - t2.avg_opp_reach_inches
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_reach_inches_diff,
-        AVG(
-            1.0 * t1.avg_opp_reach_inches / t2.avg_opp_reach_inches
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_reach_inches_ratio,
         AVG(t1.avg_reach_diff - t2.avg_reach_diff) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_reach_diff_diff,
-        AVG(1.0 * t1.avg_reach_diff / t2.avg_reach_diff) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_reach_diff_ratio,
-        AVG(t1.avg_reach_ratio - t2.avg_reach_ratio) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_reach_ratio_diff,
-        AVG(1.0 * t1.avg_reach_ratio / t2.avg_reach_ratio) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_reach_ratio_ratio,
         AVG(
             t1.avg_opp_leg_reach_inches - t2.avg_opp_leg_reach_inches
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_leg_reach_inches_diff,
-        AVG(
-            1.0 * t1.avg_opp_leg_reach_inches / t2.avg_opp_leg_reach_inches
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_leg_reach_inches_ratio,
         AVG(t1.avg_leg_reach_diff - t2.avg_leg_reach_diff) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_leg_reach_diff_diff,
-        AVG(
-            1.0 * t1.avg_leg_reach_diff / t2.avg_leg_reach_diff
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_leg_reach_diff_ratio,
-        AVG(t1.avg_leg_reach_ratio - t2.avg_leg_reach_ratio) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_leg_reach_ratio_diff,
-        AVG(
-            1.0 * t1.avg_leg_reach_ratio / t2.avg_leg_reach_ratio
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_leg_reach_ratio_ratio
+        ) AS avg_avg_leg_reach_diff_diff
     FROM cte6 AS t1
         LEFT JOIN cte6 AS t2 ON t1.fighter_id = t2.opponent_id
         AND t1.opponent_id = t2.fighter_id
@@ -387,22 +267,12 @@ reach_feats AS (
         leg_reach_inches,
         avg_opp_reach_inches,
         avg_reach_diff,
-        avg_reach_ratio,
         avg_opp_leg_reach_inches,
         avg_leg_reach_diff,
-        avg_leg_reach_ratio,
         avg_avg_opp_reach_inches_diff,
-        avg_avg_opp_reach_inches_ratio,
         avg_avg_reach_diff_diff,
-        avg_avg_reach_diff_ratio,
-        avg_avg_reach_ratio_diff,
-        avg_avg_reach_ratio_ratio,
         avg_avg_opp_leg_reach_inches_diff,
-        avg_avg_opp_leg_reach_inches_ratio,
-        avg_avg_leg_reach_diff_diff,
-        avg_avg_leg_reach_diff_ratio,
-        avg_avg_leg_reach_ratio_diff,
-        avg_avg_leg_reach_ratio_ratio
+        avg_avg_leg_reach_diff_diff
     FROM cte8
 ),
 weight_imputed AS (
@@ -456,11 +326,7 @@ cte10 AS (
         AVG(t1.weight_lbs - t2.weight_lbs) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_weight_lbs_diff,
-        AVG(1.0 * t1.weight_lbs / t2.weight_lbs) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_weight_lbs_ratio
+        ) AS avg_weight_lbs_diff
     FROM cte9 AS t1
         LEFT JOIN cte9 AS t2 ON t1.fighter_id = t2.opponent_id
         AND t1.opponent_id = t2.fighter_id
@@ -485,8 +351,7 @@ cte11 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_weight_lbs_change,
-        avg_weight_lbs_diff,
-        avg_weight_lbs_ratio
+        avg_weight_lbs_diff
     FROM cte10 AS t1
 ),
 cte12 AS (
@@ -502,37 +367,20 @@ cte12 AS (
         t1.opp_weight_lbs_change,
         t1.avg_opp_weight_lbs_change,
         t1.avg_weight_lbs_diff,
-        t1.avg_weight_lbs_ratio,
         AVG(t1.avg_weight_lbs - t2.avg_weight_lbs) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_weight_lbs_diff,
-        AVG(1.0 * t1.avg_weight_lbs / t2.avg_weight_lbs) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_weight_lbs_ratio,
         AVG(
             t1.avg_weight_lbs_change - t2.avg_weight_lbs_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_weight_lbs_change_diff,
-        AVG(
-            1.0 * t1.avg_weight_lbs_change / t2.avg_weight_lbs_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_weight_lbs_change_ratio,
         AVG(t1.avg_opp_weight_lbs - t2.avg_opp_weight_lbs) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_weight_lbs_diff,
-        AVG(
-            1.0 * t1.avg_opp_weight_lbs / t2.avg_opp_weight_lbs
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_weight_lbs_ratio,
         AVG(
             t1.opp_weight_lbs_change - t2.opp_weight_lbs_change
         ) OVER (
@@ -540,45 +388,15 @@ cte12 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_weight_lbs_change_diff,
         AVG(
-            1.0 * t1.opp_weight_lbs_change / t2.opp_weight_lbs_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_weight_lbs_change_ratio,
-        AVG(
             t1.avg_opp_weight_lbs_change - t2.avg_opp_weight_lbs_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_weight_lbs_change_diff,
-        AVG(
-            1.0 * t1.avg_opp_weight_lbs_change / t2.avg_opp_weight_lbs_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_weight_lbs_change_ratio,
         AVG(t1.avg_weight_lbs_diff - t2.avg_weight_lbs_diff) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_weight_lbs_diff_diff,
-        AVG(
-            1.0 * t1.avg_weight_lbs_diff / t2.avg_weight_lbs_diff
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_weight_lbs_diff_ratio,
-        AVG(
-            t1.avg_weight_lbs_ratio - t2.avg_weight_lbs_ratio
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_weight_lbs_ratio_diff,
-        AVG(
-            1.0 * t1.avg_weight_lbs_ratio / t2.avg_weight_lbs_ratio
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_weight_lbs_ratio_ratio
+        ) AS avg_avg_weight_lbs_diff_diff
     FROM cte11 AS t1
         LEFT JOIN cte11 AS t2 ON t1.fighter_id = t2.opponent_id
         AND t1.opponent_id = t2.fighter_id
@@ -594,21 +412,12 @@ weight_feats AS (
         t1.opp_weight_lbs_change,
         t1.avg_opp_weight_lbs_change,
         t1.avg_weight_lbs_diff,
-        t1.avg_weight_lbs_ratio,
         t1.avg_avg_weight_lbs_diff,
-        t1.avg_avg_weight_lbs_ratio,
         t1.avg_avg_weight_lbs_change_diff,
-        t1.avg_avg_weight_lbs_change_ratio,
         t1.avg_avg_opp_weight_lbs_diff,
-        t1.avg_avg_opp_weight_lbs_ratio,
         t1.avg_opp_avg_weight_lbs_change_diff,
-        t1.avg_opp_avg_weight_lbs_change_ratio,
         t1.avg_avg_opp_weight_lbs_change_diff,
-        t1.avg_avg_opp_weight_lbs_change_ratio,
-        t1.avg_avg_weight_lbs_diff_diff,
-        t1.avg_avg_weight_lbs_diff_ratio,
-        t1.avg_avg_weight_lbs_ratio_diff,
-        t1.avg_avg_weight_lbs_ratio_ratio
+        t1.avg_avg_weight_lbs_diff_diff
     FROM cte12 AS t1
         INNER JOIN fighter_mapping AS t2 ON t1.fighter_id = t2.tapology_id
         INNER JOIN bout_mapping AS t3 ON t1.bout_id = t3.tapology_id
@@ -623,44 +432,23 @@ feats_all AS (
         t2.avg_age_days,
         t2.avg_opp_height_inches,
         t2.avg_height_diff,
-        t2.avg_height_ratio,
         t2.avg_opp_age_days,
         t2.avg_age_diff,
-        t2.avg_age_ratio,
         t2.avg_avg_age_days_diff,
-        t2.avg_avg_age_days_ratio,
         t2.avg_avg_opp_height_inches_diff,
-        t2.avg_avg_opp_height_inches_ratio,
         t2.avg_avg_height_diff_diff,
-        t2.avg_avg_height_diff_ratio,
-        t2.avg_avg_height_ratio_diff,
-        t2.avg_avg_height_ratio_ratio,
         t2.avg_avg_opp_age_days_diff,
-        t2.avg_avg_opp_age_days_ratio,
         t2.avg_avg_age_diff_diff,
-        t2.avg_avg_age_diff_ratio,
-        t2.avg_avg_age_ratio_diff,
-        t2.avg_avg_age_ratio_ratio,
         t1.reach_inches,
         t1.leg_reach_inches,
         t1.avg_opp_reach_inches,
         t1.avg_reach_diff,
-        t1.avg_reach_ratio,
         t1.avg_opp_leg_reach_inches,
         t1.avg_leg_reach_diff,
-        t1.avg_leg_reach_ratio,
         t1.avg_avg_opp_reach_inches_diff,
-        t1.avg_avg_opp_reach_inches_ratio,
         t1.avg_avg_reach_diff_diff,
-        t1.avg_avg_reach_diff_ratio,
-        t1.avg_avg_reach_ratio_diff,
-        t1.avg_avg_reach_ratio_ratio,
         t1.avg_avg_opp_leg_reach_inches_diff,
-        t1.avg_avg_opp_leg_reach_inches_ratio,
         t1.avg_avg_leg_reach_diff_diff,
-        t1.avg_avg_leg_reach_diff_ratio,
-        t1.avg_avg_leg_reach_ratio_diff,
-        t1.avg_avg_leg_reach_ratio_ratio,
         t3.weight_lbs,
         t3.avg_weight_lbs,
         t3.avg_weight_lbs_change,
@@ -668,21 +456,12 @@ feats_all AS (
         t3.opp_weight_lbs_change,
         t3.avg_opp_weight_lbs_change,
         t3.avg_weight_lbs_diff,
-        t3.avg_weight_lbs_ratio,
         t3.avg_avg_weight_lbs_diff,
-        t3.avg_avg_weight_lbs_ratio,
         t3.avg_avg_weight_lbs_change_diff,
-        t3.avg_avg_weight_lbs_change_ratio,
         t3.avg_avg_opp_weight_lbs_diff,
-        t3.avg_avg_opp_weight_lbs_ratio,
         t3.avg_opp_avg_weight_lbs_change_diff,
-        t3.avg_opp_avg_weight_lbs_change_ratio,
         t3.avg_avg_opp_weight_lbs_change_diff,
-        t3.avg_avg_opp_weight_lbs_change_ratio,
-        t3.avg_avg_weight_lbs_diff_diff,
-        t3.avg_avg_weight_lbs_diff_ratio,
-        t3.avg_avg_weight_lbs_ratio_diff,
-        t3.avg_avg_weight_lbs_ratio_ratio
+        t3.avg_avg_weight_lbs_diff_diff
     FROM reach_feats AS t1
         INNER JOIN height_dob_feats AS t2 ON t1.fighter_id = t2.fighter_id
         AND t1.ufc_order = t2.ufc_order
@@ -701,42 +480,20 @@ SELECT id,
     1.0 * t2.avg_opp_height_inches / t3.avg_opp_height_inches AS opp_height_ratio,
     t2.avg_height_diff - t3.avg_height_diff AS avg_height_diff_diff,
     1.0 * t2.avg_height_diff / t3.avg_height_diff AS avg_height_diff_ratio,
-    t2.avg_height_ratio - t3.avg_height_ratio AS avg_height_ratio_diff,
-    1.0 * t2.avg_height_ratio / t3.avg_height_ratio AS avg_height_ratio_ratio,
     t2.avg_opp_age_days - t3.avg_opp_age_days AS avg_opp_age_days_diff,
     1.0 * t2.avg_opp_age_days / t3.avg_opp_age_days AS avg_opp_age_days_ratio,
     t2.avg_age_diff - t3.avg_age_diff AS avg_age_diff_diff,
     1.0 * t2.avg_age_diff / t3.avg_age_diff AS avg_age_diff_ratio,
-    t2.avg_age_ratio - t3.avg_age_ratio AS avg_age_ratio_diff,
-    1.0 * t2.avg_age_ratio / t3.avg_age_ratio AS avg_age_ratio_ratio,
     t2.avg_avg_age_days_diff - t3.avg_avg_age_days_diff AS avg_avg_age_days_diff_diff,
     1.0 * t2.avg_avg_age_days_diff / t3.avg_avg_age_days_diff AS avg_avg_age_days_diff_ratio,
-    t2.avg_avg_age_days_ratio - t3.avg_avg_age_days_ratio AS avg_avg_age_days_ratio_diff,
-    1.0 * t2.avg_avg_age_days_ratio / t3.avg_avg_age_days_ratio AS avg_avg_age_days_ratio_ratio,
     t2.avg_avg_opp_height_inches_diff - t3.avg_avg_opp_height_inches_diff AS avg_avg_opp_height_inches_diff_diff,
     1.0 * t2.avg_avg_opp_height_inches_diff / t3.avg_avg_opp_height_inches_diff AS avg_avg_opp_height_inches_diff_ratio,
-    t2.avg_avg_opp_height_inches_ratio - t3.avg_avg_opp_height_inches_ratio AS avg_avg_opp_height_inches_ratio_diff,
-    1.0 * t2.avg_avg_opp_height_inches_ratio / t3.avg_avg_opp_height_inches_ratio AS avg_avg_opp_height_inches_ratio_ratio,
     t2.avg_avg_height_diff_diff - t3.avg_avg_height_diff_diff AS avg_avg_height_diff_diff_diff,
     1.0 * t2.avg_avg_height_diff_diff / t3.avg_avg_height_diff_diff AS avg_avg_height_diff_diff_ratio,
-    t2.avg_avg_height_diff_ratio - t3.avg_avg_height_diff_ratio AS avg_avg_height_diff_ratio_diff,
-    1.0 * t2.avg_avg_height_diff_ratio / t3.avg_avg_height_diff_ratio AS avg_avg_height_diff_ratio_ratio,
-    t2.avg_avg_height_ratio_diff - t3.avg_avg_height_ratio_diff AS avg_avg_height_ratio_diff_diff,
-    1.0 * t2.avg_avg_height_ratio_diff / t3.avg_avg_height_ratio_diff AS avg_avg_height_ratio_diff_ratio,
-    t2.avg_avg_height_ratio_ratio - t3.avg_avg_height_ratio_ratio AS avg_avg_height_ratio_ratio_diff,
-    1.0 * t2.avg_avg_height_ratio_ratio / t3.avg_avg_height_ratio_ratio AS avg_avg_height_ratio_ratio_ratio,
     t2.avg_avg_opp_age_days_diff - t3.avg_avg_opp_age_days_diff AS avg_avg_opp_age_days_diff_diff,
     1.0 * t2.avg_avg_opp_age_days_diff / t3.avg_avg_opp_age_days_diff AS avg_avg_opp_age_days_diff_ratio,
-    t2.avg_avg_opp_age_days_ratio - t3.avg_avg_opp_age_days_ratio AS avg_avg_opp_age_days_ratio_diff,
-    1.0 * t2.avg_avg_opp_age_days_ratio / t3.avg_avg_opp_age_days_ratio AS avg_avg_opp_age_days_ratio_ratio,
     t2.avg_avg_age_diff_diff - t3.avg_avg_age_diff_diff AS avg_avg_age_diff_diff_diff,
     1.0 * t2.avg_avg_age_diff_diff / t3.avg_avg_age_diff_diff AS avg_avg_age_diff_diff_ratio,
-    t2.avg_avg_age_diff_ratio - t3.avg_avg_age_diff_ratio AS avg_avg_age_diff_ratio_diff,
-    1.0 * t2.avg_avg_age_diff_ratio / t3.avg_avg_age_diff_ratio AS avg_avg_age_diff_ratio_ratio,
-    t2.avg_avg_age_ratio_diff - t3.avg_avg_age_ratio_diff AS avg_avg_age_ratio_diff_diff,
-    1.0 * t2.avg_avg_age_ratio_diff / t3.avg_avg_age_ratio_diff AS avg_avg_age_ratio_diff_ratio,
-    t2.avg_avg_age_ratio_ratio - t3.avg_avg_age_ratio_ratio AS avg_avg_age_ratio_ratio_diff,
-    1.0 * t2.avg_avg_age_ratio_ratio / t3.avg_avg_age_ratio_ratio AS avg_avg_age_ratio_ratio_ratio,
     t2.reach_inches - t3.reach_inches AS reach_diff,
     1.0 * t2.reach_inches / t3.reach_inches AS reach_ratio,
     t2.leg_reach_inches - t3.leg_reach_inches AS leg_reach_diff,
@@ -745,38 +502,18 @@ SELECT id,
     1.0 * t2.avg_opp_reach_inches / t3.avg_opp_reach_inches AS avg_opp_reach_inches_ratio,
     t2.avg_reach_diff - t3.avg_reach_diff AS avg_reach_diff_diff,
     1.0 * t2.avg_reach_diff / t3.avg_reach_diff AS avg_reach_diff_ratio,
-    t2.avg_reach_ratio - t3.avg_reach_ratio AS avg_reach_ratio_diff,
-    1.0 * t2.avg_reach_ratio / t3.avg_reach_ratio AS avg_reach_ratio_ratio,
     t2.avg_opp_leg_reach_inches - t3.avg_opp_leg_reach_inches AS avg_opp_leg_reach_inches_diff,
     1.0 * t2.avg_opp_leg_reach_inches / t3.avg_opp_leg_reach_inches AS avg_opp_leg_reach_inches_ratio,
     t2.avg_leg_reach_diff - t3.avg_leg_reach_diff AS avg_leg_reach_diff_diff,
     1.0 * t2.avg_leg_reach_diff / t3.avg_leg_reach_diff AS avg_leg_reach_diff_ratio,
-    t2.avg_leg_reach_ratio - t3.avg_leg_reach_ratio AS avg_leg_reach_ratio_diff,
-    1.0 * t2.avg_leg_reach_ratio / t3.avg_leg_reach_ratio AS avg_leg_reach_ratio_ratio,
     t2.avg_avg_opp_reach_inches_diff - t3.avg_avg_opp_reach_inches_diff AS avg_avg_opp_reach_inches_diff_diff,
     1.0 * t2.avg_avg_opp_reach_inches_diff / t3.avg_avg_opp_reach_inches_diff AS avg_avg_opp_reach_inches_diff_ratio,
-    t2.avg_avg_opp_reach_inches_ratio - t3.avg_avg_opp_reach_inches_ratio AS avg_avg_opp_reach_inches_ratio_diff,
-    1.0 * t2.avg_avg_opp_reach_inches_ratio / t3.avg_avg_opp_reach_inches_ratio AS avg_avg_opp_reach_inches_ratio_ratio,
     t2.avg_avg_reach_diff_diff - t3.avg_avg_reach_diff_diff AS avg_avg_reach_diff_diff_diff,
     1.0 * t2.avg_avg_reach_diff_diff / t3.avg_avg_reach_diff_diff AS avg_avg_reach_diff_diff_ratio,
-    t2.avg_avg_reach_diff_ratio - t3.avg_avg_reach_diff_ratio AS avg_avg_reach_diff_ratio_diff,
-    1.0 * t2.avg_avg_reach_diff_ratio / t3.avg_avg_reach_diff_ratio AS avg_avg_reach_diff_ratio_ratio,
-    t2.avg_avg_reach_ratio_diff - t3.avg_avg_reach_ratio_diff AS avg_avg_reach_ratio_diff_diff,
-    1.0 * t2.avg_avg_reach_ratio_diff / t3.avg_avg_reach_ratio_diff AS avg_avg_reach_ratio_diff_ratio,
-    t2.avg_avg_reach_ratio_ratio - t3.avg_avg_reach_ratio_ratio AS avg_avg_reach_ratio_ratio_diff,
-    1.0 * t2.avg_avg_reach_ratio_ratio / t3.avg_avg_reach_ratio_ratio AS avg_avg_reach_ratio_ratio_ratio,
     t2.avg_avg_opp_leg_reach_inches_diff - t3.avg_avg_opp_leg_reach_inches_diff AS avg_avg_opp_leg_reach_inches_diff_diff,
     1.0 * t2.avg_avg_opp_leg_reach_inches_diff / t3.avg_avg_opp_leg_reach_inches_diff AS avg_avg_opp_leg_reach_inches_diff_ratio,
-    t2.avg_avg_opp_leg_reach_inches_ratio - t3.avg_avg_opp_leg_reach_inches_ratio AS avg_avg_opp_leg_reach_inches_ratio_diff,
-    1.0 * t2.avg_avg_opp_leg_reach_inches_ratio / t3.avg_avg_opp_leg_reach_inches_ratio AS avg_avg_opp_leg_reach_inches_ratio_ratio,
     t2.avg_avg_leg_reach_diff_diff - t3.avg_avg_leg_reach_diff_diff AS avg_avg_leg_reach_diff_diff_diff,
     1.0 * t2.avg_avg_leg_reach_diff_diff / t3.avg_avg_leg_reach_diff_diff AS avg_avg_leg_reach_diff_diff_ratio,
-    t2.avg_avg_leg_reach_diff_ratio - t3.avg_avg_leg_reach_diff_ratio AS avg_avg_leg_reach_diff_ratio_diff,
-    1.0 * t2.avg_avg_leg_reach_diff_ratio / t3.avg_avg_leg_reach_diff_ratio AS avg_avg_leg_reach_diff_ratio_ratio,
-    t2.avg_avg_leg_reach_ratio_diff - t3.avg_avg_leg_reach_ratio_diff AS avg_avg_leg_reach_ratio_diff_diff,
-    1.0 * t2.avg_avg_leg_reach_ratio_diff / t3.avg_avg_leg_reach_ratio_diff AS avg_avg_leg_reach_ratio_diff_ratio,
-    t2.avg_avg_leg_reach_ratio_ratio - t3.avg_avg_leg_reach_ratio_ratio AS avg_avg_leg_reach_ratio_ratio_diff,
-    1.0 * t2.avg_avg_leg_reach_ratio_ratio / t3.avg_avg_leg_reach_ratio_ratio AS avg_avg_leg_reach_ratio_ratio_ratio,
     t2.weight_lbs - t3.weight_lbs AS weight_diff,
     1.0 * t2.weight_lbs / t3.weight_lbs AS weight_ratio,
     t2.avg_weight_lbs - t3.avg_weight_lbs AS avg_weight_lbs_diff,
@@ -791,36 +528,18 @@ SELECT id,
     1.0 * t2.avg_opp_weight_lbs_change / t3.avg_opp_weight_lbs_change AS avg_opp_weight_lbs_change_ratio,
     t2.avg_weight_lbs_diff - t3.avg_weight_lbs_diff AS avg_weight_lbs_diff_diff,
     1.0 * t2.avg_weight_lbs_diff / t3.avg_weight_lbs_diff AS avg_weight_lbs_diff_ratio,
-    t2.avg_weight_lbs_ratio - t3.avg_weight_lbs_ratio AS avg_weight_lbs_ratio_diff,
-    1.0 * t2.avg_weight_lbs_ratio / t3.avg_weight_lbs_ratio AS avg_weight_lbs_ratio_ratio,
     t2.avg_avg_weight_lbs_diff - t3.avg_avg_weight_lbs_diff AS avg_avg_weight_lbs_diff_diff,
     1.0 * t2.avg_avg_weight_lbs_diff / t3.avg_avg_weight_lbs_diff AS avg_avg_weight_lbs_diff_ratio,
-    t2.avg_avg_weight_lbs_ratio - t3.avg_avg_weight_lbs_ratio AS avg_avg_weight_lbs_ratio_diff,
-    1.0 * t2.avg_avg_weight_lbs_ratio / t3.avg_avg_weight_lbs_ratio AS avg_avg_weight_lbs_ratio_ratio,
     t2.avg_avg_weight_lbs_change_diff - t3.avg_avg_weight_lbs_change_diff AS avg_avg_weight_lbs_change_diff_diff,
     1.0 * t2.avg_avg_weight_lbs_change_diff / t3.avg_avg_weight_lbs_change_diff AS avg_avg_weight_lbs_change_diff_ratio,
-    t2.avg_avg_weight_lbs_change_ratio - t3.avg_avg_weight_lbs_change_ratio AS avg_avg_weight_lbs_change_ratio_diff,
-    1.0 * t2.avg_avg_weight_lbs_change_ratio / t3.avg_avg_weight_lbs_change_ratio AS avg_avg_weight_lbs_change_ratio_ratio,
     t2.avg_avg_opp_weight_lbs_diff - t3.avg_avg_opp_weight_lbs_diff AS avg_avg_opp_weight_lbs_diff_diff,
     1.0 * t2.avg_avg_opp_weight_lbs_diff / t3.avg_avg_opp_weight_lbs_diff AS avg_avg_opp_weight_lbs_diff_ratio,
-    t2.avg_avg_opp_weight_lbs_ratio - t3.avg_avg_opp_weight_lbs_ratio AS avg_avg_opp_weight_lbs_ratio_diff,
-    1.0 * t2.avg_avg_opp_weight_lbs_ratio / t3.avg_avg_opp_weight_lbs_ratio AS avg_avg_opp_weight_lbs_ratio_ratio,
     t2.avg_opp_avg_weight_lbs_change_diff - t3.avg_opp_avg_weight_lbs_change_diff AS avg_opp_avg_weight_lbs_change_diff_diff,
     1.0 * t2.avg_opp_avg_weight_lbs_change_diff / t3.avg_opp_avg_weight_lbs_change_diff AS avg_opp_avg_weight_lbs_change_diff_ratio,
-    t2.avg_opp_avg_weight_lbs_change_ratio - t3.avg_opp_avg_weight_lbs_change_ratio AS avg_opp_avg_weight_lbs_change_ratio_diff,
-    1.0 * t2.avg_opp_avg_weight_lbs_change_ratio / t3.avg_opp_avg_weight_lbs_change_ratio AS avg_opp_avg_weight_lbs_change_ratio_ratio,
     t2.avg_avg_opp_weight_lbs_change_diff - t3.avg_avg_opp_weight_lbs_change_diff AS avg_avg_opp_weight_lbs_change_diff_diff,
     1.0 * t2.avg_avg_opp_weight_lbs_change_diff / t3.avg_avg_opp_weight_lbs_change_diff AS avg_avg_opp_weight_lbs_change_diff_ratio,
-    t2.avg_avg_opp_weight_lbs_change_ratio - t3.avg_avg_opp_weight_lbs_change_ratio AS avg_avg_opp_weight_lbs_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_weight_lbs_change_ratio / t3.avg_avg_opp_weight_lbs_change_ratio AS avg_avg_opp_weight_lbs_change_ratio_ratio,
     t2.avg_avg_weight_lbs_diff_diff - t3.avg_avg_weight_lbs_diff_diff AS avg_avg_weight_lbs_diff_diff_diff,
     1.0 * t2.avg_avg_weight_lbs_diff_diff / t3.avg_avg_weight_lbs_diff_diff AS avg_avg_weight_lbs_diff_diff_ratio,
-    t2.avg_avg_weight_lbs_diff_ratio - t3.avg_avg_weight_lbs_diff_ratio AS avg_avg_weight_lbs_diff_ratio_diff,
-    1.0 * t2.avg_avg_weight_lbs_diff_ratio / t3.avg_avg_weight_lbs_diff_ratio AS avg_avg_weight_lbs_diff_ratio_ratio,
-    t2.avg_avg_weight_lbs_ratio_diff - t3.avg_avg_weight_lbs_ratio_diff AS avg_avg_weight_lbs_ratio_diff_diff,
-    1.0 * t2.avg_avg_weight_lbs_ratio_diff / t3.avg_avg_weight_lbs_ratio_diff AS avg_avg_weight_lbs_ratio_diff_ratio,
-    t2.avg_avg_weight_lbs_ratio_ratio - t3.avg_avg_weight_lbs_ratio_ratio AS avg_avg_weight_lbs_ratio_ratio_diff,
-    1.0 * t2.avg_avg_weight_lbs_ratio_ratio / t3.avg_avg_weight_lbs_ratio_ratio AS avg_avg_weight_lbs_ratio_ratio_ratio,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0

@@ -349,52 +349,26 @@ cte9 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_rank_diff,
-        AVG(1.0 * t1.rank / t2.rank) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_rank_ratio,
         AVG(t1.avg_rank - t2.avg_rank) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_rank_diff,
-        AVG(1.0 * t1.avg_rank / t2.avg_rank) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_rank_ratio,
         AVG(t1.rank_change - t2.rank_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_rank_change_diff,
-        AVG(1.0 * t1.rank_change / t2.rank_change) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_rank_change_ratio,
         AVG(t1.avg_rank_change - t2.avg_rank_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_rank_change_diff,
-        AVG(1.0 * t1.avg_rank_change / t2.avg_rank_change) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_rank_change_ratio,
         AVG(t1.rank_percentile - t2.rank_percentile) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_rank_percentile_diff,
-        AVG(1.0 * t1.rank_percentile / t2.rank_percentile) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_rank_percentile_ratio,
         AVG(t1.avg_rank_percentile - t2.avg_rank_percentile) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_rank_percentile_diff,
-        AVG(
-            1.0 * t1.avg_rank_percentile / t2.avg_rank_percentile
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_rank_percentile_ratio,
         AVG(
             t1.rank_percentile_change - t2.rank_percentile_change
         ) OVER (
@@ -402,41 +376,19 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_rank_percentile_change_diff,
         AVG(
-            1.0 * t1.rank_percentile_change / t2.rank_percentile_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_rank_percentile_change_ratio,
-        AVG(
             t1.avg_rank_percentile_change - t2.avg_rank_percentile_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_rank_percentile_change_diff,
-        AVG(
-            1.0 * t1.avg_rank_percentile_change / t2.avg_rank_percentile_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_rank_percentile_change_ratio,
         AVG(t1.ranking_points - t2.ranking_points) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_ranking_points_diff,
-        AVG(1.0 * t1.ranking_points / t2.ranking_points) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_ranking_points_ratio,
         AVG(t1.avg_ranking_points - t2.avg_ranking_points) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_ranking_points_diff,
-        AVG(
-            1.0 * t1.avg_ranking_points / t2.avg_ranking_points
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_ranking_points_ratio,
         AVG(
             t1.ranking_points_change - t2.ranking_points_change
         ) OVER (
@@ -444,23 +396,11 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_ranking_points_change_diff,
         AVG(
-            1.0 * t1.ranking_points_change / t2.ranking_points_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_ranking_points_change_ratio,
-        AVG(
             t1.avg_ranking_points_change - t2.avg_ranking_points_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_ranking_points_change_diff,
-        AVG(
-            1.0 * t1.avg_ranking_points_change / t2.avg_ranking_points_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_ranking_points_change_ratio,
         AVG(
             t1.ranking_points_scaled - t2.ranking_points_scaled
         ) OVER (
@@ -468,23 +408,11 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_ranking_points_scaled_diff,
         AVG(
-            1.0 * t1.ranking_points_scaled / t2.ranking_points_scaled
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_ranking_points_scaled_ratio,
-        AVG(
             t1.avg_ranking_points_scaled - t2.avg_ranking_points_scaled
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_ranking_points_scaled_diff,
-        AVG(
-            1.0 * t1.avg_ranking_points_scaled / t2.avg_ranking_points_scaled
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_ranking_points_scaled_ratio,
         AVG(
             t1.ranking_points_scaled_change - t2.ranking_points_scaled_change
         ) OVER (
@@ -492,49 +420,23 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_ranking_points_scaled_change_diff,
         AVG(
-            1.0 * t1.ranking_points_scaled_change / t2.ranking_points_scaled_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_ranking_points_scaled_change_ratio,
-        AVG(
             t1.avg_ranking_points_scaled_change - t2.avg_ranking_points_scaled_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_ranking_points_scaled_change_diff,
-        AVG(
-            1.0 * t1.avg_ranking_points_scaled_change / t2.avg_ranking_points_scaled_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_ranking_points_scaled_change_ratio,
         AVG(t1.avg_opp_rank - t2.avg_opp_rank) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_rank_diff,
-        AVG(1.0 * t1.avg_opp_rank / t2.avg_opp_rank) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_rank_ratio,
         AVG(t1.avg_opp_avg_rank - t2.avg_opp_avg_rank) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_avg_rank_diff,
-        AVG(1.0 * t1.avg_opp_avg_rank / t2.avg_opp_avg_rank) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_rank_ratio,
         AVG(t1.avg_opp_rank_change - t2.avg_opp_rank_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_rank_change_diff,
-        AVG(
-            1.0 * t1.avg_opp_rank_change / t2.avg_opp_rank_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_rank_change_ratio,
         AVG(
             t1.avg_opp_avg_rank_change - t2.avg_opp_avg_rank_change
         ) OVER (
@@ -542,23 +444,11 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_avg_rank_change_diff,
         AVG(
-            1.0 * t1.avg_opp_avg_rank_change / t2.avg_opp_avg_rank_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_rank_change_ratio,
-        AVG(
             t1.avg_opp_rank_percentile - t2.avg_opp_rank_percentile
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_rank_percentile_diff,
-        AVG(
-            1.0 * t1.avg_opp_rank_percentile / t2.avg_opp_rank_percentile
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_rank_percentile_ratio,
         AVG(
             t1.avg_opp_avg_rank_percentile - t2.avg_opp_avg_rank_percentile
         ) OVER (
@@ -566,23 +456,11 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_avg_rank_percentile_diff,
         AVG(
-            1.0 * t1.avg_opp_avg_rank_percentile / t2.avg_opp_avg_rank_percentile
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_rank_percentile_ratio,
-        AVG(
             t1.avg_opp_rank_percentile_change - t2.avg_opp_rank_percentile_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_rank_percentile_change_diff,
-        AVG(
-            1.0 * t1.avg_opp_rank_percentile_change / t2.avg_opp_rank_percentile_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_rank_percentile_change_ratio,
         AVG(
             t1.avg_opp_avg_rank_percentile_change - t2.avg_opp_avg_rank_percentile_change
         ) OVER (
@@ -590,23 +468,11 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_avg_rank_percentile_change_diff,
         AVG(
-            1.0 * t1.avg_opp_avg_rank_percentile_change / t2.avg_opp_avg_rank_percentile_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_rank_percentile_change_ratio,
-        AVG(
             t1.avg_opp_ranking_points - t2.avg_opp_ranking_points
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_ranking_points_diff,
-        AVG(
-            1.0 * t1.avg_opp_ranking_points / t2.avg_opp_ranking_points
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_ranking_points_ratio,
         AVG(
             t1.avg_opp_avg_ranking_points - t2.avg_opp_avg_ranking_points
         ) OVER (
@@ -614,23 +480,11 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_avg_ranking_points_diff,
         AVG(
-            1.0 * t1.avg_opp_avg_ranking_points / t2.avg_opp_avg_ranking_points
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_ranking_points_ratio,
-        AVG(
             t1.avg_opp_ranking_points_change - t2.avg_opp_ranking_points_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_ranking_points_change_diff,
-        AVG(
-            1.0 * t1.avg_opp_ranking_points_change / t2.avg_opp_ranking_points_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_ranking_points_change_ratio,
         AVG(
             t1.avg_opp_avg_ranking_points_change - t2.avg_opp_avg_ranking_points_change
         ) OVER (
@@ -638,23 +492,11 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_avg_ranking_points_change_diff,
         AVG(
-            1.0 * t1.avg_opp_avg_ranking_points_change / t2.avg_opp_avg_ranking_points_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_ranking_points_change_ratio,
-        AVG(
             t1.avg_opp_ranking_points_scaled - t2.avg_opp_ranking_points_scaled
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_ranking_points_scaled_diff,
-        AVG(
-            1.0 * t1.avg_opp_ranking_points_scaled / t2.avg_opp_ranking_points_scaled
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_ranking_points_scaled_ratio,
         AVG(
             t1.avg_opp_avg_ranking_points_scaled - t2.avg_opp_avg_ranking_points_scaled
         ) OVER (
@@ -662,35 +504,17 @@ cte9 AS (
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_avg_ranking_points_scaled_diff,
         AVG(
-            1.0 * t1.avg_opp_avg_ranking_points_scaled / t2.avg_opp_avg_ranking_points_scaled
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_ranking_points_scaled_ratio,
-        AVG(
             t1.avg_opp_ranking_points_scaled_change - t2.avg_opp_ranking_points_scaled_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_avg_opp_ranking_points_scaled_change_diff,
         AVG(
-            1.0 * t1.avg_opp_ranking_points_scaled_change / t2.avg_opp_ranking_points_scaled_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_ranking_points_scaled_change_ratio,
-        AVG(
             t1.avg_opp_avg_ranking_points_scaled_change - t2.avg_opp_avg_ranking_points_scaled_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_ranking_points_scaled_change_diff,
-        AVG(
-            1.0 * t1.avg_opp_avg_ranking_points_scaled_change / t2.avg_opp_avg_ranking_points_scaled_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_avg_opp_avg_ranking_points_scaled_change_ratio
+        ) AS avg_avg_opp_avg_ranking_points_scaled_change_diff
     FROM cte8 AS t1
         LEFT JOIN cte8 AS t2 ON t1.opponent_id = t2.fighter_id
         AND t1.event_id = t2.event_id
@@ -735,69 +559,37 @@ cte10 AS (
         t1.avg_opp_ranking_points_scaled_change,
         t1.avg_opp_avg_ranking_points_scaled_change,
         t1.avg_rank_diff,
-        t1.avg_rank_ratio,
         t1.avg_avg_rank_diff,
-        t1.avg_avg_rank_ratio,
         t1.avg_rank_change_diff,
-        t1.avg_rank_change_ratio,
         t1.avg_avg_rank_change_diff,
-        t1.avg_avg_rank_change_ratio,
         t1.avg_rank_percentile_diff,
-        t1.avg_rank_percentile_ratio,
         t1.avg_avg_rank_percentile_diff,
-        t1.avg_avg_rank_percentile_ratio,
         t1.avg_rank_percentile_change_diff,
-        t1.avg_rank_percentile_change_ratio,
         t1.avg_avg_rank_percentile_change_diff,
-        t1.avg_avg_rank_percentile_change_ratio,
         t1.avg_ranking_points_diff,
-        t1.avg_ranking_points_ratio,
         t1.avg_avg_ranking_points_diff,
-        t1.avg_avg_ranking_points_ratio,
         t1.avg_ranking_points_change_diff,
-        t1.avg_ranking_points_change_ratio,
         t1.avg_avg_ranking_points_change_diff,
-        t1.avg_avg_ranking_points_change_ratio,
         t1.avg_ranking_points_scaled_diff,
-        t1.avg_ranking_points_scaled_ratio,
         t1.avg_avg_ranking_points_scaled_diff,
-        t1.avg_avg_ranking_points_scaled_ratio,
         t1.avg_ranking_points_scaled_change_diff,
-        t1.avg_ranking_points_scaled_change_ratio,
         t1.avg_avg_ranking_points_scaled_change_diff,
-        t1.avg_avg_ranking_points_scaled_change_ratio,
         t1.avg_avg_opp_rank_diff,
-        t1.avg_avg_opp_rank_ratio,
         t1.avg_avg_opp_avg_rank_diff,
-        t1.avg_avg_opp_avg_rank_ratio,
         t1.avg_avg_opp_rank_change_diff,
-        t1.avg_avg_opp_rank_change_ratio,
         t1.avg_avg_opp_avg_rank_change_diff,
-        t1.avg_avg_opp_avg_rank_change_ratio,
         t1.avg_avg_opp_rank_percentile_diff,
-        t1.avg_avg_opp_rank_percentile_ratio,
         t1.avg_avg_opp_avg_rank_percentile_diff,
-        t1.avg_avg_opp_avg_rank_percentile_ratio,
         t1.avg_avg_opp_rank_percentile_change_diff,
-        t1.avg_avg_opp_rank_percentile_change_ratio,
         t1.avg_avg_opp_avg_rank_percentile_change_diff,
-        t1.avg_avg_opp_avg_rank_percentile_change_ratio,
         t1.avg_avg_opp_ranking_points_diff,
-        t1.avg_avg_opp_ranking_points_ratio,
         t1.avg_avg_opp_avg_ranking_points_diff,
-        t1.avg_avg_opp_avg_ranking_points_ratio,
         t1.avg_avg_opp_ranking_points_change_diff,
-        t1.avg_avg_opp_ranking_points_change_ratio,
         t1.avg_avg_opp_avg_ranking_points_change_diff,
-        t1.avg_avg_opp_avg_ranking_points_change_ratio,
         t1.avg_avg_opp_ranking_points_scaled_diff,
-        t1.avg_avg_opp_ranking_points_scaled_ratio,
         t1.avg_avg_opp_avg_ranking_points_scaled_diff,
-        t1.avg_avg_opp_avg_ranking_points_scaled_ratio,
         t1.avg_avg_opp_ranking_points_scaled_change_diff,
-        t1.avg_avg_opp_ranking_points_scaled_change_ratio,
-        t1.avg_avg_opp_avg_ranking_points_scaled_change_diff,
-        t1.avg_avg_opp_avg_ranking_points_scaled_change_ratio
+        t1.avg_avg_opp_avg_ranking_points_scaled_change_diff
     FROM cte9 AS t1
         INNER JOIN fighter_mapping AS t2 ON t1.fighter_id = t2.fightmatrix_id
         INNER JOIN fighter_mapping AS t3 ON t1.opponent_id = t3.fightmatrix_id
@@ -843,69 +635,37 @@ cte11 AS (
         t1.avg_opp_ranking_points_scaled_change,
         t1.avg_opp_avg_ranking_points_scaled_change,
         t1.avg_rank_diff,
-        t1.avg_rank_ratio,
         t1.avg_avg_rank_diff,
-        t1.avg_avg_rank_ratio,
         t1.avg_rank_change_diff,
-        t1.avg_rank_change_ratio,
         t1.avg_avg_rank_change_diff,
-        t1.avg_avg_rank_change_ratio,
         t1.avg_rank_percentile_diff,
-        t1.avg_rank_percentile_ratio,
         t1.avg_avg_rank_percentile_diff,
-        t1.avg_avg_rank_percentile_ratio,
         t1.avg_rank_percentile_change_diff,
-        t1.avg_rank_percentile_change_ratio,
         t1.avg_avg_rank_percentile_change_diff,
-        t1.avg_avg_rank_percentile_change_ratio,
         t1.avg_ranking_points_diff,
-        t1.avg_ranking_points_ratio,
         t1.avg_avg_ranking_points_diff,
-        t1.avg_avg_ranking_points_ratio,
         t1.avg_ranking_points_change_diff,
-        t1.avg_ranking_points_change_ratio,
         t1.avg_avg_ranking_points_change_diff,
-        t1.avg_avg_ranking_points_change_ratio,
         t1.avg_ranking_points_scaled_diff,
-        t1.avg_ranking_points_scaled_ratio,
         t1.avg_avg_ranking_points_scaled_diff,
-        t1.avg_avg_ranking_points_scaled_ratio,
         t1.avg_ranking_points_scaled_change_diff,
-        t1.avg_ranking_points_scaled_change_ratio,
         t1.avg_avg_ranking_points_scaled_change_diff,
-        t1.avg_avg_ranking_points_scaled_change_ratio,
         t1.avg_avg_opp_rank_diff,
-        t1.avg_avg_opp_rank_ratio,
         t1.avg_avg_opp_avg_rank_diff,
-        t1.avg_avg_opp_avg_rank_ratio,
         t1.avg_avg_opp_rank_change_diff,
-        t1.avg_avg_opp_rank_change_ratio,
         t1.avg_avg_opp_avg_rank_change_diff,
-        t1.avg_avg_opp_avg_rank_change_ratio,
         t1.avg_avg_opp_rank_percentile_diff,
-        t1.avg_avg_opp_rank_percentile_ratio,
         t1.avg_avg_opp_avg_rank_percentile_diff,
-        t1.avg_avg_opp_avg_rank_percentile_ratio,
         t1.avg_avg_opp_rank_percentile_change_diff,
-        t1.avg_avg_opp_rank_percentile_change_ratio,
         t1.avg_avg_opp_avg_rank_percentile_change_diff,
-        t1.avg_avg_opp_avg_rank_percentile_change_ratio,
         t1.avg_avg_opp_ranking_points_diff,
-        t1.avg_avg_opp_ranking_points_ratio,
         t1.avg_avg_opp_avg_ranking_points_diff,
-        t1.avg_avg_opp_avg_ranking_points_ratio,
         t1.avg_avg_opp_ranking_points_change_diff,
-        t1.avg_avg_opp_ranking_points_change_ratio,
         t1.avg_avg_opp_avg_ranking_points_change_diff,
-        t1.avg_avg_opp_avg_ranking_points_change_ratio,
         t1.avg_avg_opp_ranking_points_scaled_diff,
-        t1.avg_avg_opp_ranking_points_scaled_ratio,
         t1.avg_avg_opp_avg_ranking_points_scaled_diff,
-        t1.avg_avg_opp_avg_ranking_points_scaled_ratio,
         t1.avg_avg_opp_ranking_points_scaled_change_diff,
-        t1.avg_avg_opp_ranking_points_scaled_change_ratio,
-        t1.avg_avg_opp_avg_ranking_points_scaled_change_diff,
-        t1.avg_avg_opp_avg_ranking_points_scaled_change_ratio
+        t1.avg_avg_opp_avg_ranking_points_scaled_change_diff
     FROM cte10 AS t1
 ),
 cte12 AS (
@@ -961,69 +721,37 @@ cte14 AS (
         t2.avg_opp_ranking_points_scaled_change,
         t2.avg_opp_avg_ranking_points_scaled_change,
         t2.avg_rank_diff,
-        t2.avg_rank_ratio,
         t2.avg_avg_rank_diff,
-        t2.avg_avg_rank_ratio,
         t2.avg_rank_change_diff,
-        t2.avg_rank_change_ratio,
         t2.avg_avg_rank_change_diff,
-        t2.avg_avg_rank_change_ratio,
         t2.avg_rank_percentile_diff,
-        t2.avg_rank_percentile_ratio,
         t2.avg_avg_rank_percentile_diff,
-        t2.avg_avg_rank_percentile_ratio,
         t2.avg_rank_percentile_change_diff,
-        t2.avg_rank_percentile_change_ratio,
         t2.avg_avg_rank_percentile_change_diff,
-        t2.avg_avg_rank_percentile_change_ratio,
         t2.avg_ranking_points_diff,
-        t2.avg_ranking_points_ratio,
         t2.avg_avg_ranking_points_diff,
-        t2.avg_avg_ranking_points_ratio,
         t2.avg_ranking_points_change_diff,
-        t2.avg_ranking_points_change_ratio,
         t2.avg_avg_ranking_points_change_diff,
-        t2.avg_avg_ranking_points_change_ratio,
         t2.avg_ranking_points_scaled_diff,
-        t2.avg_ranking_points_scaled_ratio,
         t2.avg_avg_ranking_points_scaled_diff,
-        t2.avg_avg_ranking_points_scaled_ratio,
         t2.avg_ranking_points_scaled_change_diff,
-        t2.avg_ranking_points_scaled_change_ratio,
         t2.avg_avg_ranking_points_scaled_change_diff,
-        t2.avg_avg_ranking_points_scaled_change_ratio,
         t2.avg_avg_opp_rank_diff,
-        t2.avg_avg_opp_rank_ratio,
         t2.avg_avg_opp_avg_rank_diff,
-        t2.avg_avg_opp_avg_rank_ratio,
         t2.avg_avg_opp_rank_change_diff,
-        t2.avg_avg_opp_rank_change_ratio,
         t2.avg_avg_opp_avg_rank_change_diff,
-        t2.avg_avg_opp_avg_rank_change_ratio,
         t2.avg_avg_opp_rank_percentile_diff,
-        t2.avg_avg_opp_rank_percentile_ratio,
         t2.avg_avg_opp_avg_rank_percentile_diff,
-        t2.avg_avg_opp_avg_rank_percentile_ratio,
         t2.avg_avg_opp_rank_percentile_change_diff,
-        t2.avg_avg_opp_rank_percentile_change_ratio,
         t2.avg_avg_opp_avg_rank_percentile_change_diff,
-        t2.avg_avg_opp_avg_rank_percentile_change_ratio,
         t2.avg_avg_opp_ranking_points_diff,
-        t2.avg_avg_opp_ranking_points_ratio,
         t2.avg_avg_opp_avg_ranking_points_diff,
-        t2.avg_avg_opp_avg_ranking_points_ratio,
         t2.avg_avg_opp_ranking_points_change_diff,
-        t2.avg_avg_opp_ranking_points_change_ratio,
         t2.avg_avg_opp_avg_ranking_points_change_diff,
-        t2.avg_avg_opp_avg_ranking_points_change_ratio,
         t2.avg_avg_opp_ranking_points_scaled_diff,
-        t2.avg_avg_opp_ranking_points_scaled_ratio,
         t2.avg_avg_opp_avg_ranking_points_scaled_diff,
-        t2.avg_avg_opp_avg_ranking_points_scaled_ratio,
         t2.avg_avg_opp_ranking_points_scaled_change_diff,
-        t2.avg_avg_opp_ranking_points_scaled_change_ratio,
-        t2.avg_avg_opp_avg_ranking_points_scaled_change_diff,
-        t2.avg_avg_opp_avg_ranking_points_scaled_change_ratio
+        t2.avg_avg_opp_avg_ranking_points_scaled_change_diff
     FROM cte13 AS t1
         INNER JOIN cte11 AS t2 ON t1.fighter_id = t2.fighter_id
         AND t1.ufc_order = t2.ufc_order
@@ -1096,132 +824,68 @@ SELECT id,
     1.0 * t2.avg_opp_avg_ranking_points_scaled_change / t3.avg_opp_avg_ranking_points_scaled_change AS avg_opp_avg_ranking_points_scaled_change_ratio,
     t2.avg_rank_diff - t3.avg_rank_diff AS avg_rank_diff_diff,
     1.0 * t2.avg_rank_diff / t3.avg_rank_diff AS avg_rank_diff_ratio,
-    t2.avg_rank_ratio - t3.avg_rank_ratio AS avg_rank_ratio_diff,
-    1.0 * t2.avg_rank_ratio / t3.avg_rank_ratio AS avg_rank_ratio_ratio,
     t2.avg_avg_rank_diff - t3.avg_avg_rank_diff AS avg_avg_rank_diff_diff,
     1.0 * t2.avg_avg_rank_diff / t3.avg_avg_rank_diff AS avg_avg_rank_diff_ratio,
-    t2.avg_avg_rank_ratio - t3.avg_avg_rank_ratio AS avg_avg_rank_ratio_diff,
-    1.0 * t2.avg_avg_rank_ratio / t3.avg_avg_rank_ratio AS avg_avg_rank_ratio_ratio,
     t2.avg_rank_change_diff - t3.avg_rank_change_diff AS avg_rank_change_diff_diff,
     1.0 * t2.avg_rank_change_diff / t3.avg_rank_change_diff AS avg_rank_change_diff_ratio,
-    t2.avg_rank_change_ratio - t3.avg_rank_change_ratio AS avg_rank_change_ratio_diff,
-    1.0 * t2.avg_rank_change_ratio / t3.avg_rank_change_ratio AS avg_rank_change_ratio_ratio,
     t2.avg_avg_rank_change_diff - t3.avg_avg_rank_change_diff AS avg_avg_rank_change_diff_diff,
     1.0 * t2.avg_avg_rank_change_diff / t3.avg_avg_rank_change_diff AS avg_avg_rank_change_diff_ratio,
-    t2.avg_avg_rank_change_ratio - t3.avg_avg_rank_change_ratio AS avg_avg_rank_change_ratio_diff,
-    1.0 * t2.avg_avg_rank_change_ratio / t3.avg_avg_rank_change_ratio AS avg_avg_rank_change_ratio_ratio,
     t2.avg_rank_percentile_diff - t3.avg_rank_percentile_diff AS avg_rank_percentile_diff_diff,
     1.0 * t2.avg_rank_percentile_diff / t3.avg_rank_percentile_diff AS avg_rank_percentile_diff_ratio,
-    t2.avg_rank_percentile_ratio - t3.avg_rank_percentile_ratio AS avg_rank_percentile_ratio_diff,
-    1.0 * t2.avg_rank_percentile_ratio / t3.avg_rank_percentile_ratio AS avg_rank_percentile_ratio_ratio,
     t2.avg_avg_rank_percentile_diff - t3.avg_avg_rank_percentile_diff AS avg_avg_rank_percentile_diff_diff,
     1.0 * t2.avg_avg_rank_percentile_diff / t3.avg_avg_rank_percentile_diff AS avg_avg_rank_percentile_diff_ratio,
-    t2.avg_avg_rank_percentile_ratio - t3.avg_avg_rank_percentile_ratio AS avg_avg_rank_percentile_ratio_diff,
-    1.0 * t2.avg_avg_rank_percentile_ratio / t3.avg_avg_rank_percentile_ratio AS avg_avg_rank_percentile_ratio_ratio,
     t2.avg_rank_percentile_change_diff - t3.avg_rank_percentile_change_diff AS avg_rank_percentile_change_diff_diff,
     1.0 * t2.avg_rank_percentile_change_diff / t3.avg_rank_percentile_change_diff AS avg_rank_percentile_change_diff_ratio,
-    t2.avg_rank_percentile_change_ratio - t3.avg_rank_percentile_change_ratio AS avg_rank_percentile_change_ratio_diff,
-    1.0 * t2.avg_rank_percentile_change_ratio / t3.avg_rank_percentile_change_ratio AS avg_rank_percentile_change_ratio_ratio,
     t2.avg_avg_rank_percentile_change_diff - t3.avg_avg_rank_percentile_change_diff AS avg_avg_rank_percentile_change_diff_diff,
     1.0 * t2.avg_avg_rank_percentile_change_diff / t3.avg_avg_rank_percentile_change_diff AS avg_avg_rank_percentile_change_diff_ratio,
-    t2.avg_avg_rank_percentile_change_ratio - t3.avg_avg_rank_percentile_change_ratio AS avg_avg_rank_percentile_change_ratio_diff,
-    1.0 * t2.avg_avg_rank_percentile_change_ratio / t3.avg_avg_rank_percentile_change_ratio AS avg_avg_rank_percentile_change_ratio_ratio,
     t2.avg_ranking_points_diff - t3.avg_ranking_points_diff AS avg_ranking_points_diff_diff,
     1.0 * t2.avg_ranking_points_diff / t3.avg_ranking_points_diff AS avg_ranking_points_diff_ratio,
-    t2.avg_ranking_points_ratio - t3.avg_ranking_points_ratio AS avg_ranking_points_ratio_diff,
-    1.0 * t2.avg_ranking_points_ratio / t3.avg_ranking_points_ratio AS avg_ranking_points_ratio_ratio,
     t2.avg_avg_ranking_points_diff - t3.avg_avg_ranking_points_diff AS avg_avg_ranking_points_diff_diff,
     1.0 * t2.avg_avg_ranking_points_diff / t3.avg_avg_ranking_points_diff AS avg_avg_ranking_points_diff_ratio,
-    t2.avg_avg_ranking_points_ratio - t3.avg_avg_ranking_points_ratio AS avg_avg_ranking_points_ratio_diff,
-    1.0 * t2.avg_avg_ranking_points_ratio / t3.avg_avg_ranking_points_ratio AS avg_avg_ranking_points_ratio_ratio,
     t2.avg_ranking_points_change_diff - t3.avg_ranking_points_change_diff AS avg_ranking_points_change_diff_diff,
     1.0 * t2.avg_ranking_points_change_diff / t3.avg_ranking_points_change_diff AS avg_ranking_points_change_diff_ratio,
-    t2.avg_ranking_points_change_ratio - t3.avg_ranking_points_change_ratio AS avg_ranking_points_change_ratio_diff,
-    1.0 * t2.avg_ranking_points_change_ratio / t3.avg_ranking_points_change_ratio AS avg_ranking_points_change_ratio_ratio,
     t2.avg_avg_ranking_points_change_diff - t3.avg_avg_ranking_points_change_diff AS avg_avg_ranking_points_change_diff_diff,
     1.0 * t2.avg_avg_ranking_points_change_diff / t3.avg_avg_ranking_points_change_diff AS avg_avg_ranking_points_change_diff_ratio,
-    t2.avg_avg_ranking_points_change_ratio - t3.avg_avg_ranking_points_change_ratio AS avg_avg_ranking_points_change_ratio_diff,
-    1.0 * t2.avg_avg_ranking_points_change_ratio / t3.avg_avg_ranking_points_change_ratio AS avg_avg_ranking_points_change_ratio_ratio,
     t2.avg_ranking_points_scaled_diff - t3.avg_ranking_points_scaled_diff AS avg_ranking_points_scaled_diff_diff,
     1.0 * t2.avg_ranking_points_scaled_diff / t3.avg_ranking_points_scaled_diff AS avg_ranking_points_scaled_diff_ratio,
-    t2.avg_ranking_points_scaled_ratio - t3.avg_ranking_points_scaled_ratio AS avg_ranking_points_scaled_ratio_diff,
-    1.0 * t2.avg_ranking_points_scaled_ratio / t3.avg_ranking_points_scaled_ratio AS avg_ranking_points_scaled_ratio_ratio,
     t2.avg_avg_ranking_points_scaled_diff - t3.avg_avg_ranking_points_scaled_diff AS avg_avg_ranking_points_scaled_diff_diff,
     1.0 * t2.avg_avg_ranking_points_scaled_diff / t3.avg_avg_ranking_points_scaled_diff AS avg_avg_ranking_points_scaled_diff_ratio,
-    t2.avg_avg_ranking_points_scaled_ratio - t3.avg_avg_ranking_points_scaled_ratio AS avg_avg_ranking_points_scaled_ratio_diff,
-    1.0 * t2.avg_avg_ranking_points_scaled_ratio / t3.avg_avg_ranking_points_scaled_ratio AS avg_avg_ranking_points_scaled_ratio_ratio,
     t2.avg_ranking_points_scaled_change_diff - t3.avg_ranking_points_scaled_change_diff AS avg_ranking_points_scaled_change_diff_diff,
     1.0 * t2.avg_ranking_points_scaled_change_diff / t3.avg_ranking_points_scaled_change_diff AS avg_ranking_points_scaled_change_diff_ratio,
-    t2.avg_ranking_points_scaled_change_ratio - t3.avg_ranking_points_scaled_change_ratio AS avg_ranking_points_scaled_change_ratio_diff,
-    1.0 * t2.avg_ranking_points_scaled_change_ratio / t3.avg_ranking_points_scaled_change_ratio AS avg_ranking_points_scaled_change_ratio_ratio,
     t2.avg_avg_ranking_points_scaled_change_diff - t3.avg_avg_ranking_points_scaled_change_diff AS avg_avg_ranking_points_scaled_change_diff_diff,
     1.0 * t2.avg_avg_ranking_points_scaled_change_diff / t3.avg_avg_ranking_points_scaled_change_diff AS avg_avg_ranking_points_scaled_change_diff_ratio,
-    t2.avg_avg_ranking_points_scaled_change_ratio - t3.avg_avg_ranking_points_scaled_change_ratio AS avg_avg_ranking_points_scaled_change_ratio_diff,
-    1.0 * t2.avg_avg_ranking_points_scaled_change_ratio / t3.avg_avg_ranking_points_scaled_change_ratio AS avg_avg_ranking_points_scaled_change_ratio_ratio,
     t2.avg_avg_opp_rank_diff - t3.avg_avg_opp_rank_diff AS avg_avg_opp_rank_diff_diff,
     1.0 * t2.avg_avg_opp_rank_diff / t3.avg_avg_opp_rank_diff AS avg_avg_opp_rank_diff_ratio,
-    t2.avg_avg_opp_rank_ratio - t3.avg_avg_opp_rank_ratio AS avg_avg_opp_rank_ratio_diff,
-    1.0 * t2.avg_avg_opp_rank_ratio / t3.avg_avg_opp_rank_ratio AS avg_avg_opp_rank_ratio_ratio,
     t2.avg_avg_opp_avg_rank_diff - t3.avg_avg_opp_avg_rank_diff AS avg_avg_opp_avg_rank_diff_diff,
     1.0 * t2.avg_avg_opp_avg_rank_diff / t3.avg_avg_opp_avg_rank_diff AS avg_avg_opp_avg_rank_diff_ratio,
-    t2.avg_avg_opp_avg_rank_ratio - t3.avg_avg_opp_avg_rank_ratio AS avg_avg_opp_avg_rank_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_rank_ratio / t3.avg_avg_opp_avg_rank_ratio AS avg_avg_opp_avg_rank_ratio_ratio,
     t2.avg_avg_opp_rank_change_diff - t3.avg_avg_opp_rank_change_diff AS avg_avg_opp_rank_change_diff_diff,
     1.0 * t2.avg_avg_opp_rank_change_diff / t3.avg_avg_opp_rank_change_diff AS avg_avg_opp_rank_change_diff_ratio,
-    t2.avg_avg_opp_rank_change_ratio - t3.avg_avg_opp_rank_change_ratio AS avg_avg_opp_rank_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_rank_change_ratio / t3.avg_avg_opp_rank_change_ratio AS avg_avg_opp_rank_change_ratio_ratio,
     t2.avg_avg_opp_avg_rank_change_diff - t3.avg_avg_opp_avg_rank_change_diff AS avg_avg_opp_avg_rank_change_diff_diff,
     1.0 * t2.avg_avg_opp_avg_rank_change_diff / t3.avg_avg_opp_avg_rank_change_diff AS avg_avg_opp_avg_rank_change_diff_ratio,
-    t2.avg_avg_opp_avg_rank_change_ratio - t3.avg_avg_opp_avg_rank_change_ratio AS avg_avg_opp_avg_rank_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_rank_change_ratio / t3.avg_avg_opp_avg_rank_change_ratio AS avg_avg_opp_avg_rank_change_ratio_ratio,
     t2.avg_avg_opp_rank_percentile_diff - t3.avg_avg_opp_rank_percentile_diff AS avg_avg_opp_rank_percentile_diff_diff,
     1.0 * t2.avg_avg_opp_rank_percentile_diff / t3.avg_avg_opp_rank_percentile_diff AS avg_avg_opp_rank_percentile_diff_ratio,
-    t2.avg_avg_opp_rank_percentile_ratio - t3.avg_avg_opp_rank_percentile_ratio AS avg_avg_opp_rank_percentile_ratio_diff,
-    1.0 * t2.avg_avg_opp_rank_percentile_ratio / t3.avg_avg_opp_rank_percentile_ratio AS avg_avg_opp_rank_percentile_ratio_ratio,
     t2.avg_avg_opp_avg_rank_percentile_diff - t3.avg_avg_opp_avg_rank_percentile_diff AS avg_avg_opp_avg_rank_percentile_diff_diff,
     1.0 * t2.avg_avg_opp_avg_rank_percentile_diff / t3.avg_avg_opp_avg_rank_percentile_diff AS avg_avg_opp_avg_rank_percentile_diff_ratio,
-    t2.avg_avg_opp_avg_rank_percentile_ratio - t3.avg_avg_opp_avg_rank_percentile_ratio AS avg_avg_opp_avg_rank_percentile_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_rank_percentile_ratio / t3.avg_avg_opp_avg_rank_percentile_ratio AS avg_avg_opp_avg_rank_percentile_ratio_ratio,
     t2.avg_avg_opp_rank_percentile_change_diff - t3.avg_avg_opp_rank_percentile_change_diff AS avg_avg_opp_rank_percentile_change_diff_diff,
     1.0 * t2.avg_avg_opp_rank_percentile_change_diff / t3.avg_avg_opp_rank_percentile_change_diff AS avg_avg_opp_rank_percentile_change_diff_ratio,
-    t2.avg_avg_opp_rank_percentile_change_ratio - t3.avg_avg_opp_rank_percentile_change_ratio AS avg_avg_opp_rank_percentile_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_rank_percentile_change_ratio / t3.avg_avg_opp_rank_percentile_change_ratio AS avg_avg_opp_rank_percentile_change_ratio_ratio,
     t2.avg_avg_opp_avg_rank_percentile_change_diff - t3.avg_avg_opp_avg_rank_percentile_change_diff AS avg_avg_opp_avg_rank_percentile_change_diff_diff,
     1.0 * t2.avg_avg_opp_avg_rank_percentile_change_diff / t3.avg_avg_opp_avg_rank_percentile_change_diff AS avg_avg_opp_avg_rank_percentile_change_diff_ratio,
-    t2.avg_avg_opp_avg_rank_percentile_change_ratio - t3.avg_avg_opp_avg_rank_percentile_change_ratio AS avg_avg_opp_avg_rank_percentile_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_rank_percentile_change_ratio / t3.avg_avg_opp_avg_rank_percentile_change_ratio AS avg_avg_opp_avg_rank_percentile_change_ratio_ratio,
     t2.avg_avg_opp_ranking_points_diff - t3.avg_avg_opp_ranking_points_diff AS avg_avg_opp_ranking_points_diff_diff,
     1.0 * t2.avg_avg_opp_ranking_points_diff / t3.avg_avg_opp_ranking_points_diff AS avg_avg_opp_ranking_points_diff_ratio,
-    t2.avg_avg_opp_ranking_points_ratio - t3.avg_avg_opp_ranking_points_ratio AS avg_avg_opp_ranking_points_ratio_diff,
-    1.0 * t2.avg_avg_opp_ranking_points_ratio / t3.avg_avg_opp_ranking_points_ratio AS avg_avg_opp_ranking_points_ratio_ratio,
     t2.avg_avg_opp_avg_ranking_points_diff - t3.avg_avg_opp_avg_ranking_points_diff AS avg_avg_opp_avg_ranking_points_diff_diff,
     1.0 * t2.avg_avg_opp_avg_ranking_points_diff / t3.avg_avg_opp_avg_ranking_points_diff AS avg_avg_opp_avg_ranking_points_diff_ratio,
-    t2.avg_avg_opp_avg_ranking_points_ratio - t3.avg_avg_opp_avg_ranking_points_ratio AS avg_avg_opp_avg_ranking_points_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_ranking_points_ratio / t3.avg_avg_opp_avg_ranking_points_ratio AS avg_avg_opp_avg_ranking_points_ratio_ratio,
     t2.avg_avg_opp_ranking_points_change_diff - t3.avg_avg_opp_ranking_points_change_diff AS avg_avg_opp_ranking_points_change_diff_diff,
     1.0 * t2.avg_avg_opp_ranking_points_change_diff / t3.avg_avg_opp_ranking_points_change_diff AS avg_avg_opp_ranking_points_change_diff_ratio,
-    t2.avg_avg_opp_ranking_points_change_ratio - t3.avg_avg_opp_ranking_points_change_ratio AS avg_avg_opp_ranking_points_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_ranking_points_change_ratio / t3.avg_avg_opp_ranking_points_change_ratio AS avg_avg_opp_ranking_points_change_ratio_ratio,
     t2.avg_avg_opp_avg_ranking_points_change_diff - t3.avg_avg_opp_avg_ranking_points_change_diff AS avg_avg_opp_avg_ranking_points_change_diff_diff,
     1.0 * t2.avg_avg_opp_avg_ranking_points_change_diff / t3.avg_avg_opp_avg_ranking_points_change_diff AS avg_avg_opp_avg_ranking_points_change_diff_ratio,
-    t2.avg_avg_opp_avg_ranking_points_change_ratio - t3.avg_avg_opp_avg_ranking_points_change_ratio AS avg_avg_opp_avg_ranking_points_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_ranking_points_change_ratio / t3.avg_avg_opp_avg_ranking_points_change_ratio AS avg_avg_opp_avg_ranking_points_change_ratio_ratio,
     t2.avg_avg_opp_ranking_points_scaled_diff - t3.avg_avg_opp_ranking_points_scaled_diff AS avg_avg_opp_ranking_points_scaled_diff_diff,
     1.0 * t2.avg_avg_opp_ranking_points_scaled_diff / t3.avg_avg_opp_ranking_points_scaled_diff AS avg_avg_opp_ranking_points_scaled_diff_ratio,
-    t2.avg_avg_opp_ranking_points_scaled_ratio - t3.avg_avg_opp_ranking_points_scaled_ratio AS avg_avg_opp_ranking_points_scaled_ratio_diff,
-    1.0 * t2.avg_avg_opp_ranking_points_scaled_ratio / t3.avg_avg_opp_ranking_points_scaled_ratio AS avg_avg_opp_ranking_points_scaled_ratio_ratio,
     t2.avg_avg_opp_avg_ranking_points_scaled_diff - t3.avg_avg_opp_avg_ranking_points_scaled_diff AS avg_avg_opp_avg_ranking_points_scaled_diff_diff,
     1.0 * t2.avg_avg_opp_avg_ranking_points_scaled_diff / t3.avg_avg_opp_avg_ranking_points_scaled_diff AS avg_avg_opp_avg_ranking_points_scaled_diff_ratio,
-    t2.avg_avg_opp_avg_ranking_points_scaled_ratio - t3.avg_avg_opp_avg_ranking_points_scaled_ratio AS avg_avg_opp_avg_ranking_points_scaled_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_ranking_points_scaled_ratio / t3.avg_avg_opp_avg_ranking_points_scaled_ratio AS avg_avg_opp_avg_ranking_points_scaled_ratio_ratio,
     t2.avg_avg_opp_ranking_points_scaled_change_diff - t3.avg_avg_opp_ranking_points_scaled_change_diff AS avg_avg_opp_ranking_points_scaled_change_diff_diff,
     1.0 * t2.avg_avg_opp_ranking_points_scaled_change_diff / t3.avg_avg_opp_ranking_points_scaled_change_diff AS avg_avg_opp_ranking_points_scaled_change_diff_ratio,
-    t2.avg_avg_opp_ranking_points_scaled_change_ratio - t3.avg_avg_opp_ranking_points_scaled_change_ratio AS avg_avg_opp_ranking_points_scaled_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_ranking_points_scaled_change_ratio / t3.avg_avg_opp_ranking_points_scaled_change_ratio AS avg_avg_opp_ranking_points_scaled_change_ratio_ratio,
     t2.avg_avg_opp_avg_ranking_points_scaled_change_diff - t3.avg_avg_opp_avg_ranking_points_scaled_change_diff AS avg_avg_opp_avg_ranking_points_scaled_change_diff_diff,
     1.0 * t2.avg_avg_opp_avg_ranking_points_scaled_change_diff / t3.avg_avg_opp_avg_ranking_points_scaled_change_diff AS avg_avg_opp_avg_ranking_points_scaled_change_diff_ratio,
-    t2.avg_avg_opp_avg_ranking_points_scaled_change_ratio - t3.avg_avg_opp_avg_ranking_points_scaled_change_ratio AS avg_avg_opp_avg_ranking_points_scaled_change_ratio_diff,
-    1.0 * t2.avg_avg_opp_avg_ranking_points_scaled_change_ratio / t3.avg_avg_opp_avg_ranking_points_scaled_change_ratio AS avg_avg_opp_avg_ranking_points_scaled_change_ratio_ratio,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0

@@ -192,10 +192,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_wins_at_venue_diff,
-        AVG(1.0 * t1.wins_at_venue / t2.wins_at_venue) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_wins_at_venue_ratio,
         AVG(t2.losses_at_venue) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -204,10 +200,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_losses_at_venue_diff,
-        AVG(1.0 * t1.losses_at_venue / t2.losses_at_venue) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_losses_at_venue_ratio,
         AVG(t2.win_rate_at_venue) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -216,12 +208,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_win_rate_at_venue_diff,
-        AVG(
-            1.0 * t1.win_rate_at_venue / t2.win_rate_at_venue
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_win_rate_at_venue_ratio,
         AVG(t2.loss_rate_at_venue) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -230,12 +216,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_loss_rate_at_venue_diff,
-        AVG(
-            1.0 * t1.loss_rate_at_venue / t2.loss_rate_at_venue
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_loss_rate_at_venue_ratio,
         AVG(t2.distance_km_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -244,28 +224,16 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_distance_km_change_diff,
-        AVG(
-            1.0 * t1.distance_km_change / t2.distance_km_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_distance_km_change_ratio,
         AVG(t2.avg_distance_km_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_distance_km_change,
         AVG(
-            t1.avg_distance_km_change - t2.avg_distance_km_change
+            t1.distance_km_change - t2.avg_distance_km_change
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_distance_km_change_diff,
-        AVG(
-            1.0 * t1.avg_distance_km_change / t2.avg_distance_km_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_distance_km_change_ratio,
         AVG(t2.avg_elevation_meters) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -276,12 +244,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_elevation_meters_diff,
-        AVG(
-            1.0 * t1.avg_elevation_meters / t2.avg_elevation_meters
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_elevation_meters_ratio,
         AVG(t2.elevation_meters_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -292,12 +254,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_elevation_meters_change_diff,
-        AVG(
-            1.0 * t1.elevation_meters_change / t2.elevation_meters_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_elevation_meters_change_ratio,
         AVG(t2.avg_elevation_meters_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -308,12 +264,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_elevation_meters_change_diff,
-        AVG(
-            1.0 * t1.avg_elevation_meters_change / t2.avg_elevation_meters_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_elevation_meters_change_ratio,
         AVG(t2.avg_event_capacity) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -322,12 +272,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_event_capacity_diff,
-        AVG(
-            1.0 * t1.avg_event_capacity / t2.avg_event_capacity
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_event_capacity_ratio,
         AVG(t2.event_capacity_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -338,12 +282,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_event_capacity_change_diff,
-        AVG(
-            1.0 * t1.event_capacity_change / t2.event_capacity_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_event_capacity_change_ratio,
         AVG(t2.avg_event_capacity_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -354,12 +292,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_event_capacity_change_diff,
-        AVG(
-            1.0 * t1.avg_event_capacity_change / t2.avg_event_capacity_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_event_capacity_change_ratio,
         AVG(t2.avg_event_attendance) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -370,12 +302,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_event_attendance_diff,
-        AVG(
-            1.0 * t1.avg_event_attendance / t2.avg_event_attendance
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_event_attendance_ratio,
         AVG(t2.event_attendance_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -386,12 +312,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_event_attendance_change_diff,
-        AVG(
-            1.0 * t1.event_attendance_change / t2.event_attendance_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_event_attendance_change_ratio,
         AVG(t2.avg_event_attendance_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -402,12 +322,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_event_attendance_change_diff,
-        AVG(
-            1.0 * t1.avg_event_attendance_change / t2.avg_event_attendance_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_event_attendance_change_ratio,
         AVG(t2.avg_event_occupancy_pct) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -418,12 +332,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_avg_event_occupancy_pct_diff,
-        AVG(
-            1.0 * t1.avg_event_occupancy_pct / t2.avg_event_occupancy_pct
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_event_occupancy_pct_ratio,
         AVG(t2.event_occupancy_pct_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -434,12 +342,6 @@ cte5 AS (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS avg_opp_event_occupancy_pct_change_diff,
-        AVG(
-            1.0 * t1.event_occupancy_pct_change / t2.event_occupancy_pct_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_event_occupancy_pct_change_ratio,
         AVG(t2.avg_event_occupancy_pct_change) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
@@ -449,13 +351,7 @@ cte5 AS (
         ) OVER (
             PARTITION BY t1.fighter_id
             ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_event_occupancy_pct_change_diff,
-        AVG(
-            1.0 * t1.avg_event_occupancy_pct_change / t2.avg_event_occupancy_pct_change
-        ) OVER (
-            PARTITION BY t1.fighter_id
-            ORDER BY t1.'order' ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS avg_opp_avg_event_occupancy_pct_change_ratio
+        ) AS avg_opp_avg_event_occupancy_pct_change_diff
     FROM cte4 t1
         LEFT JOIN cte4 t2 ON t1.fighter_id = t2.opponent_id
         AND t1.bout_id = t2.bout_id
@@ -502,110 +398,74 @@ SELECT id,
     1.0 * t2.avg_opp_wins_at_venue / t3.avg_opp_wins_at_venue AS avg_opp_wins_at_venue_ratio,
     t2.avg_opp_wins_at_venue_diff - t3.avg_opp_wins_at_venue_diff AS avg_opp_wins_at_venue_diff_diff,
     1.0 * t2.avg_opp_wins_at_venue_diff / t3.avg_opp_wins_at_venue_diff AS avg_opp_wins_at_venue_diff_ratio,
-    t2.avg_opp_wins_at_venue_ratio - t3.avg_opp_wins_at_venue_ratio AS avg_opp_wins_at_venue_ratio_diff,
-    1.0 * t2.avg_opp_wins_at_venue_ratio / t3.avg_opp_wins_at_venue_ratio AS avg_opp_wins_at_venue_ratio_ratio,
     t2.avg_opp_losses_at_venue - t3.avg_opp_losses_at_venue AS avg_opp_losses_at_venue_diff,
     1.0 * t2.avg_opp_losses_at_venue / t3.avg_opp_losses_at_venue AS avg_opp_losses_at_venue_ratio,
     t2.avg_opp_losses_at_venue_diff - t3.avg_opp_losses_at_venue_diff AS avg_opp_losses_at_venue_diff_diff,
     1.0 * t2.avg_opp_losses_at_venue_diff / t3.avg_opp_losses_at_venue_diff AS avg_opp_losses_at_venue_diff_ratio,
-    t2.avg_opp_losses_at_venue_ratio - t3.avg_opp_losses_at_venue_ratio AS avg_opp_losses_at_venue_ratio_diff,
-    1.0 * t2.avg_opp_losses_at_venue_ratio / t3.avg_opp_losses_at_venue_ratio AS avg_opp_losses_at_venue_ratio_ratio,
     t2.avg_opp_win_rate_at_venue - t3.avg_opp_win_rate_at_venue AS avg_opp_win_rate_at_venue_diff,
     1.0 * t2.avg_opp_win_rate_at_venue / t3.avg_opp_win_rate_at_venue AS avg_opp_win_rate_at_venue_ratio,
     t2.avg_opp_win_rate_at_venue_diff - t3.avg_opp_win_rate_at_venue_diff AS avg_opp_win_rate_at_venue_diff_diff,
     1.0 * t2.avg_opp_win_rate_at_venue_diff / t3.avg_opp_win_rate_at_venue_diff AS avg_opp_win_rate_at_venue_diff_ratio,
-    t2.avg_opp_win_rate_at_venue_ratio - t3.avg_opp_win_rate_at_venue_ratio AS avg_opp_win_rate_at_venue_ratio_diff,
-    1.0 * t2.avg_opp_win_rate_at_venue_ratio / t3.avg_opp_win_rate_at_venue_ratio AS avg_opp_win_rate_at_venue_ratio_ratio,
     t2.avg_opp_loss_rate_at_venue - t3.avg_opp_loss_rate_at_venue AS avg_opp_loss_rate_at_venue_diff,
     1.0 * t2.avg_opp_loss_rate_at_venue / t3.avg_opp_loss_rate_at_venue AS avg_opp_loss_rate_at_venue_ratio,
     t2.avg_opp_loss_rate_at_venue_diff - t3.avg_opp_loss_rate_at_venue_diff AS avg_opp_loss_rate_at_venue_diff_diff,
     1.0 * t2.avg_opp_loss_rate_at_venue_diff / t3.avg_opp_loss_rate_at_venue_diff AS avg_opp_loss_rate_at_venue_diff_ratio,
-    t2.avg_opp_loss_rate_at_venue_ratio - t3.avg_opp_loss_rate_at_venue_ratio AS avg_opp_loss_rate_at_venue_ratio_diff,
-    1.0 * t2.avg_opp_loss_rate_at_venue_ratio / t3.avg_opp_loss_rate_at_venue_ratio AS avg_opp_loss_rate_at_venue_ratio_ratio,
     t2.avg_opp_distance_km_change - t3.avg_opp_distance_km_change AS avg_opp_distance_km_change_diff,
     1.0 * t2.avg_opp_distance_km_change / t3.avg_opp_distance_km_change AS avg_opp_distance_km_change_ratio,
     t2.avg_opp_distance_km_change_diff - t3.avg_opp_distance_km_change_diff AS avg_opp_distance_km_change_diff_diff,
     1.0 * t2.avg_opp_distance_km_change_diff / t3.avg_opp_distance_km_change_diff AS avg_opp_distance_km_change_diff_ratio,
-    t2.avg_opp_distance_km_change_ratio - t3.avg_opp_distance_km_change_ratio AS avg_opp_distance_km_change_ratio_diff,
-    1.0 * t2.avg_opp_distance_km_change_ratio / t3.avg_opp_distance_km_change_ratio AS avg_opp_distance_km_change_ratio_ratio,
     t2.avg_opp_avg_distance_km_change - t3.avg_opp_avg_distance_km_change AS avg_opp_avg_distance_km_change_diff,
     1.0 * t2.avg_opp_avg_distance_km_change / t3.avg_opp_avg_distance_km_change AS avg_opp_avg_distance_km_change_ratio,
     t2.avg_opp_avg_distance_km_change_diff - t3.avg_opp_avg_distance_km_change_diff AS avg_opp_avg_distance_km_change_diff_diff,
     1.0 * t2.avg_opp_avg_distance_km_change_diff / t3.avg_opp_avg_distance_km_change_diff AS avg_opp_avg_distance_km_change_diff_ratio,
-    t2.avg_opp_avg_distance_km_change_ratio - t3.avg_opp_avg_distance_km_change_ratio AS avg_opp_avg_distance_km_change_ratio_diff,
-    1.0 * t2.avg_opp_avg_distance_km_change_ratio / t3.avg_opp_avg_distance_km_change_ratio AS avg_opp_avg_distance_km_change_ratio_ratio,
     t2.avg_opp_avg_elevation_meters - t3.avg_opp_avg_elevation_meters AS avg_opp_avg_elevation_meters_diff,
     1.0 * t2.avg_opp_avg_elevation_meters / t3.avg_opp_avg_elevation_meters AS avg_opp_avg_elevation_meters_ratio,
     t2.avg_opp_avg_elevation_meters_diff - t3.avg_opp_avg_elevation_meters_diff AS avg_opp_avg_elevation_meters_diff_diff,
     1.0 * t2.avg_opp_avg_elevation_meters_diff / t3.avg_opp_avg_elevation_meters_diff AS avg_opp_avg_elevation_meters_diff_ratio,
-    t2.avg_opp_avg_elevation_meters_ratio - t3.avg_opp_avg_elevation_meters_ratio AS avg_opp_avg_elevation_meters_ratio_diff,
-    1.0 * t2.avg_opp_avg_elevation_meters_ratio / t3.avg_opp_avg_elevation_meters_ratio AS avg_opp_avg_elevation_meters_ratio_ratio,
     t2.avg_opp_elevation_meters_change - t3.avg_opp_elevation_meters_change AS avg_opp_elevation_meters_change_diff,
     1.0 * t2.avg_opp_elevation_meters_change / t3.avg_opp_elevation_meters_change AS avg_opp_elevation_meters_change_ratio,
     t2.avg_opp_elevation_meters_change_diff - t3.avg_opp_elevation_meters_change_diff AS avg_opp_elevation_meters_change_diff_diff,
     1.0 * t2.avg_opp_elevation_meters_change_diff / t3.avg_opp_elevation_meters_change_diff AS avg_opp_elevation_meters_change_diff_ratio,
-    t2.avg_opp_elevation_meters_change_ratio - t3.avg_opp_elevation_meters_change_ratio AS avg_opp_elevation_meters_change_ratio_diff,
-    1.0 * t2.avg_opp_elevation_meters_change_ratio / t3.avg_opp_elevation_meters_change_ratio AS avg_opp_elevation_meters_change_ratio_ratio,
     t2.avg_opp_avg_elevation_meters_change - t3.avg_opp_avg_elevation_meters_change AS avg_opp_avg_elevation_meters_change_diff,
     1.0 * t2.avg_opp_avg_elevation_meters_change / t3.avg_opp_avg_elevation_meters_change AS avg_opp_avg_elevation_meters_change_ratio,
     t2.avg_opp_avg_elevation_meters_change_diff - t3.avg_opp_avg_elevation_meters_change_diff AS avg_opp_avg_elevation_meters_change_diff_diff,
     1.0 * t2.avg_opp_avg_elevation_meters_change_diff / t3.avg_opp_avg_elevation_meters_change_diff AS avg_opp_avg_elevation_meters_change_diff_ratio,
-    t2.avg_opp_avg_elevation_meters_change_ratio - t3.avg_opp_avg_elevation_meters_change_ratio AS avg_opp_avg_elevation_meters_change_ratio_diff,
-    1.0 * t2.avg_opp_avg_elevation_meters_change_ratio / t3.avg_opp_avg_elevation_meters_change_ratio AS avg_opp_avg_elevation_meters_change_ratio_ratio,
     t2.avg_opp_avg_event_capacity - t3.avg_opp_avg_event_capacity AS avg_opp_avg_event_capacity_diff,
     1.0 * t2.avg_opp_avg_event_capacity / t3.avg_opp_avg_event_capacity AS avg_opp_avg_event_capacity_ratio,
     t2.avg_opp_avg_event_capacity_diff - t3.avg_opp_avg_event_capacity_diff AS avg_opp_avg_event_capacity_diff_diff,
     1.0 * t2.avg_opp_avg_event_capacity_diff / t3.avg_opp_avg_event_capacity_diff AS avg_opp_avg_event_capacity_diff_ratio,
-    t2.avg_opp_avg_event_capacity_ratio - t3.avg_opp_avg_event_capacity_ratio AS avg_opp_avg_event_capacity_ratio_diff,
-    1.0 * t2.avg_opp_avg_event_capacity_ratio / t3.avg_opp_avg_event_capacity_ratio AS avg_opp_avg_event_capacity_ratio_ratio,
     t2.avg_opp_event_capacity_change - t3.avg_opp_event_capacity_change AS avg_opp_event_capacity_change_diff,
     1.0 * t2.avg_opp_event_capacity_change / t3.avg_opp_event_capacity_change AS avg_opp_event_capacity_change_ratio,
     t2.avg_opp_event_capacity_change_diff - t3.avg_opp_event_capacity_change_diff AS avg_opp_event_capacity_change_diff_diff,
     1.0 * t2.avg_opp_event_capacity_change_diff / t3.avg_opp_event_capacity_change_diff AS avg_opp_event_capacity_change_diff_ratio,
-    t2.avg_opp_event_capacity_change_ratio - t3.avg_opp_event_capacity_change_ratio AS avg_opp_event_capacity_change_ratio_diff,
-    1.0 * t2.avg_opp_event_capacity_change_ratio / t3.avg_opp_event_capacity_change_ratio AS avg_opp_event_capacity_change_ratio_ratio,
     t2.avg_opp_avg_event_capacity_change - t3.avg_opp_avg_event_capacity_change AS avg_opp_avg_event_capacity_change_diff,
     1.0 * t2.avg_opp_avg_event_capacity_change / t3.avg_opp_avg_event_capacity_change AS avg_opp_avg_event_capacity_change_ratio,
     t2.avg_opp_avg_event_capacity_change_diff - t3.avg_opp_avg_event_capacity_change_diff AS avg_opp_avg_event_capacity_change_diff_diff,
     1.0 * t2.avg_opp_avg_event_capacity_change_diff / t3.avg_opp_avg_event_capacity_change_diff AS avg_opp_avg_event_capacity_change_diff_ratio,
-    t2.avg_opp_avg_event_capacity_change_ratio - t3.avg_opp_avg_event_capacity_change_ratio AS avg_opp_avg_event_capacity_change_ratio_diff,
-    1.0 * t2.avg_opp_avg_event_capacity_change_ratio / t3.avg_opp_avg_event_capacity_change_ratio AS avg_opp_avg_event_capacity_change_ratio_ratio,
     t2.avg_opp_avg_event_attendance - t3.avg_opp_avg_event_attendance AS avg_opp_avg_event_attendance_diff,
     1.0 * t2.avg_opp_avg_event_attendance / t3.avg_opp_avg_event_attendance AS avg_opp_avg_event_attendance_ratio,
     t2.avg_opp_avg_event_attendance_diff - t3.avg_opp_avg_event_attendance_diff AS avg_opp_avg_event_attendance_diff_diff,
     1.0 * t2.avg_opp_avg_event_attendance_diff / t3.avg_opp_avg_event_attendance_diff AS avg_opp_avg_event_attendance_diff_ratio,
-    t2.avg_opp_avg_event_attendance_ratio - t3.avg_opp_avg_event_attendance_ratio AS avg_opp_avg_event_attendance_ratio_diff,
-    1.0 * t2.avg_opp_avg_event_attendance_ratio / t3.avg_opp_avg_event_attendance_ratio AS avg_opp_avg_event_attendance_ratio_ratio,
     t2.avg_opp_event_attendance_change - t3.avg_opp_event_attendance_change AS avg_opp_event_attendance_change_diff,
     1.0 * t2.avg_opp_event_attendance_change / t3.avg_opp_event_attendance_change AS avg_opp_event_attendance_change_ratio,
     t2.avg_opp_event_attendance_change_diff - t3.avg_opp_event_attendance_change_diff AS avg_opp_event_attendance_change_diff_diff,
     1.0 * t2.avg_opp_event_attendance_change_diff / t3.avg_opp_event_attendance_change_diff AS avg_opp_event_attendance_change_diff_ratio,
-    t2.avg_opp_event_attendance_change_ratio - t3.avg_opp_event_attendance_change_ratio AS avg_opp_event_attendance_change_ratio_diff,
-    1.0 * t2.avg_opp_event_attendance_change_ratio / t3.avg_opp_event_attendance_change_ratio AS avg_opp_event_attendance_change_ratio_ratio,
     t2.avg_opp_avg_event_attendance_change - t3.avg_opp_avg_event_attendance_change AS avg_opp_avg_event_attendance_change_diff,
     1.0 * t2.avg_opp_avg_event_attendance_change / t3.avg_opp_avg_event_attendance_change AS avg_opp_avg_event_attendance_change_ratio,
     t2.avg_opp_avg_event_attendance_change_diff - t3.avg_opp_avg_event_attendance_change_diff AS avg_opp_avg_event_attendance_change_diff_diff,
     1.0 * t2.avg_opp_avg_event_attendance_change_diff / t3.avg_opp_avg_event_attendance_change_diff AS avg_opp_avg_event_attendance_change_diff_ratio,
-    t2.avg_opp_avg_event_attendance_change_ratio - t3.avg_opp_avg_event_attendance_change_ratio AS avg_opp_avg_event_attendance_change_ratio_diff,
-    1.0 * t2.avg_opp_avg_event_attendance_change_ratio / t3.avg_opp_avg_event_attendance_change_ratio AS avg_opp_avg_event_attendance_change_ratio_ratio,
     t2.avg_opp_avg_event_occupancy_pct - t3.avg_opp_avg_event_occupancy_pct AS avg_opp_avg_event_occupancy_pct_diff,
     1.0 * t2.avg_opp_avg_event_occupancy_pct / t3.avg_opp_avg_event_occupancy_pct AS avg_opp_avg_event_occupancy_pct_ratio,
     t2.avg_opp_avg_event_occupancy_pct_diff - t3.avg_opp_avg_event_occupancy_pct_diff AS avg_opp_avg_event_occupancy_pct_diff_diff,
     1.0 * t2.avg_opp_avg_event_occupancy_pct_diff / t3.avg_opp_avg_event_occupancy_pct_diff AS avg_opp_avg_event_occupancy_pct_diff_ratio,
-    t2.avg_opp_avg_event_occupancy_pct_ratio - t3.avg_opp_avg_event_occupancy_pct_ratio AS avg_opp_avg_event_occupancy_pct_ratio_diff,
-    1.0 * t2.avg_opp_avg_event_occupancy_pct_ratio / t3.avg_opp_avg_event_occupancy_pct_ratio AS avg_opp_avg_event_occupancy_pct_ratio_ratio,
     t2.avg_opp_event_occupancy_pct_change - t3.avg_opp_event_occupancy_pct_change AS avg_opp_event_occupancy_pct_change_diff,
     1.0 * t2.avg_opp_event_occupancy_pct_change / t3.avg_opp_event_occupancy_pct_change AS avg_opp_event_occupancy_pct_change_ratio,
     t2.avg_opp_event_occupancy_pct_change_diff - t3.avg_opp_event_occupancy_pct_change_diff AS avg_opp_event_occupancy_pct_change_diff_diff,
     1.0 * t2.avg_opp_event_occupancy_pct_change_diff / t3.avg_opp_event_occupancy_pct_change_diff AS avg_opp_event_occupancy_pct_change_diff_ratio,
-    t2.avg_opp_event_occupancy_pct_change_ratio - t3.avg_opp_event_occupancy_pct_change_ratio AS avg_opp_event_occupancy_pct_change_ratio_diff,
-    1.0 * t2.avg_opp_event_occupancy_pct_change_ratio / t3.avg_opp_event_occupancy_pct_change_ratio AS avg_opp_event_occupancy_pct_change_ratio_ratio,
     t2.avg_opp_avg_event_occupancy_pct_change - t3.avg_opp_avg_event_occupancy_pct_change AS avg_opp_avg_event_occupancy_pct_change_diff,
     1.0 * t2.avg_opp_avg_event_occupancy_pct_change / t3.avg_opp_avg_event_occupancy_pct_change AS avg_opp_avg_event_occupancy_pct_change_ratio,
     t2.avg_opp_avg_event_occupancy_pct_change_diff - t3.avg_opp_avg_event_occupancy_pct_change_diff AS avg_opp_avg_event_occupancy_pct_change_diff_diff,
     1.0 * t2.avg_opp_avg_event_occupancy_pct_change_diff / t3.avg_opp_avg_event_occupancy_pct_change_diff AS avg_opp_avg_event_occupancy_pct_change_diff_ratio,
-    t2.avg_opp_avg_event_occupancy_pct_change_ratio - t3.avg_opp_avg_event_occupancy_pct_change_ratio AS avg_opp_avg_event_occupancy_pct_change_ratio_diff,
-    1.0 * t2.avg_opp_avg_event_occupancy_pct_change_ratio / t3.avg_opp_avg_event_occupancy_pct_change_ratio AS avg_opp_avg_event_occupancy_pct_change_ratio_ratio,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0
