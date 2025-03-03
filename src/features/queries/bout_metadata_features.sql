@@ -1014,7 +1014,7 @@ SELECT t1.id,
         ELSE 0
     END AS red_win
 FROM ufcstats_bouts AS t1
-    LEFT JOIN cte5 AS t2 ON t1.event_id = t2.event_id
+    LEFT JOIN join10 AS t2 ON t1.id = t2.id
 WHERE t1.event_id IN (
         SELECT id
         FROM ufcstats_events
