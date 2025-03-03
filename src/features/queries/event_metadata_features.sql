@@ -8,7 +8,11 @@ WITH cte1 AS (
                 WHEN red_outcome = 'W' THEN 1
             END
         ) AS red_wins,
-        COUNT(*) AS n_bouts
+        COUNT(
+            CASE
+                WHEN red_outcome = 'L' THEN 1
+            END
+        ) AS red_losses
     FROM ufcstats_bouts AS t1
         LEFT JOIN ufcstats_events AS t2 ON t1.event_id = t2.id
         INNER JOIN event_mapping AS t3 ON t1.event_id = t3.ufcstats_id
@@ -36,7 +40,7 @@ cte2 AS (
         ) AS avg_occupancy_pct,
         t1.event_order,
         t1.red_wins,
-        t1.n_bouts,
+        t1.red_losses,
         CASE
             WHEN t1.event_name LIKE 'UFC %'
             AND t1.event_name GLOB 'UFC [0-9]*' THEN 1
@@ -72,70 +76,70 @@ cte3 AS (
         SUM(red_wins) OVER(
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum,
-        SUM(n_bouts) OVER(
+        SUM(red_losses) OVER(
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum,
+        ) AS red_losses_cumsum,
         is_ppv,
         SUM(red_wins) OVER (
             PARTITION BY is_ppv
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum_ppv_type,
-        SUM(n_bouts) OVER (
+        SUM(red_losses) OVER (
             PARTITION BY is_ppv
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum_ppv_type,
+        ) AS red_losses_cumsum_ppv_type,
         SUM(red_wins) OVER(
             PARTITION BY venue_id
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum_venue,
-        SUM(n_bouts) OVER(
+        SUM(red_losses) OVER(
             PARTITION BY venue_id
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum_venue,
+        ) AS red_losses_cumsum_venue,
         SUM(red_wins) OVER(
             PARTITION BY country
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum_country,
-        SUM(n_bouts) OVER(
+        SUM(red_losses) OVER(
             PARTITION BY country
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum_country,
+        ) AS red_losses_cumsum_country,
         SUM(red_wins) OVER(
             PARTITION BY year
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum_year,
-        SUM(n_bouts) OVER(
+        SUM(red_losses) OVER(
             PARTITION BY year
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum_year,
+        ) AS red_losses_cumsum_year,
         SUM(red_wins) OVER(
             PARTITION BY year,
             month
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum_month,
-        SUM(n_bouts) OVER(
+        SUM(red_losses) OVER(
             PARTITION BY year,
             month
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum_month,
+        ) AS red_losses_cumsum_month,
         SUM(red_wins) OVER(
             PARTITION BY year,
             month
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum_year_month,
-        SUM(n_bouts) OVER(
+        SUM(red_losses) OVER(
             PARTITION BY year,
             month
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum_year_month,
+        ) AS red_losses_cumsum_year_month,
         SUM(red_wins) OVER(
             PARTITION BY start_hour_utc
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ) AS red_wins_cumsum_start_hour,
-        SUM(n_bouts) OVER(
+        SUM(red_losses) OVER(
             PARTITION BY start_hour_utc
             ORDER BY event_order ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
-        ) AS n_bouts_cumsum_start_hour
+        ) AS red_losses_cumsum_start_hour
     FROM cte2 AS t1
     WHERE t1.date >= '2008-04-19'
 ),
@@ -147,66 +151,32 @@ cte4 AS (
         avg_venue_attendance,
         venue_capacity,
         avg_venue_occupancy_pct,
-        CASE
-            WHEN red_wins_cumsum IS NULL then 0.5
-            ELSE 1.0 * red_wins_cumsum / n_bouts_cumsum
-        END AS red_win_pct_overall,
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum, 0) + 0.0001) / (IFNULL(red_losses_cumsum, 0) + 0.0001)
+        ) AS woe_overall,
         is_ppv,
-        red_wins_cumsum_ppv_type,
-        n_bouts_cumsum_ppv_type,
-        red_wins_cumsum_venue,
-        n_bouts_cumsum_venue,
-        red_wins_cumsum_country,
-        n_bouts_cumsum_country,
-        red_wins_cumsum_year,
-        n_bouts_cumsum_year,
-        red_wins_cumsum_month,
-        n_bouts_cumsum_month,
-        red_wins_cumsum_year_month,
-        n_bouts_cumsum_year_month,
-        red_wins_cumsum_start_hour,
-        n_bouts_cumsum_start_hour
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum_ppv_type, 0) + 0.0001) / (IFNULL(red_losses_cumsum_ppv_type, 0) + 0.0001)
+        ) AS woe_by_ppv_type,
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum_venue, 0) + 0.0001) / (IFNULL(red_losses_cumsum_venue, 0) + 0.0001)
+        ) AS woe_by_venue,
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum_country, 0) + 0.0001) / (IFNULL(red_losses_cumsum_country, 0) + 0.0001)
+        ) AS woe_by_country,
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum_year, 0) + 0.0001) / (IFNULL(red_losses_cumsum_year, 0) + 0.0001)
+        ) AS woe_by_year,
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum_month, 0) + 0.0001) / (IFNULL(red_losses_cumsum_month, 0) + 0.0001)
+        ) AS woe_by_month,
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum_year_month, 0) + 0.0001) / (IFNULL(red_losses_cumsum_year_month, 0) + 0.0001)
+        ) AS woe_by_year_month,
+        LOG(
+            1.0 * (IFNULL(red_wins_cumsum_start_hour, 0) + 0.0001) / (IFNULL(red_losses_cumsum_start_hour, 0) + 0.0001)
+        ) AS woe_by_start_hour
     FROM cte3
-),
-cte5 AS (
-    SELECT event_id,
-        latitude,
-        longitude,
-        elevation_meters,
-        avg_venue_attendance,
-        venue_capacity,
-        avg_venue_occupancy_pct,
-        red_win_pct_overall,
-        is_ppv,
-        CASE
-            WHEN red_wins_cumsum_ppv_type IS NULL THEN red_win_pct_overall
-            ELSE 1.0 * red_wins_cumsum_ppv_type / n_bouts_cumsum_ppv_type
-        END AS red_win_pct_by_ppv_type,
-        CASE
-            WHEN red_wins_cumsum_venue IS NULL THEN red_win_pct_overall
-            ELSE 1.0 * red_wins_cumsum_venue / n_bouts_cumsum_venue
-        END AS red_win_pct_by_venue,
-        CASE
-            WHEN red_wins_cumsum_country IS NULL THEN red_win_pct_overall
-            ELSE 1.0 * red_wins_cumsum_country / n_bouts_cumsum_country
-        END AS red_win_pct_by_country,
-        CASE
-            WHEN red_wins_cumsum_year IS NULL THEN red_win_pct_overall
-            ELSE 1.0 * red_wins_cumsum_year / n_bouts_cumsum_year
-        END AS red_win_pct_by_year,
-        CASE
-            WHEN red_wins_cumsum_month IS NULL THEN red_win_pct_overall
-            ELSE 1.0 * red_wins_cumsum_month / n_bouts_cumsum_month
-        END AS red_win_pct_by_month,
-        CASE
-            WHEN red_wins_cumsum_year_month IS NULL THEN red_win_pct_overall
-            ELSE 1.0 * red_wins_cumsum_year_month / n_bouts_cumsum_year_month
-        END AS red_win_pct_by_year_month,
-        CASE
-            WHEN red_wins_cumsum_start_hour IS NULL THEN red_win_pct_overall
-            ELSE 1.0 * red_wins_cumsum_start_hour / n_bouts_cumsum_start_hour
-        END AS red_win_pct_by_start_hour
-    FROM cte4
 )
 SELECT t1.id,
     latitude,
@@ -215,15 +185,15 @@ SELECT t1.id,
     avg_venue_attendance,
     venue_capacity,
     avg_venue_occupancy_pct,
-    red_win_pct_overall,
+    woe_overall,
     is_ppv,
-    red_win_pct_by_ppv_type,
-    red_win_pct_by_venue,
-    red_win_pct_by_country,
-    red_win_pct_by_year,
-    red_win_pct_by_month,
-    red_win_pct_by_year_month,
-    red_win_pct_by_start_hour,
+    woe_by_ppv_type,
+    woe_by_venue,
+    woe_by_country,
+    woe_by_year,
+    woe_by_month,
+    woe_by_year_month,
+    woe_by_start_hour,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0
