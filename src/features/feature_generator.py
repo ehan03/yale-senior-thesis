@@ -27,6 +27,7 @@ class FeatureGenerator:
             conn.create_function("SIN", 1, math.sin)
             conn.create_function("RADIANS", 1, math.radians)
             conn.create_function("DEGREES", 1, math.degrees)
+            conn.create_function("LOG", 1, math.log)
 
             for filename in os.listdir(queries_dir):
                 if filename.endswith(".sql"):
