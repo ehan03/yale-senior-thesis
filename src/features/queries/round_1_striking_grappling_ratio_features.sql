@@ -88,6 +88,19 @@ cte1 AS (
     LEFT JOIN
         round_1_stats AS t3 ON t1.bout_id = t3.bout_id AND t1.opponent_id = t3.fighter_id
 ),
+cte1_temp AS (
+    SELECT
+        *
+    FROM
+        cte1
+    WHERE
+        bout_id IN (
+            SELECT
+                ufcstats_id
+            FROM
+                bout_mapping
+        )
+),
 cte2 AS (
     SELECT
         t1.*,
@@ -317,7 +330,7 @@ cte2 AS (
             ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING
         ), 0) AS r1_cumulative_total_time_seconds
     FROM
-        cte1 AS t1
+        cte1_temp AS t1
 ),
 cte3 AS (
     SELECT
