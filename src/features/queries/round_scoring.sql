@@ -831,9 +831,7 @@ cte19 AS (
 )
 SELECT id,
     t2.avg_judge_score_per_round - t3.avg_judge_score_per_round AS avg_judge_score_per_round_diff,
-    t2.avg_judge_score_per_round / t3.avg_judge_score_per_round AS avg_judge_score_per_round_ratio,
     t2.avg_opp_judge_score_per_round - t3.avg_opp_judge_score_per_round AS avg_opp_judge_score_per_round_diff,
-    t2.avg_opp_judge_score_per_round / t3.avg_opp_judge_score_per_round AS avg_opp_judge_score_per_round_ratio,
     (
         t2.avg_judge_score_per_round - t2.avg_opp_judge_score_per_round
     ) - (
