@@ -839,67 +839,34 @@ SELECT id,
     ) - (
         t3.avg_judge_score_per_round - t3.avg_opp_judge_score_per_round
     ) AS avg_judge_score_per_round_adv_diff,
-    (
-        t2.avg_judge_score_per_round - t2.avg_opp_judge_score_per_round
-    ) / (
-        t3.avg_judge_score_per_round - t3.avg_opp_judge_score_per_round
-    ) AS avg_judge_score_per_round_adv_ratio,
     t2.avg_media_score_per_round - t3.avg_media_score_per_round AS avg_media_score_per_round_diff,
-    t2.avg_media_score_per_round / t3.avg_media_score_per_round AS avg_media_score_per_round_ratio,
     t2.avg_opp_media_score_per_round - t3.avg_opp_media_score_per_round AS avg_opp_media_score_per_round_diff,
-    t2.avg_opp_media_score_per_round / t3.avg_opp_media_score_per_round AS avg_opp_media_score_per_round_ratio,
     (
         t2.avg_media_score_per_round - t2.avg_opp_media_score_per_round
     ) - (
         t3.avg_media_score_per_round - t3.avg_opp_media_score_per_round
     ) AS avg_media_score_per_round_adv_diff,
-    (
-        t2.avg_media_score_per_round - t2.avg_opp_media_score_per_round
-    ) / (
-        t3.avg_media_score_per_round - t3.avg_opp_media_score_per_round
-    ) AS avg_media_score_per_round_adv_ratio,
     t2.avg_judge_score_round_1 - t3.avg_judge_score_round_1 AS avg_judge_score_round_1_diff,
-    t2.avg_judge_score_round_1 / t3.avg_judge_score_round_1 AS avg_judge_score_round_1_ratio,
     t2.avg_opp_judge_score_round_1 - t3.avg_opp_judge_score_round_1 AS avg_opp_judge_score_round_1_diff,
-    t2.avg_opp_judge_score_round_1 / t3.avg_opp_judge_score_round_1 AS avg_opp_judge_score_round_1_ratio,
     (
         t2.avg_judge_score_round_1 - t2.avg_opp_judge_score_round_1
     ) - (
         t3.avg_judge_score_round_1 - t3.avg_opp_judge_score_round_1
     ) AS avg_judge_score_round_1_adv_diff,
-    (
-        t2.avg_judge_score_round_1 - t2.avg_opp_judge_score_round_1
-    ) / (
-        t3.avg_judge_score_round_1 - t3.avg_opp_judge_score_round_1
-    ) AS avg_judge_score_round_1_adv_ratio,
     t2.avg_judge_score_round_2 - t3.avg_judge_score_round_2 AS avg_judge_score_round_2_diff,
-    t2.avg_judge_score_round_2 / t3.avg_judge_score_round_2 AS avg_judge_score_round_2_ratio,
     t2.avg_opp_judge_score_round_2 - t3.avg_opp_judge_score_round_2 AS avg_opp_judge_score_round_2_diff,
-    t2.avg_opp_judge_score_round_2 / t3.avg_opp_judge_score_round_2 AS avg_opp_judge_score_round_2_ratio,
     (
         t2.avg_judge_score_round_2 - t2.avg_opp_judge_score_round_2
     ) - (
         t3.avg_judge_score_round_2 - t3.avg_opp_judge_score_round_2
     ) AS avg_judge_score_round_2_adv_diff,
-    (
-        t2.avg_judge_score_round_2 - t2.avg_opp_judge_score_round_2
-    ) / (
-        t3.avg_judge_score_round_2 - t3.avg_opp_judge_score_round_2
-    ) AS avg_judge_score_round_2_adv_ratio,
     t2.avg_judge_score_round_3 - t3.avg_judge_score_round_3 AS avg_judge_score_round_3_diff,
-    t2.avg_judge_score_round_3 / t3.avg_judge_score_round_3 AS avg_judge_score_round_3_ratio,
     t2.avg_opp_judge_score_round_3 - t3.avg_opp_judge_score_round_3 AS avg_opp_judge_score_round_3_diff,
-    t2.avg_opp_judge_score_round_3 / t3.avg_opp_judge_score_round_3 AS avg_opp_judge_score_round_3_ratio,
     (
         t2.avg_judge_score_round_3 - t2.avg_opp_judge_score_round_3
     ) - (
         t3.avg_judge_score_round_3 - t3.avg_opp_judge_score_round_3
     ) AS avg_judge_score_round_3_adv_diff,
-    (
-        t2.avg_judge_score_round_3 - t2.avg_opp_judge_score_round_3
-    ) / (
-        t3.avg_judge_score_round_3 - t3.avg_opp_judge_score_round_3
-    ) AS avg_judge_score_round_3_adv_ratio,
     CASE
         WHEN red_outcome = 'W' THEN 1
         ELSE 0
