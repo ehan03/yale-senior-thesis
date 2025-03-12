@@ -18,6 +18,13 @@ class FeatureGenerator:
         self.split_date = split_date
 
     def run_queries(self) -> List[pd.DataFrame]:
+
+        def safe_sqrt(x):
+            if x is None or x < 0:
+                return None
+
+            return math.sqrt(x)
+
         queries_dir = os.path.join(os.path.dirname(__file__), "queries")
         df_list = []
         with sqlite3.connect(self.db_path) as conn:
@@ -28,6 +35,7 @@ class FeatureGenerator:
             conn.create_function("RADIANS", 1, math.radians)
             conn.create_function("DEGREES", 1, math.degrees)
             conn.create_function("LOG", 1, math.log)
+            conn.create_function("SQRT", 1, safe_sqrt)
 
             for filename in os.listdir(queries_dir):
                 if filename.endswith(".sql"):
