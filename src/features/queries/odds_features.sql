@@ -604,7 +604,8 @@ SELECT id,
     t2.avg_opp_win_in_round_3_implied_prob - t3.avg_opp_win_in_round_3_implied_prob AS avg_opp_win_in_round_3_implied_prob_diff,
     CASE
         WHEN red_outcome = 'W' THEN 1
-        ELSE 0
+        WHEN red_outcome = 'L' THEN 0
+        ELSE NULL
     END AS red_win
 FROM ufcstats_bouts AS t1
     LEFT JOIN cte7 AS t2 ON t1.red_fighter_id = t2.ufcstats_fighter_id

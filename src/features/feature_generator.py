@@ -15,7 +15,6 @@ class FeatureGenerator:
     def __init__(self, split_date: str = "2021-01-01"):
         self.data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data")
         self.db_path = os.path.join(self.data_dir, "ufc.db")
-        self.misc_db_path = os.path.join(self.data_dir, "misc.db")
         self.split_date = split_date
 
     def run_queries(self) -> List[pd.DataFrame]:
@@ -29,9 +28,6 @@ class FeatureGenerator:
             conn.create_function("RADIANS", 1, math.radians)
             conn.create_function("DEGREES", 1, math.degrees)
             conn.create_function("LOG", 1, math.log)
-
-            # attach the misc database
-            conn.execute(f"ATTACH DATABASE '{self.misc_db_path}' AS misc")
 
             for filename in os.listdir(queries_dir):
                 if filename.endswith(".sql"):

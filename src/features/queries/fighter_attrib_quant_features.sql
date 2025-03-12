@@ -507,7 +507,8 @@ SELECT id,
     t2.avg_avg_weight_lbs_diff_diff - t3.avg_avg_weight_lbs_diff_diff AS avg_avg_weight_lbs_diff_diff_diff,
     CASE
         WHEN red_outcome = 'W' THEN 1
-        ELSE 0
+        WHEN red_outcome = 'L' THEN 0
+        ELSE NULL
     END AS red_win
 FROM ufcstats_bouts AS t1
     LEFT JOIN feats_all AS t2 ON t1.red_fighter_id = t2.fighter_id

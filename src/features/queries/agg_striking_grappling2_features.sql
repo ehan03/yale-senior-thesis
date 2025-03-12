@@ -8054,7 +8054,8 @@ SELECT id,
     t2.avg_cumulative_opp_control_time_seconds_per_second_diff - t3.avg_cumulative_opp_control_time_seconds_per_second_diff AS avg_cumulative_opp_control_time_seconds_per_second_diff_diff,
     CASE
         WHEN red_outcome = 'W' THEN 1
-        ELSE 0
+        WHEN red_outcome = 'L' THEN 0
+        ELSE NULL
     END AS red_win
 FROM ufcstats_bouts AS t1
     LEFT JOIN cte7 AS t2 ON t1.id = t2.bout_id

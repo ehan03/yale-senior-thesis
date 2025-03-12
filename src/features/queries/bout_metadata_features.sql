@@ -1011,7 +1011,8 @@ SELECT t1.id,
     IFNULL(woe_by_home_country_matchup, 0) AS woe_by_home_country_matchup,
     CASE
         WHEN red_outcome = 'W' THEN 1
-        ELSE 0
+        WHEN red_outcome = 'L' THEN 0
+        ELSE NULL
     END AS red_win
 FROM ufcstats_bouts AS t1
     LEFT JOIN join10 AS t2 ON t1.id = t2.id

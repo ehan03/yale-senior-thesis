@@ -1562,7 +1562,8 @@ SELECT id,
     t2.avg_avg_time_to_lose_seconds_diff - t3.avg_avg_time_to_lose_seconds_diff AS avg_avg_time_to_lose_seconds_diff_diff,
     CASE
         WHEN red_outcome = 'W' THEN 1
-        ELSE 0
+        WHEN red_outcome = 'L' THEN 0
+        ELSE NULL
     END AS red_win
 FROM ufcstats_bouts AS t1
     LEFT JOIN cte17 AS t2 ON t1.id = t2.bout_id

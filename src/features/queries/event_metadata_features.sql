@@ -196,7 +196,8 @@ SELECT t1.id,
     woe_by_start_hour,
     CASE
         WHEN red_outcome = 'W' THEN 1
-        ELSE 0
+        WHEN red_outcome = 'L' THEN 0
+        ELSE NULL
     END AS red_win
 FROM ufcstats_bouts AS t1
     LEFT JOIN cte4 AS t2 ON t1.event_id = t2.event_id
