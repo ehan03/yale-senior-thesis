@@ -15,7 +15,9 @@ class BacktestFramework:
         self.engine = create_engine(self.db_string)
 
     def create_backtest_data(self) -> None:
-        backtest_odds_path = os.path.join(self.data_dir, "backtest_odds.csv")
+        backtest_odds_path = os.path.join(
+            self.data_dir, "backtesting", "backtest_odds.csv"
+        )
         if not os.path.exists(backtest_odds_path):
             backtest_odds_query = """
             WITH cte1 AS 
