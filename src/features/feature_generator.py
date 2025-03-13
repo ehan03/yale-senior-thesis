@@ -12,10 +12,9 @@ import pandas as pd
 
 
 class FeatureGenerator:
-    def __init__(self, split_date: str = "2021-01-01"):
+    def __init__(self):
         self.data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data")
         self.db_path = os.path.join(self.data_dir, "ufc.db")
-        self.split_date = split_date
 
     def run_queries(self) -> List[pd.DataFrame]:
 
@@ -53,59 +52,20 @@ class FeatureGenerator:
 
         return merged_df
 
-    def create_train_test_split(
-        self, merged_df: pd.DataFrame
-    ) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        with sqlite3.connect(self.db_path) as conn:
-            train_indices = pd.read_sql(
-                """
-                SELECT id
-                FROM ufcstats_bouts
-                WHERE event_id IN (
-                        SELECT id
-                        FROM ufcstats_events
-                        WHERE is_ufc_event = 1
-                            AND date >= '2008-04-19'
-                            AND date < :split_date
-                    )
-                    AND red_outcome IN ('W', 'L')
-                    AND outcome_method != 'DQ';
-                """,
-                conn,
-                params={"split_date": self.split_date},
-            )["id"].values
+    def fill_na_diffs(self, merged_df: pd.DataFrame) -> pd.DataFrame:
+        for col in merged_df.columns:
+            if col.endswith("_diff"):
+                merged_df[col] = merged_df[col].fillna(0)
 
-            test_indices = pd.read_sql(
-                """
-                SELECT id
-                FROM ufcstats_bouts
-                WHERE event_id IN (
-                        SELECT id
-                        FROM ufcstats_events
-                        WHERE is_ufc_event = 1
-                            AND date >= :split_date
-                );
-                """,
-                conn,
-                params={"split_date": self.split_date},
-            )["id"].values
-
-        train_df = merged_df.loc[merged_df["id"].isin(train_indices)]
-        test_df = merged_df.loc[merged_df["id"].isin(test_indices)]
-
-        return train_df, test_df
+        return merged_df
 
     def __call__(self) -> None:
-        """
-        Run the feature generation process.
-        """
         df_list = self.run_queries()
         merged_df = self.merge_dataframes(df_list)
-        train_df, test_df = self.create_train_test_split(merged_df)
-
-        # Save the dataframes to CSV files
-        train_df.to_csv(os.path.join(self.data_dir, "train.csv"), index=False)
-        # test_df.to_csv(os.path.join(self.data_dir, "test.csv"), index=False)
+        merged_df = self.fill_na_diffs(merged_df)
+        merged_df.to_pickle(
+            os.path.join(self.data_dir, "features.pkl.xz"), compression="xz"
+        )
 
 
 if __name__ == "__main__":
