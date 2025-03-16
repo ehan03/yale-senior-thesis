@@ -13,7 +13,11 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 # third party imports
 import lightgbm as lgb
 import pandas as pd
-from sklearn.feature_selection import SelectKBest, mutual_info_classif
+from sklearn.feature_selection import (
+    SelectKBest,
+    VarianceThreshold,
+    mutual_info_classif,
+)
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
@@ -59,8 +63,7 @@ class ModelManager:
                     WHERE is_ufc_event = 1
                         AND date >= '2008-04-19'
                         AND date <= :cutoff_date
-                ) AND red_outcome IN ('W', 'L')
-                    AND outcome_method != 'DQ';
+                ) AND red_outcome IN ('W', 'L');
                 """,
                 conn,
                 params={
@@ -104,8 +107,7 @@ class ModelManager:
                 SELECT id
                 FROM ufcstats_bouts
                 WHERE event_id = :event_id
-                    AND red_outcome IN ('W', 'L')
-                    AND outcome_method != 'DQ';
+                    AND red_outcome IN ('W', 'L');
                 """,
                 conn,
                 params={
@@ -118,7 +120,7 @@ class ModelManager:
         return bout_ids
 
     def get_clf(self, model_name: str, best_params: dict):
-        mutual_info_func = partial(mutual_info_classif, random_state=42, n_jobs=-1)  # type: ignore
+        mutual_info_func = partial(mutual_info_classif, n_neighbors=5, random_state=42, n_jobs=-1)  # type: ignore
 
         if model_name in [
             "lr",
@@ -141,6 +143,7 @@ class ModelManager:
             if model_name.startswith("va_"):
                 clf = Pipeline(
                     steps=[
+                        ("var_threshold", VarianceThreshold(threshold=0.05)),
                         (
                             "mutual_info",
                             SelectKBest(
@@ -161,6 +164,7 @@ class ModelManager:
             else:
                 clf = Pipeline(
                     steps=[
+                        ("var_threshold", VarianceThreshold(threshold=0.05)),
                         (
                             "mutual_info",
                             SelectKBest(
@@ -195,6 +199,7 @@ class ModelManager:
             if model_name.startswith("va_"):
                 clf = Pipeline(
                     steps=[
+                        ("var_threshold", VarianceThreshold(threshold=0.05)),
                         (
                             "mutual_info",
                             SelectKBest(
@@ -215,6 +220,7 @@ class ModelManager:
             else:
                 clf = Pipeline(
                     steps=[
+                        ("var_threshold", VarianceThreshold(threshold=0.05)),
                         (
                             "mutual_info",
                             SelectKBest(

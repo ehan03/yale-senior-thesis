@@ -44,9 +44,13 @@ class HyperFeatureTuner:
             X_train_fold = X_train.iloc[train_idx]
             y_train_fold = y_train.iloc[train_idx]
 
+            var_threshold = VarianceThreshold(threshold=0.05)
+            X_train_fold = var_threshold.fit_transform(X_train_fold)
+
             mi_scores = mutual_info_classif(
                 X=X_train_fold,
                 y=y_train_fold,
+                n_neighbors=5,
                 random_state=42,
                 n_jobs=-1,  # type: ignore
             )
@@ -142,6 +146,9 @@ class HyperFeatureTuner:
                 )
                 X_val_fold, y_val_fold = X_train.iloc[val_idx], y_train.iloc[val_idx]
 
+                var_threshold = VarianceThreshold(threshold=0.05)
+                X_train_fold = var_threshold.fit_transform(X_train_fold)
+
                 mutual_info_func = partial(
                     fake_mutual_info_classif, fold_idx=fold_idx, mi_dict=mi_dict
                 )
@@ -151,6 +158,7 @@ class HyperFeatureTuner:
                 )
                 clf.fit(X_train_fold_selected, y_train_fold)
 
+                X_val_fold = var_threshold.transform(X_val_fold)
                 X_val_fold_selected = selector.transform(X_val_fold)
                 y_val_fold_pred = clf.predict_proba(X_val_fold_selected)
 
@@ -176,7 +184,7 @@ class HyperFeatureTuner:
 
         with warnings.catch_warnings():
             warnings.simplefilter(action="ignore", category=UserWarning)
-            study.optimize(objective_function, n_trials=500)  # type: ignore
+            study.optimize(objective_function, n_trials=200)  # type: ignore
 
         # Plot the optimization history and save it to a file
         opt_history = plot_optimization_history(study)
