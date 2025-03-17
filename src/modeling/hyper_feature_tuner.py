@@ -101,14 +101,15 @@ class HyperFeatureTuner:
                     "objective": "binary",
                     "metric": "binary_logloss",
                     "boosting_type": "gbdt",
+                    "learning_rate": 0.005,
                     "n_estimators": trial.suggest_int("n_estimators", 100, 1000),
-                    "num_leaves": trial.suggest_int("num_leaves", 8, 128),
-                    "max_depth": trial.suggest_int("max_depth", 3, 8),
-                    "min_child_samples": trial.suggest_int("min_child_samples", 5, 100),
-                    "min_child_weight": trial.suggest_float(
-                        "min_child_weight", 1e-3, 10.0, log=True
+                    "num_leaves": trial.suggest_int("num_leaves", 8, 32),
+                    "max_depth": trial.suggest_int("max_depth", 3, 6),
+                    "min_child_samples": trial.suggest_int(
+                        "min_child_samples", 100, 300
                     ),
                     "subsample": trial.suggest_float("subsample", 0.4, 1.0),
+                    "subsample_freq": trial.suggest_int("subsample_freq", 0, 10),
                     "colsample_bytree": trial.suggest_float(
                         "colsample_bytree", 0.4, 1.0
                     ),

@@ -184,12 +184,13 @@ class ModelManager:
                 "objective": "binary",
                 "metric": "binary_logloss",
                 "boosting_type": "gbdt",
+                "learning_rate": 0.005,
                 "n_estimators": best_params["n_estimators"],
                 "num_leaves": best_params["num_leaves"],
                 "max_depth": best_params["max_depth"],
                 "min_child_samples": best_params["min_child_samples"],
-                "min_child_weight": best_params["min_child_weight"],
                 "subsample": best_params["subsample"],
+                "subsample_freq": best_params["subsample_freq"],
                 "colsample_bytree": best_params["colsample_bytree"],
                 "reg_alpha": best_params["reg_alpha"],
                 "reg_lambda": best_params["reg_lambda"],
@@ -304,6 +305,11 @@ class ModelManager:
                     inference_df = inference_df.drop(columns=["id"])
 
                     X_inference = inference_df.drop(columns=["red_win"])
+
+                    if "no_odds" in model_name:
+                        X_inference = X_inference.drop(
+                            columns=["mean_devigged_opening_implied_prob_diff"]
+                        )
 
                     # Predict on the inference data
                     if model_name.startswith("va_"):
