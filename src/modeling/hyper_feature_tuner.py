@@ -193,6 +193,9 @@ class HyperFeatureTuner:
             # Suppress warnings from LightGBM
             warnings.simplefilter("ignore", category=UserWarning)
 
+            # Suppress warnings from Venn-Abers
+            warnings.simplefilter("ignore", category=RuntimeWarning)
+
             study.optimize(objective_function, n_trials=200)  # type: ignore
 
         # Plot the optimization history and save it to a file

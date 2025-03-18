@@ -245,6 +245,9 @@ class ModelManager:
             # Suppress warnings from LightGBM
             warnings.simplefilter("ignore", category=UserWarning)
 
+            # Suppress warnings from Venn-Abers
+            warnings.simplefilter("ignore", category=RuntimeWarning)
+
             for cutoff_year in range(self.initial_cutoff_year, 2024):
                 self.logger.info(f"Optimizing model on data up to end of {cutoff_year}")
 
