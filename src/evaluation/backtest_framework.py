@@ -63,7 +63,7 @@ class BacktestFramework:
                         ON ufcstats_events.id = event_mapping.ufcstats_id
                 WHERE
                     is_ufc_event = 1 
-                    AND date >= '2019-01-01' 
+                    AND date >= '2017-01-01' 
             ), 
             cte2 AS (
                 SELECT
