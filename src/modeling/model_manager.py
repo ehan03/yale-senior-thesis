@@ -21,10 +21,11 @@ from sklearn.feature_selection import (
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from venn_abers import VennAbersCalibrator
+
+from src.modeling.hyper_feature_tuner import HyperFeatureTuner
 
 # local imports
-from src.modeling.hyper_feature_tuner import HyperFeatureTuner
+from src.modeling.venn_abers import VennAbersCV
 
 
 class ModelManager:
@@ -152,10 +153,10 @@ class ModelManager:
                         ),
                         (
                             "estimator",
-                            VennAbersCalibrator(
+                            VennAbersCV(
                                 estimator=estimator,
-                                n_splits=5,
-                                random_state=42,
+                                n_splits=10,
+                                random_state=492,
                                 shuffle=True,
                             ),
                         ),
@@ -209,10 +210,10 @@ class ModelManager:
                         ),
                         (
                             "estimator",
-                            VennAbersCalibrator(
+                            VennAbersCV(
                                 estimator=estimator,
-                                n_splits=5,
-                                random_state=42,
+                                n_splits=10,
+                                random_state=492,
                                 shuffle=True,
                             ),
                         ),
@@ -241,6 +242,7 @@ class ModelManager:
         predictions = []
 
         with warnings.catch_warnings():
+            # Suppress warnings from LightGBM
             warnings.simplefilter("ignore", category=UserWarning)
 
             for cutoff_year in range(self.initial_cutoff_year, 2024):
@@ -292,8 +294,8 @@ class ModelManager:
                         f"Refitting model and predicting for event {event_id}"
                     )
 
-                    # Train on all bouts (that ended in a win or loss and not from DQ) prior to the event
-                    clf.fit(X_train, y_train)
+                    # Train on all bouts (that ended in a win or loss) prior to the event
+                    clf.fit(X_train, y_train.to_numpy(copy=True))
 
                     # Bout ids to predict on
                     bout_ids_to_predict = meta_df.loc[

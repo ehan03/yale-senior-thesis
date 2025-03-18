@@ -1,7 +1,10 @@
 # standard library imports
 import os
+import sys
 import warnings
 from functools import partial
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 # third party imports
 import lightgbm as lgb
@@ -19,9 +22,9 @@ from sklearn.metrics import log_loss
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from venn_abers import VennAbersCalibrator
 
 # local imports
+from src.modeling.venn_abers import VennAbersCV
 
 
 class HyperFeatureTuner:
@@ -83,10 +86,10 @@ class HyperFeatureTuner:
                     ]
                 )
                 if self.model_name.startswith("va_"):
-                    clf = VennAbersCalibrator(
+                    clf = VennAbersCV(
                         estimator=estimator,
-                        n_splits=5,
-                        random_state=42,
+                        n_splits=10,
+                        random_state=492,
                         shuffle=True,
                     )
                 else:
@@ -121,10 +124,10 @@ class HyperFeatureTuner:
                 }
                 estimator = lgb.LGBMClassifier(verbosity=-1, **params)
                 if self.model_name.startswith("va_"):
-                    clf = VennAbersCalibrator(
+                    clf = VennAbersCV(
                         estimator=estimator,
-                        n_splits=5,
-                        random_state=42,
+                        n_splits=10,
+                        random_state=492,
                         shuffle=True,
                     )
                 else:
@@ -132,7 +135,7 @@ class HyperFeatureTuner:
             else:
                 raise ValueError(f"Model {self.model_name} not recognized.")
 
-            # Create dummy mutual information function that just returns
+            # Create dummy mutual information function that just returns precomputed scores
             # Thank you sklearn for not caching the results of mutual_info_classif (sarcasm)
             def fake_mutual_info_classif(X, y, fold_idx, mi_dict):
                 return mi_dict[fold_idx]
@@ -142,10 +145,13 @@ class HyperFeatureTuner:
                 self.cv.split(X_train, y_train)
             ):
                 X_train_fold, y_train_fold = (
-                    X_train.iloc[train_idx],
-                    y_train.iloc[train_idx],
+                    X_train.iloc[train_idx].to_numpy(),
+                    y_train.iloc[train_idx].to_numpy(),
                 )
-                X_val_fold, y_val_fold = X_train.iloc[val_idx], y_train.iloc[val_idx]
+                X_val_fold, y_val_fold = (
+                    X_train.iloc[val_idx].to_numpy(),
+                    y_train.iloc[val_idx].to_numpy(),
+                )
 
                 var_threshold = VarianceThreshold(threshold=0.05)
                 X_train_fold = var_threshold.fit_transform(X_train_fold)
@@ -184,7 +190,9 @@ class HyperFeatureTuner:
         study = optuna.create_study(direction="minimize", sampler=sampler)
 
         with warnings.catch_warnings():
-            warnings.simplefilter(action="ignore", category=UserWarning)
+            # Suppress warnings from LightGBM
+            warnings.simplefilter("ignore", category=UserWarning)
+
             study.optimize(objective_function, n_trials=200)  # type: ignore
 
         # Plot the optimization history and save it to a file
