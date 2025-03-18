@@ -29,7 +29,7 @@ from src.modeling.venn_abers import VennAbersCV
 
 
 class ModelManager:
-    def __init__(self, initial_cutoff_year: int = 2018) -> None:
+    def __init__(self, initial_cutoff_year: int = 2016) -> None:
         self.initial_cutoff_year = initial_cutoff_year
         self.model_names = [
             "lr",  # Logistic regression

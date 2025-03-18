@@ -206,7 +206,8 @@ class HyperFeatureTuner:
             "..",
             "figures",
             "optuna_optimization_history",
-            f"{self.model_name}_{self.training_cutoff_year}.png",
+            self.model_name,
+            f"cutoff_{self.training_cutoff_year}.png",
         )
         opt_history.write_image(fig_path)
 
