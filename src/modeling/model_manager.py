@@ -389,18 +389,19 @@ class ModelManager:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python model_manager.py <model_name>")
-        sys.exit(1)
-
     logging.basicConfig(level=logging.INFO)
 
-    model_name = sys.argv[1]
-    model_manager = ModelManager()
-    model_manager(model_name)
-    print(f"Completed training and inference for model {model_name}")
-    sys.exit(0)
-    model_manager = ModelManager()
-    model_manager(model_name)
-    print(f"Completed training and inference for model {model_name}")
-    sys.exit(0)
+    model_names = [
+        "lr",
+        "lr_no_odds",
+        "va_lr",
+        "va_lr_no_odds",
+        "lightgbm",
+        "lightgbm_no_odds",
+        "va_lightgbm",
+        "va_lightgbm_no_odds",
+    ]
+
+    model_manager = ModelManager(initial_cutoff_year=2016)
+    for model_name in model_names:
+        model_manager(model_name)

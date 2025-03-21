@@ -1,11 +1,15 @@
 # standard library imports
 import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 # third party imports
 import pandas as pd
 from sqlalchemy import create_engine
 
 # local imports
+from src.betting import DistributionalRobustKelly, NaiveKelly
 
 
 class BacktestFramework:
