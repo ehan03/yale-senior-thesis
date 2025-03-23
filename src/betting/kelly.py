@@ -6,6 +6,7 @@ from typing import Tuple
 # third party imports
 import cvxpy as cp
 import numpy as np
+import scipy.sparse as sp
 
 # local imports
 
@@ -15,17 +16,9 @@ class BaseKelly:
         self,
         red_odds: np.ndarray,
         blue_odds: np.ndarray,
-        current_bankroll: float,
-        fraction: float,
-        min_bet: float,
     ) -> None:
         self.red_odds = red_odds
         self.blue_odds = blue_odds
-        self.current_bankroll = current_bankroll
-
-        assert 0 < fraction <= 1
-        self.fraction = fraction
-        self.min_bet = min_bet
 
         assert len(red_odds) == len(blue_odds)
         self.n = len(red_odds)
@@ -51,28 +44,23 @@ class BaseKelly:
         raise NotImplementedError
 
     def __call__(self) -> Tuple[np.ndarray, np.ndarray]:
-        fractions = self.calculate_optimal_wagers()
-        wagers = self.fraction * self.current_bankroll * fractions[:-1]
-        wagers_rounded = np.round(wagers, 2)
-        wagers_clipped = np.where(wagers_rounded < self.min_bet, 0, wagers_rounded)
+        proportions = self.calculate_optimal_wagers()
+        proportions = np.where(proportions < 1e-6, 0, proportions)
+        proportions = proportions[:-1]
+        red_proportions, blue_proportions = proportions[::2], proportions[1::2]
 
-        red_wagers, blue_wagers = wagers_clipped[::2], wagers_clipped[1::2]
-
-        return red_wagers, blue_wagers
+        return red_proportions, blue_proportions
 
 
-class NaiveKelly(BaseKelly):
+class SimultaneousKelly(BaseKelly):
     def __init__(
         self,
         red_probs: np.ndarray,
         blue_probs: np.ndarray,
         red_odds: np.ndarray,
         blue_odds: np.ndarray,
-        current_bankroll: float,
-        fraction: float,
-        min_bet: float,
     ) -> None:
-        super().__init__(red_odds, blue_odds, current_bankroll, fraction, min_bet)
+        super().__init__(red_odds, blue_odds)
 
         self.red_probs = red_probs
         self.blue_probs = blue_probs
@@ -114,17 +102,14 @@ class DistributionalRobustKelly(BaseKelly):
         p0_p1: np.ndarray,
         red_odds: np.ndarray,
         blue_odds: np.ndarray,
-        current_bankroll: float,
-        fraction: float,
-        min_bet: float,
     ) -> None:
-        super().__init__(red_odds, blue_odds, current_bankroll, fraction, min_bet)
+        super().__init__(red_odds, blue_odds)
 
         self.p0_p1 = p0_p1
 
-    def get_inequality_constraints(self) -> Tuple[np.ndarray, np.ndarray]:
-        id_ = np.identity(self.variations.shape[0])
-        A = np.vstack((-id_, id_))
+    def get_inequality_constraints(self) -> Tuple:
+        id_ = sp.identity(self.variations.shape[0], format="csr")
+        A = sp.vstack((-id_, id_), format="csr")
 
         pi_l = np.ones(self.variations.shape[0])
         for j in range(self.n):

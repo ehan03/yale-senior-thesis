@@ -1,1 +1,1 @@
-from .kelly import BaseKelly, DistributionalRobustKelly, NaiveKelly
+from .kelly import BaseKelly, DistributionalRobustKelly, SimultaneousKelly
