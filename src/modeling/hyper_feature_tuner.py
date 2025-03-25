@@ -102,7 +102,6 @@ class HyperFeatureTuner:
             ]:
                 params = {
                     "objective": "binary",
-                    "metric": "binary_logloss",
                     "boosting_type": "gbdt",
                     "learning_rate": 0.005,
                     "n_estimators": trial.suggest_int("n_estimators", 100, 1000),

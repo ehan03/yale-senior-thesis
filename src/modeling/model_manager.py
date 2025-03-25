@@ -183,7 +183,6 @@ class ModelManager:
         ]:
             params = {
                 "objective": "binary",
-                "metric": "binary_logloss",
                 "boosting_type": "gbdt",
                 "learning_rate": 0.005,
                 "n_estimators": best_params["n_estimators"],
