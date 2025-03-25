@@ -232,53 +232,71 @@ class BetSimulator:
                     cte8
                 WHERE
                     rn = 1
+            ),
+            cte10 AS (
+                SELECT
+                    bout_id,
+                    cte1.event_id,
+                    date,
+                    CASE
+                        WHEN red_mapping1.odds IS NOT NULL AND blue_mapping1.odds IS NOT NULL THEN 'Bovada'
+                        WHEN red_mapping2.odds IS NOT NULL AND blue_mapping2.odds IS NOT NULL THEN 'Pinnacle Sports'
+                        ELSE 'BetOnline'
+                    END AS sportsbook,
+                    CASE
+                        WHEN red_mapping1.odds IS NOT NULL AND blue_mapping1.odds IS NOT NULL THEN red_mapping1.odds
+                        WHEN red_mapping2.odds IS NOT NULL AND blue_mapping2.odds IS NOT NULL THEN red_mapping2.odds
+                        ELSE red_mapping3.odds
+                    END AS red_odds,
+                    CASE
+                        WHEN blue_mapping1.odds IS NOT NULL AND red_mapping1.odds IS NOT NULL THEN blue_mapping1.odds
+                        WHEN blue_mapping2.odds IS NOT NULL AND red_mapping2.odds IS NOT NULL THEN blue_mapping2.odds
+                        ELSE blue_mapping3.odds
+                    END AS blue_odds,
+                    red_win
+                FROM
+                    cte1  
+                    LEFT JOIN
+                        cte4 AS red_mapping1 
+                        ON cte1.fightoddsio_bout_id = red_mapping1.fightoddsio_bout_id 
+                        AND cte1.red_fighter_id = red_mapping1.fightoddsio_fighter_id 
+                    LEFT JOIN
+                        cte4 AS blue_mapping1 
+                        ON cte1.fightoddsio_bout_id = blue_mapping1.fightoddsio_bout_id 
+                        AND cte1.blue_fighter_id = blue_mapping1.fightoddsio_fighter_id
+                    LEFT JOIN
+                        cte7 AS red_mapping2
+                        ON cte1.fightoddsio_bout_id = red_mapping2.fightoddsio_bout_id
+                        AND cte1.red_fighter_id = red_mapping2.fightoddsio_fighter_id
+                    LEFT JOIN
+                        cte7 AS blue_mapping2
+                        ON cte1.fightoddsio_bout_id = blue_mapping2.fightoddsio_bout_id
+                        AND cte1.blue_fighter_id = blue_mapping2.fightoddsio_fighter_id
+                    LEFT JOIN
+                        cte9 AS red_mapping3
+                        ON cte1.bestfightodds_event_id = red_mapping3.event_id
+                        AND cte1.bestfightodds_red_fighter_id = red_mapping3.fighter_id
+                    LEFT JOIN
+                        cte9 AS blue_mapping3
+                        ON cte1.bestfightodds_event_id = blue_mapping3.event_id
+                        AND cte1.bestfightodds_blue_fighter_id = blue_mapping3.fighter_id
             )
             SELECT
                 bout_id,
-                cte1.event_id,
+                event_id,
                 date,
+                sportsbook,
                 CASE
-                    WHEN red_mapping1.odds IS NOT NULL AND blue_mapping1.odds IS NOT NULL THEN 'Bovada'
-                    WHEN red_mapping2.odds IS NOT NULL AND blue_mapping2.odds IS NOT NULL THEN 'Pinnacle Sports'
-                    ELSE 'BetOnline'
-                END AS sportsbook,
-                CASE
-                    WHEN red_mapping1.odds IS NOT NULL AND blue_mapping1.odds IS NOT NULL THEN red_mapping1.odds
-                    WHEN red_mapping2.odds IS NOT NULL AND blue_mapping2.odds IS NOT NULL THEN red_mapping2.odds
-                    ELSE red_mapping3.odds
+                    WHEN bout_id IN ('1218cba28d4dce94', '0febad4c4a3d69fc') THEN blue_odds
+                    ELSE red_odds
                 END AS red_odds,
                 CASE
-                    WHEN blue_mapping1.odds IS NOT NULL AND red_mapping1.odds IS NOT NULL THEN blue_mapping1.odds
-                    WHEN blue_mapping2.odds IS NOT NULL AND red_mapping2.odds IS NOT NULL THEN blue_mapping2.odds
-                    ELSE blue_mapping3.odds
+                    WHEN bout_id IN ('1218cba28d4dce94', '0febad4c4a3d69fc') THEN red_odds
+                    ELSE blue_odds
                 END AS blue_odds,
                 red_win
             FROM
-                cte1  
-                LEFT JOIN
-                    cte4 AS red_mapping1 
-                    ON cte1.fightoddsio_bout_id = red_mapping1.fightoddsio_bout_id 
-                    AND cte1.red_fighter_id = red_mapping1.fightoddsio_fighter_id 
-                LEFT JOIN
-                    cte4 AS blue_mapping1 
-                    ON cte1.fightoddsio_bout_id = blue_mapping1.fightoddsio_bout_id 
-                    AND cte1.blue_fighter_id = blue_mapping1.fightoddsio_fighter_id
-                LEFT JOIN
-                    cte7 AS red_mapping2
-                    ON cte1.fightoddsio_bout_id = red_mapping2.fightoddsio_bout_id
-                    AND cte1.red_fighter_id = red_mapping2.fightoddsio_fighter_id
-                LEFT JOIN
-                    cte7 AS blue_mapping2
-                    ON cte1.fightoddsio_bout_id = blue_mapping2.fightoddsio_bout_id
-                    AND cte1.blue_fighter_id = blue_mapping2.fightoddsio_fighter_id
-                LEFT JOIN
-                    cte9 AS red_mapping3
-                    ON cte1.bestfightodds_event_id = red_mapping3.event_id
-                    AND cte1.bestfightodds_red_fighter_id = red_mapping3.fighter_id
-                LEFT JOIN
-                    cte9 AS blue_mapping3
-                    ON cte1.bestfightodds_event_id = blue_mapping3.event_id
-                    AND cte1.bestfightodds_blue_fighter_id = blue_mapping3.fighter_id;
+                cte10;
             """
 
             backtest_odds = pd.read_sql(backtest_odds_query, self.engine)
@@ -356,7 +374,20 @@ class BetSimulator:
 
 
 if __name__ == "__main__":
-    model_name = sys.argv[1]
-    strategy = sys.argv[2]
-    bet_simulator = BetSimulator(model_name, strategy)
-    bet_simulator()
+    model_names = [
+        "lr",
+        "lr_no_odds",
+        "va_lr",
+        "va_lr_no_odds",
+        "lightgbm",
+        "lightgbm_no_odds",
+        "va_lightgbm",
+        "va_lightgbm_no_odds",
+    ]
+    for model_name in model_names:
+        bet_simulator = BetSimulator(model_name, "simultaneous")
+        bet_simulator()
+
+        if model_name.startswith("va_"):
+            bet_simulator = BetSimulator(model_name, "distributional_robust")
+            bet_simulator()

@@ -83,7 +83,20 @@ class BacktestFramework:
 
 
 if __name__ == "__main__":
-    model_name = sys.argv[1]
-    strategy = sys.argv[2]
-    backtest_framework = BacktestFramework(model_name, strategy)
-    backtest_framework.run_backtests()
+    model_names = [
+        "lr",
+        "lr_no_odds",
+        "va_lr",
+        "va_lr_no_odds",
+        "lightgbm",
+        "lightgbm_no_odds",
+        "va_lightgbm",
+        "va_lightgbm_no_odds",
+    ]
+    for model_name in model_names:
+        backtest_framework = BacktestFramework(model_name, "simultaneous")
+        backtest_framework.run_backtests()
+
+        if model_name.startswith("va_"):
+            backtest_framework = BacktestFramework(model_name, "distributional_robust")
+            backtest_framework.run_backtests()
