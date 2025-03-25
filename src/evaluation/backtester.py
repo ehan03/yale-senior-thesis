@@ -72,17 +72,6 @@ class Backtester:
             n_bets = np.count_nonzero(red_wagers) + np.count_nonzero(blue_wagers)
             total_wagered = np.round(np.sum(red_wagers) + np.sum(blue_wagers), 2)
 
-            if total_wagered > current_bankroll:
-                backtest_results.append(
-                    {
-                        "event_id": event_id,
-                        "bankroll": current_bankroll,
-                        "cumulative_bets": cumulative_bets,
-                        "cumulative_wagered": cumulative_wagered,
-                        "cumulative_return": cumulative_return,
-                    }
-                )
-
             total_return = self.calculate_return(
                 red_wagers=red_wagers,
                 blue_wagers=blue_wagers,
