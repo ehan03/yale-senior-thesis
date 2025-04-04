@@ -286,12 +286,29 @@ class BetSimulator:
                 event_id,
                 date,
                 sportsbook,
+                -- need to swap odds for a few edge cases where FightOdds.io is wrong
                 CASE
-                    WHEN bout_id IN ('1218cba28d4dce94', '0febad4c4a3d69fc') THEN blue_odds
+                    WHEN bout_id IN (
+                        '1218cba28d4dce94', 
+                        '0febad4c4a3d69fc', 
+                        '65c1ca715dfdbe05',
+                        '3812b265afd78186',
+                        'a5acaa5f693529dd',
+                        'e1bd72aba46f46a1',
+                        'fedb6a1b15b05694'
+                    ) THEN blue_odds
                     ELSE red_odds
                 END AS red_odds,
                 CASE
-                    WHEN bout_id IN ('1218cba28d4dce94', '0febad4c4a3d69fc') THEN red_odds
+                    WHEN bout_id IN (
+                        '1218cba28d4dce94', 
+                        '0febad4c4a3d69fc', 
+                        '65c1ca715dfdbe05',
+                        '3812b265afd78186',
+                        'a5acaa5f693529dd',
+                        'e1bd72aba46f46a1',
+                        'fedb6a1b15b05694'
+                    ) THEN red_odds
                     ELSE blue_odds
                 END AS blue_odds,
                 red_win
