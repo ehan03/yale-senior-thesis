@@ -34,11 +34,14 @@ class HyperFeatureTuner:
         X_train: pd.DataFrame,
         y_train: pd.Series,
         training_cutoff_year: int,
+        case_study: bool,
     ) -> None:
         self.model_name = model_name
         self.X_train = X_train
         self.y_train = y_train
         self.training_cutoff_year = training_cutoff_year
+        self.case_study = case_study
+
         self.cv = StratifiedKFold(n_splits=10, shuffle=True, random_state=42)
 
     def pre_compute_mutual_info(self, X_train: pd.DataFrame, y_train: pd.Series):
@@ -199,15 +202,29 @@ class HyperFeatureTuner:
 
         # Plot the optimization history and save it to a file
         opt_history = plot_optimization_history(study)
-        fig_path = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)),
-            "..",
-            "..",
-            "figures",
-            "optuna_optimization_history",
-            self.model_name,
-            f"cutoff_{self.training_cutoff_year}.png",
-        )
+
+        if not self.case_study:
+            fig_path = os.path.join(
+                os.path.dirname(os.path.abspath(__file__)),
+                "..",
+                "..",
+                "figures",
+                "optuna_optimization_history",
+                self.model_name,
+                f"cutoff_{self.training_cutoff_year}.png",
+            )
+        else:
+            fig_path = os.path.join(
+                os.path.dirname(os.path.abspath(__file__)),
+                "..",
+                "..",
+                "figures",
+                "optuna_optimization_history",
+                self.model_name,
+                "case_study",
+                f"cutoff_{self.training_cutoff_year}.png",
+            )
+
         opt_history.write_image(fig_path)
 
         return study.best_params, study.best_value

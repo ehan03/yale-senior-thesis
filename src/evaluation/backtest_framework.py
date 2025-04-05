@@ -13,25 +13,44 @@ from src.evaluation.monte_carlo import MonteCarloSimulator
 
 
 class BacktestFramework:
-    def __init__(self, model_name: str, strategy: str) -> None:
+    def __init__(
+        self, model_name: str, strategy: str, case_study: bool = False
+    ) -> None:
         self.model_name = model_name
         self.strategy = strategy
+        self.case_study = case_study
+
         self.model_files_path = os.path.join(
             os.path.dirname(__file__), "..", "..", "model_files"
         )
         self.data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data")
 
     def construct_bet_info_df(self) -> pd.DataFrame:
-        bet_proportions_df = pd.read_csv(
-            os.path.join(
-                self.model_files_path,
-                self.model_name,
-                f"kelly_{self.strategy}_bet_proportions.csv",
+        if not self.case_study:
+            bet_proportions_df = pd.read_csv(
+                os.path.join(
+                    self.model_files_path,
+                    self.model_name,
+                    f"kelly_{self.strategy}_bet_proportions.csv",
+                )
             )
-        )
-        backtest_odds_df = pd.read_csv(
-            os.path.join(self.data_dir, "backtesting", "backtest_odds.csv")
-        )
+            backtest_odds_df = pd.read_csv(
+                os.path.join(self.data_dir, "backtesting", "backtest_odds.csv")
+            )
+        else:
+            bet_proportions_df = pd.read_csv(
+                os.path.join(
+                    self.model_files_path,
+                    self.model_name,
+                    "case_study",
+                    f"kelly_{self.strategy}_bet_proportions.csv",
+                )
+            )
+            backtest_odds_df = pd.read_csv(
+                os.path.join(
+                    self.data_dir, "backtesting", "backtest_odds_case_study.csv"
+                )
+            )
 
         # Convert American to decimal
         backtest_odds_df["red_odds"] = backtest_odds_df["red_odds"].apply(
@@ -58,28 +77,50 @@ class BacktestFramework:
             )
             results_df = backtester.run()
 
-            results_df.to_csv(
-                os.path.join(
-                    self.model_files_path,
-                    self.model_name,
-                    f"backtest_actual_{self.strategy}_{kelly_fraction}.csv",
-                ),
-                index=False,
-            )
+            if not self.case_study:
+                results_df.to_csv(
+                    os.path.join(
+                        self.model_files_path,
+                        self.model_name,
+                        f"backtest_actual_{self.strategy}_{kelly_fraction}.csv",
+                    ),
+                    index=False,
+                )
+            else:
+                results_df.to_csv(
+                    os.path.join(
+                        self.model_files_path,
+                        self.model_name,
+                        "case_study",
+                        f"backtest_actual_{self.strategy}_{kelly_fraction}.csv",
+                    ),
+                    index=False,
+                )
 
             mc_simulator = MonteCarloSimulator(
                 bet_info_df=bet_info_df, kelly_fraction=kelly_fraction
             )
             mc_results_df = mc_simulator.run_mc_simulations()
 
-            mc_results_df.to_csv(
-                os.path.join(
-                    self.model_files_path,
-                    self.model_name,
-                    f"backtest_mc_{self.strategy}_{kelly_fraction}.csv",
-                ),
-                index=False,
-            )
+            if not self.case_study:
+                mc_results_df.to_csv(
+                    os.path.join(
+                        self.model_files_path,
+                        self.model_name,
+                        f"backtest_mc_{self.strategy}_{kelly_fraction}.csv",
+                    ),
+                    index=False,
+                )
+            else:
+                mc_results_df.to_csv(
+                    os.path.join(
+                        self.model_files_path,
+                        self.model_name,
+                        "case_study",
+                        f"backtest_mc_{self.strategy}_{kelly_fraction}.csv",
+                    ),
+                    index=False,
+                )
 
 
 if __name__ == "__main__":
@@ -100,3 +141,7 @@ if __name__ == "__main__":
         if model_name.startswith("va_"):
             backtest_framework = BacktestFramework(model_name, "distributional_robust")
             backtest_framework.run_backtests()
+
+    # Case study for logistic regression only
+    backtest_framework_case_study = BacktestFramework("lr", "simultaneous", True)
+    backtest_framework_case_study.run_backtests()

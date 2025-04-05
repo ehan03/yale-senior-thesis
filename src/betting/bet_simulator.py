@@ -15,7 +15,9 @@ from src.betting.kelly import DistributionalRobustKelly, SimultaneousKelly
 
 
 class BetSimulator:
-    def __init__(self, model_name: str, strategy: str):
+    def __init__(
+        self, model_name: str, strategy: str, case_study: bool = False
+    ) -> None:
         if model_name not in [
             "lr",
             "lr_no_odds",
@@ -37,14 +39,20 @@ class BetSimulator:
 
         self.model_name = model_name
         self.strategy = strategy
+        self.case_study = case_study
 
         self.data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data")
         self.db_string = f"sqlite:///{os.path.join(self.data_dir, 'ufc.db')}"
         self.engine = create_engine(self.db_string)
 
-        self.backtest_odds_path = os.path.join(
-            self.data_dir, "backtesting", "backtest_odds.csv"
-        )
+        if not self.case_study:
+            self.backtest_odds_path = os.path.join(
+                self.data_dir, "backtesting", "backtest_odds.csv"
+            )
+        else:
+            self.backtest_odds_path = os.path.join(
+                self.data_dir, "backtesting", "backtest_odds_case_study.csv"
+            )
 
         self.model_files_path = os.path.join(
             os.path.dirname(__file__), "..", "..", "model_files"
@@ -325,9 +333,20 @@ class BetSimulator:
 
     def calculate_kelly_proportions(self) -> None:
         backtest_odds = pd.read_csv(self.backtest_odds_path)
-        model_preds = pd.read_csv(
-            os.path.join(self.model_files_path, self.model_name, "predictions.csv")
-        )
+
+        if not self.case_study:
+            model_preds = pd.read_csv(
+                os.path.join(self.model_files_path, self.model_name, "predictions.csv")
+            )
+        else:
+            model_preds = pd.read_csv(
+                os.path.join(
+                    self.model_files_path,
+                    self.model_name,
+                    "case_study",
+                    "predictions.csv",
+                )
+            )
 
         assert backtest_odds["bout_id"].equals(
             model_preds["bout_id"]
@@ -376,14 +395,26 @@ class BetSimulator:
                 )
 
         bet_props_df = pd.DataFrame(bet_props)
-        bet_props_df.to_csv(
-            os.path.join(
-                self.model_files_path,
-                self.model_name,
-                f"kelly_{self.strategy}_bet_proportions.csv",
-            ),
-            index=False,
-        )
+
+        if not self.case_study:
+            bet_props_df.to_csv(
+                os.path.join(
+                    self.model_files_path,
+                    self.model_name,
+                    f"kelly_{self.strategy}_bet_proportions.csv",
+                ),
+                index=False,
+            )
+        else:
+            bet_props_df.to_csv(
+                os.path.join(
+                    self.model_files_path,
+                    self.model_name,
+                    "case_study",
+                    f"kelly_{self.strategy}_bet_proportions.csv",
+                ),
+                index=False,
+            )
 
     def __call__(self) -> None:
         self.get_historical_odds()
@@ -408,3 +439,7 @@ if __name__ == "__main__":
         if model_name.startswith("va_"):
             bet_simulator = BetSimulator(model_name, "distributional_robust")
             bet_simulator()
+
+    # Case study for logistic regression only
+    bet_simulator_case_study = BetSimulator("lr", "simultaneous", case_study=True)
+    bet_simulator_case_study()

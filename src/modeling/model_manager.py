@@ -50,9 +50,17 @@ class ModelManager:
         )
         self.data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data")
         self.db_path = os.path.join(self.data_dir, "ufc.db")
-        self.features_df = pd.read_pickle(
-            os.path.join(self.data_dir, "features.pkl.xz"), compression="xz"
-        )
+
+        if not case_study:
+            self.features_df = pd.read_pickle(
+                os.path.join(self.data_dir, "features.pkl.xz"), compression="xz"
+            )
+        else:
+            self.features_df = pd.read_pickle(
+                os.path.join(self.data_dir, "features_case_study.pkl.xz"),
+                compression="xz",
+            )
+
         self.logger = logging.getLogger("model_manager")
         self.logger.info("ModelManager initialized")
 
@@ -275,6 +283,7 @@ class ModelManager:
                     X_train=X_train,
                     y_train=y_train,
                     training_cutoff_year=cutoff_year,
+                    case_study=self.case_study,
                 )
                 best_params, best_score = (
                     tuner.optimize_hyperparameters_and_select_features()
@@ -307,6 +316,10 @@ class ModelManager:
                     bout_ids_to_predict = meta_df.loc[
                         meta_df["event_id"] == event_id, "bout_id"
                     ]
+                    bout_ids_to_predict = self.features_df.loc[
+                        self.features_df["id"].isin(bout_ids_to_predict), "id"
+                    ].tolist()
+
                     inference_df: pd.DataFrame = self.features_df.loc[
                         self.features_df["id"].isin(bout_ids_to_predict)
                     ]
@@ -368,17 +381,39 @@ class ModelManager:
         tuning_results_df["best_params"] = tuning_results_df["best_params"].apply(
             lambda x: json.dumps(x)
         )
-        tuning_results_df.to_csv(
-            os.path.join(self.model_files_path, model_name, "tuning_results.csv"),
-            index=False,
-        )
+        if not self.case_study:
+            tuning_results_df.to_csv(
+                os.path.join(self.model_files_path, model_name, "tuning_results.csv"),
+                index=False,
+            )
+        else:
+            tuning_results_df.to_csv(
+                os.path.join(
+                    self.model_files_path,
+                    model_name,
+                    "case_study",
+                    "tuning_results.csv",
+                ),
+                index=False,
+            )
 
         # Save predictions to CSV
         predictions_df = pd.concat(predictions, ignore_index=True)
-        predictions_df.to_csv(
-            os.path.join(self.model_files_path, model_name, "predictions.csv"),
-            index=False,
-        )
+        if not self.case_study:
+            predictions_df.to_csv(
+                os.path.join(self.model_files_path, model_name, "predictions.csv"),
+                index=False,
+            )
+        else:
+            predictions_df.to_csv(
+                os.path.join(
+                    self.model_files_path,
+                    model_name,
+                    "case_study",
+                    "predictions.csv",
+                ),
+                index=False,
+            )
 
         self.logger.info(f"Process completed for model {model_name}")
 
@@ -408,3 +443,7 @@ if __name__ == "__main__":
     model_manager = ModelManager(initial_cutoff_year=2016)
     for model_name in model_names:
         model_manager(model_name)
+
+    # Case study for logistic regression only
+    model_manager_case_study = ModelManager(initial_cutoff_year=2016, case_study=True)
+    model_manager_case_study("lr")
