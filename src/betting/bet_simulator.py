@@ -326,6 +326,20 @@ class BetSimulator:
 
             backtest_odds = pd.read_sql(backtest_odds_query, self.engine)
             backtest_odds["red_win"] = backtest_odds["red_win"].astype("Int64")
+
+            if self.case_study:
+                features_case_study = pd.read_pickle(
+                    os.path.join(self.data_dir, "features_case_study.pkl.xz"),
+                    compression="xz",
+                )
+                backtest_odds = (
+                    backtest_odds.loc[
+                        backtest_odds["bout_id"].isin(features_case_study["id"])
+                    ]
+                    .copy()
+                    .reset_index(drop=True)
+                )
+
             backtest_odds.to_csv(self.backtest_odds_path, index=False)
 
     def convert_american_to_decimal(self, odds: np.ndarray) -> np.ndarray:

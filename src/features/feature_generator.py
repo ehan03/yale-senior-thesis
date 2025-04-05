@@ -59,12 +59,55 @@ class FeatureGenerator:
 
         return merged_df
 
+    def get_bout_ids_both_experienced(self) -> List[str]:
+        query = """
+        WITH cte1 AS (
+            SELECT fighter_id, t1.'order', bout_id FROM ufcstats_fighter_histories t1
+            INNER JOIN bout_mapping t2 ON t1.bout_id = t2.ufcstats_id
+        ),
+        cte2 AS (
+            SELECT fighter_id, bout_id, ROW_NUMBER() OVER (PARTITION BY fighter_id ORDER BY t1.'order') AS ufc_order FROM cte1 t1
+        ),
+        cte3 AS (
+            SELECT
+                id,
+                t3.ufc_order AS red_ufc_order,
+                t4.ufc_order AS blue_ufc_order
+            FROM ufcstats_bouts t1
+            INNER JOIN bout_mapping t2 ON t1.id = t2.ufcstats_id
+            LEFT JOIN cte2 t3 ON t1.id = t3.bout_id AND t1.red_fighter_id = t3.fighter_id
+            LEFT JOIN cte2 t4 ON t1.id = t4.bout_id AND t1.blue_fighter_id = t4.fighter_id
+        )
+        SELECT id FROM cte3 WHERE
+            red_ufc_order > 1 AND blue_ufc_order > 1
+        """
+
+        with sqlite3.connect(self.db_path) as conn:
+            query_res = pd.read_sql_query(query, conn)
+        exp_level_bout_ids = query_res["id"].tolist()
+
+        return exp_level_bout_ids
+
     def __call__(self) -> None:
         df_list = self.run_queries()
         merged_df = self.merge_dataframes(df_list)
         merged_df = self.fill_na_diffs(merged_df)
         merged_df.to_pickle(
             os.path.join(self.data_dir, "features.pkl.xz"), compression="xz"
+        )
+
+        # Case study subset
+        exp_level_bout_ids = self.get_bout_ids_both_experienced()
+        merged_case_study = (
+            merged_df.loc[
+                (merged_df["id"].isin(exp_level_bout_ids))
+                & (merged_df["is_female"] == 0)
+            ]
+            .copy()
+            .reset_index(drop=True)
+        )
+        merged_case_study.to_pickle(
+            os.path.join(self.data_dir, "features_case_study.pkl.xz"), compression="xz"
         )
 
 
