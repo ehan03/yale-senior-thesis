@@ -29,8 +29,12 @@ from src.modeling.venn_abers import VennAbersCV
 
 
 class ModelManager:
-    def __init__(self, initial_cutoff_year: int = 2016) -> None:
+    def __init__(
+        self, initial_cutoff_year: int = 2016, case_study: bool = False
+    ) -> None:
         self.initial_cutoff_year = initial_cutoff_year
+        self.case_study = case_study
+
         self.model_names = [
             "lr",  # Logistic regression
             "lr_no_odds",  # Logistic regression without opening odds feature
