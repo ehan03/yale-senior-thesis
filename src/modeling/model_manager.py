@@ -22,9 +22,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-from src.modeling.hyper_feature_tuner import HyperFeatureTuner
-
 # local imports
+from src.modeling.hyper_feature_tuner import HyperFeatureTuner
 from src.modeling.venn_abers import VennAbersCV
 
 

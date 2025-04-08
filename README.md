@@ -9,7 +9,7 @@ This repository contains the code and data used for my senior thesis at Yale Uni
 
 ## Abstract
 
-TODO: Draft abstract
+The rise of sports betting has led to increased interest in developing data-driven strategies for identifying market inefficiencies. While predictive modeling for sports betting is well studied in team-based sports, individual combat sports such as mixed martial arts (MMA) present unique challenges due to limited data availability, outcome volatility, and the sport’s dynamic nature. Existing public research has relied primarily on data from a single source, UFC Stats, which provides detailed fight metrics but lacks broader contextual information. This study explores the use of alternative data sources—including fight history databases, betting odds aggregators, and community-driven metadata—to construct a more comprehensive dataset for modeling fights in the Ultimate Fighting Championship (UFC). By leveraging diverse data streams, this approach aims to uncover hidden signals that may provide an edge. Additionally, we experiment with ideas from conformal prediction and robust optimization to optimize bet sizing under uncertainty. To evaluate performance, our methods are tested on out-of-sample UFC fights from 2017 to 2024, with a focus on profitability and calibration. The results provide insight into the potential for systematic edges in MMA betting and a starting point for incorporating more diverse data sources into the modeling process.
 
 
 ## Disclaimer
