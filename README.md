@@ -10,7 +10,7 @@ This repository contains the code and data used for my senior thesis at Yale Uni
 ## Quick Links
 
 - Report (TODO: Link to PDF)
-- Poster (S&DS Senior Thesis Poster Session) (TODO: Link to PDF)
+- [Poster](poster/thesis/Thesis%20Poster.pdf) (S&DS Senior Thesis Poster Session)
 - [Poster](poster/CSAS/CSAS%202025%20Poster.pdf) (Connecticut Sports Analytics Symposium)
 
 
