@@ -4,14 +4,19 @@ Author: Eugene Han
 
 Advisors: Brian Macdonald and Robert Wooster
 
-This repository contains the code and data used for my senior thesis at Yale University which is to be submitted to the faculty of the Department of Statistics and Data Science in partial fulfillment of the requirements for the degree of Bachelor of Science.
+This repository contains the code, data, and deliverables for my senior thesis at Yale University which is to be submitted to the faculty of the Department of Statistics and Data Science in partial fulfillment of the requirements for the degree of Bachelor of Science.
 
 
 ## Quick Links
 
-- Report (TODO: Link to PDF)
+Deliverables:
+- [Report](report/Thesis%20Report.pdf)
 - [Poster](poster/thesis/Thesis%20Poster.pdf) (S&DS Senior Thesis Poster Session)
 - [Poster](poster/CSAS/CSAS%202025%20Poster.pdf) (Connecticut Sports Analytics Symposium)
+
+
+Awards:
+- Winner of the [CSAS 2025 Student Poster Competition](https://statds.org/events/csas2025/index.html)
 
 
 ## Abstract
