@@ -17,6 +17,7 @@ Deliverables:
 
 Awards:
 - Winner of the [CSAS 2025 Student Poster Competition](https://statds.org/events/csas2025/index.html)
+- Received the Outstanding Thesis Award from Yale's Department of Statistics & Data Science
 
 
 ## Abstract
