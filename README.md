@@ -17,7 +17,7 @@ Deliverables:
 
 Awards:
 - Winner of the [CSAS 2025 Student Poster Competition](https://statds.org/events/csas2025/index.html)
-- Received the S&DS department's Outstanding Thesis Award
+- S&DS Outstanding Thesis Award
 
 
 ## Abstract
