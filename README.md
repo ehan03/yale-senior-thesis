@@ -17,7 +17,7 @@ Deliverables:
 
 Awards:
 - Winner of the [CSAS 2025 Student Poster Competition](https://statds.org/events/csas2025/index.html)
-- [S&DS Outstanding Thesis Award](https://statistics.yale.edu/news/2025-sds-commencement-and-awards)
+- Recipient of the [S&DS Outstanding Thesis Award](https://statistics.yale.edu/news/2025-sds-commencement-and-awards)
 
 
 ## Abstract
